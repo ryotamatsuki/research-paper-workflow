@@ -13,19 +13,29 @@ The workflow is intentionally stage-gated. A project is not assumed to deserve a
 ## Canonical documents
 
 - [`THEORY_PAPER_RESEARCH_PIPELINE.md`](THEORY_PAPER_RESEARCH_PIPELINE.md): canonical Stage 0–15 theory workflow, including Stage 7.5.
-- [`GOVERNANCE.md`](GOVERNANCE.md): repository governance, evidence/provenance rules, verdict/rollback policy, verification rules, and change control.
+- [`GOVERNANCE.md`](GOVERNANCE.md): repository governance, evidence/provenance rules, verdict/rollback policy, verification rules, release/change control, and canonical hierarchy.
 
-The hierarchy is `GOVERNANCE.md` → canonical pipeline → stage templates → checklists → examples. Lower-level materials may elaborate but may not weaken higher-level gates.
+The hierarchy is `GOVERNANCE.md` → canonical pipeline → stage templates → checklists → examples. Release/audit documents under `docs/` record version/readiness state but do not override this hierarchy.
 
 ## v1 integration audit
 
-PR #4 audits the complete workflow before release preparation:
+PR #4 audited the complete workflow before release preparation:
 
 - [`WORKFLOW_V1_INTEGRATION_AUDIT.md`](docs/WORKFLOW_V1_INTEGRATION_AUDIT.md)
 - [`WORKFLOW_V1_READINESS_CHECKLIST.md`](docs/WORKFLOW_V1_READINESS_CHECKLIST.md)
 - [`WORKFLOW_V1_CHANGELOG.md`](docs/WORKFLOW_V1_CHANGELOG.md)
 
-The post-audit verdict is **`WORKFLOW v1 READY`** for repeated use as a theory-oriented economics workflow. This is a release-candidate readiness verdict, not a GitHub `v1.0` tag or release.
+The post-audit verdict was **`WORKFLOW v1 READY`** for repeated use as a theory-oriented economics workflow.
+
+## v1.0 release preparation
+
+The prospective v1.0 interface and compatibility rules are documented in:
+
+- [`VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md)
+- [`V1_RELEASE_MANIFEST.md`](docs/V1_RELEASE_MANIFEST.md)
+- [`V1_RELEASE_PREPARATION.md`](docs/V1_RELEASE_PREPARATION.md)
+
+Current repository status: **`v1.0 release-ready candidate`**. No `v1.0` Git tag or GitHub Release has been created yet.
 
 ## Reusable templates
 
@@ -82,6 +92,19 @@ Worked research-decision trails live under [`examples/`](examples/). They are ex
 8. Do not initialize a full-paper production repository until Stage 7.5 approves full-paper investment and Stage 8 freezes the theory.
 9. Preserve rejected branches and negative results as part of the research provenance.
 
+## Recommended reuse mode
+
+Use this repository as the **stable workflow reference**, not as the production LaTeX repository for every paper.
+
+For a research project:
+
+1. consult the canonical documents here;
+2. use/copy the relevant Stage template as needed;
+3. preserve the project's Stage reports, decision log, sources, calculations, and verification artifacts in the project's own research repository;
+4. create the production paper repository at Stage 9 after Stage 7.5 approval and Stage 8 theory freeze.
+
+The worked example is a reference decision trail and should not be copied as a model or project state.
+
 ## Repository structure
 
 ```text
@@ -97,8 +120,8 @@ research-paper-workflow/
 
 ## Intended use
 
-This repository is a research-development and research-termination system, not a prompt collection. Its main value is to make weak, derivative, ad hoc, or mathematically fragile research branches fail early and visibly before full-paper writing begins.
+This repository is a research-development and research-termination system, not a prompt collection and not a production-paper repository scaffold. Its main value is to make weak, derivative, ad hoc, or mathematically fragile research branches fail early and visibly before full-paper writing begins.
 
 ## Status
 
-Workflow v1 has completed its integration audit and is ready for repeated theory-project use. The next repository step is a separate **v1 Release Preparation / Repository Template Readiness** review. No `v1.0` tag or release has been created by the integration audit.
+The theory-oriented workflow has completed its integration and release-preparation audits and is **v1.0 release-ready**. The next operation, if explicitly authorized, is a separate `v1.0` tag and GitHub Release against the reviewed PR #5 merge state. Until that operation occurs, this repository is not described as `v1.0 released`.
