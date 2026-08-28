@@ -1,6 +1,6 @@
 # Governance
 
-Version: bootstrap-v1
+Version: v1-rc1
 
 ## 1. Purpose
 
@@ -55,7 +55,8 @@ Recommended patterns:
 - `templates/<stage-range>` for reusable templates;
 - `checklists/<topic>` for verification/checklist additions;
 - `examples/<case>` for worked cases;
-- `docs/<topic>` for non-substantive documentation.
+- `docs/<topic>` for non-substantive documentation;
+- `audit/<topic>` for integration/readiness audits.
 
 ### 3.3 Pull-request requirements
 
@@ -75,7 +76,7 @@ Review should focus on:
 - internal consistency across stages;
 - whether gates can be bypassed unintentionally;
 - whether novelty standards are weakened;
-- whether mathematical verification is adequately required;
+- whether mathematical verification is adequately required when applicable;
 - whether source requirements are realistic and explicit;
 - whether the workflow encourages unnecessary complexity;
 - whether failures and `NO-GO` outcomes remain legitimate outcomes.
@@ -131,11 +132,32 @@ When symbolic tools are applicable:
 
 Numerical grids and simulations are diagnostics unless the research design is explicitly computational. They may identify regions, counterexamples, or conjectures but must not be reported as analytic proofs.
 
+### 5.5 Evidence maturity and provenance
+
+Claim type and evidence maturity must be recorded separately. At minimum, distinguish:
+
+- a result or claim merely reported in notes, conversation, or temporary computation and therefore requiring reproduction;
+- a mathematical/numerical result reproduced from committed project artifacts;
+- a literature or institutional claim verified against an identifiable source;
+- a claim re-verified for the actual submission package when submission-level assurance is required;
+- a conjecture/model assumption that remains unverified;
+- a rejected claim or branch.
+
+Worked examples may use more specific labels such as `REPORTED / REQUIRES REPRODUCTION`, `LITERATURE-VERIFIED`, `INSTITUTIONALLY SUGGESTIVE`, `CONJECTURE`, and `REJECTED`. Those labels do not automatically upgrade a claim to submission-ready evidence.
+
+AI/chat output, scratch calculations, and historical notes are provenance inputs, not independent evidence. A later stage must not silently promote them into verified theorems or verified facts.
+
+### 5.6 Method applicability
+
+Verification must match the research method. Symbolic algebra is required only when a mathematical model makes it applicable; empirical, computational, institutional, or qualitative claims require their own appropriate verification.
+
+A check may be marked `NOT APPLICABLE` only with a recorded reason. `NOT APPLICABLE` must not be used to bypass a gate that is substantive for the project.
+
 ---
 
-## 6. Stage verdict policy
+## 6. Stage verdict and routing policy
 
-Every research gate should produce an explicit verdict.
+Every research stage must record a canonical stage verdict:
 
 ### GO
 
@@ -151,11 +173,34 @@ The current branch should stop. A new branch or pivot may be opened only when it
 
 Repeatedly converting `NO-GO` into additional assumptions until a desired result appears violates this workflow.
 
+Subtests may use `PASS / CONDITIONAL / FAIL`. Operational templates may also emit routing or state labels such as `GO TO STAGE 6`, `THEORY FROZEN`, or `SUBMISSION QA PASS`. These are secondary routing/status outputs and do not replace the canonical `GO / CONDITIONAL GO / NO-GO` stage verdict.
+
 ---
 
-## 7. Freeze policy
+## 7. Rollback and stale-state policy
 
-### 7.1 Theory freeze
+The workflow is stage-gated but not strictly linear.
+
+When a later stage discovers a substantive error, return to the earliest stage whose canonical output has been invalidated. Downstream outputs that depend on that input become stale until the affected stage and all necessary downstream gates are re-run.
+
+Examples:
+
+- newly discovered prior art returns to Stage 2 or Stage 6 depending on whether it concerns the pre-model gap or an actual derived result;
+- a false proposition or equilibrium error returns to Stage 4, or Stage 5 if the issue is caused by an authorized hardening modification;
+- a failed institutional/welfare premise returns to Stage 7 or earlier if the primitive itself changes;
+- a post-freeze theory change reopens Stage 8 change control and every affected earlier verification/novelty gate;
+- a Stage 11 fatal attack must be routed to the earliest stage capable of resolving it, not patched only in prose;
+- a substantive inconsistency found in Stage 13 or Stage 14 reopens the earliest affected research stage, followed by a fresh integration/QA cycle.
+
+A `NO-GO` branch does not automatically qualify for Stage 5. Stage 5 is available only when the previous minimal-model result identifies one precise economic deficiency that can be tested with one authorized modification. Otherwise stop or return to Stage 3/Stage 0 as a distinct pivot.
+
+Silent repair in a later stage is prohibited.
+
+---
+
+## 8. Freeze policy
+
+### 8.1 Theory freeze
 
 A theory freeze records at minimum:
 
@@ -168,7 +213,7 @@ A theory freeze records at minimum:
 - closest-paper positioning;
 - approved robustness scope.
 
-### 7.2 Submission freeze
+### 8.2 Submission freeze
 
 A submission freeze records at minimum:
 
@@ -182,7 +227,7 @@ No silent post-freeze theoretical edits are permitted.
 
 ---
 
-## 8. Provenance and decision logs
+## 9. Provenance and decision logs
 
 Worked research projects should preserve a concise decision log containing:
 
@@ -198,7 +243,7 @@ A useful example should show rejected branches as well as successful ones.
 
 ---
 
-## 9. AI-assisted research
+## 10. AI-assisted research
 
 AI may be used extensively for search planning, algebra, coding, drafting, review simulation, and workflow execution, but AI output is not itself evidence.
 
@@ -212,9 +257,11 @@ Project-specific work should independently validate:
 
 Where a target journal requires disclosure of generative-AI use, the project should verify the current policy at submission time and comply with it.
 
+An AI-generated `GO`, `PASS`, or positive referee simulation has no independent evidentiary weight. The recorded verdict must be supported by the stage's required evidence and verification artifacts.
+
 ---
 
-## 10. Future extensions to this governance
+## 11. Future extensions to this governance
 
 Later PRs may add:
 
@@ -223,6 +270,6 @@ Later PRs may add:
 - CI checks for template completeness;
 - standard decision-log schemas;
 - project bootstrap scripts;
-- economics-specific and cross-discipline variants.
+- an empirical-research workflow or cross-discipline variants.
 
 Such additions should preserve the core principle: the workflow exists to improve research quality and terminate weak branches early, not to maximize the number of papers produced.

@@ -1,6 +1,6 @@
 # Theory Paper Research Pipeline
 
-Version: bootstrap-v1
+Version: v1-rc1
 
 ## 1. Purpose
 
@@ -10,13 +10,17 @@ The workflow is not a writing checklist. It is a research-development and resear
 
 A project should move forward only when it survives the relevant gate.
 
-Each major stage must end with one of:
+Each major stage must record a canonical verdict:
 
 - `GO`: the evidence is sufficient to proceed;
 - `CONDITIONAL GO`: a precise unresolved condition remains and must become the next-stage target;
 - `NO-GO`: the current research branch should stop unless a narrowly defined pivot survives a new gate.
 
+Templates may additionally report a routing/status label such as `GO TO STAGE 6`, `THEORY FROZEN`, or `SUBMISSION QA PASS`; that label is secondary and does not replace the canonical stage verdict.
+
 A previous `GO` never guarantees a later `GO`.
+
+This v1 canonical pipeline is theory-oriented. Stage 0 may recommend empirical or mixed research, but a project whose primary method is not theoretical should not be force-fit through the Stage 4 mathematical model gate. A dedicated empirical workflow is outside v1 scope.
 
 ---
 
@@ -33,10 +37,13 @@ Every stage-specific prompt, report, or template should use the following schema
 7. **Success criteria** — What must be true for `GO`?
 8. **Failure criteria** — What makes the stage `NO-GO`?
 9. **Required output** — What artifacts and decision record must be produced?
-10. **Verdict** — `GO`, `CONDITIONAL GO`, or `NO-GO`.
-11. **Next-stage contract** — Exactly what may and may not change in the next stage.
+10. **Stage verdict** — `GO`, `CONDITIONAL GO`, or `NO-GO`.
+11. **Routing/status output** — Where the branch goes next, freezes, or stops.
+12. **Next-stage contract** — Exactly what may and may not change in the next stage.
 
 The next-stage contract is essential. Do not respond to a failed model by adding multiple new mechanisms simultaneously.
+
+For efficient handoff, each stage should preserve at least: outputs to carry forward, frozen facts, rejected branches, open blockers, and the one allowed next change when conditional work is authorized.
 
 ---
 
@@ -81,9 +88,9 @@ Reconstruct the starting model or argument from first principles and determine w
 
 - Read all source material, including equations, notes, appendices, figures, and assumptions.
 - Reconstruct players, timing, information, objectives, contracts, demand, costs, and equilibrium concept.
-- Re-derive all equations from zero.
+- Re-derive all equations from zero when the starting object is mathematical.
 - Use Python/SymPy or equivalent symbolic tools for algebraic verification whenever applicable.
-- Derive SOCs, feasibility conditions, participation constraints, and boundary cases.
+- Derive SOCs, feasibility conditions, participation constraints, and boundary cases when applicable.
 - Identify variables or parameters that mix multiple economic interpretations.
 - Distinguish algebraic results from genuine economic mechanisms.
 
@@ -97,7 +104,7 @@ Reconstruct the starting model or argument from first principles and determine w
 
 ## Exit criterion
 
-A verified canonical representation of the starting model and a list of surviving questions.
+A verified canonical representation of the starting object and a list of surviving questions.
 
 ---
 
@@ -162,7 +169,7 @@ Generate competing explanations and select mechanisms, not feature lists.
 - For each candidate, identify the strategic feedback loop.
 - State what would change relative to the closest literature.
 - Identify the smallest model capable of producing the proposed mechanism.
-- Score candidates on theoretical novelty, mechanism clarity, prior-art survival, tractability, welfare content, institutional relevance, and journal fit.
+- Score candidates on theoretical novelty, mechanism clarity, prior-art survival, tractability, welfare content, institutional relevance, and journal fit when scoring is useful.
 - Select a small TOP set for deep dives.
 
 ## Kill tests
@@ -188,8 +195,8 @@ Test the strongest candidate mechanism in the smallest possible model.
 - Freeze players and timing.
 - Use the simplest defensible microfoundation.
 - Derive the equilibrium analytically where possible.
-- Verify all closed forms symbolically.
-- Search numerically for counterexamples only after symbolic analysis.
+- Verify all closed forms symbolically when applicable.
+- Search numerically for counterexamples only after symbolic/analytic analysis when applicable.
 - Derive participation, feasibility, welfare, and limiting cases.
 - Explicitly test desired propositions rather than assuming them.
 
@@ -197,9 +204,13 @@ Test the strongest candidate mechanism in the smallest possible model.
 
 A `GO` requires more than `parameter up → outcome up`. At least one result should reveal a new strategic trade-off, threshold ordering, sign reversal, organizational wedge, or welfare implication.
 
-## Failure handling
+## Failure handling and routing
 
-If the minimal model fails, record why. The failure reason should determine the only permissible next modification.
+- `GO`: the minimal mechanism survives without a substantive repair. Freeze the resulting propositions and proceed to Stage 6 Novelty Re-Kill.
+- `CONDITIONAL GO`: exactly one diagnosed economic deficiency can plausibly be tested by one authorized modification. Proceed to Stage 5 Mechanism Hardening with everything else frozen.
+- `NO-GO`: stop the branch. Return to Stage 3 only for a genuinely distinct mechanism, or Stage 0 for a distinct research question. `NO-GO` does not itself authorize hardening.
+
+A negative proof is a valid Stage 4 output.
 
 ---
 
@@ -247,6 +258,8 @@ Search the literature again using the actual propositions generated by the model
 
 A result that looked novel before the mathematics may be killed after the mathematics. Remove it from the contribution set immediately.
 
+Stage 6 should update the Stage 2 literature ledger and re-open the papers that are material to the actual derived result; it should not repeat the entire Stage 2 search from zero unless the mechanism has materially changed.
+
 ---
 
 # Stage 7 — Welfare / Generality / Institutional Validation
@@ -290,11 +303,11 @@ Decide whether the project has a general economic mechanism or merely a technica
 - Is there a clear welfare or organizational implication?
 - Would a skeptical field referee understand why this is not a parameter exercise?
 
-## Verdict
+## Verdict and routing
 
-- `GO TO FULL PAPER`
-- `CONDITIONAL GO` with a single unresolved theorem/robustness requirement
-- `NO-GO / RESEARCH NOTE / PIVOT`
+- `GO`: full-paper investment is justified; route to Stage 8 Canonical Theory Freeze.
+- `CONDITIONAL GO`: exactly one unresolved theorem/robustness requirement remains; return only to the stage needed to resolve it and repeat Stage 7.5.
+- `NO-GO`: stop the full-paper route; optionally classify the output as research note or pivot without treating that label as a `GO`.
 
 Do not initialize a full manuscript build merely because a closed-form model exists.
 
@@ -337,8 +350,8 @@ Create the production research repository only after the theory is sufficiently 
 
 - modular LaTeX manuscript;
 - BibTeX/BibLaTeX bibliography;
-- symbolic verification scripts;
-- numerical verification scripts;
+- symbolic verification scripts where applicable;
+- numerical verification scripts where applicable;
 - deterministic figure/table generation;
 - Makefile or equivalent build orchestration;
 - environment/dependency specification;
@@ -393,7 +406,7 @@ Try to reject the paper before external referees do.
 
 Classify attacks as `FATAL`, `MAJOR BUT FIXABLE`, or `MINOR`.
 
-A major claim with an unresolved fatal attack cannot proceed to submission preparation.
+A major claim with an unresolved fatal attack cannot proceed to submission preparation. Route any substantive fix to the earliest affected research stage under the rollback rule.
 
 ---
 
@@ -415,6 +428,8 @@ Choose journals based on the actual contribution, not the desired prestige level
 
 Do not reshape an economics contribution into a managerial paper merely because another journal family appears easier.
 
+Early stages may use a provisional journal family or quality bar. Stage 12 is the point for actual journal selection and submission sequencing.
+
 ---
 
 # Stage 13 — Full-Paper Integration
@@ -434,6 +449,8 @@ Turn independently correct sections into one coherent argument.
 - Terminology and notation are consistent.
 - Every contribution claim maps to a verified theorem/result and literature distinction.
 
+Substantive inconsistency triggers rollback to the earliest affected stage; it is not a manuscript-only edit.
+
 ---
 
 # Stage 14 — Submission QA
@@ -445,8 +462,8 @@ Verify the complete submission package.
 ## Mandatory checks
 
 - fresh full build from a clean environment;
-- all symbolic verification passes;
-- numerical tests regenerate reported results;
+- all applicable symbolic verification passes;
+- all applicable numerical tests regenerate reported results;
 - figures/tables regenerate from source;
 - all citations resolve;
 - no unverified references;
@@ -456,6 +473,8 @@ Verify the complete submission package.
 - supplementary material consistent;
 - AI/disclosure requirements checked against current journal policy;
 - claims, abstract, highlights, and cover letter agree with the manuscript.
+
+A substantive mathematical, novelty, theory, welfare, or institutional problem discovered here triggers rollback to the earliest affected stage and a fresh downstream QA cycle.
 
 ---
 
@@ -482,13 +501,17 @@ After submission freeze, theoretical changes require reopening the affected rese
 
 # 3. Cross-stage rules
 
-## 3.1 Literature integrity
+## 3.1 Literature integrity and continuity
 
 Do not invent citations, bibliographic metadata, propositions, or novelty claims. For closest papers, rely on the strongest accessible evidence and document evidentiary limits.
 
-## 3.2 Mathematical integrity
+Stage 2 establishes the baseline literature ledger. Later literature work is incremental and purpose-specific: Stage 3 performs targeted searches for newly proposed mechanisms; Stage 5 checks the literature introduced by the one new primitive; Stage 6 re-kills the actual derived results; Stage 7 validates institutions/generality; Stage 12 checks journal fit. Do not restart the complete literature review at every stage unless the research question or mechanism materially changes.
+
+## 3.2 Mathematical and method integrity
 
 Where symbolic derivation is feasible, independently verify it. Never treat a first-order condition solution as an equilibrium without SOC, feasibility, and relevant constraints.
+
+Verification must match the research method. A check may be `NOT APPLICABLE` only with a reason. The theory-oriented Stage 4 gate should not be imposed on a project whose Stage 0–3 decision is to pursue a non-theory primary method; that project leaves this v1 canonical theory pipeline rather than pretending to pass Stage 4.
 
 ## 3.3 Negative results are first-class outputs
 
@@ -502,7 +525,15 @@ Complexity must solve a diagnosed economic deficiency. It may not be used to hid
 
 Variables are not contributions. Functional forms are not contributions. Applications are not automatically contributions. The contribution should be expressible as an economic mechanism, theorem, comparative-static reversal, organizational result, or welfare implication that survives prior-art comparison.
 
-## 3.6 Provenance and decision logs
+## 3.6 Provenance and evidence maturity
+
+Every project should distinguish historical/AI/scratch outputs from results reproduced in the project repository and from claims re-verified for the actual submission package. Do not silently promote a conversation result, temporary notebook output, or remembered citation to submission-ready evidence.
+
+## 3.7 Rollback and stale downstream outputs
+
+If a later stage invalidates an earlier canonical input, return to the earliest affected stage. Mark all dependent downstream outputs stale until the necessary stages are re-run. Do not silently patch a downstream manuscript or submission artifact around an invalid research result.
+
+## 3.8 Provenance and decision logs
 
 Every project should preserve major rejected branches and the reason for rejection. A reusable research workflow depends as much on documented failures as on final successful results.
 
@@ -510,13 +541,8 @@ Every project should preserve major rejected branches and the reason for rejecti
 
 # 4. Planned companion materials
 
-Subsequent bootstrap PRs should add:
+Reusable Stage 0–15 prompt/report templates, verification checklists, and worked examples are maintained in this repository under the canonical hierarchy.
 
-- reusable Stage 0–15 prompt/report templates;
-- literature-audit and novelty-kill checklists;
-- symbolic and numerical verification checklists;
-- referee-attack checklist;
-- submission checklist;
-- worked case studies documenting both successful and rejected branches.
+Future extensions may add empirical/cross-discipline variants, machine-readable metadata, CI, and release tooling after explicit audit. These are not part of the v1 theory pipeline.
 
 This document is the canonical workflow architecture. Stage-specific templates may elaborate it but must not silently weaken its gates.
