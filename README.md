@@ -52,6 +52,12 @@ Reusable checklists live under [`checklists/`](checklists/):
 - [`REFEREE_ATTACK_CHECKLIST.md`](checklists/REFEREE_ATTACK_CHECKLIST.md)
 - [`SUBMISSION_CHECKLIST.md`](checklists/SUBMISSION_CHECKLIST.md)
 
+## Worked examples
+
+Worked research-decision trails live under [`examples/`](examples/). They are examples, not canonical rules, and preserve rejected branches as well as surviving ideas.
+
+- [`retail-service-infrastructure`](examples/retail-service-infrastructure/) — a worked case showing how a legacy retail-channel question was repeatedly killed and reformulated through service spillovers, contract design, installed-base dynamics, and relationship-specific service capability. Current documented status: `CONDITIONAL GO`, before canonical Stage 7.5.
+
 ## Recommended workflow
 
 1. Start at Stage 0 unless a prior project has already produced a verified input for a later stage.
@@ -72,7 +78,7 @@ research-paper-workflow/
 ├── GOVERNANCE.md
 ├── templates/
 ├── checklists/
-└── examples/        # worked cases added in later PRs
+└── examples/
 ```
 
 ## Intended use
@@ -81,4 +87,4 @@ This repository is a research-development and research-termination system, not a
 
 ## Status
 
-Canonical workflow and reusable Stage 0–15 templates/checklists are available. Worked case studies and automation/CI are intentionally deferred to later PRs.
+Canonical workflow, reusable Stage 0–15 templates/checklists, and the first worked research-decision case are available. Automation/CI and additional examples are intentionally deferred until the workflow receives an integration audit.
