@@ -1,6 +1,6 @@
 # Governance
 
-Version: v1-rc1
+Version: v1.0
 
 ## 1. Purpose
 
@@ -56,7 +56,8 @@ Recommended patterns:
 - `checklists/<topic>` for verification/checklist additions;
 - `examples/<case>` for worked cases;
 - `docs/<topic>` for non-substantive documentation;
-- `audit/<topic>` for integration/readiness audits.
+- `audit/<topic>` for integration/readiness audits;
+- `release/<version-or-topic>` for release preparation.
 
 ### 3.3 Pull-request requirements
 
@@ -80,6 +81,16 @@ Review should focus on:
 - whether source requirements are realistic and explicit;
 - whether the workflow encourages unnecessary complexity;
 - whether failures and `NO-GO` outcomes remain legitimate outcomes.
+
+### 3.5 Release and version changes
+
+Release/version changes are substantive repository changes because a published version defines what future projects may treat as stable workflow behavior.
+
+- Assess compatibility under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md) before changing stable canonical behavior.
+- A stable release tag must point to a reviewed `main` state.
+- Published stable tags are historical references and must not be silently moved or overwritten.
+- Correct a released defect with an appropriate later version rather than rewriting the historical tag.
+- Release/audit documents under `docs/` record version state but do not override the canonical hierarchy below.
 
 ---
 
@@ -265,7 +276,6 @@ An AI-generated `GO`, `PASS`, or positive referee simulation has no independent 
 
 Later PRs may add:
 
-- versioning and release policy;
 - machine-readable stage metadata;
 - CI checks for template completeness;
 - standard decision-log schemas;
