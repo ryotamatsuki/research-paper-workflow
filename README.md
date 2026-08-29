@@ -112,6 +112,7 @@ research-paper-workflow/
 ├── README.md
 ├── THEORY_PAPER_RESEARCH_PIPELINE.md
 ├── GOVERNANCE.md
+├── LICENSE
 ├── templates/
 ├── checklists/
 ├── docs/
@@ -121,6 +122,12 @@ research-paper-workflow/
 ## Intended use
 
 This repository is a research-development and research-termination system, not a prompt collection and not a production-paper repository scaffold. Its main value is to make weak, derivative, ad hoc, or mathematically fragile research branches fail early and visibly before full-paper writing begins.
+
+## License
+
+Except where otherwise noted, the contents of this repository are licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). You may share and adapt the material for any purpose, including commercial use, provided that you give appropriate credit, link to the license, and indicate if changes were made. See [`LICENSE`](LICENSE) for details.
+
+Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 ## Status
 
