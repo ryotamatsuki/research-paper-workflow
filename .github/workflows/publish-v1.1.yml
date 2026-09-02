@@ -31,6 +31,45 @@ jobs:
             exit 1
           fi
 
+      - name: Finalize release metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+
+          for filename in ('GOVERNANCE.md', 'THEORY_PAPER_RESEARCH_PIPELINE.md'):
+              path = Path(filename)
+              text = path.read_text()
+              old = 'Version: v1.0'
+              if old not in text:
+                  raise SystemExit(f'Expected version marker not found in {filename}')
+              path.write_text(text.replace(old, 'Version: v1.1', 1))
+
+          readme = Path('README.md')
+          text = readme.read_text()
+          old = """Stable published release: **`v1.0`**.\n\nv1.1 status: **`RELEASE READY — fresh integration/readiness audit passed; tag/release pending audit-PR merge`**.\n\nThe audit-merge release workflow publishes a new immutable `v1.1` tag and GitHub Release and leaves `v1.0` unchanged."""
+          new = """Stable published release: **`v1.1`**.\n\nHistorical release `v1.0` remains immutable. See GitHub Releases for the published release record."""
+          if old not in text:
+              raise SystemExit('Expected README release-ready marker not found')
+          readme.write_text(text.replace(old, new, 1))
+
+          policy = Path('docs/VERSIONING_POLICY.md')
+          text = policy.read_text()
+          old = "The 2026-09-02 novelty-gate refinement preserves Stage structure, canonical verdict semantics, and routing while adding more precise whole-game absorption and generalization/unification checks. Under this policy it is a **minor-version candidate (`v1.1`)**, subject to fresh integration/readiness audit before release."
+          new = "The 2026-09-02 novelty-gate refinement preserves Stage structure, canonical verdict semantics, and routing while adding more precise whole-game absorption and generalization/unification checks. After fresh integration/readiness audit, it was released as the **minor version `v1.1`**."
+          if old not in text:
+              raise SystemExit('Expected version-policy candidate marker not found')
+          policy.write_text(text.replace(old, new, 1))
+          PY
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add GOVERNANCE.md THEORY_PAPER_RESEARCH_PIPELINE.md README.md docs/VERSIONING_POLICY.md
+          git commit -m 'Finalize v1.1 release metadata'
+          git push origin HEAD:main
+          echo "RELEASE_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+
       - name: Publish v1.1 tag and GitHub Release
         env:
           GH_TOKEN: ${{ github.token }}
@@ -38,6 +77,6 @@ jobs:
         run: |
           set -euo pipefail
           gh release create v1.1 \
-            --target "$GITHUB_SHA" \
+            --target "$RELEASE_SHA" \
             --title 'research-paper-workflow v1.1' \
             --notes-file docs/V1_1_RELEASE_NOTES.md
