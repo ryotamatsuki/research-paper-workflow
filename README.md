@@ -17,11 +17,13 @@ The workflow is intentionally stage-gated. A project is not assumed to deserve a
 
 The hierarchy is `GOVERNANCE.md` → canonical pipeline → stage templates → checklists → examples. Release/audit documents under `docs/` record version/readiness state but do not override this hierarchy.
 
-## Novelty-gate correction under review
+## Stable release and v1.1 refinement
 
-A pre-v1.0 correction dated 2026-09-02 strengthens the distinction between **component overlap** and **whole-game absorption** for strategic/game-theoretic projects and explicitly recognizes economically substantive **generalization/unification** as a possible contribution route.
+`v1.0` is the first stable historical release and remains immutable at its published tag.
 
-The corrected standard requires:
+A 2026-09-02 refinement now under review strengthens the distinction between **component overlap** and **whole-game absorption** for strategic/game-theoretic projects and explicitly recognizes economically substantive **generalization/unification** as a possible contribution route.
+
+The refined standard requires:
 
 - whole-game comparison of players, objectives, strategy sets, timing, allocation, and strategic feedbacks before declaring absorption;
 - no novelty claim based only on “nobody combined these ingredients”;
@@ -30,27 +32,27 @@ The corrected standard requires:
 
 See [`docs/NOVELTY_GATE_CORRECTION_2026-09-02.md`](docs/NOVELTY_GATE_CORRECTION_2026-09-02.md).
 
-Because this correction can affect research-routing decisions, the previous v1.0 release-ready assessment is reopened pending a fresh integration/readiness audit. No stable `v1.0` tag or GitHub Release exists, so this is being handled as a pre-release correction rather than a silent post-release semantic change.
+Under the revised [`VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), this is a **v1.1 minor-version candidate** because Stage structure, canonical verdict semantics, and routing remain unchanged. A fresh integration/readiness audit is required before the `v1.1` tag and GitHub Release are created.
 
 ## v1 integration audit
 
-PR #4 audited the complete workflow before release preparation:
+PR #4 audited the original complete workflow before the first stable release:
 
 - [`WORKFLOW_V1_INTEGRATION_AUDIT.md`](docs/WORKFLOW_V1_INTEGRATION_AUDIT.md)
 - [`WORKFLOW_V1_READINESS_CHECKLIST.md`](docs/WORKFLOW_V1_READINESS_CHECKLIST.md)
 - [`WORKFLOW_V1_CHANGELOG.md`](docs/WORKFLOW_V1_CHANGELOG.md)
 
-That audit remains a historical record of the repository state it reviewed. The 2026-09-02 novelty-gate correction requires a new integration/readiness audit before release tagging.
+Those files remain historical records of the repository state they reviewed. The 2026-09-02 novelty-gate refinement requires a fresh audit for v1.1 rather than rewriting the v1.0 history.
 
-## v1.0 release preparation
+## Versioning
 
-The prospective v1.0 interface and compatibility rules are documented in:
+The current versioning rule is:
 
-- [`VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md)
-- [`V1_RELEASE_MANIFEST.md`](docs/V1_RELEASE_MANIFEST.md)
-- [`V1_RELEASE_PREPARATION.md`](docs/V1_RELEASE_PREPARATION.md)
+- **PATCH (`v1.0.1`)** — typo, link, metadata, and non-substantive clarification fixes;
+- **MINOR (`v1.1`)** — criteria/check/verification additions or refinements that preserve Stage structure, canonical verdict semantics, and routing;
+- **MAJOR (`v2.0`)** — Stage addition/removal/merger, verdict-semantic changes, routing changes, or incompatible workflow-architecture changes.
 
-Current repository status on this correction branch: **`v1.0 release readiness REOPENED — novelty-gate correction pending review and re-audit`**. No `v1.0` Git tag or GitHub Release has been created.
+See [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md) for the full compatibility test.
 
 ## Reusable templates
 
@@ -147,4 +149,8 @@ Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 ## Status
 
-The theory-oriented workflow completed its original integration and release-preparation audits, but release readiness is **temporarily reopened** because the 2026-09-02 novelty-gate correction changes research-decision behavior for some strategic/generalization projects. The next operation is review and a fresh integration/readiness audit of this correction. A `v1.0` tag or GitHub Release must not be created until that audit passes.
+Stable release: **`v1.0`**.
+
+Current development state: **`v1.1 candidate — novelty-gate refinement pending fresh integration/readiness audit`**.
+
+Planned release route: `PR #6 merge → fresh integration/readiness audit → audit PR merge → v1.1 tag / GitHub Release`.
