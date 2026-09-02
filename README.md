@@ -154,8 +154,6 @@ Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 ## Status
 
-Stable published release: **`v1.0`**.
+Stable published release: **`v1.1`**.
 
-v1.1 status: **`RELEASE READY — fresh integration/readiness audit passed; tag/release pending audit-PR merge`**.
-
-The audit-merge release workflow publishes a new immutable `v1.1` tag and GitHub Release and leaves `v1.0` unchanged.
+Historical release `v1.0` remains immutable. See GitHub Releases for the published release record.

@@ -142,4 +142,4 @@ Backward-compatible deprecation should be documented before removal where practi
 
 `v1.0` is the first stable historical release of the theory-oriented economics research-decision workflow.
 
-The 2026-09-02 novelty-gate refinement preserves Stage structure, canonical verdict semantics, and routing while adding more precise whole-game absorption and generalization/unification checks. Under this policy it is a **minor-version candidate (`v1.1`)**, subject to fresh integration/readiness audit before release.
+The 2026-09-02 novelty-gate refinement preserves Stage structure, canonical verdict semantics, and routing while adding more precise whole-game absorption and generalization/unification checks. After fresh integration/readiness audit, it was released as the **minor version `v1.1`**.
