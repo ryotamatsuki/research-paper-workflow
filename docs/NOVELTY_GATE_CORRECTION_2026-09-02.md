@@ -2,13 +2,15 @@
 
 Date: 2026-09-02
 
-Status: **release-blocking pre-v1.0 correction pending review**
+Status: **v1.1 candidate pending fresh integration/readiness audit**
 
 Starting canonical main SHA: `07466bcb1a6d3bc654b52945f21b034b38e45281`
 
+Historical stable release: `v1.0` at commit `d5c5146098d97279ad3e90342fa757f0f31c8264`.
+
 ## 1. Problem identified
 
-The v1.0 release-ready candidate correctly rejected cosmetic novelty and combination novelty, but its Stage 2–6 wording could be applied too aggressively in strategic/game-theoretic projects.
+The v1.0 workflow correctly rejects cosmetic novelty and weak combination novelty, but its Stage 2–6 wording can be applied too aggressively in strategic/game-theoretic projects.
 
 The failure mode is:
 
@@ -62,6 +64,7 @@ Canonical/operational behavior is updated in:
 - `templates/STAGE_06_NOVELTY_REKILL.md`
 - `checklists/LITERATURE_AUDIT_CHECKLIST.md`
 - `checklists/NOVELTY_KILL_CHECKLIST.md`
+- `docs/VERSIONING_POLICY.md`
 
 ## 5. New required tests
 
@@ -94,19 +97,24 @@ For a generalization/unification claim:
 
 ## 6. Compatibility / version assessment
 
-`docs/VERSIONING_POLICY.md` states that a change capable of altering prior project verdicts is normally a breaking semantic change after stable release.
+`v1.0` is already a stable historical release and its tag must not be moved.
 
-However, the repository currently has **no `v1.0` Git tag or GitHub Release**. The existing state is only a `v1.0 release-ready candidate`.
+The versioning policy is revised to classify changes by workflow-interface compatibility:
 
-Therefore this correction should be treated as a **pre-release release-blocking correction to the v1.0 candidate**, not as a silent post-release patch and not automatically as a v2.0 release.
+- **PATCH (`v1.0.1`)** — typo, link, metadata, and non-substantive clarification fixes;
+- **MINOR (`v1.1`)** — additions or refinements to criteria, checks, and verification capability that preserve existing Stage structure, canonical verdict semantics, and routing;
+- **MAJOR (`v2.0`)** — Stage addition/removal/merger, `GO / CONDITIONAL GO / NO-GO` semantic changes, routing changes, or incompatible workflow-architecture changes.
 
-Before creating a `v1.0` tag, the workflow should receive a fresh integration/readiness audit confirming that:
+The novelty-gate correction preserves Stage 0–15 + 7.5, preserves canonical verdict meanings, and preserves routing. It therefore qualifies as a **v1.1 minor-version candidate** even though active strategic projects may merit re-audit under the improved criteria.
+
+Before creating `v1.1`, the workflow must receive a fresh integration/readiness audit confirming that:
 
 - the new whole-game standard does not weaken the anti-cosmetic novelty gate;
 - combination novelty remains insufficient by itself;
-- generalization/unification requires a full-model-only result;
+- generalization/unification requires nested benchmark recovery plus a full-model-only result;
 - Stage 2, Stage 3, Stage 4, and Stage 6 remain internally consistent;
-- negative results and `NO-GO` remain legitimate outcomes.
+- `NO-GO` and negative results remain legitimate outcomes;
+- Stage identities, verdict semantics, and routing remain unchanged from the stable v1 architecture.
 
 ## 7. Migration implication for active projects
 
@@ -129,3 +137,7 @@ The correction is successful if it prevents both errors:
 
 1. **false positive novelty** — accepting a mere ingredient combination;
 2. **false negative novelty** — killing a strategically distinct generalization because its ingredients are individually known.
+
+Release route:
+
+`PR #6 merge → fresh integration/readiness audit → audit PR merge → v1.1 tag / GitHub Release`.
