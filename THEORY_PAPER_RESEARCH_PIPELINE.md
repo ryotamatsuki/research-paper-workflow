@@ -112,7 +112,14 @@ A verified canonical representation of the starting object and a list of survivi
 
 ## Objective
 
-Determine whether the surviving mechanism or result is already known before investing in model expansion.
+Determine whether the surviving mechanism, strategic architecture, result, or proposed generalization is already known before investing in model expansion.
+
+Novelty must be evaluated at two distinct levels:
+
+1. **component level** — which primitives, players, margins, and results are individually known;
+2. **whole-game/result level** — whether the economically relevant player-objective-strategy-timing-allocation-feedback structure and the proposed headline result are already solved.
+
+Known components do not by themselves imply that the full game is absorbed. Conversely, the absence of one paper containing the exact ingredient combination does not itself establish novelty.
 
 ## Mandatory tasks
 
@@ -120,13 +127,17 @@ Search from seminal work through the current frontier, including recent working 
 
 For close papers, inspect as far as feasible:
 
+- players and objective functions;
+- strategy sets/endogenous controls;
 - model and timing;
 - demand or utility;
 - contracts and information;
 - endogenous variables;
+- participation/outside options and endogenous allocation/sorting;
+- best-response or strategic-feedback network;
 - equilibrium concept;
 - propositions;
-- welfare;
+- welfare and incidence;
 - extensions and appendices.
 
 Perform:
@@ -134,7 +145,16 @@ Perform:
 - backward citation search;
 - forward citation search;
 - author-neighborhood search;
+- adjacent-field/synonym search;
 - working-paper/published-version deduplication.
+
+For strategic/game-theoretic projects, perform a **whole-game absorption test**:
+
+- determine whether one prior model reproduces the economically relevant full game through direct relabeling, normalization, or parameter restriction;
+- if no single prior model does so, determine whether the proposed headline result is nonetheless an immediate corollary of an existing theorem;
+- if reconstructing the candidate requires multiple prior literatures with different players, objectives, strategies, or feedbacks, identify what strategic interaction exists only in the full architecture.
+
+For a claimed **generalization or unification**, identify the important nested prior models, the restrictions that recover them, and the candidate result that should exist only in the full model.
 
 Classify overlap as:
 
@@ -148,12 +168,17 @@ Classify overlap as:
 
 - Contribution is a renamed known result.
 - New variable does not create a new strategic interaction.
-- Closest paper already contains the same endogenous margin and welfare logic.
+- A single close paper already contains the same economically relevant players/objectives/strategies/timing/allocation/feedback structure.
+- Closest paper already contains the same endogenous margin and welfare logic and the proposed result is an immediate corollary.
 - Novelty claim rests only on failure to find the exact combination of keywords.
+- Novelty claim rests only on “nobody combined these ingredients.”
+- A claimed generalization only broadens notation or functional form while leaving the economics unchanged.
+
+Do **not** kill solely because every component is separately known if no prior model reproduces the full strategic architecture and the combination plausibly generates a new equilibrium or welfare problem.
 
 ## Exit criterion
 
-A closest-paper matrix and an explicit list of contributions that are killed, weakened, or still alive.
+A closest-paper matrix, component-overlap map, whole-game absorption verdict, nested-benchmark map where applicable, and an explicit list of contributions that are killed, weakened, or still alive.
 
 ---
 
@@ -161,15 +186,17 @@ A closest-paper matrix and an explicit list of contributions that are killed, we
 
 ## Objective
 
-Generate competing explanations and select mechanisms, not feature lists.
+Generate competing explanations and select mechanisms or strategically meaningful generalizations, not feature lists.
 
 ## Mandatory tasks
 
-- Generate approximately 8–12 candidate mechanisms when the search space is broad.
+- Generate approximately 8–12 candidate mechanisms/architectures when the search space is broad.
 - For each candidate, identify the strategic feedback loop.
 - State what would change relative to the closest literature.
 - Identify the smallest model capable of producing the proposed mechanism.
-- Score candidates on theoretical novelty, mechanism clarity, prior-art survival, tractability, welfare content, institutional relevance, and journal fit when scoring is useful.
+- For a generalization/unification candidate, identify the prior models nested by the full game and the strategic interaction that exists only when the components are jointly endogenous.
+- State the candidate result that should be unavailable in each nested benchmark alone.
+- Score candidates on theoretical novelty, mechanism clarity, whole-game prior-art survival, tractability, welfare content, institutional relevance, and journal fit when scoring is useful.
 - Select a small TOP set for deep dives.
 
 ## Kill tests
@@ -180,7 +207,10 @@ Reject candidates that are merely:
 - another channel;
 - another fixed cost;
 - another player with no strategic effect;
-- another comparative static without a new trade-off.
+- another comparative static without a new trade-off;
+- a combination of familiar ingredients whose full game changes no strategic feedback and produces no new theorem.
+
+Do not reject a generalization merely because its components are familiar if the full architecture creates a strategically non-equivalent equilibrium problem that the nested benchmarks cannot reproduce.
 
 ---
 
@@ -188,7 +218,7 @@ Reject candidates that are merely:
 
 ## Objective
 
-Test the strongest candidate mechanism in the smallest possible model.
+Test the strongest candidate mechanism or generalization in the smallest possible model.
 
 ## Mandatory tasks
 
@@ -199,18 +229,25 @@ Test the strongest candidate mechanism in the smallest possible model.
 - Search numerically for counterexamples only after symbolic/analytic analysis when applicable.
 - Derive participation, feasibility, welfare, and limiting cases.
 - Explicitly test desired propositions rather than assuming them.
+- If the contribution route is generalization/unification, define and solve/recover the minimum nested benchmark games obtained by removing or fixing one strategic component at a time.
+- Verify benchmark recovery and compare the full model with the benchmarks for the headline equilibrium/welfare object.
+- Identify whether the full architecture changes the best-response/strategic-feedback network and creates a result unavailable in each benchmark alone.
 
 ## Success standard
 
-A `GO` requires more than `parameter up → outcome up`. At least one result should reveal a new strategic trade-off, threshold ordering, sign reversal, organizational wedge, or welfare implication.
+A `GO` requires more than `parameter up → outcome up`. At least one result should reveal a clean strategic trade-off, threshold ordering, sign reversal, organizational wedge, welfare implication, or nontrivial conditions-for-effectiveness characterization.
+
+A generalization/unification can qualify as a theoretical contribution when it cleanly nests important prior models **and** the interaction of their strategic margins generates a new equilibrium or welfare result that is unavailable in the nested benchmarks alone.
 
 ## Failure handling and routing
 
-- `GO`: the minimal mechanism survives without a substantive repair. Freeze the resulting propositions and proceed to Stage 6 Novelty Re-Kill.
+- `GO`: the minimal mechanism/generalization survives without a substantive repair. Freeze the resulting propositions and proceed to Stage 6 Novelty Re-Kill.
 - `CONDITIONAL GO`: exactly one diagnosed economic deficiency can plausibly be tested by one authorized modification. Proceed to Stage 5 Mechanism Hardening with everything else frozen.
-- `NO-GO`: stop the branch. Return to Stage 3 only for a genuinely distinct mechanism, or Stage 0 for a distinct research question. `NO-GO` does not itself authorize hardening.
+- `NO-GO`: stop the branch. Return to Stage 3 only for a genuinely distinct mechanism/generalization architecture, or Stage 0 for a distinct research question. `NO-GO` does not itself authorize hardening.
 
 A negative proof is a valid Stage 4 output.
+
+For a generalization route, return `NO-GO` if the full model merely writes multiple known benchmark cases in one notation, changes no economically meaningful strategic feedback, or yields only results already obtainable as immediate benchmark corollaries.
 
 ---
 
@@ -250,13 +287,17 @@ Search the literature again using the actual propositions generated by the model
 ## Mandatory tasks
 
 - Turn each surviving proposition into targeted search queries.
-- Search the exact strategic mechanism, threshold result, or organizational transition.
+- Search the exact strategic mechanism, threshold result, organizational transition, welfare wedge, and game-architecture language.
 - Re-open the closest literature in light of the new result.
-- Distinguish novelty of the model setup from novelty of the theorem.
+- Distinguish novelty of individual components, novelty of the whole game, and novelty of the theorem.
+- Re-run the whole-game absorption test against the actual solved model.
+- For a generalization/unification, re-open every material nested benchmark and verify that the full-model result is unavailable in each benchmark alone and is not an immediate corollary of a known theorem.
 
 ## Rule
 
 A result that looked novel before the mathematics may be killed after the mathematics. Remove it from the contribution set immediately.
+
+A model is not rescued merely because no prior paper has the exact setup. A model is also not killed merely because every ingredient is separately familiar. The relevant question is whether the full strategic architecture and its surviving results are economically redundant with prior theory.
 
 Stage 6 should update the Stage 2 literature ledger and re-open the papers that are material to the actual derived result; it should not repeat the entire Stage 2 search from zero unless the mechanism has materially changed.
 
@@ -302,6 +343,7 @@ Decide whether the project has a general economic mechanism or merely a technica
 - Does the contribution survive at least one alternative formulation?
 - Is there a clear welfare or organizational implication?
 - Would a skeptical field referee understand why this is not a parameter exercise?
+- If the contribution is a generalization/unification, what important prior models are nested and what full-model result cannot be obtained from them separately?
 
 ## Verdict and routing
 
@@ -397,6 +439,8 @@ Try to reject the paper before external referees do.
 ## Mandatory attacks
 
 - `This is classic result X in different notation.`
+- `Every ingredient is known; does the full game actually create a new strategic interaction or result?`
+- `The claimed generalization merely nests known cases without adding new economics.`
 - `The result is driven by one ad hoc assumption.`
 - `The extension merely adds a variable.`
 - `The welfare result is mechanical.`
@@ -507,6 +551,8 @@ Do not invent citations, bibliographic metadata, propositions, or novelty claims
 
 Stage 2 establishes the baseline literature ledger. Later literature work is incremental and purpose-specific: Stage 3 performs targeted searches for newly proposed mechanisms; Stage 5 checks the literature introduced by the one new primitive; Stage 6 re-kills the actual derived results; Stage 7 validates institutions/generality; Stage 12 checks journal fit. Do not restart the complete literature review at every stage unless the research question or mechanism materially changes.
 
+For strategic models, preserve the distinction between **component overlap** and **whole-game absorption** throughout the workflow. A later stage must not silently promote a collection of component precedents into an exact-absorption verdict without a model-level mapping or result-level corollary argument.
+
 ## 3.2 Mathematical and method integrity
 
 Where symbolic derivation is feasible, independently verify it. Never treat a first-order condition solution as an equilibrium without SOC, feasibility, and relevant constraints.
@@ -521,9 +567,15 @@ A stage that proves why a desired proposition cannot hold has succeeded if it el
 
 Complexity must solve a diagnosed economic deficiency. It may not be used to hide a failed minimal mechanism.
 
+A generalization/unification is not exempt from this rule. Added players or strategic margins must be necessary to the economic question and must be evaluated through nested benchmarks.
+
 ## 3.5 Contribution discipline
 
-Variables are not contributions. Functional forms are not contributions. Applications are not automatically contributions. The contribution should be expressible as an economic mechanism, theorem, comparative-static reversal, organizational result, or welfare implication that survives prior-art comparison.
+Variables are not contributions. Functional forms are not contributions. Applications are not automatically contributions. The contribution should be expressible as an economic mechanism, theorem, comparative-static reversal, organizational result, welfare implication, or economically substantive generalization/unification that survives prior-art comparison.
+
+A generalization/unification contribution must do more than place known models inside one notation. It should recover important benchmarks transparently and generate a new strategic interaction, equilibrium characterization, conditions result, or welfare implication unavailable in the benchmarks alone.
+
+Likewise, known components do not automatically imply that a strategically distinct full game is absorbed. Absorption requires whole-game equivalence or result-level redundancy, not an ingredient checklist.
 
 ## 3.6 Provenance and evidence maturity
 

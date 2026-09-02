@@ -17,25 +17,42 @@ The workflow is intentionally stage-gated. A project is not assumed to deserve a
 
 The hierarchy is `GOVERNANCE.md` → canonical pipeline → stage templates → checklists → examples. Release/audit documents under `docs/` record version/readiness state but do not override this hierarchy.
 
+## Stable release and v1.1 refinement
+
+`v1.0` is the first stable historical release and remains immutable at its published tag.
+
+A 2026-09-02 refinement now under review strengthens the distinction between **component overlap** and **whole-game absorption** for strategic/game-theoretic projects and explicitly recognizes economically substantive **generalization/unification** as a possible contribution route.
+
+The refined standard requires:
+
+- whole-game comparison of players, objectives, strategy sets, timing, allocation, and strategic feedbacks before declaring absorption;
+- no novelty claim based only on “nobody combined these ingredients”;
+- nested-benchmark recovery for generalization/unification claims;
+- at least one full-model strategic or welfare result unavailable in the nested benchmarks alone.
+
+See [`docs/NOVELTY_GATE_CORRECTION_2026-09-02.md`](docs/NOVELTY_GATE_CORRECTION_2026-09-02.md).
+
+Under the revised [`VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), this is a **v1.1 minor-version candidate** because Stage structure, canonical verdict semantics, and routing remain unchanged. A fresh integration/readiness audit is required before the `v1.1` tag and GitHub Release are created.
+
 ## v1 integration audit
 
-PR #4 audited the complete workflow before release preparation:
+PR #4 audited the original complete workflow before the first stable release:
 
 - [`WORKFLOW_V1_INTEGRATION_AUDIT.md`](docs/WORKFLOW_V1_INTEGRATION_AUDIT.md)
 - [`WORKFLOW_V1_READINESS_CHECKLIST.md`](docs/WORKFLOW_V1_READINESS_CHECKLIST.md)
 - [`WORKFLOW_V1_CHANGELOG.md`](docs/WORKFLOW_V1_CHANGELOG.md)
 
-The post-audit verdict was **`WORKFLOW v1 READY`** for repeated use as a theory-oriented economics workflow.
+Those files remain historical records of the repository state they reviewed. The 2026-09-02 novelty-gate refinement requires a fresh audit for v1.1 rather than rewriting the v1.0 history.
 
-## v1.0 release preparation
+## Versioning
 
-The prospective v1.0 interface and compatibility rules are documented in:
+The current versioning rule is:
 
-- [`VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md)
-- [`V1_RELEASE_MANIFEST.md`](docs/V1_RELEASE_MANIFEST.md)
-- [`V1_RELEASE_PREPARATION.md`](docs/V1_RELEASE_PREPARATION.md)
+- **PATCH (`v1.0.1`)** — typo, link, metadata, and non-substantive clarification fixes;
+- **MINOR (`v1.1`)** — criteria/check/verification additions or refinements that preserve Stage structure, canonical verdict semantics, and routing;
+- **MAJOR (`v2.0`)** — Stage addition/removal/merger, verdict-semantic changes, routing changes, or incompatible workflow-architecture changes.
 
-Current repository status: **`v1.0 release-ready candidate`**. No `v1.0` Git tag or GitHub Release has been created yet.
+See [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md) for the full compatibility test.
 
 ## Reusable templates
 
@@ -88,9 +105,10 @@ Worked research-decision trails live under [`examples/`](examples/). They are ex
 4. Record the canonical stage verdict, route/status, rejected branches, blockers, and next-stage contract.
 5. If a minimal theory model has exactly one diagnosed repairable deficiency, use Stage 5; a Stage 4 `NO-GO` does not itself authorize hardening.
 6. Re-kill actual novelty after results are known in Stage 6, updating the Stage 2 literature ledger rather than blindly starting over.
-7. If a later stage invalidates an earlier result, return to the earliest affected stage and treat dependent downstream outputs as stale.
-8. Do not initialize a full-paper production repository until Stage 7.5 approves full-paper investment and Stage 8 freezes the theory.
-9. Preserve rejected branches and negative results as part of the research provenance.
+7. For strategic/game-theoretic work, distinguish component overlap from whole-game absorption and use nested benchmarks when the contribution is a generalization/unification.
+8. If a later stage invalidates an earlier result, return to the earliest affected stage and treat dependent downstream outputs as stale.
+9. Do not initialize a full-paper production repository until Stage 7.5 approves full-paper investment and Stage 8 freezes the theory.
+10. Preserve rejected branches and negative results as part of the research provenance.
 
 ## Recommended reuse mode
 
@@ -131,4 +149,8 @@ Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 ## Status
 
-The theory-oriented workflow has completed its integration and release-preparation audits and is **v1.0 release-ready**. The next operation, if explicitly authorized, is a separate `v1.0` tag and GitHub Release against the reviewed PR #5 merge state. Until that operation occurs, this repository is not described as `v1.0 released`.
+Stable release: **`v1.0`**.
+
+Current development state: **`v1.1 candidate — novelty-gate refinement pending fresh integration/readiness audit`**.
+
+Planned release route: `PR #6 merge → fresh integration/readiness audit → audit PR merge → v1.1 tag / GitHub Release`.
