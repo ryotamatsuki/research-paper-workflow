@@ -21,7 +21,7 @@ The hierarchy is `GOVERNANCE.md` → canonical pipeline → stage templates → 
 
 `v1.0` is the first stable historical release and remains immutable at its published tag.
 
-A 2026-09-02 refinement now under review strengthens the distinction between **component overlap** and **whole-game absorption** for strategic/game-theoretic projects and explicitly recognizes economically substantive **generalization/unification** as a possible contribution route.
+The v1.1 refinement strengthens the distinction between **component overlap** and **whole-game absorption** for strategic/game-theoretic projects and explicitly recognizes economically substantive **generalization/unification** as a possible contribution route.
 
 The refined standard requires:
 
@@ -32,17 +32,22 @@ The refined standard requires:
 
 See [`docs/NOVELTY_GATE_CORRECTION_2026-09-02.md`](docs/NOVELTY_GATE_CORRECTION_2026-09-02.md).
 
-Under the revised [`VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), this is a **v1.1 minor-version candidate** because Stage structure, canonical verdict semantics, and routing remain unchanged. A fresh integration/readiness audit is required before the `v1.1` tag and GitHub Release are created.
+Under the revised [`VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), this is a **v1.1 minor release** because Stage structure, canonical verdict semantics, and routing remain unchanged.
 
-## v1 integration audit
+## Integration/readiness audits
 
-PR #4 audited the original complete workflow before the first stable release:
+The original v1 audit remains a historical record:
 
 - [`WORKFLOW_V1_INTEGRATION_AUDIT.md`](docs/WORKFLOW_V1_INTEGRATION_AUDIT.md)
 - [`WORKFLOW_V1_READINESS_CHECKLIST.md`](docs/WORKFLOW_V1_READINESS_CHECKLIST.md)
 - [`WORKFLOW_V1_CHANGELOG.md`](docs/WORKFLOW_V1_CHANGELOG.md)
 
-Those files remain historical records of the repository state they reviewed. The 2026-09-02 novelty-gate refinement requires a fresh audit for v1.1 rather than rewriting the v1.0 history.
+The v1.1 refinement passed a fresh integration/readiness audit:
+
+- [`WORKFLOW_V1_1_INTEGRATION_AUDIT.md`](docs/WORKFLOW_V1_1_INTEGRATION_AUDIT.md)
+- [`WORKFLOW_V1_1_READINESS_CHECKLIST.md`](docs/WORKFLOW_V1_1_READINESS_CHECKLIST.md)
+- [`V1_1_RELEASE_MANIFEST.md`](docs/V1_1_RELEASE_MANIFEST.md)
+- [`V1_1_RELEASE_NOTES.md`](docs/V1_1_RELEASE_NOTES.md)
 
 ## Versioning
 
@@ -149,8 +154,8 @@ Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 ## Status
 
-Stable release: **`v1.0`**.
+Stable published release: **`v1.0`**.
 
-Current development state: **`v1.1 candidate — novelty-gate refinement pending fresh integration/readiness audit`**.
+v1.1 status: **`RELEASE READY — fresh integration/readiness audit passed; tag/release pending audit-PR merge`**.
 
-Planned release route: `PR #6 merge → fresh integration/readiness audit → audit PR merge → v1.1 tag / GitHub Release`.
+The audit-merge release workflow publishes a new immutable `v1.1` tag and GitHub Release and leaves `v1.0` unchanged.
