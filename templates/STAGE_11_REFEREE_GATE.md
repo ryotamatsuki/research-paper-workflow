@@ -20,6 +20,8 @@ Act as multiple hostile referees and an editor. Try to reject `[WORKING_TITLE]` 
 
 Identify fatal conceptual, mathematical, novelty, robustness, institutional, welfare, and journal-fit objections; require fixes only when they address a genuine vulnerability.
 
+For sequential/game-theoretic papers, independently attack the completeness of downstream continuations rather than merely re-running the author's equilibrium solver.
+
 ## 3. Canonical inputs
 
 The current full draft and theory freeze are the object under attack. Do not presume acceptance.
@@ -31,6 +33,8 @@ You may recommend exposition fixes, additional verification, or an approved robu
 ## 5. Prohibited changes
 
 Do not respond to every criticism by adding an extension. Do not bury fatal objections in a long list of minor comments.
+
+Do not treat a green CI run, successful reproduction of the author's numbers, or repeated execution of the same solver as independent equilibrium validation.
 
 ## 6. Mandatory attack classes
 
@@ -51,6 +55,15 @@ Use `checklists/REFEREE_ATTACK_CHECKLIST.md` and explicitly test at least:
 - wrong-journal / insufficient-contribution attack;
 - exposition/claim-inflation attack.
 
+For sequential/game-theoretic models, additionally:
+
+- apply `checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md`;
+- select at least one material upstream deviation/off-path history and reconstruct the downstream allocation/payoff from primitives without calling the manuscript's candidate equilibrium solver;
+- deliberately search for a large finite deviation that exits the regular/interior branch;
+- inspect every place where code returns `None`, NaN, invalid, exception, or nonconvergence and verify that no such outcome is treated as an unprofitable deviation;
+- challenge pure-strategy continuation existence and multiplicity where the model permits discontinuous active-set/order/participation changes;
+- verify that labels such as `global`, `whole-domain`, `whole-circle`, or `SPNE` match the actual economic domain audited.
+
 For every serious attack state:
 
 `Attack → Severity → Evidence → Can the paper answer now? → Required fix → Does the fix reopen theory?`
@@ -59,9 +72,13 @@ For every serious attack state:
 
 Referee attacks must cite exact model assumptions, manuscript passages, prior papers, or verification failures. Avoid generic complaints with no target.
 
+For equilibrium attacks, reproducing the manuscript's reported equilibrium path is not enough. The audit must distinguish on-path numerical correctness from off-path continuation validity.
+
 ## 8. Verification protocol
 
 Re-run key symbolic and numerical gates where attacks concern mathematics. Re-open closest papers where attacks concern novelty. Check source evidence for institutional attacks.
+
+At least one high-stakes mathematical attack should use an implementation or direct-payoff reconstruction that is logically independent of the code path used to generate the headline result, when feasible.
 
 ## 9. Kill tests
 
@@ -73,13 +90,17 @@ Classify each attack as:
 
 A `FATAL` attack on the core contribution blocks submission preparation. If the only fix changes the core mechanism, reopen the appropriate earlier stage rather than patching the manuscript.
 
+For an SPNE/sequential claim, a material off-path continuation that is `UNRESOLVED` or `NUMERICAL_FAILURE` is at least a major correctness blocker and is fatal to submission readiness until resolved.
+
 ## 10. Success criteria
 
 No unresolved fatal attack on the main contribution; major fixes are bounded and do not require uncontrolled theory drift.
 
+For sequential/game-theoretic papers, continuation completeness must independently survive the hostile audit, with no material solver failure silently excluded from deviation evaluation.
+
 ## 11. Failure criteria
 
-Return to an earlier stage if novelty, identification of the mechanism, mathematical validity, or institutional coherence remains fatally vulnerable.
+Return to an earlier stage if novelty, identification of the mechanism, mathematical validity, continuation completeness, or institutional coherence remains fatally vulnerable.
 
 ## 12. Required final output
 
@@ -88,11 +109,13 @@ Return to an earlier stage if novelty, identification of the mechanism, mathemat
 3. Referee B: assumptions/math report
 4. Referee C: welfare/institution report
 5. Referee D: journal/exposition report
-6. Consolidated severity table
-7. Required fixes
-8. Theory-change implications
-9. Resolved vs unresolved attacks
-10. Verdict and Stage 12 contract
+6. Independent equilibrium/continuation re-audit, where applicable
+7. Solver-failure/unresolved-continuation ledger, where applicable
+8. Consolidated severity table
+9. Required fixes
+10. Theory-change implications
+11. Resolved vs unresolved attacks
+12. Verdict and Stage 12 contract
 
 ## 13. Final verdict
 
