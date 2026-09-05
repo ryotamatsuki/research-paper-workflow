@@ -103,6 +103,12 @@ Reusable checklists live under [`checklists/`](checklists/):
 
 Verification is method-dependent. A non-applicable check may be skipped only with a recorded reason; it cannot be used to bypass a substantive project gate.
 
+## Worked examples
+
+Worked research-decision trails live under [`examples/`](examples/). They are examples, not canonical rules, and preserve rejected branches as well as surviving ideas.
+
+- [`retail-service-infrastructure`](examples/retail-service-infrastructure/) — a worked case showing how a legacy retail-channel question was repeatedly killed and reformulated through service spillovers, contract design, installed-base dynamics, and relationship-specific service capability. Current documented status: `CONDITIONAL GO`, before canonical Stage 7.5.
+
 ## Recommended workflow
 
 1. Start at Stage 0 unless a prior project has already produced a verified input for a later stage.
@@ -128,6 +134,8 @@ For a research project:
 3. preserve the project's Stage reports, decision log, sources, calculations, and verification artifacts in the project's own research repository;
 4. create the production paper repository at Stage 9 after Stage 7.5 approval and Stage 8 theory freeze.
 
+The worked example is a reference decision trail and should not be copied as a model or project state.
+
 ## Repository structure
 
 ```text
@@ -148,7 +156,7 @@ This repository is a research-development and research-termination system, not a
 
 ## License
 
-Except where otherwise noted, the contents of this repository are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0). See [`LICENSE`](LICENSE).
+Except where otherwise noted, the contents of this repository are licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). You may share and adapt the material for any purpose, including commercial use, provided that you give appropriate credit, link to the license, and indicate if changes were made. See [`LICENSE`](LICENSE) for details.
 
 Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
