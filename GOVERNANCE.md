@@ -1,6 +1,6 @@
 # Governance
 
-Version: v1.2-candidate
+Version: v1.2
 
 ## 1. Purpose
 

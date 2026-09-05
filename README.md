@@ -23,9 +23,9 @@ The hierarchy is `GOVERNANCE.md` → canonical pipeline → stage templates → 
 
 The stable `v1.1` refinement strengthened the distinction between **component overlap** and **whole-game absorption** and recognized economically substantive **generalization/unification** as a contribution route.
 
-The current `v1.2-candidate` refinement adds an **equilibrium-continuation safety gate** for sequential/game-theoretic projects after a production-paper audit exposed a failure mode in which a regular interior downstream formula was reused off path and solver `None` outcomes silently removed economically relevant deviations.
+The `v1.2` refinement adds an **equilibrium-continuation safety gate** for sequential/game-theoretic projects after a production-paper audit exposed a failure mode in which a regular interior downstream formula was reused off path and solver `None` outcomes silently removed economically relevant deviations.
 
-The v1.2-candidate standard requires:
+The v1.2 standard requires:
 
 - complete strategy/consumer-choice domains to be explicit;
 - downstream subgames to be re-solved after material upstream deviations;
@@ -38,7 +38,7 @@ The v1.2-candidate standard requires:
 
 The new canonical checklist is [`checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md`](checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md).
 
-Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), this is a **minor-version candidate** because it strengthens verification inside existing Stages without changing Stage numbering, verdict semantics, or routing. Stable published version remains `v1.1` until integration/readiness review and release are completed.
+Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), this is the **minor release `v1.2`** because it strengthens verification inside existing Stages without changing Stage numbering, verdict semantics, or routing.
 
 ## Integration/readiness audits
 
@@ -162,8 +162,6 @@ Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 ## Status
 
-Stable published release: **`v1.1`**.
+Stable published release: **`v1.2`**.
 
-Current unreleased canonical refinement branch: **`v1.2-candidate`** — equilibrium-continuation safety hardening.
-
-Historical releases remain immutable. See GitHub Releases for published release records.
+Historical releases `v1.0` and `v1.1` remain immutable. See GitHub Releases for published release records.
