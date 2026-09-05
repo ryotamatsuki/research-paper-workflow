@@ -17,22 +17,28 @@ The workflow is intentionally stage-gated. A project is not assumed to deserve a
 
 The hierarchy is `GOVERNANCE.md` → canonical pipeline → stage templates → checklists → examples. Release/audit documents under `docs/` record version/readiness state but do not override this hierarchy.
 
-## Stable release and v1.1 refinement
+## Stable release and current refinement
 
 `v1.0` is the first stable historical release and remains immutable at its published tag.
 
-The v1.1 refinement strengthens the distinction between **component overlap** and **whole-game absorption** for strategic/game-theoretic projects and explicitly recognizes economically substantive **generalization/unification** as a possible contribution route.
+The stable `v1.1` refinement strengthened the distinction between **component overlap** and **whole-game absorption** and recognized economically substantive **generalization/unification** as a contribution route.
 
-The refined standard requires:
+The current `v1.2-candidate` refinement adds an **equilibrium-continuation safety gate** for sequential/game-theoretic projects after a production-paper audit exposed a failure mode in which a regular interior downstream formula was reused off path and solver `None` outcomes silently removed economically relevant deviations.
 
-- whole-game comparison of players, objectives, strategy sets, timing, allocation, and strategic feedbacks before declaring absorption;
-- no novelty claim based only on “nobody combined these ingredients”;
-- nested-benchmark recovery for generalization/unification claims;
-- at least one full-model strategic or welfare result unavailable in the nested benchmarks alone.
+The v1.2-candidate standard requires:
 
-See [`docs/NOVELTY_GATE_CORRECTION_2026-09-02.md`](docs/NOVELTY_GATE_CORRECTION_2026-09-02.md).
+- complete strategy/consumer-choice domains to be explicit;
+- downstream subgames to be re-solved after material upstream deviations;
+- FOC/SOC/interiority checks to be distinguished from full-strategy Nash verification;
+- solver failures to fail closed as `UNRESOLVED` rather than count as unprofitable deviations;
+- active sets, corners, ordering/participation changes, multiplicity, and possible pure-equilibrium nonexistence to be audited when relevant;
+- at least one independent direct-payoff/allocation reconstruction for high-stakes sequential equilibrium claims when feasible;
+- Stage 11 hostile review to include an implementation-independent continuation attack rather than only rerunning the production solver;
+- equilibrium counterexamples to become permanent regression tests.
 
-Under the revised [`VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), this is a **v1.1 minor release** because Stage structure, canonical verdict semantics, and routing remain unchanged.
+The new canonical checklist is [`checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md`](checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md).
+
+Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), this is a **minor-version candidate** because it strengthens verification inside existing Stages without changing Stage numbering, verdict semantics, or routing. Stable published version remains `v1.1` until integration/readiness review and release are completed.
 
 ## Integration/readiness audits
 
@@ -53,9 +59,9 @@ The v1.1 refinement passed a fresh integration/readiness audit:
 
 The current versioning rule is:
 
-- **PATCH (`v1.0.1`)** — typo, link, metadata, and non-substantive clarification fixes;
-- **MINOR (`v1.1`)** — criteria/check/verification additions or refinements that preserve Stage structure, canonical verdict semantics, and routing;
-- **MAJOR (`v2.0`)** — Stage addition/removal/merger, verdict-semantic changes, routing changes, or incompatible workflow-architecture changes.
+- **PATCH** — typo, link, metadata, and non-substantive clarification fixes;
+- **MINOR** — criteria/check/verification additions or refinements that preserve Stage structure, canonical verdict semantics, and routing;
+- **MAJOR** — Stage addition/removal/merger, verdict-semantic changes, routing changes, or incompatible workflow-architecture changes.
 
 See [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md) for the full compatibility test.
 
@@ -91,16 +97,11 @@ Reusable checklists live under [`checklists/`](checklists/):
 - [`NOVELTY_KILL_CHECKLIST.md`](checklists/NOVELTY_KILL_CHECKLIST.md)
 - [`SYMBOLIC_VERIFICATION_CHECKLIST.md`](checklists/SYMBOLIC_VERIFICATION_CHECKLIST.md)
 - [`NUMERICAL_VERIFICATION_CHECKLIST.md`](checklists/NUMERICAL_VERIFICATION_CHECKLIST.md)
+- [`EQUILIBRIUM_CONTINUATION_CHECKLIST.md`](checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md)
 - [`REFEREE_ATTACK_CHECKLIST.md`](checklists/REFEREE_ATTACK_CHECKLIST.md)
 - [`SUBMISSION_CHECKLIST.md`](checklists/SUBMISSION_CHECKLIST.md)
 
 Verification is method-dependent. A non-applicable check may be skipped only with a recorded reason; it cannot be used to bypass a substantive project gate.
-
-## Worked examples
-
-Worked research-decision trails live under [`examples/`](examples/). They are examples, not canonical rules, and preserve rejected branches as well as surviving ideas.
-
-- [`retail-service-infrastructure`](examples/retail-service-infrastructure/) — a worked case showing how a legacy retail-channel question was repeatedly killed and reformulated through service spillovers, contract design, installed-base dynamics, and relationship-specific service capability. Current documented status: `CONDITIONAL GO`, before canonical Stage 7.5.
 
 ## Recommended workflow
 
@@ -111,9 +112,10 @@ Worked research-decision trails live under [`examples/`](examples/). They are ex
 5. If a minimal theory model has exactly one diagnosed repairable deficiency, use Stage 5; a Stage 4 `NO-GO` does not itself authorize hardening.
 6. Re-kill actual novelty after results are known in Stage 6, updating the Stage 2 literature ledger rather than blindly starting over.
 7. For strategic/game-theoretic work, distinguish component overlap from whole-game absorption and use nested benchmarks when the contribution is a generalization/unification.
-8. If a later stage invalidates an earlier result, return to the earliest affected stage and treat dependent downstream outputs as stale.
-9. Do not initialize a full-paper production repository until Stage 7.5 approves full-paper investment and Stage 8 freezes the theory.
-10. Preserve rejected branches and negative results as part of the research provenance.
+8. For sequential games, apply the equilibrium-continuation checklist before Stage 4 `GO`, repeat the independent hostile continuation attack at Stage 11, and fail closed on unresolved solver outcomes.
+9. If a later stage invalidates an earlier result, return to the earliest affected stage and treat dependent downstream outputs as stale.
+10. Do not initialize a full-paper production repository until Stage 7.5 approves full-paper investment and Stage 8 freezes the theory.
+11. Preserve rejected branches, counterexamples, and negative results as part of the research provenance.
 
 ## Recommended reuse mode
 
@@ -125,8 +127,6 @@ For a research project:
 2. use/copy the relevant Stage template as needed;
 3. preserve the project's Stage reports, decision log, sources, calculations, and verification artifacts in the project's own research repository;
 4. create the production paper repository at Stage 9 after Stage 7.5 approval and Stage 8 theory freeze.
-
-The worked example is a reference decision trail and should not be copied as a model or project state.
 
 ## Repository structure
 
@@ -148,7 +148,7 @@ This repository is a research-development and research-termination system, not a
 
 ## License
 
-Except where otherwise noted, the contents of this repository are licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). You may share and adapt the material for any purpose, including commercial use, provided that you give appropriate credit, link to the license, and indicate if changes were made. See [`LICENSE`](LICENSE) for details.
+Except where otherwise noted, the contents of this repository are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0). See [`LICENSE`](LICENSE).
 
 Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
@@ -156,4 +156,6 @@ Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 Stable published release: **`v1.1`**.
 
-Historical release `v1.0` remains immutable. See GitHub Releases for the published release record.
+Current unreleased canonical refinement branch: **`v1.2-candidate`** — equilibrium-continuation safety hardening.
+
+Historical releases remain immutable. See GitHub Releases for published release records.
