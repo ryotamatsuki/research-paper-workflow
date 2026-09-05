@@ -1,0 +1,89 @@
+name: Publish v1.2 after readiness audit
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  publish-v1-2:
+    if: github.repository == 'ryotamatsuki/research-paper-workflow' && contains(github.event.head_commit.message, 'Complete v1.2 integration audit')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out reviewed state
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify readiness and release namespace
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -Fq '**`WORKFLOW v1.2 READY`**' docs/WORKFLOW_V1_2_INTEGRATION_AUDIT.md
+          grep -Fq '[x] **`WORKFLOW v1.2 READY`**' docs/WORKFLOW_V1_2_READINESS_CHECKLIST.md
+
+          if git ls-remote --exit-code --tags origin refs/tags/v1.2 >/dev/null 2>&1; then
+            echo 'v1.2 tag already exists; refusing to overwrite an immutable release tag.' >&2
+            exit 1
+          fi
+
+      - name: Finalize release metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+
+          gov = Path('GOVERNANCE.md')
+          text = gov.read_text()
+          if 'Version: v1.2-candidate' not in text:
+              raise SystemExit('Expected v1.2-candidate governance marker not found')
+          gov.write_text(text.replace('Version: v1.2-candidate', 'Version: v1.2', 1))
+
+          pipe = Path('THEORY_PAPER_RESEARCH_PIPELINE.md')
+          text = pipe.read_text()
+          if 'Version: v1.1' not in text:
+              raise SystemExit('Expected v1.1 pipeline marker not found')
+          pipe.write_text(text.replace('Version: v1.1', 'Version: v1.2', 1))
+
+          readme = Path('README.md')
+          text = readme.read_text()
+          text = text.replace('The current `v1.2-candidate` refinement adds', 'The `v1.2` refinement adds', 1)
+          text = text.replace('The v1.2-candidate standard requires:', 'The v1.2 standard requires:', 1)
+          text = text.replace('Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), this is a **minor-version candidate** because it strengthens verification inside existing Stages without changing Stage numbering, verdict semantics, or routing. Stable published version remains `v1.1` until integration/readiness review and release are completed.', 'Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), this is the **minor release `v1.2`** because it strengthens verification inside existing Stages without changing Stage numbering, verdict semantics, or routing.', 1)
+          old_status = "Stable published release: **`v1.1`**.\n\nCurrent unreleased canonical refinement branch: **`v1.2-candidate`** — equilibrium-continuation safety hardening.\n\nHistorical releases remain immutable. See GitHub Releases for published release records."
+          new_status = "Stable published release: **`v1.2`**.\n\nHistorical releases `v1.0` and `v1.1` remain immutable. See GitHub Releases for published release records."
+          if old_status not in text:
+              raise SystemExit('Expected README v1.2-candidate status marker not found')
+          readme.write_text(text.replace(old_status, new_status, 1))
+
+          policy = Path('docs/VERSIONING_POLICY.md')
+          text = policy.read_text()
+          marker = 'The 2026-09-02 novelty-gate refinement preserves Stage structure, canonical verdict semantics, and routing while adding more precise whole-game absorption and generalization/unification checks. After fresh integration/readiness audit, it was released as the **minor version `v1.1`**.'
+          addition = marker + '\n\nThe 2026-09-05 equilibrium-continuation safety refinement preserves the same Stage structure, verdict semantics, and routing while adding fail-closed off-path continuation verification. After integration/readiness audit, it was released as the **minor version `v1.2`**.'
+          if marker not in text:
+              raise SystemExit('Expected v1.1 version-policy marker not found')
+          policy.write_text(text.replace(marker, addition, 1))
+          PY
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add GOVERNANCE.md THEORY_PAPER_RESEARCH_PIPELINE.md README.md docs/VERSIONING_POLICY.md
+          git commit -m 'Finalize v1.2 release metadata'
+          git push origin HEAD:main
+          echo "RELEASE_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+
+      - name: Publish v1.2 tag and GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release create v1.2 \
+            --target "$RELEASE_SHA" \
+            --title 'research-paper-workflow v1.2' \
+            --notes-file docs/V1_2_RELEASE_NOTES.md
