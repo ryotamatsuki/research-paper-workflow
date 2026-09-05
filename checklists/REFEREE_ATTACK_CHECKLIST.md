@@ -39,6 +39,7 @@ Resolved?: YES / NO
 - [ ] Functional-form dependence challenged
 - [ ] Participation/outside option challenged
 - [ ] Institutional primitive challenged
+- [ ] Consumer/agent choice set is explicit rather than inferred from a local demand formula
 
 ## Mathematical attacks
 
@@ -50,6 +51,15 @@ Resolved?: YES / NO
 - [ ] Limiting case produces contradiction
 - [ ] Numerical pattern presented as proof
 - [ ] Welfare identity/accounting error
+- [ ] Large finite unilateral deviation outside the regular/local branch
+- [ ] Upstream deviation followed by full re-solution of the downstream subgame
+- [ ] Off-path active-set/order/participation/regime change
+- [ ] Pure-strategy continuation nonexistence or multiplicity
+- [ ] Solver `None`/NaN/nonconvergence/invalid branch is being discarded rather than classified `UNRESOLVED`
+- [ ] Independent direct-payoff/allocation reconstruction disagrees with the candidate solver
+- [ ] Claimed `whole-domain`/`global`/`SPNE` verification actually conditions on survival of an interior/regular branch
+
+For sequential games, apply `EQUILIBRIUM_CONTINUATION_CHECKLIST.md`. At least one hostile referee should reconstruct a material payoff/allocation from primitives without relying on the paper's equilibrium solver.
 
 ## Robustness attacks
 
@@ -92,4 +102,6 @@ Resolved?: YES / NO
 - [ ] No unresolved `FATAL` attack on the core contribution
 - [ ] Every `MAJOR BUT FIXABLE` attack has a bounded fix
 - [ ] Any fix that changes theory is routed back through theory-change control
+- [ ] For SPNE/sequential claims, no material off-path continuation remains `UNRESOLVED` or `NUMERICAL_FAILURE`
+- [ ] Solver failures have not been silently filtered from deviation searches
 - [ ] Minor comments are not used to obscure fatal issues
