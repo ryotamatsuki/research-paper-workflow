@@ -40,19 +40,29 @@ Record at minimum:
 2. contribution statement;
 3. players and objectives;
 4. timing and information;
-5. utility/demand;
-6. technology/costs;
-7. contracts/transfers;
-8. parameter restrictions;
-9. equilibrium concept;
-10. baseline equilibrium objects;
-11. main propositions and exact conditions;
-12. welfare propositions;
-13. proof/verification status;
-14. approved robustness scope;
-15. empirical/institutional interpretation;
-16. closest-paper distinction;
-17. claims that are explicitly not made.
+5. complete strategy sets and consumer/agent choice sets;
+6. utility/demand;
+7. technology/costs;
+8. contracts/transfers;
+9. parameter restrictions;
+10. equilibrium concept;
+11. baseline equilibrium objects;
+12. main propositions and exact conditions;
+13. welfare propositions;
+14. proof/verification status;
+15. approved robustness scope;
+16. empirical/institutional interpretation;
+17. closest-paper distinction;
+18. claims that are explicitly not made.
+
+For sequential/game-theoretic models, additionally freeze:
+
+19. off-path history classes relevant to unilateral deviations;
+20. continuation-equilibrium status for those classes;
+21. active-set/corner/order/participation handling;
+22. solver outcome taxonomy and unresolved/failure count;
+23. multiplicity/nonexistence and continuation-selection assumptions, if any;
+24. independent direct-payoff/allocation verification artifact used for high-stakes equilibrium claims.
 
 For each proposition classify proof status as `PROVED`, `CONDITIONAL`, `NUMERICALLY SUPPORTED ONLY`, or `REJECTED`.
 
@@ -60,9 +70,13 @@ For each proposition classify proof status as `PROVED`, `CONDITIONAL`, `NUMERICA
 
 Freeze references to the verified literature record and verification artifacts. Do not freeze an unverified conjecture as a theorem.
 
+For a sequential model claiming SPNE/subgame perfection, apply `checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md` and retain its audit record as freeze evidence.
+
 ## 8. Verification protocol
 
 Cross-check the freeze against Stage 4–7 outputs and symbolic verification. Confirm parameter restrictions and proposition statements exactly match the verified model.
+
+For sequential games, confirm that on-path calculations and off-path continuation certification are separate artifacts or separately auditable sections, and that no material solver failure was discarded from deviation searches.
 
 ## 9. Kill tests
 
@@ -70,6 +84,10 @@ Do not freeze if:
 
 - the model description differs from the verified equations;
 - a main proposition remains only numerically supported while presented as analytic;
+- a claimed SPNE/global equilibrium has a material `UNRESOLVED` or `NUMERICAL_FAILURE` off-path continuation;
+- FOCs/SOCs/interiority on a regular branch are being used as a substitute for full-strategy Nash verification;
+- solver failure, invalid active set, or branch violation has been interpreted as an unprofitable deviation;
+- the stated consumer/agent choice set is incomplete or differs from the allocation routine;
 - closest-paper positioning is unresolved;
 - the theory changed after Stage 7.5 without re-running the affected gate.
 
@@ -77,9 +95,11 @@ Do not freeze if:
 
 The frozen record must be sufficient for an independent researcher to know exactly what may be written and proved in the paper.
 
+For sequential games, it must also be sufficient to reconstruct how every material class of upstream deviation receives a valid downstream continuation under the claimed equilibrium concept.
+
 ## 11. Failure criteria
 
-Return to the affected earlier stage if any substantive inconsistency is found.
+Return to the affected earlier stage if any substantive inconsistency is found. Continuation incompleteness normally reopens Stage 4.
 
 ## 12. Required final output
 
@@ -88,11 +108,13 @@ Return to the affected earlier stage if any substantive inconsistency is found.
 3. Parameter-restriction register
 4. Welfare register
 5. Verification status table
-6. Approved robustness list
-7. Contribution/closest-paper statement
-8. Explicit exclusions
-9. Freeze identifier/date/SHA if applicable
-10. Theory change-control procedure
+6. Continuation-completeness register, where applicable
+7. Solver-failure/unresolved-continuation ledger, where applicable
+8. Approved robustness list
+9. Contribution/closest-paper statement
+10. Explicit exclusions
+11. Freeze identifier/date/SHA if applicable
+12. Theory change-control procedure
 
 ## 13. Final verdict
 
