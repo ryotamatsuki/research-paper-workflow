@@ -1,6 +1,6 @@
 # Governance
 
-Version: v1.1
+Version: v1.2-candidate
 
 ## 1. Purpose
 
@@ -14,7 +14,7 @@ The repository should function as a research operating system, not as an informa
 
 ### 2.1 Evidence before claims
 
-Do not state that a result, paper, journal requirement, institutional fact, or novelty claim has been verified unless the supporting source or computation has actually been checked.
+Do not state that a result, paper, journal requirement, institutional fact, novelty claim, or equilibrium has been verified unless the supporting source, proof, or computation has actually checked the claim at the scope asserted.
 
 When evidence is incomplete, mark the limitation explicitly.
 
@@ -33,6 +33,16 @@ A failed minimal model should not trigger uncontrolled feature accumulation. The
 ### 2.5 No prestige-driven distortion
 
 Target journals may affect exposition, robustness expectations, and presentation, but must not determine the substantive result before the research is solved.
+
+### 2.6 Equilibrium certification must fail closed
+
+For sequential/game-theoretic models, an on-path or regular-branch solution is not an SPNE certificate. Every economically relevant upstream deviation must be evaluated using a valid downstream continuation on the stated strategy/history domain.
+
+A solver outcome such as `None`, NaN, exception, nonconvergence, invalid active set, violated interiority, or branch failure means `UNRESOLVED` unless nonexistence has separately been proved. It must never be interpreted as evidence that a deviation is unprofitable.
+
+FOCs, SOCs, Hessians, positivity, and local interiority establish properties of a candidate/branch. They do not by themselves establish a global Nash equilibrium over unrestricted strategies.
+
+When a model's equilibrium concept requires off-path subgames, unresolved material continuations block Stage 4 `GO`, theory freeze, and any later SPNE/subgame-perfect claim.
 
 ---
 
@@ -78,6 +88,8 @@ Review should focus on:
 - whether gates can be bypassed unintentionally;
 - whether novelty standards are weakened;
 - whether mathematical verification is adequately required when applicable;
+- whether sequential models verify off-path continuation completeness rather than only an on-path/regular branch;
+- whether solver failures are fail-closed and auditable;
 - whether source requirements are realistic and explicit;
 - whether the workflow encourages unnecessary complexity;
 - whether failures and `NO-GO` outcomes remain legitimate outcomes.
@@ -137,11 +149,19 @@ When symbolic tools are applicable:
 - check feasibility and participation constraints;
 - inspect limiting and boundary cases;
 - distinguish numerical support from proof;
-- search for counterexamples to proposed global propositions.
+- search for counterexamples to proposed global propositions;
+- for sequential games, distinguish on-path equilibrium calculations from off-path continuation validity;
+- re-solve downstream subgames after material upstream deviations instead of extending an on-path formula beyond its validity domain;
+- treat active-set changes, corners, ordering changes, participation changes, and possible equilibrium nonexistence as economic cases, not solver errors to discard;
+- independently reconstruct payoffs/allocations from primitives for at least one high-stakes equilibrium claim when feasible.
+
+Sequential/game-theoretic projects must apply [`checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md`](checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md) whenever off-path continuations matter for the claimed equilibrium concept.
 
 ### 5.4 Numerical work
 
 Numerical grids and simulations are diagnostics unless the research design is explicitly computational. They may identify regions, counterexamples, or conjectures but must not be reported as analytic proofs.
+
+Solver failure rates and unresolved continuation counts are part of the evidence and may not be silently filtered away.
 
 ### 5.5 Evidence maturity and provenance
 
@@ -198,6 +218,7 @@ Examples:
 
 - newly discovered prior art returns to Stage 2 or Stage 6 depending on whether it concerns the pre-model gap or an actual derived result;
 - a false proposition or equilibrium error returns to Stage 4, or Stage 5 if the issue is caused by an authorized hardening modification;
+- an off-path continuation failure, hidden active-set failure, or solver-failure-as-deviation-filter returns to Stage 4 unless it arose solely from a later authorized model modification;
 - a failed institutional/welfare premise returns to Stage 7 or earlier if the primitive itself changes;
 - a post-freeze theory change reopens Stage 8 change control and every affected earlier verification/novelty gate;
 - a Stage 11 fatal attack must be routed to the earliest stage capable of resolving it, not patched only in prose;
@@ -223,6 +244,8 @@ A theory freeze records at minimum:
 - proof/verification state;
 - closest-paper positioning;
 - approved robustness scope.
+
+For sequential/game-theoretic models, theory freeze additionally requires an explicit continuation-completeness record covering the strategy/history domain relevant to the claimed equilibrium concept, including unresolved solver outcomes and equilibrium multiplicity/nonexistence where encountered.
 
 ### 8.2 Submission freeze
 
@@ -252,6 +275,8 @@ Worked research projects should preserve a concise decision log containing:
 
 A useful example should show rejected branches as well as successful ones.
 
+Any counterexample that invalidates or materially narrows an equilibrium claim should be retained as a regression test or equivalent permanent verification artifact.
+
 ---
 
 ## 10. AI-assisted research
@@ -262,6 +287,7 @@ Project-specific work should independently validate:
 
 - citations and bibliographic facts;
 - equations and numerical results;
+- equilibrium claims at the full scope asserted, including off-path continuations where required;
 - claims about journal policies;
 - institutional facts;
 - final contribution/novelty statements.
