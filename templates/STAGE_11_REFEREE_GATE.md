@@ -6,35 +6,41 @@
 
 Act as multiple hostile referees and an editor. Try to reject `[WORKING_TITLE]` before external review does.
 
+Stage 11 is a late independent defense layer. It does not replace Stage 4A mathematical adversarial certification or Stage 7.5A generality/quantifier certification.
+
 ## 1. Project context
 
 - Topic: `[RESEARCH_TOPIC]`
 - Frozen theory: `[CANONICAL_MODEL]`
 - Core mechanism: `[CORE_MECHANISM]`
 - Main propositions: `[CURRENT_STAGE_RESULT]`
+- Stage-4A theorem certificates: `[STAGE_4A_CERTIFICATES]`
+- Stage-7.5A claim-scope ledger: `[STAGE_7_5A_CERTIFICATES]`
 - Closest papers: `[CLOSEST_PAPERS]`
 - Target journal: `[TARGET_JOURNAL]`
 - Repository/manuscript: `[SOURCE_REPOSITORY]`
 
 ## 2. Stage objective
 
-Identify fatal conceptual, mathematical, novelty, robustness, institutional, welfare, and journal-fit objections; require fixes only when they address a genuine vulnerability.
+Identify fatal conceptual, mathematical, novelty, robustness, institutional, welfare, journal-fit, and claim-scope objections; require fixes only when they address a genuine vulnerability.
 
-For sequential/game-theoretic papers, independently attack the completeness of downstream continuations rather than merely re-running the author's equilibrium solver.
+For sequential/game-theoretic papers, independently attack downstream continuation completeness rather than merely re-running the author's equilibrium solver.
+
+For broad theorem/generalization claims, independently attack admissible function classes and quantifiers rather than merely rereading the production proof.
 
 ## 3. Canonical inputs
 
-The current full draft and theory freeze are the object under attack. Do not presume acceptance.
+The current full draft, theory freeze, Stage-4A certificates, and Stage-7.5A claim-scope ledger are the objects under attack. Do not presume acceptance.
 
 ## 4. Allowed changes
 
-You may recommend exposition fixes, additional verification, or an approved robustness exercise. Any proposed substantive theory change must trigger formal theory-change control and reopening of affected stages.
+You may recommend exposition fixes, additional verification, or an approved robustness exercise. Any substantive theory change must trigger formal theory-change control and reopening of affected stages.
 
 ## 5. Prohibited changes
 
-Do not respond to every criticism by adding an extension. Do not bury fatal objections in a long list of minor comments.
+Do not respond to every criticism by adding an extension. Do not bury fatal objections in minor comments.
 
-Do not treat a green CI run, successful reproduction of the author's numbers, or repeated execution of the same solver as independent equilibrium validation.
+Do not treat green CI, reproduction of the author's numbers, repeated execution of the same solver, or agreement of the same derivation path as independent equilibrium/theorem validation.
 
 ## 6. Mandatory attack classes
 
@@ -46,39 +52,56 @@ Use `checklists/REFEREE_ATTACK_CHECKLIST.md` and explicitly test at least:
 - no-new-mechanism attack;
 - alternative-demand attack;
 - alternative-contract/information attack;
-- participation/corner/boundary attack;
+- participation/corner/boundary/regime-switch attack;
 - welfare-is-mechanical attack;
 - institution-too-specific attack;
 - external-validity/generality attack;
 - numerical-not-proof attack;
 - proof/notation inconsistency attack;
 - wrong-journal / insufficient-contribution attack;
-- exposition/claim-inflation attack.
+- exposition/claim-inflation attack;
+- theorem-quantifier inflation relative to Stage 7.5A;
+- functional-form generality inflation;
+- planner/benchmark terminology drift;
+- global/SPNE claim drift relative to Stage 4A.
 
-For sequential/game-theoretic models, additionally:
+### Independent mathematical regression attack
+
+For sequential/game-theoretic models:
 
 - apply `checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md`;
-- select at least one material upstream deviation/off-path history and reconstruct the downstream allocation/payoff from primitives without calling the manuscript's candidate equilibrium solver;
+- select at least one material upstream deviation/off-path history and reconstruct downstream allocation/payoff from primitives without calling the manuscript's candidate equilibrium solver;
 - deliberately search for a large finite deviation that exits the regular/interior branch;
-- inspect every place where code returns `None`, NaN, invalid, exception, or nonconvergence and verify that no such outcome is treated as an unprofitable deviation;
-- challenge pure-strategy continuation existence and multiplicity where the model permits discontinuous active-set/order/participation changes;
-- verify that labels such as `global`, `whole-domain`, `whole-circle`, or `SPNE` match the actual economic domain audited.
+- inspect every `None`, NaN, invalid, exception, or nonconvergence outcome and verify none is treated as an unprofitable deviation;
+- challenge pure-strategy continuation existence and multiplicity where active-set/order/participation changes permit them;
+- verify labels such as `global`, `whole-domain`, or `SPNE` match the economic domain certified at Stage 4A.
+
+For broad theorem/function-class claims:
+
+- apply `checklists/THEOREM_CERTIFICATION_CHECKLIST.md` to at least one headline claim chosen adversarially;
+- attempt at least one admissible nonbaseline function or parameter configuration designed to reverse the claimed sign, curvature, ordering, uniqueness, or threshold result;
+- verify `for all`, `generic`, `unique`, `strict`, `global`, and similar words match the Stage-7.5A certificate;
+- reconstruct planner choice sets for at least one high-stakes `first best`/`second best`/constrained benchmark comparison.
 
 For every serious attack state:
 
-`Attack → Severity → Evidence → Can the paper answer now? → Required fix → Does the fix reopen theory?`
+`Attack → Severity → Evidence → Can the paper answer now? → Required fix → Earliest affected stage → Certification regression?`
 
 ## 7. Evidence requirements
 
-Referee attacks must cite exact model assumptions, manuscript passages, prior papers, or verification failures. Avoid generic complaints with no target.
+Referee attacks must cite exact model assumptions, manuscript passages, prior papers, theorem certificates, or verification failures. Avoid generic complaints.
 
-For equilibrium attacks, reproducing the manuscript's reported equilibrium path is not enough. The audit must distinguish on-path numerical correctness from off-path continuation validity.
+For equilibrium attacks, reproducing the manuscript's reported equilibrium path is insufficient. Distinguish on-path numerical correctness from off-path/global validity.
+
+For theorem-scope attacks, distinguish a false theorem from correct mathematics paired with inflated prose.
 
 ## 8. Verification protocol
 
-Re-run key symbolic and numerical gates where attacks concern mathematics. Re-open closest papers where attacks concern novelty. Check source evidence for institutional attacks.
+Re-run key symbolic/numerical gates where attacks concern mathematics. Re-open closest papers where attacks concern novelty. Check primary sources where attacks concern institutions.
 
-At least one high-stakes mathematical attack should use an implementation or direct-payoff reconstruction that is logically independent of the code path used to generate the headline result, when feasible.
+At least one high-stakes mathematical attack should use an implementation or direct-payoff reconstruction logically independent of the code path used to generate the headline result, where feasible.
+
+At least one high-stakes generality attack should search outside the baseline functional form when the manuscript makes a broader claim.
 
 ## 9. Kill tests
 
@@ -88,36 +111,54 @@ Classify each attack as:
 - `MAJOR BUT FIXABLE`
 - `MINOR`
 
-A `FATAL` attack on the core contribution blocks submission preparation. If the only fix changes the core mechanism, reopen the appropriate earlier stage rather than patching the manuscript.
+A `FATAL` attack blocks submission preparation. If the only fix changes the mechanism or theorem, reopen the appropriate earlier stage rather than patching prose.
 
-For an SPNE/sequential claim, a material off-path continuation that is `UNRESOLVED` or `NUMERICAL_FAILURE` is at least a major correctness blocker and is fatal to submission readiness until resolved.
+For an SPNE/global claim, a material `UNRESOLVED` or `NUMERICAL_FAILURE` continuation is at least a major correctness blocker.
 
-## 10. Success criteria
+For a broad theorem claim, one admissible counterexample inside the claimed domain is fatal to that theorem statement until scope is corrected or the theory is repaired.
+
+## 10. Certification-regression rule
+
+If Stage 11 discovers a flaw that Stage 4A or Stage 7.5A should have detected, label it `CERTIFICATION REGRESSION` and preserve it as workflow evidence.
+
+Typical examples:
+
+- profitable boundary/corner deviation missed at Stage 4A;
+- off-path solver failure silently filtered after certification;
+- broad `C^2`/convex/concave claim contradicted by an admissible function;
+- strict comparative static stated beyond proved restrictions;
+- constrained benchmark mislabeled `first best` despite Stage 7.5A.
+
+The paper must roll back to the earliest invalidated stage. Do not treat late discovery as merely a Stage-11 patch.
+
+## 11. Success criteria
 
 No unresolved fatal attack on the main contribution; major fixes are bounded and do not require uncontrolled theory drift.
 
-For sequential/game-theoretic papers, continuation completeness must independently survive the hostile audit, with no material solver failure silently excluded from deviation evaluation.
+Continuation/globality and theorem scope must independently survive the hostile audit.
 
-## 11. Failure criteria
+## 12. Failure criteria
 
-Return to an earlier stage if novelty, identification of the mechanism, mathematical validity, continuation completeness, or institutional coherence remains fatally vulnerable.
+Return to the earliest stage if novelty, mechanism identification, mathematical validity, continuation completeness, theorem quantifiers, benchmark definitions, or institutional coherence remains fatally vulnerable.
 
-## 12. Required final output
+## 13. Required final output
 
 1. Executive referee-gate verdict
 2. Referee A: novelty/mechanism report
-3. Referee B: assumptions/math report
-4. Referee C: welfare/institution report
-5. Referee D: journal/exposition report
+3. Referee B: assumptions/math/globality report
+4. Referee C: welfare/institution/benchmark report
+5. Referee D: journal/exposition/claim-scope report
 6. Independent equilibrium/continuation re-audit, where applicable
-7. Solver-failure/unresolved-continuation ledger, where applicable
-8. Consolidated severity table
-9. Required fixes
-10. Theory-change implications
-11. Resolved vs unresolved attacks
-12. Verdict and Stage 12 contract
+7. Independent quantifier/function-class re-audit, where applicable
+8. Solver-failure/unresolved-continuation ledger, where applicable
+9. Certification-regression ledger
+10. Consolidated severity table
+11. Required fixes and earliest affected stage
+12. Theory-change implications
+13. Resolved vs unresolved attacks
+14. Verdict and Stage-12 contract
 
-## 13. Final verdict
+## 14. Final verdict
 
 Choose one:
 
@@ -125,6 +166,6 @@ Choose one:
 - `CONDITIONAL GO` — bounded major fixes
 - `REOPEN EARLIER STAGE / NO-GO`
 
-## 14. Next-stage contract
+## 15. Next-stage contract
 
-Stage 12 selects a journal for the actual surviving contribution. It must not reshape the result to fit a preferred journal.
+Stage 12 selects a journal for the actual surviving certified contribution. It must not reshape the result or enlarge theorem scope to fit a preferred journal.
