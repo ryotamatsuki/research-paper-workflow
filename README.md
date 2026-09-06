@@ -25,6 +25,19 @@ The stable `v1.1` refinement strengthened the distinction between **component ov
 
 The stable `v1.2` refinement added an **equilibrium-continuation safety gate** for sequential/game-theoretic projects after a production-paper audit exposed a failure mode in which a regular interior downstream formula was reused off path and solver `None` outcomes silently removed economically relevant deviations.
 
+The v1.2 standard requires:
+
+- complete strategy/consumer-choice domains to be explicit;
+- downstream subgames to be re-solved after material upstream deviations;
+- FOC/SOC/interiority checks to be distinguished from full-strategy Nash verification;
+- solver failures to fail closed as `UNRESOLVED` rather than count as unprofitable deviations;
+- active sets, corners, ordering/participation changes, multiplicity, and possible pure-equilibrium nonexistence to be audited when relevant;
+- at least one independent direct-payoff/allocation reconstruction for high-stakes sequential equilibrium claims when feasible;
+- Stage 11 hostile review to include an implementation-independent continuation attack rather than only rerunning the production solver;
+- equilibrium counterexamples to become permanent regression tests.
+
+The v1.2 canonical checklist remains [`checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md`](checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md).
+
 The current `v1.3-candidate` refinement adds a **result-to-exposition and figure/table architecture lifecycle** after a production-paper submission audit exposed avoidable late-stage rework: a headline sign-reversal result was mathematically verified and submission-ready, but its most informative figure was only identified after Stage 14, forcing a bounded Stage-13 reintegration and Stage-14 re-QA. The re-QA then caught a vector-font embedding defect that should have been part of the normal artwork gate.
 
 The v1.3-candidate standard requires:
@@ -37,7 +50,7 @@ The v1.3-candidate standard requires:
 - Stage 14 to verify regeneration, numerical integrity, current artwork rules, font embedding where required, raster resolution, grayscale/accessibility, source-package completeness, and page-by-page legibility;
 - a central missing exposition vehicle discovered at Stage 14 to route back to Stage 10/13 rather than trigger an unverified last-minute visual.
 
-The new canonical checklist is [`checklists/FIGURE_TABLE_CHECKLIST.md`](checklists/FIGURE_TABLE_CHECKLIST.md).
+The new v1.3 canonical checklist is [`checklists/FIGURE_TABLE_CHECKLIST.md`](checklists/FIGURE_TABLE_CHECKLIST.md).
 
 Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), this is a **minor-version candidate (`v1.3`)** because it strengthens checks and manuscript-construction discipline inside existing Stages without changing Stage numbering, canonical verdict semantics, or routing. Stable published version remains `v1.2` until integration/readiness review and release are completed.
 
