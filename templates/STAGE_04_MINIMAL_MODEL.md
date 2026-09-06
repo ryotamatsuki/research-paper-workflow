@@ -6,6 +6,8 @@
 
 Act as a skeptical theorist and symbolic-verification engineer. The goal is not to prove the desired proposition but to determine what the smallest defensible model actually implies.
 
+Stage 4 constructs and verifies the candidate theory. It does **not** independently certify the construction path; a Stage-4 `GO` must proceed to Stage 4A before novelty re-kill.
+
 ## 1. Project context
 
 - Topic: `[RESEARCH_TOPIC]`
@@ -20,9 +22,9 @@ Act as a skeptical theorist and symbolic-verification engineer. The goal is not 
 
 ## 2. Stage objective
 
-Solve the minimal model completely, identify the economically meaningful parameter region, test candidate propositions, derive welfare, and decide whether the mechanism or generalization survives.
+Solve the minimal model completely, identify the economically meaningful parameter region, test candidate propositions, derive welfare, and decide whether the mechanism or generalization survives construction-level verification.
 
-For a generalization/unification route, the stage must also determine what the full strategic architecture changes relative to the nested benchmark games.
+For a generalization/unification route, determine what the full strategic architecture changes relative to the nested benchmark games.
 
 For sequential games, “solve completely” includes the off-path continuation subgames required to evaluate upstream deviations under the stated equilibrium concept.
 
@@ -63,15 +65,16 @@ Only algebraically necessary normalization or notation cleanup. Any substantive 
 14. Any discovered equilibrium counterexample must be retained as a permanent regression test or equivalent verification artifact.
 15. Identify sign-switch or threshold conditions when a derivative is ambiguous.
 16. Decompose the mechanism into economic channels rather than reporting only derivatives.
+17. Draft a preliminary theorem-certificate record for every headline claim: exact statement, quantifiers, domains, assumptions used, local/branch/global status, and proof/evidence maturity. Stage 4A will independently certify these records using `checklists/THEOREM_CERTIFICATION_CHECKLIST.md`.
 
 ### Additional tasks for generalization / unification routes
 
-17. Define the minimum nested benchmark games by fixing/removing one strategic component at a time.
-18. Solve or recover enough of each benchmark equilibrium to verify the claimed nesting.
-19. Show explicitly whether the full model changes the best-response/strategic-feedback network.
-20. Compare the full model and benchmarks for the headline object: equilibrium ordering, strategic complement/substitute relation, threshold, sign reversal, market-creation/displacement composition, welfare wedge, or conditions-for-effectiveness region.
-21. Identify at least one full-model result that is not available as an immediate corollary of any benchmark alone.
-22. If the full model only reproduces the union of known benchmark results, downgrade or kill the claimed generalization contribution.
+18. Define the minimum nested benchmark games by fixing/removing one strategic component at a time.
+19. Solve or recover enough of each benchmark equilibrium to verify the claimed nesting.
+20. Show explicitly whether the full model changes the best-response/strategic-feedback network.
+21. Compare the full model and benchmarks for the headline object: equilibrium ordering, strategic complement/substitute relation, threshold, sign reversal, market-creation/displacement composition, welfare wedge, or conditions-for-effectiveness region.
+22. Identify at least one full-model result that is not available as an immediate corollary of any benchmark alone.
+23. If the full model only reproduces the union of known benchmark results, downgrade or kill the claimed generalization contribution.
 
 ## 7. Evidence requirements
 
@@ -79,7 +82,7 @@ Every reported closed form must be reproducibly derived. Any institutional inter
 
 A claim that the full strategic architecture adds theoretical value must be supported by explicit benchmark comparison, not by the absence of an exact prior paper title.
 
-For sequential games, the equilibrium evidence must separately document on-path calculations and off-path continuation completeness. A solver's inability to evaluate a history is evidence of incompleteness, not evidence against the deviation.
+For sequential games, equilibrium evidence must separately document on-path calculations and off-path continuation completeness. A solver's inability to evaluate a history is evidence of incompleteness, not evidence against the deviation.
 
 ## 8. Verification protocol
 
@@ -119,20 +122,19 @@ Do not kill a model solely because each component has a known precedent. The rel
 
 `GO` requires more than a monotone comparative static. At least one clean strategic trade-off, threshold ordering, sign reversal, organizational wedge, welfare result, or conditions-for-effectiveness characterization must survive exact analysis.
 
-For any sequential model claiming SPNE/subgame perfection, `GO` additionally requires `PASS` on continuation completeness for the histories relevant to unilateral deviations. No material continuation may remain `UNRESOLVED` or `NUMERICAL_FAILURE`.
+For any sequential model claiming SPNE/subgame perfection, `GO` additionally requires `PASS` on continuation completeness for histories relevant to unilateral deviations. No material continuation may remain `UNRESOLVED` or `NUMERICAL_FAILURE`.
 
-For a generalization/unification contribution, `GO` additionally requires:
+For a generalization/unification contribution, `GO` additionally requires correct recovery of important nested benchmarks and at least one substantive result generated by the interaction of strategic components that is unavailable in each benchmark alone.
 
-- correct recovery of important nested benchmarks; and
-- at least one economically substantive result generated by the interaction of strategic components that is unavailable in each benchmark alone.
+Stage-4 `GO` is a construction-level verdict only. It does not authorize Stage 6 until Stage 4A independently certifies the mathematical object.
 
 ## 11. Failure criteria and routing
 
-- If the minimal mechanism/generalization survives without substantive repair, record `GO` and route directly to Stage 6 Novelty Re-Kill.
+- If the minimal mechanism/generalization survives without substantive repair, record `GO` and route to **Stage 4A — Independent Mathematical Adversarial Certification Gate**.
 - If exactly one diagnosed economic deficiency remains and one authorized modification can test it, record `CONDITIONAL GO` and route to Stage 5 Mechanism Hardening with everything else frozen.
 - If the mechanism fails economically or only produces trivial/known results without one defensible targeted repair, record `NO-GO` and stop the branch. Return to Stage 3 only for a genuinely distinct mechanism/generalization architecture, or Stage 0 for a distinct research question.
 
-An unresolved continuation needed for an SPNE claim cannot be relabeled as a passed robustness check. A negative proof is a valid Stage 4 output. `NO-GO` does not itself authorize Stage 5.
+An unresolved continuation needed for an SPNE claim cannot be relabeled as a passed robustness check. A negative proof is a valid Stage-4 output. `NO-GO` does not itself authorize Stage 5.
 
 ## 12. Required final output
 
@@ -149,17 +151,18 @@ An unresolved continuation needed for an SPNE claim cannot be relabeled as a pas
 11. Comparative statics
 12. Mechanism decomposition
 13. Candidate-proposition kill table
-14. Consumer surplus and welfare, where applicable
-15. Private vs social decision, where applicable
-16. Limiting cases
-17. Nested-benchmark recovery and comparison, where applicable
-18. Full-model-only result table, where applicable
-19. Numerical counterexample audit, where applicable
-20. Permanent regression tests generated by counterexamples, where applicable
-21. Artefact audit
-22. Exact diagnosed blocker, if any
-23. Canonical stage verdict
-24. Routing/status output and next-stage contract
+14. Preliminary theorem-certificate register
+15. Consumer surplus and welfare, where applicable
+16. Private vs social decision, where applicable
+17. Limiting cases
+18. Nested-benchmark recovery and comparison, where applicable
+19. Full-model-only result table, where applicable
+20. Numerical counterexample audit, where applicable
+21. Permanent regression tests generated by counterexamples, where applicable
+22. Artefact audit
+23. Exact diagnosed blocker, if any
+24. Canonical stage verdict
+25. Routing/status output and next-stage contract
 
 ## 13. Final verdict
 
@@ -171,10 +174,10 @@ Record exactly one canonical stage verdict:
 
 Then record the route separately:
 
-- `GO` → Stage 6 Novelty Re-Kill
+- `GO` → **Stage 4A Independent Mathematical Adversarial Certification Gate**
 - `CONDITIONAL GO` → Stage 5 Mechanism Hardening
 - `NO-GO` → terminate this branch; a distinct pivot must re-enter Stage 3 or Stage 0
 
 ## 14. Next-stage contract
 
-If `CONDITIONAL GO`, Stage 5 may change only the one primitive needed to address the diagnosed deficiency. Everything else is frozen. If `GO`, Stage 6 receives the actual derived propositions unchanged, together with the nested-benchmark map when the claimed contribution is a generalization/unification.
+If `CONDITIONAL GO`, Stage 5 may change only the one primitive needed to address the diagnosed deficiency. Everything else is frozen. If `GO`, Stage 4A receives the solved model, candidate propositions, preliminary theorem certificates, all verification artifacts, solver-failure ledger, and counterexample/regression artifacts unchanged. Stage 4A may attack them but may not silently repair the theory.

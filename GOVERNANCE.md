@@ -1,12 +1,12 @@
 # Governance
 
-Version: v1.3
+Version: v2.0
 
 ## 1. Purpose
 
-This repository defines reusable research workflows. Changes to it therefore affect future research projects, not merely one manuscript. Governance should favor traceability, explicit gates, reproducibility, and conservative claims.
+This repository defines reusable research workflows. Changes therefore affect future projects, not one manuscript. Governance favors traceability, explicit gates, reproducibility, independent verification, conservative theorem scope, and visible failure.
 
-The repository should function as a research operating system, not as an informal prompt dump.
+The repository should function as a research operating system, not an informal prompt dump.
 
 ---
 
@@ -14,35 +14,70 @@ The repository should function as a research operating system, not as an informa
 
 ### 2.1 Evidence before claims
 
-Do not state that a result, paper, journal requirement, institutional fact, novelty claim, or equilibrium has been verified unless the supporting source, proof, or computation has actually checked the claim at the scope asserted.
+Do not state that a result, equilibrium, theorem scope, paper, journal requirement, institutional fact, or novelty claim has been verified unless the supporting source, proof, computation, and verification scope actually support the claim asserted.
 
-When evidence is incomplete, mark the limitation explicitly.
+When evidence is incomplete, state the limitation explicitly.
 
 ### 2.2 Negative results are retained
 
-Rejected models, failed novelty claims, algebraic counterexamples, and referee-style fatal objections are valuable outputs. They should be preserved in project decision logs when they materially shaped the next stage.
+Rejected models, failed novelty claims, algebraic/equilibrium counterexamples, theorem-scope counterexamples, benchmark-definition failures, and hostile-referee objections are valuable outputs. Preserve them when they materially affect later research decisions.
 
 ### 2.3 No silent theory drift
 
-Once a project reaches theory freeze, changes to players, timing, utility/demand, information, contracts, equilibrium concept, main propositions, or welfare structure require explicit documentation and re-validation of affected stages.
+After theory freeze, changes to players, timing, utility/demand, information, contracts, equilibrium concept, strategy domains, main propositions, theorem quantifiers, admissible function classes, welfare benchmarks, or contribution claims require explicit change control and re-validation of affected stages.
 
 ### 2.4 One diagnosed fix at a time
 
-A failed minimal model should not trigger uncontrolled feature accumulation. The next modification must address a specific failure identified by the prior stage.
+A failed minimal model or certification gate must not trigger uncontrolled feature accumulation. The next modification must address one precisely diagnosed deficiency.
 
 ### 2.5 No prestige-driven distortion
 
-Target journals may affect exposition, robustness expectations, and presentation, but must not determine the substantive result before the research is solved.
+Target journals may affect exposition and robustness expectations, but may not determine the substantive result before the research is solved and certified.
 
 ### 2.6 Equilibrium certification must fail closed
 
-For sequential/game-theoretic models, an on-path or regular-branch solution is not an SPNE certificate. Every economically relevant upstream deviation must be evaluated using a valid downstream continuation on the stated strategy/history domain.
+For sequential/game-theoretic models, an on-path or regular-branch solution is not an SPNE/global-equilibrium certificate. Economically material upstream deviations must receive valid downstream continuations on the stated strategy/history domain.
 
-A solver outcome such as `None`, NaN, exception, nonconvergence, invalid active set, violated interiority, or branch failure means `UNRESOLVED` unless nonexistence has separately been proved. It must never be interpreted as evidence that a deviation is unprofitable.
+`None`, NaN, exception, nonconvergence, invalid active set, violated interiority, or branch failure means `UNRESOLVED` unless nonexistence has separately been proved. It must never be treated as evidence that a deviation is unprofitable.
 
 FOCs, SOCs, Hessians, positivity, and local interiority establish properties of a candidate/branch. They do not by themselves establish a global Nash equilibrium over unrestricted strategies.
 
-When a model's equilibrium concept requires off-path subgames, unresolved material continuations block Stage 4 `GO`, theory freeze, and any later SPNE/subgame-perfect claim.
+Unresolved material continuations block Stage 4 `GO`, Stage 4A certification, theory freeze, and any later SPNE/subgame-perfect claim.
+
+### 2.7 Theorem quantifiers must match proof scope
+
+Every headline theorem/proposition must state its exact quantifiers, domain, assumptions, and evidence maturity.
+
+Distinguish at minimum:
+
+- local from global;
+- existence from uniqueness;
+- sufficient from necessary;
+- weak from strict;
+- parametric from generic;
+- baseline result from restricted-class result;
+- numerical robustness from proof;
+- conjecture from theorem.
+
+A narrow theorem is acceptable. An overstated theorem is not.
+
+### 2.8 Benchmark labels are mathematical claims
+
+Terms such as `first best`, `constrained first best`, `second best`, `fixed-allocation benchmark`, and `restricted-instrument optimum` must correspond to explicitly stated planner objectives and feasible choice sets.
+
+`First best` is reserved for the unrestricted relevant planner problem. If relevant instruments, allocations, information, commitment, technology, or research allocation are fixed/restricted, use the exact constrained label.
+
+### 2.9 Independent certification is distinct from reproduction
+
+Re-running the same symbolic derivation, production solver, or code path is reproduction, not independent certification.
+
+Whenever feasible, high-stakes theorem/equilibrium claims must receive a logically independent attack through a different model, clean-room derivation, separately written evaluator/solver, or equivalent method that does not inherit the production branch assumptions.
+
+The canonical three-layer defense is:
+
+1. Stage 4 — construction and verification;
+2. Stage 4A / Stage 7.5A — independent adversarial certification of correctness/globality and scope/generality;
+3. Stage 11 — full-manuscript hostile regression attack.
 
 ---
 
@@ -52,33 +87,31 @@ When a model's equilibrium concept requires off-path subgames, unresolved materi
 
 `main` is the canonical workflow state.
 
-Substantive workflow changes should normally enter through a feature/bootstrap branch and pull request.
-
-Direct commits to `main` should be limited to repository initialization or genuinely trivial administrative corrections.
+Substantive workflow changes should normally enter through a feature/bootstrap branch and pull request. Direct commits to `main` should be limited to initialization or genuinely trivial administrative corrections.
 
 ### 3.2 Branch naming
 
 Recommended patterns:
 
-- `bootstrap/<topic>` for initial repository construction;
-- `workflow/<stage-or-policy>` for workflow architecture;
-- `templates/<stage-range>` for reusable templates;
-- `checklists/<topic>` for verification/checklist additions;
-- `examples/<case>` for worked cases;
-- `docs/<topic>` for non-substantive documentation;
-- `audit/<topic>` for integration/readiness audits;
-- `release/<version-or-topic>` for release preparation.
+- `bootstrap/<topic>`
+- `workflow/<stage-or-policy>`
+- `templates/<stage-range>`
+- `checklists/<topic>`
+- `examples/<case>`
+- `docs/<topic>`
+- `audit/<topic>`
+- `release/<version-or-topic>`
 
 ### 3.3 Pull-request requirements
 
 A substantive PR should state:
 
-1. what problem it solves;
-2. what files define or change canonical behavior;
-3. whether any existing stage gate is weakened or strengthened;
-4. compatibility implications for existing project templates;
-5. how the change was validated;
-6. any open questions intentionally deferred.
+1. problem solved;
+2. canonical files changed;
+3. whether gates are strengthened/weakened;
+4. routing/stage compatibility implications;
+5. validation performed;
+6. open questions intentionally deferred.
 
 ### 3.4 Review standard
 
@@ -87,28 +120,34 @@ Review should focus on:
 - internal consistency across stages;
 - whether gates can be bypassed unintentionally;
 - whether novelty standards are weakened;
-- whether mathematical verification is adequately required when applicable;
-- whether sequential models verify off-path continuation completeness rather than only an on-path/regular branch;
-- whether solver failures are fail-closed and auditable;
-- whether source requirements are realistic and explicit;
+- whether mathematical verification matches the claimed theorem scope;
+- whether global/SPNE claims audit off-path/boundary deviations rather than only regular branches;
+- whether solver failures fail closed;
+- whether theorem quantifiers exceed proof;
+- whether broad function-class claims receive counterexample search;
+- whether planner/benchmark labels match feasible choice sets;
+- whether independent certification is genuinely independent rather than duplicate execution;
+- whether source requirements are explicit and realistic;
 - whether the workflow encourages unnecessary complexity;
-- whether failures and `NO-GO` outcomes remain legitimate outcomes.
+- whether `NO-GO` remains a legitimate outcome.
 
 ### 3.5 Release and version changes
 
-Release/version changes are substantive repository changes because a published version defines what future projects may treat as stable workflow behavior.
+Release/version changes are substantive because published versions define stable workflow behavior.
 
-- Assess compatibility under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md) before changing stable canonical behavior.
+- Assess compatibility under `docs/VERSIONING_POLICY.md` before changing stable canonical behavior.
 - A stable release tag must point to a reviewed `main` state.
-- Published stable tags are historical references and must not be silently moved or overwritten.
-- Correct a released defect with an appropriate later version rather than rewriting the historical tag.
-- Release/audit documents under `docs/` record version state but do not override the canonical hierarchy below.
+- Published stable tags are immutable historical references.
+- Correct released defects with later versions rather than moving tags.
+- Release/audit docs record version state but do not override the canonical hierarchy.
+
+Stage additions/removals/mergers, canonical routing changes, verdict-semantic changes, or incompatible workflow architecture changes require a MAJOR version under the current versioning policy. The Stage 4A and Stage 7.5A additions therefore define v2.0 architecture.
 
 ---
 
 ## 4. Canonical workflow hierarchy
 
-The priority order is:
+Priority order:
 
 1. `GOVERNANCE.md`
 2. `THEORY_PAPER_RESEARCH_PIPELINE.md`
@@ -116,9 +155,7 @@ The priority order is:
 4. checklists under `checklists/`
 5. worked examples under `examples/`
 
-Lower-level files may elaborate higher-level rules but may not silently contradict or weaken them.
-
-If a conflict is discovered, the higher-level canonical document governs until the conflict is resolved by PR.
+Lower-level files may elaborate but may not weaken higher-level rules. If conflict exists, the higher-level document governs until repaired through PR.
 
 ---
 
@@ -129,104 +166,116 @@ If a conflict is discovered, the higher-level canonical document governs until t
 For serious novelty assessment:
 
 - verify bibliographic information;
-- prefer publisher pages, DOI records, RePEc/NBER/SSRN records, working-paper repositories, and author versions as appropriate;
-- inspect full model/proposition content for closest papers whenever reasonably possible;
-- perform backward and forward citation search where the literature is mature;
+- prefer publisher/DOI/RePEc/NBER/SSRN/author records as appropriate;
+- inspect full model/proposition content for closest papers when reasonably possible;
+- perform backward/forward citation search where the literature is mature;
 - distinguish exact prior art, structural proximity, component overlap, and broad relatedness;
 - do not infer novelty from search failure alone.
 
 ### 5.2 Institutional facts
 
-Prefer primary sources. If secondary sources are necessary, label them as such. Do not transform suggestive institutional evidence into a proven model primitive without stating the inferential step.
+Prefer primary sources. Label secondary evidence. Do not transform suggestive institutional facts into model primitives without stating the inferential step.
 
 ### 5.3 Mathematics
 
-When symbolic tools are applicable:
+When applicable:
 
-- re-derive rather than copy legacy formulas;
+- re-derive rather than copy formulas;
 - verify equilibrium identities;
-- check SOCs/Hessians;
-- check feasibility and participation constraints;
-- inspect limiting and boundary cases;
+- check FOCs/KKT, SOCs/Hessians, feasibility, participation, and limiting/boundary cases;
 - distinguish numerical support from proof;
 - search for counterexamples to proposed global propositions;
-- for sequential games, distinguish on-path equilibrium calculations from off-path continuation validity;
-- re-solve downstream subgames after material upstream deviations instead of extending an on-path formula beyond its validity domain;
-- treat active-set changes, corners, ordering changes, participation changes, and possible equilibrium nonexistence as economic cases, not solver errors to discard;
-- independently reconstruct payoffs/allocations from primitives for at least one high-stakes equilibrium claim when feasible.
+- enumerate economically meaningful corners, active sets, regime switches, entry/exit, zero-output states, ordering/participation changes, and possible equilibrium nonexistence;
+- for sequential games distinguish on-path calculations from off-path continuation validity;
+- re-solve downstream subgames after material upstream deviations rather than extrapolating an on-path formula;
+- treat solver failure as evidence of incompleteness, not failed deviation;
+- independently reconstruct payoffs/allocations for high-stakes claims where feasible;
+- record theorem quantifiers and function classes explicitly;
+- attempt admissible-function counterexamples to broad comparative-static/curvature/uniqueness claims;
+- write planner optimization problems explicitly before applying welfare benchmark labels.
 
-Sequential/game-theoretic projects must apply [`checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md`](checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md) whenever off-path continuations matter for the claimed equilibrium concept.
+Sequential/game-theoretic projects must apply `checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md` whenever continuation validity matters.
+
+Headline theorem-bearing projects must apply `checklists/THEOREM_CERTIFICATION_CHECKLIST.md` at Stage 4A and again at Stage 7.5A whenever scope changed.
 
 ### 5.4 Numerical work
 
 Numerical grids and simulations are diagnostics unless the research design is explicitly computational. They may identify regions, counterexamples, or conjectures but must not be reported as analytic proofs.
 
-Solver failure rates and unresolved continuation counts are part of the evidence and may not be silently filtered away.
+Solver failure rates and unresolved continuation counts are evidence and may not be silently filtered.
 
 ### 5.5 Evidence maturity and provenance
 
-Claim type and evidence maturity must be recorded separately. At minimum, distinguish:
+Distinguish at minimum:
 
-- a result or claim merely reported in notes, conversation, or temporary computation and therefore requiring reproduction;
-- a mathematical/numerical result reproduced from committed project artifacts;
-- a literature or institutional claim verified against an identifiable source;
-- a claim re-verified for the actual submission package when submission-level assurance is required;
-- a conjecture/model assumption that remains unverified;
-- a rejected claim or branch.
+- reported/remembered/scratch result requiring reproduction;
+- mathematical/numerical result reproduced from committed artifacts;
+- literature/institutional claim verified against an identifiable source;
+- claim re-verified for the actual submission package;
+- conjecture/model assumption still unverified;
+- rejected claim/branch.
 
-Worked examples may use more specific labels such as `REPORTED / REQUIRES REPRODUCTION`, `LITERATURE-VERIFIED`, `INSTITUTIONALLY SUGGESTIVE`, `CONJECTURE`, and `REJECTED`. Those labels do not automatically upgrade a claim to submission-ready evidence.
-
-AI/chat output, scratch calculations, and historical notes are provenance inputs, not independent evidence. A later stage must not silently promote them into verified theorems or verified facts.
+AI/chat output, scratch calculations, and historical notes are provenance inputs, not independent evidence.
 
 ### 5.6 Method applicability
 
-Verification must match the research method. Symbolic algebra is required only when a mathematical model makes it applicable; empirical, computational, institutional, or qualitative claims require their own appropriate verification.
-
-A check may be marked `NOT APPLICABLE` only with a recorded reason. `NOT APPLICABLE` must not be used to bypass a gate that is substantive for the project.
+Verification must match method. `NOT APPLICABLE` is allowed only with a recorded reason and may not bypass a substantive gate.
 
 ---
 
 ## 6. Stage verdict and routing policy
 
-Every research stage must record a canonical stage verdict:
+Every research stage records one canonical verdict:
 
 ### GO
 
-The project has satisfied the current stage's success criteria and may proceed under the next-stage contract.
+Current success criteria are met and the project may proceed only under the stated next-stage contract.
 
 ### CONDITIONAL GO
 
-The project may proceed only to resolve a clearly specified blocker. A conditional verdict is not permission for arbitrary extension.
+Exactly one clearly specified blocker remains. This is not permission for arbitrary extension.
 
 ### NO-GO
 
-The current branch should stop. A new branch or pivot may be opened only when it addresses a distinct research question or a precisely diagnosed deficiency.
+The branch stops. A pivot may reopen only at the earliest stage justified by a distinct question or diagnosed deficiency.
 
-Repeatedly converting `NO-GO` into additional assumptions until a desired result appears violates this workflow.
+Subtests may use `PASS / CONDITIONAL / FAIL`. Routing/status labels are secondary.
 
-Subtests may use `PASS / CONDITIONAL / FAIL`. Operational templates may also emit routing or state labels such as `GO TO STAGE 6`, `THEORY FROZEN`, or `SUBMISSION QA PASS`. These are secondary routing/status outputs and do not replace the canonical `GO / CONDITIONAL GO / NO-GO` stage verdict.
+### v2.0 hard routing
+
+For theorem-oriented projects:
+
+- Stage 4 `GO` routes to **Stage 4A**, never directly to Stage 6.
+- Stage 5 repair returns to **Stage 4 then Stage 4A**.
+- Stage 4A `GO` routes to Stage 6.
+- Stage 7.5 `GO` routes to **Stage 7.5A**, never directly to Stage 8.
+- Stage 7.5A `GO` is required for Stage 8 theory freeze.
+
+No green CI/symbolic/numerical result bypasses these gates.
 
 ---
 
 ## 7. Rollback and stale-state policy
 
-The workflow is stage-gated but not strictly linear.
-
-When a later stage discovers a substantive error, return to the earliest stage whose canonical output has been invalidated. Downstream outputs that depend on that input become stale until the affected stage and all necessary downstream gates are re-run.
+When a later stage discovers a substantive error, return to the earliest stage whose canonical output is invalidated. Dependent downstream outputs become stale until required gates are rerun.
 
 Examples:
 
-- newly discovered prior art returns to Stage 2 or Stage 6 depending on whether it concerns the pre-model gap or an actual derived result;
-- a false proposition or equilibrium error returns to Stage 4, or Stage 5 if the issue is caused by an authorized hardening modification;
-- an off-path continuation failure, hidden active-set failure, or solver-failure-as-deviation-filter returns to Stage 4 unless it arose solely from a later authorized model modification;
-- a failed institutional/welfare premise returns to Stage 7 or earlier if the primitive itself changes;
-- a post-freeze theory change reopens Stage 8 change control and every affected earlier verification/novelty gate;
-- a Stage 11 fatal attack must be routed to the earliest stage capable of resolving it, not patched only in prose;
-- a substantive inconsistency found in Stage 13 or Stage 14 reopens the earliest affected research stage, followed by a fresh integration/QA cycle.
+- newly discovered prior art → Stage 2 or Stage 6 depending on whether the issue concerns the pre-model gap or actual derived result;
+- false proposition/equilibrium/globality error → Stage 4 then Stage 4A;
+- off-path continuation or hidden boundary/regime deviation failure → Stage 4 then Stage 4A;
+- one authorized economic repair → Stage 5, then repeat Stage 4 and 4A;
+- failed welfare optimization problem → Stage 7 or Stage 4 depending on source of error;
+- theorem quantifier/function-class overclaim with correct underlying narrow theorem → Stage 7.5A and downstream stages;
+- theorem actually false within claimed domain → Stage 4/4A and then all affected downstream stages;
+- benchmark label wrong but underlying planner problem correct → Stage 7.5A; benchmark optimization problem itself wrong → Stage 7/4 as appropriate;
+- post-freeze theory change → Stage 8 change control plus every affected earlier gate;
+- Stage 11 fatal attack → earliest affected stage, not prose-only patch;
+- Stage 13/14 substantive inconsistency → earliest affected research stage plus fresh integration/QA.
 
-A `NO-GO` branch does not automatically qualify for Stage 5. Stage 5 is available only when the previous minimal-model result identifies one precise economic deficiency that can be tested with one authorized modification. Otherwise stop or return to Stage 3/Stage 0 as a distinct pivot.
+If Stage 11 detects a failure that Stage 4A or 7.5A should have caught, record `CERTIFICATION REGRESSION` and preserve the case as workflow evidence.
 
-Silent repair in a later stage is prohibited.
+Silent downstream repair is prohibited.
 
 ---
 
@@ -234,78 +283,34 @@ Silent repair in a later stage is prohibited.
 
 ### 8.1 Theory freeze
 
-A theory freeze records at minimum:
+Theory freeze requires Stage-4A and Stage-7.5A `GO` certificates.
 
-- research question;
-- canonical model;
-- parameter restrictions;
-- main propositions;
-- welfare results;
-- proof/verification state;
+Freeze at minimum:
+
+- research question and canonical model;
+- complete strategy/choice domains;
+- parameter restrictions and admissible function classes;
+- equilibrium concept;
+- main/welfare propositions with exact quantifiers;
+- proof/evidence state;
 - closest-paper positioning;
-- approved robustness scope.
+- approved robustness scope;
+- Stage-4A theorem certificates;
+- Stage-7.5A claim-scope ledger;
+- benchmark-definition register;
+- counterexample/regression-test register;
+- explicit claims not made.
 
-For sequential/game-theoretic models, theory freeze additionally requires an explicit continuation-completeness record covering the strategy/history domain relevant to the claimed equilibrium concept, including unresolved solver outcomes and equilibrium multiplicity/nonexistence where encountered.
+Sequential/game-theoretic models additionally require explicit continuation-completeness and solver-outcome records covering material strategy/history domains.
 
 ### 8.2 Submission freeze
 
-A submission freeze records at minimum:
+Submission freeze records at minimum:
 
 - canonical repository SHA/tag;
-- final manuscript and supplement;
-- reproducibility outputs;
+- final manuscript/supplement;
+- reproducibility outputs and theorem certificates;
 - journal-specific files;
 - disclosure statements where applicable.
 
 No silent post-freeze theoretical edits are permitted.
-
----
-
-## 9. Provenance and decision logs
-
-Worked research projects should preserve a concise decision log containing:
-
-- candidate mechanism;
-- stage tested;
-- result;
-- why it survived or failed;
-- strongest prior-art threat;
-- strongest mathematical/referee threat;
-- exact reason for the next modification.
-
-A useful example should show rejected branches as well as successful ones.
-
-Any counterexample that invalidates or materially narrows an equilibrium claim should be retained as a regression test or equivalent permanent verification artifact.
-
----
-
-## 10. AI-assisted research
-
-AI may be used extensively for search planning, algebra, coding, drafting, review simulation, and workflow execution, but AI output is not itself evidence.
-
-Project-specific work should independently validate:
-
-- citations and bibliographic facts;
-- equations and numerical results;
-- equilibrium claims at the full scope asserted, including off-path continuations where required;
-- claims about journal policies;
-- institutional facts;
-- final contribution/novelty statements.
-
-Where a target journal requires disclosure of generative-AI use, the project should verify the current policy at submission time and comply with it.
-
-An AI-generated `GO`, `PASS`, or positive referee simulation has no independent evidentiary weight. The recorded verdict must be supported by the stage's required evidence and verification artifacts.
-
----
-
-## 11. Future extensions to this governance
-
-Later PRs may add:
-
-- machine-readable stage metadata;
-- CI checks for template completeness;
-- standard decision-log schemas;
-- project bootstrap scripts;
-- an empirical-research workflow or cross-discipline variants.
-
-Such additions should preserve the core principle: the workflow exists to improve research quality and terminate weak branches early, not to maximize the number of papers produced.

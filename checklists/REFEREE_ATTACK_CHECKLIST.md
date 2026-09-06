@@ -1,6 +1,6 @@
 # Referee Attack Checklist
 
-Use this checklist to simulate serious external review. Every attack should target a concrete claim, assumption, equation, source, or journal-fit issue.
+Use this checklist to simulate serious external review. Every attack should target a concrete claim, assumption, equation, source, theorem certificate, or journal-fit issue.
 
 For each item use:
 
@@ -10,6 +10,8 @@ Severity: FATAL / MAJOR BUT FIXABLE / MINOR
 Evidence:
 Current response:
 Required fix:
+Earliest affected stage:
+Certification regression?: YES / NO
 Does the fix reopen theory?: YES / NO
 Resolved?: YES / NO
 ```
@@ -40,6 +42,8 @@ Resolved?: YES / NO
 - [ ] Participation/outside option challenged
 - [ ] Institutional primitive challenged
 - [ ] Consumer/agent choice set is explicit rather than inferred from a local demand formula
+- [ ] Proof assumptions match theorem-statement assumptions exactly
+- [ ] Shape restrictions actually imply the claimed sign/curvature/ordering
 
 ## Mathematical attacks
 
@@ -61,6 +65,22 @@ Resolved?: YES / NO
 
 For sequential games, apply `EQUILIBRIUM_CONTINUATION_CHECKLIST.md`. At least one hostile referee should reconstruct a material payoff/allocation from primitives without relying on the paper's equilibrium solver.
 
+## Theorem scope / quantifier attacks
+
+Apply `THEOREM_CERTIFICATION_CHECKLIST.md` to at least one adversarially selected headline theorem when the paper makes a broad or high-stakes claim.
+
+- [ ] `for all` claim actually proved over the stated domain
+- [ ] existence not inflated into uniqueness
+- [ ] local result not inflated into global
+- [ ] weak result not inflated into strict
+- [ ] sufficient condition not inflated into necessary-and-sufficient
+- [ ] baseline functional-form result not relabeled generic
+- [ ] numerical robustness not relabeled analytic robustness
+- [ ] broad function class (`C^k`, convex, concave, monotone, etc.) actually implies the claimed sign/curvature/order
+- [ ] admissible nonbaseline function searched for as a counterexample
+- [ ] abstract/introduction wording does not exceed the theorem certificate
+- [ ] robustness section does not exceed the Stage-7.5A claim-scope ledger
+
 ## Robustness attacks
 
 - [ ] Alternative demand system
@@ -70,14 +90,20 @@ For sequential games, apply `EQUILIBRIUM_CONTINUATION_CHECKLIST.md`. At least on
 - [ ] Boundary cases
 - [ ] Removal of nonessential asymmetry
 - [ ] Simplified/nested model
+- [ ] Nonquadratic/nonlinear functional form when baseline convenience may drive a theorem
+- [ ] Near-boundary / low-curvature / high-curvature parameterizations when relevant
 
-## Welfare/policy attacks
+## Welfare/policy/benchmark attacks
 
 - [ ] Welfare result is only transfer accounting
 - [ ] Consumer surplus is computed inconsistently
-- [ ] First-best and decentralized benchmarks are conflated
-- [ ] Policy recommendation uses an unmodeled instrument
-- [ ] Externality is asserted rather than derived
+- [ ] Planner objective is explicit
+- [ ] Planner feasible choice set is explicit
+- [ ] `first best` is genuinely unrestricted over the relevant choices
+- [ ] constrained first best / second best / fixed-allocation benchmark are not conflated
+- [ ] private/social comparison uses consistent population, outside options, and accounting
+- [ ] policy recommendation uses an unmodeled instrument
+- [ ] externality is asserted rather than derived
 
 ## Institutional / empirical attacks
 
@@ -94,10 +120,22 @@ For sequential games, apply `EQUILIBRIUM_CONTINUATION_CHECKLIST.md`. At least on
 - [ ] Introduction does not overclaim
 - [ ] Related Literature handles closest papers directly
 - [ ] Results explain mechanism
-- [ ] Discussion does not repeat results
+- [ ] Discussion does not repeat or enlarge results
 - [ ] Conclusion adds no new claims
 - [ ] Headline figure/table does not hide domain restrictions, use an arbitrary normalization as the reported economic object, or visually imply a stronger theorem than is proved
 - [ ] Every central result has an appropriate exposition vehicle; absence of a figure/table is justified when theorem/prose is more efficient
+
+## Certification-regression attacks
+
+A Stage-11 reviewer should explicitly ask whether the full manuscript reveals a failure that the pre-freeze red-team gates should have caught.
+
+- [ ] Stage-4A global-equilibrium certificate contradicted by a new boundary/corner/regime deviation
+- [ ] Stage-4A continuation certificate contradicted by a new off-path history or solver-failure path
+- [ ] Stage-7.5A quantifier certificate contradicted by an admissible function/parameter counterexample
+- [ ] Stage-7.5A benchmark-definition certificate contradicted by the actual planner choice set
+- [ ] Manuscript wording drifted beyond the certified maximum defensible claim
+
+If yes, mark `CERTIFICATION REGRESSION`, preserve the counterexample as workflow evidence, and route to the earliest invalidated stage.
 
 ## Gate rule
 
@@ -106,4 +144,7 @@ For sequential games, apply `EQUILIBRIUM_CONTINUATION_CHECKLIST.md`. At least on
 - [ ] Any fix that changes theory is routed back through theory-change control
 - [ ] For SPNE/sequential claims, no material off-path continuation remains `UNRESOLVED` or `NUMERICAL_FAILURE`
 - [ ] Solver failures have not been silently filtered from deviation searches
+- [ ] Headline theorem quantifiers do not exceed Stage-7.5A certification
+- [ ] Benchmark language matches the certified planner problem
+- [ ] Any certification regression is explicitly recorded and rolled back
 - [ ] Minor comments are not used to obscure fatal issues

@@ -1,58 +1,75 @@
 # Theory Paper Research Pipeline
 
-Version: v1.3
+Version: v2.0
 
 ## 1. Purpose
 
-This document defines the canonical workflow for taking a theory-oriented research idea from initial motivation to submission freeze.
+This document defines the canonical workflow for taking a theory-oriented economics research idea from initial motivation to submission freeze.
 
-The workflow is not a writing checklist. It is a research-development and research-termination system. Its primary purpose is to prevent weak, derivative, ad hoc, mathematically fragile, or poorly communicated ideas from consuming manuscript-writing and submission effort.
+The workflow is a research-development, research-verification, and research-termination system. It is designed to make weak, derivative, ad hoc, mathematically fragile, over-generalized, or poorly communicated branches fail before manuscript and submission effort becomes costly.
 
-A project should move forward only when it survives the relevant gate.
+A project advances only when it survives the relevant gate. A previous `GO` never guarantees a later `GO`.
 
-Each major stage must record a canonical verdict:
+Each major stage records exactly one canonical verdict:
 
-- `GO`: the evidence is sufficient to proceed;
-- `CONDITIONAL GO`: a precise unresolved condition remains and must become the next-stage target;
-- `NO-GO`: the current research branch should stop unless a narrowly defined pivot survives a new gate.
+- `GO` — the evidence is sufficient to proceed;
+- `CONDITIONAL GO` — exactly one material blocker remains and the next-stage contract is narrowly defined;
+- `NO-GO` — the branch stops unless a genuinely distinct pivot re-enters at the appropriate earlier stage.
 
-Templates may additionally report a routing/status label such as `GO TO STAGE 6`, `THEORY FROZEN`, or `SUBMISSION QA PASS`; that label is secondary and does not replace the canonical stage verdict.
+Routing/status labels such as `GO TO STAGE 6`, `THEORY FROZEN`, or `SUBMISSION QA PASS` are secondary and never replace the canonical verdict.
 
-A previous `GO` never guarantees a later `GO`.
+This pipeline is theory-oriented. Stages 0–3 may recommend empirical or mixed research, but a project whose primary method is not theoretical should leave this pipeline rather than pretend to pass the Stage-4 mathematical gate.
 
-This v1 canonical pipeline is theory-oriented. Stage 0 may recommend empirical or mixed research, but a project whose primary method is not theoretical should not be force-fit through the Stage 4 mathematical model gate. A dedicated empirical workflow is outside v1 scope.
+### v2.0 mathematical-safety architecture
+
+v2.0 adds two mandatory independent red-team gates before theory freeze:
+
+1. **Stage 4A — Independent Mathematical Adversarial Certification Gate**: independently tries to break the solved model, including global deviations, boundaries, corners, regime switches, continuation completeness, solver failure semantics, benchmark definitions, and theorem certificates.
+2. **Stage 7.5A — Generality / Quantifier Red-Team Gate**: attacks theorem scope, functional-form generality, quantifiers, robustness language, and planner/benchmark terminology before the theory can be frozen.
+
+The required routing is therefore:
+
+`Stage 4 → Stage 4A → Stage 6 → Stage 7 → Stage 7.5 → Stage 7.5A → Stage 8`.
+
+Neither Stage 4A nor Stage 7.5A may be bypassed by a green symbolic check, CI run, production solver, or prior `GO`.
+
+The workflow uses a three-layer mathematical defense:
+
+- **construction/verification layer** — solve and verify the model at Stage 4;
+- **independent adversarial layer** — Stage 4A and Stage 7.5A attempt to falsify correctness and scope without inheriting the construction path;
+- **full-manuscript hostile layer** — Stage 11 repeats high-stakes attacks after exposition has been added and treats any newly discovered mathematical failure as a rollback event and workflow regression signal.
 
 ---
 
 ## 2. Universal stage schema
 
-Every stage-specific prompt, report, or template should use the following schema unless there is a documented reason not to.
+Every stage-specific prompt, report, or template should include, unless genuinely inapplicable:
 
-1. **Objective** — What uncertainty is this stage supposed to resolve?
-2. **Inputs** — What prior results, files, models, data, and decisions are canonical inputs?
-3. **Mandatory tasks** — What work must be completed before a verdict?
-4. **Evidence requirements** — What literature, primary sources, code, mathematics, or data must support the result?
-5. **Verification** — What independent symbolic, numerical, empirical, or source checks are required?
-6. **Kill tests** — What findings would invalidate the candidate contribution?
-7. **Success criteria** — What must be true for `GO`?
-8. **Failure criteria** — What makes the stage `NO-GO`?
-9. **Required output** — What artifacts and decision record must be produced?
-10. **Stage verdict** — `GO`, `CONDITIONAL GO`, or `NO-GO`.
-11. **Routing/status output** — Where the branch goes next, freezes, or stops.
-12. **Next-stage contract** — Exactly what may and may not change in the next stage.
+1. Objective
+2. Inputs
+3. Mandatory tasks
+4. Evidence requirements
+5. Verification
+6. Kill tests
+7. Success criteria
+8. Failure criteria
+9. Required output
+10. Canonical stage verdict
+11. Routing/status output
+12. Next-stage contract
 
-The next-stage contract is essential. Do not respond to a failed model by adding multiple new mechanisms simultaneously.
+For efficient handoff preserve at least: outputs to carry forward, frozen facts, rejected branches, open blockers, and the one allowed next change when conditional work is authorized.
 
-For efficient handoff, each stage should preserve at least: outputs to carry forward, frozen facts, rejected branches, open blockers, and the one allowed next change when conditional work is authorized.
+For theorem-bearing stages preserve a claim/proposition register. For headline mathematical claims, use `checklists/THEOREM_CERTIFICATION_CHECKLIST.md` as required by Stage 4A and Stage 7.5A.
 
-For manuscript exposition, the workflow uses a four-step lifecycle:
+For manuscript exposition, use the four-step lifecycle:
 
-- **Stage 7 — identify:** perform result-to-exposition triage for surviving headline results;
-- **Stage 10 — design and implement:** assign every headline result an explicit exposition vehicle and reproducibly implement required figures/tables;
-- **Stage 13 — integrate:** reconcile the figure/table architecture with the target journal and manuscript narrative;
-- **Stage 14 — verify:** audit regeneration, numerical integrity, artwork compliance, source-package completeness, and visual legibility.
+- Stage 7 — identify candidate exposition vehicles;
+- Stage 10 — design and implement the figure/table architecture;
+- Stage 13 — integrate for the target journal;
+- Stage 14 — verify regeneration, numerical integrity, artwork compliance, source completeness, and legibility.
 
-There is **no minimum figure or table quota**. Every visual/table must earn its place by materially reducing the reader's cost of understanding a central mechanism, result, comparison, or scope condition.
+There is no minimum figure/table quota. Every visual must materially reduce the reader's cost of understanding a verified result.
 
 ---
 
@@ -60,30 +77,24 @@ There is **no minimum figure or table quota**. Every visual/table must earn its 
 
 ## Objective
 
-Extract the genuine economic question from a phenomenon, old paper, policy problem, institutional fact, anomaly, or informal idea without assuming that it deserves a paper.
+Extract the genuine economic question from a phenomenon, old paper, policy problem, institutional fact, anomaly, or informal idea without assuming it deserves a paper.
 
 ## Mandatory tasks
 
 - State the observed phenomenon or theoretical puzzle.
-- Separate the phenomenon from the proposed explanation.
-- Identify the agents, decisions, frictions, and outcomes that appear essential.
+- Separate phenomenon from proposed explanation.
+- Identify agents, decisions, frictions, and outcomes that appear essential.
 - Distinguish theoretical contribution from application or institutional motivation.
 - Generate multiple plausible mechanisms before committing to one.
 - Write a one-sentence research question that can in principle be falsified by prior art or model analysis.
 
 ## Kill tests
 
-Stop or radically reframe if the project is only:
-
-- a policy description;
-- a parameterization exercise;
-- a known comparative static in a new application;
-- an old model with modern labels;
-- a phenomenon with no strategic or welfare mechanism.
+Stop or reframe if the project is only a policy description, parameterization exercise, known comparative static in a new application, old model with modern labels, or phenomenon with no strategic/welfare mechanism.
 
 ## Exit criterion
 
-Proceed only if there is a precise economic question worth subjecting to literature and mathematical audit.
+Proceed only if there is a precise economic question worth literature and mathematical audit.
 
 ---
 
@@ -95,25 +106,21 @@ Reconstruct the starting model or argument from first principles and determine w
 
 ## Mandatory tasks
 
-- Read all source material, including equations, notes, appendices, figures, and assumptions.
+- Read all source material, including equations, appendices, figures, notes, and assumptions.
 - Reconstruct players, timing, information, objectives, contracts, demand, costs, and equilibrium concept.
-- Re-derive all equations from zero when the starting object is mathematical.
-- Use Python/SymPy or equivalent symbolic tools for algebraic verification whenever applicable.
-- Derive SOCs, feasibility conditions, participation constraints, and boundary cases when applicable.
-- Identify variables or parameters that mix multiple economic interpretations.
-- Distinguish algebraic results from genuine economic mechanisms.
+- Re-derive mathematical starting objects from zero.
+- Use Python/SymPy or equivalent symbolic tools where applicable.
+- Derive SOCs, feasibility, participation, and boundary cases.
+- Identify parameters that mix economic interpretations.
+- Distinguish algebraic identities from economic mechanisms.
 
 ## Kill tests
 
-- Key proposition depends on an algebraic error.
-- Equilibrium does not exist in an economically meaningful region.
-- Claimed comparative static is mechanically built into demand or normalization.
-- A contract or payoff split has no microfoundation and drives the result.
-- Cross-regime comparison changes the consumer population, outside option, or normalization without justification.
+Kill or repair if a key proposition depends on algebraic error, equilibrium fails in the meaningful region, a comparative static is mechanically built into normalization, a payoff split has no defensible microfoundation and drives the result, or cross-regime comparison silently changes population/outside options/accounting.
 
 ## Exit criterion
 
-A verified canonical representation of the starting object and a list of surviving questions.
+A verified canonical starting object and list of surviving research questions.
 
 ---
 
@@ -121,73 +128,38 @@ A verified canonical representation of the starting object and a list of survivi
 
 ## Objective
 
-Determine whether the surviving mechanism, strategic architecture, result, or proposed generalization is already known before investing in model expansion.
+Determine whether the candidate mechanism, strategic architecture, result, or proposed generalization is already known before model investment.
 
-Novelty must be evaluated at two distinct levels:
+Novelty must be assessed at both:
 
-1. **component level** — which primitives, players, margins, and results are individually known;
-2. **whole-game/result level** — whether the economically relevant player-objective-strategy-timing-allocation-feedback structure and the proposed headline result are already solved.
+1. component level; and
+2. whole-game/result level.
 
-Known components do not by themselves imply that the full game is absorbed. Conversely, the absence of one paper containing the exact ingredient combination does not itself establish novelty.
+Known components do not automatically absorb the full game. Conversely, absence of one paper containing the exact ingredient combination does not establish novelty.
 
 ## Mandatory tasks
 
-Search from seminal work through the current frontier, including recent working papers where relevant.
+Search seminal work through the current frontier, including relevant working papers. For close papers inspect players/objectives, strategies, timing, demand/utility, contracts/information, endogenous margins, participation/allocation, strategic-feedback network, equilibrium concept, propositions, welfare, and extensions.
 
-For close papers, inspect as far as feasible:
+Perform backward citation, forward citation, author-neighborhood, adjacent-field/synonym, and working-paper/published-version searches where relevant.
 
-- players and objective functions;
-- strategy sets/endogenous controls;
-- model and timing;
-- demand or utility;
-- contracts and information;
-- endogenous variables;
-- participation/outside options and endogenous allocation/sorting;
-- best-response or strategic-feedback network;
-- equilibrium concept;
-- propositions;
-- welfare and incidence;
-- extensions and appendices.
+For strategic projects perform a **whole-game absorption test**:
 
-Perform:
+- can one prior model reproduce the economically relevant full game by relabeling, normalization, or restriction?
+- if not, is the proposed headline result nonetheless an immediate corollary of an existing theorem?
+- if multiple literatures are required to reconstruct the candidate, what strategic interaction exists only in the full architecture?
 
-- backward citation search;
-- forward citation search;
-- author-neighborhood search;
-- adjacent-field/synonym search;
-- working-paper/published-version deduplication.
+For generalization/unification identify important nested prior models, restrictions that recover them, and a candidate result that should exist only in the full model.
 
-For strategic/game-theoretic projects, perform a **whole-game absorption test**:
-
-- determine whether one prior model reproduces the economically relevant full game through direct relabeling, normalization, or parameter restriction;
-- if no single prior model does so, determine whether the proposed headline result is nonetheless an immediate corollary of an existing theorem;
-- if reconstructing the candidate requires multiple prior literatures with different players, objectives, strategies, or feedbacks, identify what strategic interaction exists only in the full architecture.
-
-For a claimed **generalization or unification**, identify the important nested prior models, the restrictions that recover them, and the candidate result that should exist only in the full model.
-
-Classify overlap as:
-
-1. `EXACT PRIOR ART`
-2. `STRUCTURALLY VERY CLOSE`
-3. `COMPONENT OVERLAP`
-4. `MERELY RELATED`
-5. `POTENTIALLY NOVEL` only when a model/proposition-level distinction survives.
+Classify overlap as `EXACT PRIOR ART`, `STRUCTURALLY VERY CLOSE`, `COMPONENT OVERLAP`, `MERELY RELATED`, or `POTENTIALLY NOVEL` only when a model/result-level distinction survives.
 
 ## Kill tests
 
-- Contribution is a renamed known result.
-- New variable does not create a new strategic interaction.
-- A single close paper already contains the same economically relevant players/objectives/strategies/timing/allocation/feedback structure.
-- Closest paper already contains the same endogenous margin and welfare logic and the proposed result is an immediate corollary.
-- Novelty claim rests only on failure to find the exact combination of keywords.
-- Novelty claim rests only on “nobody combined these ingredients.”
-- A claimed generalization only broadens notation or functional form while leaving the economics unchanged.
-
-Do **not** kill solely because every component is separately known if no prior model reproduces the full strategic architecture and the combination plausibly generates a new equilibrium or welfare problem.
+Kill contributions that are renamed known results, cosmetic new variables, immediate corollaries of the closest model, keyword-search novelty, “nobody combined these ingredients” novelty without new strategic feedback, or notation-only generalization.
 
 ## Exit criterion
 
-A closest-paper matrix, component-overlap map, whole-game absorption verdict, nested-benchmark map where applicable, and an explicit list of contributions that are killed, weakened, or still alive.
+Closest-paper matrix, overlap map, whole-game absorption verdict, nested-benchmark map when relevant, and explicit killed/weakened/surviving contribution set.
 
 ---
 
@@ -199,27 +171,17 @@ Generate competing explanations and select mechanisms or strategically meaningfu
 
 ## Mandatory tasks
 
-- Generate approximately 8–12 candidate mechanisms/architectures when the search space is broad.
-- For each candidate, identify the strategic feedback loop.
-- State what would change relative to the closest literature.
+- Generate multiple candidate mechanisms/architectures when the search space is broad.
+- Identify each strategic feedback loop.
+- State what changes relative to closest literature.
 - Identify the smallest model capable of producing the proposed mechanism.
-- For a generalization/unification candidate, identify the prior models nested by the full game and the strategic interaction that exists only when the components are jointly endogenous.
-- State the candidate result that should be unavailable in each nested benchmark alone.
-- Score candidates on theoretical novelty, mechanism clarity, whole-game prior-art survival, tractability, welfare content, institutional relevance, and journal fit when scoring is useful.
-- Select a small TOP set for deep dives.
+- For generalization/unification, identify nested benchmarks and the interaction that exists only when components are jointly endogenous.
+- State a candidate result unavailable in each benchmark alone.
+- Score candidates on novelty, mechanism clarity, whole-game prior-art survival, tractability, welfare content, institutional relevance, and journal fit when useful.
 
 ## Kill tests
 
-Reject candidates that are merely:
-
-- another heterogeneity parameter;
-- another channel;
-- another fixed cost;
-- another player with no strategic effect;
-- another comparative static without a new trade-off;
-- a combination of familiar ingredients whose full game changes no strategic feedback and produces no new theorem.
-
-Do not reject a generalization merely because its components are familiar if the full architecture creates a strategically non-equivalent equilibrium problem that the nested benchmarks cannot reproduce.
+Reject “another parameter/channel/fixed cost/player” additions that create no new strategic problem or theorem. Familiar components may survive only if their joint endogeneity creates a strategically non-equivalent equilibrium problem.
 
 ---
 
@@ -227,36 +189,81 @@ Do not reject a generalization merely because its components are familiar if the
 
 ## Objective
 
-Test the strongest candidate mechanism or generalization in the smallest possible model.
+Solve the strongest candidate mechanism/generalization completely in the smallest defensible model.
 
 ## Mandatory tasks
 
-- Freeze players and timing.
-- Use the simplest defensible microfoundation.
-- Derive the equilibrium analytically where possible.
-- Verify all closed forms symbolically when applicable.
-- Search numerically for counterexamples only after symbolic/analytic analysis when applicable.
-- Derive participation, feasibility, welfare, and limiting cases.
-- Explicitly test desired propositions rather than assuming them.
-- If the contribution route is generalization/unification, define and solve/recover the minimum nested benchmark games obtained by removing or fixing one strategic component at a time.
-- Verify benchmark recovery and compare the full model with the benchmarks for the headline equilibrium/welfare object.
-- Identify whether the full architecture changes the best-response/strategic-feedback network and creates a result unavailable in each benchmark alone.
+- Freeze players, timing, information, complete strategy/choice sets, and primitives.
+- Derive allocation/demand from the microfoundation where applicable.
+- Solve analytically where possible.
+- Verify closed forms symbolically.
+- Derive FOCs/KKT, SOCs/Hessians, feasibility, participation, existence, uniqueness, and limiting cases as applicable.
+- Distinguish local/regular/interior candidates from global equilibrium.
+- Test finite/global deviations, corners, boundaries, active-set changes, kinks, regime switches, ordering changes, participation changes, entry/exit/zero-output states, and nonexistence/multiplicity where relevant.
+- For sequential games, re-solve downstream subgames after material upstream deviations on the actual strategy/history domain.
+- Treat `None`, NaN, exception, invalid branch, nonconvergence, and branch failure as `UNRESOLVED` unless nonexistence is separately proved.
+- Construct an independent direct-payoff/allocation evaluator for at least one high-stakes claim where feasible.
+- Search symbolically/analytically for counterexamples before numerical search where feasible.
+- Preserve discovered counterexamples as permanent regression tests.
+- Derive profits, consumer surplus, total welfare, and private/social benchmarks when part of the research question.
+- Write each desired result as a Candidate Proposition and actively try to falsify it.
+- Identify sign-switch/threshold conditions rather than forcing ambiguous derivatives into monotone claims.
+- For generalization/unification, solve/recover nested benchmarks and identify at least one full-model result unavailable as an immediate benchmark corollary.
+
+Apply `checklists/SYMBOLIC_VERIFICATION_CHECKLIST.md`, `checklists/NUMERICAL_VERIFICATION_CHECKLIST.md` when applicable, and `checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md` in full whenever off-path continuations matter.
 
 ## Success standard
 
-A `GO` requires more than `parameter up → outcome up`. At least one result should reveal a clean strategic trade-off, threshold ordering, sign reversal, organizational wedge, welfare implication, or nontrivial conditions-for-effectiveness characterization.
-
-A generalization/unification can qualify as a theoretical contribution when it cleanly nests important prior models **and** the interaction of their strategic margins generates a new equilibrium or welfare result that is unavailable in the nested benchmarks alone.
+`GO` requires a coherent solved object plus at least one clean strategic trade-off, threshold ordering, sign reversal, organizational wedge, welfare result, or conditions-for-effectiveness characterization. A sequential SPNE claim additionally requires continuation completeness with no material `UNRESOLVED`/`NUMERICAL_FAILURE` continuation.
 
 ## Failure handling and routing
 
-- `GO`: the minimal mechanism/generalization survives without a substantive repair. Freeze the resulting propositions and proceed to Stage 6 Novelty Re-Kill.
-- `CONDITIONAL GO`: exactly one diagnosed economic deficiency can plausibly be tested by one authorized modification. Proceed to Stage 5 Mechanism Hardening with everything else frozen.
-- `NO-GO`: stop the branch. Return to Stage 3 only for a genuinely distinct mechanism/generalization architecture, or Stage 0 for a distinct research question. `NO-GO` does not itself authorize hardening.
+- `GO` → **Stage 4A**, not Stage 6.
+- `CONDITIONAL GO` → Stage 5 only when exactly one diagnosed economic deficiency can be tested by one authorized model modification.
+- `NO-GO` → terminate the branch or return to Stage 3/0 only for a genuinely distinct architecture/question.
 
-A negative proof is a valid Stage 4 output.
+A negative proof is a valid Stage-4 output.
 
-For a generalization route, return `NO-GO` if the full model merely writes multiple known benchmark cases in one notation, changes no economically meaningful strategic feedback, or yields only results already obtainable as immediate benchmark corollaries.
+---
+
+# Stage 4A — Independent Mathematical Adversarial Certification Gate
+
+## Objective
+
+Independently try to falsify the solved Stage-4 object before novelty or welfare work continues.
+
+The preferred reviewer/implementation must be logically independent of the construction path: a different model, clean-room derivation, separately written evaluator/solver, or equivalent method that does not inherit the production branch assumptions.
+
+## Mandatory tasks
+
+For every headline claim:
+
+- formalize exact quantifiers, parameter domain, strategy domain, assumptions, and local/branch/global status;
+- reconstruct payoffs/allocation from primitives without relying only on the production solver;
+- re-audit FOCs/KKT, SOCs/Hessians, feasibility, participation, existence/uniqueness as relevant;
+- enumerate and attack corners, boundaries, active-set changes, regime switches, order changes, entry/exit, zero-output states, discontinuities, kinks, and material off-path histories;
+- search for profitable finite/global deviations over the actual strategy set;
+- for sequential games independently challenge continuation completeness and fail closed on solver failures;
+- deliberately choose stress histories/parameters that break maintained interiority or the preferred regular branch;
+- conduct analytic/symbolic and then numerical counterexample search where applicable;
+- independently verify at least one high-stakes claim through a separate evaluator/solver where feasible;
+- audit welfare benchmark labels against the planner's actual objective and feasible choice set;
+- create one theorem certificate per headline claim using `checklists/THEOREM_CERTIFICATION_CHECKLIST.md`;
+- preserve all counterexamples as regression artifacts.
+
+## Hard gate
+
+A material theorem-certificate field marked `NOT TESTED` blocks `GO` unless explicitly `NOT APPLICABLE` with a valid reason.
+
+A headline claim fails certification if it relies on local conditions as global proof, an omitted profitable boundary/regime deviation, unresolved continuation treated as unprofitable, a regular formula outside its domain, solver failure filtering, an implementation-independent contradiction, or a benchmark label inconsistent with the optimization problem.
+
+## Verdict and routing
+
+- `GO — MATHEMATICAL ADVERSARIAL CERTIFICATION PASS` → Stage 6.
+- `CONDITIONAL GO` → earliest affected stage; proof/equilibrium/domain errors normally reopen Stage 4, while exactly one authorized economic modification may route to Stage 5 and must then repeat Stage 4 and 4A.
+- `NO-GO` → terminate or reopen Stage 4/3/0 as required.
+
+No project may bypass Stage 4A because Stage 4, CI, symbolic algebra, or the production solver is green.
 
 ---
 
@@ -264,26 +271,19 @@ For a generalization route, return `NO-GO` if the full model merely writes multi
 
 ## Objective
 
-Repair the precise weakness exposed by Stage 4 without uncontrolled model growth.
+Repair exactly one diagnosed economic deficiency exposed by Stage 4/4A without uncontrolled model growth.
 
 ## Rule
 
-Change one essential margin at a time.
-
-Examples of legitimate hardening steps include:
-
-- replacing an ad hoc transfer with a participation constraint;
-- adding a missing contractibility margin;
-- replacing static demand with a state variable when history is essential;
-- introducing relationship-specific investment when provider identity otherwise has no content.
+Change one essential margin at a time. Examples include replacing an ad hoc transfer with participation, adding one missing contractibility margin, replacing static demand with a state variable when history is essential, or adding relationship-specific investment when provider identity otherwise has no content.
 
 ## Prohibition
 
-Do not simultaneously add online channels, bargaining, geography, multiple manufacturers, dynamics, and heterogeneity because the baseline failed.
+Do not add multiple mechanisms because the baseline failed.
 
-## Exit criterion
+## Exit criterion and routing
 
-Either the mechanism becomes structurally coherent or the branch is terminated.
+Either the repair becomes structurally coherent or the branch terminates. A repaired model returns to **Stage 4 and then Stage 4A**; it does not jump directly to Stage 6.
 
 ---
 
@@ -291,24 +291,20 @@ Either the mechanism becomes structurally coherent or the branch is terminated.
 
 ## Objective
 
-Search the literature again using the actual propositions generated by the model.
+Search the literature again using the actual certified propositions.
 
 ## Mandatory tasks
 
-- Turn each surviving proposition into targeted search queries.
-- Search the exact strategic mechanism, threshold result, organizational transition, welfare wedge, and game-architecture language.
-- Re-open the closest literature in light of the new result.
-- Distinguish novelty of individual components, novelty of the whole game, and novelty of the theorem.
-- Re-run the whole-game absorption test against the actual solved model.
-- For a generalization/unification, re-open every material nested benchmark and verify that the full-model result is unavailable in each benchmark alone and is not an immediate corollary of a known theorem.
+- Turn surviving propositions into targeted searches.
+- Search the exact strategic mechanism, threshold, welfare wedge, transition, and game-architecture language.
+- Re-open closest literature in light of the solved result.
+- Distinguish component novelty, whole-game novelty, and theorem novelty.
+- Re-run whole-game absorption against the actual model.
+- For generalization/unification, verify the full-model result is unavailable in material nested benchmarks and is not an immediate corollary of a known theorem.
 
-## Rule
+A result that looked novel before the mathematics may be killed now. Remove it immediately from the contribution set.
 
-A result that looked novel before the mathematics may be killed after the mathematics. Remove it from the contribution set immediately.
-
-A model is not rescued merely because no prior paper has the exact setup. A model is also not killed merely because every ingredient is separately familiar. The relevant question is whether the full strategic architecture and its surviving results are economically redundant with prior theory.
-
-Stage 6 should update the Stage 2 literature ledger and re-open the papers that are material to the actual derived result; it should not repeat the entire Stage 2 search from zero unless the mechanism has materially changed.
+Stage 6 updates the Stage-2 literature ledger rather than repeating the entire search from zero unless the mechanism materially changed.
 
 ---
 
@@ -316,33 +312,26 @@ Stage 6 should update the Stage 2 literature ledger and re-open the papers that 
 
 ## Objective
 
-Determine whether the mechanism matters beyond firm profit and beyond one motivating case, and identify the most efficient exposition vehicle for each surviving headline result before theory freeze.
+Determine whether the certified mechanism matters beyond firm profit and one motivating case, and identify efficient exposition vehicles before theory freeze.
 
 ## Mandatory tasks
 
-- Derive consumer surplus and total welfare consistently from the model's utility system.
+- Derive consumer surplus and total welfare consistently from the model utility/accounting system.
 - Compare private and social decisions.
-- Identify under-provision, over-provision, premature exit, excessive preservation, or other organizational wedges.
-- Audit whether core primitives are supported by institutional evidence.
-- Prefer primary sources for institutional claims.
-- Test whether the mechanism generalizes to other industries or environments without changing the theory.
-- Produce testable empirical predictions where possible.
-- Perform a **result-to-exposition triage** for every surviving headline result, assigning a candidate primary vehicle: theorem/proposition, figure, table, numerical illustration, or concise prose.
-- Explicitly flag threshold crossings, sign reversals, non-monotonicity, regime changes, benchmark separation, welfare decomposition, and multi-case scope patterns for figure/table consideration when visualization would materially reduce reader effort.
-
-The triage is planning, not a requirement to create graphics before Stage 8. A theorem/prose-only choice is valid when a visual would add little information.
+- Identify under/over-provision or other organizational wedges.
+- Audit institutional support for core primitives, preferring primary sources.
+- Test whether the mechanism generalizes across credible environments without changing the theory.
+- Produce testable predictions where possible.
+- Perform result-to-exposition triage for every headline result: theorem/proposition, figure, table, numerical illustration, or concise prose.
+- Flag thresholds, sign reversals, non-monotonicity, regime changes, benchmark separation, welfare decomposition, and multi-case scope patterns for visual consideration when useful.
 
 ## Kill tests
 
-- Welfare result is just transfer accounting.
-- Generality is obtained only by relabeling the same institution.
-- A crucial primitive has no institutional or theoretical defense.
-- Policy implications require assumptions not present in the model.
-- The only way to make a result visually interesting is to add unverified computation or overstate the theorem.
+Kill or downgrade if welfare is transfer accounting, generality is relabeling only, a crucial primitive lacks theoretical/institutional defense, policy claims require absent assumptions, or visual interest requires unverified computation/overclaiming.
 
 ## Exit criterion
 
-In addition to the welfare/generality verdict, preserve a result-to-exposition triage map for Stage 10. Every surviving headline result should have a candidate exposition vehicle or an explicit reason why theorem/prose presentation is sufficient.
+A welfare/generality verdict and result-to-exposition triage map for Stage 10.
 
 ---
 
@@ -350,26 +339,63 @@ In addition to the welfare/generality verdict, preserve a result-to-exposition t
 
 ## Objective
 
-Decide whether the project has a general economic mechanism or merely a technically correct result in a specific model.
+Decide whether the project contains a general economic mechanism worthy of full-paper investment rather than only a technically correct model-specific result.
 
 ## Required questions
 
 - Can the core result be stated without model-specific notation?
 - What is the minimal causal/strategic chain?
-- What assumption is genuinely essential?
-- What assumption is normalization or tractability?
-- Does the contribution survive at least one alternative formulation?
-- Is there a clear welfare or organizational implication?
-- Would a skeptical field referee understand why this is not a parameter exercise?
-- If the contribution is a generalization/unification, what important prior models are nested and what full-model result cannot be obtained from them separately?
+- Which assumptions are essential versus normalization/tractability?
+- Does the contribution survive at least one credible alternative formulation already tested?
+- Is the welfare/organizational implication substantive?
+- Would a skeptical field referee see more than a parameter exercise?
+- If generalization/unification is claimed, which important prior models are nested and what result cannot be obtained from them separately?
 
 ## Verdict and routing
 
-- `GO`: full-paper investment is justified; route to Stage 8 Canonical Theory Freeze.
-- `CONDITIONAL GO`: exactly one unresolved theorem/robustness requirement remains; return only to the stage needed to resolve it and repeat Stage 7.5.
-- `NO-GO`: stop the full-paper route; optionally classify the output as research note or pivot without treating that label as a `GO`.
+- `GO` → **Stage 7.5A**, not Stage 8.
+- `CONDITIONAL GO` → return only to the stage needed to resolve the one named blocker, then repeat affected downstream gates.
+- `NO-GO` → stop the full-paper route or classify as research note/pivot without treating that label as `GO`.
 
-Do not initialize a full manuscript build merely because a closed-form model exists.
+Do not initialize a full manuscript merely because a closed-form model exists.
+
+---
+
+# Stage 7.5A — Generality / Quantifier Red-Team Gate
+
+## Objective
+
+Certify that every headline theorem, robustness statement, welfare benchmark, and contribution sentence states exactly the scope actually proved.
+
+This stage attacks over-generalization rather than merely rechecking baseline algebra.
+
+## Mandatory tasks
+
+For every headline theorem/proposition and material robustness/generalization statement:
+
+- rewrite the claim in formal quantifier form (`for all`, `exists`, `unique`, `generic`, `local`, `global`, etc.);
+- list assumptions actually used, separating economic assumptions, shape restrictions, parameter restrictions, regularity, normalization, and tractability;
+- compare formal theorem scope with the strongest abstract/introduction/contribution/welfare/robustness prose;
+- distinguish baseline closed form, restricted function class, sufficient-condition theorem, numerical robustness evidence, conjectured generality, and truly general theorem;
+- for broad function classes, identify which derivative/order restrictions are required for each sign, concavity, uniqueness, or threshold conclusion;
+- construct admissible counterexample functions designed to reverse claimed comparative statics/curvature/orderings;
+- stress-test nonquadratic, low/high-curvature, boundary, and near-boundary cases when the baseline is convenient/parametric;
+- verify that a parametric-family result is not called generic without a separate argument;
+- write the planner optimization problem and feasible choice set for every welfare benchmark and reserve `first best` for the unrestricted relevant planner problem;
+- produce a claim-scope ledger mapping each manuscript claim to theorem certificate, proof, robustness artifact, maximum defensible wording, and prohibited stronger wording;
+- reapply the theorem-certification checklist whenever claim scope changed after Stage 4A.
+
+## Kill tests
+
+Fail the gate if a broad-function-class strict comparative static is not implied by stated restrictions, curvature/uniqueness is generalized beyond available derivatives, a parametric result is relabeled generic, numerical robustness is called proof, an existence result is called universal uniqueness, a local result is called global, a sufficient condition is called necessary-and-sufficient, a constrained benchmark is mislabeled first best, manuscript prose exceeds the certificate, or an admissible counterexample exists inside the claimed class.
+
+## Verdict and routing
+
+- `GO — GENERALITY / QUANTIFIER CERTIFICATION PASS` → Stage 8.
+- `CONDITIONAL GO` → earliest affected stage; pure wording inflation may be corrected and re-audited here, but missing/false mathematics reopens Stage 4/7 as appropriate.
+- `NO-GO` → reopen the earliest invalidated stage or terminate.
+
+A narrow exact theorem can pass. The gate penalizes overclaiming, not specialization.
 
 ---
 
@@ -379,26 +405,37 @@ Do not initialize a full manuscript build merely because a closed-form model exi
 
 Freeze the theoretical object before manuscript construction.
 
+## Entry hard gate
+
+Stage 8 is blocked unless the project has:
+
+- Stage 4A `GO — MATHEMATICAL ADVERSARIAL CERTIFICATION PASS`; and
+- Stage 7.5A `GO — GENERALITY / QUANTIFIER CERTIFICATION PASS`.
+
 ## Freeze at minimum
 
-- research question;
-- players;
-- timing;
-- information;
-- utility/demand;
-- cost and contract structure;
-- parameter restrictions;
+- research question and contribution statement;
+- players, objectives, timing, information, complete strategy/choice sets;
+- utility/demand, technology/costs, contracts/transfers;
+- parameter restrictions and admissible function classes;
 - equilibrium concept;
-- main propositions;
-- welfare propositions;
-- proof strategy;
-- robustness scope;
-- contribution claims;
-- closest-paper distinction.
+- baseline equilibrium objects;
+- main and welfare propositions with exact conditions and quantifiers;
+- proof/evidence status;
+- approved robustness scope;
+- empirical/institutional interpretation;
+- closest-paper distinction;
+- explicit claims not made;
+- Stage-4A theorem certificates;
+- Stage-7.5A claim-scope/quantifier certificates;
+- benchmark-definition register;
+- counterexample/regression-test register.
 
-The Stage-7 exposition triage is not part of the theory freeze and may be refined later, but it may not be used to justify changing a frozen result.
+For sequential/game-theoretic models additionally freeze off-path history classes, continuation-equilibrium status, active-set/corner/order/participation handling, solver outcome taxonomy, multiplicity/nonexistence/selection assumptions, and independent direct-payoff/allocation verification artifacts.
 
-Changes after freeze require an explicit theory-change record and re-running affected gates.
+Classify each proposition as `PROVED`, `CONDITIONAL`, `NUMERICALLY SUPPORTED ONLY`, `CONJECTURE`, or `REJECTED`.
+
+Changes after freeze require explicit theory-change control and repetition of every affected gate, including Stage 4A/7.5A where correctness or scope is affected.
 
 ---
 
@@ -406,24 +443,23 @@ Changes after freeze require an explicit theory-change record and re-running aff
 
 ## Objective
 
-Create the production research repository only after the theory is sufficiently stable.
+Create the production research repository only after the theory is frozen.
 
 ## Recommended components
 
 - modular LaTeX manuscript;
-- BibTeX/BibLaTeX bibliography;
-- symbolic verification scripts where applicable;
-- numerical verification scripts where applicable;
+- bibliography;
+- symbolic/numerical verification scripts;
 - deterministic figure/table generation;
+- tests and regression tests;
+- `theorem_certificates/` or equivalent directory containing Stage-4A and Stage-7.5A certificates;
+- counterexample and benchmark-definition artifacts;
 - Makefile or equivalent build orchestration;
-- environment/dependency specification;
-- tests or verification gates;
+- dependency/environment specification;
 - CI where feasible;
 - decision log and provenance notes.
 
-## Rule
-
-Never reset to an old reference SHA without first fetching and checking the latest remote state.
+Never reset to an old reference SHA without checking the latest remote state.
 
 ---
 
@@ -431,7 +467,7 @@ Never reset to an old reference SHA without first fetching and checking the late
 
 ## Objective
 
-Build the manuscript in dependency order rather than writing the introduction first and forcing the theory to fit it. Establish the manuscript's Figure/Table Architecture before the Introduction is finalized.
+Build the manuscript in dependency order and establish the Figure/Table Architecture before finalizing the Introduction.
 
 ## Recommended order
 
@@ -440,64 +476,61 @@ Build the manuscript in dependency order rather than writing the introduction fi
 3. Main propositions
 4. Welfare
 5. Robustness/extensions
-6. Institutional or empirical bridge
+6. Institutional/empirical bridge
 7. Related literature
-8. **Figure/Table Architecture Gate**
+8. Figure/Table Architecture Gate
 9. Introduction
 10. Discussion
 11. Conclusion
 
 ## Figure/Table Architecture Gate
 
-For every headline theorem, comparative static, welfare result, benchmark contrast, robustness result, and scope condition, assign one primary presentation vehicle:
+Assign every headline theorem, comparative static, welfare result, benchmark contrast, robustness result, and scope condition one primary vehicle: theorem/proposition, figure, table, numerical illustration, or concise prose.
 
-- theorem/proposition;
-- figure;
-- table;
-- numerical illustration;
-- concise prose.
+Every quantitative figure/table must be generated from verified scripts or authoritative sources, preserve actual economic scale/sign/domain, be regression-checked at representative values/thresholds when feasible, retain source/generator files, avoid arbitrary normalization presented as the economic object, and be interpreted in the manuscript.
 
-Use a figure for shape/structure such as threshold crossing, non-monotonicity, regime maps, strategic paths, or benchmark separation when visualization materially lowers reader effort. Use a table for exact values, discrete comparisons, sensitivity matrices, welfare accounting, or classifications. Use theorem/prose when a visual would be redundant.
-
-Every required quantitative figure/table must:
-
-- be generated from a verified script or authoritative source;
-- preserve the actual economic scale/sign/domain of the reported object;
-- be regression-checked at representative values, thresholds, or identities where feasible;
-- retain generator/source files in the repository;
-- avoid arbitrary normalization or proxy curves labeled as the underlying economic object;
-- be referenced and interpreted in the manuscript.
-
-There is no minimum visual count and no decorative-figure requirement.
+There is no minimum visual count.
 
 ## Exit criterion
 
-Each section should be compiled, checked against the frozen theory, reviewed, and integrated through controlled changes. Stage 10 is not complete until every headline result has an explicit exposition vehicle and every figure/table classified as required has been reproducibly implemented or has a documented blocker.
+Each section compiles, matches the frozen theory and theorem certificates, and is integrated through controlled changes. Every headline result has an explicit exposition vehicle and every required figure/table is reproducibly implemented or has a documented blocker.
 
 ---
 
-# Stage 11 — Robustness / Referee Attack
+# Stage 11 — Robustness / Referee Attack Gate
 
 ## Objective
 
-Try to reject the paper before external referees do.
+Try to reject the full manuscript before external referees do.
+
+Stage 11 is not a substitute for Stage 4A or 7.5A. It is a late independent layer that checks whether exposition, extensions, journal framing, or post-freeze implementation reintroduced vulnerabilities.
 
 ## Mandatory attacks
 
-- `This is classic result X in different notation.`
-- `Every ingredient is known; does the full game actually create a new strategic interaction or result?`
-- `The claimed generalization merely nests known cases without adding new economics.`
-- `The result is driven by one ad hoc assumption.`
-- `The extension merely adds a variable.`
-- `The welfare result is mechanical.`
-- `The motivating institution is too specific.`
-- `The main theorem disappears under a standard alternative demand or contract.`
-- `The result is numerically observed but not proved.`
-- `The headline exposition vehicle hides a domain restriction, uses an arbitrary normalization, or visually overstates the theorem.`
+Attack at least:
+
+- classic-result/relabeling;
+- whole-game novelty and generalization redundancy;
+- ad hoc assumptions and results built into assumptions;
+- alternative demand/contract/information structures;
+- participation/corner/boundary/regime-switch behavior;
+- welfare mechanicality;
+- institutional specificity and external validity;
+- numerical-not-proof;
+- proof/notation inconsistency;
+- journal fit/contribution level;
+- exposition/claim inflation;
+- theorem quantifier inflation relative to Stage-7.5A certificates;
+- benchmark terminology drift;
+- global/SPNE claims relative to Stage-4A certificates.
+
+For sequential models independently reconstruct at least one material continuation/deviation from primitives, deliberately search for a finite deviation leaving the regular branch, and inspect all `None`/NaN/invalid/nonconvergent code outcomes.
+
+For broad theorem/generalization claims independently attempt at least one admissible-function counterexample or assumption-relaxation attack rather than merely rereading the production proof.
 
 Classify attacks as `FATAL`, `MAJOR BUT FIXABLE`, or `MINOR`.
 
-A major claim with an unresolved fatal attack cannot proceed to submission preparation. Route any substantive fix to the earliest affected research stage under the rollback rule.
+If Stage 11 discovers a failure that Stage 4A or 7.5A should have caught, record it explicitly as a **certification regression** and route to the earliest affected stage. Do not patch it only in prose.
 
 ---
 
@@ -505,21 +538,17 @@ A major claim with an unresolved fatal attack cannot proceed to submission prepa
 
 ## Objective
 
-Choose journals based on the actual contribution, not the desired prestige level.
+Choose journals based on the actual surviving contribution, not desired prestige.
 
 ## Mandatory tasks
 
-- Read current aims/scope and recent related publications.
-- Compare model sophistication and contribution type with papers actually published there.
-- Estimate desk-reject risk and likely referee objection.
+- Read current aims/scope and recent related papers.
+- Compare model sophistication and contribution type with actual publications.
+- Estimate desk-reject risk and likely referee objections.
 - Assess whether empirical content is expected.
 - Define stretch, primary, realistic fallback, and safety-net routes when appropriate.
 
-## Rule
-
-Do not reshape an economics contribution into a managerial paper merely because another journal family appears easier.
-
-Early stages may use a provisional journal family or quality bar. Stage 12 is the point for actual journal selection and submission sequencing.
+Do not distort substantive economics to fit a preferred journal family.
 
 ---
 
@@ -527,29 +556,22 @@ Early stages may use a provisional journal family or quality bar. Stage 12 is th
 
 ## Objective
 
-Turn independently correct sections into one coherent argument and reconcile the Stage-10 Figure/Table Architecture with the target journal.
+Turn independently correct sections into one coherent argument and reconcile the Stage-10 figure/table architecture with the selected journal.
 
 ## Audit
 
-- Introduction states the question, mechanism, result, and contribution without overclaiming.
-- Related Literature is organized by conceptual relationship, not repetitive author-by-author summaries.
-- Model contains no assumptions introduced solely to rescue later prose.
-- Results section proves rather than narrates.
-- Discussion interprets scope and implications rather than repeating results.
-- Conclusion is short and does not introduce new claims.
-- Terminology and notation are consistent.
-- Every contribution claim maps to a verified theorem/result and literature distinction.
-- Every retained figure/table materially reduces reader effort, is referenced in surrounding prose, and maps to a verified generator or source.
-- Figure/table captions identify the actual object, benchmark/parameterization where relevant, and scope limitations without claim inflation.
-- Target-journal figure/table count, placement, file-type, grayscale/color, accessibility, and caption rules are checked and incorporated without changing substantive results.
+- Introduction states question, mechanism, result, and contribution without exceeding the Stage-7.5A claim-scope ledger.
+- Related Literature is organized by conceptual relationship.
+- Model introduces no assumptions solely to rescue prose.
+- Results prove rather than narrate.
+- Discussion interprets scope rather than enlarging it.
+- Conclusion introduces no new claims.
+- Terminology/notation are consistent.
+- Every contribution claim maps to a verified theorem and prior-art distinction.
+- Every retained figure/table maps to a verified generator/source and is correctly captioned/referenced.
+- Journal-specific figure/table rules are incorporated without changing substantive results.
 
-There is no minimum figure count. If Stage 13 discovers a bounded presentation gap for an already verified result, it may integrate the missing visual/table and document that no theory/result changed. If a defensible visual requires a new substantive computation, result, or robustness exercise, roll back to the earliest affected stage.
-
-Substantive inconsistency triggers rollback to the earliest affected stage; it is not a manuscript-only edit.
-
-## Exit criterion
-
-Do not enter Stage 14 with a known central exposition-architecture gap. The final figure/table set, generators/sources, manuscript references, and journal-specific placement should already be settled except for bounded submission-format QA.
+Substantive inconsistency triggers rollback to the earliest affected stage.
 
 ---
 
@@ -557,36 +579,24 @@ Do not enter Stage 14 with a known central exposition-architecture gap. The fina
 
 ## Objective
 
-Verify the complete submission package, including final artwork compliance and figure/table reproducibility.
+Verify the complete submission package, including mathematical artifacts and artwork compliance.
 
 ## Mandatory checks
 
-- fresh full build from a clean environment;
-- all applicable symbolic verification passes;
-- all applicable numerical tests regenerate reported results;
-- every quantitative figure/table regenerates from source;
-- representative plotted/tabulated values, signs, thresholds, and benchmark identities agree with the manuscript;
-- current journal figure/table/artwork requirements are opened and dated;
-- accepted artwork file types, vector/font rules, raster resolution, color/grayscale, placement, and separate-file requirements are satisfied where applicable;
-- vector fonts are embedded when required and raster graphics meet effective-resolution requirements;
-- labels, legends, line styles, markers, captions, and table text remain readable at final manuscript size and do not rely on color alone where accessibility requires alternatives;
-- every figure/table is referenced and numbered consistently;
-- figure/table source, generator, and required output files are present in the submission/source package;
-- all citations resolve;
-- no unverified references;
-- no broken labels/cross-references;
-- journal formatting requirements satisfied;
-- anonymity requirements satisfied;
-- supplementary material consistent;
-- AI/disclosure requirements checked against current journal policy;
-- claims, abstract, highlights, and cover letter agree with the manuscript;
-- final PDF is inspected page by page, including every figure/table page at readable resolution.
+- fresh build from a clean environment;
+- all applicable symbolic/numerical tests pass;
+- theorem-certificate artifacts referenced by the freeze remain present and consistent;
+- quantitative figures/tables regenerate and agree with reported values/signs/thresholds;
+- current journal artwork/file/format rules are checked and dated;
+- fonts/resolution/accessibility/legibility are satisfactory where required;
+- all citations and cross-references resolve;
+- journal formatting/anonymity/supplement/disclosure requirements are satisfied;
+- abstract, highlights, cover letter, manuscript, and theorem scope agree;
+- final PDF is inspected page by page.
 
 Use `checklists/SUBMISSION_CHECKLIST.md` and `checklists/FIGURE_TABLE_CHECKLIST.md`.
 
-A bounded artwork-format defect may be repaired at Stage 14 if the underlying verified object and interpretation are unchanged. If Stage 14 discovers that a central result lacks an appropriate exposition vehicle, return to Stage 10 or Stage 13 rather than inventing an unverified last-minute visual.
-
-A substantive mathematical, novelty, theory, welfare, institutional, or exposition-design problem discovered here triggers rollback to the earliest affected stage and a fresh downstream QA cycle.
+A substantive mathematical, novelty, theory, welfare, institutional, or claim-scope problem triggers rollback to the earliest affected stage and a fresh downstream QA cycle.
 
 ---
 
@@ -599,16 +609,14 @@ Create an immutable, auditable submission state.
 ## Freeze
 
 - canonical commit SHA/tag;
-- manuscript PDF;
-- source archive;
+- manuscript PDF and source archive;
 - appendices/supplement;
-- verification outputs;
-- final figure/table outputs and their source/generator provenance;
-- cover letter and required submission files;
-- journal-specific metadata;
+- verification outputs and theorem certificates;
+- final figures/tables and generator/source provenance;
+- cover letter and journal-specific files/metadata;
 - disclosure statement where required.
 
-After submission freeze, theoretical changes require reopening the affected research stages, not silent edits.
+After submission freeze, substantive changes reopen affected stages; no silent theory edits.
 
 ---
 
@@ -616,64 +624,69 @@ After submission freeze, theoretical changes require reopening the affected rese
 
 ## 3.1 Literature integrity and continuity
 
-Do not invent citations, bibliographic metadata, propositions, or novelty claims. For closest papers, rely on the strongest accessible evidence and document evidentiary limits.
+Do not invent citations, metadata, propositions, or novelty claims. Stage 2 establishes the baseline literature ledger; later searches are incremental and purpose-specific. Preserve the distinction between component overlap and whole-game absorption throughout.
 
-Stage 2 establishes the baseline literature ledger. Later literature work is incremental and purpose-specific: Stage 3 performs targeted searches for newly proposed mechanisms; Stage 5 checks the literature introduced by the one new primitive; Stage 6 re-kills the actual derived results; Stage 7 validates institutions/generality; Stage 12 checks journal fit. Do not restart the complete literature review at every stage unless the research question or mechanism materially changes.
+## 3.2 Mathematical certification and independence
 
-For strategic models, preserve the distinction between **component overlap** and **whole-game absorption** throughout the workflow. A later stage must not silently promote a collection of component precedents into an exact-absorption verdict without a model-level mapping or result-level corollary argument.
+Where symbolic derivation is feasible, independently verify it. Never treat an FOC solution as equilibrium without SOC/KKT, feasibility, relevant constraints, and—when claimed—global best-response verification.
 
-## 3.2 Mathematical and method integrity
+For sequential games, re-solve material continuation games rather than extending an on-path formula beyond its validity domain. Solver failures fail closed.
 
-Where symbolic derivation is feasible, independently verify it. Never treat a first-order condition solution as an equilibrium without SOC, feasibility, and relevant constraints.
+For all headline theorem-bearing theory projects:
 
-Verification must match the research method. A check may be `NOT APPLICABLE` only with a reason. The theory-oriented Stage 4 gate should not be imposed on a project whose Stage 0–3 decision is to pursue a non-theory primary method; that project leaves this v1 canonical theory pipeline rather than pretending to pass Stage 4.
+- Stage 4 constructs and verifies;
+- Stage 4A independently tries to falsify correctness/globality;
+- Stage 7.5A independently tries to falsify scope/generality/benchmark language;
+- Stage 11 repeats high-stakes attacks at the manuscript level.
 
-## 3.3 Negative results are first-class outputs
+Whenever feasible, the adversarial reviewer/model/implementation should differ from the construction path. Re-running the same solver or asking the same derivation path to confirm itself is reproduction, not independent certification.
 
-A stage that proves why a desired proposition cannot hold has succeeded if it eliminates a weak branch efficiently.
+A project must retain theorem certificates and counterexamples as research artifacts. A material `NOT TESTED` field is not equivalent to `PASS`.
 
-## 3.4 No complexity rescue
+## 3.3 Theorem quantifier discipline
 
-Complexity must solve a diagnosed economic deficiency. It may not be used to hide a failed minimal mechanism.
+Every headline theorem must have a formal scope. Distinguish local from global, existence from uniqueness, sufficient from necessary, parametric from generic, baseline from robustness, and numerical evidence from proof.
 
-A generalization/unification is not exempt from this rule. Added players or strategic margins must be necessary to the economic question and must be evaluated through nested benchmarks.
+A theorem may be narrow. It may not be broader than its proof.
 
-## 3.5 Contribution discipline
+## 3.4 Benchmark terminology discipline
 
-Variables are not contributions. Functional forms are not contributions. Applications are not automatically contributions. The contribution should be expressible as an economic mechanism, theorem, comparative-static reversal, organizational result, welfare implication, or economically substantive generalization/unification that survives prior-art comparison.
+Welfare labels are mathematical claims. `First best` requires the unrestricted relevant planner problem over the relevant feasible choices. If instruments, allocations, technology, information, commitment, or R&D allocation are fixed/restricted, use the exact constrained/second-best/fixed-allocation label.
 
-A generalization/unification contribution must do more than place known models inside one notation. It should recover important benchmarks transparently and generate a new strategic interaction, equilibrium characterization, conditions result, or welfare implication unavailable in the benchmarks alone.
+## 3.5 Negative results are first-class outputs
 
-Likewise, known components do not automatically imply that a strategically distinct full game is absorbed. Absorption requires whole-game equivalence or result-level redundancy, not an ingredient checklist.
+A stage that proves a desired proposition false succeeds by killing a weak branch. Preserve counterexamples and rejected branches.
 
-## 3.6 Exposition architecture integrity
+## 3.6 No complexity rescue
 
-Figures and tables are part of the evidence-bearing manuscript, not decoration. They must not create a second, weaker standard of proof.
+Complexity must solve a diagnosed economic deficiency and may change only under the Stage-5 one-margin rule. Generalization/unification is not exempt.
 
-- Every headline result receives an explicit exposition vehicle by Stage 10.
-- Quantitative figures/tables must be traceable to verified generators or authoritative sources.
-- Visuals must preserve the actual economic object's scale/sign/domain and must not disguise a proxy or arbitrary normalization as the reported result.
-- The absence of a figure is acceptable when theorem/prose is the most efficient vehicle.
-- Stage 14 verifies artwork compliance; it should not be the first stage to design the exposition architecture.
+## 3.7 Contribution discipline
 
-## 3.7 Provenance and evidence maturity
+Variables, functional forms, and applications are not automatically contributions. A contribution should be an economic mechanism, theorem, comparative-static reversal, organizational result, welfare implication, or strategically substantive generalization/unification that survives prior-art comparison.
 
-Every project should distinguish historical/AI/scratch outputs from results reproduced in the project repository and from claims re-verified for the actual submission package. Do not silently promote a conversation result, temporary notebook output, or remembered citation to submission-ready evidence.
+## 3.8 Exposition architecture integrity
 
-## 3.8 Rollback and stale downstream outputs
+Figures/tables are evidence-bearing manuscript objects, not decoration. They may not create a weaker proof standard or hide theorem scope restrictions.
 
-If a later stage invalidates an earlier canonical input, return to the earliest affected stage. Mark all dependent downstream outputs stale until the necessary stages are re-run. Do not silently patch a downstream manuscript or submission artifact around an invalid research result.
+## 3.9 Provenance and evidence maturity
 
-## 3.9 Provenance and decision logs
+Distinguish remembered/AI/scratch outputs from reproduced project artifacts and submission-level re-verification. Do not silently upgrade conjectures or temporary computations into theorems.
 
-Every project should preserve major rejected branches and the reason for rejection. A reusable research workflow depends as much on documented failures as on final successful results.
+## 3.10 Rollback and stale downstream outputs
+
+If a later stage invalidates an earlier canonical input, return to the earliest affected stage and mark dependent downstream outputs stale. A Stage-11 mathematical failure normally reopens Stage 4/4A; a scope/generality failure normally reopens Stage 7.5A and any earlier stage whose theorem is actually false.
+
+## 3.11 Decision logs
+
+Preserve major rejected branches, discovered counterexamples, certificate failures, repairs, and reasons for routing decisions.
 
 ---
 
-# 4. Planned companion materials
+# 4. Companion materials
 
-Reusable Stage 0–15 prompt/report templates, verification checklists, and worked examples are maintained in this repository under the canonical hierarchy.
+Reusable Stage templates, theorem/math/literature verification checklists, and worked examples live in this repository under the canonical hierarchy.
 
-Future extensions may add empirical/cross-discipline variants, machine-readable metadata, CI, and release tooling after explicit audit. These are not part of the v1 theory pipeline.
+Future extensions may add empirical/cross-discipline variants, machine-readable theorem certificates, automated property-based testing, and release tooling after explicit audit.
 
-This document is the canonical workflow architecture. Stage-specific templates may elaborate it but must not silently weaken its gates.
+This document is the canonical workflow architecture. Stage-specific templates may elaborate it but may not silently weaken its gates.
