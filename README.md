@@ -1,169 +1,191 @@
 # research-paper-workflow
 
-A reusable, reproducible workflow for developing research papers from initial motivation to submission freeze.
+A reusable, reproducible workflow for developing theory-oriented economics research from initial motivation to submission freeze.
 
-The v1 canonical pipeline is designed primarily for **theory-oriented economics research**, especially projects that require rigorous literature mapping, mathematical verification, novelty kill tests, staged model selection, welfare analysis, referee simulation, reproducibility, and journal positioning. Stages 0–3 can also help identify an empirical or mixed route, but v1 does not yet provide a complete empirical post-Stage-3 workflow and non-theory projects should not be force-fit through the Stage 4 theory gate.
+The canonical workflow is designed for projects requiring rigorous literature mapping, mathematical verification, novelty kill tests, model selection, welfare analysis, independent theorem certification, referee simulation, reproducibility, exposition architecture, and journal positioning.
 
 ## Governing principle
 
-> Do not preserve an idea because effort has already been invested in it. Kill weak mechanisms early. Retain only results that survive mathematics, prior art, institutional scrutiny, robustness checks, and referee-style attacks.
+> Do not preserve an idea because effort has already been invested. Kill weak mechanisms early, and do not freeze a theorem until both its mathematical correctness and its claimed scope survive independent adversarial attack.
 
-The workflow is intentionally stage-gated. A project is not assumed to deserve a paper. Every stage records a canonical `GO`, `CONDITIONAL GO`, or `NO-GO`; routing/status labels are secondary, and later stages may invalidate earlier optimism.
+Every stage records `GO`, `CONDITIONAL GO`, or `NO-GO`. A later stage may invalidate an earlier `GO`.
 
 ## Canonical documents
 
-- [`THEORY_PAPER_RESEARCH_PIPELINE.md`](THEORY_PAPER_RESEARCH_PIPELINE.md): canonical Stage 0–15 theory workflow, including Stage 7.5.
-- [`GOVERNANCE.md`](GOVERNANCE.md): repository governance, evidence/provenance rules, verdict/rollback policy, verification rules, release/change control, and canonical hierarchy.
+- [`GOVERNANCE.md`](GOVERNANCE.md) — repository governance, evidence standards, routing, rollback, certification independence, and freeze policy.
+- [`THEORY_PAPER_RESEARCH_PIPELINE.md`](THEORY_PAPER_RESEARCH_PIPELINE.md) — canonical Stage 0–15 theory workflow, including Stage 4A, Stage 7.5, and Stage 7.5A.
 
-The hierarchy is `GOVERNANCE.md` → canonical pipeline → stage templates → checklists → examples. Release/audit documents under `docs/` record version/readiness state but do not override this hierarchy.
+Canonical hierarchy:
 
-## Stable release and current refinement
+`GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → stage templates → checklists → examples.
 
-`v1.0` is the first stable historical release and remains immutable at its published tag.
+## v2.0 architecture: mathematical adversarial certification before theory freeze
 
-The stable `v1.1` refinement strengthened the distinction between **component overlap** and **whole-game absorption** and recognized economically substantive **generalization/unification** as a contribution route.
+v2.0 is a major workflow architecture change because it adds mandatory stages and changes routing.
 
-The stable `v1.2` refinement added an **equilibrium-continuation safety gate** for sequential/game-theoretic projects after a production-paper audit exposed a failure mode in which a regular interior downstream formula was reused off path and solver `None` outcomes silently removed economically relevant deviations.
+The core research path is now:
 
-The v1.2 standard requires:
+`Stage 4 Minimal Model`  
+→ `Stage 4A Independent Mathematical Adversarial Certification`  
+→ `Stage 6 Novelty Re-Kill`  
+→ `Stage 7 Welfare / Generality / Institutional Validation`  
+→ `Stage 7.5 Full-Theory Freeze Decision`  
+→ `Stage 7.5A Generality / Quantifier Red-Team`  
+→ `Stage 8 Canonical Theory Freeze`.
 
-- complete strategy/consumer-choice domains to be explicit;
-- downstream subgames to be re-solved after material upstream deviations;
-- FOC/SOC/interiority checks to be distinguished from full-strategy Nash verification;
-- solver failures to fail closed as `UNRESOLVED` rather than count as unprofitable deviations;
-- active sets, corners, ordering/participation changes, multiplicity, and possible pure-equilibrium nonexistence to be audited when relevant;
-- at least one independent direct-payoff/allocation reconstruction for high-stakes sequential equilibrium claims when feasible;
-- Stage 11 hostile review to include an implementation-independent continuation attack rather than only rerunning the production solver;
-- equilibrium counterexamples to become permanent regression tests.
+A Stage-4 `GO` can no longer route directly to Stage 6. A Stage-7.5 `GO` can no longer route directly to Stage 8.
 
-The v1.2 canonical checklist remains [`checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md`](checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md).
+### Why the new gates exist
 
-The `v1.3` refinement adds a **result-to-exposition and figure/table architecture lifecycle** after a production-paper submission audit exposed avoidable late-stage rework: a headline sign-reversal result was mathematically verified and submission-ready, but its most informative figure was only identified after Stage 14, forcing a bounded Stage-13 reintegration and Stage-14 re-QA. The re-QA then caught a vector-font embedding defect that should have been part of the normal artwork gate.
+Two recurring mathematical failure classes motivate v2.0:
 
-The v1.3 standard requires:
+1. **Global-equilibrium failure** — an interior/regular candidate satisfies FOCs, SOCs, Hessians, symbolic checks, and even production regression tests, but a boundary, corner, active-set, zero-output, regime-switch, or off-path deviation is profitable.
+2. **Theorem-scope failure** — a baseline or restricted theorem is correct, but the manuscript extends it to a broader function class, strict comparative static, generic concavity/uniqueness claim, or planner benchmark label that the proof does not support.
 
-- Stage 7 to classify each surviving headline result by its most efficient candidate exposition vehicle;
-- Stage 10 to assign every headline result an explicit vehicle and reproducibly implement all required figures/tables before the Introduction is finalized;
-- no minimum figure quota — theorem/prose remains valid when a visual adds little information;
-- quantitative visuals/tables to use verified model objects or authoritative source data, not manual values or arbitrary normalizations presented as the economic object;
-- Stage 13 to reconcile the Stage-10 architecture with the target journal, integrate captions/references, and close bounded presentation gaps without new theory;
-- Stage 14 to verify regeneration, numerical integrity, current artwork rules, font embedding where required, raster resolution, grayscale/accessibility, source-package completeness, and page-by-page legibility;
-- a central missing exposition vehicle discovered at Stage 14 to route back to Stage 10/13 rather than trigger an unverified last-minute visual.
+These are different from ordinary algebra errors. Re-running the same derivation or solver is often insufficient because it inherits the same branch assumptions.
 
-The new v1.3 canonical checklist is [`checklists/FIGURE_TABLE_CHECKLIST.md`](checklists/FIGURE_TABLE_CHECKLIST.md).
+### Three-layer mathematical defense
 
-Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), this is the **minor release `v1.3`** because it strengthens checks and manuscript-construction discipline inside existing Stages without changing Stage numbering, canonical verdict semantics, or routing.
+v2.0 therefore requires:
 
-## Integration/readiness audits
+1. **Construction and verification — Stage 4**  
+   Solve the model, perform symbolic/numerical checks, enumerate relevant regimes, search for counterexamples, and create preliminary theorem records.
 
-The original v1 audit remains a historical record:
+2. **Independent adversarial certification — Stage 4A and Stage 7.5A**  
+   Use a logically independent path where feasible: a different model, clean-room derivation, separately written evaluator/solver, or equivalent approach that does not simply call the production solver.
 
-- [`WORKFLOW_V1_INTEGRATION_AUDIT.md`](docs/WORKFLOW_V1_INTEGRATION_AUDIT.md)
-- [`WORKFLOW_V1_READINESS_CHECKLIST.md`](docs/WORKFLOW_V1_READINESS_CHECKLIST.md)
-- [`WORKFLOW_V1_CHANGELOG.md`](docs/WORKFLOW_V1_CHANGELOG.md)
+3. **Late manuscript hostile audit — Stage 11**  
+   Repeat high-stakes attacks after the full paper is built. Any flaw that Stage 4A/7.5A should have caught is recorded as a `CERTIFICATION REGRESSION` and routed back to the earliest invalidated stage.
 
-The v1.1 refinement passed a fresh integration/readiness audit:
+## Stage 4A — Independent Mathematical Adversarial Certification
 
-- [`WORKFLOW_V1_1_INTEGRATION_AUDIT.md`](docs/WORKFLOW_V1_1_INTEGRATION_AUDIT.md)
-- [`WORKFLOW_V1_1_READINESS_CHECKLIST.md`](docs/WORKFLOW_V1_1_READINESS_CHECKLIST.md)
-- [`V1_1_RELEASE_MANIFEST.md`](docs/V1_1_RELEASE_MANIFEST.md)
-- [`V1_1_RELEASE_NOTES.md`](docs/V1_1_RELEASE_NOTES.md)
+Template: [`templates/STAGE_04A_MATH_RED_TEAM.md`](templates/STAGE_04A_MATH_RED_TEAM.md)
 
-The v1.2 refinement passed a fresh integration/readiness audit:
+Stage 4A independently attacks:
 
-- [`WORKFLOW_V1_2_INTEGRATION_AUDIT.md`](docs/WORKFLOW_V1_2_INTEGRATION_AUDIT.md)
-- [`WORKFLOW_V1_2_READINESS_CHECKLIST.md`](docs/WORKFLOW_V1_2_READINESS_CHECKLIST.md)
-- [`V1_2_RELEASE_NOTES.md`](docs/V1_2_RELEASE_NOTES.md)
+- global best responses and finite deviations;
+- corners, boundaries, active-set changes, regime switches, ordering changes, entry/exit, and zero-output states;
+- off-path continuations and solver-failure semantics;
+- local/interior claims that may have been promoted to global equilibrium;
+- independent reconstruction of high-stakes payoff/allocation objects;
+- welfare benchmark definitions;
+- counterexample search and permanent regression tests.
 
-The v1.3 candidate is audited in:
+Every headline theorem receives a certificate. Material `NOT TESTED` fields block `GO`.
 
-- [`WORKFLOW_V1_3_INTEGRATION_AUDIT.md`](docs/WORKFLOW_V1_3_INTEGRATION_AUDIT.md)
-- [`WORKFLOW_V1_3_READINESS_CHECKLIST.md`](docs/WORKFLOW_V1_3_READINESS_CHECKLIST.md)
-- [`V1_3_RELEASE_MANIFEST.md`](docs/V1_3_RELEASE_MANIFEST.md)
-- [`V1_3_RELEASE_NOTES.md`](docs/V1_3_RELEASE_NOTES.md)
+## Stage 7.5A — Generality / Quantifier Red-Team
 
-## Versioning
+Template: [`templates/STAGE_075A_GENERALITY_QUANTIFIER_RED_TEAM.md`](templates/STAGE_075A_GENERALITY_QUANTIFIER_RED_TEAM.md)
 
-The current versioning rule is:
+Stage 7.5A attacks:
 
-- **PATCH** — typo, link, metadata, and non-substantive clarification fixes;
-- **MINOR** — criteria/check/verification additions or refinements that preserve Stage structure, canonical verdict semantics, and routing;
-- **MAJOR** — Stage addition/removal/merger, verdict-semantic changes, routing changes, or incompatible workflow-architecture changes.
+- `for all` / `exists` / `unique` / `generic` / `local` / `global` scope;
+- baseline functional-form dependence;
+- claims over broad classes such as `C^2`, convex, concave, monotone, supermodular, or single-crossing functions;
+- strict comparative statics whose sign is not implied by the stated restrictions;
+- curvature/uniqueness generalization beyond what derivatives establish;
+- numerical robustness relabeled as proof;
+- planner labels such as `first best` when the choice set is actually constrained;
+- abstract/introduction wording that exceeds the proved theorem.
 
-See [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md) for the full compatibility test.
+A narrow exact theorem can pass. The gate penalizes overclaiming, not specialization.
+
+## Theorem certification checklist
+
+Use [`checklists/THEOREM_CERTIFICATION_CHECKLIST.md`](checklists/THEOREM_CERTIFICATION_CHECKLIST.md) for every headline equilibrium, theorem, proposition, welfare result, and broad robustness claim.
+
+Each certificate records at least:
+
+- exact claim and quantifiers;
+- parameter/strategy/function domains;
+- assumptions actually used;
+- local/branch/global status;
+- FOC/KKT/SOC/globality evidence;
+- boundary/corner/regime audit;
+- independent reconstruction status;
+- counterexample search;
+- functional-form/generality status;
+- benchmark-definition status;
+- evidence maturity;
+- maximum defensible manuscript wording;
+- `PASS`, `CONDITIONAL`, or `FAIL`.
+
+## Theory freeze requirements
+
+Stage 8 now requires both:
+
+- `GO — MATHEMATICAL ADVERSARIAL CERTIFICATION PASS` from Stage 4A; and
+- `GO — GENERALITY / QUANTIFIER CERTIFICATION PASS` from Stage 7.5A.
+
+The freeze retains theorem certificates, claim-scope ledger, benchmark-definition register, and counterexample/regression-test register.
+
+Production repositories should retain these under `theorem_certificates/` or an equivalent auditable directory.
 
 ## Reusable templates
 
-Executable prompt/report templates live under [`templates/`](templates/):
+Templates live under [`templates/`](templates/):
 
-- Stage 0: Idea / Motivation Intake
-- Stage 1: Source & Mathematical Audit
-- Stage 2: Literature Frontier / Novelty Kill Gate
-- Stage 3: Candidate Mechanism Search
-- Stage 4: Minimal Model Gate
-- Stage 5: Mechanism Hardening
-- Stage 6: Novelty Re-Kill
-- Stage 7: Welfare / Generality / Institutional Validation
-- Stage 7.5: Full-Theory Freeze Decision
-- Stage 8: Canonical Theory Freeze
-- Stage 9: Repository / Reproducibility Setup
-- Stage 10: Section-by-Section Paper Construction
-- Stage 11: Robustness / Referee Attack Gate
-- Stage 12: Journal Positioning
-- Stage 13: Full-Paper Integration
-- Stage 14: Submission QA
-- Stage 15: Submission Freeze
-
-Each template is designed to be instantiated with project placeholders such as `[RESEARCH_TOPIC]`, `[CORE_RESEARCH_QUESTION]`, `[TARGET_JOURNAL]`, `[CANONICAL_MODEL]`, `[CLOSEST_PAPERS]`, `[KNOWN_BLOCKERS]`, `[ALLOWED_CHANGES]`, and `[PROHIBITED_CHANGES]`.
+- Stage 0 — Idea / Motivation Intake
+- Stage 1 — Source & Mathematical Audit
+- Stage 2 — Literature Frontier / Novelty Kill Gate
+- Stage 3 — Candidate Mechanism Search
+- Stage 4 — Minimal Model Gate
+- **Stage 4A — Independent Mathematical Adversarial Certification Gate**
+- Stage 5 — Mechanism Hardening
+- Stage 6 — Novelty Re-Kill
+- Stage 7 — Welfare / Generality / Institutional Validation
+- Stage 7.5 — Full-Theory Freeze Decision
+- **Stage 7.5A — Generality / Quantifier Red-Team Gate**
+- Stage 8 — Canonical Theory Freeze
+- Stage 9 — Repository / Reproducibility Setup
+- Stage 10 — Section-by-Section Paper Construction
+- Stage 11 — Robustness / Referee Attack Gate
+- Stage 12 — Journal Positioning
+- Stage 13 — Full-Paper Integration
+- Stage 14 — Submission QA
+- Stage 15 — Submission Freeze
 
 ## Verification checklists
 
-Reusable checklists live under [`checklists/`](checklists/):
+Reusable checklists live under [`checklists/`](checklists/), including:
 
 - [`LITERATURE_AUDIT_CHECKLIST.md`](checklists/LITERATURE_AUDIT_CHECKLIST.md)
 - [`NOVELTY_KILL_CHECKLIST.md`](checklists/NOVELTY_KILL_CHECKLIST.md)
 - [`SYMBOLIC_VERIFICATION_CHECKLIST.md`](checklists/SYMBOLIC_VERIFICATION_CHECKLIST.md)
 - [`NUMERICAL_VERIFICATION_CHECKLIST.md`](checklists/NUMERICAL_VERIFICATION_CHECKLIST.md)
 - [`EQUILIBRIUM_CONTINUATION_CHECKLIST.md`](checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md)
+- **[`THEOREM_CERTIFICATION_CHECKLIST.md`](checklists/THEOREM_CERTIFICATION_CHECKLIST.md)**
 - [`FIGURE_TABLE_CHECKLIST.md`](checklists/FIGURE_TABLE_CHECKLIST.md)
 - [`REFEREE_ATTACK_CHECKLIST.md`](checklists/REFEREE_ATTACK_CHECKLIST.md)
 - [`SUBMISSION_CHECKLIST.md`](checklists/SUBMISSION_CHECKLIST.md)
 
-Verification is method-dependent. A non-applicable check may be skipped only with a recorded reason; it cannot be used to bypass a substantive project gate.
+A check may be `NOT APPLICABLE` only with a recorded reason. Material `NOT TESTED` is not a passing state.
 
-## Worked examples
+## Historical releases
 
-Worked research-decision trails live under [`examples/`](examples/). They are examples, not canonical rules, and preserve rejected branches as well as surviving ideas.
+- `v1.0` — first stable release.
+- `v1.1` — strengthened component-overlap vs whole-game absorption and generalization/unification treatment.
+- `v1.2` — added equilibrium-continuation safety for sequential/game-theoretic models: off-path continuation completeness, fail-closed solver semantics, independent direct-payoff reconstruction, and permanent counterexample regression tests.
+- `v1.3` — added result-to-exposition and figure/table architecture lifecycle across Stages 7/10/13/14.
+- `v2.0` — adds mandatory independent mathematical correctness/globality certification and generality/quantifier certification before theory freeze.
 
-- [`retail-service-infrastructure`](examples/retail-service-infrastructure/) — a worked case showing how a legacy retail-channel question was repeatedly killed and reformulated through service spillovers, contract design, installed-base dynamics, and relationship-specific service capability. Current documented status: `CONDITIONAL GO`, before canonical Stage 7.5.
+Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), v2.0 is MAJOR because it adds Stage 4A and Stage 7.5A and changes canonical routing.
 
 ## Recommended workflow
 
-1. Start at Stage 0 unless a prior project has already produced a verified input for a later stage.
-2. Fill only the placeholders relevant to the project; mark unknown items `UNRESOLVED` rather than inventing them.
-3. Run the stage as an executable research prompt and preserve the required report output.
-4. Record the canonical stage verdict, route/status, rejected branches, blockers, and next-stage contract.
-5. If a minimal theory model has exactly one diagnosed repairable deficiency, use Stage 5; a Stage 4 `NO-GO` does not itself authorize hardening.
-6. Re-kill actual novelty after results are known in Stage 6, updating the Stage 2 literature ledger rather than blindly starting over.
-7. For strategic/game-theoretic work, distinguish component overlap from whole-game absorption and use nested benchmarks when the contribution is a generalization/unification.
-8. For sequential games, apply the equilibrium-continuation checklist before Stage 4 `GO`, repeat the independent hostile continuation attack at Stage 11, and fail closed on unresolved solver outcomes.
-9. At Stage 7 identify candidate exposition vehicles; at Stage 10 finalize and implement the figure/table architecture; at Stage 13 integrate it for the selected journal; at Stage 14 verify reproducibility and artwork compliance.
-10. If a later stage invalidates an earlier result, return to the earliest affected stage and treat dependent downstream outputs as stale.
-11. Do not initialize a full-paper production repository until Stage 7.5 approves full-paper investment and Stage 8 freezes the theory.
-12. Preserve rejected branches, counterexamples, and negative results as part of the research provenance.
-
-## Recommended reuse mode
-
-Use this repository as the **stable workflow reference**, not as the production LaTeX repository for every paper.
-
-For a research project:
-
-1. consult the canonical documents here;
-2. use/copy the relevant Stage template as needed;
-3. preserve the project's Stage reports, decision log, sources, calculations, and verification artifacts in the project's own research repository;
-4. create the production paper repository at Stage 9 after Stage 7.5 approval and Stage 8 theory freeze.
-
-The worked example is a reference decision trail and should not be copied as a model or project state.
+1. Start at Stage 0 unless verified prior work justifies later entry.
+2. Preserve unknowns as `UNRESOLVED`; do not invent missing facts.
+3. Run each stage as a research gate and preserve its report, verdict, rejected branches, blockers, and next-stage contract.
+4. If Stage 4 gives `GO`, run Stage 4A before any Stage-6 novelty re-kill.
+5. If Stage 4/4A identifies exactly one repairable economic deficiency, Stage 5 may change only that one margin; then repeat Stage 4 and Stage 4A.
+6. Re-kill actual novelty at Stage 6.
+7. Validate welfare/generality/institutions at Stage 7.
+8. Use Stage 7.5 to decide whether a full paper is justified, then run Stage 7.5A before theory freeze.
+9. Freeze theory only after both independent certificates pass.
+10. At Stage 7 identify exposition vehicles; at Stage 10 implement figure/table architecture; at Stage 13 integrate it; at Stage 14 verify it.
+11. At Stage 11 repeat hostile mathematical and theorem-scope attacks from a fresh perspective.
+12. If a later stage invalidates earlier work, return to the earliest affected stage and mark downstream outputs stale.
+13. Preserve rejected branches, counterexamples, negative results, theorem-certificate failures, and certification regressions as research provenance.
 
 ## Repository structure
 
@@ -181,16 +203,16 @@ research-paper-workflow/
 
 ## Intended use
 
-This repository is a research-development and research-termination system, not a prompt collection and not a production-paper repository scaffold. Its main value is to make weak, derivative, ad hoc, mathematically fragile, or exposition-fragile research branches fail early and visibly before submission.
+Use this repository as the stable workflow reference, not as the production LaTeX repository for every paper. Project-specific Stage reports, decision logs, calculations, theorem certificates, counterexamples, and verification artifacts should live in the project's own repository.
 
 ## License
 
-Except where otherwise noted, the contents of this repository are licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). You may share and adapt the material for any purpose, including commercial use, provided that you give appropriate credit, link to the license, and indicate if changes were made. See [`LICENSE`](LICENSE) for details.
+Except where otherwise noted, contents are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0). See [`LICENSE`](LICENSE).
 
 Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 ## Status
 
-Stable published release: **`v1.3`**.
+Current canonical architecture on `main` after this change: **v2.0**.
 
-Historical releases `v1.0`, `v1.1`, and `v1.2` remain immutable. See GitHub Releases for published release records.
+Historical stable tags `v1.0`–`v1.3` remain immutable. A v2.0 release/tag should be created only from the reviewed merged `main` state under `GOVERNANCE.md`.
