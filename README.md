@@ -38,9 +38,9 @@ The v1.2 standard requires:
 
 The v1.2 canonical checklist remains [`checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md`](checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md).
 
-The current `v1.3-candidate` refinement adds a **result-to-exposition and figure/table architecture lifecycle** after a production-paper submission audit exposed avoidable late-stage rework: a headline sign-reversal result was mathematically verified and submission-ready, but its most informative figure was only identified after Stage 14, forcing a bounded Stage-13 reintegration and Stage-14 re-QA. The re-QA then caught a vector-font embedding defect that should have been part of the normal artwork gate.
+The `v1.3` refinement adds a **result-to-exposition and figure/table architecture lifecycle** after a production-paper submission audit exposed avoidable late-stage rework: a headline sign-reversal result was mathematically verified and submission-ready, but its most informative figure was only identified after Stage 14, forcing a bounded Stage-13 reintegration and Stage-14 re-QA. The re-QA then caught a vector-font embedding defect that should have been part of the normal artwork gate.
 
-The v1.3-candidate standard requires:
+The v1.3 standard requires:
 
 - Stage 7 to classify each surviving headline result by its most efficient candidate exposition vehicle;
 - Stage 10 to assign every headline result an explicit vehicle and reproducibly implement all required figures/tables before the Introduction is finalized;
@@ -52,7 +52,7 @@ The v1.3-candidate standard requires:
 
 The new v1.3 canonical checklist is [`checklists/FIGURE_TABLE_CHECKLIST.md`](checklists/FIGURE_TABLE_CHECKLIST.md).
 
-Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), this is a **minor-version candidate (`v1.3`)** because it strengthens checks and manuscript-construction discipline inside existing Stages without changing Stage numbering, canonical verdict semantics, or routing. Stable published version remains `v1.2` until integration/readiness review and release are completed.
+Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), this is the **minor release `v1.3`** because it strengthens checks and manuscript-construction discipline inside existing Stages without changing Stage numbering, canonical verdict semantics, or routing.
 
 ## Integration/readiness audits
 
@@ -191,8 +191,6 @@ Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 ## Status
 
-Stable published release: **`v1.2`**.
-
-Current unreleased canonical refinement branch: **`v1.3-candidate`** — result-to-exposition and figure/table architecture hardening.
+Stable published release: **`v1.3`**.
 
 Historical releases `v1.0`, `v1.1`, and `v1.2` remain immutable. See GitHub Releases for published release records.

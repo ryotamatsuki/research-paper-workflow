@@ -1,6 +1,6 @@
 # Theory Paper Research Pipeline
 
-Version: v1.2
+Version: v1.3
 
 ## 1. Purpose
 
