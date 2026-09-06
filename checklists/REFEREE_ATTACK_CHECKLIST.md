@@ -96,6 +96,8 @@ For sequential games, apply `EQUILIBRIUM_CONTINUATION_CHECKLIST.md`. At least on
 - [ ] Results explain mechanism
 - [ ] Discussion does not repeat results
 - [ ] Conclusion adds no new claims
+- [ ] Headline figure/table does not hide domain restrictions, use an arbitrary normalization as the reported economic object, or visually imply a stronger theorem than is proved
+- [ ] Every central result has an appropriate exposition vehicle; absence of a figure/table is justified when theorem/prose is more efficient
 
 ## Gate rule
 
