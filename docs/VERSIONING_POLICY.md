@@ -145,3 +145,5 @@ Backward-compatible deprecation should be documented before removal where practi
 The 2026-09-02 novelty-gate refinement preserves Stage structure, canonical verdict semantics, and routing while adding more precise whole-game absorption and generalization/unification checks. After fresh integration/readiness audit, it was released as the **minor version `v1.1`**.
 
 The 2026-09-05 equilibrium-continuation safety refinement preserves the same Stage structure, verdict semantics, and routing while adding fail-closed off-path continuation verification. After integration/readiness audit, it was released as the **minor version `v1.2`**.
+
+The 2026-09-06 result-to-exposition and figure/table architecture refinement preserves the same Stage structure, verdict semantics, routing, rollback rules, and freeze meanings while adding earlier exposition planning, reproducible figure/table implementation, journal-specific integration, and artwork QA obligations inside Stages 7, 10, 13, and 14. It is therefore classified as the **minor-version candidate `v1.3`**, pending integration/readiness audit and publication of the immutable release tag.

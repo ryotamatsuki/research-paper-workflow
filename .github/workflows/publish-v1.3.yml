@@ -1,0 +1,96 @@
+name: Publish v1.3 after readiness audit
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  publish-v1-3:
+    if: github.repository == 'ryotamatsuki/research-paper-workflow' && contains(github.event.head_commit.message, 'Complete v1.3 integration audit')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out reviewed state
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify readiness and release namespace
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -Fq '**`WORKFLOW v1.3 READY`**' docs/WORKFLOW_V1_3_INTEGRATION_AUDIT.md
+          grep -Fq '[x] **`WORKFLOW v1.3 READY`**' docs/WORKFLOW_V1_3_READINESS_CHECKLIST.md
+          test -s checklists/FIGURE_TABLE_CHECKLIST.md
+          grep -Fq 'Figure/Table Architecture Gate' templates/STAGE_10_PAPER_BUILD.md
+          grep -Fq 'FIGURE_TABLE_CHECKLIST.md' templates/STAGE_14_SUBMISSION_QA.md
+
+          if git ls-remote --exit-code --tags origin refs/tags/v1.3 >/dev/null 2>&1; then
+            echo 'v1.3 tag already exists; refusing to overwrite an immutable release tag.' >&2
+            exit 1
+          fi
+
+      - name: Finalize release metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+
+          gov = Path('GOVERNANCE.md')
+          text = gov.read_text()
+          if 'Version: v1.2' not in text:
+              raise SystemExit('Expected v1.2 governance marker not found')
+          gov.write_text(text.replace('Version: v1.2', 'Version: v1.3', 1))
+
+          pipe = Path('THEORY_PAPER_RESEARCH_PIPELINE.md')
+          text = pipe.read_text()
+          if 'Version: v1.2' not in text:
+              raise SystemExit('Expected v1.2 pipeline marker not found')
+          pipe.write_text(text.replace('Version: v1.2', 'Version: v1.3', 1))
+
+          readme = Path('README.md')
+          text = readme.read_text()
+          text = text.replace('The current `v1.3-candidate` refinement adds', 'The `v1.3` refinement adds', 1)
+          text = text.replace('The v1.3-candidate standard requires:', 'The v1.3 standard requires:', 1)
+          old_class = "Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), this is a **minor-version candidate (`v1.3`)** because it strengthens checks and manuscript-construction discipline inside existing Stages without changing Stage numbering, canonical verdict semantics, or routing. Stable published version remains `v1.2` until integration/readiness review and release are completed."
+          new_class = "Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), this is the **minor release `v1.3`** because it strengthens checks and manuscript-construction discipline inside existing Stages without changing Stage numbering, canonical verdict semantics, or routing."
+          if old_class not in text:
+              raise SystemExit('Expected README v1.3-candidate classification marker not found')
+          text = text.replace(old_class, new_class, 1)
+          old_status = "Stable published release: **`v1.2`**.\n\nCurrent unreleased canonical refinement branch: **`v1.3-candidate`** — result-to-exposition and figure/table architecture hardening.\n\nHistorical releases `v1.0`, `v1.1`, and `v1.2` remain immutable. See GitHub Releases for published release records."
+          new_status = "Stable published release: **`v1.3`**.\n\nHistorical releases `v1.0`, `v1.1`, and `v1.2` remain immutable. See GitHub Releases for published release records."
+          if old_status not in text:
+              raise SystemExit('Expected README v1.3-candidate status marker not found')
+          readme.write_text(text.replace(old_status, new_status, 1))
+
+          policy = Path('docs/VERSIONING_POLICY.md')
+          text = policy.read_text()
+          candidate = "The 2026-09-06 result-to-exposition and figure/table architecture refinement preserves the same Stage structure, verdict semantics, routing, rollback rules, and freeze meanings while adding earlier exposition planning, reproducible figure/table implementation, journal-specific integration, and artwork QA obligations inside Stages 7, 10, 13, and 14. It is therefore classified as the **minor-version candidate `v1.3`**, pending integration/readiness audit and publication of the immutable release tag."
+          stable = "The 2026-09-06 result-to-exposition and figure/table architecture refinement preserves the same Stage structure, verdict semantics, routing, rollback rules, and freeze meanings while adding earlier exposition planning, reproducible figure/table implementation, journal-specific integration, and artwork QA obligations inside Stages 7, 10, 13, and 14. After integration/readiness audit, it was released as the **minor version `v1.3`**."
+          if candidate not in text:
+              raise SystemExit('Expected v1.3 version-policy candidate marker not found')
+          policy.write_text(text.replace(candidate, stable, 1))
+          PY
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add GOVERNANCE.md THEORY_PAPER_RESEARCH_PIPELINE.md README.md docs/VERSIONING_POLICY.md
+          git commit -m 'Finalize v1.3 release metadata'
+          git push origin HEAD:main
+          echo "RELEASE_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+
+      - name: Publish v1.3 tag and GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release create v1.3 \
+            --target "$RELEASE_SHA" \
+            --title 'research-paper-workflow v1.3' \
+            --notes-file docs/V1_3_RELEASE_NOTES.md

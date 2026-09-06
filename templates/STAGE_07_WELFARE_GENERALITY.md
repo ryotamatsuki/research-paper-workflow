@@ -17,7 +17,7 @@ Act as a welfare economist, institutional auditor, and field referee. Determine 
 
 ## 2. Stage objective
 
-Derive welfare rigorously, compare private and social decisions, validate key primitives against evidence, and test whether the mechanism generalizes without changing the theory.
+Derive welfare rigorously, compare private and social decisions, validate key primitives against evidence, test whether the mechanism generalizes without changing the theory, and identify how each surviving headline result should later be communicated most efficiently.
 
 ## 3. Canonical inputs
 
@@ -25,7 +25,7 @@ Model and contribution claims surviving Stage 6 are frozen. Institutional eviden
 
 ## 4. Allowed changes
 
-You may add welfare notation, first-best/second-best benchmarks, or empirical predictions implied by the frozen model. You may not add a new strategic mechanism.
+You may add welfare notation, first-best/second-best benchmarks, or empirical predictions implied by the frozen model. You may classify existing verified results by their appropriate exposition vehicle. You may not add a new strategic mechanism merely to create a more attractive figure or table.
 
 ## 5. Prohibited changes
 
@@ -33,7 +33,8 @@ You may add welfare notation, first-best/second-best benchmarks, or empirical pr
 - no treating wholesale transfers as social costs;
 - no policy claim outside the modeled margin;
 - no converting suggestive institutional evidence into proven fact;
-- no “generality” based on relabeling industries only.
+- no “generality” based on relabeling industries only;
+- no inventing a numerical illustration or visual pattern that is not already implied by verified theory.
 
 ## 6. Mandatory tasks
 
@@ -47,14 +48,17 @@ You may add welfare notation, first-best/second-best benchmarks, or empirical pr
 8. Label each institutional link as `ESTABLISHED`, `SUGGESTIVE`, `UNVERIFIED`, or `CONTRADICTED`.
 9. Test generality across at least two genuinely different settings without changing the mechanism.
 10. Derive empirical predictions or comparative statics that could discipline the model.
+11. Perform a **result-to-exposition triage** for every surviving headline result. Assign the most efficient candidate vehicle — theorem/proposition, figure, table, numerical illustration, or concise prose — and record why. Flag results with threshold crossings, non-monotonicity, regime changes, benchmark separation, welfare decomposition, or multi-parameter scope patterns as visual/table candidates when visualization would materially reduce reader effort.
+
+The Stage-7 triage is a planning artifact, not a mandate to create graphics before theory freeze. There is **no minimum figure quota**. A result should remain theorem/prose-only when a visual would add little information.
 
 ## 7. Evidence requirements
 
-Primary sources first for institutional claims. Use secondary literature where necessary and label it. Keep model implications separate from observed facts.
+Primary sources first for institutional claims. Use secondary literature where necessary and label it. Keep model implications separate from observed facts. Any proposed visual or table must map to an already verified theoretical object, sourced evidence, or an explicitly identified future verification requirement.
 
 ## 8. Verification protocol
 
-Use exact symbolic checks for CS/welfare identities and threshold comparisons where feasible. For parameter-dependent signs, derive conditions or search systematically for counterexamples after analytic work.
+Use exact symbolic checks for CS/welfare identities and threshold comparisons where feasible. For parameter-dependent signs, derive conditions or search systematically for counterexamples after analytic work. For the exposition triage, verify that the proposed vehicle does not imply a stronger result than the theorem actually establishes.
 
 ## 9. Kill tests
 
@@ -65,11 +69,12 @@ Downgrade or kill the branch if:
 - the core primitive lacks institutional or theoretical defense;
 - the motivating institution contradicts the assumed mechanism;
 - generality requires adding new assumptions in every new industry;
-- policy conclusions require an instrument absent from the model.
+- policy conclusions require an instrument absent from the model;
+- the only way to make the result visually interesting is to add an unverified parameter exercise or strengthen the claim beyond the verified theory.
 
 ## 10. Success criteria
 
-The mechanism should yield a coherent welfare implication and be defensible beyond a single institutional label. At least one non-mechanical private/social wedge is preferred for a field-journal theory paper.
+The mechanism should yield a coherent welfare implication and be defensible beyond a single institutional label. At least one non-mechanical private/social wedge is preferred for a field-journal theory paper. Every surviving headline result must also have a recorded candidate exposition vehicle or an explicit reason why theorem/prose presentation is sufficient.
 
 ## 11. Failure criteria
 
@@ -84,9 +89,12 @@ Return `NO-GO` or recommend a research note if the result is correct but institu
 5. Institutional evidence table
 6. Generality audit
 7. Empirical predictions
-8. Policy scope and limits
-9. Remaining fatal/major concerns
-10. Verdict and Stage 7.5 contract
+8. Result-to-exposition triage table
+9. Policy scope and limits
+10. Remaining fatal/major concerns
+11. Verdict and Stage 7.5 contract
+
+The result-to-exposition triage table should minimally contain: `headline result`, `economic object`, `candidate vehicle`, `why this vehicle`, `verified source`, and `Stage-10 action`.
 
 ## 13. Final verdict
 
@@ -98,4 +106,4 @@ Choose one:
 
 ## 14. Next-stage contract
 
-Stage 7.5 is a freeze decision. No extensions are permitted there.
+Stage 7.5 is a freeze decision. No extensions are permitted there. The exposition triage is carried forward as a non-theoretical planning artifact and may be refined after theory freeze, but it cannot justify changing the frozen result.

@@ -6,7 +6,7 @@ Version: v1.2
 
 This document defines the canonical workflow for taking a theory-oriented research idea from initial motivation to submission freeze.
 
-The workflow is not a writing checklist. It is a research-development and research-termination system. Its primary purpose is to prevent weak, derivative, ad hoc, or mathematically fragile ideas from consuming manuscript-writing effort.
+The workflow is not a writing checklist. It is a research-development and research-termination system. Its primary purpose is to prevent weak, derivative, ad hoc, mathematically fragile, or poorly communicated ideas from consuming manuscript-writing and submission effort.
 
 A project should move forward only when it survives the relevant gate.
 
@@ -44,6 +44,15 @@ Every stage-specific prompt, report, or template should use the following schema
 The next-stage contract is essential. Do not respond to a failed model by adding multiple new mechanisms simultaneously.
 
 For efficient handoff, each stage should preserve at least: outputs to carry forward, frozen facts, rejected branches, open blockers, and the one allowed next change when conditional work is authorized.
+
+For manuscript exposition, the workflow uses a four-step lifecycle:
+
+- **Stage 7 — identify:** perform result-to-exposition triage for surviving headline results;
+- **Stage 10 — design and implement:** assign every headline result an explicit exposition vehicle and reproducibly implement required figures/tables;
+- **Stage 13 — integrate:** reconcile the figure/table architecture with the target journal and manuscript narrative;
+- **Stage 14 — verify:** audit regeneration, numerical integrity, artwork compliance, source-package completeness, and visual legibility.
+
+There is **no minimum figure or table quota**. Every visual/table must earn its place by materially reducing the reader's cost of understanding a central mechanism, result, comparison, or scope condition.
 
 ---
 
@@ -307,7 +316,7 @@ Stage 6 should update the Stage 2 literature ledger and re-open the papers that 
 
 ## Objective
 
-Determine whether the mechanism matters beyond firm profit and beyond one motivating case.
+Determine whether the mechanism matters beyond firm profit and beyond one motivating case, and identify the most efficient exposition vehicle for each surviving headline result before theory freeze.
 
 ## Mandatory tasks
 
@@ -318,6 +327,10 @@ Determine whether the mechanism matters beyond firm profit and beyond one motiva
 - Prefer primary sources for institutional claims.
 - Test whether the mechanism generalizes to other industries or environments without changing the theory.
 - Produce testable empirical predictions where possible.
+- Perform a **result-to-exposition triage** for every surviving headline result, assigning a candidate primary vehicle: theorem/proposition, figure, table, numerical illustration, or concise prose.
+- Explicitly flag threshold crossings, sign reversals, non-monotonicity, regime changes, benchmark separation, welfare decomposition, and multi-case scope patterns for figure/table consideration when visualization would materially reduce reader effort.
+
+The triage is planning, not a requirement to create graphics before Stage 8. A theorem/prose-only choice is valid when a visual would add little information.
 
 ## Kill tests
 
@@ -325,6 +338,11 @@ Determine whether the mechanism matters beyond firm profit and beyond one motiva
 - Generality is obtained only by relabeling the same institution.
 - A crucial primitive has no institutional or theoretical defense.
 - Policy implications require assumptions not present in the model.
+- The only way to make a result visually interesting is to add unverified computation or overstate the theorem.
+
+## Exit criterion
+
+In addition to the welfare/generality verdict, preserve a result-to-exposition triage map for Stage 10. Every surviving headline result should have a candidate exposition vehicle or an explicit reason why theorem/prose presentation is sufficient.
 
 ---
 
@@ -378,6 +396,8 @@ Freeze the theoretical object before manuscript construction.
 - contribution claims;
 - closest-paper distinction.
 
+The Stage-7 exposition triage is not part of the theory freeze and may be refined later, but it may not be used to justify changing a frozen result.
+
 Changes after freeze require an explicit theory-change record and re-running affected gates.
 
 ---
@@ -411,7 +431,7 @@ Never reset to an old reference SHA without first fetching and checking the late
 
 ## Objective
 
-Build the manuscript in dependency order rather than writing the introduction first and forcing the theory to fit it.
+Build the manuscript in dependency order rather than writing the introduction first and forcing the theory to fit it. Establish the manuscript's Figure/Table Architecture before the Introduction is finalized.
 
 ## Recommended order
 
@@ -422,11 +442,37 @@ Build the manuscript in dependency order rather than writing the introduction fi
 5. Robustness/extensions
 6. Institutional or empirical bridge
 7. Related literature
-8. Introduction
-9. Discussion
-10. Conclusion
+8. **Figure/Table Architecture Gate**
+9. Introduction
+10. Discussion
+11. Conclusion
 
-Each section should be compiled, checked against the frozen theory, reviewed, and integrated through controlled changes.
+## Figure/Table Architecture Gate
+
+For every headline theorem, comparative static, welfare result, benchmark contrast, robustness result, and scope condition, assign one primary presentation vehicle:
+
+- theorem/proposition;
+- figure;
+- table;
+- numerical illustration;
+- concise prose.
+
+Use a figure for shape/structure such as threshold crossing, non-monotonicity, regime maps, strategic paths, or benchmark separation when visualization materially lowers reader effort. Use a table for exact values, discrete comparisons, sensitivity matrices, welfare accounting, or classifications. Use theorem/prose when a visual would be redundant.
+
+Every required quantitative figure/table must:
+
+- be generated from a verified script or authoritative source;
+- preserve the actual economic scale/sign/domain of the reported object;
+- be regression-checked at representative values, thresholds, or identities where feasible;
+- retain generator/source files in the repository;
+- avoid arbitrary normalization or proxy curves labeled as the underlying economic object;
+- be referenced and interpreted in the manuscript.
+
+There is no minimum visual count and no decorative-figure requirement.
+
+## Exit criterion
+
+Each section should be compiled, checked against the frozen theory, reviewed, and integrated through controlled changes. Stage 10 is not complete until every headline result has an explicit exposition vehicle and every figure/table classified as required has been reproducibly implemented or has a documented blocker.
 
 ---
 
@@ -447,6 +493,7 @@ Try to reject the paper before external referees do.
 - `The motivating institution is too specific.`
 - `The main theorem disappears under a standard alternative demand or contract.`
 - `The result is numerically observed but not proved.`
+- `The headline exposition vehicle hides a domain restriction, uses an arbitrary normalization, or visually overstates the theorem.`
 
 Classify attacks as `FATAL`, `MAJOR BUT FIXABLE`, or `MINOR`.
 
@@ -480,7 +527,7 @@ Early stages may use a provisional journal family or quality bar. Stage 12 is th
 
 ## Objective
 
-Turn independently correct sections into one coherent argument.
+Turn independently correct sections into one coherent argument and reconcile the Stage-10 Figure/Table Architecture with the target journal.
 
 ## Audit
 
@@ -492,8 +539,17 @@ Turn independently correct sections into one coherent argument.
 - Conclusion is short and does not introduce new claims.
 - Terminology and notation are consistent.
 - Every contribution claim maps to a verified theorem/result and literature distinction.
+- Every retained figure/table materially reduces reader effort, is referenced in surrounding prose, and maps to a verified generator or source.
+- Figure/table captions identify the actual object, benchmark/parameterization where relevant, and scope limitations without claim inflation.
+- Target-journal figure/table count, placement, file-type, grayscale/color, accessibility, and caption rules are checked and incorporated without changing substantive results.
+
+There is no minimum figure count. If Stage 13 discovers a bounded presentation gap for an already verified result, it may integrate the missing visual/table and document that no theory/result changed. If a defensible visual requires a new substantive computation, result, or robustness exercise, roll back to the earliest affected stage.
 
 Substantive inconsistency triggers rollback to the earliest affected stage; it is not a manuscript-only edit.
+
+## Exit criterion
+
+Do not enter Stage 14 with a known central exposition-architecture gap. The final figure/table set, generators/sources, manuscript references, and journal-specific placement should already be settled except for bounded submission-format QA.
 
 ---
 
@@ -501,14 +557,21 @@ Substantive inconsistency triggers rollback to the earliest affected stage; it i
 
 ## Objective
 
-Verify the complete submission package.
+Verify the complete submission package, including final artwork compliance and figure/table reproducibility.
 
 ## Mandatory checks
 
 - fresh full build from a clean environment;
 - all applicable symbolic verification passes;
 - all applicable numerical tests regenerate reported results;
-- figures/tables regenerate from source;
+- every quantitative figure/table regenerates from source;
+- representative plotted/tabulated values, signs, thresholds, and benchmark identities agree with the manuscript;
+- current journal figure/table/artwork requirements are opened and dated;
+- accepted artwork file types, vector/font rules, raster resolution, color/grayscale, placement, and separate-file requirements are satisfied where applicable;
+- vector fonts are embedded when required and raster graphics meet effective-resolution requirements;
+- labels, legends, line styles, markers, captions, and table text remain readable at final manuscript size and do not rely on color alone where accessibility requires alternatives;
+- every figure/table is referenced and numbered consistently;
+- figure/table source, generator, and required output files are present in the submission/source package;
 - all citations resolve;
 - no unverified references;
 - no broken labels/cross-references;
@@ -516,9 +579,14 @@ Verify the complete submission package.
 - anonymity requirements satisfied;
 - supplementary material consistent;
 - AI/disclosure requirements checked against current journal policy;
-- claims, abstract, highlights, and cover letter agree with the manuscript.
+- claims, abstract, highlights, and cover letter agree with the manuscript;
+- final PDF is inspected page by page, including every figure/table page at readable resolution.
 
-A substantive mathematical, novelty, theory, welfare, or institutional problem discovered here triggers rollback to the earliest affected stage and a fresh downstream QA cycle.
+Use `checklists/SUBMISSION_CHECKLIST.md` and `checklists/FIGURE_TABLE_CHECKLIST.md`.
+
+A bounded artwork-format defect may be repaired at Stage 14 if the underlying verified object and interpretation are unchanged. If Stage 14 discovers that a central result lacks an appropriate exposition vehicle, return to Stage 10 or Stage 13 rather than inventing an unverified last-minute visual.
+
+A substantive mathematical, novelty, theory, welfare, institutional, or exposition-design problem discovered here triggers rollback to the earliest affected stage and a fresh downstream QA cycle.
 
 ---
 
@@ -535,6 +603,7 @@ Create an immutable, auditable submission state.
 - source archive;
 - appendices/supplement;
 - verification outputs;
+- final figure/table outputs and their source/generator provenance;
 - cover letter and required submission files;
 - journal-specific metadata;
 - disclosure statement where required.
@@ -577,15 +646,25 @@ A generalization/unification contribution must do more than place known models i
 
 Likewise, known components do not automatically imply that a strategically distinct full game is absorbed. Absorption requires whole-game equivalence or result-level redundancy, not an ingredient checklist.
 
-## 3.6 Provenance and evidence maturity
+## 3.6 Exposition architecture integrity
+
+Figures and tables are part of the evidence-bearing manuscript, not decoration. They must not create a second, weaker standard of proof.
+
+- Every headline result receives an explicit exposition vehicle by Stage 10.
+- Quantitative figures/tables must be traceable to verified generators or authoritative sources.
+- Visuals must preserve the actual economic object's scale/sign/domain and must not disguise a proxy or arbitrary normalization as the reported result.
+- The absence of a figure is acceptable when theorem/prose is the most efficient vehicle.
+- Stage 14 verifies artwork compliance; it should not be the first stage to design the exposition architecture.
+
+## 3.7 Provenance and evidence maturity
 
 Every project should distinguish historical/AI/scratch outputs from results reproduced in the project repository and from claims re-verified for the actual submission package. Do not silently promote a conversation result, temporary notebook output, or remembered citation to submission-ready evidence.
 
-## 3.7 Rollback and stale downstream outputs
+## 3.8 Rollback and stale downstream outputs
 
 If a later stage invalidates an earlier canonical input, return to the earliest affected stage. Mark all dependent downstream outputs stale until the necessary stages are re-run. Do not silently patch a downstream manuscript or submission artifact around an invalid research result.
 
-## 3.8 Provenance and decision logs
+## 3.9 Provenance and decision logs
 
 Every project should preserve major rejected branches and the reason for rejection. A reusable research workflow depends as much on documented failures as on final successful results.
 

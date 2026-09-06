@@ -23,7 +23,7 @@ The hierarchy is `GOVERNANCE.md` → canonical pipeline → stage templates → 
 
 The stable `v1.1` refinement strengthened the distinction between **component overlap** and **whole-game absorption** and recognized economically substantive **generalization/unification** as a contribution route.
 
-The `v1.2` refinement adds an **equilibrium-continuation safety gate** for sequential/game-theoretic projects after a production-paper audit exposed a failure mode in which a regular interior downstream formula was reused off path and solver `None` outcomes silently removed economically relevant deviations.
+The stable `v1.2` refinement added an **equilibrium-continuation safety gate** for sequential/game-theoretic projects after a production-paper audit exposed a failure mode in which a regular interior downstream formula was reused off path and solver `None` outcomes silently removed economically relevant deviations.
 
 The v1.2 standard requires:
 
@@ -36,9 +36,23 @@ The v1.2 standard requires:
 - Stage 11 hostile review to include an implementation-independent continuation attack rather than only rerunning the production solver;
 - equilibrium counterexamples to become permanent regression tests.
 
-The new canonical checklist is [`checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md`](checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md).
+The v1.2 canonical checklist remains [`checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md`](checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md).
 
-Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), this is the **minor release `v1.2`** because it strengthens verification inside existing Stages without changing Stage numbering, verdict semantics, or routing.
+The current `v1.3-candidate` refinement adds a **result-to-exposition and figure/table architecture lifecycle** after a production-paper submission audit exposed avoidable late-stage rework: a headline sign-reversal result was mathematically verified and submission-ready, but its most informative figure was only identified after Stage 14, forcing a bounded Stage-13 reintegration and Stage-14 re-QA. The re-QA then caught a vector-font embedding defect that should have been part of the normal artwork gate.
+
+The v1.3-candidate standard requires:
+
+- Stage 7 to classify each surviving headline result by its most efficient candidate exposition vehicle;
+- Stage 10 to assign every headline result an explicit vehicle and reproducibly implement all required figures/tables before the Introduction is finalized;
+- no minimum figure quota — theorem/prose remains valid when a visual adds little information;
+- quantitative visuals/tables to use verified model objects or authoritative source data, not manual values or arbitrary normalizations presented as the economic object;
+- Stage 13 to reconcile the Stage-10 architecture with the target journal, integrate captions/references, and close bounded presentation gaps without new theory;
+- Stage 14 to verify regeneration, numerical integrity, current artwork rules, font embedding where required, raster resolution, grayscale/accessibility, source-package completeness, and page-by-page legibility;
+- a central missing exposition vehicle discovered at Stage 14 to route back to Stage 10/13 rather than trigger an unverified last-minute visual.
+
+The new v1.3 canonical checklist is [`checklists/FIGURE_TABLE_CHECKLIST.md`](checklists/FIGURE_TABLE_CHECKLIST.md).
+
+Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), this is a **minor-version candidate (`v1.3`)** because it strengthens checks and manuscript-construction discipline inside existing Stages without changing Stage numbering, canonical verdict semantics, or routing. Stable published version remains `v1.2` until integration/readiness review and release are completed.
 
 ## Integration/readiness audits
 
@@ -54,6 +68,19 @@ The v1.1 refinement passed a fresh integration/readiness audit:
 - [`WORKFLOW_V1_1_READINESS_CHECKLIST.md`](docs/WORKFLOW_V1_1_READINESS_CHECKLIST.md)
 - [`V1_1_RELEASE_MANIFEST.md`](docs/V1_1_RELEASE_MANIFEST.md)
 - [`V1_1_RELEASE_NOTES.md`](docs/V1_1_RELEASE_NOTES.md)
+
+The v1.2 refinement passed a fresh integration/readiness audit:
+
+- [`WORKFLOW_V1_2_INTEGRATION_AUDIT.md`](docs/WORKFLOW_V1_2_INTEGRATION_AUDIT.md)
+- [`WORKFLOW_V1_2_READINESS_CHECKLIST.md`](docs/WORKFLOW_V1_2_READINESS_CHECKLIST.md)
+- [`V1_2_RELEASE_NOTES.md`](docs/V1_2_RELEASE_NOTES.md)
+
+The v1.3 candidate is audited in:
+
+- [`WORKFLOW_V1_3_INTEGRATION_AUDIT.md`](docs/WORKFLOW_V1_3_INTEGRATION_AUDIT.md)
+- [`WORKFLOW_V1_3_READINESS_CHECKLIST.md`](docs/WORKFLOW_V1_3_READINESS_CHECKLIST.md)
+- [`V1_3_RELEASE_MANIFEST.md`](docs/V1_3_RELEASE_MANIFEST.md)
+- [`V1_3_RELEASE_NOTES.md`](docs/V1_3_RELEASE_NOTES.md)
 
 ## Versioning
 
@@ -98,6 +125,7 @@ Reusable checklists live under [`checklists/`](checklists/):
 - [`SYMBOLIC_VERIFICATION_CHECKLIST.md`](checklists/SYMBOLIC_VERIFICATION_CHECKLIST.md)
 - [`NUMERICAL_VERIFICATION_CHECKLIST.md`](checklists/NUMERICAL_VERIFICATION_CHECKLIST.md)
 - [`EQUILIBRIUM_CONTINUATION_CHECKLIST.md`](checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md)
+- [`FIGURE_TABLE_CHECKLIST.md`](checklists/FIGURE_TABLE_CHECKLIST.md)
 - [`REFEREE_ATTACK_CHECKLIST.md`](checklists/REFEREE_ATTACK_CHECKLIST.md)
 - [`SUBMISSION_CHECKLIST.md`](checklists/SUBMISSION_CHECKLIST.md)
 
@@ -119,9 +147,10 @@ Worked research-decision trails live under [`examples/`](examples/). They are ex
 6. Re-kill actual novelty after results are known in Stage 6, updating the Stage 2 literature ledger rather than blindly starting over.
 7. For strategic/game-theoretic work, distinguish component overlap from whole-game absorption and use nested benchmarks when the contribution is a generalization/unification.
 8. For sequential games, apply the equilibrium-continuation checklist before Stage 4 `GO`, repeat the independent hostile continuation attack at Stage 11, and fail closed on unresolved solver outcomes.
-9. If a later stage invalidates an earlier result, return to the earliest affected stage and treat dependent downstream outputs as stale.
-10. Do not initialize a full-paper production repository until Stage 7.5 approves full-paper investment and Stage 8 freezes the theory.
-11. Preserve rejected branches, counterexamples, and negative results as part of the research provenance.
+9. At Stage 7 identify candidate exposition vehicles; at Stage 10 finalize and implement the figure/table architecture; at Stage 13 integrate it for the selected journal; at Stage 14 verify reproducibility and artwork compliance.
+10. If a later stage invalidates an earlier result, return to the earliest affected stage and treat dependent downstream outputs as stale.
+11. Do not initialize a full-paper production repository until Stage 7.5 approves full-paper investment and Stage 8 freezes the theory.
+12. Preserve rejected branches, counterexamples, and negative results as part of the research provenance.
 
 ## Recommended reuse mode
 
@@ -152,7 +181,7 @@ research-paper-workflow/
 
 ## Intended use
 
-This repository is a research-development and research-termination system, not a prompt collection and not a production-paper repository scaffold. Its main value is to make weak, derivative, ad hoc, or mathematically fragile research branches fail early and visibly before full-paper writing begins.
+This repository is a research-development and research-termination system, not a prompt collection and not a production-paper repository scaffold. Its main value is to make weak, derivative, ad hoc, mathematically fragile, or exposition-fragile research branches fail early and visibly before submission.
 
 ## License
 
@@ -164,4 +193,6 @@ Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 Stable published release: **`v1.2`**.
 
-Historical releases `v1.0` and `v1.1` remain immutable. See GitHub Releases for published release records.
+Current unreleased canonical refinement branch: **`v1.3-candidate`** — result-to-exposition and figure/table architecture hardening.
+
+Historical releases `v1.0`, `v1.1`, and `v1.2` remain immutable. See GitHub Releases for published release records.
