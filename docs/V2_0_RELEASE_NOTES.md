@@ -82,6 +82,10 @@ Each headline theorem records:
 
 Material `NOT TESTED` blocks certification.
 
+## Stage 7 change
+
+Welfare/generality validation now writes each planner objective and complete feasible choice set before benchmark labels are applied, and classifies each generality claim as baseline-only, restricted-class, sufficient-condition theorem, numerical robustness, conjectured generality, or general theorem. This creates explicit inputs for Stage 7.5A.
+
 ## Stage 8 change
 
 Theory freeze now requires both:
@@ -116,6 +120,7 @@ For already frozen or completed theory projects, migration is not automatically 
 - `README.md`
 - `templates/STAGE_04_MINIMAL_MODEL.md`
 - `templates/STAGE_04A_MATH_RED_TEAM.md`
+- `templates/STAGE_07_WELFARE_GENERALITY.md`
 - `templates/STAGE_075_FREEZE_DECISION.md`
 - `templates/STAGE_075A_GENERALITY_QUANTIFIER_RED_TEAM.md`
 - `templates/STAGE_08_THEORY_FREEZE.md`
@@ -123,3 +128,4 @@ For already frozen or completed theory projects, migration is not automatically 
 - `templates/STAGE_11_REFEREE_GATE.md`
 - `checklists/THEOREM_CERTIFICATION_CHECKLIST.md`
 - `checklists/REFEREE_ATTACK_CHECKLIST.md`
+- `docs/V2_0_READINESS_CHECKLIST.md`
