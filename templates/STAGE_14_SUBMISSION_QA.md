@@ -76,7 +76,8 @@ At minimum verify:
 26. current submission fees, mandatory publication/page/color charges, APC/open-access options, and licensing choices are distinguished and checked when material;
 27. the source archive contains all required manuscript and figure/table source files and no unnecessary sensitive/internal files;
 28. final locally generated PDF receives visual QA page by page, including every figure/table page at readable resolution;
-29. authenticated portal-only requirements are either checked directly or explicitly isolated as the sole remaining `CONDITIONAL PASS` item for Stage 15 preflight.
+29. authenticated portal-only requirements are either checked directly or explicitly isolated as the sole remaining `CONDITIONAL PASS` item for Stage 15 preflight;
+30. any material requirement still unresolved after current journal/publisher/portal research is escalated to the journal/editorial office or submission support, and the resulting clarification is preserved and incorporated before full PASS.
 
 ## 7. Journal-requirement evidence hierarchy
 
@@ -116,6 +117,10 @@ Where tooling permits, automate kill tests such as missing source files, stale r
 
 For LaTeX, test the exact archive layout that will be uploaded, not merely the repository build tree.
 
+Do not infer technical compliance merely because the portal accepts a file, permits the workflow to advance, or produces no warning. Portal behavior is evidence only when it explicitly states or enforces the operative rule.
+
+If a material rule remains unresolved after current journal-specific instructions, publisher guidance, and the authenticated portal when available, obtain clarification from the journal/editorial office or submission support before full PASS. Preserve the reply/ticket as evidence and rerun affected checks.
+
 If authenticated portal access is available, perform the portal preflight in Stage 14. If it is not yet available or must occur only at the final submission step, Stage 14 may return only `CONDITIONAL PASS — AUTHENTICATED PORTAL PREFLIGHT REQUIRED`, provided every non-portal item passes and the remaining uncertainty genuinely depends on authenticated access.
 
 ## 10. Kill tests
@@ -139,6 +144,7 @@ Submission freeze is blocked by:
 - any material Journal Requirements Ledger item marked `UNVERIFIED`;
 - any unresolved material `CONFLICT` between official sources;
 - reliance on memory/inference where a current official requirement should be verified;
+- a material ambiguity that still requires editorial-office clarification;
 - theoretical change discovered during QA.
 
 If Stage 14 discovers that a **central result lacks an appropriate exposition vehicle**, return to Stage 10 or Stage 13 depending on whether the missing work is architecture/design or bounded integration. Do not patch over that gap with an unverified last-minute visual.
@@ -171,11 +177,12 @@ If a live journal requirement contradicts an internal workflow assumption, the c
 10. Declarations/AI/data/code/prior-publication result
 11. Metadata/portal-field result
 12. Fees/access/licensing result when material
-13. Local PDF visual QA result
-14. Authenticated portal preflight status
-15. Package inventory, including figure/table and LaTeX/source dependencies
-16. Remaining warnings
-17. Verdict and Stage 15 contract
+13. Editorial-office clarification record for any escalated material ambiguity
+14. Local PDF visual QA result
+15. Authenticated portal preflight status
+16. Package inventory, including figure/table and LaTeX/source dependencies
+17. Remaining warnings
+18. Verdict and Stage 15 contract
 
 ## 14. Final verdict
 
