@@ -153,6 +153,30 @@ Perform this before the final submit action whenever the journal uses an authent
 
 If the authenticated portal reveals a requirement that conflicts with a lower-level source, treat the portal or direct editorial instruction as controlling for the current submission, record the conflict, update the package, and rerun the affected Stage-14 checks.
 
+## Unresolved material-rule escalation
+
+If a material submission rule remains genuinely unresolved after checking the current journal-specific instructions, relevant publisher guidance, and the authenticated portal when available, do not infer the answer from system behavior or absence of a warning.
+
+Examples of material rules that require explicit resolution include:
+
+- whether editable Word/LaTeX source is required at initial submission;
+- whether the main manuscript must be anonymous or identified;
+- where author names, affiliations, email, and corresponding-author information must appear;
+- whether a separate title page is required;
+- required declarations or prior-publication disclosures;
+- mandatory charges or submission fees;
+- required supplement/data/code files.
+
+For any such unresolved item:
+
+1. mark it `UNVERIFIED` in the Journal Requirements Ledger;
+2. contact the journal/editorial office or publisher submission support for clarification when no authoritative current source resolves it;
+3. preserve the reply or ticket reference as submission evidence;
+4. update the ledger with the controlling instruction and receipt date;
+5. rerun every affected Stage-14 package check before full PASS.
+
+A submission portal accepting a file or allowing the workflow to continue is **not** by itself evidence that the file satisfies editorial-office technical requirements. Likewise, the absence of a public rule is not evidence that the requirement is optional.
+
 ## Final fail-closed gate
 
 Stage 14 cannot return `SUBMISSION QA PASS` when any material requirement is:
@@ -161,7 +185,8 @@ Stage 14 cannot return `SUBMISSION QA PASS` when any material requirement is:
 - supported only by memory/inference when an official source should exist;
 - in unresolved `CONFLICT`;
 - inconsistent with the actual file package;
-- pending an authenticated portal check that is required to know the operative rule.
+- pending an authenticated portal check that is required to know the operative rule;
+- pending journal/editorial-office clarification needed to resolve a material ambiguity.
 
 A project may receive a documented `CONDITIONAL PASS — AUTHENTICATED PORTAL PREFLIGHT REQUIRED` only when all non-portal requirements pass and the sole remaining uncertainty genuinely requires authenticated portal access.
 
