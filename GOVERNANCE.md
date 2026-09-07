@@ -1,6 +1,6 @@
 # Governance
 
-Version: v2.0
+Version: v2.1
 
 ## 1. Purpose
 
@@ -78,6 +78,16 @@ The canonical three-layer defense is:
 1. Stage 4 — construction and verification;
 2. Stage 4A / Stage 7.5A — independent adversarial certification of correctness/globality and scope/generality;
 3. Stage 11 — full-manuscript hostile regression attack.
+
+### 2.10 Submission compliance must be evidence-bearing
+
+For journal submission, current operational requirements must be verified from current evidence rather than memory, old repository assumptions, prior submissions, or generic system behavior.
+
+For the actual submission, use the most specific current authority available: direct editorial-office instruction, then explicit authenticated-portal requirements, then journal-specific official guidance, then publisher-wide guidance. Lower-level evidence may not override a more specific current instruction.
+
+Production projects must preserve an auditable Journal Requirements Ledger or equivalent. Material `UNVERIFIED` or unresolved `CONFLICT` items block full submission QA. If a material rule remains unresolved after current journal/publisher/portal research, obtain clarification from the editorial office or submission support before full PASS.
+
+A portal accepting a file, allowing progression, or showing no warning is not by itself proof of editorial-office technical compliance.
 
 ---
 

@@ -1,6 +1,6 @@
 # Theory Paper Research Pipeline
 
-Version: v2.0
+Version: v2.1
 
 ## 1. Purpose
 
@@ -680,6 +680,14 @@ If a later stage invalidates an earlier canonical input, return to the earliest 
 ## 3.11 Decision logs
 
 Preserve major rejected branches, discovered counterexamples, certificate failures, repairs, and reasons for routing decisions.
+
+## 3.12 Live journal compliance and portal evidence
+
+After a primary journal is selected, journal compliance is evidence-bearing. Stage 12 creates an initial Journal Requirements Ledger; Stage 13 integrates verified requirements without guessing unresolved ones; Stage 14 re-opens and dates current official requirements, verifies the exact source/submission package, and fails closed on material `UNVERIFIED` or unresolved `CONFLICT` items; Stage 15 reconciles the authenticated submission record and portal-generated PDF where applicable before `SUBMITTED` may be declared.
+
+For the actual submission, direct current editorial-office instructions outrank explicit authenticated-portal rules, which outrank journal-specific official guidance, which outranks publisher-wide guidance. Memory, prior submissions, and repository notes are non-authoritative when a more specific current source exists.
+
+If a material requirement remains unresolved after current journal/publisher/portal research, obtain clarification from the journal/editorial office or submission support before full Stage-14 PASS. Portal acceptance alone is not proof of technical compliance.
 
 ---
 

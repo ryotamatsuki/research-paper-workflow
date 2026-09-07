@@ -1,6 +1,6 @@
 # Versioning Policy
 
-Status: active v1-series policy
+Status: active workflow versioning policy
 
 This document defines version compatibility for the `research-paper-workflow` repository. It does not override `GOVERNANCE.md`; governance remains the highest-authority repository rule.
 
@@ -147,3 +147,8 @@ The 2026-09-02 novelty-gate refinement preserves Stage structure, canonical verd
 The 2026-09-05 equilibrium-continuation safety refinement preserves the same Stage structure, verdict semantics, and routing while adding fail-closed off-path continuation verification. After integration/readiness audit, it was released as the **minor version `v1.2`**.
 
 The 2026-09-06 result-to-exposition and figure/table architecture refinement preserves the same Stage structure, verdict semantics, routing, rollback rules, and freeze meanings while adding earlier exposition planning, reproducible figure/table implementation, journal-specific integration, and artwork QA obligations inside Stages 7, 10, 13, and 14. After integration/readiness audit, it was released as the **minor version `v1.3`**.
+
+
+The 2026-09-06 mathematical-adversarial-certification change added mandatory Stage 4A and Stage 7.5A gates and changed canonical routing. It therefore defines the **MAJOR v2.0 architecture**. That architecture was merged and integration-audited but was not separately published as a stable GitHub tag/release.
+
+The 2026-09-07 live journal-compliance refinement preserves the v2.0 Stage structure, verdict semantics, routing, rollback behavior, and theory-freeze meaning while strengthening evidence, source-package, declaration, authenticated-portal, and generated-PDF checks inside Stages 12–15. It is therefore the **MINOR release v2.1**. v2.1 is the first stable tagged release in the v2 line and includes the complete v2.0 architecture.

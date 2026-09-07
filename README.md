@@ -157,9 +157,18 @@ Reusable checklists live under [`checklists/`](checklists/), including:
 - **[`THEOREM_CERTIFICATION_CHECKLIST.md`](checklists/THEOREM_CERTIFICATION_CHECKLIST.md)**
 - [`FIGURE_TABLE_CHECKLIST.md`](checklists/FIGURE_TABLE_CHECKLIST.md)
 - [`REFEREE_ATTACK_CHECKLIST.md`](checklists/REFEREE_ATTACK_CHECKLIST.md)
+- **[`JOURNAL_REQUIREMENTS_CHECKLIST.md`](checklists/JOURNAL_REQUIREMENTS_CHECKLIST.md)**
 - [`SUBMISSION_CHECKLIST.md`](checklists/SUBMISSION_CHECKLIST.md)
 
 A check may be `NOT APPLICABLE` only with a recorded reason. Material `NOT TESTED` is not a passing state.
+
+## v2.1 release: fail-closed live journal compliance
+
+v2.1 makes submission compliance evidence-bearing. Stage 12 creates a Journal Requirements Ledger; Stage 13 carries verified requirements into the package; Stage 14 re-checks current official journal rules and fails closed on material unknowns/conflicts; Stage 15 reconciles the authenticated portal and generated submission PDF where applicable.
+
+A successful upload is not proof of technical compliance. If a material rule cannot be resolved from current journal/publisher/portal evidence, clarification from the editorial office or submission support is required before full submission QA PASS.
+
+For actual submissions, the most specific current authority controls: direct editorial-office instruction → explicit authenticated-portal requirement → journal-specific official guidance → publisher-wide official guidance → secondary/internal/memory evidence.
 
 ## Historical releases
 
@@ -167,7 +176,8 @@ A check may be `NOT APPLICABLE` only with a recorded reason. Material `NOT TESTE
 - `v1.1` — strengthened component-overlap vs whole-game absorption and generalization/unification treatment.
 - `v1.2` — added equilibrium-continuation safety for sequential/game-theoretic models: off-path continuation completeness, fail-closed solver semantics, independent direct-payoff reconstruction, and permanent counterexample regression tests.
 - `v1.3` — added result-to-exposition and figure/table architecture lifecycle across Stages 7/10/13/14.
-- `v2.0` — adds mandatory independent mathematical correctness/globality certification and generality/quantifier certification before theory freeze.
+- `v2.0` — mathematical-adversarial-certification architecture merged/audited on 2026-09-06; not separately tagged as a stable GitHub Release.
+- `v2.1` — first stable tagged v2 release; includes the v2.0 architecture plus fail-closed live journal-compliance and portal-preflight controls.
 
 Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), v2.0 is MAJOR because it adds Stage 4A and Stage 7.5A and changes canonical routing.
 
@@ -213,6 +223,6 @@ Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 ## Status
 
-Current canonical architecture on `main` after this change: **v2.0**.
+Current canonical and stable published workflow: **v2.1**.
 
-Historical stable tags `v1.0`–`v1.3` remain immutable. A v2.0 release/tag should be created only from the reviewed merged `main` state under `GOVERNANCE.md`.
+Stable tag/release: **`v2.1`**. Historical stable tags `v1.0`–`v1.3` remain immutable. The v2.0 architecture was merged and audited but not separately tagged; v2.1 is the first stable tagged release in the v2 line.
