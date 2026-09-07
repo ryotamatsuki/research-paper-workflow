@@ -1,0 +1,140 @@
+name: Publish v2.1 after readiness audit
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  publish-v2-1:
+    if: github.repository == 'ryotamatsuki/research-paper-workflow' && contains(github.event.head_commit.message, 'Publish research-paper-workflow v2.1')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out reviewed state
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify v2.1 readiness and immutable release namespace
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          grep -Fq '**`WORKFLOW v2.1 READY`**' docs/V2_1_INTEGRATION_AUDIT.md
+          grep -Fq '[x] **`WORKFLOW v2.1 READY`**' docs/V2_1_READINESS_CHECKLIST.md
+          test -s docs/V2_1_RELEASE_MANIFEST.md
+          test -s docs/V2_1_RELEASE_NOTES.md
+          test -s checklists/JOURNAL_REQUIREMENTS_CHECKLIST.md
+          grep -Fq 'Material `UNVERIFIED` or unresolved `CONFLICT` blocks Stage-14 `SUBMISSION QA PASS`.' checklists/JOURNAL_REQUIREMENTS_CHECKLIST.md
+          grep -Fq 'Stage 14 is also the mandatory **live journal-compliance gate**.' templates/STAGE_14_SUBMISSION_QA.md
+          grep -Fq 'Portal acceptance or absence of a warning is not treated as proof of technical compliance.' docs/V2_1_INTEGRATION_AUDIT.md
+          grep -Fq 'Version: v2.0' GOVERNANCE.md
+          grep -Fq 'Version: v2.0' THEORY_PAPER_RESEARCH_PIPELINE.md
+
+          git ls-remote --exit-code --tags origin refs/tags/v1.3 >/dev/null 2>&1
+
+          if git ls-remote --exit-code --tags origin refs/tags/v2.1 >/dev/null 2>&1; then
+            echo 'v2.1 tag already exists; refusing to overwrite an immutable release tag.' >&2
+            exit 1
+          fi
+
+          if git ls-remote --exit-code --tags origin refs/tags/v2.0 >/dev/null 2>&1; then
+            echo 'A v2.0 tag now exists, but v2.1 release documents state v2.0 was not separately tagged. Re-audit release history first.' >&2
+            exit 1
+          fi
+
+      - name: Finalize v2.1 canonical metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+
+          def replace_once(path, old, new):
+              p = Path(path)
+              text = p.read_text()
+              if old not in text:
+                  raise SystemExit(f'Expected marker not found in {path}: {old[:120]}')
+              p.write_text(text.replace(old, new, 1))
+
+          replace_once('GOVERNANCE.md', 'Version: v2.0', 'Version: v2.1')
+          gov = Path('GOVERNANCE.md')
+          text = gov.read_text()
+          marker = '\n---\n\n## 3. Repository change policy'
+          addition = '''\n### 2.10 Submission compliance must be evidence-bearing\n\nFor journal submission, current operational requirements must be verified from current evidence rather than memory, old repository assumptions, prior submissions, or generic system behavior.\n\nFor the actual submission, use the most specific current authority available: direct editorial-office instruction, then explicit authenticated-portal requirements, then journal-specific official guidance, then publisher-wide guidance. Lower-level evidence may not override a more specific current instruction.\n\nProduction projects must preserve an auditable Journal Requirements Ledger or equivalent. Material `UNVERIFIED` or unresolved `CONFLICT` items block full submission QA. If a material rule remains unresolved after current journal/publisher/portal research, obtain clarification from the editorial office or submission support before full PASS.\n\nA portal accepting a file, allowing progression, or showing no warning is not by itself proof of editorial-office technical compliance.\n'''
+          if '### 2.10 Submission compliance must be evidence-bearing' not in text:
+              if marker not in text:
+                  raise SystemExit('Governance insertion marker not found')
+              text = text.replace(marker, addition + marker, 1)
+              gov.write_text(text)
+
+          replace_once('THEORY_PAPER_RESEARCH_PIPELINE.md', 'Version: v2.0', 'Version: v2.1')
+          pipe = Path('THEORY_PAPER_RESEARCH_PIPELINE.md')
+          text = pipe.read_text()
+          marker = '\n---\n\n# 4. Companion materials'
+          addition = '''\n## 3.12 Live journal compliance and portal evidence\n\nAfter a primary journal is selected, journal compliance is evidence-bearing. Stage 12 creates an initial Journal Requirements Ledger; Stage 13 integrates verified requirements without guessing unresolved ones; Stage 14 re-opens and dates current official requirements, verifies the exact source/submission package, and fails closed on material `UNVERIFIED` or unresolved `CONFLICT` items; Stage 15 reconciles the authenticated submission record and portal-generated PDF where applicable before `SUBMITTED` may be declared.\n\nFor the actual submission, direct current editorial-office instructions outrank explicit authenticated-portal rules, which outrank journal-specific official guidance, which outranks publisher-wide guidance. Memory, prior submissions, and repository notes are non-authoritative when a more specific current source exists.\n\nIf a material requirement remains unresolved after current journal/publisher/portal research, obtain clarification from the journal/editorial office or submission support before full Stage-14 PASS. Portal acceptance alone is not proof of technical compliance.\n'''
+          if '## 3.12 Live journal compliance and portal evidence' not in text:
+              if marker not in text:
+                  raise SystemExit('Pipeline insertion marker not found')
+              text = text.replace(marker, addition + marker, 1)
+              pipe.write_text(text)
+
+          readme = Path('README.md')
+          text = readme.read_text()
+          checklist_marker = '- [`SUBMISSION_CHECKLIST.md`](checklists/SUBMISSION_CHECKLIST.md)'
+          journal_item = '- **[`JOURNAL_REQUIREMENTS_CHECKLIST.md`](checklists/JOURNAL_REQUIREMENTS_CHECKLIST.md)**'
+          if journal_item not in text:
+              if checklist_marker not in text:
+                  raise SystemExit('README checklist insertion marker not found')
+              text = text.replace(checklist_marker, journal_item + '\n' + checklist_marker, 1)
+
+          hist_marker = '## Historical releases\n'
+          v21_section = '''## v2.1 release: fail-closed live journal compliance\n\nv2.1 makes submission compliance evidence-bearing. Stage 12 creates a Journal Requirements Ledger; Stage 13 carries verified requirements into the package; Stage 14 re-checks current official journal rules and fails closed on material unknowns/conflicts; Stage 15 reconciles the authenticated portal and generated submission PDF where applicable.\n\nThe key rule is that a successful upload is not proof of technical compliance. If a material rule cannot be resolved from current journal/publisher/portal evidence, the workflow requires clarification from the editorial office or submission support before full submission QA PASS.\n\nFor actual submissions, the most specific current authority controls: direct editorial-office instruction → explicit authenticated-portal requirement → journal-specific official guidance → publisher-wide official guidance → secondary/internal/memory evidence.\n\n'''
+          if '## v2.1 release: fail-closed live journal compliance' not in text:
+              if hist_marker not in text:
+                  raise SystemExit('README historical-release marker not found')
+              text = text.replace(hist_marker, v21_section + hist_marker, 1)
+
+          old_v20 = '- `v2.0` — adds mandatory independent mathematical correctness/globality certification and generality/quantifier certification before theory freeze.'
+          new_v20_v21 = '- `v2.0` — mathematical-adversarial-certification architecture merged/audited on 2026-09-06; not separately tagged as a stable GitHub Release.\n- `v2.1` — first stable tagged v2 release; includes the v2.0 architecture plus fail-closed live journal-compliance and portal-preflight controls.'
+          if old_v20 in text:
+              text = text.replace(old_v20, new_v20_v21, 1)
+          elif '- `v2.1` — first stable tagged v2 release' not in text:
+              raise SystemExit('README v2.0 history marker not found')
+
+          old_status = 'Current canonical architecture on `main` after this change: **v2.0**.\n\nHistorical stable tags `v1.0`–`v1.3` remain immutable. A v2.0 release/tag should be created only from the reviewed merged `main` state under `GOVERNANCE.md`.'
+          new_status = 'Current canonical and stable published workflow: **v2.1**.\n\nStable tag/release: **`v2.1`**. Historical stable tags `v1.0`–`v1.3` remain immutable. The v2.0 architecture was merged and audited but not separately tagged; v2.1 is the first stable tagged release in the v2 line.'
+          if old_status not in text:
+              raise SystemExit('README pre-release status marker not found')
+          text = text.replace(old_status, new_status, 1)
+          readme.write_text(text)
+
+          policy = Path('docs/VERSIONING_POLICY.md')
+          text = policy.read_text()
+          text = text.replace('Status: active v1-series policy', 'Status: active workflow versioning policy', 1)
+          if 'The 2026-09-07 live journal-compliance refinement' not in text:
+              text += '''\n\nThe 2026-09-06 mathematical-adversarial-certification change added mandatory Stage 4A and Stage 7.5A gates and changed canonical routing. It therefore defines the **MAJOR v2.0 architecture**. That architecture was merged and integration-audited but was not separately published as a stable GitHub tag/release.\n\nThe 2026-09-07 live journal-compliance refinement preserves the v2.0 Stage structure, verdict semantics, routing, rollback behavior, and theory-freeze meaning while strengthening evidence, source-package, declaration, authenticated-portal, and generated-PDF checks inside Stages 12–15. It is therefore the **MINOR release v2.1**. v2.1 is the first stable tagged release in the v2 line and includes the complete v2.0 architecture.\n'''
+          policy.write_text(text)
+          PY
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add GOVERNANCE.md THEORY_PAPER_RESEARCH_PIPELINE.md README.md docs/VERSIONING_POLICY.md
+          git commit -m 'Finalize v2.1 release metadata'
+          git push origin HEAD:main
+          echo "RELEASE_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+
+      - name: Publish v2.1 tag and GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release create v2.1 \
+            --target "$RELEASE_SHA" \
+            --title 'research-paper-workflow v2.1' \
+            --notes-file docs/V2_1_RELEASE_NOTES.md
