@@ -2,12 +2,20 @@
 
 Use this checklist for every headline equilibrium, theorem, proposition, welfare result, and broad robustness claim before theory freeze.
 
-The checklist is designed to prevent two recurrent failure modes:
+The checklist is designed to prevent four recurrent failure modes:
 
-1. a locally valid/interior/regular-branch candidate being reported as a global equilibrium; and
-2. a baseline or restricted theorem being reported with broader quantifiers, functional-form generality, or benchmark language than the proof supports.
+1. a locally valid/interior/regular-branch candidate being reported as a global equilibrium;
+2. a baseline or restricted theorem being reported with broader quantifiers, functional-form generality, or benchmark language than the proof supports;
+3. verification that a proposed equilibrium has no profitable deviation being mistaken for a search showing that no other equilibrium exists; and
+4. payoff-indifferent, zero-demand, zero-profit, or tie actions being treated as irrelevant even when changing them can alter another player's best response, equilibrium set, allocation, or welfare.
 
 A material item may be marked `NOT APPLICABLE` only with a written reason. `NOT TESTED` is not a passing state.
+
+For every material certificate, preserve an evidence link of the form:
+
+`claim -> adversarial attack performed -> proof/counterexample/code artifact -> surviving limitation`.
+
+A bare statement such as `checked`, `verified`, or `PASS` is not evidence.
 
 ## A. Exact claim identity
 
@@ -38,7 +46,11 @@ A material item may be marked `NOT APPLICABLE` only with a written reason. `NOT 
 
 ## D. Equilibrium/globality certificate
 
-When applicable:
+When applicable, complete the following sub-audits separately. Passing one does not imply passing another.
+
+### D1. Candidate-deviation audit
+
+This asks: **given the proposed strategy profile, is there a profitable unilateral deviation?**
 
 - [ ] Verify FOCs/KKT conditions.
 - [ ] Verify SOCs/Hessian/principal-minor conditions.
@@ -49,16 +61,50 @@ When applicable:
 - [ ] Distinguish a regular/interior candidate from a global best response.
 - [ ] For sequential games, verify downstream continuation after material upstream deviations.
 - [ ] Treat `None`, NaN, exception, invalid branch, or nonconvergence as `UNRESOLVED`, not as an unprofitable deviation.
-- [ ] Record multiplicity/nonexistence where relevant.
 
-## E. Independent reconstruction certificate
+### D2. Alternative-equilibrium / multiplicity audit
+
+This asks: **does another strategy profile also satisfy the equilibrium conditions?**
+
+- [ ] Search for alternative pure-strategy equilibrium profiles outside the presented candidate branch.
+- [ ] Search boundaries, ties, zero-demand/zero-output states, participation changes, and regime switches as possible sources of additional equilibria.
+- [ ] Where tractable, solve or enumerate the equilibrium correspondence rather than only checking the presented candidate.
+- [ ] Record whether the equilibrium is `UNIQUE`, `MULTIPLE`, `EXISTENCE ONLY`, or `UNRESOLVED` on the claimed domain.
+- [ ] If multiplicity exists, characterize whether equilibrium prices/actions, allocations, profits, welfare, or policy conclusions are invariant across equilibria.
+- [ ] If only existence is claimed and multiplicity is immaterial to every downstream claim, explain why the alternative-equilibrium audit is not required beyond that scope.
+
+**Certification rule:** a successful no-profitable-deviation test in D1 is not evidence of uniqueness and does not satisfy D2. Conversely, finding one additional equilibrium does not by itself invalidate a correctly stated existence claim; it invalidates uniqueness or any selection-independent conclusion that is not robust across the equilibrium set.
+
+### D3. Indifference / zero-payoff trigger audit
+
+Trigger this audit whenever two or more actions give the same payoff to a player, including zero-demand, zero-output, zero-profit, participation/nonparticipation ties, bidding ties, matching ties, or contract-choice indifference.
+
+- [ ] Identify the complete set of payoff-equivalent actions that are economically admissible.
+- [ ] Change the indifferent player's action within that set and recompute other players' best responses and the equilibrium conditions.
+- [ ] Check whether the equilibrium set, prices/actions, allocation, participation, continuation play, or welfare changes.
+- [ ] Do not dismiss an action as irrelevant merely because the acting player's own payoff is unchanged.
+- [ ] Preserve any newly discovered equilibrium or counterexample as a regression artifact.
+
+## E. Equilibrium selection / refinement certificate
+
+Complete whenever multiplicity is resolved by an added restriction, selection rule, refinement, tie-breaking assumption, price floor, no-loss condition, dominance argument, or other auxiliary criterion.
+
+- [ ] State whether the criterion belongs to the original model, is standard but previously unstated, or is newly imposed for this paper.
+- [ ] Identify exactly which equilibria the criterion removes.
+- [ ] Verify that the criterion does not also remove the candidate equilibrium needed for the paper's main result.
+- [ ] State which claims remain valid without the criterion.
+- [ ] State which claims are conditional on the selected/refined equilibrium.
+- [ ] Test the refinement symmetrically; do not use a principle only against inconvenient equilibria.
+- [ ] In particular, if weak-dominance reasoning is used, verify it does not also eliminate economically required weakly dominated or payoff-equivalent actions elsewhere in the model.
+
+## F. Independent reconstruction certificate
 
 - [ ] Reconstruct at least one high-stakes payoff/allocation object directly from primitives where feasible.
 - [ ] Use an independent derivation, evaluator, solver, or model/reviewer where feasible.
 - [ ] Confirm the independent path does not merely call the production solver.
 - [ ] Reconcile any discrepancy before `PASS`.
 
-## F. Counterexample certificate
+## G. Counterexample certificate
 
 - [ ] Search analytically/symbolically for counterexamples where feasible.
 - [ ] Search numerically only after analytic/symbolic characterization where feasible.
@@ -68,7 +114,7 @@ When applicable:
 - [ ] For broad function classes, construct admissible nonbaseline functions and try to reverse the claimed sign/concavity/ordering.
 - [ ] Preserve every discovered counterexample as a regression test or permanent verification artifact.
 
-## G. Functional-form/generality certificate
+## H. Functional-form/generality certificate
 
 When a baseline functional form is used:
 
@@ -78,7 +124,7 @@ When a baseline functional form is used:
 - [ ] If the theorem ranges over `C^k`, monotone, convex, concave, supermodular, single-crossing, or another function class, verify the claimed result follows from exactly those restrictions.
 - [ ] Record the strongest defensible generality statement.
 
-## H. Benchmark-definition certificate
+## I. Benchmark-definition and welfare-selection certificate
 
 When welfare/planner benchmarks are used:
 
@@ -88,15 +134,26 @@ When welfare/planner benchmarks are used:
 - [ ] Verify the label `first best` is used only for the unrestricted relevant planner problem.
 - [ ] Otherwise use the exact label: constrained first best, second best, fixed-allocation benchmark, restricted-instrument optimum, etc.
 - [ ] Verify private/social comparisons use the same population, outside options, accounting, and feasibility conventions.
+- [ ] State whether each welfare comparison concerns one selected equilibrium or every equilibrium in the relevant equilibrium set.
+- [ ] If multiple markets, regions, subgames, or stages admit multiplicity, state whether equilibrium selections can vary independently across them.
+- [ ] If the welfare ranking changes with equilibrium selection, downgrade any selection-free welfare claim accordingly.
 
-## I. Proof/evidence maturity
+## J. Proof/evidence maturity and evidence ledger
 
 - [ ] Classify the claim as `PROVED`, `CONDITIONAL`, `NUMERICALLY SUPPORTED ONLY`, `CONJECTURE`, or `REJECTED`.
 - [ ] Record proof location and verification artifact.
+- [ ] Record the exact adversarial attack actually performed for each material certification field.
+- [ ] Record the counterexample, code, derivation, enumeration, or proof artifact that supports the result of that attack.
+- [ ] Record any surviving limitation or unresolved domain.
 - [ ] Confirm numerical evidence is not presented as analytic proof.
 - [ ] Confirm CI/reproduction of the same solver is not counted as independent certification.
+- [ ] Confirm `PASS` is not awarded from narrative assurance alone.
 
-## J. Manuscript-scope certificate
+Minimum evidence-ledger row:
+
+`claim | attack performed | evidence/artifact path | result | surviving limitation | certificate state`.
+
+## K. Manuscript-scope certificate
 
 - [ ] Map the theorem to abstract wording.
 - [ ] Map the theorem to introduction/contribution wording.
@@ -105,12 +162,12 @@ When welfare/planner benchmarks are used:
 - [ ] State the maximum defensible prose claim.
 - [ ] State stronger wording that is prohibited.
 
-## K. Final certificate state
+## L. Final certificate state
 
 Record one:
 
-- `PASS` — exact scope verified; no material item remains untested.
+- `PASS` — exact scope verified; required deviation, multiplicity/selection, indifference-trigger, welfare-selection, and evidence-ledger audits are complete for the claim's scope; no material item remains untested.
 - `CONDITIONAL` — one precise proof/scope blocker remains and the earliest affected stage is identified.
-- `FAIL` — the claim is false, materially overstated, globally uncertified, or benchmark-misdefined.
+- `FAIL` — the claim is false, materially overstated, globally uncertified, selection-dependent without qualification, or benchmark-misdefined.
 
-A headline claim with `FAIL`, or with material `NOT TESTED`, blocks Stage 4A/7.5A `GO` and therefore blocks Stage 8 theory freeze.
+A headline claim with `FAIL`, with material `NOT TESTED`, or with an applicable audit lacking evidence-linked execution blocks Stage 4A/7.5A `GO` and therefore blocks Stage 8 theory freeze.

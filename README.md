@@ -55,7 +55,7 @@ v2.0 therefore requires:
    Use a logically independent path where feasible: a different model, clean-room derivation, separately written evaluator/solver, or equivalent approach that does not simply call the production solver.
 
 3. **Late manuscript hostile audit — Stage 11**  
-   Repeat high-stakes attacks after the full paper is built. Any flaw that Stage 4A/7.5A should have caught is recorded as a `CERTIFICATION REGRESSION` and routed back to the earliest invalidated stage.
+   Repeat high-stakes attacks after the full paper is built. Any flaw that Stage 4A/7/7.5A should have caught is recorded as a `CERTIFICATION REGRESSION` and routed back to the earliest invalidated stage.
 
 ## Stage 4A — Independent Mathematical Adversarial Certification
 
@@ -64,12 +64,17 @@ Template: [`templates/STAGE_04A_MATH_RED_TEAM.md`](templates/STAGE_04A_MATH_RED_
 Stage 4A independently attacks:
 
 - global best responses and finite deviations;
+- **candidate-deviation validity and alternative-equilibrium/multiplicity as separate questions**;
+- payoff-indifferent, zero-demand, zero-output, and zero-profit actions that may alter other players' best responses;
+- equilibrium-selection/refinement provenance and symmetry;
 - corners, boundaries, active-set changes, regime switches, ordering changes, entry/exit, and zero-output states;
 - off-path continuations and solver-failure semantics;
 - local/interior claims that may have been promoted to global equilibrium;
 - independent reconstruction of high-stakes payoff/allocation objects;
+- welfare robustness across the relevant equilibrium set;
 - welfare benchmark definitions;
-- counterexample search and permanent regression tests.
+- counterexample search and permanent regression tests;
+- evidence-bearing PASS: `claim -> attack -> artifact -> surviving limitation`.
 
 Every headline theorem receives a certificate. Material `NOT TESTED` fields block `GO`.
 
@@ -80,6 +85,9 @@ Template: [`templates/STAGE_075A_GENERALITY_QUANTIFIER_RED_TEAM.md`](templates/S
 Stage 7.5A attacks:
 
 - `for all` / `exists` / `unique` / `generic` / `local` / `global` scope;
+- equilibrium-set quantifiers such as `all equilibria`, `selected equilibrium`, and refinement-defined subsets;
+- existence being written as uniqueness or complete characterization;
+- selection-dependent welfare being written as selection-free;
 - baseline functional-form dependence;
 - claims over broad classes such as `C^2`, convex, concave, monotone, supermodular, or single-crossing functions;
 - strict comparative statics whose sign is not implied by the stated restrictions;
@@ -100,24 +108,45 @@ Each certificate records at least:
 - parameter/strategy/function domains;
 - assumptions actually used;
 - local/branch/global status;
+- candidate-deviation audit;
+- alternative-equilibrium / multiplicity audit when required by claim scope;
+- indifference / zero-payoff trigger audit;
+- selection/refinement provenance and symmetry;
 - FOC/KKT/SOC/globality evidence;
 - boundary/corner/regime audit;
 - independent reconstruction status;
 - counterexample search;
+- welfare-selection robustness;
 - functional-form/generality status;
 - benchmark-definition status;
-- evidence maturity;
+- evidence maturity and artifact paths;
 - maximum defensible manuscript wording;
 - `PASS`, `CONDITIONAL`, or `FAIL`.
 
+## Post-v2.1 equilibrium-multiplicity / evidence-bearing refinement
+
+The 2026-09-09 refinement does **not** add a new Stage. It makes existing mathematical-certification principles operational by requiring distinct evidence for distinct claims.
+
+The central rule is:
+
+> Verifying that a proposed profile has no profitable deviation is not evidence that no other equilibrium exists.
+
+Payoff indifference and zero-demand/zero-profit states now trigger explicit alternative-equilibrium attacks; equilibrium refinements must be provenance-tracked and applied symmetrically; welfare claims must state whether they hold for one selected equilibrium or all relevant equilibria; and material PASS states must identify the attack and supporting artifact.
+
+Paper-specific routes such as correction-paper `C0–C6` protocols inherit the same obligations through [`checklists/PAPER_SPECIFIC_CERTIFICATION_INHERITANCE_CHECKLIST.md`](checklists/PAPER_SPECIFIC_CERTIFICATION_INHERITANCE_CHECKLIST.md).
+
+Regression rationale: [`docs/EQUILIBRIUM_MULTIPLICITY_CERTIFICATION_REFINEMENT_2026-09-09.md`](docs/EQUILIBRIUM_MULTIPLICITY_CERTIFICATION_REFINEMENT_2026-09-09.md).
+
+Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), this is a **minor-version class** backward-compatible refinement because Stage identities, verdict semantics, and routing are unchanged. The published `v2.1` tag remains immutable until a later release is separately reviewed and published.
+
 ## Theory freeze requirements
 
-Stage 8 now requires both:
+Stage 8 requires both:
 
 - `GO — MATHEMATICAL ADVERSARIAL CERTIFICATION PASS` from Stage 4A; and
 - `GO — GENERALITY / QUANTIFIER CERTIFICATION PASS` from Stage 7.5A.
 
-The freeze retains theorem certificates, claim-scope ledger, benchmark-definition register, and counterexample/regression-test register.
+The freeze retains theorem certificates, equilibrium-set/multiplicity status, selection/refinement conditions, welfare-selection robustness, claim-scope ledger, benchmark-definition register, evidence ledger, and counterexample/regression-test register.
 
 Production repositories should retain these under `theorem_certificates/` or an equivalent auditable directory.
 
@@ -155,6 +184,7 @@ Reusable checklists live under [`checklists/`](checklists/), including:
 - [`NUMERICAL_VERIFICATION_CHECKLIST.md`](checklists/NUMERICAL_VERIFICATION_CHECKLIST.md)
 - [`EQUILIBRIUM_CONTINUATION_CHECKLIST.md`](checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md)
 - **[`THEOREM_CERTIFICATION_CHECKLIST.md`](checklists/THEOREM_CERTIFICATION_CHECKLIST.md)**
+- **[`PAPER_SPECIFIC_CERTIFICATION_INHERITANCE_CHECKLIST.md`](checklists/PAPER_SPECIFIC_CERTIFICATION_INHERITANCE_CHECKLIST.md)**
 - [`FIGURE_TABLE_CHECKLIST.md`](checklists/FIGURE_TABLE_CHECKLIST.md)
 - [`REFEREE_ATTACK_CHECKLIST.md`](checklists/REFEREE_ATTACK_CHECKLIST.md)
 - **[`JOURNAL_REQUIREMENTS_CHECKLIST.md`](checklists/JOURNAL_REQUIREMENTS_CHECKLIST.md)**
@@ -186,16 +216,18 @@ Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), v2.0 is MAJOR be
 1. Start at Stage 0 unless verified prior work justifies later entry.
 2. Preserve unknowns as `UNRESOLVED`; do not invent missing facts.
 3. Run each stage as a research gate and preserve its report, verdict, rejected branches, blockers, and next-stage contract.
-4. If Stage 4 gives `GO`, run Stage 4A before any Stage-6 novelty re-kill.
-5. If Stage 4/4A identifies exactly one repairable economic deficiency, Stage 5 may change only that one margin; then repeat Stage 4 and Stage 4A.
-6. Re-kill actual novelty at Stage 6.
-7. Validate welfare/generality/institutions at Stage 7.
-8. Use Stage 7.5 to decide whether a full paper is justified, then run Stage 7.5A before theory freeze.
-9. Freeze theory only after both independent certificates pass.
-10. At Stage 7 identify exposition vehicles; at Stage 10 implement figure/table architecture; at Stage 13 integrate it; at Stage 14 verify it.
-11. At Stage 11 repeat hostile mathematical and theorem-scope attacks from a fresh perspective.
-12. If a later stage invalidates earlier work, return to the earliest affected stage and mark downstream outputs stale.
-13. Preserve rejected branches, counterexamples, negative results, theorem-certificate failures, and certification regressions as research provenance.
+4. If Stage 4 gives `GO`, run Stage 4A before any Stage-6 novelty re-kill. Separate candidate-deviation verification from alternative-equilibrium search whenever the claim requires characterization, uniqueness, or selection-free conclusions.
+5. Trigger indifference/multiplicity attacks when zero-demand, zero-output, zero-profit, ties, or other payoff-equivalent actions occur.
+6. If Stage 4/4A identifies exactly one repairable economic deficiency, Stage 5 may change only that one margin; then repeat Stage 4 and Stage 4A.
+7. Re-kill actual novelty at Stage 6.
+8. Validate welfare/generality/institutions at Stage 7, including welfare robustness to equilibrium selection.
+9. Use Stage 7.5 to decide whether a full paper is justified, then run Stage 7.5A before theory freeze.
+10. Freeze theory only after both independent certificates pass with evidence-linked artifacts.
+11. At Stage 7 identify exposition vehicles; at Stage 10 implement figure/table architecture; at Stage 13 integrate it; at Stage 14 verify it.
+12. At Stage 11 repeat hostile mathematical, equilibrium-set, welfare-selection, and theorem-scope attacks from a fresh perspective.
+13. If a later stage invalidates earlier work, return to the earliest affected stage and mark downstream outputs stale.
+14. Preserve rejected branches, additional equilibria, counterexamples, negative results, theorem-certificate failures, and certification regressions as research provenance.
+15. When using a paper-specific route such as `C0–C6`, map each strong claim to the inherited canonical certification obligation and required evidence artifact.
 
 ## Repository structure
 
@@ -213,7 +245,7 @@ research-paper-workflow/
 
 ## Intended use
 
-Use this repository as the stable workflow reference, not as the production LaTeX repository for every paper. Project-specific Stage reports, decision logs, calculations, theorem certificates, counterexamples, and verification artifacts should live in the project's own repository.
+Use this repository as the stable workflow reference, not as the production LaTeX repository for every paper. Project-specific Stage reports, decision logs, calculations, theorem certificates, equilibrium-set artifacts, counterexamples, and verification evidence should live in the project's own repository.
 
 ## License
 
@@ -223,6 +255,6 @@ Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 ## Status
 
-Current canonical and stable published workflow: **v2.1**.
+Current stable published workflow: **v2.1**.
 
-Stable tag/release: **`v2.1`**. Historical stable tags `v1.0`–`v1.3` remain immutable. The v2.0 architecture was merged and audited but not separately tagged; v2.1 is the first stable tagged release in the v2 line.
+`main` may contain reviewed post-v2.1 backward-compatible refinements pending a later release. Stable tag/release: **`v2.1`**. Historical stable tags `v1.0`–`v1.3` remain immutable. The v2.0 architecture was merged and audited but not separately tagged; v2.1 is the first stable tagged release in the v2 line.
