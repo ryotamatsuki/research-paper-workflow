@@ -48,6 +48,8 @@ A minor release may cause a previously completed project to merit re-audit under
 
 Typical v1-series minor releases are `v1.1`, `v1.2`, and so on.
 
+An embedded formal-verification obligation can therefore be a MINOR change when it is implemented inside existing Stage 4A/7.5A/8 boundaries, leaves Stage numbering and canonical routing unchanged, and strengthens only the evidence required for an existing `GO`/freeze decision.
+
 ## 5. Major changes — `v2.0`
 
 A major version is required when the workflow architecture or canonical decision interface changes incompatibly.
@@ -148,7 +150,8 @@ The 2026-09-05 equilibrium-continuation safety refinement preserves the same Sta
 
 The 2026-09-06 result-to-exposition and figure/table architecture refinement preserves the same Stage structure, verdict semantics, routing, rollback rules, and freeze meanings while adding earlier exposition planning, reproducible figure/table implementation, journal-specific integration, and artwork QA obligations inside Stages 7, 10, 13, and 14. After integration/readiness audit, it was released as the **minor version `v1.3`**.
 
-
 The 2026-09-06 mathematical-adversarial-certification change added mandatory Stage 4A and Stage 7.5A gates and changed canonical routing. It therefore defines the **MAJOR v2.0 architecture**. That architecture was merged and integration-audited but was not separately published as a stable GitHub tag/release.
 
 The 2026-09-07 live journal-compliance refinement preserves the v2.0 Stage structure, verdict semantics, routing, rollback behavior, and theory-freeze meaning while strengthening evidence, source-package, declaration, authenticated-portal, and generated-PDF checks inside Stages 12–15. It is therefore the **MINOR release v2.1**. v2.1 is the first stable tagged release in the v2 line and includes the complete v2.0 architecture.
+
+The 2026-09-10 formal-verification refinement keeps the same Stage identities and the same canonical route `Stage 4 → Stage 4A → Stage 6 → Stage 7 → Stage 7.5 → Stage 7.5A → Stage 8`. It adds an applicability decision at Stage 4A, an embedded pre-freeze Formal Verification Gate inside Stage 7.5A, and preservation/rebuild obligations at Stages 8/9/11/14/15. Because it strengthens verification evidence without adding a canonical Stage or changing verdict semantics/routing, it is a **MINOR-version class post-v2.1 refinement** and a natural candidate for a future `v2.2` release. The published `v2.1` tag remains immutable unless and until a new release is separately audited and tagged.

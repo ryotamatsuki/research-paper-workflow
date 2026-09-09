@@ -17,6 +17,7 @@ The preferred reviewer/implementation should be independent of the one that cons
 - Strategy/choice domains: `[STRATEGY_DOMAINS]`
 - Verification artifacts: `[VERIFICATION_ARTIFACTS]`
 - Known branch/domain restrictions: `[KNOWN_BLOCKERS]`
+- Preliminary formal-verification applicability: `[FORMALIZATION_APPLICABILITY]`
 
 ## 2. Stage objective
 
@@ -30,6 +31,8 @@ The audit must distinguish two logically different questions:
 2. **Alternative-equilibrium question:** does another strategy profile also satisfy equilibrium conditions?
 
 A PASS on question 1 is not evidence of uniqueness and does not answer question 2. If the paper claims only existence and no downstream conclusion depends on equilibrium selection, the alternative-equilibrium search may be scoped accordingly, but that limitation must be explicit.
+
+Stage 4A also identifies which surviving proof-critical components should later receive proof-assistant certification before theory freeze. This is planning, not a substitute for the independent attack performed here. The formal-verification gate itself closes at Stage 7.5A after theorem scope is stable.
 
 ## 3. Frozen inputs
 
@@ -58,6 +61,7 @@ For every headline equilibrium/proposition:
 17. Preserve every discovered counterexample, additional equilibrium, and certification failure as a permanent regression test or equivalent reproducible artifact.
 18. Produce a theorem certificate for each headline claim using `checklists/THEOREM_CERTIFICATION_CHECKLIST.md`.
 19. For every material PASS item, record an evidence row: `claim -> attack performed -> proof/counterexample/code artifact -> surviving limitation`. Narrative assertions such as `checked` or `verified` are insufficient.
+20. Apply the applicability section of `checklists/FORMAL_VERIFICATION_CHECKLIST.md`. Record either `FORMALIZATION APPLICABLE` with a preliminary proof-critical target map, or `FORMALIZATION NOT APPLICABLE — REASON RECORDED`. When applicable, identify the algebraic, inequality, case-partition, threshold, counterexample, equilibrium-condition, or welfare components whose proof-assistant certification would most reduce residual risk. Do not count the prospective formalization as the independent Stage-4A certification itself.
 
 ## 5. Required theorem certificate fields
 
@@ -79,11 +83,12 @@ Each headline claim must record:
 - counterexample search design and result;
 - welfare-selection robustness status where applicable;
 - benchmark-definition status where applicable;
+- preliminary formal-verification applicability and target map;
 - evidence/artifact path for each material PASS;
 - known limitations/exclusions;
 - `PASS`, `CONDITIONAL`, or `FAIL`.
 
-`NOT TESTED` on a material field blocks Stage-4A `GO` unless it is explicitly `NOT APPLICABLE` with a valid reason.
+`NOT TESTED` on a material field blocks Stage-4A `GO` unless it is explicitly `NOT APPLICABLE` with a valid reason. Formal-verification implementation may remain pending until Stage 7.5A, but its applicability decision and target map may not be silently omitted.
 
 ## 6. Kill tests
 
@@ -113,6 +118,8 @@ For global/SPNE claims, all economically material deviation classes must be cert
 
 Whenever indifference or zero-payoff conditions are present, `GO` additionally requires evidence that alternative payoff-equivalent actions do not create unaccounted equilibria or alter conclusions, or else an explicit multiplicity/selection characterization.
 
+Before `GO`, formal-verification applicability must be recorded. If applicable, the formalization target map is carried forward to Stage 7.5A; a completed proof-assistant artifact is not required yet.
+
 ## 8. Failure routing
 
 - A derivation, equilibrium, domain, multiplicity, selection, or proof error routes back to Stage 4.
@@ -133,9 +140,10 @@ Whenever indifference or zero-payoff conditions are present, `GO` additionally r
 10. Counterexample search design and results
 11. Welfare-selection and benchmark-definition audit
 12. Evidence ledger: `claim | attack | artifact | result | surviving limitation`
-13. Permanent regression tests created
-14. Exact blocker and earliest affected stage, if any
-15. Canonical stage verdict and routing
+13. Formal-verification applicability decision and preliminary target map
+14. Permanent regression tests created
+15. Exact blocker and earliest affected stage, if any
+16. Canonical stage verdict and routing
 
 ## 10. Final verdict
 

@@ -39,6 +39,28 @@ The workflow uses a three-layer mathematical defense:
 - **independent adversarial layer** — Stage 4A and Stage 7.5A attempt to falsify correctness and scope without inheriting the construction path;
 - **full-manuscript hostile layer** — Stage 11 repeats high-stakes attacks after exposition has been added and treats any newly discovered mathematical failure as a rollback event and workflow regression signal.
 
+### Embedded Formal Verification Gate
+
+Every theorem-bearing project must also make a formal-verification applicability decision. This is an embedded verification obligation, **not a new canonical Stage**, so Stage numbering and normal routing remain unchanged.
+
+The lifecycle is:
+
+- **Stage 4A:** record preliminary applicability and a proof-critical formalization target map;
+- **Stage 7.5A:** reassess against the final theorem scope and close the Formal Verification Gate;
+- **Stage 8:** refuse theory freeze unless the gate is closed;
+- **Stages 9/11/14/15:** preserve, attack, rebuild, and freeze the formal artifacts where applicable.
+
+The required Stage-7.5A pre-freeze state is exactly one of:
+
+- `FORMAL VERIFICATION PASS`; or
+- `FORMALIZATION NOT APPLICABLE — REASON RECORDED`.
+
+`NOT TESTED`, `PLANNED`, failed compilation, stale formal statements, unexplained proof placeholders, or unresolved statement-fidelity gaps are blocking states.
+
+Formal verification complements rather than replaces analytic derivation, global-deviation analysis, alternative-equilibrium search, independent adversarial certification, and quantifier/scope audit. A proof assistant certifies the encoded theorem from encoded hypotheses; it does not certify unformalized economic primitives or equilibrium domains by implication.
+
+Apply `checklists/FORMAL_VERIFICATION_CHECKLIST.md`.
+
 ---
 
 ## 2. Universal stage schema
@@ -60,7 +82,7 @@ Every stage-specific prompt, report, or template should include, unless genuinel
 
 For efficient handoff preserve at least: outputs to carry forward, frozen facts, rejected branches, open blockers, and the one allowed next change when conditional work is authorized.
 
-For theorem-bearing stages preserve a claim/proposition register. For headline mathematical claims, use `checklists/THEOREM_CERTIFICATION_CHECKLIST.md` as required by Stage 4A and Stage 7.5A.
+For theorem-bearing stages preserve a claim/proposition register. For headline mathematical claims, use `checklists/THEOREM_CERTIFICATION_CHECKLIST.md` as required by Stage 4A and Stage 7.5A. Every theorem-bearing project must also apply `checklists/FORMAL_VERIFICATION_CHECKLIST.md`: Stage 4A records applicability/targets and Stage 7.5A closes the pre-freeze formal-verification state.
 
 For manuscript exposition, use the four-step lifecycle:
 
@@ -249,7 +271,10 @@ For every headline claim:
 - independently verify at least one high-stakes claim through a separate evaluator/solver where feasible;
 - audit welfare benchmark labels against the planner's actual objective and feasible choice set;
 - create one theorem certificate per headline claim using `checklists/THEOREM_CERTIFICATION_CHECKLIST.md`;
-- preserve all counterexamples as regression artifacts.
+- preserve all counterexamples as regression artifacts;
+- apply the applicability portion of `checklists/FORMAL_VERIFICATION_CHECKLIST.md` and record either `FORMALIZATION APPLICABLE` with a preliminary proof-critical target map or `FORMALIZATION NOT APPLICABLE — REASON RECORDED`.
+
+The preliminary formalization map should prioritize high-consequence algebra, quantified inequalities, piecewise/case logic, thresholds, exact counterexamples, global-deviation inequalities, equilibrium-condition implications, and welfare identities. Formal proof planning does not count as the independent Stage-4A attack itself.
 
 ## Hard gate
 
@@ -257,13 +282,15 @@ A material theorem-certificate field marked `NOT TESTED` blocks `GO` unless expl
 
 A headline claim fails certification if it relies on local conditions as global proof, an omitted profitable boundary/regime deviation, unresolved continuation treated as unprofitable, a regular formula outside its domain, solver failure filtering, an implementation-independent contradiction, or a benchmark label inconsistent with the optimization problem.
 
+Formal-verification implementation may remain pending until Stage 7.5A, but the applicability decision and preliminary target map may not be silently omitted.
+
 ## Verdict and routing
 
 - `GO — MATHEMATICAL ADVERSARIAL CERTIFICATION PASS` → Stage 6.
 - `CONDITIONAL GO` → earliest affected stage; proof/equilibrium/domain errors normally reopen Stage 4, while exactly one authorized economic modification may route to Stage 5 and must then repeat Stage 4 and 4A.
 - `NO-GO` → terminate or reopen Stage 4/3/0 as required.
 
-No project may bypass Stage 4A because Stage 4, CI, symbolic algebra, or the production solver is green.
+No project may bypass Stage 4A because Stage 4, CI, symbolic algebra, a proof assistant, or the production solver is green.
 
 ---
 
@@ -367,7 +394,7 @@ Do not initialize a full manuscript merely because a closed-form model exists.
 
 Certify that every headline theorem, robustness statement, welfare benchmark, and contribution sentence states exactly the scope actually proved.
 
-This stage attacks over-generalization rather than merely rechecking baseline algebra.
+This stage attacks over-generalization rather than merely rechecking baseline algebra. It also contains the final pre-freeze **Formal Verification Gate**.
 
 ## Mandatory tasks
 
@@ -383,16 +410,34 @@ For every headline theorem/proposition and material robustness/generalization st
 - verify that a parametric-family result is not called generic without a separate argument;
 - write the planner optimization problem and feasible choice set for every welfare benchmark and reserve `first best` for the unrestricted relevant planner problem;
 - produce a claim-scope ledger mapping each manuscript claim to theorem certificate, proof, robustness artifact, maximum defensible wording, and prohibited stronger wording;
-- reapply the theorem-certification checklist whenever claim scope changed after Stage 4A.
+- reapply the theorem-certification checklist whenever claim scope changed after Stage 4A;
+- apply `checklists/FORMAL_VERIFICATION_CHECKLIST.md` to the current scope-certified theorem set and reassess the Stage-4A preliminary applicability decision;
+- when applicable, formalize the highest-value proof-critical core using Lean 4/mathlib or another auditable proof assistant rather than automatically requiring full-model formalization;
+- map paper claims to formal theorem/lemma statements, compare quantifiers/domains, list hypotheses supplied rather than derived, and state explicit non-formalized economic/model scope;
+- audit formal source for `sorry`, `admit`, equivalent placeholders, project-specific axioms, conclusion-smuggling definitions, and condition structures mistaken for proofs of economic equivalence;
+- retain pinned/reproducible proof-assistant, library/dependency, build, and CI evidence where feasible.
+
+## Formal Verification Gate
+
+Stage 7.5A may issue `GO` only if the project records exactly one acceptable state:
+
+- `FORMAL VERIFICATION PASS`; or
+- `FORMALIZATION NOT APPLICABLE — REASON RECORDED`.
+
+`FORMALIZATION NOT APPLICABLE` requires a claim-specific reason explaining why neither full nor targeted proof-assistant formalization would materially improve assurance. Cost or inconvenience alone is not sufficient if a small proof-critical core can usefully be checked.
+
+Blocking states include `NOT TESTED`, `PLANNED`, failed compilation, stale formal theorems after scope changes, unresolved statement-fidelity mismatch, unexplained proof placeholders/axioms, or a formal certificate that overstates what the assistant actually proves.
+
+Proof-assistant acceptance is not independent evidence that the economic assumptions/case partition are correct unless those objects are formalized. Formal verification therefore cannot replace Stage 4A globality, multiplicity, continuation, or counterexample certification.
 
 ## Kill tests
 
-Fail the gate if a broad-function-class strict comparative static is not implied by stated restrictions, curvature/uniqueness is generalized beyond available derivatives, a parametric result is relabeled generic, numerical robustness is called proof, an existence result is called universal uniqueness, a local result is called global, a sufficient condition is called necessary-and-sufficient, a constrained benchmark is mislabeled first best, manuscript prose exceeds the certificate, or an admissible counterexample exists inside the claimed class.
+Fail the gate if a broad-function-class strict comparative static is not implied by stated restrictions, curvature/uniqueness is generalized beyond available derivatives, a parametric result is relabeled generic, numerical robustness is called proof, an existence result is called universal uniqueness, a local result is called global, a sufficient condition is called necessary-and-sufficient, a constrained benchmark is mislabeled first best, manuscript prose exceeds the certificate, an admissible counterexample exists inside the claimed class, formal-verification applicability remains unclosed, or an applicable formal certificate has a material statement-fidelity/build/placeholder/conclusion-smuggling defect.
 
 ## Verdict and routing
 
-- `GO — GENERALITY / QUANTIFIER CERTIFICATION PASS` → Stage 8.
-- `CONDITIONAL GO` → earliest affected stage; pure wording inflation may be corrected and re-audited here, but missing/false mathematics reopens Stage 4/7 as appropriate.
+- `GO — GENERALITY / QUANTIFIER CERTIFICATION PASS` → Stage 8, but only after the embedded Formal Verification Gate is closed with an acceptable state.
+- `CONDITIONAL GO` → earliest affected stage; pure wording inflation or formal-source/build defects with unchanged mathematics may be corrected and re-audited here, but missing/false mathematics reopens Stage 4/7 as appropriate.
 - `NO-GO` → reopen the earliest invalidated stage or terminate.
 
 A narrow exact theorem can pass. The gate penalizes overclaiming, not specialization.
@@ -409,8 +454,9 @@ Freeze the theoretical object before manuscript construction.
 
 Stage 8 is blocked unless the project has:
 
-- Stage 4A `GO — MATHEMATICAL ADVERSARIAL CERTIFICATION PASS`; and
-- Stage 7.5A `GO — GENERALITY / QUANTIFIER CERTIFICATION PASS`.
+- Stage 4A `GO — MATHEMATICAL ADVERSARIAL CERTIFICATION PASS`;
+- Stage 7.5A `GO — GENERALITY / QUANTIFIER CERTIFICATION PASS`; and
+- a closed Stage-7.5A Formal Verification Gate with `FORMAL VERIFICATION PASS` or `FORMALIZATION NOT APPLICABLE — REASON RECORDED`.
 
 ## Freeze at minimum
 
@@ -428,14 +474,17 @@ Stage 8 is blocked unless the project has:
 - explicit claims not made;
 - Stage-4A theorem certificates;
 - Stage-7.5A claim-scope/quantifier certificates;
+- formal-verification applicability state and certificate/N-A rationale;
+- paper-claim ↔ formal-theorem mapping and explicit non-formalized scope where applicable;
+- proof-assistant/toolchain/library/build and axiom/placeholder provenance where applicable;
 - benchmark-definition register;
 - counterexample/regression-test register.
 
 For sequential/game-theoretic models additionally freeze off-path history classes, continuation-equilibrium status, active-set/corner/order/participation handling, solver outcome taxonomy, multiplicity/nonexistence/selection assumptions, and independent direct-payoff/allocation verification artifacts.
 
-Classify each proposition as `PROVED`, `CONDITIONAL`, `NUMERICALLY SUPPORTED ONLY`, `CONJECTURE`, or `REJECTED`.
+Classify each proposition as `PROVED`, `CONDITIONAL`, `NUMERICALLY SUPPORTED ONLY`, `CONJECTURE`, or `REJECTED`. Where formal verification is used, separately classify the formal coverage as `FULL CLAIM`, `PROOF-CRITICAL CORE`, or another exact bounded scope.
 
-Changes after freeze require explicit theory-change control and repetition of every affected gate, including Stage 4A/7.5A where correctness or scope is affected.
+Changes after freeze require explicit theory-change control and repetition of every affected gate, including Stage 4A/7.5A and the Formal Verification Gate where correctness, scope, formal theorem statements, or encoded assumptions are affected.
 
 ---
 
@@ -453,11 +502,15 @@ Create the production research repository only after the theory is frozen.
 - deterministic figure/table generation;
 - tests and regression tests;
 - `theorem_certificates/` or equivalent directory containing Stage-4A and Stage-7.5A certificates;
+- `formal/` or equivalent directory for applicable proof-assistant source, toolchain/dependency locks, build instructions, and formal certificate;
+- CI target that rebuilds applicable formal artifacts and checks proof placeholders where practical;
 - counterexample and benchmark-definition artifacts;
 - Makefile or equivalent build orchestration;
 - dependency/environment specification;
 - CI where feasible;
 - decision log and provenance notes.
+
+If the project recorded `FORMALIZATION NOT APPLICABLE`, retain that rationale with the frozen theorem-certification artifacts rather than silently omitting formal-verification status.
 
 Never reset to an old reference SHA without checking the latest remote state.
 
@@ -522,15 +575,19 @@ Attack at least:
 - exposition/claim inflation;
 - theorem quantifier inflation relative to Stage-7.5A certificates;
 - benchmark terminology drift;
-- global/SPNE claims relative to Stage-4A certificates.
+- global/SPNE claims relative to Stage-4A certificates;
+- proof-assistant scope inflation relative to the frozen formal-verification certificate;
+- stale or diverged formal theorem statements/hypotheses after post-freeze manuscript or theory edits.
 
 For sequential models independently reconstruct at least one material continuation/deviation from primitives, deliberately search for a finite deviation leaving the regular branch, and inspect all `None`/NaN/invalid/nonconvergent code outcomes.
 
 For broad theorem/generalization claims independently attempt at least one admissible-function counterexample or assumption-relaxation attack rather than merely rereading the production proof.
 
+Where formal verification is applicable, inspect the paper-claim ↔ formal-theorem map and explicit non-formalized scope. Do not infer that a green Lean/Coq/Isabelle/etc. build certifies unencoded demand, equilibrium, or case-partition facts.
+
 Classify attacks as `FATAL`, `MAJOR BUT FIXABLE`, or `MINOR`.
 
-If Stage 11 discovers a failure that Stage 4A or 7.5A should have caught, record it explicitly as a **certification regression** and route to the earliest affected stage. Do not patch it only in prose.
+If Stage 11 discovers a failure that Stage 4A or 7.5A should have caught, record it explicitly as a **certification regression** and route to the earliest affected stage. Do not patch it only in prose. A material change to a formally certified theorem or encoded hypothesis also marks the formal certificate stale.
 
 ---
 
@@ -569,6 +626,7 @@ Turn independently correct sections into one coherent argument and reconcile the
 - Terminology/notation are consistent.
 - Every contribution claim maps to a verified theorem and prior-art distinction.
 - Every retained figure/table maps to a verified generator/source and is correctly captioned/referenced.
+- Any statement about formal verification matches the frozen formal-verification certificate and explicit non-formalized scope.
 - Journal-specific figure/table rules are incorporated without changing substantive results.
 
 Substantive inconsistency triggers rollback to the earliest affected stage.
@@ -586,17 +644,19 @@ Verify the complete submission package, including mathematical artifacts and art
 - fresh build from a clean environment;
 - all applicable symbolic/numerical tests pass;
 - theorem-certificate artifacts referenced by the freeze remain present and consistent;
+- when formal verification is applicable, the frozen proof-assistant source/toolchain is present, the formal target rebuilds cleanly where feasible, placeholder/axiom checks remain valid, and the submitted manuscript does not overstate formal coverage;
+- when formalization was `NOT APPLICABLE`, the recorded rationale remains attached to the frozen certification record;
 - quantitative figures/tables regenerate and agree with reported values/signs/thresholds;
 - current journal artwork/file/format rules are checked and dated;
 - fonts/resolution/accessibility/legibility are satisfactory where required;
 - all citations and cross-references resolve;
 - journal formatting/anonymity/supplement/disclosure requirements are satisfied;
-- abstract, highlights, cover letter, manuscript, and theorem scope agree;
+- abstract, highlights, cover letter, manuscript, theorem scope, and any formal-verification claim agree;
 - final PDF is inspected page by page.
 
-Use `checklists/SUBMISSION_CHECKLIST.md` and `checklists/FIGURE_TABLE_CHECKLIST.md`.
+Use `checklists/SUBMISSION_CHECKLIST.md`, `checklists/FIGURE_TABLE_CHECKLIST.md`, and the frozen `checklists/FORMAL_VERIFICATION_CHECKLIST.md` certificate/N-A rationale where applicable.
 
-A substantive mathematical, novelty, theory, welfare, institutional, or claim-scope problem triggers rollback to the earliest affected stage and a fresh downstream QA cycle.
+A substantive mathematical, novelty, theory, welfare, institutional, claim-scope, or formal-statement mismatch triggers rollback to the earliest affected stage and a fresh downstream QA cycle.
 
 ---
 
@@ -612,6 +672,7 @@ Create an immutable, auditable submission state.
 - manuscript PDF and source archive;
 - appendices/supplement;
 - verification outputs and theorem certificates;
+- formal-verification source, toolchain/dependency lock, build certificate, claim mapping, and explicit non-formalized scope where applicable, or the recorded N/A rationale;
 - final figures/tables and generator/source provenance;
 - cover letter and journal-specific files/metadata;
 - disclosure statement where required.
@@ -626,7 +687,7 @@ After submission freeze, substantive changes reopen affected stages; no silent t
 
 Do not invent citations, metadata, propositions, or novelty claims. Stage 2 establishes the baseline literature ledger; later searches are incremental and purpose-specific. Preserve the distinction between component overlap and whole-game absorption throughout.
 
-## 3.2 Mathematical certification and independence
+## 3.2 Mathematical certification, formal verification, and independence
 
 Where symbolic derivation is feasible, independently verify it. Never treat an FOC solution as equilibrium without SOC/KKT, feasibility, relevant constraints, and—when claimed—global best-response verification.
 
@@ -635,19 +696,25 @@ For sequential games, re-solve material continuation games rather than extending
 For all headline theorem-bearing theory projects:
 
 - Stage 4 constructs and verifies;
-- Stage 4A independently tries to falsify correctness/globality;
-- Stage 7.5A independently tries to falsify scope/generality/benchmark language;
+- Stage 4A independently tries to falsify correctness/globality and records preliminary formal-verification applicability/targets;
+- Stage 7.5A independently tries to falsify scope/generality/benchmark language and closes the Formal Verification Gate;
 - Stage 11 repeats high-stakes attacks at the manuscript level.
 
-Whenever feasible, the adversarial reviewer/model/implementation should differ from the construction path. Re-running the same solver or asking the same derivation path to confirm itself is reproduction, not independent certification.
+Formal verification uses `checklists/FORMAL_VERIFICATION_CHECKLIST.md`. It should target the highest-value proof-critical core rather than defaulting to complete-model formalization. Lean 4/mathlib is the recommended default for new formal artifacts when no other proof assistant is established, but another auditable proof assistant may be used when better matched to the project.
 
-A project must retain theorem certificates and counterexamples as research artifacts. A material `NOT TESTED` field is not equivalent to `PASS`.
+For applicable formalization, preserve exact theorem signatures, quantifier/domain mapping, hypotheses supplied rather than proved, explicit non-formalized model scope, toolchain/library/dependency provenance, clean build/CI evidence, and axiom/placeholder audit. A condition structure or encoded profit formula is not a formal proof that the condition/formula follows from the economic primitives unless that bridge is itself formalized.
+
+Whenever feasible, the adversarial reviewer/model/implementation should differ from the construction path. Re-running the same solver or asking the same derivation path to confirm itself is reproduction, not independent certification. A proof-assistant build is also not, by itself, the independent Stage-4A economic/globality attack.
+
+A project must retain theorem certificates, formal-verification state, and counterexamples as research artifacts. A material `NOT TESTED` field is not equivalent to `PASS`.
 
 ## 3.3 Theorem quantifier discipline
 
 Every headline theorem must have a formal scope. Distinguish local from global, existence from uniqueness, sufficient from necessary, parametric from generic, baseline from robustness, and numerical evidence from proof.
 
 A theorem may be narrow. It may not be broader than its proof.
+
+A formal theorem may also be narrower than the paper theorem. In that case the paper may claim only that the narrower proof-critical component is formally certified unless the remaining bridge is separately formalized.
 
 ## 3.4 Benchmark terminology discipline
 
@@ -657,13 +724,19 @@ Welfare labels are mathematical claims. `First best` requires the unrestricted r
 
 A stage that proves a desired proposition false succeeds by killing a weak branch. Preserve counterexamples and rejected branches.
 
+Formalization failures that expose false statements, missing hypotheses, or invalid quantified inequalities are also research evidence and must not be hidden by weakening the formal statement without corresponding analytic/scoped change control.
+
 ## 3.6 No complexity rescue
 
 Complexity must solve a diagnosed economic deficiency and may change only under the Stage-5 one-margin rule. Generalization/unification is not exempt.
 
+Complete-model formalization is not required merely for prestige. Formalization effort should follow risk and proof-critical value.
+
 ## 3.7 Contribution discipline
 
 Variables, functional forms, and applications are not automatically contributions. A contribution should be an economic mechanism, theorem, comparative-static reversal, organizational result, welfare implication, or strategically substantive generalization/unification that survives prior-art comparison.
+
+Formal verification strengthens assurance; it is not itself a substitute for an economic contribution.
 
 ## 3.8 Exposition architecture integrity
 
@@ -673,13 +746,17 @@ Figures/tables are evidence-bearing manuscript objects, not decoration. They may
 
 Distinguish remembered/AI/scratch outputs from reproduced project artifacts and submission-level re-verification. Do not silently upgrade conjectures or temporary computations into theorems.
 
+Distinguish analytic proof, numerical evidence, independent adversarial certification, and proof-assistant certification. Each has a different evidentiary scope.
+
 ## 3.10 Rollback and stale downstream outputs
 
 If a later stage invalidates an earlier canonical input, return to the earliest affected stage and mark dependent downstream outputs stale. A Stage-11 mathematical failure normally reopens Stage 4/4A; a scope/generality failure normally reopens Stage 7.5A and any earlier stage whose theorem is actually false.
 
+A false theorem or missing economic condition exposed by formalization reopens the earliest affected analytic stage. A formal-source/build defect with unchanged certified mathematics returns to the Stage-7.5A Formal Verification Gate. A material theorem/quantifier/encoded-hypothesis change marks the formal certificate stale and blocks refreeze until rebuilt and re-audited.
+
 ## 3.11 Decision logs
 
-Preserve major rejected branches, discovered counterexamples, certificate failures, repairs, and reasons for routing decisions.
+Preserve major rejected branches, discovered counterexamples, certificate failures, formalization applicability decisions, formalization failures, repairs, and reasons for routing decisions.
 
 ## 3.12 Live journal compliance and portal evidence
 
@@ -693,7 +770,7 @@ If a material requirement remains unresolved after current journal/publisher/por
 
 # 4. Companion materials
 
-Reusable Stage templates, theorem/math/literature verification checklists, and worked examples live in this repository under the canonical hierarchy.
+Reusable Stage templates, theorem/math/literature verification checklists, the formal-verification checklist, and worked examples live in this repository under the canonical hierarchy.
 
 Future extensions may add empirical/cross-discipline variants, machine-readable theorem certificates, automated property-based testing, and release tooling after explicit audit.
 

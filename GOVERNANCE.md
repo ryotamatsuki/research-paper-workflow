@@ -89,6 +89,23 @@ Production projects must preserve an auditable Journal Requirements Ledger or eq
 
 A portal accepting a file, allowing progression, or showing no warning is not by itself proof of editorial-office technical compliance.
 
+### 2.11 Formal verification is applicability-gated, complementary, and fail-closed
+
+Every theorem-bearing theory project must make an explicit formal-verification applicability decision before theory freeze. The decision may not be omitted because the project already passed symbolic, numerical, adversarial, or manuscript review.
+
+Formal verification is normally warranted when a headline claim depends materially on proof-critical algebra, quantified inequalities, piecewise case logic, threshold/boundary reasoning, global-deviation inequalities, equilibrium-condition implications, welfare identities, or correction of a published mathematical result. Full formalization of the entire economic model is not required when a targeted proof-critical core yields substantial assurance.
+
+The required Stage-7.5A pre-freeze state is exactly one of:
+
+- `FORMAL VERIFICATION PASS`; or
+- `FORMALIZATION NOT APPLICABLE — REASON RECORDED`.
+
+`NOT TESTED`, `PLANNED`, failed compilation, stale formal statements, unexplained proof placeholders, or unresolved statement-fidelity gaps are not passing states.
+
+Proof-assistant acceptance certifies the encoded statement from the encoded assumptions. It does not establish that the assumptions, demand correspondence, equilibrium domain, case partition, or economic interpretation were encoded correctly unless those objects are themselves formalized. Formal proof therefore complements rather than replaces Stage 4A independent adversarial certification and Stage 7.5A scope certification.
+
+Where formal verification is applicable, projects must preserve the proof-assistant/toolchain/library provenance, claim-to-formal-theorem mapping, assumptions supplied rather than proved, axiom/placeholder audit, reproducible build evidence, and explicit scope not formalized. Use `checklists/FORMAL_VERIFICATION_CHECKLIST.md`.
+
 ---
 
 ## 3. Repository change policy
@@ -137,6 +154,8 @@ Review should focus on:
 - whether broad function-class claims receive counterexample search;
 - whether planner/benchmark labels match feasible choice sets;
 - whether independent certification is genuinely independent rather than duplicate execution;
+- whether formal-verification applicability is explicitly closed before theory freeze;
+- whether proof-assistant statements faithfully match paper claims and do not smuggle conclusions through assumptions/definitions;
 - whether source requirements are explicit and realistic;
 - whether the workflow encourages unnecessary complexity;
 - whether `NO-GO` remains a legitimate outcome.
@@ -152,6 +171,8 @@ Release/version changes are substantive because published versions define stable
 - Release/audit docs record version state but do not override the canonical hierarchy.
 
 Stage additions/removals/mergers, canonical routing changes, verdict-semantic changes, or incompatible workflow architecture changes require a MAJOR version under the current versioning policy. The Stage 4A and Stage 7.5A additions therefore define v2.0 architecture.
+
+Adding a formal-verification obligation **inside** existing Stage 4A/7.5A/8 boundaries, without renumbering Stages or changing canonical routing/verdict semantics, is a MINOR-version class refinement rather than a new Stage.
 
 ---
 
@@ -202,11 +223,17 @@ When applicable:
 - independently reconstruct payoffs/allocations for high-stakes claims where feasible;
 - record theorem quantifiers and function classes explicitly;
 - attempt admissible-function counterexamples to broad comparative-static/curvature/uniqueness claims;
-- write planner optimization problems explicitly before applying welfare benchmark labels.
+- write planner optimization problems explicitly before applying welfare benchmark labels;
+- make a formal-verification applicability decision for every theorem-bearing project;
+- where applicable, formalize the highest-value proof-critical core using Lean 4/mathlib or another auditable proof assistant, with statement-fidelity and model-boundary audits;
+- distinguish kernel-checked statements from economic assumptions/hypotheses supplied to the proof assistant;
+- preserve clean-build and axiom/placeholder evidence for formal artifacts.
 
 Sequential/game-theoretic projects must apply `checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md` whenever continuation validity matters.
 
 Headline theorem-bearing projects must apply `checklists/THEOREM_CERTIFICATION_CHECKLIST.md` at Stage 4A and again at Stage 7.5A whenever scope changed.
+
+All theorem-bearing projects must apply `checklists/FORMAL_VERIFICATION_CHECKLIST.md`: Stage 4A records applicability and target candidates; Stage 7.5A closes the pre-freeze formal-verification state.
 
 ### 5.4 Numerical work
 
@@ -230,6 +257,8 @@ AI/chat output, scratch calculations, and historical notes are provenance inputs
 ### 5.6 Method applicability
 
 Verification must match method. `NOT APPLICABLE` is allowed only with a recorded reason and may not bypass a substantive gate.
+
+For formal verification, project-level `NOT APPLICABLE` must additionally explain why neither full nor targeted proof-assistant formalization would materially improve assurance for the current headline claims.
 
 ---
 
@@ -261,7 +290,9 @@ For theorem-oriented projects:
 - Stage 7.5 `GO` routes to **Stage 7.5A**, never directly to Stage 8.
 - Stage 7.5A `GO` is required for Stage 8 theory freeze.
 
-No green CI/symbolic/numerical result bypasses these gates.
+The Stage structure and routing remain unchanged by the Formal Verification Gate. Instead, Stage 7.5A may issue `GO` only after its embedded formal-verification state is either `FORMAL VERIFICATION PASS` or `FORMALIZATION NOT APPLICABLE — REASON RECORDED`.
+
+No green CI/symbolic/numerical/proof-assistant result bypasses these gates.
 
 ---
 
@@ -279,6 +310,9 @@ Examples:
 - theorem quantifier/function-class overclaim with correct underlying narrow theorem → Stage 7.5A and downstream stages;
 - theorem actually false within claimed domain → Stage 4/4A and then all affected downstream stages;
 - benchmark label wrong but underlying planner problem correct → Stage 7.5A; benchmark optimization problem itself wrong → Stage 7/4 as appropriate;
+- formalization exposes a false theorem or missing economic condition → earliest affected analytic stage, then rerun affected Stage 4A/7.5A/formal certification;
+- formal source/build/statement-mapping defect only with unchanged certified mathematics → Stage 7.5A Formal Verification Gate;
+- material theorem/quantifier change after formal certification → mark the formal certificate stale and rerun the affected analytic/scope and formal-verification gates before refreeze;
 - post-freeze theory change → Stage 8 change control plus every affected earlier gate;
 - Stage 11 fatal attack → earliest affected stage, not prose-only patch;
 - Stage 13/14 substantive inconsistency → earliest affected research stage plus fresh integration/QA.
@@ -293,7 +327,7 @@ Silent downstream repair is prohibited.
 
 ### 8.1 Theory freeze
 
-Theory freeze requires Stage-4A and Stage-7.5A `GO` certificates.
+Theory freeze requires Stage-4A and Stage-7.5A `GO` certificates. For theorem-bearing projects, Stage-7.5A `GO` additionally requires a closed Formal Verification Gate with either `FORMAL VERIFICATION PASS` or `FORMALIZATION NOT APPLICABLE — REASON RECORDED`.
 
 Freeze at minimum:
 
@@ -307,6 +341,9 @@ Freeze at minimum:
 - approved robustness scope;
 - Stage-4A theorem certificates;
 - Stage-7.5A claim-scope ledger;
+- formal-verification applicability state and certificate/N-A rationale;
+- claim-to-formal-theorem mapping and explicit non-formalized scope where applicable;
+- proof-assistant/toolchain/library/build and axiom/placeholder provenance where applicable;
 - benchmark-definition register;
 - counterexample/regression-test register;
 - explicit claims not made.
@@ -320,6 +357,7 @@ Submission freeze records at minimum:
 - canonical repository SHA/tag;
 - final manuscript/supplement;
 - reproducibility outputs and theorem certificates;
+- formal-verification source/build certificate where applicable;
 - journal-specific files;
 - disclosure statements where applicable.
 

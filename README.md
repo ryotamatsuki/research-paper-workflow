@@ -2,7 +2,7 @@
 
 A reusable, reproducible workflow for developing theory-oriented economics research from initial motivation to submission freeze.
 
-The canonical workflow is designed for projects requiring rigorous literature mapping, mathematical verification, novelty kill tests, model selection, welfare analysis, independent theorem certification, referee simulation, reproducibility, exposition architecture, and journal positioning.
+The canonical workflow is designed for projects requiring rigorous literature mapping, mathematical verification, novelty kill tests, model selection, welfare analysis, independent theorem certification, proof-assistant verification where applicable, referee simulation, reproducibility, exposition architecture, and journal positioning.
 
 ## Governing principle
 
@@ -12,7 +12,7 @@ Every stage records `GO`, `CONDITIONAL GO`, or `NO-GO`. A later stage may invali
 
 ## Canonical documents
 
-- [`GOVERNANCE.md`](GOVERNANCE.md) — repository governance, evidence standards, routing, rollback, certification independence, and freeze policy.
+- [`GOVERNANCE.md`](GOVERNANCE.md) — repository governance, evidence standards, routing, rollback, certification independence, formal-verification policy, and freeze policy.
 - [`THEORY_PAPER_RESEARCH_PIPELINE.md`](THEORY_PAPER_RESEARCH_PIPELINE.md) — canonical Stage 0–15 theory workflow, including Stage 4A, Stage 7.5, and Stage 7.5A.
 
 Canonical hierarchy:
@@ -30,7 +30,7 @@ The core research path is now:
 → `Stage 6 Novelty Re-Kill`  
 → `Stage 7 Welfare / Generality / Institutional Validation`  
 → `Stage 7.5 Full-Theory Freeze Decision`  
-→ `Stage 7.5A Generality / Quantifier Red-Team`  
+→ `Stage 7.5A Generality / Quantifier Red-Team + embedded Formal Verification Gate`  
 → `Stage 8 Canonical Theory Freeze`.
 
 A Stage-4 `GO` can no longer route directly to Stage 6. A Stage-7.5 `GO` can no longer route directly to Stage 8.
@@ -57,6 +57,8 @@ v2.0 therefore requires:
 3. **Late manuscript hostile audit — Stage 11**  
    Repeat high-stakes attacks after the full paper is built. Any flaw that Stage 4A/7/7.5A should have caught is recorded as a `CERTIFICATION REGRESSION` and routed back to the earliest invalidated stage.
 
+The post-v2.1 formal-verification refinement adds a complementary proof-assistant layer **inside the existing Stage structure**. It does not replace any of these three layers and does not add a new canonical Stage.
+
 ## Stage 4A — Independent Mathematical Adversarial Certification
 
 Template: [`templates/STAGE_04A_MATH_RED_TEAM.md`](templates/STAGE_04A_MATH_RED_TEAM.md)
@@ -74,7 +76,8 @@ Stage 4A independently attacks:
 - welfare robustness across the relevant equilibrium set;
 - welfare benchmark definitions;
 - counterexample search and permanent regression tests;
-- evidence-bearing PASS: `claim -> attack -> artifact -> surviving limitation`.
+- evidence-bearing PASS: `claim -> attack -> artifact -> surviving limitation`;
+- preliminary formal-verification applicability and proof-critical target mapping.
 
 Every headline theorem receives a certificate. Material `NOT TESTED` fields block `GO`.
 
@@ -97,6 +100,25 @@ Stage 7.5A attacks:
 - abstract/introduction wording that exceeds the proved theorem.
 
 A narrow exact theorem can pass. The gate penalizes overclaiming, not specialization.
+
+## Embedded Formal Verification Gate
+
+Checklist: [`checklists/FORMAL_VERIFICATION_CHECKLIST.md`](checklists/FORMAL_VERIFICATION_CHECKLIST.md)
+
+Every theorem-bearing project must make a formal-verification applicability decision. Stage 4A records the preliminary decision and identifies candidate proof-critical targets. Stage 7.5A reassesses that decision after theorem scope is stable and closes the gate before Stage 8.
+
+The required pre-freeze state is exactly one of:
+
+- `FORMAL VERIFICATION PASS`; or
+- `FORMALIZATION NOT APPLICABLE — REASON RECORDED`.
+
+Formal verification is normally applicable when high-consequence claims depend on nontrivial algebra, quantified inequalities, piecewise cases, threshold/boundary logic, global-deviation inequalities, equilibrium-condition implications, welfare identities, or correction of a published mathematical result.
+
+The default objective is **not** to formalize the entire economic model. Formalize the highest-value proof-critical core unless complete formalization is both useful and tractable. Lean 4/mathlib is the recommended default for new formal artifacts when no other proof assistant is already established, but equivalent auditable assistants are acceptable.
+
+A formal certificate must map paper claims to formal theorem statements, distinguish assumptions supplied from results proved, preserve toolchain/library/build provenance, audit `sorry`/`admit`/axioms or equivalent escape hatches, and state explicitly what remains outside the formal model. A green proof-assistant build does not replace Stage 4A globality/equilibrium certification or Stage 7.5A scope certification.
+
+This refinement preserves the existing Stage numbering and routing. Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), it is therefore a **minor-version class** strengthening of verification obligations rather than a new major architecture.
 
 ## Theorem certification checklist
 
@@ -141,14 +163,15 @@ Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), this is a **mino
 
 ## Theory freeze requirements
 
-Stage 8 requires both:
+Stage 8 requires:
 
-- `GO — MATHEMATICAL ADVERSARIAL CERTIFICATION PASS` from Stage 4A; and
-- `GO — GENERALITY / QUANTIFIER CERTIFICATION PASS` from Stage 7.5A.
+- `GO — MATHEMATICAL ADVERSARIAL CERTIFICATION PASS` from Stage 4A;
+- `GO — GENERALITY / QUANTIFIER CERTIFICATION PASS` from Stage 7.5A; and
+- a closed Stage-7.5A Formal Verification Gate with `FORMAL VERIFICATION PASS` or `FORMALIZATION NOT APPLICABLE — REASON RECORDED`.
 
-The freeze retains theorem certificates, equilibrium-set/multiplicity status, selection/refinement conditions, welfare-selection robustness, claim-scope ledger, benchmark-definition register, evidence ledger, and counterexample/regression-test register.
+The freeze retains theorem certificates, equilibrium-set/multiplicity status, selection/refinement conditions, welfare-selection robustness, claim-scope ledger, formal-verification certificate/N-A rationale, proof-assistant scope and provenance where applicable, benchmark-definition register, evidence ledger, and counterexample/regression-test register.
 
-Production repositories should retain these under `theorem_certificates/` or an equivalent auditable directory.
+Production repositories should retain these under `theorem_certificates/`, `formal/`, or equivalent auditable directories.
 
 ## Reusable templates
 
@@ -164,7 +187,7 @@ Templates live under [`templates/`](templates/):
 - Stage 6 — Novelty Re-Kill
 - Stage 7 — Welfare / Generality / Institutional Validation
 - Stage 7.5 — Full-Theory Freeze Decision
-- **Stage 7.5A — Generality / Quantifier Red-Team Gate**
+- **Stage 7.5A — Generality / Quantifier Red-Team Gate + Formal Verification Gate**
 - Stage 8 — Canonical Theory Freeze
 - Stage 9 — Repository / Reproducibility Setup
 - Stage 10 — Section-by-Section Paper Construction
@@ -184,6 +207,7 @@ Reusable checklists live under [`checklists/`](checklists/), including:
 - [`NUMERICAL_VERIFICATION_CHECKLIST.md`](checklists/NUMERICAL_VERIFICATION_CHECKLIST.md)
 - [`EQUILIBRIUM_CONTINUATION_CHECKLIST.md`](checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md)
 - **[`THEOREM_CERTIFICATION_CHECKLIST.md`](checklists/THEOREM_CERTIFICATION_CHECKLIST.md)**
+- **[`FORMAL_VERIFICATION_CHECKLIST.md`](checklists/FORMAL_VERIFICATION_CHECKLIST.md)**
 - **[`PAPER_SPECIFIC_CERTIFICATION_INHERITANCE_CHECKLIST.md`](checklists/PAPER_SPECIFIC_CERTIFICATION_INHERITANCE_CHECKLIST.md)**
 - [`FIGURE_TABLE_CHECKLIST.md`](checklists/FIGURE_TABLE_CHECKLIST.md)
 - [`REFEREE_ATTACK_CHECKLIST.md`](checklists/REFEREE_ATTACK_CHECKLIST.md)
@@ -211,23 +235,27 @@ For actual submissions, the most specific current authority controls: direct edi
 
 Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), v2.0 is MAJOR because it adds Stage 4A and Stage 7.5A and changes canonical routing.
 
+The formal-verification change described above is a post-v2.1 minor-version candidate: it strengthens checks within Stage 4A/7.5A/8 without adding, removing, renumbering, or rerouting a canonical Stage. It does not move the immutable `v2.1` tag.
+
 ## Recommended workflow
 
 1. Start at Stage 0 unless verified prior work justifies later entry.
 2. Preserve unknowns as `UNRESOLVED`; do not invent missing facts.
 3. Run each stage as a research gate and preserve its report, verdict, rejected branches, blockers, and next-stage contract.
 4. If Stage 4 gives `GO`, run Stage 4A before any Stage-6 novelty re-kill. Separate candidate-deviation verification from alternative-equilibrium search whenever the claim requires characterization, uniqueness, or selection-free conclusions.
-5. Trigger indifference/multiplicity attacks when zero-demand, zero-output, zero-profit, ties, or other payoff-equivalent actions occur.
+5. At Stage 4A, trigger indifference/multiplicity attacks when zero-demand, zero-output, zero-profit, ties, or other payoff-equivalent actions occur, and record the preliminary formal-verification applicability/target map.
 6. If Stage 4/4A identifies exactly one repairable economic deficiency, Stage 5 may change only that one margin; then repeat Stage 4 and Stage 4A.
 7. Re-kill actual novelty at Stage 6.
 8. Validate welfare/generality/institutions at Stage 7, including welfare robustness to equilibrium selection.
 9. Use Stage 7.5 to decide whether a full paper is justified, then run Stage 7.5A before theory freeze.
-10. Freeze theory only after both independent certificates pass with evidence-linked artifacts.
-11. At Stage 7 identify exposition vehicles; at Stage 10 implement figure/table architecture; at Stage 13 integrate it; at Stage 14 verify it.
-12. At Stage 11 repeat hostile mathematical, equilibrium-set, welfare-selection, and theorem-scope attacks from a fresh perspective.
-13. If a later stage invalidates earlier work, return to the earliest affected stage and mark downstream outputs stale.
-14. Preserve rejected branches, additional equilibria, counterexamples, negative results, theorem-certificate failures, and certification regressions as research provenance.
-15. When using a paper-specific route such as `C0–C6`, map each strong claim to the inherited canonical certification obligation and required evidence artifact.
+10. Within Stage 7.5A, close the Formal Verification Gate: execute targeted proof-assistant verification when applicable, or record a defensible N/A rationale. Do not let `NOT TESTED` or `PLANNED` pass.
+11. Freeze theory only after Stage 4A, Stage 7.5A, and the embedded formal-verification state are all green.
+12. At Stage 7 identify exposition vehicles; at Stage 10 implement figure/table architecture; at Stage 13 integrate it; at Stage 14 verify it.
+13. At Stage 11 repeat hostile mathematical, equilibrium-set, welfare-selection, theorem-scope, and formal-claim-boundary attacks from a fresh perspective.
+14. At Stage 14 rebuild applicable formal artifacts or verify the frozen formal build remains reproducible and consistent with the submitted theorem scope.
+15. If a later stage invalidates earlier work, return to the earliest affected stage and mark downstream outputs stale, including formal certificates whose statements/hypotheses changed.
+16. Preserve rejected branches, additional equilibria, counterexamples, negative results, theorem-certificate failures, formalization failures, and certification regressions as research provenance.
+17. When using a paper-specific route such as `C0–C6`, map each strong claim to the inherited canonical certification and formal-verification obligations and required evidence artifacts.
 
 ## Repository structure
 
@@ -245,7 +273,7 @@ research-paper-workflow/
 
 ## Intended use
 
-Use this repository as the stable workflow reference, not as the production LaTeX repository for every paper. Project-specific Stage reports, decision logs, calculations, theorem certificates, equilibrium-set artifacts, counterexamples, and verification evidence should live in the project's own repository.
+Use this repository as the stable workflow reference, not as the production LaTeX repository for every paper. Project-specific Stage reports, decision logs, calculations, theorem certificates, formal-verification source/certificates, equilibrium-set artifacts, counterexamples, and verification evidence should live in the project's own repository.
 
 ## License
 
