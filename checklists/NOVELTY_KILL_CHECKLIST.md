@@ -38,6 +38,35 @@ Apply this checklist to each candidate contribution separately. A project may su
 
 **Rule:** known components do **not** by themselves imply that the candidate game/model is absorbed. Component overlap and game-level absorption are separate findings. Combination novelty is weak only when the combination adds no economically substantive strategic interaction or result.
 
+## Canonical-form / theorem-absorption test
+
+Before concluding that a proposition is new, remove the application vocabulary and use the Stage-4 canonical mathematical representation.
+
+- [ ] Strategy-set geometry recorded (interval/box/simplex/polytope/network action set/etc.)
+- [ ] Payoff/function class recorded (linear-quadratic, super/submodular, potential, aggregative, contest, assignment, etc.)
+- [ ] Interaction matrix/operator or aggregate coupling recorded
+- [ ] Coupling/equality/inequality constraints recorded
+- [ ] Equilibrium/planner object recorded
+- [ ] Affine recentering or normalization attempted where natural
+- [ ] Variable elimination attempted where natural
+- [ ] Matrix / KKT / complementarity representation attempted where natural
+- [ ] Potential / network / aggregative representation attempted where natural
+- [ ] Simplex / transportation / assignment-polytope representation attempted where natural
+- [ ] At least one plausible general parent theorem searched for each headline result
+- [ ] Exact parameter/variable mapping to the strongest parent theorem attempted
+- [ ] The prior theorem was specialized algebraically, rather than compared only by prose
+- [ ] Absence of the same application-specific formula was **not** treated as novelty evidence
+- [ ] The result is classified as `DIRECTLY ABSORBED / PARTIALLY ABSORBED / NOT ABSORBED`
+- [ ] If absorbed, the contribution is downgraded explicitly to application/interpretation/empirical relevance where appropriate
+
+For each serious parent theorem record:
+
+| Prior theorem | Candidate canonical form | Mapping/restriction | Headline result recovered? | Absorption verdict |
+|---|---|---|---|---|
+| ... | ... | ... | ... | ... |
+
+**Fail-closed rule:** a theorem-novelty claim cannot receive `KEEP AS MAIN CONTRIBUTION` while a plausible parent theorem remains untested at the mapping/specialization level.
+
 ## Game-architecture absorption test
 
 For strategic/game-theoretic work, compare the candidate and closest prior models at the level of the complete game, not only ingredient-by-ingredient.

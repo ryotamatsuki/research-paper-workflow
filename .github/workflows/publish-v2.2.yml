@@ -1,0 +1,55 @@
+name: Publish v2.2 after readiness audit
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  publish-v2-2:
+    if: github.repository == 'ryotamatsuki/research-paper-workflow' && contains(github.event.head_commit.message, 'Publish research-paper-workflow v2.2')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out reviewed state
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify v2.2 readiness and immutable release namespace
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          grep -Fq '**`WORKFLOW v2.2 READY`**' docs/V2_2_INTEGRATION_AUDIT.md
+          grep -Fq '[x] **`WORKFLOW v2.2 READY`**' docs/V2_2_READINESS_CHECKLIST.md
+          test -s docs/V2_2_RELEASE_MANIFEST.md
+          test -s docs/V2_2_RELEASE_NOTES.md
+          grep -Fq 'Version: v2.2' GOVERNANCE.md
+          grep -Fq 'Version: v2.2' THEORY_PAPER_RESEARCH_PIPELINE.md
+          grep -Fq 'Canonical-form / known-class screening' templates/STAGE_04_MINIMAL_MODEL.md
+          grep -Fq 'theorem-absorption record' templates/STAGE_06_NOVELTY_REKILL.md
+          grep -Fq 'Known-model-in-disguise regression attack' templates/STAGE_11_REFEREE_GATE.md
+          grep -Fq 'Canonical-form / theorem-absorption test' checklists/NOVELTY_KILL_CHECKLIST.md
+          grep -Fq 'Known-model-in-disguise attacks' checklists/REFEREE_ATTACK_CHECKLIST.md
+
+          git ls-remote --exit-code --tags origin refs/tags/v2.1 >/dev/null 2>&1
+
+          if git ls-remote --exit-code --tags origin refs/tags/v2.2 >/dev/null 2>&1; then
+            echo 'v2.2 tag already exists; refusing to overwrite an immutable release tag.' >&2
+            exit 1
+          fi
+
+      - name: Publish v2.2 tag and GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release create v2.2 \
+            --target "$GITHUB_SHA" \
+            --title 'research-paper-workflow v2.2' \
+            --notes-file docs/V2_2_RELEASE_NOTES.md

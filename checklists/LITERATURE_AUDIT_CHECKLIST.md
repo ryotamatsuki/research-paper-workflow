@@ -59,6 +59,21 @@ Use this checklist for serious prior-art and novelty work. It supplements, but d
 - [ ] Welfare mechanism and incidence compared
 - [ ] Extensions checked for hidden overlap
 
+## Application-neutral structural search
+
+For theorem-bearing work, search the mathematics as well as the application.
+
+- [ ] Stage-4 canonical mathematical representation imported
+- [ ] Application labels removed from at least one search pass
+- [ ] Strategy geometry used as search language
+- [ ] Payoff/function class used as search language
+- [ ] Interaction matrix/operator or aggregate coupling used as search language
+- [ ] Constraint geometry used as search language
+- [ ] Standard parent classes searched
+- [ ] Strongest general parent papers/theorems opened beyond abstract level where reasonably possible
+- [ ] Explicit variable/parameter specialization attempted
+- [ ] Same-formula absence not treated as novelty evidence
+
 ## Whole-game absorption audit
 
 For game-theoretic work, do not stop after finding separate precedents for separate ingredients.

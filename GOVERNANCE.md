@@ -1,6 +1,6 @@
 # Governance
 
-Version: v2.1
+Version: v2.2
 
 ## 1. Purpose
 
@@ -106,6 +106,22 @@ Proof-assistant acceptance certifies the encoded statement from the encoded assu
 
 Where formal verification is applicable, projects must preserve the proof-assistant/toolchain/library provenance, claim-to-formal-theorem mapping, assumptions supplied rather than proved, axiom/placeholder audit, reproducible build evidence, and explicit scope not formalized. Use `checklists/FORMAL_VERIFICATION_CHECKLIST.md`.
 
+### 2.12 Novelty must survive canonical-form and theorem-absorption review
+
+A theory contribution may not be treated as new merely because the application, notation, institutional vocabulary, or exact closed-form expression is absent from prior papers.
+
+For theorem-bearing work, Stage 4 must preserve an application-neutral canonical mathematical representation where reasonably possible. Stage 6 must search plausible standard parent classes and explicitly test whether headline results are direct specializations, boundary cases, or short corollaries of known general theorems. Stage 11 must repeat the strongest known-model-in-disguise attack on the final manuscript.
+
+At minimum distinguish:
+
+- theorem/mechanism novelty;
+- new result within a known model class;
+- application/interpretation novelty;
+- empirical/institutional relevance;
+- notation/relabeling only.
+
+If a plausible parent theorem remains untested at the mapping/specialization level, a theorem-novelty claim fails closed. Search failure or absence of the same application-specific formula is not positive novelty evidence.
+
 ---
 
 ## 3. Repository change policy
@@ -147,6 +163,7 @@ Review should focus on:
 - internal consistency across stages;
 - whether gates can be bypassed unintentionally;
 - whether novelty standards are weakened;
+- whether application labels have been stripped and plausible standard parent-model/theorem absorption has been tested for theory-novelty claims;
 - whether mathematical verification matches the claimed theorem scope;
 - whether global/SPNE claims audit off-path/boundary deviations rather than only regular branches;
 - whether solver failures fail closed;
@@ -173,6 +190,8 @@ Release/version changes are substantive because published versions define stable
 Stage additions/removals/mergers, canonical routing changes, verdict-semantic changes, or incompatible workflow architecture changes require a MAJOR version under the current versioning policy. The Stage 4A and Stage 7.5A additions therefore define v2.0 architecture.
 
 Adding a formal-verification obligation **inside** existing Stage 4A/7.5A/8 boundaries, without renumbering Stages or changing canonical routing/verdict semantics, is a MINOR-version class refinement rather than a new Stage.
+
+Likewise, adding mathematical canonicalization at Stage 4, theorem-level absorption testing at Stage 6, and a known-model-in-disguise hostile attack at Stage 11 preserves Stage identities, verdict semantics, and routing; this is a MINOR-version refinement and is classified as v2.2.
 
 ---
 
@@ -201,7 +220,10 @@ For serious novelty assessment:
 - inspect full model/proposition content for closest papers when reasonably possible;
 - perform backward/forward citation search where the literature is mature;
 - distinguish exact prior art, structural proximity, component overlap, and broad relatedness;
-- do not infer novelty from search failure alone.
+- do not infer novelty from search failure alone;
+- for theorem-bearing work, search both the application literature and the application-neutral canonical mathematical class;
+- explicitly attempt variable/parameter mappings from the strongest plausible general prior theorems to the candidate headline results;
+- treat a short specialization/corollary as theorem absorption even when the prior source does not print the same application-specific formula or threshold.
 
 ### 5.2 Institutional facts
 
@@ -303,6 +325,7 @@ When a later stage discovers a substantive error, return to the earliest stage w
 Examples:
 
 - newly discovered prior art → Stage 2 or Stage 6 depending on whether the issue concerns the pre-model gap or actual derived result;
+- newly discovered parent-theorem absorption / known-model-in-disguise result → Stage 6, or Stage 0/3/4 if the research question/mechanism/model architecture itself must change;
 - false proposition/equilibrium/globality error → Stage 4 then Stage 4A;
 - off-path continuation or hidden boundary/regime deviation failure → Stage 4 then Stage 4A;
 - one authorized economic repair → Stage 5, then repeat Stage 4 and 4A;
