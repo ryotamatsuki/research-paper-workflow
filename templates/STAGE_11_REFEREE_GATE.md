@@ -51,6 +51,7 @@ Do not treat green CI, reproduction of the author's numbers, repeated execution 
 Use `checklists/REFEREE_ATTACK_CHECKLIST.md` and explicitly test at least:
 
 - classic-result attack;
+- **known-model-in-disguise / theorem-absorption attack**;
 - ad-hoc-assumption attack;
 - result-built-into-assumption attack;
 - no-new-mechanism attack;
@@ -72,6 +73,20 @@ Use `checklists/REFEREE_ATTACK_CHECKLIST.md` and explicitly test at least:
 - functional-form generality inflation;
 - planner/benchmark terminology drift;
 - global/SPNE claim drift relative to Stage 4A.
+
+### Known-model-in-disguise regression attack
+
+For every theory manuscript whose Stage-4 canonical-form screen identified at least one plausible standard parent class:
+
+- remove the application labels again and rewrite the final manuscript model in the simplest canonical mathematical form available;
+- independently try recentering, normalization, variable elimination, matrix representation, KKT/complementarity reduction, potential/aggregative/network representation, and relevant simplex/polytope/extreme-point reductions;
+- reopen the strongest general parent papers/theorems identified at Stage 6;
+- attempt the explicit mapping `prior theorem → candidate parameterization/constraint → headline result`;
+- ask whether the manuscript's threshold, comparative static, assignment rule, welfare wedge, or equilibrium characterization is merely a direct specialization, boundary case, or short corollary;
+- verify that the contribution statement distinguishes **theorem novelty** from **application/interpretation novelty**;
+- if Stage 6 passed because the identical application-specific formula was absent but a general theorem actually absorbs the result, record `CERTIFICATION REGRESSION — NOVELTY ABSORPTION` and roll back to Stage 6 or earlier.
+
+A successful defense must identify the exact mathematical object that remains outside the prior theorem. “No paper studies this industry/context” is not a defense of theorem novelty.
 
 ### Independent equilibrium-set regression attack
 
@@ -192,11 +207,12 @@ Return to the earliest stage if novelty, mechanism identification, mathematical 
 ## 13. Required final output
 
 1. Executive referee-gate verdict
-2. Referee A: novelty/mechanism report
-3. Referee B: assumptions/math/globality report
-4. Referee C: welfare/institution/benchmark report
-5. Referee D: journal/exposition/claim-scope report
-6. Candidate-deviation re-audit
+2. Known-model-in-disguise / theorem-absorption regression report
+3. Referee A: novelty/mechanism report
+4. Referee B: assumptions/math/globality report
+5. Referee C: welfare/institution/benchmark report
+6. Referee D: journal/exposition/claim-scope report
+7. Candidate-deviation re-audit
 7. Alternative-equilibrium / multiplicity re-audit
 8. Indifference / zero-payoff re-audit
 9. Selection/refinement provenance and symmetry audit
