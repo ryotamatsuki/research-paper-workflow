@@ -1,6 +1,6 @@
 # Theory Paper Research Pipeline
 
-Version: v2.1
+Version: v2.2
 
 ## 1. Purpose
 
@@ -60,6 +60,22 @@ The required Stage-7.5A pre-freeze state is exactly one of:
 Formal verification complements rather than replaces analytic derivation, global-deviation analysis, alternative-equilibrium search, independent adversarial certification, and quantifier/scope audit. A proof assistant certifies the encoded theorem from encoded hypotheses; it does not certify unformalized economic primitives or equilibrium domains by implication.
 
 Apply `checklists/FORMAL_VERIFICATION_CHECKLIST.md`.
+
+### v2.2 structural-isomorphism / theorem-absorption hardening
+
+v2.2 is a backward-compatible minor refinement. It adds no Stage, changes no canonical verdict meaning, and changes no normal routing.
+
+Its purpose is to prevent false novelty caused by application-specific language hiding a known mathematical model or theorem. The workflow now requires three linked controls:
+
+1. **Stage 4 — mathematical canonicalization:** strip application labels and write the solved model in an application-neutral canonical form, including strategy geometry, payoff/function class, interaction operator or matrix, constraints, and equilibrium concept. Record plausible standard parent classes and simple transformations such as recentering, normalization, variable elimination, matrix form, KKT reduction, or polytope representation.
+2. **Stage 6 — theorem-level absorption test:** for the closest general results, explicitly attempt to derive each headline theorem by mapping the candidate model into the prior theorem. Novelty does not survive merely because the same application, notation, or exact closed-form threshold has not appeared before.
+3. **Stage 11 — known-model-in-disguise attack:** a hostile referee must try to reduce the manuscript to a known model class and ask whether the headline result is a direct specialization, boundary case, or short corollary of an existing theorem.
+
+The governing distinction is:
+
+`same application not found` ≠ `new theorem`.
+
+A Stage-6 novelty PASS requires an evidence-bearing explanation of why the strongest plausible parent theorem does **not** absorb the headline result, or an explicit downgrade to application/interpretation contribution if it does.
 
 ---
 
@@ -216,6 +232,9 @@ Solve the strongest candidate mechanism/generalization completely in the smalles
 ## Mandatory tasks
 
 - Freeze players, timing, information, complete strategy/choice sets, and primitives.
+- Produce an **application-neutral canonical mathematical representation** of the solved model: strategy-set geometry, payoff/function class, interaction matrix/operator, coupling constraints, and equilibrium concept.
+- Strip application labels and test simple equivalence-preserving transformations where relevant: affine recentering, normalization, variable elimination, matrix representation, KKT/complementarity form, potential-game representation, aggregative/network representation, simplex/transportation/assignment-polytope representation, or another standard form suggested by the mathematics.
+- Record plausible standard parent model classes and whether the headline result appears prima facie to be a specialization/corollary candidate. This is a screening record, not the final novelty verdict; Stage 6 performs the literature-backed absorption test.
 - Derive allocation/demand from the microfoundation where applicable.
 - Solve analytically where possible.
 - Verify closed forms symbolically.
@@ -324,9 +343,12 @@ Search the literature again using the actual certified propositions.
 
 - Turn surviving propositions into targeted searches.
 - Search the exact strategic mechanism, threshold, welfare wedge, transition, and game-architecture language.
+- **Re-run the search with application labels removed**, using the Stage-4 canonical mathematical representation, standard parent-class terminology, constraint geometry, interaction structure, and theorem object.
 - Re-open closest literature in light of the solved result.
-- Distinguish component novelty, whole-game novelty, and theorem novelty.
+- Distinguish component novelty, whole-game novelty, theorem novelty, and application/interpretation novelty.
 - Re-run whole-game absorption against the actual model.
+- For each serious parent-theorem candidate, construct an explicit **theorem-absorption map**: `prior theorem → variable/parameter mapping → required restriction/transformation → candidate headline result → DIRECTLY ABSORBED / PARTIALLY ABSORBED / NOT ABSORBED`.
+- Treat a short derivation from a known general theorem as absorption even when the prior paper does not print the same application-specific formula or threshold.
 - For generalization/unification, verify the full-model result is unavailable in material nested benchmarks and is not an immediate corollary of a known theorem.
 
 A result that looked novel before the mathematics may be killed now. Remove it immediately from the contribution set.
@@ -563,6 +585,7 @@ Stage 11 is not a substitute for Stage 4A or 7.5A. It is a late independent laye
 Attack at least:
 
 - classic-result/relabeling;
+- **known-model-in-disguise / theorem-absorption attack**, including recentering, normalization, variable elimination, matrix/KKT form, standard game-class mapping, and constraint-geometry reduction;
 - whole-game novelty and generalization redundancy;
 - ad hoc assumptions and results built into assumptions;
 - alternative demand/contract/information structures;
@@ -582,6 +605,8 @@ Attack at least:
 For sequential models independently reconstruct at least one material continuation/deviation from primitives, deliberately search for a finite deviation leaving the regular branch, and inspect all `None`/NaN/invalid/nonconvergent code outcomes.
 
 For broad theorem/generalization claims independently attempt at least one admissible-function counterexample or assumption-relaxation attack rather than merely rereading the production proof.
+
+For every theory manuscript whose Stage-4 canonicalization identified a plausible standard parent class, independently repeat the strongest **known-model-in-disguise** reduction at Stage 11 and verify that the manuscript's contribution statement is consistent with the Stage-6 theorem-absorption map. If the headline theorem can now be obtained as a direct specialization/corollary of prior work, record a novelty certification regression and route back to Stage 6 (or earlier if the research question itself is invalidated).
 
 Where formal verification is applicable, inspect the paper-claim ↔ formal-theorem map and explicit non-formalized scope. Do not infer that a green Lean/Coq/Isabelle/etc. build certifies unencoded demand, equilibrium, or case-partition facts.
 
