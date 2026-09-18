@@ -49,15 +49,26 @@ For each main proposition, create targeted searches using:
 4. organizational transition language;
 5. welfare result language;
 6. game-architecture/player-objective-strategy language;
-7. alternative terminology used in adjacent fields.
+7. alternative terminology used in adjacent fields;
+8. **application-neutral canonical-form language from Stage 4**: payoff/function class, interaction matrix/operator, strategy-set geometry, constraint class, equilibrium object, and standard parent-model terminology.
 
-Check exact predecessor, structurally close theorem, same mechanism in another application, same welfare result, appendix/extension versions, and current working papers.
+Check exact predecessor, structurally close theorem, same mechanism in another application, same welfare result, appendix/extension versions, current working papers, and general mathematical/economic model classes that may absorb the result even when the application differs.
 
 For strategic/game-theoretic work, re-run the whole-game absorption test:
 
 - Can one prior model reproduce the economically relevant full game?
-- Is the headline result an immediate corollary of one prior theorem?
+- Can the candidate model be mapped into a known parent class by recentering, normalization, variable elimination, matrix/KKT representation, or constraint-geometry reduction?
+- Is the headline result an immediate corollary, direct specialization, boundary case, or short derivation from one prior theorem?
+- If the prior theorem does not print the same formula, does substituting the candidate's parameters/geometry recover it anyway?
 - If multiple prior models are required to reconstruct separate components, what interaction result arises only in the full game?
+
+For every serious parent-theorem candidate, complete a theorem-absorption record:
+
+| Prior theorem | Canonical mapping | Restrictions / transformations | Candidate result derivable? | Verdict |
+|---|---|---|---|---|
+| ... | ... | ... | ... | DIRECTLY ABSORBED / PARTIALLY ABSORBED / NOT ABSORBED |
+
+A missing application-specific formula is not evidence of theorem novelty.
 
 For a generalization/unification route, re-open the papers corresponding to every nested benchmark and verify:
 
@@ -71,7 +82,7 @@ Use `checklists/LITERATURE_AUDIT_CHECKLIST.md` and `checklists/NOVELTY_KILL_CHEC
 
 For every surviving contribution, provide a closest-paper comparison at model/proposition level and state evidentiary limits.
 
-An absorption verdict for a strategic architecture requires direct model-level support. Component-by-component citations alone are insufficient.
+An absorption verdict for a strategic architecture requires direct model-level support. Component-by-component citations alone are insufficient. Conversely, a novelty PASS requires an explicit explanation of why the strongest plausible **general parent theorem** does not absorb the headline result.
 
 ## 8. Verification protocol
 
@@ -112,14 +123,16 @@ Return `NO-GO` if every main result is exact prior art, structurally very close,
 1. Executive re-kill verdict
 2. Proposition-by-proposition search log
 3. Updated closest-paper matrix
-4. Whole-game absorption verdict
-5. Nested-benchmark result comparison, where applicable
-6. Prior-art classification for each result
-7. Killed claims
-8. Surviving claim set
-9. Revised contribution statement
-10. Strongest remaining novelty threat
-11. Verdict and next-stage contract
+4. Canonical-form search log
+5. Parent-class / theorem-absorption map
+6. Whole-game absorption verdict
+7. Nested-benchmark result comparison, where applicable
+8. Prior-art classification for each result
+9. Killed claims
+10. Surviving claim set
+11. Revised contribution statement
+12. Strongest remaining novelty threat
+13. Verdict and next-stage contract
 
 ## 13. Final verdict
 
