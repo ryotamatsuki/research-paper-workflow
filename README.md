@@ -19,6 +19,18 @@ Canonical hierarchy:
 
 `GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → stage templates → checklists → examples.
 
+## v2.2 minor revision: structural-isomorphism and theorem-absorption hardening
+
+v2.2 preserves the v2 Stage architecture, verdict semantics, routing, rollback rules, and freeze meanings. It strengthens existing gates so an application-specific interpretation cannot hide a known mathematical model or theorem.
+
+- **Stage 4:** create an application-neutral canonical mathematical representation and record plausible parent model classes.
+- **Stage 6:** search those parent classes and perform explicit theorem-level specialization/absorption mapping.
+- **Stage 11:** repeat a known-model-in-disguise hostile attack on the final manuscript and record a novelty certification regression if a previously missed parent theorem absorbs the result.
+
+The key rule is: **absence of the same application-specific formula is not theorem novelty**. A headline result that follows as a direct specialization, boundary case, or short corollary of a known general theorem must be classified accordingly, even if its institutional interpretation is new.
+
+This is a MINOR change under the repository versioning policy because it strengthens decision capability inside existing Stages without changing Stage numbering or routing.
+
 ## v2.0 architecture: mathematical adversarial certification before theory freeze
 
 v2.0 is a major workflow architecture change because it adds mandatory stages and changes routing.
@@ -235,23 +247,23 @@ For actual submissions, the most specific current authority controls: direct edi
 
 Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), v2.0 is MAJOR because it adds Stage 4A and Stage 7.5A and changes canonical routing.
 
-The formal-verification change described above is a post-v2.1 minor-version candidate: it strengthens checks within Stage 4A/7.5A/8 without adding, removing, renumbering, or rerouting a canonical Stage. It does not move the immutable `v2.1` tag.
+The formal-verification refinement and the v2.2 structural-isomorphism/theorem-absorption hardening are backward-compatible minor changes. They are consolidated in the v2.2 canonical workflow state. The immutable published `v2.1` tag remains the latest stable tag until a separate v2.2 tag/release is created.
 
 ## Recommended workflow
 
 1. Start at Stage 0 unless verified prior work justifies later entry.
 2. Preserve unknowns as `UNRESOLVED`; do not invent missing facts.
 3. Run each stage as a research gate and preserve its report, verdict, rejected branches, blockers, and next-stage contract.
-4. If Stage 4 gives `GO`, run Stage 4A before any Stage-6 novelty re-kill. Separate candidate-deviation verification from alternative-equilibrium search whenever the claim requires characterization, uniqueness, or selection-free conclusions.
+4. At Stage 4, solve the model **and** record its application-neutral canonical mathematical form and plausible parent model classes. If Stage 4 gives `GO`, run Stage 4A before any Stage-6 novelty re-kill. Separate candidate-deviation verification from alternative-equilibrium search whenever the claim requires characterization, uniqueness, or selection-free conclusions.
 5. At Stage 4A, trigger indifference/multiplicity attacks when zero-demand, zero-output, zero-profit, ties, or other payoff-equivalent actions occur, and record the preliminary formal-verification applicability/target map.
 6. If Stage 4/4A identifies exactly one repairable economic deficiency, Stage 5 may change only that one margin; then repeat Stage 4 and Stage 4A.
-7. Re-kill actual novelty at Stage 6.
+7. Re-kill actual novelty at Stage 6 using both application-specific searches and application-neutral parent-class searches; explicitly specialize the strongest plausible prior theorems and close a theorem-absorption verdict.
 8. Validate welfare/generality/institutions at Stage 7, including welfare robustness to equilibrium selection.
 9. Use Stage 7.5 to decide whether a full paper is justified, then run Stage 7.5A before theory freeze.
 10. Within Stage 7.5A, close the Formal Verification Gate: execute targeted proof-assistant verification when applicable, or record a defensible N/A rationale. Do not let `NOT TESTED` or `PLANNED` pass.
 11. Freeze theory only after Stage 4A, Stage 7.5A, and the embedded formal-verification state are all green.
 12. At Stage 7 identify exposition vehicles; at Stage 10 implement figure/table architecture; at Stage 13 integrate it; at Stage 14 verify it.
-13. At Stage 11 repeat hostile mathematical, equilibrium-set, welfare-selection, theorem-scope, and formal-claim-boundary attacks from a fresh perspective.
+13. At Stage 11 repeat hostile mathematical, equilibrium-set, welfare-selection, theorem-scope, formal-claim-boundary, and **known-model-in-disguise/theorem-absorption** attacks from a fresh perspective.
 14. At Stage 14 rebuild applicable formal artifacts or verify the frozen formal build remains reproducible and consistent with the submitted theorem scope.
 15. If a later stage invalidates earlier work, return to the earliest affected stage and mark downstream outputs stale, including formal certificates whose statements/hypotheses changed.
 16. Preserve rejected branches, additional equilibria, counterexamples, negative results, theorem-certificate failures, formalization failures, and certification regressions as research provenance.
@@ -283,6 +295,6 @@ Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 ## Status
 
-Current stable published workflow: **v2.1**.
+Current canonical workflow version: **v2.2** (minor revision).
 
-`main` may contain reviewed post-v2.1 backward-compatible refinements pending a later release. Stable tag/release: **`v2.1`**. Historical stable tags `v1.0`–`v1.3` remain immutable. The v2.0 architecture was merged and audited but not separately tagged; v2.1 is the first stable tagged release in the v2 line.
+Latest published stable Git tag/release: **`v2.1`** until a separate v2.2 tag/release is created. Historical stable tags `v1.0`–`v1.3` remain immutable. The v2.0 architecture was merged and audited but not separately tagged; v2.1 is the first stable tagged release in the v2 line.
