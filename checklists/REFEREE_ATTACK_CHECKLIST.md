@@ -19,10 +19,26 @@ Resolved?: YES / NO
 ## Novelty attacks
 
 - [ ] “This is classic result X in different notation.”
+- [ ] **“This is a known model in disguise; after recentering/normalization/reduction, the headline theorem is a corollary.”**
 - [ ] “The closest paper already contains the same mechanism.”
 - [ ] “The contribution is only a new application.”
 - [ ] “The model combines known components but generates no new interaction.”
 - [ ] “The same theorem exists in an appendix / working paper.”
+
+## Known-model-in-disguise attacks
+
+- [ ] Rewrite the model without application labels
+- [ ] Compare the final manuscript model with the Stage-4 canonical mathematical representation
+- [ ] Attempt affine recentering / normalization
+- [ ] Attempt variable elimination
+- [ ] Attempt matrix/KKT/complementarity form
+- [ ] Attempt potential/network/aggregative representation
+- [ ] Attempt simplex/transportation/assignment-polytope or other relevant constraint-geometry reduction
+- [ ] Re-open the strongest general parent theorem from Stage 6
+- [ ] Explicitly specialize the prior theorem to the candidate parameters/strategy domain
+- [ ] Test whether the headline threshold/ranking/assignment/welfare result follows in a few algebraic steps
+- [ ] Distinguish theorem novelty from application/interpretation novelty
+- [ ] If newly absorbed, mark `CERTIFICATION REGRESSION — NOVELTY ABSORPTION` and route to Stage 6 or earlier
 
 ## Mechanism attacks
 
@@ -140,6 +156,7 @@ If yes, mark `CERTIFICATION REGRESSION`, preserve the counterexample as workflow
 ## Gate rule
 
 - [ ] No unresolved `FATAL` attack on the core contribution
+- [ ] Every plausible parent-model/theorem identified at Stage 4/6 has a closed absorption verdict
 - [ ] Every `MAJOR BUT FIXABLE` attack has a bounded fix
 - [ ] Any fix that changes theory is routed back through theory-change control
 - [ ] For SPNE/sequential claims, no material off-path continuation remains `UNRESOLVED` or `NUMERICAL_FAILURE`
