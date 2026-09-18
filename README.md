@@ -244,10 +244,11 @@ For actual submissions, the most specific current authority controls: direct edi
 - `v1.3` — added result-to-exposition and figure/table architecture lifecycle across Stages 7/10/13/14.
 - `v2.0` — mathematical-adversarial-certification architecture merged/audited on 2026-09-06; not separately tagged as a stable GitHub Release.
 - `v2.1` — first stable tagged v2 release; includes the v2.0 architecture plus fail-closed live journal-compliance and portal-preflight controls.
+- `v2.2` — minor release adding formal-verification closure plus Stage-4 canonical mathematical representation, Stage-6 theorem-level absorption mapping, and Stage-11 known-model-in-disguise regression attack.
 
 Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), v2.0 is MAJOR because it adds Stage 4A and Stage 7.5A and changes canonical routing.
 
-The formal-verification refinement and the v2.2 structural-isomorphism/theorem-absorption hardening are backward-compatible minor changes. They are consolidated in the v2.2 canonical workflow state. The immutable published `v2.1` tag remains the latest stable tag until a separate v2.2 tag/release is created.
+The formal-verification refinement and the v2.2 structural-isomorphism/theorem-absorption hardening are backward-compatible minor changes. They are consolidated in the v2.2 release. The immutable `v2.1` tag remains a historical release and is not moved.
 
 ## Recommended workflow
 
@@ -295,6 +296,6 @@ Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 ## Status
 
-Current canonical workflow version: **v2.2** (minor revision).
+Current canonical and stable published workflow: **v2.2** (minor release).
 
-Latest published stable Git tag/release: **`v2.1`** until a separate v2.2 tag/release is created. Historical stable tags `v1.0`–`v1.3` remain immutable. The v2.0 architecture was merged and audited but not separately tagged; v2.1 is the first stable tagged release in the v2 line.
+Stable tag/release: **`v2.2`**. Previous stable tags, including `v2.1` and `v1.0`–`v1.3`, remain immutable. The v2.0 architecture was merged and audited but not separately tagged; v2.1 was the first stable tagged release in the v2 line.
