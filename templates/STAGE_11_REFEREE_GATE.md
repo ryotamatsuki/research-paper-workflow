@@ -213,20 +213,20 @@ Return to the earliest stage if novelty, mechanism identification, mathematical 
 5. Referee C: welfare/institution/benchmark report
 6. Referee D: journal/exposition/claim-scope report
 7. Candidate-deviation re-audit
-7. Alternative-equilibrium / multiplicity re-audit
-8. Indifference / zero-payoff re-audit
-9. Selection/refinement provenance and symmetry audit
-10. Independent equilibrium/continuation re-audit, where applicable
-11. Welfare-selection regression audit, where applicable
-12. Independent quantifier/function-class re-audit, where applicable
-13. Solver-failure/unresolved-continuation ledger, where applicable
-14. Evidence ledger for material PASS states
-15. Certification-regression ledger
-16. Consolidated severity table
-17. Required fixes and earliest affected stage
-18. Theory-change implications
-19. Resolved vs unresolved attacks
-20. Verdict and Stage-12 contract
+8. Alternative-equilibrium / multiplicity re-audit
+9. Indifference / zero-payoff re-audit
+10. Selection/refinement provenance and symmetry audit
+11. Independent equilibrium/continuation re-audit, where applicable
+12. Welfare-selection regression audit, where applicable
+13. Independent quantifier/function-class re-audit, where applicable
+14. Solver-failure/unresolved-continuation ledger, where applicable
+15. Evidence ledger for material PASS states
+16. Certification-regression ledger
+17. Consolidated severity table
+18. Required fixes and earliest affected stage
+19. Theory-change implications
+20. Resolved vs unresolved attacks
+21. Verdict and Stage-12 contract
 
 ## 14. Final verdict
 
