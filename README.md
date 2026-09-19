@@ -280,10 +280,11 @@ The formal-verification refinement and the v2.2 structural-isomorphism/theorem-a
 11. Freeze theory only after Stage 4A, Stage 7.5A, and the embedded formal-verification state are all green.
 12. At Stage 7 identify exposition vehicles; at Stage 10 implement figure/table architecture; at Stage 13 integrate it; at Stage 14 verify it.
 13. At Stage 11 repeat hostile mathematical, equilibrium-set, welfare-selection, theorem-scope, formal-claim-boundary, and **known-model-in-disguise/theorem-absorption** attacks from a fresh perspective.
-14. At Stage 14 rebuild applicable formal artifacts or verify the frozen formal build remains reproducible and consistent with the submitted theorem scope.
-15. If a later stage invalidates earlier work, return to the earliest affected stage and mark downstream outputs stale, including formal certificates whose statements/hypotheses changed.
-16. Preserve rejected branches, additional equilibria, counterexamples, negative results, theorem-certificate failures, formalization failures, and certification regressions as research provenance.
-17. When using a paper-specific route such as `C0–C6`, map each strong claim to the inherited canonical certification and formal-verification obligations and required evidence artifacts.
+14. At Stage 12 construct the journal candidate universe from the surviving contribution before ranking, cross-check closest-literature venues for omissions without automatic inclusion, and record explicit exclusion reasons for materially plausible alternatives. Apply the source-journal check only to correction/comment/replication/re-examination/source-audit work.
+15. At Stage 14 rebuild applicable formal artifacts or verify the frozen formal build remains reproducible and consistent with the submitted theorem scope.
+16. If a later stage invalidates earlier work, return to the earliest affected stage and mark downstream outputs stale, including formal certificates whose statements/hypotheses changed.
+17. Preserve rejected branches, additional equilibria, counterexamples, negative results, theorem-certificate failures, formalization failures, and certification regressions as research provenance.
+18. When using a paper-specific route such as `C0–C6`, map each strong claim to the inherited canonical certification and formal-verification obligations and required evidence artifacts.
 
 ## Repository structure
 
@@ -311,6 +312,6 @@ Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 ## Status
 
-Current canonical workflow on this branch: **v2.3** (minor revision candidate).
+Current canonical repository revision on this branch: **v2.3** (minor revision candidate).
 
 The latest stable published tag remains **`v2.2`** until the v2.3 change is reviewed, merged, tagged, and released. Previous stable tags, including `v2.1` and `v1.0`–`v1.3`, remain immutable. The v2.0 architecture was merged and audited but not separately tagged; v2.1 was the first stable tagged release in the v2 line.
