@@ -1,6 +1,6 @@
 # Governance
 
-Version: v2.2
+Version: v2.3
 
 ## 1. Purpose
 
@@ -122,6 +122,18 @@ At minimum distinguish:
 
 If a plausible parent theorem remains untested at the mapping/specialization level, a theorem-novelty claim fails closed. Search failure or absence of the same application-specific formula is not positive novelty evidence.
 
+### 2.13 Journal candidate universes precede journal ranking
+
+Stage 12 must construct a broad candidate-journal universe from the **actual surviving paper** before journals are ranked or a preferred target is defended.
+
+Candidate generation should use the paper's field/audience, contribution and article type, methodological level, manuscript scale, and any materially relevant geographic or institutional audience. It must not begin from prestige, a remembered target, or a shortlist inherited from prior submissions.
+
+The journals containing the closest literature from Stages 2/6/11 are a **completeness cross-check**, not an automatic target list. A journal is not a serious candidate merely because a close paper appeared there. Conversely, an obvious field journal or a venue repeatedly represented in close literature may not disappear silently: it must either be evaluated or receive an explicit exclusion reason.
+
+For correction, comment, replication, re-examination, or closely related source-audit papers, the venue of the target/source paper has special archival relevance and must be explicitly considered unless a reason for exclusion is recorded. This conditional rule does not apply mechanically to ordinary original research.
+
+Stage 12 should preserve a candidate-universe ledger or equivalent record showing how serious candidates entered the set and why plausible alternatives were excluded. Discovery of a material omitted venue after Stage-12 closure is a **journal-positioning completeness regression** and normally reopens Stage 12 only; it does not by itself invalidate the frozen theory or Stage-11 certification.
+
 ---
 
 ## 3. Repository change policy
@@ -192,6 +204,8 @@ Stage additions/removals/mergers, canonical routing changes, verdict-semantic ch
 Adding a formal-verification obligation **inside** existing Stage 4A/7.5A/8 boundaries, without renumbering Stages or changing canonical routing/verdict semantics, is a MINOR-version class refinement rather than a new Stage.
 
 Likewise, adding mathematical canonicalization at Stage 4, theorem-level absorption testing at Stage 6, and a known-model-in-disguise hostile attack at Stage 11 preserves Stage identities, verdict semantics, and routing; this is a MINOR-version refinement and is classified as v2.2.
+
+The Stage-12 candidate-universe completeness refinement likewise leaves Stage identity, verdict semantics, and routing unchanged. It strengthens how serious journal candidates are generated and audited before ranking, so it is a MINOR-version refinement and is classified as v2.3.
 
 ---
 
