@@ -1,6 +1,6 @@
 # Theory Paper Research Pipeline
 
-Version: v2.2
+Version: v2.3
 
 ## 1. Purpose
 
@@ -76,6 +76,27 @@ The governing distinction is:
 `same application not found` ≠ `new theorem`.
 
 A Stage-6 novelty PASS requires an evidence-bearing explanation of why the strongest plausible parent theorem does **not** absorb the headline result, or an explicit downgrade to application/interpretation contribution if it does.
+
+
+### v2.3 journal-candidate-universe completeness hardening
+
+v2.3 is a backward-compatible minor refinement. It changes no Stage, verdict meaning, or normal routing.
+
+Its purpose is to prevent Stage 12 from ranking an incomplete, path-dependent shortlist. The workflow now requires three linked controls:
+
+1. **Contribution-first generation:** build the broad journal universe from the paper that actually survived Stage 11 — field/audience, contribution/article type, methodological level, manuscript scale, and any materially relevant audience constraints — before ranking journals.
+2. **Literature-venue completeness cross-check:** use venues represented in the closest literature as a diagnostic for omissions, not as automatic targets. An obvious field venue or repeatedly represented relevant venue must be evaluated or explicitly excluded.
+3. **Conditional source-venue rule:** only for correction, comment, replication, re-examination, or closely related source-audit papers, explicitly evaluate the target/source paper's journal unless there is a documented reason not to.
+
+The governing distinction is:
+
+`close paper appeared there` ≠ `serious target`.
+
+Likewise:
+
+`not on the first shortlist` ≠ `not a plausible target`.
+
+Stage 12 must preserve an auditable candidate-universe/exclusion record before selecting the primary journal.
 
 ---
 
@@ -620,17 +641,34 @@ If Stage 11 discovers a failure that Stage 4A or 7.5A should have caught, record
 
 ## Objective
 
-Choose journals based on the actual surviving contribution, not desired prestige.
+Choose journals based on the actual surviving contribution, not desired prestige, and verify that the ranked shortlist was drawn from a sufficiently broad candidate universe.
 
 ## Mandatory tasks
 
-- Read current aims/scope and recent related papers.
-- Compare model sophistication and contribution type with actual publications.
-- Estimate desk-reject risk and likely referee objections.
-- Assess whether empirical content is expected.
-- Define stretch, primary, realistic fallback, and safety-net routes when appropriate.
+Before ranking journals:
+
+- construct a broad candidate universe from the paper's surviving field/audience, contribution and article type, methodological level, manuscript scale, and any materially relevant geographic or institutional audience;
+- do not start from prestige, a remembered target, or a shortlist inherited from prior submissions;
+- cross-check the candidate universe against journals represented in the closest literature from Stages 2/6/11. Treat those venues as omission diagnostics, not automatic targets;
+- for any obvious field journal or repeatedly represented relevant literature venue that is not treated as a serious candidate, record an explicit exclusion reason;
+- for correction, comment, replication, re-examination, or closely related source-audit papers, explicitly consider the target/source paper's journal unless a documented exclusion reason applies;
+- preserve a candidate-universe ledger or equivalent record showing discovery path, serious-candidate status, and inclusion/exclusion rationale.
+
+Then, for each serious candidate:
+
+- read current aims/scope and recent related papers;
+- compare model sophistication and contribution type with actual publications;
+- estimate desk-reject risk and likely referee objections;
+- assess whether empirical content is expected;
+- define stretch, primary, realistic fallback, and safety-net routes when appropriate.
 
 Do not distort substantive economics to fit a preferred journal family.
+
+## Completeness gate
+
+Stage 12 may not close merely because one journal fits well. Before selecting the primary target, ask whether any obvious field venue or materially relevant venue surfaced by the closest-literature cross-check was never evaluated. If yes, evaluate it or record a reasoned exclusion.
+
+A later discovery that a material candidate was omitted is a **journal-positioning completeness regression**. Reopen Stage 12 and rerun the ranking with the enlarged candidate set. Do not reopen the frozen theory or Stage 11 unless the new journal analysis itself exposes a substantive research defect.
 
 ---
 

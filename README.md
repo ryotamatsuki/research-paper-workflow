@@ -19,6 +19,20 @@ Canonical hierarchy:
 
 `GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → stage templates → checklists → examples.
 
+## v2.3 minor revision: journal-candidate-universe completeness
+
+v2.3 preserves the v2 Stage architecture, verdict semantics, routing, rollback rules, and freeze meanings. It strengthens Stage 12 so journal ranking cannot silently begin from an incomplete or path-dependent shortlist.
+
+- Generate the broad candidate universe from the **actual surviving contribution**, audience, article type, methodological level, and manuscript scale before ranking.
+- Use closest-literature venues as a **completeness cross-check**, not an automatic target list.
+- Require an explicit exclusion reason for obvious field journals or repeatedly represented relevant venues that are not serious candidates.
+- Apply the source-paper-journal check only to correction, comment, replication, re-examination, and closely related source-audit papers.
+- Preserve a Candidate-Universe Ledger and reopen Stage 12 if a material omitted venue is later discovered.
+
+The key rule is: **journal fit is evaluated only after candidate-set completeness is audited**.
+
+This is a MINOR change because it strengthens decision quality inside Stage 12 without changing Stage numbering, verdict semantics, or routing.
+
 ## v2.2 minor revision: structural-isomorphism and theorem-absorption hardening
 
 v2.2 preserves the v2 Stage architecture, verdict semantics, routing, rollback rules, and freeze meanings. It strengthens existing gates so an application-specific interpretation cannot hide a known mathematical model or theorem.
@@ -245,6 +259,7 @@ For actual submissions, the most specific current authority controls: direct edi
 - `v2.0` — mathematical-adversarial-certification architecture merged/audited on 2026-09-06; not separately tagged as a stable GitHub Release.
 - `v2.1` — first stable tagged v2 release; includes the v2.0 architecture plus fail-closed live journal-compliance and portal-preflight controls.
 - `v2.2` — minor release adding formal-verification closure plus Stage-4 canonical mathematical representation, Stage-6 theorem-level absorption mapping, and Stage-11 known-model-in-disguise regression attack.
+- `v2.3` — minor release adding contribution-first journal-candidate generation, literature-venue completeness cross-checking, conditional source-journal review for correction-type papers, and an explicit Stage-12 candidate-universe closure gate.
 
 Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), v2.0 is MAJOR because it adds Stage 4A and Stage 7.5A and changes canonical routing.
 
@@ -265,10 +280,11 @@ The formal-verification refinement and the v2.2 structural-isomorphism/theorem-a
 11. Freeze theory only after Stage 4A, Stage 7.5A, and the embedded formal-verification state are all green.
 12. At Stage 7 identify exposition vehicles; at Stage 10 implement figure/table architecture; at Stage 13 integrate it; at Stage 14 verify it.
 13. At Stage 11 repeat hostile mathematical, equilibrium-set, welfare-selection, theorem-scope, formal-claim-boundary, and **known-model-in-disguise/theorem-absorption** attacks from a fresh perspective.
-14. At Stage 14 rebuild applicable formal artifacts or verify the frozen formal build remains reproducible and consistent with the submitted theorem scope.
-15. If a later stage invalidates earlier work, return to the earliest affected stage and mark downstream outputs stale, including formal certificates whose statements/hypotheses changed.
-16. Preserve rejected branches, additional equilibria, counterexamples, negative results, theorem-certificate failures, formalization failures, and certification regressions as research provenance.
-17. When using a paper-specific route such as `C0–C6`, map each strong claim to the inherited canonical certification and formal-verification obligations and required evidence artifacts.
+14. At Stage 12 construct the journal candidate universe from the surviving contribution before ranking, cross-check closest-literature venues for omissions without automatic inclusion, and record explicit exclusion reasons for materially plausible alternatives. Apply the source-journal check only to correction/comment/replication/re-examination/source-audit work.
+15. At Stage 14 rebuild applicable formal artifacts or verify the frozen formal build remains reproducible and consistent with the submitted theorem scope.
+16. If a later stage invalidates earlier work, return to the earliest affected stage and mark downstream outputs stale, including formal certificates whose statements/hypotheses changed.
+17. Preserve rejected branches, additional equilibria, counterexamples, negative results, theorem-certificate failures, formalization failures, and certification regressions as research provenance.
+18. When using a paper-specific route such as `C0–C6`, map each strong claim to the inherited canonical certification and formal-verification obligations and required evidence artifacts.
 
 ## Repository structure
 
@@ -296,6 +312,6 @@ Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 ## Status
 
-Current canonical and stable published workflow: **v2.2** (minor release).
+Current canonical repository revision on this branch: **v2.3** (minor revision candidate).
 
-Stable tag/release: **`v2.2`**. Previous stable tags, including `v2.1` and `v1.0`–`v1.3`, remain immutable. The v2.0 architecture was merged and audited but not separately tagged; v2.1 was the first stable tagged release in the v2 line.
+The latest stable published tag remains **`v2.2`** until the v2.3 change is reviewed, merged, tagged, and released. Previous stable tags, including `v2.1` and `v1.0`–`v1.3`, remain immutable. The v2.0 architecture was merged and audited but not separately tagged; v2.1 was the first stable tagged release in the v2 line.
