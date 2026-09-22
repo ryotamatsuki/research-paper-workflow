@@ -232,7 +232,7 @@ Templates live under [`templates/`](templates/):
 - Stage 6 — Novelty Re-Kill
 - Stage 7 — Welfare / Generality / Institutional Validation
 - Stage 7.5 — Full-Theory Freeze Decision
-- **Stage 7.5A — Generality / Quantifier Red-Team Gate + Formal Verification Gate**
+- **Stage 7.5A — Generality / Quantifier / Portability Red-Team Gate + Formal Verification Gate**
 - Stage 8 — Canonical Theory Freeze
 - Stage 9 — Repository / Reproducibility Setup
 - Stage 10 — Section-by-Section Paper Construction
