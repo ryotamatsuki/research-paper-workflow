@@ -25,7 +25,7 @@ This pipeline is theory-oriented. Stages 0–3 may recommend empirical or mixed 
 v2.0 adds two mandatory independent red-team gates before theory freeze:
 
 1. **Stage 4A — Independent Mathematical Adversarial Certification Gate**: independently tries to break the solved model, including global deviations, boundaries, corners, regime switches, continuation completeness, solver failure semantics, benchmark definitions, and theorem certificates.
-2. **Stage 7.5A — Generality / Quantifier Red-Team Gate**: attacks theorem scope, functional-form generality, quantifiers, robustness language, and planner/benchmark terminology before the theory can be frozen.
+2. **Stage 7.5A — Generality / Quantifier / Portability Red-Team Gate**: attacks theorem scope, functional-form generality, quantifiers, robustness language, hidden microfoundation dependence, economic portability, and planner/benchmark terminology before the theory can be frozen.
 
 The required routing is therefore:
 
@@ -575,7 +575,7 @@ Freeze the theoretical object before manuscript construction.
 Stage 8 is blocked unless the project has:
 
 - Stage 4A `GO — MATHEMATICAL ADVERSARIAL CERTIFICATION PASS`;
-- Stage 7.5A `GO — GENERALITY / QUANTIFIER CERTIFICATION PASS`; and
+- Stage 7.5A `GO — GENERALITY / QUANTIFIER / PORTABILITY CERTIFICATION PASS`; and
 - a closed Stage-7.5A Formal Verification Gate with `FORMAL VERIFICATION PASS` or `FORMALIZATION NOT APPLICABLE — REASON RECORDED`.
 
 ## Freeze at minimum
@@ -594,6 +594,7 @@ Stage 8 is blocked unless the project has:
 - explicit claims not made;
 - Stage-4A theorem certificates;
 - Stage-7.5A claim-scope/quantifier certificates;
+- Stage-7.5A Contribution Robustness Certificate, including per-claim portability classifications, tested alternatives, failure boundaries, and stop-rule status;
 - formal-verification applicability state and certificate/N-A rationale;
 - paper-claim ↔ formal-theorem mapping and explicit non-formalized scope where applicable;
 - proof-assistant/toolchain/library/build and axiom/placeholder provenance where applicable;
