@@ -696,6 +696,7 @@ Attack at least:
 - journal fit/contribution level;
 - exposition/claim inflation;
 - theorem quantifier inflation relative to Stage-7.5A certificates;
+- portability/classification inflation relative to the Stage-7.5A Contribution Robustness Certificate;
 - benchmark terminology drift;
 - global/SPNE claims relative to Stage-4A certificates;
 - proof-assistant scope inflation relative to the frozen formal-verification certificate;
@@ -711,7 +712,7 @@ Where formal verification is applicable, inspect the paper-claim ↔ formal-theo
 
 Classify attacks as `FATAL`, `MAJOR BUT FIXABLE`, or `MINOR`.
 
-If Stage 11 discovers a failure that Stage 4A or 7.5A should have caught, record it explicitly as a **certification regression** and route to the earliest affected stage. Do not patch it only in prose. A material change to a formally certified theorem or encoded hypothesis also marks the formal certificate stale.
+If Stage 11 discovers a failure that Stage 4A or 7.5A should have caught, including a manuscript claim that exceeds the frozen portability classification or suppresses a material negative portability result, record it explicitly as a **certification regression** and route to the earliest affected stage. Do not patch it only in prose. A material change to a formally certified theorem or encoded hypothesis also marks the formal certificate stale.
 
 ---
 
