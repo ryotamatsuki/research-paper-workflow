@@ -1,12 +1,12 @@
-# Stage 7.5A — Generality / Quantifier Red-Team Gate
+# Stage 7.5A — Generality / Quantifier / Portability Red-Team Gate
 
 > Canonical authority: `GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → this template.
 
 ## 0. Role
 
-Act as a hostile theory editor focused on theorem scope rather than algebra alone. Your job is to determine whether the paper claims more generality, uniqueness, equilibrium-selection robustness, or welfare robustness than the proved object supports.
+Act as a hostile theory editor focused on theorem scope and economic portability rather than algebra alone. Your job is to determine both (i) whether the paper claims more generality, uniqueness, equilibrium-selection robustness, or welfare robustness than the proved object supports and (ii) how far the headline economic mechanism actually survives credible changes in microfoundation or institution.
 
-Do not reward elegant prose, a plausible mechanism, or a successful baseline calibration. Attack quantifiers, admissible function classes, equilibrium-set language, selection/refinement assumptions, benchmark definitions, robustness claims, and the exact boundary between theorem and interpretation.
+Do not reward elegant prose, a plausible mechanism, or a successful baseline calibration. Attack quantifiers, admissible function classes, equilibrium-set language, selection/refinement assumptions, benchmark definitions, robustness claims, hidden functional-form dependence, and the exact boundary between a portable mechanism and a model-specific result. This stage is journal-neutral: do not use a desired outlet to decide what counts as robust.
 
 Before issuing `GO`, also close the project's formal-verification applicability decision. Where formal verification is applicable, certify the selected proof-critical core with a proof assistant and audit the boundary between what is formally proved and what remains analytically or economically assumed.
 
@@ -22,22 +22,22 @@ Before issuing `GO`, also close the project's formal-verification applicability 
 - Claimed generality/robustness: `[CLAIMED_GENERALITY]`
 - Baseline functional forms: `[BASELINE_FUNCTIONAL_FORMS]`
 - Alternative formulations already tested: `[ALTERNATIVE_FORMULATIONS]`
+- Pre-specified portability/falsification plan: `[PORTABILITY_PLAN]`
 - Planner/benchmark definitions: `[BENCHMARKS]`
-- Target journal family: `[TARGET_JOURNAL]`
 
 ## 2. Stage objective
 
-Certify that every headline theorem, robustness statement, equilibrium characterization, welfare benchmark, and contribution sentence states exactly the scope that has actually been proved before theory freeze.
+Certify that every headline theorem, robustness statement, equilibrium characterization, welfare benchmark, and contribution sentence states exactly the scope that has actually been proved before theory freeze, and determine the maximum defensible research strength of each headline mechanism through pre-specified economic falsification.
 
-Stage 7.5 may decide that a project deserves a full paper. Stage 7.5A separately decides whether its theorem scope, equilibrium-set language, selection robustness, and generality claims are mathematically licensed.
+Stage 7.5 may decide that a project deserves a full paper. Stage 7.5A separately decides whether its theorem scope, equilibrium-set language, selection robustness, generality claims, and cross-model portability claims are licensed. It must produce a Contribution Robustness Certificate that Stage 12 later uses for journal positioning.
 
 Stage 7.5A is also the final pre-freeze **Formal Verification Gate**. The Stage number and routing do not change: formal verification is an embedded certification obligation inside Stage 7.5A, not a new canonical Stage. Stage 7.5A may issue `GO` only after the project records either `FORMAL VERIFICATION PASS` or `FORMALIZATION NOT APPLICABLE — REASON RECORDED` under `checklists/FORMAL_VERIFICATION_CHECKLIST.md`.
 
 ## 3. Frozen inputs
 
-No new mechanism, player, instrument, equilibrium refinement, or theorem engineering is allowed. This is a scope-certification gate. Any required substantive repair routes back to the earliest affected stage.
+No result-driven rescue mechanism, player, instrument, equilibrium refinement, or theorem engineering is allowed inside this gate. Stage 7.5A may introduce only pre-specified diagnostic alternatives whose purpose is to test the portability of the existing mechanism. A diagnostic alternative does not become canonical theory merely because it produces an attractive result. Any substantive strengthening or new mechanism routes back to the earliest affected research stage and then repeats downstream certification.
 
-Formalization may expose a missing assumption, false inequality, incomplete case partition, or theorem-scope mismatch. Such a discovery is evidence about the existing theory; it does not authorize silent weakening or alteration of the theorem merely to make a proof assistant accept it.
+Formalization or portability testing may expose a missing assumption, false inequality, incomplete case partition, hidden functional-form dependence, or theorem-scope mismatch. Such a discovery is evidence about the existing theory; it does not authorize silent weakening, result-driven redesign, or alteration of the theorem merely to recover the desired conclusion.
 
 ## 4. Mandatory tasks
 
@@ -68,20 +68,30 @@ For every headline theorem/proposition and every material robustness/generalizat
 11. Attempt to construct admissible counterexample functions satisfying the stated class while reversing the claimed sign, concavity, uniqueness, or threshold ordering.
 12. Stress-test knife-edge, near-boundary, flat-curvature, high-curvature, and nonquadratic cases when the baseline uses a convenient functional form.
 13. Verify that a result proved for one parametric family is not described as generic unless a separate argument establishes genericity.
-14. Audit benchmark terminology by writing the planner's optimization problem and feasible choice set. Reserve `first best` for the unrestricted relevant planner problem; otherwise use the exact constrained benchmark label.
-15. Verify that `second best`, `constrained efficient`, `fixed-allocation`, `partial standardization`, `decentralized equilibrium`, and related terms match the mathematical choice sets being compared.
-16. For every welfare statement, verify whether it is quantified over all relevant equilibria, one selected equilibrium, or a refinement-defined subset. If multiple markets, regions, subgames, or stages admit multiplicity, verify whether their equilibrium selections may vary independently and whether the prose covers the resulting combinations.
-17. Produce a claim-scope ledger connecting each manuscript-level claim to a theorem certificate, equilibrium-set certificate, welfare-selection artifact, proof/robustness artifact, maximum defensible wording, and prohibited stronger wording.
-18. Apply `checklists/THEOREM_CERTIFICATION_CHECKLIST.md` to any headline claim whose quantifier, equilibrium-selection, benchmark, or welfare scope changed after Stage 4A.
-19. Require evidence-linked PASS: `claim -> attack performed -> proof/counterexample/code artifact -> surviving limitation`. A prose assertion that a scope issue was `checked` is not sufficient.
-20. Apply `checklists/FORMAL_VERIFICATION_CHECKLIST.md` to the current, scope-certified theorem set. Reassess the preliminary Stage-4A applicability decision because theorem scope may have changed. Record exactly one final state: `FORMAL VERIFICATION PASS`, `FORMALIZATION NOT APPLICABLE — REASON RECORDED`, or a blocking state.
-21. When formal verification is applicable, select the highest-value proof-critical core rather than automatically formalizing the full economic model. At minimum consider exact algebraic identities, quantified inequalities, case-partition logic, thresholds/boundaries, exact counterexamples, global-deviation inequality skeletons, equilibrium-condition implications, and welfare identities that materially support headline claims.
-22. For each formalized theorem/lemma, map the proof-assistant statement to the paper claim, compare quantifiers/domains, list hypotheses supplied rather than derived, and state explicitly which economic/model components remain outside the formalization.
-23. Audit the formal source for `sorry`, `admit`, equivalent placeholders, project-specific axioms, definitions that encode conclusions, and condition structures that are mistaken for proofs of economic equivalence. Retain an axiom/dependency report where supported by the proof assistant.
-24. Require a pinned and reproducible formal build where feasible: proof-assistant version, library/dependency version, build command, committed source, and clean build/CI evidence. A green proof-assistant build certifies only the encoded statement; it does not replace statement-fidelity or Stage-4A economic/globality certification.
-25. If the formalization uncovers a false theorem, missing economic condition, or incorrect case domain, route to the earliest affected analytic stage. If it uncovers only a mismatch between an otherwise correct narrow theorem and the formal statement/prose, repair and re-audit at the appropriate scope stage rather than weakening the mathematics silently.
+14. Identify the **mechanism invariant** for each headline economic claim: the smallest causal/strategic object that should survive if the claim is genuinely portable rather than merely preserving one closed-form sign.
+15. For every headline claim presented as more than baseline/model-specific, apply `checklists/PORTABILITY_FALSIFICATION_CHECKLIST.md`. Before solving, pre-specify at least one economically meaningful alternative formulation that changes a plausibly result-driving feature such as demand substitution, strategic variable, network microfoundation, cost technology, timing, information, heterogeneity, or coalition/institutional rule.
+16. Record ex ante the alternative's primitives, equilibrium concept, why it is economically credible, and the exact survival/failure criterion. Commit or otherwise timestamp the diagnostic specification before computing the result.
+17. Re-solve the affected equilibrium/subgame under the alternative formulation. Do not transport baseline formulas into a domain where their derivation no longer applies.
+18. If the first portability test survives but remains too close to the baseline to support the manuscript's breadth, pre-specify an orthogonal second attack. Do not choose a favorable second alternative after an unfavorable first result.
+19. If portability fails, identify the payoff component, assumption, sign condition, or institutional rule that carries the failure where possible, and attempt an abstract sufficient-condition formulation without redesigning the failed alternative.
+20. Classify each headline claim as exactly one of `PORTABLE`, `CONDITIONALLY PORTABLE`, `MODEL-SPECIFIC`, `INSTITUTION-SPECIFIC`, or `FALSIFIED`.
+21. Apply the stop rule: if two economically meaningful, pre-specified, non-cosmetic portability attacks overturn the same claimed cross-model mechanism and no defensible abstract sufficient-condition theorem survives, normally close the portability claim as `MODEL-SPECIFIC` or `INSTITUTION-SPECIFIC` instead of repeatedly redesigning alternatives to rescue it.
+22. Preserve negative portability results, exact counterexamples, and failure boundaries as first-class research artifacts.
+23. Produce a **Contribution Robustness Certificate** for every headline claim, including the mechanism invariant, pre-specified alternatives, evidence artifacts, essential assumptions/failure boundaries, portability classification, maximum defensible wording, prohibited stronger wording, and stop-rule status.
+24. Audit benchmark terminology by writing the planner's optimization problem and feasible choice set. Reserve `first best` for the unrestricted relevant planner problem; otherwise use the exact constrained benchmark label.
+25. Verify that `second best`, `constrained efficient`, `fixed-allocation`, `partial standardization`, `decentralized equilibrium`, and related terms match the mathematical choice sets being compared.
+26. For every welfare statement, verify whether it is quantified over all relevant equilibria, one selected equilibrium, or a refinement-defined subset. If multiple markets, regions, subgames, or stages admit multiplicity, verify whether their equilibrium selections may vary independently and whether the prose covers the resulting combinations.
+27. Produce a claim-scope ledger connecting each manuscript-level claim to a theorem certificate, equilibrium-set certificate, welfare-selection artifact, proof/robustness artifact, portability classification, Contribution Robustness Certificate entry, maximum defensible wording, and prohibited stronger wording.
+28. Apply `checklists/THEOREM_CERTIFICATION_CHECKLIST.md` to any headline claim whose quantifier, equilibrium-selection, benchmark, or welfare scope changed after Stage 4A.
+29. Require evidence-linked PASS: `claim -> attack performed -> proof/counterexample/code artifact -> surviving limitation`. A prose assertion that a scope issue was `checked` is not sufficient.
+30. Apply `checklists/FORMAL_VERIFICATION_CHECKLIST.md` to the current, scope-certified theorem set. Reassess the preliminary Stage-4A applicability decision because theorem scope may have changed. Record exactly one final state: `FORMAL VERIFICATION PASS`, `FORMALIZATION NOT APPLICABLE — REASON RECORDED`, or a blocking state.
+31. When formal verification is applicable, select the highest-value proof-critical core rather than automatically formalizing the full economic model. At minimum consider exact algebraic identities, quantified inequalities, case-partition logic, thresholds/boundaries, exact counterexamples, global-deviation inequality skeletons, equilibrium-condition implications, and welfare identities that materially support headline claims.
+32. For each formalized theorem/lemma, map the proof-assistant statement to the paper claim, compare quantifiers/domains, list hypotheses supplied rather than derived, and state explicitly which economic/model components remain outside the formalization.
+33. Audit the formal source for `sorry`, `admit`, equivalent placeholders, project-specific axioms, definitions that encode conclusions, and condition structures that are mistaken for proofs of economic equivalence. Retain an axiom/dependency report where supported by the proof assistant.
+34. Require a pinned and reproducible formal build where feasible: proof-assistant version, library/dependency version, build command, committed source, and clean build/CI evidence. A green proof-assistant build certifies only the encoded statement; it does not replace statement-fidelity or Stage-4A economic/globality certification.
+35. If the formalization uncovers a false theorem, missing economic condition, or incorrect case domain, route to the earliest affected analytic stage. If it uncovers only a mismatch between an otherwise correct narrow theorem and the formal statement/prose, repair and re-audit at the appropriate scope stage rather than weakening the mathematics silently.
 
-## 5. Quantifier/generality/selection certificate
+## 5. Quantifier/generality/selection certificate and Contribution Robustness Certificate
 
 For each headline result record:
 
@@ -93,6 +103,12 @@ For each headline result record:
 - assumptions actually used;
 - selection/refinement assumptions and provenance;
 - baseline vs robustness vs general-theorem classification;
+- mechanism invariant;
+- pre-specified diagnostic alternatives and ex ante success/failure criteria;
+- portability-test result and artifact path;
+- essential assumption/failure boundary where identified;
+- portability classification (`PORTABLE`, `CONDITIONALLY PORTABLE`, `MODEL-SPECIFIC`, `INSTITUTION-SPECIFIC`, or `FALSIFIED`);
+- stop-rule status and whether further generality engineering is authorized;
 - counterexample search result;
 - welfare-selection robustness status where applicable;
 - benchmark terminology status;
@@ -142,6 +158,11 @@ Stage 7.5A fails if:
 - prose in the abstract/introduction materially exceeds the theorem/equilibrium-set certificates;
 - a selection-free welfare result fails under another certified equilibrium or admissible cross-component equilibrium combination;
 - an admissible counterexample exists within the claimed theorem class;
+- an alternative formulation was chosen or redesigned after observing results in order to rescue the preferred sign;
+- a cosmetic perturbation is presented as economic portability;
+- the alternative equilibrium was not independently re-solved on its own valid domain;
+- a material portability failure is hidden, omitted, or dismissed without narrowing the claim;
+- the stop rule is triggered but the manuscript continues to call the mechanism general/robust without an abstract sufficient-condition theorem;
 - a material PASS lacks an identifiable adversarial attack and supporting artifact;
 - formal-verification applicability is left `NOT TESTED` or `PLANNED` at exit;
 - an applicable formal artifact has an unresolved build, statement-fidelity, placeholder, or conclusion-smuggling defect;
@@ -149,9 +170,9 @@ Stage 7.5A fails if:
 
 ## 8. Success criteria
 
-`GO` requires a complete claim-scope ledger with no headline theorem, equilibrium characterization, welfare statement, or benchmark overstated relative to its proof and equilibrium-set certificate.
+`GO` requires a complete claim-scope ledger and Contribution Robustness Certificate with no headline theorem, equilibrium characterization, welfare statement, benchmark, or portability claim overstated relative to its proof and equilibrium-set evidence.
 
-Generality need not be maximal. A narrow but exact theorem can pass. An existence-only result can pass if described as such. A selection-conditional welfare theorem can pass if the selection condition is explicit and defensible. The gate penalizes overclaiming, not specialization.
+Generality need not be maximal. A narrow but exact theorem can pass, including a result correctly classified as `MODEL-SPECIFIC` or `INSTITUTION-SPECIFIC`. An existence-only result can pass if described as such. A selection-conditional welfare theorem can pass if the selection condition is explicit and defensible. The gate penalizes overclaiming and result-driven rescue, not specialization.
 
 In addition, `GO` requires exactly one acceptable formal-verification state: `FORMAL VERIFICATION PASS` or `FORMALIZATION NOT APPLICABLE — REASON RECORDED`.
 
@@ -161,7 +182,9 @@ In addition, `GO` requires exactly one acceptable formal-verification state: `FO
 - A formal-source/build defect with unchanged certified mathematics may be repaired within the Stage-7.5A Formal Verification Gate and rebuilt.
 - A missing proof, false uniqueness claim, omitted equilibrium, invalid refinement, false robustness theorem, or wrong benchmark optimization problem reopens Stage 4 or Stage 7 as appropriate.
 - A false theorem or missing economic assumption discovered during formalization reopens the earliest affected analytic stage; after repair, affected Stage-4A and Stage-7.5A certificates and formal artifacts must be rerun.
-- A required substantive model change reopens the earliest affected stage and must subsequently repeat Stage 4A, Stage 6, Stage 7, Stage 7.5, and Stage 7.5A as applicable.
+- A portability failure that only narrows the claim may be certified here as `MODEL-SPECIFIC` or `INSTITUTION-SPECIFIC` with no repair required.
+- A diagnostic alternative that reveals a genuinely valuable new mechanism or a required substantive model change reopens the earliest affected stage and must subsequently repeat Stage 4A, Stage 6, Stage 7, Stage 7.5, and Stage 7.5A as applicable.
+- A journal preference is never sufficient reason by itself to authorize that rollback; journal fit is assessed later at Stage 12.
 
 ## 10. Required final output
 
@@ -171,23 +194,25 @@ In addition, `GO` requires exactly one acceptable formal-verification state: `FO
 4. Assumption-dependence table
 5. Selection/refinement provenance and symmetry audit
 6. Function-class counterexample audit
-7. Baseline vs robustness vs general-theorem classification
-8. Welfare-selection robustness audit
-9. Benchmark-definition audit
-10. Claim-scope ledger
-11. Evidence ledger
-12. Formal-verification applicability decision
-13. Formal-verification certificate or recorded `NOT APPLICABLE` rationale
-14. Paper-claim ↔ formal-theorem mapping and explicit non-formalized scope, where applicable
-15. Required wording downgrades, if any
-16. Earliest-stage rollback requirement, if any
-17. Canonical stage verdict and routing
+7. Pre-specified economic portability/falsification plan and execution record
+8. Contribution Robustness Certificate with per-claim portability classification and stop-rule status
+9. Baseline vs robustness vs general-theorem classification
+10. Welfare-selection robustness audit
+11. Benchmark-definition audit
+12. Claim-scope ledger
+13. Evidence ledger
+14. Formal-verification applicability decision
+15. Formal-verification certificate or recorded `NOT APPLICABLE` rationale
+16. Paper-claim ↔ formal-theorem mapping and explicit non-formalized scope, where applicable
+17. Required wording downgrades, if any
+18. Earliest-stage rollback requirement, if any
+19. Canonical stage verdict and routing
 
 ## 11. Final verdict
 
 Choose exactly one:
 
-- `GO — GENERALITY / QUANTIFIER CERTIFICATION PASS`
+- `GO — GENERALITY / QUANTIFIER / PORTABILITY CERTIFICATION PASS`
 - `CONDITIONAL GO` — name exactly one scope/proof/selection/formal-verification blocker and route to the earliest affected stage
 - `NO-GO / REOPEN EARLIER STAGE`
 

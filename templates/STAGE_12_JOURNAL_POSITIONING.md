@@ -11,6 +11,8 @@ Act as an editor-level journal strategist. Match the completed contribution to c
 - Topic: `[RESEARCH_TOPIC]`
 - Working title: `[WORKING_TITLE]`
 - Core mechanism/results: `[CURRENT_STAGE_RESULT]`
+- Stage-7.5A Contribution Robustness Certificate: `[CONTRIBUTION_ROBUSTNESS_CERTIFICATE]`
+- Stage-11 surviving contribution set: `[STAGE_11_SURVIVORS]`
 - Closest papers: `[CLOSEST_PAPERS]`
 - Candidate target: `[TARGET_JOURNAL]`
 - Alternative journals: `[ALTERNATIVE_JOURNALS]`
@@ -20,11 +22,13 @@ Act as an editor-level journal strategist. Match the completed contribution to c
 
 Choose a realistic submission sequence based on current scope, recent publications, contribution type, theoretical sophistication, empirical expectations, likely referee fit, and the actual submission obligations of the leading target. Before ranking journals, establish that the serious-candidate set is not an accidental or path-dependent shortlist.
 
+This is the stage where **journal-specific calibration** occurs. Consume the Stage-7.5A Contribution Robustness Certificate and match journals to the theory's certified strength. Do not ask Stage 7.5A to anticipate a preferred journal's prestige or editorial bar.
+
 Stage 12 creates an initial journal-requirements baseline. It does not substitute for the mandatory live re-check at Stage 14.
 
 ## 3. Canonical inputs
 
-The manuscript and contribution set surviving Stage 11 are fixed. Journal selection follows the paper; the paper does not acquire a new mechanism to chase a journal.
+The manuscript and contribution set surviving Stage 11 are fixed. The Stage-7.5A portability classifications are research evidence, not negotiation variables. Journal selection follows the paper; the paper does not acquire a new mechanism to chase a journal.
 
 ## 4. Allowed changes
 
@@ -36,11 +40,15 @@ Journal-specific presentation, length, formatting, emphasis, and cover-letter st
 - no claiming official acceptance rates unless verified;
 - no turning an economics mechanism into a managerial result merely because another outlet looks easier;
 - no journal choice based only on impact factor/ranking;
+- no re-labeling a `MODEL-SPECIFIC` or `INSTITUTION-SPECIFIC` result as portable to qualify for a preferred outlet;
+- no reopening theory solely because a desired journal appears to require stronger generality;
 - no treating a remembered rule, old internal note, prior submission experience, or generic publisher page as sufficient evidence when a current journal-specific rule is available.
 
 ## 6. Mandatory tasks
 
 ### 6.1 Construct the candidate universe before ranking
+
+Before constructing or ranking the journal universe, read the Stage-7.5A Contribution Robustness Certificate. Record the paper's certified contribution profile, including each headline result's classification as `PORTABLE`, `CONDITIONALLY PORTABLE`, `MODEL-SPECIFIC`, `INSTITUTION-SPECIFIC`, or `FALSIFIED`, and the maximum defensible wording.
 
 Generate a broad candidate-journal universe from the **actual Stage-11-surviving paper**, using:
 
@@ -75,7 +83,14 @@ Only after this ledger exists should journals be ranked.
 
 ### 6.2 Inspect serious candidates
 
-Use current web research to inspect each serious candidate:
+Use current web research to inspect each serious candidate and build a **Journal-Fit Matrix** that maps:
+
+`certified contribution strength → current scope/recent comparable papers → fit or mismatch → desk/referee risk`.
+
+Do not infer the required level of generality from quartile, impact factor, ranking list, or prestige alone.
+
+Inspect:
+
 
 1. current aims and scope;
 2. recent related papers, preferably last 3–5 years;
@@ -84,7 +99,11 @@ Use current web research to inspect each serious candidate:
 5. article format/length requirements when material;
 6. current submission/disclosure/AI policies when material;
 7. desk-reject and referee-fit risks;
-8. closest-paper overlap within that journal's audience.
+8. closest-paper overlap within that journal's audience;
+9. whether recent comparable theory papers are general-theory, conditional/applied-theory, model-specific-with-boundaries, institutional, correction/note, or another relevant contribution type;
+10. whether the manuscript's certified portability class is compatible with that demonstrated publication pattern.
+
+If the journal would require a materially stronger substantive claim than the certificate supports, downgrade or reject the **journal candidate**. Do not silently strengthen the paper. A separately authorized new research program must reopen the earliest affected research stage and repeat downstream certification.
 
 For the selected primary journal, create an initial **Journal Requirements Ledger** using `checklists/JOURNAL_REQUIREMENTS_CHECKLIST.md`. At minimum record, from current official sources where publicly available:
 
@@ -127,7 +146,9 @@ Levels 4–5 may fill gaps provisionally but may not override a more specific cu
 
 ## 8. Verification protocol
 
-Confirm that the chosen primary journal can plausibly value the actual mechanism and that no unresolved Stage 11 fatal attack is being ignored.
+Confirm that the chosen primary journal can plausibly value the actual mechanism **at its certified Stage-7.5A strength** and that no unresolved Stage 11 fatal attack is being ignored.
+
+Verify that the Journal-Fit Matrix does not reward a journal only because it is prestigious, and that a mismatch in required generality is treated as a journal-fit failure rather than as an instruction to redesign the theory.
 
 Run a **candidate-universe completeness audit** before closure:
 
@@ -145,8 +166,8 @@ Confirm that the initial Journal Requirements Ledger identifies all material sub
 Reject a candidate journal if:
 
 - scope is materially misaligned;
-- recent articles show a much stronger empirical/theoretical requirement the paper cannot meet;
-- the paper would need a substantive new mechanism to fit;
+- recent articles show a much stronger empirical/theoretical/generality requirement than the certified contribution supports;
+- the paper would need a substantive new mechanism or broader portability claim to fit;
 - the closest literature there makes the novelty look especially weak.
 
 Do not close Stage 12 if a materially plausible journal is omitted merely because it was absent from the initial shortlist. Evaluate it or record an explicit exclusion reason.
@@ -155,7 +176,7 @@ Do not declare the submission package operationally ready at Stage 12. This stag
 
 ## 10. Success criteria
 
-Produce a coherent submission ladder with a defensible primary target, pre-specified fallback logic, an auditable Candidate-Universe Ledger, a completed candidate-universe completeness audit, and an auditable initial requirements ledger for the primary journal.
+Produce a coherent submission ladder with a defensible primary target, pre-specified fallback logic, an auditable Candidate-Universe Ledger, a completed candidate-universe completeness audit, a Journal-Fit Matrix explicitly tied to the Stage-7.5A Contribution Robustness Certificate, and an auditable initial requirements ledger for the primary journal.
 
 ## 11. Failure criteria
 
@@ -169,15 +190,17 @@ If material journal requirements cannot yet be verified, preserve them as explic
 2. Candidate-Universe Ledger and discovery paths
 3. Candidate-universe completeness audit, including explicit exclusions
 4. Current journal evidence
-5. Journal comparison table
-6. Primary target and rationale
-7. Stretch/fallback/safety options
-8. Desk/referee risk by journal
-9. Required presentation changes only
-10. Initial Journal Requirements Ledger with source URLs/access dates/statuses
-11. Unverified/authenticated-portal-only requirements carried forward
-12. Submission sequence
-13. Verdict and Stage 13 contract
+5. Stage-7.5A certified contribution profile
+6. Journal-Fit Matrix: certified strength vs current journal evidence
+7. Journal comparison table
+8. Primary target and rationale
+9. Stretch/fallback/safety options
+10. Desk/referee risk by journal
+11. Required presentation changes only
+12. Initial Journal Requirements Ledger with source URLs/access dates/statuses
+13. Unverified/authenticated-portal-only requirements carried forward
+14. Submission sequence
+15. Verdict and Stage 13 contract
 
 ## 13. Final verdict
 
@@ -189,4 +212,4 @@ Choose one:
 
 ## 14. Next-stage contract
 
-Stage 13 may integrate and polish the manuscript for the selected journal but may not alter the frozen theory without reopening earlier stages. Stage 13 inherits both the Candidate-Universe Ledger and the Journal Requirements Ledger. If a materially omitted journal is discovered before submission, reopen Stage 12 and rerun positioning; Stage 14 must refresh live requirements for the selected journal rather than assuming the Stage-12 snapshot is still current.
+Stage 13 may integrate and polish the manuscript for the selected journal but may not alter the frozen theory without reopening earlier stages. If Stage 12 concludes that a preferred journal requires stronger substantive generality than the Contribution Robustness Certificate supports, the normal action is to choose a better-fitting journal, not to reopen theory merely to chase that outlet. Stage 13 inherits both the Candidate-Universe Ledger and the Journal Requirements Ledger. If a materially omitted journal is discovered before submission, reopen Stage 12 and rerun positioning; Stage 14 must refresh live requirements for the selected journal rather than assuming the Stage-12 snapshot is still current.

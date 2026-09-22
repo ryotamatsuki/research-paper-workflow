@@ -19,6 +19,22 @@ Canonical hierarchy:
 
 `GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → stage templates → checklists → examples.
 
+## v2.4 minor revision: economic portability / falsification hardening
+
+v2.4 preserves the Stage architecture, verdict semantics, routing, rollback rules, and freeze meanings. It strengthens the pre-freeze research-strength audit and makes its relationship with Stage 12 explicit.
+
+- **Stage 7.5A is journal-neutral.** It now tests how far each headline economic mechanism survives pre-specified, economically meaningful alternative microfoundations or institutions.
+- Every non-baseline portability claim must be classified as `PORTABLE`, `CONDITIONALLY PORTABLE`, `MODEL-SPECIFIC`, `INSTITUTION-SPECIFIC`, or `FALSIFIED`.
+- Stage 7.5A produces a **Contribution Robustness Certificate** containing the mechanism invariant, diagnostic alternatives, re-solved evidence, failure boundaries, maximum defensible wording, and stop-rule status.
+- Negative portability results are first-class research outputs.
+- A stop rule prevents repeated result-driven redesign: two meaningful pre-specified failures with no surviving abstract sufficient-condition theorem normally close the cross-model claim rather than triggering endless rescue extensions.
+- **Stage 12 consumes the certificate.** It calibrates current journals to the already-certified contribution strength; it does not ask the paper to become more general merely to preserve a preferred target.
+
+The key rule is: **certify the strongest theory the economics actually supports first; choose the journal that fits that certified strength afterward**.
+
+Operational checklist: [`checklists/PORTABILITY_FALSIFICATION_CHECKLIST.md`](checklists/PORTABILITY_FALSIFICATION_CHECKLIST.md).
+
+Regression/design record: [`docs/PORTABILITY_FALSIFICATION_REFINEMENT_2026-09-22.md`](docs/PORTABILITY_FALSIFICATION_REFINEMENT_2026-09-22.md).
 ## v2.3 minor revision: journal-candidate-universe completeness
 
 v2.3 preserves the v2 Stage architecture, verdict semantics, routing, rollback rules, and freeze meanings. It strengthens Stage 12 so journal ranking cannot silently begin from an incomplete or path-dependent shortlist.
@@ -56,7 +72,7 @@ The core research path is now:
 → `Stage 6 Novelty Re-Kill`  
 → `Stage 7 Welfare / Generality / Institutional Validation`  
 → `Stage 7.5 Full-Theory Freeze Decision`  
-→ `Stage 7.5A Generality / Quantifier Red-Team + embedded Formal Verification Gate`  
+→ `Stage 7.5A Generality / Quantifier / Portability Red-Team + embedded Formal Verification Gate`  
 → `Stage 8 Canonical Theory Freeze`.
 
 A Stage-4 `GO` can no longer route directly to Stage 6. A Stage-7.5 `GO` can no longer route directly to Stage 8.
@@ -107,12 +123,15 @@ Stage 4A independently attacks:
 
 Every headline theorem receives a certificate. Material `NOT TESTED` fields block `GO`.
 
-## Stage 7.5A — Generality / Quantifier Red-Team
+## Stage 7.5A — Generality / Quantifier / Portability Red-Team
 
 Template: [`templates/STAGE_075A_GENERALITY_QUANTIFIER_RED_TEAM.md`](templates/STAGE_075A_GENERALITY_QUANTIFIER_RED_TEAM.md)
 
 Stage 7.5A attacks:
 
+- economic portability using pre-specified alternative microfoundations/institutions;
+- result-driven rescue and hidden functional-form dependence;
+- whether each headline claim is portable, conditionally portable, model-specific, institution-specific, or falsified;
 - `for all` / `exists` / `unique` / `generic` / `local` / `global` scope;
 - equilibrium-set quantifiers such as `all equilibria`, `selected equilibrium`, and refinement-defined subsets;
 - existence being written as uniqueness or complete characterization;
@@ -125,7 +144,7 @@ Stage 7.5A attacks:
 - planner labels such as `first best` when the choice set is actually constrained;
 - abstract/introduction wording that exceeds the proved theorem.
 
-A narrow exact theorem can pass. The gate penalizes overclaiming, not specialization.
+A narrow exact theorem can pass. A correctly classified model-specific or institution-specific theorem can also pass. The gate penalizes overclaiming and result-driven rescue, not specialization.
 
 ## Embedded Formal Verification Gate
 
@@ -192,10 +211,10 @@ Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), this is a **mino
 Stage 8 requires:
 
 - `GO — MATHEMATICAL ADVERSARIAL CERTIFICATION PASS` from Stage 4A;
-- `GO — GENERALITY / QUANTIFIER CERTIFICATION PASS` from Stage 7.5A; and
+- `GO — GENERALITY / QUANTIFIER / PORTABILITY CERTIFICATION PASS` from Stage 7.5A; and
 - a closed Stage-7.5A Formal Verification Gate with `FORMAL VERIFICATION PASS` or `FORMALIZATION NOT APPLICABLE — REASON RECORDED`.
 
-The freeze retains theorem certificates, equilibrium-set/multiplicity status, selection/refinement conditions, welfare-selection robustness, claim-scope ledger, formal-verification certificate/N-A rationale, proof-assistant scope and provenance where applicable, benchmark-definition register, evidence ledger, and counterexample/regression-test register.
+The freeze retains theorem certificates, equilibrium-set/multiplicity status, selection/refinement conditions, welfare-selection robustness, claim-scope ledger, the Stage-7.5A Contribution Robustness Certificate and portability classifications, formal-verification certificate/N-A rationale, proof-assistant scope and provenance where applicable, benchmark-definition register, evidence ledger, and counterexample/regression-test register.
 
 Production repositories should retain these under `theorem_certificates/`, `formal/`, or equivalent auditable directories.
 
@@ -213,7 +232,7 @@ Templates live under [`templates/`](templates/):
 - Stage 6 — Novelty Re-Kill
 - Stage 7 — Welfare / Generality / Institutional Validation
 - Stage 7.5 — Full-Theory Freeze Decision
-- **Stage 7.5A — Generality / Quantifier Red-Team Gate + Formal Verification Gate**
+- **Stage 7.5A — Generality / Quantifier / Portability Red-Team Gate + Formal Verification Gate**
 - Stage 8 — Canonical Theory Freeze
 - Stage 9 — Repository / Reproducibility Setup
 - Stage 10 — Section-by-Section Paper Construction
@@ -234,6 +253,7 @@ Reusable checklists live under [`checklists/`](checklists/), including:
 - [`EQUILIBRIUM_CONTINUATION_CHECKLIST.md`](checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md)
 - **[`THEOREM_CERTIFICATION_CHECKLIST.md`](checklists/THEOREM_CERTIFICATION_CHECKLIST.md)**
 - **[`FORMAL_VERIFICATION_CHECKLIST.md`](checklists/FORMAL_VERIFICATION_CHECKLIST.md)**
+- **[`PORTABILITY_FALSIFICATION_CHECKLIST.md`](checklists/PORTABILITY_FALSIFICATION_CHECKLIST.md)**
 - **[`PAPER_SPECIFIC_CERTIFICATION_INHERITANCE_CHECKLIST.md`](checklists/PAPER_SPECIFIC_CERTIFICATION_INHERITANCE_CHECKLIST.md)**
 - [`FIGURE_TABLE_CHECKLIST.md`](checklists/FIGURE_TABLE_CHECKLIST.md)
 - [`REFEREE_ATTACK_CHECKLIST.md`](checklists/REFEREE_ATTACK_CHECKLIST.md)
@@ -260,6 +280,7 @@ For actual submissions, the most specific current authority controls: direct edi
 - `v2.1` — first stable tagged v2 release; includes the v2.0 architecture plus fail-closed live journal-compliance and portal-preflight controls.
 - `v2.2` — minor release adding formal-verification closure plus Stage-4 canonical mathematical representation, Stage-6 theorem-level absorption mapping, and Stage-11 known-model-in-disguise regression attack.
 - `v2.3` — minor release adding contribution-first journal-candidate generation, literature-venue completeness cross-checking, conditional source-journal review for correction-type papers, and an explicit Stage-12 candidate-universe closure gate.
+- `v2.4` — prospective minor refinement adding pre-freeze economic portability/falsification certification, the Contribution Robustness Certificate, a research-creep stop rule, and explicit Stage-7.5A → Stage-12 separation.
 
 Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), v2.0 is MAJOR because it adds Stage 4A and Stage 7.5A and changes canonical routing.
 
@@ -276,11 +297,11 @@ The formal-verification refinement and the v2.2 structural-isomorphism/theorem-a
 7. Re-kill actual novelty at Stage 6 using both application-specific searches and application-neutral parent-class searches; explicitly specialize the strongest plausible prior theorems and close a theorem-absorption verdict.
 8. Validate welfare/generality/institutions at Stage 7, including welfare robustness to equilibrium selection.
 9. Use Stage 7.5 to decide whether a full paper is justified, then run Stage 7.5A before theory freeze.
-10. Within Stage 7.5A, close the Formal Verification Gate: execute targeted proof-assistant verification when applicable, or record a defensible N/A rationale. Do not let `NOT TESTED` or `PLANNED` pass.
+10. Within Stage 7.5A, first certify economic portability using pre-specified diagnostic alternatives and produce the Contribution Robustness Certificate; then close the Formal Verification Gate with targeted proof-assistant verification when applicable or a defensible N/A rationale. Do not let `NOT TESTED` or `PLANNED` pass, and do not use a preferred journal to define portability.
 11. Freeze theory only after Stage 4A, Stage 7.5A, and the embedded formal-verification state are all green.
 12. At Stage 7 identify exposition vehicles; at Stage 10 implement figure/table architecture; at Stage 13 integrate it; at Stage 14 verify it.
 13. At Stage 11 repeat hostile mathematical, equilibrium-set, welfare-selection, theorem-scope, formal-claim-boundary, and **known-model-in-disguise/theorem-absorption** attacks from a fresh perspective.
-14. At Stage 12 construct the journal candidate universe from the surviving contribution before ranking, cross-check closest-literature venues for omissions without automatic inclusion, and record explicit exclusion reasons for materially plausible alternatives. Apply the source-journal check only to correction/comment/replication/re-examination/source-audit work.
+14. At Stage 12 consume the Stage-7.5A Contribution Robustness Certificate, construct the journal candidate universe from the surviving contribution before ranking, compare the certified theory strength with current scope and recent comparable papers, cross-check closest-literature venues for omissions without automatic inclusion, and record explicit exclusion reasons for materially plausible alternatives. If a journal requires stronger substantive generality than certified, downgrade/reject the journal candidate rather than silently redesigning the theory.
 15. At Stage 14 rebuild applicable formal artifacts or verify the frozen formal build remains reproducible and consistent with the submitted theorem scope.
 16. If a later stage invalidates earlier work, return to the earliest affected stage and mark downstream outputs stale, including formal certificates whose statements/hypotheses changed.
 17. Preserve rejected branches, additional equilibria, counterexamples, negative results, theorem-certificate failures, formalization failures, and certification regressions as research provenance.

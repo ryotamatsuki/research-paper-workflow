@@ -1,6 +1,6 @@
 # Theory Paper Research Pipeline
 
-Version: v2.3
+Version: v2.4
 
 ## 1. Purpose
 
@@ -25,7 +25,7 @@ This pipeline is theory-oriented. Stages 0–3 may recommend empirical or mixed 
 v2.0 adds two mandatory independent red-team gates before theory freeze:
 
 1. **Stage 4A — Independent Mathematical Adversarial Certification Gate**: independently tries to break the solved model, including global deviations, boundaries, corners, regime switches, continuation completeness, solver failure semantics, benchmark definitions, and theorem certificates.
-2. **Stage 7.5A — Generality / Quantifier Red-Team Gate**: attacks theorem scope, functional-form generality, quantifiers, robustness language, and planner/benchmark terminology before the theory can be frozen.
+2. **Stage 7.5A — Generality / Quantifier / Portability Red-Team Gate**: attacks theorem scope, functional-form generality, quantifiers, robustness language, hidden microfoundation dependence, economic portability, and planner/benchmark terminology before the theory can be frozen.
 
 The required routing is therefore:
 
@@ -77,6 +77,31 @@ The governing distinction is:
 
 A Stage-6 novelty PASS requires an evidence-bearing explanation of why the strongest plausible parent theorem does **not** absorb the headline result, or an explicit downgrade to application/interpretation contribution if it does.
 
+
+### v2.4 economic portability / falsification hardening
+
+v2.4 is a backward-compatible minor refinement. It adds no Stage, changes no canonical verdict meaning, and changes no normal routing.
+
+Its purpose is to prevent a technically correct baseline model from being frozen before the workflow has determined how far the headline economic mechanism survives credible changes in microfoundation or institution. The refinement separates two questions that must not be conflated:
+
+1. **Stage 7.5A — research-strength certification:** determine the maximum defensible strength of each headline result by pre-specified economic falsification, portability testing, and exact classification of failure boundaries.
+2. **Stage 12 — journal positioning:** match the already-certified contribution to journals whose current editorial bar and article type fit that contribution. Stage 12 does not ask the theory to become stronger merely to preserve a preferred target.
+
+For any headline claim presented as more than baseline/model-specific, Stage 7.5A must pre-specify at least one economically meaningful alternative formulation that changes a plausibly result-driving assumption, re-solve the relevant equilibrium rather than transporting baseline formulas, and record whether the claim is:
+
+- `PORTABLE`;
+- `CONDITIONALLY PORTABLE`;
+- `MODEL-SPECIFIC`;
+- `INSTITUTION-SPECIFIC`; or
+- `FALSIFIED`.
+
+Negative portability results are first-class research outputs. A failed alternative model may narrow the theorem, identify the economic assumption carrying the result, or terminate an attempted generality claim.
+
+To prevent research creep, Stage 7.5A also applies a stop rule: if two economically meaningful, pre-specified, non-cosmetic portability attacks both overturn the same claimed cross-model sign/mechanism and no defensible abstract sufficient-condition formulation survives, the claim must normally be certified `MODEL-SPECIFIC` or `INSTITUTION-SPECIFIC` rather than repeatedly redesigning alternatives to rescue it. Further theory development requires a distinct research reason and rollback to the earliest affected stage.
+
+Stage 7.5A remains journal-neutral. Journal names, rankings, and target prestige do not determine whether a mechanism counts as portable. Stage 12 consumes the resulting **Contribution Robustness Certificate** and compares it with current journal scope and recent comparable papers.
+
+Apply `checklists/PORTABILITY_FALSIFICATION_CHECKLIST.md`.
 
 ### v2.3 journal-candidate-universe completeness hardening
 
@@ -431,34 +456,68 @@ Do not initialize a full manuscript merely because a closed-form model exists.
 
 ---
 
-# Stage 7.5A — Generality / Quantifier Red-Team Gate
+# Stage 7.5A — Generality / Quantifier / Portability Red-Team Gate
 
 ## Objective
 
-Certify that every headline theorem, robustness statement, welfare benchmark, and contribution sentence states exactly the scope actually proved.
+Certify both the exact scope and the maximum defensible research strength of every headline theorem, robustness statement, welfare benchmark, and contribution sentence before theory freeze.
 
-This stage attacks over-generalization rather than merely rechecking baseline algebra. It also contains the final pre-freeze **Formal Verification Gate**.
+This stage attacks over-generalization, hidden functional-form dependence, and false portability rather than merely rechecking baseline algebra. It is **journal-neutral**: the question is what the theory actually supports, not what a preferred journal would like it to support. It also contains the final pre-freeze **Formal Verification Gate**.
 
 ## Mandatory tasks
 
 For every headline theorem/proposition and material robustness/generalization statement:
 
 - rewrite the claim in formal quantifier form (`for all`, `exists`, `unique`, `generic`, `local`, `global`, etc.);
-- list assumptions actually used, separating economic assumptions, shape restrictions, parameter restrictions, regularity, normalization, and tractability;
+- list assumptions actually used, separating economic assumptions, shape restrictions, parameter restrictions, regularity, normalization, tractability, and institutional assumptions;
 - compare formal theorem scope with the strongest abstract/introduction/contribution/welfare/robustness prose;
 - distinguish baseline closed form, restricted function class, sufficient-condition theorem, numerical robustness evidence, conjectured generality, and truly general theorem;
+- identify the **mechanism invariant**: the smallest economic chain/object whose survival would count as genuine portability rather than mere preservation of a numerical sign;
+- before computing the result, pre-specify at least one economically meaningful alternative formulation for every headline claim presented as more than baseline/model-specific. The alternative must change a plausibly result-driving feature such as demand substitution, strategic variable, network microfoundation, cost technology, information, timing, heterogeneity, or coalition/institutional rule; cosmetic relabeling does not count;
+- record ex ante the alternative's primitives, equilibrium concept, the exact success/failure criterion, and why the perturbation is economically credible;
+- re-solve the affected equilibrium/subgame under the alternative formulation. Do not insert altered primitives into a baseline formula whose derivation no longer applies;
+- if the first portability test survives and a second orthogonal test would materially distinguish broad portability from one-dimensional robustness, perform that second pre-specified attack;
+- if portability fails, attempt to identify an abstract sufficient-condition formulation or exact assumption boundary that explains the failure without redesigning the alternative model after observing the result;
+- classify each headline claim as exactly one of `PORTABLE`, `CONDITIONALLY PORTABLE`, `MODEL-SPECIFIC`, `INSTITUTION-SPECIFIC`, or `FALSIFIED`, with evidence;
+- apply the stop rule in `checklists/PORTABILITY_FALSIFICATION_CHECKLIST.md`: repeated result-driven redesign is prohibited. Two economically meaningful, pre-specified, non-cosmetic failures of the same claimed cross-model mechanism normally terminate the portability claim unless an abstract sufficient-condition theorem survives;
+- preserve negative portability results, counterexamples, and failure boundaries as first-class research artifacts rather than hiding them as unsuccessful extensions;
 - for broad function classes, identify which derivative/order restrictions are required for each sign, concavity, uniqueness, or threshold conclusion;
 - construct admissible counterexample functions designed to reverse claimed comparative statics/curvature/orderings;
 - stress-test nonquadratic, low/high-curvature, boundary, and near-boundary cases when the baseline is convenient/parametric;
 - verify that a parametric-family result is not called generic without a separate argument;
 - write the planner optimization problem and feasible choice set for every welfare benchmark and reserve `first best` for the unrestricted relevant planner problem;
-- produce a claim-scope ledger mapping each manuscript claim to theorem certificate, proof, robustness artifact, maximum defensible wording, and prohibited stronger wording;
+- produce a claim-scope ledger mapping each manuscript claim to theorem certificate, proof, robustness artifact, portability classification, maximum defensible wording, and prohibited stronger wording;
+- produce a **Contribution Robustness Certificate** summarizing, for each headline result, the mechanism invariant, tested alternatives, survival/failure result, essential assumptions, failure boundary, and final portability classification;
 - reapply the theorem-certification checklist whenever claim scope changed after Stage 4A;
 - apply `checklists/FORMAL_VERIFICATION_CHECKLIST.md` to the current scope-certified theorem set and reassess the Stage-4A preliminary applicability decision;
 - when applicable, formalize the highest-value proof-critical core using Lean 4/mathlib or another auditable proof assistant rather than automatically requiring full-model formalization;
 - map paper claims to formal theorem/lemma statements, compare quantifiers/domains, list hypotheses supplied rather than derived, and state explicit non-formalized economic/model scope;
 - audit formal source for `sorry`, `admit`, equivalent placeholders, project-specific axioms, conclusion-smuggling definitions, and condition structures mistaken for proofs of economic equivalence;
 - retain pinned/reproducible proof-assistant, library/dependency, build, and CI evidence where feasible.
+
+### Diagnostic-alternative rule
+
+Stage 7.5A may introduce **pre-specified diagnostic alternatives solely to test portability**. It may not silently replace the canonical model, add a result-driven rescue mechanism, or convert a failed robustness exercise into a new headline theorem inside this gate.
+
+If a diagnostic alternative reveals a genuinely valuable new mechanism or shows that a substantive model change could strengthen the paper, route to the earliest affected research stage, implement the change there, and repeat all downstream certification. Stage 7.5A measures and attacks research strength; substantive theory engineering remains subject to rollback and recertification.
+
+## Contribution Robustness Certificate
+
+For each headline claim record:
+
+- canonical claim and mechanism invariant;
+- baseline assumptions plausibly carrying the result;
+- pre-specified alternative formulation(s);
+- ex ante survival/failure criterion;
+- re-solved equilibrium/proof artifact;
+- result under each alternative;
+- abstract sufficient conditions or identified failure boundary, if available;
+- classification: `PORTABLE`, `CONDITIONALLY PORTABLE`, `MODEL-SPECIFIC`, `INSTITUTION-SPECIFIC`, or `FALSIFIED`;
+- strongest manuscript wording licensed by that classification;
+- prohibited stronger wording;
+- stop-rule status and whether further generality engineering is authorized.
+
+Stage 12 must consume this certificate as an input. Stage 12 may not reinterpret a `MODEL-SPECIFIC` claim as portable merely because a preferred journal has a higher generality bar.
 
 ## Formal Verification Gate
 
@@ -471,19 +530,37 @@ Stage 7.5A may issue `GO` only if the project records exactly one acceptable sta
 
 Blocking states include `NOT TESTED`, `PLANNED`, failed compilation, stale formal theorems after scope changes, unresolved statement-fidelity mismatch, unexplained proof placeholders/axioms, or a formal certificate that overstates what the assistant actually proves.
 
-Proof-assistant acceptance is not independent evidence that the economic assumptions/case partition are correct unless those objects are formalized. Formal verification therefore cannot replace Stage 4A globality, multiplicity, continuation, or counterexample certification.
+Proof-assistant acceptance is not independent evidence that the economic assumptions/case partition are correct unless those objects are formalized. Formal verification therefore cannot replace Stage 4A globality, multiplicity, continuation, counterexample certification, or the economic portability tests above.
 
 ## Kill tests
 
-Fail the gate if a broad-function-class strict comparative static is not implied by stated restrictions, curvature/uniqueness is generalized beyond available derivatives, a parametric result is relabeled generic, numerical robustness is called proof, an existence result is called universal uniqueness, a local result is called global, a sufficient condition is called necessary-and-sufficient, a constrained benchmark is mislabeled first best, manuscript prose exceeds the certificate, an admissible counterexample exists inside the claimed class, formal-verification applicability remains unclosed, or an applicable formal certificate has a material statement-fidelity/build/placeholder/conclusion-smuggling defect.
+Fail or downgrade the relevant claim if:
+
+- an alternative formulation is chosen or redesigned after seeing results in order to preserve the preferred sign;
+- a cosmetic perturbation is presented as evidence of economic portability;
+- the alternative model is not re-solved on its own valid strategy/equilibrium domain;
+- a portability failure is omitted from the claim-scope ledger or described only as an unimportant numerical exception;
+- two meaningful pre-specified portability attacks overturn the same claimed cross-model mechanism, no abstract sufficient-condition theorem survives, and the manuscript nevertheless continues to call the mechanism general/robust;
+- a broad-function-class strict comparative static is not implied by stated restrictions;
+- curvature/uniqueness is generalized beyond available derivatives;
+- a parametric result is relabeled generic;
+- numerical robustness is called proof;
+- an existence result is called universal uniqueness;
+- a local result is called global;
+- a sufficient condition is called necessary-and-sufficient;
+- a constrained benchmark is mislabeled first best;
+- manuscript prose exceeds the theorem/equilibrium/portability certificates;
+- an admissible counterexample exists inside the claimed class;
+- formal-verification applicability remains unclosed; or
+- an applicable formal certificate has a material statement-fidelity/build/placeholder/conclusion-smuggling defect.
 
 ## Verdict and routing
 
-- `GO — GENERALITY / QUANTIFIER CERTIFICATION PASS` → Stage 8, but only after the embedded Formal Verification Gate is closed with an acceptable state.
-- `CONDITIONAL GO` → earliest affected stage; pure wording inflation or formal-source/build defects with unchanged mathematics may be corrected and re-audited here, but missing/false mathematics reopens Stage 4/7 as appropriate.
+- `GO — GENERALITY / QUANTIFIER / PORTABILITY CERTIFICATION PASS` → Stage 8, but only after the Contribution Robustness Certificate is complete and the embedded Formal Verification Gate is closed with an acceptable state.
+- `CONDITIONAL GO` → earliest affected stage; pure wording inflation or formal-source/build defects with unchanged mathematics may be corrected and re-audited here, but substantive strengthening, missing/false mathematics, or a new mechanism reopens the appropriate earlier research stage.
 - `NO-GO` → reopen the earliest invalidated stage or terminate.
 
-A narrow exact theorem can pass. The gate penalizes overclaiming, not specialization.
+A narrow exact theorem can pass. A claim may pass as `MODEL-SPECIFIC` or `INSTITUTION-SPECIFIC` when that is its actual research strength. The gate penalizes overclaiming and result-driven rescue, not specialization.
 
 ---
 
@@ -498,7 +575,7 @@ Freeze the theoretical object before manuscript construction.
 Stage 8 is blocked unless the project has:
 
 - Stage 4A `GO — MATHEMATICAL ADVERSARIAL CERTIFICATION PASS`;
-- Stage 7.5A `GO — GENERALITY / QUANTIFIER CERTIFICATION PASS`; and
+- Stage 7.5A `GO — GENERALITY / QUANTIFIER / PORTABILITY CERTIFICATION PASS`; and
 - a closed Stage-7.5A Formal Verification Gate with `FORMAL VERIFICATION PASS` or `FORMALIZATION NOT APPLICABLE — REASON RECORDED`.
 
 ## Freeze at minimum
@@ -517,6 +594,7 @@ Stage 8 is blocked unless the project has:
 - explicit claims not made;
 - Stage-4A theorem certificates;
 - Stage-7.5A claim-scope/quantifier certificates;
+- Stage-7.5A Contribution Robustness Certificate, including per-claim portability classifications, tested alternatives, failure boundaries, and stop-rule status;
 - formal-verification applicability state and certificate/N-A rationale;
 - paper-claim ↔ formal-theorem mapping and explicit non-formalized scope where applicable;
 - proof-assistant/toolchain/library/build and axiom/placeholder provenance where applicable;
@@ -618,6 +696,7 @@ Attack at least:
 - journal fit/contribution level;
 - exposition/claim inflation;
 - theorem quantifier inflation relative to Stage-7.5A certificates;
+- portability/classification inflation relative to the Stage-7.5A Contribution Robustness Certificate;
 - benchmark terminology drift;
 - global/SPNE claims relative to Stage-4A certificates;
 - proof-assistant scope inflation relative to the frozen formal-verification certificate;
@@ -633,7 +712,7 @@ Where formal verification is applicable, inspect the paper-claim ↔ formal-theo
 
 Classify attacks as `FATAL`, `MAJOR BUT FIXABLE`, or `MINOR`.
 
-If Stage 11 discovers a failure that Stage 4A or 7.5A should have caught, record it explicitly as a **certification regression** and route to the earliest affected stage. Do not patch it only in prose. A material change to a formally certified theorem or encoded hypothesis also marks the formal certificate stale.
+If Stage 11 discovers a failure that Stage 4A or 7.5A should have caught, including a manuscript claim that exceeds the frozen portability classification or suppresses a material negative portability result, record it explicitly as a **certification regression** and route to the earliest affected stage. Do not patch it only in prose. A material change to a formally certified theorem or encoded hypothesis also marks the formal certificate stale.
 
 ---
 
@@ -641,12 +720,16 @@ If Stage 11 discovers a failure that Stage 4A or 7.5A should have caught, record
 
 ## Objective
 
-Choose journals based on the actual surviving contribution, not desired prestige, and verify that the ranked shortlist was drawn from a sufficiently broad candidate universe.
+Choose journals based on the actual surviving contribution, not desired prestige, verify that the ranked shortlist was drawn from a sufficiently broad candidate universe, and explicitly match each candidate journal's demonstrated editorial bar to the **certified** strength of the theory.
+
+Stage 12 is where journal-specific calibration occurs. Stage 7.5A is deliberately journal-neutral.
 
 ## Mandatory tasks
 
 Before ranking journals:
 
+- ingest the Stage-7.5A **Contribution Robustness Certificate** and Stage-11 surviving contribution set;
+- treat the portability classifications (`PORTABLE`, `CONDITIONALLY PORTABLE`, `MODEL-SPECIFIC`, `INSTITUTION-SPECIFIC`, `FALSIFIED`) as fixed research evidence unless a later substantive defect reopens an earlier stage;
 - construct a broad candidate universe from the paper's surviving field/audience, contribution and article type, methodological level, manuscript scale, and any materially relevant geographic or institutional audience;
 - do not start from prestige, a remembered target, or a shortlist inherited from prior submissions;
 - cross-check the candidate universe against journals represented in the closest literature from Stages 2/6/11. Treat those venues as omission diagnostics, not automatic targets;
@@ -657,12 +740,24 @@ Before ranking journals:
 Then, for each serious candidate:
 
 - read current aims/scope and recent related papers;
-- compare model sophistication and contribution type with actual publications;
+- compare model sophistication, article type, and contribution style with actual publications;
+- compare the journal's demonstrated generality/robustness expectations with the Contribution Robustness Certificate rather than assuming that journal rank mechanically determines required theory;
 - estimate desk-reject risk and likely referee objections;
 - assess whether empirical content is expected;
+- identify whether the paper fits as general theory, conditional/applied theory, model-specific theory with explicit boundaries, institutional application, correction/note, or another supported article type;
 - define stretch, primary, realistic fallback, and safety-net routes when appropriate.
 
+If a candidate journal appears to require materially stronger generality than the frozen certificate supports, downgrade or reject that **journal candidate**. Do not reopen theory merely to preserve a preferred journal. A new substantive research program may be authorized separately, but it must roll back to the earliest affected research stage and repeat downstream certification.
+
 Do not distort substantive economics to fit a preferred journal family.
+
+## Journal-fit matrix
+
+For each serious candidate, preserve an auditable mapping:
+
+`certified contribution strength → recent comparable papers / official scope → fit or mismatch → desk/referee risk`.
+
+The matrix must distinguish descriptive evidence from judgment. Journal rank, impact factor, quartile, or prestige is not a substitute for evidence about the kind of contribution the journal actually publishes.
 
 ## Completeness gate
 
