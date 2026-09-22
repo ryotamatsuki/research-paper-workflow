@@ -6,7 +6,7 @@
 
 Act as multiple hostile referees and an editor. Try to reject `[WORKING_TITLE]` before external review does.
 
-Stage 11 is a late independent defense layer. It does not replace Stage 4A mathematical adversarial certification or Stage 7.5A generality/quantifier certification.
+Stage 11 is a late independent defense layer. It does not replace Stage 4A mathematical adversarial certification or Stage 7.5A generality/quantifier/portability certification.
 
 ## 1. Project context
 
@@ -18,6 +18,7 @@ Stage 11 is a late independent defense layer. It does not replace Stage 4A mathe
 - Stage-4A equilibrium-set / multiplicity evidence: `[EQUILIBRIUM_SET_CERTIFICATES]`
 - Stage-7 welfare-selection robustness evidence: `[WELFARE_SELECTION_EVIDENCE]`
 - Stage-7.5A claim-scope ledger: `[STAGE_7_5A_CERTIFICATES]`
+- Stage-7.5A Contribution Robustness Certificate: `[CONTRIBUTION_ROBUSTNESS_CERTIFICATE]`
 - Closest papers: `[CLOSEST_PAPERS]`
 - Target journal: `[TARGET_JOURNAL]`
 - Repository/manuscript: `[SOURCE_REPOSITORY]`
@@ -34,7 +35,7 @@ For broad theorem/generalization claims, independently attack admissible functio
 
 ## 3. Canonical inputs
 
-The current full draft, theory freeze, Stage-4A certificates, Stage-7 welfare-selection evidence, and Stage-7.5A claim-scope ledger are the objects under attack. Do not presume acceptance.
+The current full draft, theory freeze, Stage-4A certificates, Stage-7 welfare-selection evidence, Stage-7.5A claim-scope ledger, and Stage-7.5A Contribution Robustness Certificate are the objects under attack. Do not presume acceptance.
 
 ## 4. Allowed changes
 
@@ -70,6 +71,8 @@ Use `checklists/REFEREE_ATTACK_CHECKLIST.md` and explicitly test at least:
 - wrong-journal / insufficient-contribution attack;
 - exposition/claim-inflation attack;
 - theorem-quantifier inflation relative to Stage 7.5A;
+- portability/classification inflation relative to the Stage-7.5A Contribution Robustness Certificate;
+- suppression or dilution of material negative portability results/failure boundaries;
 - functional-form generality inflation;
 - planner/benchmark terminology drift;
 - global/SPNE claim drift relative to Stage 4A.
@@ -155,6 +158,8 @@ At least one high-stakes equilibrium-set attack must search for an alternative e
 
 At least one high-stakes generality attack should search outside the baseline functional form when the manuscript makes a broader claim.
 
+When Stage 7.5A classified a headline result as `MODEL-SPECIFIC`, `INSTITUTION-SPECIFIC`, or `CONDITIONALLY PORTABLE`, verify that the full manuscript preserves that classification, retains the material failure boundary, and does not use broader prose such as `general`, `robust`, or `independent of specification` without new certified evidence.
+
 ## 9. Kill tests
 
 Classify each attack as:
@@ -187,6 +192,8 @@ Typical examples:
 - welfare comparison stated selection-free although it changes across certified equilibria or independent component selections;
 - broad `C^2`/convex/concave claim contradicted by an admissible function;
 - strict comparative static stated beyond proved restrictions;
+- a Stage-7.5A `MODEL-SPECIFIC` or `INSTITUTION-SPECIFIC` claim rewritten as broadly robust/portable in the manuscript;
+- a material negative portability result or failure boundary removed or hidden after theory freeze;
 - constrained benchmark mislabeled `first best` despite Stage 7.5A;
 - a prior `PASS` has no identifiable adversarial attack or evidence artifact.
 
@@ -198,7 +205,7 @@ The regression record should also state which earlier certification question or 
 
 No unresolved fatal attack on the main contribution; major fixes are bounded and do not require uncontrolled theory drift.
 
-Candidate-deviation validity, equilibrium-set characterization at the claimed scope, continuation/globality, welfare-selection robustness, and theorem scope must independently survive the hostile audit where applicable.
+Candidate-deviation validity, equilibrium-set characterization at the claimed scope, continuation/globality, welfare-selection robustness, theorem scope, and the frozen portability classification must independently survive the hostile audit where applicable.
 
 ## 12. Failure criteria
 
@@ -219,14 +226,15 @@ Return to the earliest stage if novelty, mechanism identification, mathematical 
 11. Independent equilibrium/continuation re-audit, where applicable
 12. Welfare-selection regression audit, where applicable
 13. Independent quantifier/function-class re-audit, where applicable
-14. Solver-failure/unresolved-continuation ledger, where applicable
-15. Evidence ledger for material PASS states
-16. Certification-regression ledger
-17. Consolidated severity table
-18. Required fixes and earliest affected stage
-19. Theory-change implications
-20. Resolved vs unresolved attacks
-21. Verdict and Stage-12 contract
+14. Portability/classification regression audit against the Contribution Robustness Certificate
+15. Solver-failure/unresolved-continuation ledger, where applicable
+16. Evidence ledger for material PASS states
+17. Certification-regression ledger
+18. Consolidated severity table
+19. Required fixes and earliest affected stage
+20. Theory-change implications
+21. Resolved vs unresolved attacks
+22. Verdict and Stage-12 contract
 
 ## 14. Final verdict
 
@@ -238,4 +246,4 @@ Choose one:
 
 ## 15. Next-stage contract
 
-Stage 12 selects a journal for the actual surviving certified contribution. It must not reshape the result, enlarge theorem scope, or suppress equilibrium-selection qualifications to fit a preferred journal.
+Stage 12 selects a journal for the actual surviving certified contribution and consumes the frozen Contribution Robustness Certificate. It must not reshape the result, enlarge theorem scope, inflate portability, or suppress equilibrium-selection/failure-boundary qualifications to fit a preferred journal.
