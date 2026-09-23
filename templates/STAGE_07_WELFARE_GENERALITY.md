@@ -77,7 +77,7 @@ You may add welfare notation, explicitly defined planner benchmarks, equilibrium
    - `GENERAL THEOREM`.
 16. If a broad function class is contemplated, record the exact shape/derivative restrictions believed necessary. Do not declare the broad theorem here unless already proved/certified.
 17. Derive empirical predictions or comparative statics that could discipline the model.
-18. Perform a **result-to-exposition triage** for every surviving headline result. Assign theorem/proposition, figure, table, numerical illustration, or concise prose and record why. Flag thresholds, non-monotonicity, regime changes, benchmark separation, welfare decomposition, equilibrium-selection dependence, or multi-parameter scope patterns for visual/table consideration when useful.
+18. Perform a **result-to-exposition triage** for every surviving headline result. Assign theorem/proposition, figure, table, numerical illustration, or concise prose and record why. Flag thresholds, non-monotonicity, regime changes, benchmark separation, welfare decomposition, equilibrium-selection dependence, or multi-parameter scope patterns for visual/table consideration when useful. Use `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md` only for candidate-vehicle planning at this stage; the full section-role, reader-arrival, necessity, and exhibit-scarcity design is a Stage-10 obligation.
 19. Preserve an evidence row for each headline welfare claim: `claim -> equilibrium-set/selection attack -> proof/code/artifact -> surviving limitation`.
 
 The Stage-7 triage is planning, not a mandate to create graphics before theory freeze. There is no minimum figure quota.

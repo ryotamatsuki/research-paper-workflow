@@ -19,6 +19,22 @@ Canonical hierarchy:
 
 `GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → stage templates → checklists → examples.
 
+## v2.5 minor revision: exposition architecture / streamlining hardening
+
+v2.5 preserves the Stage architecture, verdict semantics, routing, rollback rules, and freeze meanings. It generalizes an Igami-style exposition discipline into the existing Stage 7 → 10 → 13 → 14 lifecycle rather than adding a new Stage.
+
+- **Stage 10 designs exposition:** article-type profile, section-role map, reader-arrival budget, model/evidence consolidation, main-text necessity test, and five-exhibit thought experiment.
+- **Stage 13 streamlines the integrated paper:** Introduction compression, section-purity audit, CORE/HELPFUL/APPENDIX/DELETE classification, actual page-arrival audit, exhibit pruning, and compression-without-damage verification.
+- **Stage 14 verifies rather than rewrites:** a structural exposition failure reopens Stage 13; an architecture failure may reopen Stage 10; a substantive theory/evidence/novelty repair returns to the earliest affected research stage.
+- Paper-specific page landmarks are diagnostics, not universal limits. Journal instructions, article type, and scientific completeness control.
+- Separate defaults are provided for theory-first papers, structural/quantitative/empirical papers, and correction/comment/reassessment papers.
+
+The key rule is: **minimize reader cost subject to complete and accurate scientific communication**.
+
+Operational checklist: [`checklists/EXPOSITION_STREAMLINING_CHECKLIST.md`](checklists/EXPOSITION_STREAMLINING_CHECKLIST.md).
+
+Regression/design record: [`docs/EXPOSITION_STREAMLINING_REFINEMENT_2026-09-24.md`](docs/EXPOSITION_STREAMLINING_REFINEMENT_2026-09-24.md).
+
 ## v2.4 minor revision: economic portability / falsification hardening
 
 v2.4 preserves the Stage architecture, verdict semantics, routing, rollback rules, and freeze meanings. It strengthens the pre-freeze research-strength audit and makes its relationship with Stage 12 explicit.
@@ -256,6 +272,7 @@ Reusable checklists live under [`checklists/`](checklists/), including:
 - **[`PORTABILITY_FALSIFICATION_CHECKLIST.md`](checklists/PORTABILITY_FALSIFICATION_CHECKLIST.md)**
 - **[`PAPER_SPECIFIC_CERTIFICATION_INHERITANCE_CHECKLIST.md`](checklists/PAPER_SPECIFIC_CERTIFICATION_INHERITANCE_CHECKLIST.md)**
 - [`FIGURE_TABLE_CHECKLIST.md`](checklists/FIGURE_TABLE_CHECKLIST.md)
+- **[`EXPOSITION_STREAMLINING_CHECKLIST.md`](checklists/EXPOSITION_STREAMLINING_CHECKLIST.md)**
 - [`REFEREE_ATTACK_CHECKLIST.md`](checklists/REFEREE_ATTACK_CHECKLIST.md)
 - **[`JOURNAL_REQUIREMENTS_CHECKLIST.md`](checklists/JOURNAL_REQUIREMENTS_CHECKLIST.md)**
 - [`SUBMISSION_CHECKLIST.md`](checklists/SUBMISSION_CHECKLIST.md)
@@ -281,6 +298,7 @@ For actual submissions, the most specific current authority controls: direct edi
 - `v2.2` — minor release adding formal-verification closure plus Stage-4 canonical mathematical representation, Stage-6 theorem-level absorption mapping, and Stage-11 known-model-in-disguise regression attack.
 - `v2.3` — minor release adding contribution-first journal-candidate generation, literature-venue completeness cross-checking, conditional source-journal review for correction-type papers, and an explicit Stage-12 candidate-universe closure gate.
 - `v2.4` — prospective minor refinement adding pre-freeze economic portability/falsification certification, the Contribution Robustness Certificate, a research-creep stop rule, and explicit Stage-7.5A → Stage-12 separation.
+- `v2.5` — prospective minor refinement adding generalized exposition architecture, reader-arrival budgets, section-purity and necessity tests, the five-exhibit thought experiment, Stage-13 streamlining, and Stage-14 exposition verification/rollback.
 
 Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), v2.0 is MAJOR because it adds Stage 4A and Stage 7.5A and changes canonical routing.
 
@@ -299,7 +317,7 @@ The formal-verification refinement and the v2.2 structural-isomorphism/theorem-a
 9. Use Stage 7.5 to decide whether a full paper is justified, then run Stage 7.5A before theory freeze.
 10. Within Stage 7.5A, first certify economic portability using pre-specified diagnostic alternatives and produce the Contribution Robustness Certificate; then close the Formal Verification Gate with targeted proof-assistant verification when applicable or a defensible N/A rationale. Do not let `NOT TESTED` or `PLANNED` pass, and do not use a preferred journal to define portability.
 11. Freeze theory only after Stage 4A, Stage 7.5A, and the embedded formal-verification state are all green.
-12. At Stage 7 identify exposition vehicles; at Stage 10 implement figure/table architecture; at Stage 13 integrate it; at Stage 14 verify it.
+12. At Stage 7 identify candidate exposition vehicles; at Stage 10 design the full exposition architecture and figure/table architecture; at Stage 13 integrate and aggressively streamline the actual manuscript; at Stage 14 verify the final exposition state and roll back structural failures instead of performing a late substantive rewrite. Apply `EXPOSITION_STREAMLINING_CHECKLIST.md` across the lifecycle.
 13. At Stage 11 repeat hostile mathematical, equilibrium-set, welfare-selection, theorem-scope, formal-claim-boundary, and **known-model-in-disguise/theorem-absorption** attacks from a fresh perspective.
 14. At Stage 12 consume the Stage-7.5A Contribution Robustness Certificate, construct the journal candidate universe from the surviving contribution before ranking, compare the certified theory strength with current scope and recent comparable papers, cross-check closest-literature venues for omissions without automatic inclusion, and record explicit exclusion reasons for materially plausible alternatives. If a journal requires stronger substantive generality than certified, downgrade/reject the journal candidate rather than silently redesigning the theory.
 15. At Stage 14 rebuild applicable formal artifacts or verify the frozen formal build remains reproducible and consistent with the submitted theorem scope.
@@ -333,6 +351,6 @@ Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 ## Status
 
-Current canonical repository revision on this branch: **v2.3** (minor revision candidate).
+Current canonical repository revision on this branch: **v2.5** (minor revision candidate).
 
-The latest stable published tag remains **`v2.2`** until the v2.3 change is reviewed, merged, tagged, and released. Previous stable tags, including `v2.1` and `v1.0`–`v1.3`, remain immutable. The v2.0 architecture was merged and audited but not separately tagged; v2.1 was the first stable tagged release in the v2 line.
+The latest stable published tag remains **`v2.2`** until the accumulated post-v2.2 minor revisions are reviewed, merged, tagged, and released. Previous stable tags, including `v2.1` and `v1.0`–`v1.3`, remain immutable. The v2.0 architecture was merged and audited but not separately tagged; v2.1 was the first stable tagged release in the v2 line.

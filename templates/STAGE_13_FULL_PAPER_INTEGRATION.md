@@ -17,7 +17,7 @@ Act as a field-journal editor and manuscript integrator. Convert independently c
 
 ## 2. Stage objective
 
-Audit the complete manuscript for argument flow, section roles, claim consistency, notation, literature positioning, figure/table integration, and journal-appropriate exposition.
+Audit the complete manuscript for argument flow, section roles, claim consistency, notation, literature positioning, figure/table integration, and journal-appropriate exposition. Then perform the primary manuscript streamlining pass: reduce reader cost without weakening theorem/evidence scope or reproducibility.
 
 Carry the Stage-12 Journal Requirements Ledger into manuscript integration so known journal-specific requirements affect the package before final QA. Stage 14 must still refresh those requirements from current official sources.
 
@@ -38,6 +38,19 @@ No new theory, unverified claim, extra robustness result, literature claim, or a
 Do not guess unresolved journal requirements. Preserve them explicitly for Stage 14.
 
 ## 6. Mandatory tasks
+
+Apply `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md` to the actual integrated manuscript and preserve `EXPOSITION_STREAMLINING_REPORT.md` or equivalent evidence. This is the primary streamlining gate; Stage 14 should not be the first time structural excess is discovered.
+
+At minimum:
+
+- confirm the article-type exposition profile;
+- run the Introduction compression test;
+- run the section-purity test;
+- rerun the reader-arrival budget using actual page numbers/order;
+- classify major sections, subsections, exhibits, and paragraph clusters as `CORE`, `HELPFUL`, `APPENDIX`, or `DELETE`;
+- rerun the five-exhibit thought experiment or stricter scale-appropriate scarcity test;
+- relocate/delete redundant material and then run the compression-without-damage audit;
+- verify that model assumptions, theorem domains/quantifiers, evidence, caveats, citation support, and formal-verification boundaries remain visible after compression.
 
 Audit the manuscript section by section:
 
@@ -124,12 +137,19 @@ Compile/build after integration. Search globally for notation variants, stale cl
 
 Build any planned anonymous/identified/title-page variants and compare them for accidental content drift. Confirm known journal requirements have been implemented consistently while unresolved requirements remain visible for Stage 14.
 
+Compare the post-streamlining manuscript against the Stage-10 `EXPOSITION_ARCHITECTURE.md`: record actual arrival pages for the question, main finding, core model/evidence, and first headline result; explain material deviations; and verify that deleted/relocated material did not create an evidence or scope gap.
+
 ## 9. Kill tests
 
 Block submission QA if:
 
 - sections make inconsistent contribution claims;
 - the Introduction oversells a killed result;
+- the Introduction delays the question/main finding through avoidable background or literature exposition;
+- model assumptions or economically material primitives are scattered across sections without justification;
+- the integrated manuscript has not been subjected to the `CORE` / `HELPFUL` / `APPENDIX` / `DELETE` necessity audit;
+- the exhibit inventory has not survived the five-exhibit or scale-appropriate scarcity challenge;
+- compression removes a material assumption, theorem restriction, caveat, source link, or formal-verification boundary;
 - Discussion/Conclusion adds unmodeled policy claims;
 - Related Literature misstates a closest paper;
 - notation or parameter restrictions differ across sections;
@@ -161,14 +181,15 @@ Bounded journal-format/package issues may remain for Stage 14 only when they are
 4. Related-literature structure audit
 5. Results/Discussion separation audit
 6. Abstract/intro/conclusion alignment
-7. Figure/Table Architecture reconciliation and journal-specific integration audit
-8. Journal Requirements Ledger integration status
-9. Known manuscript/title-page/declaration/source-package requirements implemented
-10. `UNVERIFIED` or authenticated-portal-only requirements carried forward
-11. Notation/citation/cross-reference audit
-12. Changes made
-13. Remaining blockers
-14. Verdict and Stage 14 contract
+7. Exposition Streamlining Report: profile, section-role audit, actual reader-arrival pages, `CORE` / `HELPFUL` / `APPENDIX` / `DELETE` decisions, five-exhibit/scarcity result, and compression-without-damage result
+8. Figure/Table Architecture reconciliation and journal-specific integration audit
+9. Journal Requirements Ledger integration status
+10. Known manuscript/title-page/declaration/source-package requirements implemented
+11. `UNVERIFIED` or authenticated-portal-only requirements carried forward
+12. Notation/citation/cross-reference audit
+13. Changes made
+14. Remaining blockers
+15. Verdict and Stage 14 contract
 
 ## 13. Final verdict
 
@@ -182,4 +203,4 @@ Choose one:
 
 Stage 14 verifies the complete submission package and **refreshes all material journal requirements from current official sources**. It should not be the first stage at which the project decides whether a central result needs a figure or table, but it is the mandatory stage at which journal-compliance evidence is re-opened, dated, reconciled, and made fail-closed.
 
-Stage 14 may repair formatting/package defects but should not materially rewrite the theory, contribution, or exposition architecture.
+Stage 14 may repair formatting/package defects but should not materially rewrite the theory, contribution, or exposition architecture. A structural exposition failure discovered there normally reopens Stage 13; an architecture-design failure may reopen Stage 10.

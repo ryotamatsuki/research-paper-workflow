@@ -40,11 +40,12 @@ Do not guess a journal requirement in order to close QA. Material unknowns remai
 
 ## 6. Mandatory tasks
 
-Use all three:
+Use all four:
 
 - `checklists/SUBMISSION_CHECKLIST.md`;
 - `checklists/JOURNAL_REQUIREMENTS_CHECKLIST.md`;
-- `checklists/FIGURE_TABLE_CHECKLIST.md`.
+- `checklists/FIGURE_TABLE_CHECKLIST.md`;
+- `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md`.
 
 At minimum verify:
 
@@ -77,7 +78,10 @@ At minimum verify:
 27. the source archive contains all required manuscript and figure/table source files and no unnecessary sensitive/internal files;
 28. final locally generated PDF receives visual QA page by page, including every figure/table page at readable resolution;
 29. authenticated portal-only requirements are either checked directly or explicitly isolated as the sole remaining `CONDITIONAL PASS` item for Stage 15 preflight;
-30. any material requirement still unresolved after current journal/publisher/portal research is escalated to the journal/editorial office or submission support, and the resulting clarification is preserved and incorporated before full PASS.
+30. any material requirement still unresolved after current journal/publisher/portal research is escalated to the journal/editorial office or submission support, and the resulting clarification is preserved and incorporated before full PASS;
+31. the Stage-13 `EXPOSITION_STREAMLINING_REPORT.md` or equivalent evidence is present and consistent with the final manuscript;
+32. the final PDF still passes the Introduction compression, section-purity, reader-arrival, main-text necessity, exhibit-scarcity, and concise/no-new-claims conclusion checks;
+33. journal formatting has not reintroduced avoidable exposition regressions or forced a late substantive rewrite.
 
 ## 7. Journal-requirement evidence hierarchy
 
@@ -145,7 +149,9 @@ Submission freeze is blocked by:
 - any unresolved material `CONFLICT` between official sources;
 - reliance on memory/inference where a current official requirement should be verified;
 - a material ambiguity that still requires editorial-office clarification;
-- theoretical change discovered during QA.
+- theoretical change discovered during QA;
+- structural exposition failure that would require nontrivial reordering, deletion/relocation, or rewriting beyond bounded formatting cleanup;
+- missing Stage-13 streamlining evidence or an unexplained regression against the approved exposition architecture.
 
 If Stage 14 discovers that a **central result lacks an appropriate exposition vehicle**, return to Stage 10 or Stage 13 depending on whether the missing work is architecture/design or bounded integration. Do not patch over that gap with an unverified last-minute visual.
 
@@ -153,7 +159,7 @@ If Stage 14 discovers that a **central result lacks an appropriate exposition ve
 
 All material checks pass, and the Journal Requirements Ledger contains no material `UNVERIFIED` or unresolved `CONFLICT` items.
 
-The final package must be mathematically reproducible, visually legible, journal-compliant, source-complete, internally consistent, and mapped explicitly to current official submission requirements.
+The final package must be mathematically reproducible, visually legible, journal-compliant, source-complete, internally consistent, mapped explicitly to current official submission requirements, and consistent with the Stage-13 exposition architecture/streamlining record.
 
 The only allowed exception is a documented `CONDITIONAL PASS — AUTHENTICATED PORTAL PREFLIGHT REQUIRED` when every non-portal requirement passes and the remaining items can only be resolved inside the authenticated submission system.
 
@@ -178,11 +184,12 @@ If a live journal requirement contradicts an internal workflow assumption, the c
 11. Metadata/portal-field result
 12. Fees/access/licensing result when material
 13. Editorial-office clarification record for any escalated material ambiguity
-14. Local PDF visual QA result
-15. Authenticated portal preflight status
-16. Package inventory, including figure/table and LaTeX/source dependencies
-17. Remaining warnings
-18. Verdict and Stage 15 contract
+14. Exposition verification result, including Stage-13 report consistency and any rollback decision
+15. Local PDF visual QA result
+16. Authenticated portal preflight status
+17. Package inventory, including figure/table and LaTeX/source dependencies
+18. Remaining warnings
+19. Verdict and Stage 15 contract
 
 ## 14. Final verdict
 
