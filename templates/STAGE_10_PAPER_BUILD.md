@@ -47,7 +47,7 @@ Unless project dependencies justify another sequence, build:
 5. Robustness/extensions approved at freeze
 6. Institutional / empirical bridge
 7. Related Literature
-8. **Figure/Table Architecture Gate**
+8. **Exposition Architecture Gate, including Figure/Table Architecture**
 9. Introduction
 10. Discussion
 11. Conclusion
@@ -63,9 +63,27 @@ For each section:
 7. review for scope and overclaiming;
 8. commit through a controlled branch/PR when repository policy requires it.
 
-## 6A. Mandatory Figure/Table Architecture Gate
+## 6A. Mandatory Exposition Architecture Gate
 
-Before drafting or finalizing the Introduction, create a manuscript-level exposition map. For every headline theorem, comparative static, welfare result, benchmark contrast, robustness result, and scope condition, assign one primary presentation vehicle:
+Apply `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md` before drafting or finalizing the Introduction. Select the article-type exposition profile, assign one dominant function to each main section, define a reader-arrival budget, consolidate model/evidence content, and identify material that is likely to belong in the Appendix or be deleted.
+
+Recommended artifact: `EXPOSITION_ARCHITECTURE.md`.
+
+The architecture must record at least:
+
+- the page/section target for the research question and why it matters;
+- the page/section target for the main finding;
+- the page/section target for core primitives/data and the full core model or identification logic;
+- the page/section target for the first headline result;
+- the dominant role of each main section;
+- obvious `CORE`, `HELPFUL`, `APPENDIX`, and `DELETE` candidates;
+- the exhibit-scarcity ranking, including the five-exhibit thought experiment for a full-length paper and a stricter equivalent for short notes/corrections.
+
+Paper-specific page landmarks are diagnostic examples only. Current journal instructions, article type, and scientific completeness control.
+
+### Figure/Table Architecture
+
+For every headline theorem, comparative static, welfare result, benchmark contrast, robustness result, and scope condition, assign one primary presentation vehicle. For every headline theorem, comparative static, welfare result, benchmark contrast, robustness result, and scope condition, assign one primary presentation vehicle:
 
 - theorem/proposition;
 - figure;
@@ -114,6 +132,10 @@ Stop and reopen earlier stages if writing reveals:
 
 Do not declare Stage 10 complete if:
 
+- the exposition profile, section-role map, reader-arrival budget, or main-text necessity audit is missing;
+- the core model/evidence is scattered across sections without a documented reason;
+- obvious APPENDIX/DELETE material is knowingly deferred to Stage 14;
+- the five-exhibit thought experiment or scale-appropriate scarcity test has not been run;
 - a headline result has no explicit exposition vehicle;
 - a visual is necessary to make a central threshold/regime/benchmark result intelligible but remains unimplemented without a documented reason;
 - a figure/table is based on hand-entered or unverified values;
@@ -121,7 +143,7 @@ Do not declare Stage 10 complete if:
 
 ## 10. Success criteria
 
-Each section must compile, be internally consistent, and add a distinct function to the paper rather than repeating earlier sections. Every headline result must have an explicit exposition vehicle, and every figure/table designated as required must be implemented reproducibly before the full draft is sent to Stage 11.
+Each section must compile, be internally consistent, and add a distinct function to the paper rather than repeating earlier sections. Every headline result must have an explicit exposition vehicle, and every figure/table designated as required must be implemented reproducibly before the full draft is sent to Stage 11. The manuscript must also have an explicit exposition profile, section-role map, reader-arrival budget, and documented main-text necessity/exhibit-scarcity audit.
 
 ## 11. Failure criteria
 
@@ -142,9 +164,10 @@ For each section report:
 At Stage completion additionally provide:
 
 8. full section map
-9. Figure/Table Architecture map
-10. figure/table generators and verification status
-11. remaining manuscript gaps
+9. `EXPOSITION_ARCHITECTURE.md` or equivalent section-role/reader-arrival/main-text necessity record
+10. Figure/Table Architecture map and five-exhibit thought experiment
+11. figure/table generators and verification status
+12. remaining manuscript gaps
 
 ## 13. Final verdict
 
@@ -156,4 +179,4 @@ Choose one:
 
 ## 14. Next-stage contract
 
-Stage 11 attacks the completed manuscript and model; it does not add unmotivated extensions. Any required figure/table already identified at Stage 10 should travel with the draft into Stage 11 rather than be postponed to Stage 13 or 14.
+Stage 11 attacks the completed manuscript and model; it does not add unmotivated extensions. Any required figure/table already identified at Stage 10 should travel with the draft into Stage 11 rather than be postponed to Stage 13 or 14. Stage 13 will rerun `EXPOSITION_STREAMLINING_CHECKLIST.md` against the integrated manuscript and actual page order; Stage 14 only verifies the resulting architecture.
