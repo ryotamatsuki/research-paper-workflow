@@ -1,6 +1,6 @@
 # Theory Paper Research Pipeline
 
-Version: v2.4
+Version: v2.5
 
 ## 1. Purpose
 
@@ -78,6 +78,28 @@ The governing distinction is:
 A Stage-6 novelty PASS requires an evidence-bearing explanation of why the strongest plausible parent theorem does **not** absorb the headline result, or an explicit downgrade to application/interpretation contribution if it does.
 
 
+### v2.5 exposition architecture / streamlining hardening
+
+v2.5 is a backward-compatible minor refinement. It adds no Stage, changes no canonical verdict meaning, and changes no normal research routing.
+
+Its purpose is to prevent scientifically correct papers from reaching submission with avoidable reader-cost, scattered model content, redundant exhibits, or late-stage structural rewrites. It generalizes an Igami-style exposition discipline without treating paper-specific page landmarks as universal rules.
+
+The exposition lifecycle is:
+
+`Stage 7 → Stage 10 → Stage 13 → Stage 14`.
+
+1. **Stage 7 — candidate vehicles:** identify candidate theorem/proposition/figure/table/numerical/prose vehicles for headline results.
+2. **Stage 10 — architecture design:** choose an article-type exposition profile, define section roles and reader-arrival targets, consolidate the model/evidence architecture, and run an exhibit-scarcity thought experiment before finalizing the Introduction.
+3. **Stage 13 — streamlining:** audit the integrated manuscript item by item, classify material as `CORE` / `HELPFUL` / `APPENDIX` / `DELETE`, compress the Introduction, enforce section purity, rerun actual page-arrival diagnostics, and remove or relocate redundant material without weakening theorem/evidence scope.
+4. **Stage 14 — verification:** perform a binary exposition audit on the final package. A structural exposition failure normally reopens Stage 13; an architecture failure may reopen Stage 10; a substantive theory/evidence/novelty change reopens the earliest affected research stage.
+
+Generic page counts are diagnostics only. Current journal instructions and article type control. The paper-specific milestones that motivated this refinement may be used as examples for a conventional structural/empirical paper, but they are never universal pass/fail thresholds.
+
+Every project using the exposition lifecycle must apply `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md` together with `checklists/FIGURE_TABLE_CHECKLIST.md` where figures/tables are present.
+
+The governing objective is **minimum reader cost subject to complete and accurate scientific communication**, not maximum brevity.
+
+
 ### v2.4 economic portability / falsification hardening
 
 v2.4 is a backward-compatible minor refinement. It adds no Stage, changes no canonical verdict meaning, and changes no normal routing.
@@ -149,11 +171,13 @@ For theorem-bearing stages preserve a claim/proposition register. For headline m
 For manuscript exposition, use the four-step lifecycle:
 
 - Stage 7 — identify candidate exposition vehicles;
-- Stage 10 — design and implement the figure/table architecture;
-- Stage 13 — integrate for the target journal;
-- Stage 14 — verify regeneration, numerical integrity, artwork compliance, source completeness, and legibility.
+- Stage 10 — design the full exposition architecture, including section roles, reader-arrival targets, model/evidence consolidation, and figure/table architecture;
+- Stage 13 — integrate and aggressively streamline the target-journal manuscript using actual page/order evidence;
+- Stage 14 — verify that the final package still satisfies the exposition architecture while also checking regeneration, numerical integrity, artwork compliance, source completeness, and legibility.
 
-There is no minimum figure/table quota. Every visual must materially reduce the reader's cost of understanding a verified result.
+Apply `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md` across this lifecycle. Stage 10 is the design gate, Stage 13 is the streamlining gate, and Stage 14 is a verification gate rather than the normal place for a late structural rewrite.
+
+There is no minimum figure/table quota. Every visual must materially reduce the reader's cost of understanding a verified result. The five-exhibit thought experiment is a prioritization device, not a universal exhibit limit.
 
 ---
 
@@ -657,6 +681,24 @@ Build the manuscript in dependency order and establish the Figure/Table Architec
 10. Discussion
 11. Conclusion
 
+## Exposition Architecture Gate
+
+Before finalizing the Introduction, apply `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md` and create an exposition architecture for the manuscript.
+
+At minimum:
+
+- choose the appropriate exposition profile: theory-first, structural/quantitative/empirical, correction/comment/reassessment, or a justified alternative;
+- map each main section to one dominant function and separate background facts from modeling choices;
+- define a reader-arrival budget for the question, main finding, core primitives/data, full core model or identification logic, and first headline result;
+- ensure economically material model primitives, timing, information, strategies, payoffs, constraints, equilibrium concepts, and benchmark definitions are not scattered across unrelated sections;
+- run the main-text necessity test and identify obvious `APPENDIX` / `DELETE` candidates;
+- run the five-exhibit thought experiment for full-length papers, adjusted downward for short notes/corrections;
+- preserve assumptions, scope conditions, evidence, and formal-verification boundaries even when compressing.
+
+Recommended production artifact: `EXPOSITION_ARCHITECTURE.md`.
+
+Paper-specific page landmarks are soft diagnostics only. Current journal/article-type requirements control.
+
 ## Figure/Table Architecture Gate
 
 Assign every headline theorem, comparative static, welfare result, benchmark contrast, robustness result, and scope condition one primary vehicle: theorem/proposition, figure, table, numerical illustration, or concise prose.
@@ -667,7 +709,7 @@ There is no minimum visual count.
 
 ## Exit criterion
 
-Each section compiles, matches the frozen theory and theorem certificates, and is integrated through controlled changes. Every headline result has an explicit exposition vehicle and every required figure/table is reproducibly implemented or has a documented blocker.
+Each section compiles, matches the frozen theory and theorem certificates, and is integrated through controlled changes. Every headline result has an explicit exposition vehicle and every required figure/table is reproducibly implemented or has a documented blocker. The exposition architecture is explicit, the Introduction is not finalized before that architecture exists, and no known reader-arrival or section-purity blocker is deferred to Stage 14.
 
 ---
 
@@ -775,6 +817,17 @@ Turn independently correct sections into one coherent argument and reconcile the
 
 ## Audit
 
+Apply `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md` to the actual integrated manuscript before submission QA. Stage 13 is the primary streamlining gate.
+
+- select/confirm the article-type exposition profile;
+- run the Introduction compression test: question, importance, setting/model choice, finding, method, novelty, and scope should be discoverable with low reader search cost;
+- run the section-purity test and remove model assumptions from Background-style prose unless the placement is explicitly justified;
+- rerun the reader-arrival budget using actual page numbers/order;
+- classify major sections, subsections, exhibits, and paragraph clusters as `CORE`, `HELPFUL`, `APPENDIX`, or `DELETE`;
+- rerun the five-exhibit thought experiment and challenge all lower-priority exhibits for merger, Appendix relocation, or deletion;
+- remove repetitive contribution statements, duplicated intuition, redundant literature exposition, and main-text/appendix duplication;
+- after compression, verify that assumptions, theorem domains, quantifiers, evidence, caveats, source links, and formal-verification boundaries remain intact;
+- preserve an `EXPOSITION_STREAMLINING_REPORT.md` or equivalent auditable artifact.
 - Introduction states question, mechanism, result, and contribution without exceeding the Stage-7.5A claim-scope ledger.
 - Related Literature is organized by conceptual relationship.
 - Model introduces no assumptions solely to rescue prose.
@@ -811,8 +864,9 @@ Verify the complete submission package, including mathematical artifacts and art
 - journal formatting/anonymity/supplement/disclosure requirements are satisfied;
 - abstract, highlights, cover letter, manuscript, theorem scope, and any formal-verification claim agree;
 - final PDF is inspected page by page.
+- the final PDF passes the Stage-13 exposition architecture/streamlining audit: Introduction compression, section purity, reader-arrival budget, exhibit scarcity, and concise/no-new-claims conclusion; any structural failure reopens Stage 13 rather than being solved by an unreviewed late rewrite.
 
-Use `checklists/SUBMISSION_CHECKLIST.md`, `checklists/FIGURE_TABLE_CHECKLIST.md`, and the frozen `checklists/FORMAL_VERIFICATION_CHECKLIST.md` certificate/N-A rationale where applicable.
+Use `checklists/SUBMISSION_CHECKLIST.md`, `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md`, `checklists/FIGURE_TABLE_CHECKLIST.md`, and the frozen `checklists/FORMAL_VERIFICATION_CHECKLIST.md` certificate/N-A rationale where applicable.
 
 A substantive mathematical, novelty, theory, welfare, institutional, claim-scope, or formal-statement mismatch triggers rollback to the earliest affected stage and a fresh downstream QA cycle.
 
@@ -898,7 +952,11 @@ Formal verification strengthens assurance; it is not itself a substitute for an 
 
 ## 3.8 Exposition architecture integrity
 
-Figures/tables are evidence-bearing manuscript objects, not decoration. They may not create a weaker proof standard or hide theorem scope restrictions.
+Exposition is a cross-stage scientific-communication object, not a cosmetic Stage-14 concern. Apply `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md` across Stages 7/10/13/14.
+
+Stage 10 designs section roles, reader-arrival targets, model/evidence consolidation, and the Figure/Table Architecture. Stage 13 performs the aggressive streamlining pass on the integrated manuscript. Stage 14 verifies the resulting architecture and rolls back rather than performing a late substantive rewrite.
+
+Figures/tables are evidence-bearing manuscript objects, not decoration. They may not create a weaker proof standard or hide theorem scope restrictions. Generic page or exhibit counts are diagnostics only; current journal/article-type rules and scientific completeness control.
 
 ## 3.9 Provenance and evidence maturity
 
