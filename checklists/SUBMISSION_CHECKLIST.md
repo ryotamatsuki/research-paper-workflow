@@ -5,7 +5,8 @@ Use immediately before Stage 15 freeze. Verify journal-specific items against cu
 This checklist must be used together with:
 
 - [`JOURNAL_REQUIREMENTS_CHECKLIST.md`](JOURNAL_REQUIREMENTS_CHECKLIST.md) for current journal/portal rules and evidence hierarchy;
-- [`FIGURE_TABLE_CHECKLIST.md`](FIGURE_TABLE_CHECKLIST.md) for figure/table design, reproducibility, artwork, and accessibility.
+- [`FIGURE_TABLE_CHECKLIST.md`](FIGURE_TABLE_CHECKLIST.md) for figure/table design, reproducibility, artwork, and accessibility;
+- [`EXPOSITION_STREAMLINING_CHECKLIST.md`](EXPOSITION_STREAMLINING_CHECKLIST.md) for Stage-13 streamlining evidence and Stage-14 exposition verification.
 
 A material journal requirement is not closed merely because a box is checked. The production repository must preserve a current `JOURNAL_REQUIREMENTS_LEDGER.md` or equivalent with source, access date, interpretation, affected artifact/portal field, and verification status.
 
@@ -74,6 +75,23 @@ A material journal requirement is not closed merely because a box is checked. Th
 - [ ] Appendix/supplement references match
 - [ ] Abstract, introduction, results, discussion, conclusion claims agree
 - [ ] No theory drift from frozen model
+
+## Exposition / streamlining integrity
+
+- [ ] Stage-13 `EXPOSITION_STREAMLINING_REPORT.md` or equivalent evidence exists
+- [ ] Exposition profile matches the article type
+- [ ] Research question and main finding arrive without avoidable delay
+- [ ] Introduction states question, importance, finding, method, novelty, and scope with low reader search cost
+- [ ] Background/context does not hide material model assumptions
+- [ ] Core model/evidence is consolidated rather than scattered without justification
+- [ ] Actual reader-arrival pages/order have been checked against the Stage-10 architecture
+- [ ] Major main-text material has survived the `CORE` / `HELPFUL` / `APPENDIX` / `DELETE` necessity audit
+- [ ] Five-exhibit thought experiment or stricter scale-appropriate scarcity test was completed
+- [ ] Redundant main-text exhibits were merged, moved, or removed unless justified
+- [ ] Conclusion is concise and introduces no new substantive claim
+- [ ] Compression did not remove assumptions, theorem scope, evidence, caveats, citations, or formal-verification boundaries
+- [ ] Journal formatting did not reintroduce an avoidable exposition regression
+- [ ] Any structural exposition failure has been routed back to Stage 13/10 rather than repaired by an unreviewed late substantive rewrite
 
 ## Figures / tables / artwork
 
