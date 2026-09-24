@@ -19,6 +19,21 @@ Canonical hierarchy:
 
 `GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → stage templates → checklists → examples.
 
+## Prospective v2.7 minor revision: reviewer verifiability / proof exposition hardening
+
+This refinement preserves the Stage architecture, verdict semantics, routing, rollback rules, and freeze meanings. It adds an explicit specialist-referee standard for technical exposition: correctness and reproducibility are not enough if the manuscript hides the derivation or proof-critical bridge that connects model/data primitives to the claimed result.
+
+- **Stage 10:** identify the derivation/proof chain for each headline result and mark short **bridge equations** that must remain visible.
+- **Stage 11:** perform an independent reviewer-reconstruction attack from the manuscript-facing package rather than the production derivation/code path.
+- **Stage 13:** require a reviewer-verifiability audit of the integrated manuscript; streamlining may remove routine algebra but not conceptual bridges.
+- **Stage 14:** verify that journal formatting did not break proof boundaries, definitions, bridge equations, appendix cross-references, or computer-assisted-proof mappings.
+- **Computer-assisted proofs:** the manuscript need not print giant polynomial expansions, coefficient lists, root-isolation traces, or kernel output, but it must identify the mathematical object, domain, certified property, and why that property implies the paper claim.
+- The target reader is a competent specialist referee, not an undergraduate. The standard is **auditable expert exposition**, not pedagogical completeness.
+
+Operational checklist: [`checklists/REVIEWER_VERIFIABILITY_CHECKLIST.md`](checklists/REVIEWER_VERIFIABILITY_CHECKLIST.md).
+
+The key rule is: **compress routine algebra; preserve proof-critical bridges.**
+
 ## Prospective v2.6 minor revision: AI provenance / human accountability hardening
 
 This refinement preserves the Stage architecture, verdict semantics, routing, rollback rules, and freeze meanings. It strengthens the existing workflow so AI assistance, author verification, computation, formal proof, and external human review cannot be conflated.
