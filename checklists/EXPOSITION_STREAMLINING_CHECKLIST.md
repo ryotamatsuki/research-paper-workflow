@@ -7,7 +7,7 @@ Use across the exposition lifecycle:
 - **Stage 13:** aggressively streamline the integrated manuscript;
 - **Stage 14:** verify that the final package still satisfies the architecture without performing a late substantive rewrite.
 
-This checklist generalizes a discussant-style exposition discipline associated with Michi Igami's advice on making economics papers shorter, faster to parse, and more selective about what enters the main text. The paper-specific page milestones that motivated this refinement are **not universal rules**. Journal instructions, article type, contribution type, and the economics of the paper control.
+This checklist generalizes a discussant-style exposition discipline associated with Michi Igami's advice on making economics papers shorter, faster to parse, and more selective about what enters the main text. For theorem-bearing or technically dense work, apply it together with `checklists/REVIEWER_VERIFIABILITY_CHECKLIST.md`; streamlining may remove routine algebra but must not remove proof-critical bridges needed for specialist audit. The paper-specific page milestones that motivated this refinement are **not universal rules**. Journal instructions, article type, contribution type, and the economics of the paper control.
 
 The governing rule is:
 
@@ -206,9 +206,10 @@ After streamlining, verify that no deletion caused:
 - [ ] a figure/table that can no longer be interpreted independently;
 - [ ] a literature claim losing its source;
 - [ ] a correction/reassessment losing the exact link to the source statement being corrected;
-- [ ] a formal-verification claim becoming broader than the formal artifact.
+- [ ] a formal-verification claim becoming broader than the formal artifact;
+- [ ] a proof-critical bridge equation, aggregation step, intermediate object, or computer-assisted-proof mapping disappearing so that the referee must guess how the claim follows.
 
-Streamlining must reduce reader cost, not evidentiary quality.
+Streamlining must reduce reader cost, not evidentiary quality. For technical material, the operative rule is: **compress routine algebra; preserve conceptual bridges**.
 
 ## 9. Article-type profiles
 
@@ -268,6 +269,8 @@ Before finalizing the Introduction:
 
 Recommended artifact: EXPOSITION_ARCHITECTURE.md.
 
+For theorem-bearing or technically dense manuscripts, also create or update the reviewer-verifiability map required by `REVIEWER_VERIFIABILITY_CHECKLIST.md`, including the proof/derivation chain and any bridge equations that must survive later compression.
+
 A Stage-10 exposition failure blocks progression until the architecture is repaired.
 
 ### Stage 13 — streamlining gate
@@ -280,9 +283,10 @@ On the integrated manuscript:
 - [ ] rerun the reader-arrival budget using actual page numbers;
 - [ ] rerun the five-exhibit thought experiment;
 - [ ] remove/relocate redundant material;
-- [ ] verify compression did not damage theorem/evidence scope.
+- [ ] verify compression did not damage theorem/evidence scope;
+- [ ] verify compression did not remove proof-critical bridges or turn a human-readable derivation into an opaque reference to code/certificates.
 
-Recommended artifact: EXPOSITION_STREAMLINING_REPORT.md.
+Recommended artifacts: EXPOSITION_STREAMLINING_REPORT.md and, where applicable, REVIEWER_VERIFIABILITY_REPORT.md.
 
 If the fix requires a new substantive result, model change, theorem change, empirical exercise, or novelty claim, roll back to the earliest affected research stage rather than hiding the change inside Stage 13.
 
@@ -294,9 +298,10 @@ Stage 14 is a binary audit of the already integrated architecture:
 - [ ] no avoidable exposition regression was introduced by journal formatting;
 - [ ] page/word/exhibit limits are satisfied or a current official exception/format explains the difference;
 - [ ] the final PDF still passes Introduction, section-purity, reader-arrival, exhibit-scarcity, and conclusion checks;
-- [ ] no late substantive rewrite was used to make the package fit.
+- [ ] no late substantive rewrite was used to make the package fit;
+- [ ] where applicable, the final package still passes `REVIEWER_VERIFIABILITY_CHECKLIST.md`: definitions, proof boundaries, bridge equations, appendix links, and computer-assisted-proof mappings remain intact.
 
-A structural exposition failure at Stage 14 normally reopens Stage 13. A design failure may reopen Stage 10. A substantive claim/theory/evidence failure reopens the earliest affected stage.
+A structural exposition or reviewer-verifiability failure at Stage 14 normally reopens Stage 13. A design failure may reopen Stage 10. A substantive claim/theory/evidence failure reopens the earliest affected stage.
 
 ## 11. Passing standard
 
