@@ -56,6 +56,7 @@ scripts/
 tests/
 theorem_certificates/
 verification/
+research_provenance/
 references/
 docs/
 .github/workflows/
@@ -76,11 +77,12 @@ Implement:
 - one-command or clearly documented build;
 - local-equivalent validation gates;
 - CI where feasible;
-- provenance/decision-log locations.
+- provenance/decision-log locations;
+- durable locations or references for the material AI-use log, author intellectual-contribution record, and later AI disclosure reconciliation when applicable.
 
 ## 7. Evidence requirements
 
-Every generated manuscript object should have an identifiable source. Document software versions and non-obvious external inputs. Every headline theorem should be traceable from manuscript statement to Stage-4A certificate, Stage-7.5A scope decision, proof/verification artifact, and regression tests where applicable.
+Every generated manuscript object should have an identifiable source. Material AI-use records and author-accountability evidence may reference prior chats/commits/audits rather than duplicate them, but the production repository must preserve stable pointers or exported records sufficient for later Stage 14/15 reconciliation. Document software versions and non-obvious external inputs. Every headline theorem should be traceable from manuscript statement to Stage-4A certificate, Stage-7.5A scope decision, proof/verification artifact, and regression tests where applicable.
 
 ## 8. Verification protocol
 
@@ -97,7 +99,8 @@ Setup is not complete if:
 - a headline theorem cannot be traced to its verification artifact;
 - certified counterexample regression tests were dropped;
 - source/reference files are missing;
-- concurrent remote changes were overwritten.
+- concurrent remote changes were overwritten;
+- material AI-use or author-accountability records required by the Stage 8 freeze are lost or only exist as untraceable recollection.
 
 ## 10. Success criteria
 
