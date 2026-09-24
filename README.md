@@ -32,6 +32,8 @@ This refinement preserves the Stage architecture, verdict semantics, routing, ro
 
 Operational checklist: [`checklists/REVIEWER_VERIFIABILITY_CHECKLIST.md`](checklists/REVIEWER_VERIFIABILITY_CHECKLIST.md).
 
+Design record: [`docs/REVIEWER_VERIFIABILITY_REFINEMENT_2026-09-25.md`](docs/REVIEWER_VERIFIABILITY_REFINEMENT_2026-09-25.md).
+
 The key rule is: **compress routine algebra; preserve proof-critical bridges.**
 
 ## Prospective v2.6 minor revision: AI provenance / human accountability hardening
