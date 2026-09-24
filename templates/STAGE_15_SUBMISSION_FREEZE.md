@@ -40,6 +40,8 @@ Do not click final submit while a material portal requirement, generated-PDF def
 
 ## 6. Mandatory tasks
 
+Apply `checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md` where material AI use occurred.
+
 Record and preserve:
 
 1. canonical commit SHA and, where useful, submission tag;
