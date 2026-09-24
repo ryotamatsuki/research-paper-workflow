@@ -26,6 +26,8 @@ A Stage 14 `SUBMISSION QA PASS`, fully resolved `CONDITIONAL PASS`, or `CONDITIO
 
 The special authenticated-portal conditional status permits entry only for the purpose of resolving the explicitly listed portal-only items. It does not permit submission with unresolved material requirements.
 
+Where material AI use occurred, Stage 15 also consumes the Stage-14 AI disclosure reconciliation and the frozen author intellectual-contribution record; the final author sign-off is completed against the exact package frozen here.
+
 ## 4. Allowed changes
 
 None substantive. Administrative naming, file designation, or packaging changes must not alter content.
