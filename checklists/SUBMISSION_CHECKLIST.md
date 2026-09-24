@@ -155,10 +155,24 @@ Complete when editable source is required or LaTeX is used:
 - [ ] Code availability statement
 - [ ] Ethics statement if applicable
 - [ ] CRediT / author contribution statement if required
+- [ ] Material AI-use/provenance log reviewed against the final manuscript and artifacts
 - [ ] Generative-AI disclosure if required
+- [ ] Research-method AI use distinguished from manuscript-preparation use where the operative policy requires it
+- [ ] AI disclosure wording matches actual verification actors and does not overstate author verification
+- [ ] `AI_DISCLOSURE_RECONCILIATION` or equivalent preserved where material AI use occurred
 - [ ] Acknowledgments handled consistently with anonymity rules
 - [ ] Prior-publication/preprint disclosure handled where relevant
 - [ ] Portal declaration fields match manuscript declarations
+
+### SSRN-specific declarations and submission behavior
+
+Apply only when SSRN is an actual destination:
+
+- [ ] Current official SSRN AI/submission rules re-checked
+- [ ] Required disclosure locations checked, including PDF and submission/abstract metadata when currently required
+- [ ] Current duplicate/redundant-content and bulk/high-volume-submission rules reviewed
+- [ ] No artificial submission spacing, dates, staged commits, or manufactured chronology created for appearance
+- [ ] Any material uncertainty escalated rather than converted into an assumed "safe" numerical threshold
 
 ## Submission package
 
@@ -221,6 +235,10 @@ If authenticated portal access is the only remaining unknown at Stage 14, record
 - [ ] Final source archive corresponds to recorded SHA
 - [ ] Final figure/table outputs correspond to recorded source/generators
 - [ ] Final Journal Requirements Ledger preserved
+- [ ] Material AI-use/provenance record preserved where applicable
+- [ ] Author intellectual-contribution record preserved and still current
+- [ ] AI disclosure reconciliation preserved where applicable
+- [ ] Final author sign-off tied to exact commit/PDF/source package
 - [ ] Hash/checksum recorded where useful
 - [ ] Submission date/time recorded
 - [ ] Portal-generated PDF/confirmation preserved where appropriate
@@ -234,6 +252,9 @@ If authenticated portal access is the only remaining unknown at Stage 14, record
 - [ ] No unresolved evidence conflict remains
 - [ ] Figure/table/artwork QA passes under current journal rules
 - [ ] Stage 14 QA status is `PASS` or the only remaining item is an explicit authenticated-portal preflight
+- [ ] No AI/computational/formal check is represented as author or external-human verification without evidence
+- [ ] Final AI disclosure is supported by the provenance record
+- [ ] Final author sign-off is genuine and not inferred from AI/CI/formal PASS
 - [ ] Final submission is not clicked until authenticated portal reconciliation is complete
 
 If any substantive item fails, do not freeze the submission. Reopen the relevant workflow stage.
