@@ -129,6 +129,7 @@ Formal proof and independent adversarial certification answer different question
 
 - Formal proof: does the encoded statement follow from the encoded assumptions under the proof assistant's kernel?
 - Stage 4A / Stage 7.5A: are the assumptions, cases, strategy domains, equilibrium concept, quantifiers, and economic interpretation the right ones?
+- Author-accountability check: what substantive judgments did the author personally make and verify about the central result?
 
 Therefore:
 
@@ -136,6 +137,9 @@ Therefore:
 - [ ] Preserve clean-room derivation/counterexample/global-deviation work even when Lean passes.
 - [ ] If formalization exposes a missing assumption or false theorem, route to the earliest affected analytic stage rather than patching only the formal statement.
 - [ ] If the paper theorem changes materially after formal certification, mark the formal certificate stale and repeat the affected formal build/certificate before refreeze.
+- [ ] Do not record a formal PASS as `AUTHOR` verification unless the author separately performed and documented the corresponding substantive review.
+- [ ] Do not use a formal PASS as evidence of authorship, author understanding, novelty, economic interpretation, or unformalized model/case completeness.
+- [ ] Link the formal certificate to the `AUTHOR_INTELLECTUAL_CONTRIBUTION_RECORD` where material AI/formal assistance was used.
 
 ## 9. Required certificate
 
@@ -152,7 +156,8 @@ For every project with `FORMAL VERIFICATION PASS`, preserve a certificate contai
 9. components explicitly not certified;
 10. known limitations and surviving risks;
 11. rollback rule if the theorem or assumptions change;
-12. final formal-verification state.
+12. final formal-verification state;
+13. explicit statement that formal PASS does not substitute for author-accountability evidence.
 
 Suggested evidence row:
 

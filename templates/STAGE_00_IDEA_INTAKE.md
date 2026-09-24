@@ -46,6 +46,7 @@ Do not build a full model, write a paper, add complexity to make the idea look n
 8. Recommend theory, empirical, or mixed route and explain why.
 9. Produce one falsifiable one-sentence research question.
 10. Specify the literature families and source material that Stage 1/2 must audit.
+11. If material AI assistance is used, initialize an `AI_PROVENANCE_LOG` or equivalent under `checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md`; reference existing chats/artifacts rather than copying full transcripts.
 
 ## 7. Evidence requirements
 
@@ -85,7 +86,8 @@ Return `NO-GO` if the phenomenon is too vague, the proposed contribution is alre
 7. One-sentence research question
 8. Initial literature map
 9. Required Stage 1 inputs
-10. Verdict and next-stage contract
+10. AI provenance status (`NOT USED`, `NON-MATERIAL/ROUTINE`, or log/reference initialized)
+11. Verdict and next-stage contract
 
 ## 13. Final verdict
 

@@ -24,7 +24,7 @@ Stage 14 is also the mandatory **live journal-compliance gate**. A project may n
 
 ## 3. Canonical inputs
 
-Use the integrated manuscript from Stage 13, the theory freeze, reproducibility scripts, the final Figure/Table Architecture reconciliation, the Stage-12 Journal Requirements Ledger, and current official journal instructions.
+Use the integrated manuscript from Stage 13, the theory freeze, reproducibility scripts, the final Figure/Table Architecture reconciliation, the Stage-12 Journal Requirements Ledger, current official journal instructions, and—where material AI use occurred—the `AI_PROVENANCE_LOG`/equivalent plus the frozen `AUTHOR_INTELLECTUAL_CONTRIBUTION_RECORD`.
 
 The Stage-12 requirements snapshot is not presumed current. Re-open and date the operative official sources at Stage 14.
 
@@ -40,12 +40,13 @@ Do not guess a journal requirement in order to close QA. Material unknowns remai
 
 ## 6. Mandatory tasks
 
-Use all four:
+Use all five:
 
 - `checklists/SUBMISSION_CHECKLIST.md`;
 - `checklists/JOURNAL_REQUIREMENTS_CHECKLIST.md`;
 - `checklists/FIGURE_TABLE_CHECKLIST.md`;
-- `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md`.
+- `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md`;
+- `checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md`.
 
 At minimum verify:
 
@@ -81,7 +82,13 @@ At minimum verify:
 30. any material requirement still unresolved after current journal/publisher/portal research is escalated to the journal/editorial office or submission support, and the resulting clarification is preserved and incorporated before full PASS;
 31. the Stage-13 `EXPOSITION_STREAMLINING_REPORT.md` or equivalent evidence is present and consistent with the final manuscript;
 32. the final PDF still passes the Introduction compression, section-purity, reader-arrival, main-text necessity, exhibit-scarcity, and concise/no-new-claims conclusion checks;
-33. journal formatting has not reintroduced avoidable exposition regressions or forced a late substantive rewrite.
+33. journal formatting has not reintroduced avoidable exposition regressions or forced a late substantive rewrite;
+34. the material AI-use/provenance record is reconciled with the final manuscript and supporting artifacts;
+35. research-method AI use (including proof search, code/analysis, adversarial checking, or formalization support) is distinguished from manuscript-preparation use when the operative policy requires different treatment or placement;
+36. each final AI disclosure statement is factually supported by the provenance and verification-actor record; generic language that overstates author verification is removed;
+37. no AI, computation, or formal-verification check is labeled as `AUTHOR` or `EXTERNAL HUMAN` verification without corresponding human evidence;
+38. the Stage-7.5A author intellectual-contribution record still matches the final central claims and has not been invalidated by later manuscript changes;
+39. when SSRN is an actual destination, current official SSRN rules are re-checked for required disclosure locations (including PDF and submission/abstract metadata when currently required), duplicate/redundant content, and bulk/high-volume submission handling; no artificial spacing or chronology is created to influence appearance.
 
 ## 7. Journal-requirement evidence hierarchy
 
@@ -112,6 +119,8 @@ Maintain `JOURNAL_REQUIREMENTS_LEDGER.md` or an equivalent auditable artifact in
 - conflict-resolution note where needed.
 
 A checked box without supporting evidence does not close a material requirement.
+
+For AI-related declarations, retain an `AI_DISCLOSURE_RECONCILIATION` or equivalent mapping: `material use -> evidence/actor -> required disclosure location -> final wording -> PASS/NOT APPLICABLE`. The wording must describe the actual division of work. A broad statement that the author independently verified all substantive claims is not permitted unless the author record supports that breadth.
 
 ## 9. Verification protocol
 
@@ -145,6 +154,10 @@ Submission freeze is blocked by:
 - missing required editable source, bibliography, figure file, style/class file, or other source-package component;
 - source archive that fails clean extraction/compilation under the submitted layout;
 - disclosure/declaration inconsistency;
+- material AI use missing from the provenance/disclosure reconciliation;
+- AI/computational/formal checking represented as author or external-human verification without evidence;
+- an AI disclosure that makes a human-verification claim broader than the author record supports;
+- when SSRN is the actual destination, reliance on remembered SSRN AI/bulk-submission rules rather than current official evidence;
 - any material Journal Requirements Ledger item marked `UNVERIFIED`;
 - any unresolved material `CONFLICT` between official sources;
 - reliance on memory/inference where a current official requirement should be verified;
@@ -180,7 +193,7 @@ If a live journal requirement contradicts an internal workflow assumption, the c
 7. Refreshed Journal Requirements Ledger with URLs/access dates/statuses
 8. Review-model/anonymity/author-identification result
 9. Initial-submission file/source-package result
-10. Declarations/AI/data/code/prior-publication result
+10. Declarations/AI/data/code/prior-publication result, including AI-use provenance/disclosure reconciliation
 11. Metadata/portal-field result
 12. Fees/access/licensing result when material
 13. Editorial-office clarification record for any escalated material ambiguity

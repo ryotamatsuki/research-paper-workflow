@@ -26,6 +26,8 @@ A Stage 14 `SUBMISSION QA PASS`, fully resolved `CONDITIONAL PASS`, or `CONDITIO
 
 The special authenticated-portal conditional status permits entry only for the purpose of resolving the explicitly listed portal-only items. It does not permit submission with unresolved material requirements.
 
+Where material AI use occurred, Stage 15 also consumes the Stage-14 AI disclosure reconciliation and the frozen author intellectual-contribution record; the final author sign-off is completed against the exact package frozen here.
+
 ## 4. Allowed changes
 
 None substantive. Administrative naming, file designation, or packaging changes must not alter content.
@@ -39,6 +41,8 @@ No silent edits to theory, prose claims, equations, references, figures, tables,
 Do not click final submit while a material portal requirement, generated-PDF defect, author/corresponding-author mismatch, anonymity mismatch, or file-designation uncertainty remains unresolved.
 
 ## 6. Mandatory tasks
+
+Apply `checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md` where material AI use occurred.
 
 Record and preserve:
 
@@ -54,9 +58,14 @@ Record and preserve:
 10. journal submission metadata;
 11. final refreshed `JOURNAL_REQUIREMENTS_LEDGER.md` or equivalent;
 12. final file inventory and checksums/hashes where practical;
-13. date/time and journal version of the submission package.
+13. date/time and journal version of the submission package;
+14. material AI-use/provenance record where applicable;
+15. final `AI_DISCLOSURE_RECONCILIATION` or equivalent;
+16. final author sign-off tied to the exact commit/PDF/source package.
 
 Confirm the repository working state corresponds to the recorded SHA and that all final files derive from it.
+
+The final author sign-off must be a genuine author action/evidence. It must confirm that (a) the author intellectual-contribution record still matches the final central claims, (b) the AI disclosure matches the material-use log, and (c) no AI/computational/formal result is represented as an author check unless the author actually performed the stated review. AI-generated approval, automated CI, or proof-assistant PASS cannot substitute for this sign-off.
 
 ### Authenticated portal preflight
 
@@ -71,7 +80,7 @@ Before the final submit action, when an authenticated portal is used:
 7. confirm title-page handling and any separate author-information file requirement;
 8. confirm each uploaded manuscript/source/figure/table/supplement/cover-letter/highlight file has the correct portal designation;
 9. for LaTeX, confirm the actual editable source/archive and required figure/bibliography/style/class files are included in the form the portal accepts;
-10. confirm funding, competing interests, CRediT/author contribution, AI, data/code, ethics, prior-publication/preprint, and author-attestation fields agree with the frozen declarations;
+10. confirm funding, competing interests, CRediT/author contribution, AI, data/code, ethics, prior-publication/preprint, and author-attestation fields agree with the frozen declarations and AI disclosure reconciliation;
 11. resolve all portal warnings or record why a warning is non-material and accepted;
 12. build/generate the portal submission PDF when supported;
 13. inspect the portal-generated PDF page by page, including the first page, equations, references, figures, tables, appendix, declarations, and identifying/anonymity information;
@@ -86,6 +95,8 @@ The freeze record itself is provenance evidence. It must not claim successful su
 
 For journal compliance, retain enough evidence to show which current source controlled each material decision. Do not preserve passwords, private tokens, or other authentication secrets.
 
+Where SSRN is the actual destination, retain evidence of the current official SSRN requirements checked at Stage 14/15, including required disclosure locations and any operative bulk/high-volume-submission rules. Preserve the real chronology; do not create artificial dates, staged commits, or submission spacing for appearance.
+
 ## 8. Verification protocol
 
 Compare frozen artifacts against the Stage 14 QA inventory and refreshed Journal Requirements Ledger. Recompute hashes or inspect metadata where useful. Confirm no uncommitted/subsequent edit is being substituted for the frozen output.
@@ -99,6 +110,9 @@ Do not declare a freeze or submission if:
 - the canonical SHA is unclear;
 - final PDF/source differ from the validated state;
 - required disclosure or journal file is missing;
+- the final AI disclosure is unsupported by or inconsistent with the material-use/verification-actor record;
+- the required author sign-off is missing, stale, or inferred only from AI/CI/formal PASS;
+- an AI/computational/formal check is presented as author or external-human verification without evidence;
 - a substantive correction is still pending;
 - any material Journal Requirements Ledger item remains `UNVERIFIED` or unresolved `CONFLICT`;
 - the authenticated portal exposes an unresolved required field or file designation;
@@ -126,12 +140,13 @@ If the issue is a bounded journal-compliance defect, repair it under Stage 14, r
 4. Verification artifact inventory
 5. Journal-specific files
 6. Journal Requirements Ledger status
-7. Disclosure/declaration record
-8. Hash/provenance record
+7. Disclosure/declaration record, including AI disclosure reconciliation where applicable
+8. Hash/provenance record, including material AI-use provenance where applicable
 9. Authenticated portal preflight result
 10. Portal-generated PDF inspection result when applicable
 11. Submission status (`FROZEN`, `UPLOADED`, `SUBMITTED`) with evidence
-12. Any post-submission follow-up protocol
+12. Final author sign-off record
+13. Any post-submission follow-up protocol
 
 ## 13. Final verdict
 

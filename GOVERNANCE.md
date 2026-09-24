@@ -136,6 +136,46 @@ Stage 12 should preserve a candidate-universe ledger or equivalent record showin
 
 ---
 
+### 2.14 Material AI use must be provenance-tracked
+
+Material AI assistance is permitted only with evidence that accurately distinguishes assistance, verification, and authorship/accountability.
+
+From Stage 0 onward, projects must preserve a material-use record for AI activity that affects a research decision, adopted result, proof/counterexample path, code/formal artifact, literature assessment, manuscript text/structure, or submission declaration. The record may point to existing chats, commits, diffs, audit reports, test logs, and formal certificates; full transcript duplication is not required.
+
+At minimum, the record should identify the tool/model when reasonably available, date, purpose, adopted artifact/decision, disposition, verification method, verification actor, evidence reference, and downstream effect.
+
+Verification actors must be distinguished explicitly where material:
+
+- `AUTHOR`;
+- `AI`;
+- `COMPUTATION`;
+- `FORMAL`;
+- `EXTERNAL HUMAN`.
+
+A second AI, separate chat, or different prompt may strengthen an AI-side adversarial check, but it is not author verification or external human review.
+
+### 2.15 Author accountability cannot be inferred from AI, code, or formal PASS
+
+Before Stage 8 freeze, every central result or tightly related central-result set must have an auditable author intellectual-contribution record. It must show the author's substantive judgment about the research question/mechanism, assumptions, proof/equilibrium logic, limitations/failure boundaries, verification evidence, and maximum defensible claim.
+
+A universal AI-free rediscovery or memorized re-proof is not required. However, reading an AI explanation, approving an AI audit, accepting a computation, or observing a green Lean/proof-assistant build is not by itself evidence that the author made or understood the substantive research judgment.
+
+AI/adversarial review, deterministic computation, formal verification, and external human review are complementary evidence sources. They may not be silently relabeled as author verification.
+
+Proof-assistant acceptance remains limited to the encoded statement under encoded assumptions. It does not establish authorship, author understanding, model-to-formal fidelity outside the mapping audit, unformalized case completeness, novelty, empirical relevance, or economic interpretation.
+
+Use `checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md`.
+
+### 2.16 AI disclosure must be evidence-matched and destination-specific
+
+Stage 14 must reconcile the material AI-use record against the actual manuscript, Methods/appendix/repository documentation, manuscript-preparation declaration, cover letter, and portal fields required by the current target journal/publisher.
+
+Do not use generic disclosure boilerplate that overstates what the author personally verified. A statement such as "all substantive claims were independently verified by the author" is permitted only when the author-verification record supports that scope.
+
+Where the operative policy distinguishes research-method use from manuscript-preparation use, record and disclose them in the required locations accordingly.
+
+SSRN-specific checks apply only when SSRN is an actual submission destination. In that case, re-check current official SSRN requirements, including disclosure locations and any bulk/high-volume-submission rules. Preserve the real research chronology. Do not manufacture submission spacing, dates, staged commits, or artificial process history to make activity appear normal.
+
 ## 3. Repository change policy
 
 ### 3.1 Main branch
@@ -185,6 +225,9 @@ Review should focus on:
 - whether independent certification is genuinely independent rather than duplicate execution;
 - whether formal-verification applicability is explicitly closed before theory freeze;
 - whether proof-assistant statements faithfully match paper claims and do not smuggle conclusions through assumptions/definitions;
+- whether material AI use is provenance-tracked and verification actors are correctly labeled;
+- whether central-result author intellectual-contribution evidence exists before theory freeze;
+- whether AI disclosure wording is supported by the provenance record rather than generic boilerplate;
 - whether source requirements are explicit and realistic;
 - whether the workflow encourages unnecessary complexity;
 - whether `NO-GO` remains a legitimate outcome.
@@ -288,7 +331,7 @@ Distinguish at minimum:
 - conjecture/model assumption still unverified;
 - rejected claim/branch.
 
-AI/chat output, scratch calculations, and historical notes are provenance inputs, not independent evidence.
+AI/chat output, scratch calculations, and historical notes are provenance inputs, not independent evidence. An AI review remains AI evidence even if produced in a separate chat or by a different model; it does not become author verification or external human review. Material AI use must be tracked under `checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md`.
 
 ### 5.6 Method applicability
 
@@ -383,6 +426,8 @@ Freeze at minimum:
 - proof-assistant/toolchain/library/build and axiom/placeholder provenance where applicable;
 - benchmark-definition register;
 - counterexample/regression-test register;
+- material AI-use/provenance record where applicable;
+- author intellectual-contribution record for central results;
 - explicit claims not made.
 
 Sequential/game-theoretic models additionally require explicit continuation-completeness and solver-outcome records covering material strategy/history domains.
@@ -396,6 +441,8 @@ Submission freeze records at minimum:
 - reproducibility outputs and theorem certificates;
 - formal-verification source/build certificate where applicable;
 - journal-specific files;
-- disclosure statements where applicable.
+- disclosure statements where applicable;
+- final AI-disclosure reconciliation where material AI use occurred;
+- author sign-off tied to the exact frozen commit/package.
 
 No silent post-freeze theoretical edits are permitted.

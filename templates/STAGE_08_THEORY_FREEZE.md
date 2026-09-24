@@ -83,16 +83,18 @@ Record at minimum:
 27. proof-assistant/toolchain/library/build provenance, where applicable;
 28. axiom/placeholder status, where applicable;
 29. benchmark-definition register;
-30. counterexample and regression-test register.
+30. counterexample and regression-test register;
+31. material AI-use/provenance record where applicable;
+32. `AUTHOR_INTELLECTUAL_CONTRIBUTION_RECORD` or equivalent for central results, with verification actors distinguished.
 
 For sequential/game-theoretic models, additionally freeze:
 
-31. off-path history classes relevant to unilateral deviations;
-32. continuation-equilibrium status for those classes;
-33. active-set/corner/order/participation handling;
-34. solver outcome taxonomy and unresolved/failure count;
-35. multiplicity/nonexistence and continuation-selection assumptions, if any;
-36. independent direct-payoff/allocation verification artifact used for high-stakes equilibrium claims.
+33. off-path history classes relevant to unilateral deviations;
+34. continuation-equilibrium status for those classes;
+35. active-set/corner/order/participation handling;
+36. solver outcome taxonomy and unresolved/failure count;
+37. multiplicity/nonexistence and continuation-selection assumptions, if any;
+38. independent direct-payoff/allocation verification artifact used for high-stakes equilibrium claims.
 
 For each proposition classify proof/evidence maturity as `PROVED`, `CONDITIONAL`, `NUMERICALLY SUPPORTED ONLY`, `CONJECTURE`, or `REJECTED`.
 
@@ -106,7 +108,7 @@ For a sequential model claiming SPNE/subgame perfection, retain `checklists/EQUI
 
 For each headline theorem retain `checklists/THEOREM_CERTIFICATION_CHECKLIST.md` evidence or an equivalent completed certificate.
 
-Retain `checklists/FORMAL_VERIFICATION_CHECKLIST.md` output for every theorem-bearing project. If the outcome is `FORMAL VERIFICATION PASS`, preserve the formal source paths, exact toolchain/library versions where feasible, build evidence, theorem mapping, axiom/placeholder audit, and explicit non-formalized scope.
+Retain `checklists/FORMAL_VERIFICATION_CHECKLIST.md` output for every theorem-bearing project. Retain `checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md` evidence where material AI use occurred, including the author intellectual-contribution record. If the outcome is `FORMAL VERIFICATION PASS`, preserve the formal source paths, exact toolchain/library versions where feasible, build evidence, theorem mapping, axiom/placeholder audit, and explicit non-formalized scope.
 
 ## 9. Verification protocol
 

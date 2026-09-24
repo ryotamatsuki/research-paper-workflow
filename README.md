@@ -19,6 +19,22 @@ Canonical hierarchy:
 
 `GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → stage templates → checklists → examples.
 
+## Prospective v2.6 minor revision: AI provenance / human accountability hardening
+
+This refinement preserves the Stage architecture, verdict semantics, routing, rollback rules, and freeze meanings. It strengthens the existing workflow so AI assistance, author verification, computation, formal proof, and external human review cannot be conflated.
+
+- **Stage 0 onward:** material AI use is logged by reference with tool/model (when reasonably available), date, purpose, adopted artifact/decision, disposition, verification method/actor, and evidence link.
+- **Stage 7.5A:** central results require an author intellectual-contribution record covering mechanism, assumptions, proof/equilibrium logic, limits/failure boundaries, and maximum defensible wording.
+- **Stage 8:** freezes that author record alongside theorem/formal-verification artifacts.
+- **Stage 14:** reconciles actual AI use with Methods/repository documentation, manuscript-preparation declarations, journal policy, and portal fields; boilerplate may not overstate human verification.
+- **Stage 15:** requires a genuine author sign-off tied to the exact final commit/PDF/package.
+- **SSRN-specific:** current disclosure locations and bulk/high-volume-submission rules are checked only when SSRN is an actual destination; artificial spacing or manufactured chronology is prohibited.
+- Lean/proof-assistant PASS remains evidence about encoded mathematics only; it is not evidence of authorship, author understanding, novelty, or unformalized economic validity.
+
+Operational checklist: [`checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md`](checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md).
+
+Design record: [`docs/AI_PROVENANCE_HUMAN_ACCOUNTABILITY_REFINEMENT_2026-09-24.md`](docs/AI_PROVENANCE_HUMAN_ACCOUNTABILITY_REFINEMENT_2026-09-24.md).
+
 ## v2.5 minor revision: exposition architecture / streamlining hardening
 
 v2.5 preserves the Stage architecture, verdict semantics, routing, rollback rules, and freeze meanings. It generalizes an Igami-style exposition discipline into the existing Stage 7 → 10 → 13 → 14 lifecycle rather than adding a new Stage.
@@ -269,6 +285,7 @@ Reusable checklists live under [`checklists/`](checklists/), including:
 - [`EQUILIBRIUM_CONTINUATION_CHECKLIST.md`](checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md)
 - **[`THEOREM_CERTIFICATION_CHECKLIST.md`](checklists/THEOREM_CERTIFICATION_CHECKLIST.md)**
 - **[`FORMAL_VERIFICATION_CHECKLIST.md`](checklists/FORMAL_VERIFICATION_CHECKLIST.md)**
+- **[`AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md`](checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md)**
 - **[`PORTABILITY_FALSIFICATION_CHECKLIST.md`](checklists/PORTABILITY_FALSIFICATION_CHECKLIST.md)**
 - **[`PAPER_SPECIFIC_CERTIFICATION_INHERITANCE_CHECKLIST.md`](checklists/PAPER_SPECIFIC_CERTIFICATION_INHERITANCE_CHECKLIST.md)**
 - [`FIGURE_TABLE_CHECKLIST.md`](checklists/FIGURE_TABLE_CHECKLIST.md)

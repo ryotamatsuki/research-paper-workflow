@@ -91,6 +91,21 @@ For every headline theorem/proposition and every material robustness/generalizat
 34. Require a pinned and reproducible formal build where feasible: proof-assistant version, library/dependency version, build command, committed source, and clean build/CI evidence. A green proof-assistant build certifies only the encoded statement; it does not replace statement-fidelity or Stage-4A economic/globality certification.
 35. If the formalization uncovers a false theorem, missing economic condition, or incorrect case domain, route to the earliest affected analytic stage. If it uncovers only a mismatch between an otherwise correct narrow theorem and the formal statement/prose, repair and re-audit at the appropriate scope stage rather than weakening the mathematics silently.
 
+### Author intellectual-contribution checkpoint
+
+Before this Stage can issue `GO`, apply `checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md` and create an `AUTHOR_INTELLECTUAL_CONTRIBUTION_RECORD` or equivalent for each central result/set of tightly related central results.
+
+The record must identify the author's substantive judgment on:
+
+- the economic mechanism and why it matters;
+- the assumptions/restrictions carrying the central result;
+- the proof/equilibrium logic and its material weak points;
+- boundary conditions, failure cases, and limitations;
+- what was checked by the author versus AI, computation, formal proof, or an external human;
+- the maximum defensible theorem/contribution wording.
+
+A universal AI-free rediscovery or memorized re-proof is not required. However, an AI explanation, AI audit, computation, or green Lean/proof-assistant build cannot by itself satisfy this checkpoint.
+
 ## 5. Quantifier/generality/selection certificate and Contribution Robustness Certificate
 
 For each headline result record:
