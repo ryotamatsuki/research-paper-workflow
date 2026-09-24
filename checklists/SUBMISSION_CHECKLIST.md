@@ -149,6 +149,8 @@ Complete when editable source is required or LaTeX is used:
 
 ## Declarations
 
+When material AI use occurred, reconcile this section with `checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md`.
+
 - [ ] Funding statement
 - [ ] Conflict-of-interest / competing-interest declaration
 - [ ] Data availability statement
