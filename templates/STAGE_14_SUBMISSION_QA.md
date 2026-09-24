@@ -24,7 +24,7 @@ Stage 14 is also the mandatory **live journal-compliance gate**. A project may n
 
 ## 3. Canonical inputs
 
-Use the integrated manuscript from Stage 13, the theory freeze, reproducibility scripts, the final Figure/Table Architecture reconciliation, the Stage-12 Journal Requirements Ledger, and current official journal instructions.
+Use the integrated manuscript from Stage 13, the theory freeze, reproducibility scripts, the final Figure/Table Architecture reconciliation, the Stage-12 Journal Requirements Ledger, current official journal instructions, and—where material AI use occurred—the `AI_PROVENANCE_LOG`/equivalent plus the frozen `AUTHOR_INTELLECTUAL_CONTRIBUTION_RECORD`.
 
 The Stage-12 requirements snapshot is not presumed current. Re-open and date the operative official sources at Stage 14.
 
