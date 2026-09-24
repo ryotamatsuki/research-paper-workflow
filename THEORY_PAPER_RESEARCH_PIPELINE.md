@@ -78,6 +78,26 @@ The governing distinction is:
 A Stage-6 novelty PASS requires an evidence-bearing explanation of why the strongest plausible parent theorem does **not** absorb the headline result, or an explicit downgrade to application/interpretation contribution if it does.
 
 
+### Prospective v2.7 reviewer verifiability / proof exposition hardening
+
+This backward-compatible refinement adds no Stage, changes no canonical verdict meaning, and changes no normal routing. It addresses a distinct failure mode: a manuscript can be mathematically correct and computationally reproducible yet still force a referee to guess the proof-critical bridge between primitives, intermediate objects, certificates, and headline conclusions.
+
+The reviewer-verifiability lifecycle is:
+
+`Stage 10 → Stage 11 → Stage 13 → Stage 14`.
+
+1. **Stage 10 — derivation architecture:** identify the proof/derivation chain for each headline result, mark short bridge equations that must remain visible, and decide which routine expansions may safely move to Appendix/Supplement/code.
+2. **Stage 11 — hostile reconstruction:** independently reconstruct at least one complete headline proof/derivation from the manuscript-facing package and attack opaque phrases such as “straightforward algebra,” “by symmetry,” “the certificate verifies,” or “the solver finds.”
+3. **Stage 13 — reviewer-verifiability audit:** require every material claim to retain an auditable chain from primitives/evidence through key intermediate objects to the theorem/result. Streamlining may compress routine algebra but may not remove conceptual bridges.
+4. **Stage 14 — final package verification:** confirm that journal formatting and packaging did not remove proof boundaries, definitions, bridge equations, appendix links, or computer-assisted-proof mappings.
+
+For computer-assisted proofs, the manuscript need not print giant polynomial expansions, coefficient lists, root-isolation traces, or proof-assistant kernel output. It must, however, identify the mathematical object, domain, certified property, route from manuscript primitives to that object, and why the certified property implies the paper claim.
+
+Apply `checklists/REVIEWER_VERIFIABILITY_CHECKLIST.md`.
+
+The target is a competent specialist referee, not an undergraduate. The governing rule is: **compress routine algebra; preserve proof-critical bridges**.
+
+
 ### v2.5 exposition architecture / streamlining hardening
 
 v2.5 is a backward-compatible minor refinement. It adds no Stage, changes no canonical verdict meaning, and changes no normal research routing.
@@ -701,7 +721,11 @@ At minimum:
 - run the five-exhibit thought experiment for full-length papers, adjusted downward for short notes/corrections;
 - preserve assumptions, scope conditions, evidence, and formal-verification boundaries even when compressing.
 
-Recommended production artifact: `EXPOSITION_ARCHITECTURE.md`.
+For theorem-bearing or technically dense manuscripts, also apply `checklists/REVIEWER_VERIFIABILITY_CHECKLIST.md` at construction time. Map each headline result as
+`primitives/evidence → key intermediate objects → equilibrium/estimator/welfare/certificate target → proposition/theorem → substantive conclusion`,
+mark any short **BRIDGE EQUATIONS** that must remain visible, and decide explicitly which routine expansions may move to Appendix/Supplement/code. A technical section may be concise, but it may not rely on unnamed intermediate objects or opaque machine results.
+
+Recommended production artifacts: `EXPOSITION_ARCHITECTURE.md` and, where applicable, `REVIEWER_VERIFIABILITY_MAP.md`.
 
 Paper-specific page landmarks are soft diagnostics only. Current journal/article-type requirements control.
 
@@ -748,7 +772,8 @@ Attack at least:
 - benchmark terminology drift;
 - global/SPNE claims relative to Stage-4A certificates;
 - proof-assistant scope inflation relative to the frozen formal-verification certificate;
-- stale or diverged formal theorem statements/hypotheses after post-freeze manuscript or theory edits.
+- stale or diverged formal theorem statements/hypotheses after post-freeze manuscript or theory edits;
+- **reviewer-verifiability failure**: independently reconstruct at least one complete headline proof/derivation from the manuscript-facing package, flag any proof-critical transition that requires guessing an omitted bridge or opening production code merely to identify the mathematical object, and attack opaque compression phrases such as “straightforward algebra,” “by symmetry,” “the certificate verifies,” and “the solver finds.”
 
 For sequential models independently reconstruct at least one material continuation/deviation from primitives, deliberately search for a finite deviation leaving the regular branch, and inspect all `None`/NaN/invalid/nonconvergent code outcomes.
 
@@ -823,7 +848,7 @@ Turn independently correct sections into one coherent argument and reconcile the
 
 ## Audit
 
-Apply `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md` to the actual integrated manuscript before submission QA. Stage 13 is the primary streamlining gate.
+Apply `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md` to the actual integrated manuscript before submission QA. Stage 13 is the primary streamlining gate. For theorem-bearing or technically dense manuscripts, also apply `checklists/REVIEWER_VERIFIABILITY_CHECKLIST.md`; reviewer verifiability is a closure condition, not an optional style preference.
 
 - select/confirm the article-type exposition profile;
 - run the Introduction compression test: question, importance, setting/model choice, finding, method, novelty, and scope should be discoverable with low reader search cost;
@@ -833,7 +858,8 @@ Apply `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md` to the actual integrated
 - rerun the five-exhibit thought experiment and challenge all lower-priority exhibits for merger, Appendix relocation, or deletion;
 - remove repetitive contribution statements, duplicated intuition, redundant literature exposition, and main-text/appendix duplication;
 - after compression, verify that assumptions, theorem domains, quantifiers, evidence, caveats, source links, and formal-verification boundaries remain intact;
-- preserve an `EXPOSITION_STREAMLINING_REPORT.md` or equivalent auditable artifact.
+- preserve an `EXPOSITION_STREAMLINING_REPORT.md` or equivalent auditable artifact;
+- for applicable technical manuscripts, preserve a `REVIEWER_VERIFIABILITY_REPORT.md` or equivalent showing that every headline claim retains an auditable derivation/proof chain, that proof-critical bridge equations survived compression, and that computer-assisted proof sections identify the mathematical object, domain, certified property, and implication.
 - Introduction states question, mechanism, result, and contribution without exceeding the Stage-7.5A claim-scope ledger.
 - Related Literature is organized by conceptual relationship.
 - Model introduces no assumptions solely to rescue prose.
@@ -873,9 +899,10 @@ Verify the complete submission package, including mathematical artifacts and art
 - when SSRN is an actual destination, current SSRN disclosure-location and bulk/high-volume-submission rules are checked from official sources without manufactured submission spacing or chronology;
 - abstract, highlights, cover letter, manuscript, theorem scope, and any formal-verification claim agree;
 - final PDF is inspected page by page.
-- the final PDF passes the Stage-13 exposition architecture/streamlining audit: Introduction compression, section purity, reader-arrival budget, exhibit scarcity, and concise/no-new-claims conclusion; any structural failure reopens Stage 13 rather than being solved by an unreviewed late rewrite.
+- the final PDF passes the Stage-13 exposition architecture/streamlining audit: Introduction compression, section purity, reader-arrival budget, exhibit scarcity, and concise/no-new-claims conclusion; any structural failure reopens Stage 13 rather than being solved by an unreviewed late rewrite;
+- where reviewer-verifiability auditing applies, the exact final PDF/package preserves definitions, proof boundaries, bridge equations, appendix/supplement cross-references, and computer-assisted/formal mappings needed for a specialist referee to follow the claim → derivation → proof/certificate → conclusion chain.
 
-Use `checklists/SUBMISSION_CHECKLIST.md`, `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md`, `checklists/FIGURE_TABLE_CHECKLIST.md`, `checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md`, and the frozen `checklists/FORMAL_VERIFICATION_CHECKLIST.md` certificate/N-A rationale where applicable.
+Use `checklists/SUBMISSION_CHECKLIST.md`, `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md`, `checklists/REVIEWER_VERIFIABILITY_CHECKLIST.md` where applicable, `checklists/FIGURE_TABLE_CHECKLIST.md`, `checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md`, and the frozen `checklists/FORMAL_VERIFICATION_CHECKLIST.md` certificate/N-A rationale where applicable.
 
 A substantive mathematical, novelty, theory, welfare, institutional, claim-scope, or formal-statement mismatch triggers rollback to the earliest affected stage and a fresh downstream QA cycle.
 
@@ -961,13 +988,15 @@ Variables, functional forms, and applications are not automatically contribution
 
 Formal verification strengthens assurance; it is not itself a substitute for an economic contribution.
 
-## 3.8 Exposition architecture integrity
+## 3.8 Exposition architecture and reviewer-verifiability integrity
 
-Exposition is a cross-stage scientific-communication object, not a cosmetic Stage-14 concern. Apply `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md` across Stages 7/10/13/14.
+Exposition is a cross-stage scientific-communication object, not a cosmetic Stage-14 concern. Apply `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md` across Stages 7/10/13/14. For theorem-bearing or technically dense manuscripts, apply `checklists/REVIEWER_VERIFIABILITY_CHECKLIST.md` across Stages 10/11/13/14.
 
 Stage 10 designs section roles, reader-arrival targets, model/evidence consolidation, and the Figure/Table Architecture. Stage 13 performs the aggressive streamlining pass on the integrated manuscript. Stage 14 verifies the resulting architecture and rolls back rather than performing a late substantive rewrite.
 
 Figures/tables are evidence-bearing manuscript objects, not decoration. They may not create a weaker proof standard or hide theorem scope restrictions. Generic page or exhibit counts are diagnostics only; current journal/article-type rules and scientific completeness control.
+
+Reviewer verifiability is distinct from both correctness and reproducibility. A specialist referee need not be shown every routine algebraic expansion, but must be able to identify the proof-critical object, follow non-routine transitions, understand what any delegated computation/formal certificate proves, and see why that result implies the manuscript claim. Long mechanically generated expansions may live in Appendix/Supplement/code; conceptual bridges may not be hidden there without a precise main-text path.
 
 ## 3.9 AI provenance, verification actors, and author accountability
 

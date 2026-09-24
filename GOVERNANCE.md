@@ -176,6 +176,25 @@ Where the operative policy distinguishes research-method use from manuscript-pre
 
 SSRN-specific checks apply only when SSRN is an actual submission destination. In that case, re-check current official SSRN requirements, including disclosure locations and any bulk/high-volume-submission rules. Preserve the real research chronology. Do not manufacture submission spacing, dates, staged commits, or artificial process history to make activity appear normal.
 
+
+### 2.17 Reviewer verifiability is distinct from correctness and reproducibility
+
+A manuscript may contain a correct theorem and a reproducible computation while still failing scientific communication if a specialist referee cannot identify or audit the proof-critical bridge from primitives/evidence to the claimed result.
+
+For theorem-bearing or technically dense manuscripts, the manuscript-facing package must expose enough structure for a competent specialist referee to:
+
+- identify the mathematical/statistical object being solved or certified;
+- follow non-routine derivation steps without guessing omitted conceptual bridges;
+- distinguish local/branch calculations from global conclusions;
+- identify the domain, assumptions, and aggregation linking intermediate objects to the headline result;
+- understand what any computer-assisted, symbolic, numerical, interval, certificate, or formal-verification step actually certifies;
+- understand why the certified property implies the paper's theorem/result; and
+- locate the reproducible artifact for delegated mechanical computation.
+
+This does **not** require printing every algebraic expansion, coefficient list, root-isolation trace, or proof-assistant kernel trace. Routine/repetitive algebra may be delegated to Appendix/Supplement/code. The main manuscript and its explicit cross-references must preserve proof-critical bridges.
+
+Apply `checklists/REVIEWER_VERIFIABILITY_CHECKLIST.md` across Stages 10/11/13/14 where applicable. A presentation-only failure normally returns to Stage 13; a derivation-architecture failure may return to Stage 10; a gap that exposes an unproved or false substantive claim returns to the earliest affected research stage.
+
 ## 3. Repository change policy
 
 ### 3.1 Main branch
@@ -228,6 +247,7 @@ Review should focus on:
 - whether material AI use is provenance-tracked and verification actors are correctly labeled;
 - whether central-result author intellectual-contribution evidence exists before theory freeze;
 - whether AI disclosure wording is supported by the provenance record rather than generic boilerplate;
+- whether theorem-bearing/technically dense manuscripts are reviewer-verifiable: proof-critical intermediate objects and bridge equations are visible or precisely cross-referenced, delegated computer-assisted steps identify object/domain/property/implication, and streamlining has not made the proof logically opaque;
 - whether source requirements are explicit and realistic;
 - whether the workflow encourages unnecessary complexity;
 - whether `NO-GO` remains a legitimate outcome.
