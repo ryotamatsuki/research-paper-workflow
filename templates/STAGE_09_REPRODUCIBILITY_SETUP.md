@@ -39,6 +39,8 @@ File organization, build tooling, environment specification, tests, scripts, and
 
 ## 6. Mandatory tasks
 
+Apply `checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md` where material AI use occurred.
+
 At work start:
 
 1. fetch/inspect the latest remote state;
