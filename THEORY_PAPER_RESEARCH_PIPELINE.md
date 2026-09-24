@@ -168,6 +168,8 @@ For efficient handoff preserve at least: outputs to carry forward, frozen facts,
 
 For theorem-bearing stages preserve a claim/proposition register. For headline mathematical claims, use `checklists/THEOREM_CERTIFICATION_CHECKLIST.md` as required by Stage 4A and Stage 7.5A. Every theorem-bearing project must also apply `checklists/FORMAL_VERIFICATION_CHECKLIST.md`: Stage 4A records applicability/targets and Stage 7.5A closes the pre-freeze formal-verification state.
 
+For material AI use, apply `checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md` across the workflow. Log important uses by reference rather than copying full conversations. Verification evidence must identify whether the relevant check was performed by the author, AI, computation, formal proof, or an external human. AI review, code, and proof-assistant success do not automatically count as author verification.
+
 For manuscript exposition, use the four-step lifecycle:
 
 - Stage 7 — identify candidate exposition vehicles;
@@ -556,6 +558,8 @@ Blocking states include `NOT TESTED`, `PLANNED`, failed compilation, stale forma
 
 Proof-assistant acceptance is not independent evidence that the economic assumptions/case partition are correct unless those objects are formalized. Formal verification therefore cannot replace Stage 4A globality, multiplicity, continuation, counterexample certification, or the economic portability tests above.
 
+Before Stage 7.5A can close, create an `AUTHOR_INTELLECTUAL_CONTRIBUTION_RECORD` or equivalent for each central result/set of tightly related central results. Record the author's substantive judgment on the mechanism, assumptions, proof/equilibrium logic, limitations/failure boundaries, verification evidence, and maximum defensible claim. A universal AI-free rediscovery/re-proof is not required, but mere approval of AI output or a green formal/computational result is insufficient.
+
 ## Kill tests
 
 Fail or downgrade the relevant claim if:
@@ -622,6 +626,8 @@ Stage 8 is blocked unless the project has:
 - formal-verification applicability state and certificate/N-A rationale;
 - paper-claim ↔ formal-theorem mapping and explicit non-formalized scope where applicable;
 - proof-assistant/toolchain/library/build and axiom/placeholder provenance where applicable;
+- material AI-use/provenance record where applicable;
+- author intellectual-contribution record for central results;
 - benchmark-definition register;
 - counterexample/regression-test register.
 
@@ -862,11 +868,14 @@ Verify the complete submission package, including mathematical artifacts and art
 - fonts/resolution/accessibility/legibility are satisfactory where required;
 - all citations and cross-references resolve;
 - journal formatting/anonymity/supplement/disclosure requirements are satisfied;
+- material AI-use records are reconciled against the current target's disclosure rules, distinguishing research-method use from manuscript-preparation use when the operative policy does so;
+- no AI/computational/formal check is represented as author or external-human verification unless the corresponding human evidence exists;
+- when SSRN is an actual destination, current SSRN disclosure-location and bulk/high-volume-submission rules are checked from official sources without manufactured submission spacing or chronology;
 - abstract, highlights, cover letter, manuscript, theorem scope, and any formal-verification claim agree;
 - final PDF is inspected page by page.
 - the final PDF passes the Stage-13 exposition architecture/streamlining audit: Introduction compression, section purity, reader-arrival budget, exhibit scarcity, and concise/no-new-claims conclusion; any structural failure reopens Stage 13 rather than being solved by an unreviewed late rewrite.
 
-Use `checklists/SUBMISSION_CHECKLIST.md`, `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md`, `checklists/FIGURE_TABLE_CHECKLIST.md`, and the frozen `checklists/FORMAL_VERIFICATION_CHECKLIST.md` certificate/N-A rationale where applicable.
+Use `checklists/SUBMISSION_CHECKLIST.md`, `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md`, `checklists/FIGURE_TABLE_CHECKLIST.md`, `checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md`, and the frozen `checklists/FORMAL_VERIFICATION_CHECKLIST.md` certificate/N-A rationale where applicable.
 
 A substantive mathematical, novelty, theory, welfare, institutional, claim-scope, or formal-statement mismatch triggers rollback to the earliest affected stage and a fresh downstream QA cycle.
 
@@ -887,7 +896,9 @@ Create an immutable, auditable submission state.
 - formal-verification source, toolchain/dependency lock, build certificate, claim mapping, and explicit non-formalized scope where applicable, or the recorded N/A rationale;
 - final figures/tables and generator/source provenance;
 - cover letter and journal-specific files/metadata;
-- disclosure statement where required.
+- disclosure statement where required;
+- final AI-disclosure reconciliation where material AI use occurred;
+- author sign-off tied to the exact frozen commit/PDF/package.
 
 After submission freeze, substantive changes reopen affected stages; no silent theory edits.
 
@@ -958,23 +969,31 @@ Stage 10 designs section roles, reader-arrival targets, model/evidence consolida
 
 Figures/tables are evidence-bearing manuscript objects, not decoration. They may not create a weaker proof standard or hide theorem scope restrictions. Generic page or exhibit counts are diagnostics only; current journal/article-type rules and scientific completeness control.
 
-## 3.9 Provenance and evidence maturity
+## 3.9 AI provenance, verification actors, and author accountability
+
+Material AI use must be traceable across the workflow. Record enough information to identify the tool/model when reasonably available, date, purpose, adopted artifact/decision, disposition, verification method/actor, evidence reference, and downstream effect. Existing chats, commits, diffs, audit reports, formal certificates, and test logs may be referenced rather than duplicated.
+
+Use explicit verification-actor labels where material: `AUTHOR`, `AI`, `COMPUTATION`, `FORMAL`, and `EXTERNAL HUMAN`. A second AI or separate chat may provide an AI-side clean-room attack but is not external human review and does not itself establish author verification.
+
+Before theory freeze, central results require an author intellectual-contribution record. Before submission freeze, the author must personally sign off the exact final commit/package and the accuracy of the AI disclosure. No AI-generated approval, CI result, or proof-assistant PASS substitutes for these human-accountability records.
+
+## 3.10 Provenance and evidence maturity
 
 Distinguish remembered/AI/scratch outputs from reproduced project artifacts and submission-level re-verification. Do not silently upgrade conjectures or temporary computations into theorems.
 
 Distinguish analytic proof, numerical evidence, independent adversarial certification, and proof-assistant certification. Each has a different evidentiary scope.
 
-## 3.10 Rollback and stale downstream outputs
+## 3.11 Rollback and stale downstream outputs
 
 If a later stage invalidates an earlier canonical input, return to the earliest affected stage and mark dependent downstream outputs stale. A Stage-11 mathematical failure normally reopens Stage 4/4A; a scope/generality failure normally reopens Stage 7.5A and any earlier stage whose theorem is actually false.
 
 A false theorem or missing economic condition exposed by formalization reopens the earliest affected analytic stage. A formal-source/build defect with unchanged certified mathematics returns to the Stage-7.5A Formal Verification Gate. A material theorem/quantifier/encoded-hypothesis change marks the formal certificate stale and blocks refreeze until rebuilt and re-audited.
 
-## 3.11 Decision logs
+## 3.12 Decision logs
 
 Preserve major rejected branches, discovered counterexamples, certificate failures, formalization applicability decisions, formalization failures, repairs, and reasons for routing decisions.
 
-## 3.12 Live journal compliance and portal evidence
+## 3.13 Live journal compliance and portal evidence
 
 After a primary journal is selected, journal compliance is evidence-bearing. Stage 12 creates an initial Journal Requirements Ledger; Stage 13 integrates verified requirements without guessing unresolved ones; Stage 14 re-opens and dates current official requirements, verifies the exact source/submission package, and fails closed on material `UNVERIFIED` or unresolved `CONFLICT` items; Stage 15 reconciles the authenticated submission record and portal-generated PDF where applicable before `SUBMITTED` may be declared.
 
