@@ -85,7 +85,7 @@ Record at minimum:
 29. benchmark-definition register;
 30. counterexample and regression-test register;
 31. material AI-use/provenance record where applicable;
-32. author intellectual-contribution record for central results, with verification actors distinguished.
+32. `AUTHOR_INTELLECTUAL_CONTRIBUTION_RECORD` or equivalent for central results, with verification actors distinguished.
 
 For sequential/game-theoretic models, additionally freeze:
 
