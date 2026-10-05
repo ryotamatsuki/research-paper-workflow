@@ -1,0 +1,55 @@
+name: Publish v2.7 after readiness audit
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  publish-v2-7:
+    if: github.repository == 'ryotamatsuki/research-paper-workflow' && contains(github.event.head_commit.message, 'Publish research-paper-workflow v2.7')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out reviewed state
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify v2.7 readiness and immutable release namespace
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          grep -Fq '**`WORKFLOW v2.7 READY`**' docs/V2_7_INTEGRATION_AUDIT.md
+          grep -Fq '[x] **`WORKFLOW v2.7 READY`**' docs/V2_7_READINESS_CHECKLIST.md
+          test -s docs/V2_7_RELEASE_MANIFEST.md
+          test -s docs/V2_7_RELEASE_NOTES.md
+          grep -Fq 'Version: v2.7' GOVERNANCE.md
+          grep -Fq 'Version: v2.7' THEORY_PAPER_RESEARCH_PIPELINE.md
+          grep -Fq 'Current canonical repository revision: **v2.7**' README.md
+          test -s checklists/PORTABILITY_FALSIFICATION_CHECKLIST.md
+          test -s checklists/EXPOSITION_STREAMLINING_CHECKLIST.md
+          test -s checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md
+          test -s checklists/REVIEWER_VERIFIABILITY_CHECKLIST.md
+
+          git ls-remote --exit-code --tags origin refs/tags/v2.2 >/dev/null 2>&1
+
+          if git ls-remote --exit-code --tags origin refs/tags/v2.7 >/dev/null 2>&1; then
+            echo 'v2.7 tag already exists; refusing to overwrite an immutable release tag.' >&2
+            exit 1
+          fi
+
+      - name: Publish v2.7 tag and GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release create v2.7 \
+            --target "$GITHUB_SHA" \
+            --title 'research-paper-workflow v2.7' \
+            --notes-file docs/V2_7_RELEASE_NOTES.md
