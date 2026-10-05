@@ -1,6 +1,6 @@
 # Governance
 
-Version: v2.3
+Version: v2.7
 
 ## 1. Purpose
 
