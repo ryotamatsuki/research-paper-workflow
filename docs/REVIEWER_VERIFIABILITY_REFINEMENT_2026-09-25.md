@@ -2,7 +2,7 @@
 
 ## Status
 
-Prospective v2.7 minor refinement.
+Included in stable v2.7.
 
 ## Problem
 
@@ -80,4 +80,4 @@ These are complementary, not substitutes.
 
 ## Version impact
 
-This refinement changes the quality and coverage of checks inside existing Stages 10/11/13/14. It does not change Stage numbering, canonical verdict semantics, normal routing, rollback architecture, or freeze meaning. Under `docs/VERSIONING_POLICY.md`, it is therefore a minor-version-class change, prospective v2.7.
+This refinement changes the quality and coverage of checks inside existing Stages 10/11/13/14. It does not change Stage numbering, canonical verdict semantics, normal routing, rollback architecture, or freeze meaning. Under `docs/VERSIONING_POLICY.md`, it is therefore a minor-version-class change included in stable v2.7.
