@@ -1,6 +1,6 @@
 # AI Provenance / Human Accountability Refinement — 2026-09-24
 
-Status: merged-design record for a prospective minor workflow revision after v2.5.
+Status: merged design record; included in stable v2.7.
 
 ## Problem
 
@@ -68,4 +68,4 @@ This is a MINOR-class change under `docs/VERSIONING_POLICY.md`.
 
 It adds evidence and accountability obligations inside existing Stages 7.5A/8/14/15 and cross-stage provenance rules. It does not add, remove, renumber, merge, or reroute a canonical Stage; it does not change `GO / CONDITIONAL GO / NO-GO` semantics; and it does not change theory-freeze or submission-freeze architecture.
 
-Accordingly, the merged state may be described as a prospective v2.6 refinement until a separate release audit/tag is completed.
+Accordingly, this v2.6-class refinement is consolidated into stable v2.7.
