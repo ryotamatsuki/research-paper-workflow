@@ -1,6 +1,6 @@
 # Theory Paper Research Pipeline
 
-Version: v2.5
+Version: v2.7
 
 ## 1. Purpose
 
@@ -78,7 +78,7 @@ The governing distinction is:
 A Stage-6 novelty PASS requires an evidence-bearing explanation of why the strongest plausible parent theorem does **not** absorb the headline result, or an explicit downgrade to application/interpretation contribution if it does.
 
 
-### Prospective v2.7 reviewer verifiability / proof exposition hardening
+### v2.7 reviewer verifiability / proof exposition hardening
 
 This backward-compatible refinement adds no Stage, changes no canonical verdict meaning, and changes no normal routing. It addresses a distinct failure mode: a manuscript can be mathematically correct and computationally reproducible yet still force a referee to guess the proof-critical bridge between primitives, intermediate objects, certificates, and headline conclusions.
 

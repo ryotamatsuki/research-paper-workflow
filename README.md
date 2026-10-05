@@ -19,7 +19,7 @@ Canonical hierarchy:
 
 `GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → stage templates → checklists → examples.
 
-## Prospective v2.7 minor revision: reviewer verifiability / proof exposition hardening
+## v2.7 stable release: reviewer verifiability / proof exposition hardening
 
 This refinement preserves the Stage architecture, verdict semantics, routing, rollback rules, and freeze meanings. It adds an explicit specialist-referee standard for technical exposition: correctness and reproducibility are not enough if the manuscript hides the derivation or proof-critical bridge that connects model/data primitives to the claimed result.
 
@@ -36,7 +36,7 @@ Design record: [`docs/REVIEWER_VERIFIABILITY_REFINEMENT_2026-09-25.md`](docs/REV
 
 The key rule is: **compress routine algebra; preserve proof-critical bridges.**
 
-## Prospective v2.6 minor revision: AI provenance / human accountability hardening
+## v2.6 minor refinement (consolidated into v2.7): AI provenance / human accountability hardening
 
 This refinement preserves the Stage architecture, verdict semantics, routing, rollback rules, and freeze meanings. It strengthens the existing workflow so AI assistance, author verification, computation, formal proof, and external human review cannot be conflated.
 
@@ -330,9 +330,11 @@ For actual submissions, the most specific current authority controls: direct edi
 - `v2.0` — mathematical-adversarial-certification architecture merged/audited on 2026-09-06; not separately tagged as a stable GitHub Release.
 - `v2.1` — first stable tagged v2 release; includes the v2.0 architecture plus fail-closed live journal-compliance and portal-preflight controls.
 - `v2.2` — minor release adding formal-verification closure plus Stage-4 canonical mathematical representation, Stage-6 theorem-level absorption mapping, and Stage-11 known-model-in-disguise regression attack.
-- `v2.3` — minor release adding contribution-first journal-candidate generation, literature-venue completeness cross-checking, conditional source-journal review for correction-type papers, and an explicit Stage-12 candidate-universe closure gate.
-- `v2.4` — prospective minor refinement adding pre-freeze economic portability/falsification certification, the Contribution Robustness Certificate, a research-creep stop rule, and explicit Stage-7.5A → Stage-12 separation.
-- `v2.5` — prospective minor refinement adding generalized exposition architecture, reader-arrival budgets, section-purity and necessity tests, the five-exhibit thought experiment, Stage-13 streamlining, and Stage-14 exposition verification/rollback.
+- `v2.3` — minor refinement adding contribution-first journal-candidate generation, literature-venue completeness cross-checking, conditional source-journal review for correction-type papers, and an explicit Stage-12 candidate-universe closure gate; consolidated into v2.7.
+- `v2.4` — minor refinement adding pre-freeze economic portability/falsification certification, the Contribution Robustness Certificate, a research-creep stop rule, and explicit Stage-7.5A → Stage-12 separation; consolidated into v2.7.
+- `v2.5` — minor refinement adding generalized exposition architecture, reader-arrival budgets, section-purity and necessity tests, the five-exhibit thought experiment, Stage-13 streamlining, and Stage-14 exposition verification/rollback; consolidated into v2.7.
+- `v2.6` — minor refinement adding material AI-use provenance, verification-actor separation, author intellectual-contribution records, disclosure reconciliation, and final author sign-off; consolidated into v2.7.
+- `v2.7` — stable minor release consolidating v2.3–v2.7 and adding reviewer-verifiability / proof-exposition hardening across Stages 10/11/13/14.
 
 Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), v2.0 is MAJOR because it adds Stage 4A and Stage 7.5A and changes canonical routing.
 
@@ -385,6 +387,6 @@ Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 ## Status
 
-Current canonical repository revision on this branch: **v2.5** (minor revision candidate).
+Current canonical repository revision: **v2.7**.
 
-The latest stable published tag remains **`v2.2`** until the accumulated post-v2.2 minor revisions are reviewed, merged, tagged, and released. Previous stable tags, including `v2.1` and `v1.0`–`v1.3`, remain immutable. The v2.0 architecture was merged and audited but not separately tagged; v2.1 was the first stable tagged release in the v2 line.
+The current stable published release is **`v2.7`**, consolidating the post-v2.2 refinements through reviewer verifiability. Previous stable tags remain immutable. The v2.0 architecture was merged and audited but not separately tagged; v2.1 was the first stable tagged release in the v2 line.

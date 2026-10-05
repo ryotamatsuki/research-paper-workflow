@@ -117,7 +117,7 @@ This refinement:
 - preserves theory-freeze and rollback architecture;
 - strengthens Stage 7.5A evidence requirements and Stage 12 handoff discipline.
 
-Under `docs/VERSIONING_POLICY.md`, this is a backward-compatible **MINOR** refinement and is classified as prospective **v2.4**.
+Under `docs/VERSIONING_POLICY.md`, this is a backward-compatible **MINOR** refinement, classified as v2.4 and consolidated into stable **v2.7**.
 
 ## Files affected
 
