@@ -112,8 +112,12 @@ Record the exact reason for the classification. Do not upgrade to `EXACT PRIOR A
 
 ## Novelty statement discipline
 
+- [ ] Serious candidates have evidence-bearing closest-paper/source-claim rows, including exact model/proposition/section references and reading depth
+- [ ] Scores and search failure do not substitute for these comparisons
+- [ ] For correction/reassessment, original claim, proposed correction, affected economic conclusion, and prior corrections are compared separately
+
 - [ ] Contribution claim maps to a specific model/result distinction
-- [ ] Contribution type is stated: `NEW MECHANISM / GENERALIZATION / UNIFICATION / NEW RESULT IN KNOWN MODEL / APPLICATION`
+- [ ] Contribution type is stated: `NEW MECHANISM / GENERALIZATION / UNIFICATION / NEW RESULT IN KNOWN MODEL / CORRECTION-REASSESSMENT / APPLICATION`
 - [ ] No claim relies only on a new application label
 - [ ] No claim relies only on a different parameter name
 - [ ] No claim relies only on failure to find a paper

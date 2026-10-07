@@ -1,0 +1,58 @@
+name: Publish v2.8 after readiness audit
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  publish-v2-8:
+    if: github.repository == 'ryotamatsuki/research-paper-workflow' && contains(github.event.head_commit.message, 'Publish research-paper-workflow v2.8')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out reviewed state
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify v2.8 readiness and immutable release namespace
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          grep -Fq '**`WORKFLOW v2.8 READY`**' docs/V2_8_INTEGRATION_AUDIT.md
+          grep -Fq '[x] **`WORKFLOW v2.8 READY`**' docs/V2_8_READINESS_CHECKLIST.md
+          test -s docs/V2_8_RELEASE_MANIFEST.md
+          test -s docs/V2_8_RELEASE_NOTES.md
+          test -s docs/BOUNDED_RESEARCH_SEARCH_REFINEMENT_2026-10-07.md
+          test -s templates/RESEARCH_SEARCH_REGISTER.md
+          grep -Fq 'Version: v2.8' GOVERNANCE.md
+          grep -Fq 'Version: v2.8' THEORY_PAPER_RESEARCH_PIPELINE.md
+          grep -Fq 'Current canonical repository revision: **v2.8**' README.md
+          test -s checklists/FORMAL_VERIFICATION_CHECKLIST.md
+          test -s checklists/PORTABILITY_FALSIFICATION_CHECKLIST.md
+          test -s checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md
+          test -s checklists/REVIEWER_VERIFIABILITY_CHECKLIST.md
+
+          git rev-parse --verify refs/tags/v2.7 >/dev/null
+          git merge-base --is-ancestor refs/tags/v2.7 HEAD
+
+          if git ls-remote --exit-code --tags origin refs/tags/v2.8 >/dev/null 2>&1; then
+            echo 'v2.8 tag already exists; refusing to overwrite an immutable release tag.' >&2
+            exit 1
+          fi
+
+      - name: Publish v2.8 tag and GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release create v2.8 \
+            --target "$GITHUB_SHA" \
+            --title 'research-paper-workflow v2.8' \
+            --notes-file docs/V2_8_RELEASE_NOTES.md

@@ -105,6 +105,10 @@ Use `checklists/LITERATURE_AUDIT_CHECKLIST.md` and `checklists/NOVELTY_KILL_CHEC
 
 ## 7. Evidence requirements
 
+For each serious candidate, preserve the strongest closest-paper/source-claim comparison with bibliographic identity, exact model/proposition/section reference, reading depth, common structure, surviving difference, and unresolved evidence. Scores cannot replace these comparisons. When full text is unavailable, preserve the limit; snippets alone cannot establish model-level novelty PASS.
+
+For correction/reassessment, compare the original claim, proposed correction, and affected economic conclusion separately, then search existing corrections and source versions. A correction is not absorbed merely because the source model is known; it is absorbed if the relevant correction/consequence is already established. A changed formula alone does not establish substantive contribution.
+
 Verify bibliographic metadata. Prefer publisher/DOI pages and full papers or author versions for model-level comparison. State explicitly when only abstract-level evidence is available.
 
 Game-level absorption claims require model-level evidence. A list of papers covering separate ingredients is not sufficient evidence that the full game is absorbed.
@@ -136,7 +140,8 @@ Do **not** kill solely because all components are separately known if no prior m
 At least one model/proposition-level distinction must survive a serious closest-paper comparison. A qualifying distinction may be:
 
 - a genuinely new mechanism; or
-- an economically substantive generalization/unification that nests important prior models and creates a new strategic interaction plus a nontrivial candidate result.
+- an economically substantive generalization/unification that nests important prior models and creates a new strategic interaction plus a nontrivial candidate result; or
+- an economically substantive new result in a known model, or correction/reassessment with an identifiable source defect and non-cosmetic expected economic consequence, subject to subsequent certification and correction-prior-art audit.
 
 “No exact title match” and “nobody combined these ingredients” are both insufficient.
 

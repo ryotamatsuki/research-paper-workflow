@@ -39,6 +39,8 @@ No new variables, extensions, robustness exercises, contracts, states, applicati
 
 ## 6. Mandatory tasks
 
+Use the Stage-6 contribution memo and any bounded family/dependency register. Evaluate the actual contribution route. For correction/reassessment, test whether the verified defect changes substantive equilibrium/welfare/economic understanding rather than insisting on an unrelated new mechanism. Existing full-paper standards, research-note/pivot options, inherited certification, and Stage-7.5A routing remain unchanged.
+
 Answer explicitly:
 
 1. Can the main mechanism be explained without notation?
@@ -78,6 +80,8 @@ Do not proceed to a full paper if:
 ## 10. Success criteria
 
 A full-paper `GO` requires a concise general mechanism, defensible novelty, Stage-4A-certified main results, welfare or organizational relevance, and a credible journal path.
+
+For correction/reassessment, the corresponding contribution must be a concise, substantively consequential corrected economic conclusion with defensible correction novelty and the same certification/relevance requirements. State the source claim → verified correction → economic consequence on the mechanism card. This recognizes an existing contribution route; it does not automatically raise a narrow correction to full-paper `GO`.
 
 A Stage-7.5 `GO` is not permission to freeze theory. It routes to Stage 7.5A for independent generality/quantifier certification.
 

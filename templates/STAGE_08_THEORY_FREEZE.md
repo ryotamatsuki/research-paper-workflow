@@ -29,7 +29,7 @@ Freeze the theoretical object so that later writing cannot silently change the m
 Stage 8 may begin only if all are present:
 
 1. `GO — MATHEMATICAL ADVERSARIAL CERTIFICATION PASS` from Stage 4A;
-2. `GO — GENERALITY / QUANTIFIER CERTIFICATION PASS` from Stage 7.5A; and
+2. `GO — GENERALITY / QUANTIFIER / PORTABILITY CERTIFICATION PASS` from Stage 7.5A; and
 3. the Stage-7.5A Formal Verification Gate is closed with exactly one of:
    - `FORMAL VERIFICATION PASS`; or
    - `FORMALIZATION NOT APPLICABLE — REASON RECORDED`.
@@ -39,6 +39,8 @@ A Stage-4 or Stage-7.5 `GO`, green CI, successful symbolic reproduction, a worki
 `NOT TESTED`, `PLANNED`, failed compilation, unresolved statement-fidelity mismatch, unexplained proof escape hatch, or a stale formal certificate blocks theory freeze when formal verification is applicable.
 
 ## 4. Canonical inputs
+
+When a related-result register exists, freeze the adopted claim/dependency scope and identify deferred/rejected members. No baseline/family certificate automatically covers a new claim, quantifier, assumption, or case. Adopted material members satisfy the existing certification obligations; future-work rows do not authorize freeze changes.
 
 Only results explicitly approved by the prior gates may enter the freeze. The Stage-4A theorem certificates, Stage-7.5A claim-scope ledger, and Stage-7.5A formal-verification certificate or recorded `NOT APPLICABLE` rationale are canonical freeze inputs.
 

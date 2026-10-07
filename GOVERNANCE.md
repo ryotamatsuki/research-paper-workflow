@@ -1,6 +1,6 @@
 # Governance
 
-Version: v2.7
+Version: v2.8
 
 ## 1. Purpose
 
@@ -78,6 +78,8 @@ The canonical three-layer defense is:
 1. Stage 4 — construction and verification;
 2. Stage 4A / Stage 7.5A — independent adversarial certification of correctness/globality and scope/generality;
 3. Stage 11 — full-manuscript hostile regression attack.
+
+For a material independent attack, record the inputs exposed to the reviewer, the construction artifacts withheld during first reconstruction where feasible, the independent reasoning/evaluator path, and discrepancy reconciliation. A different model, agent, chat, or prompt alone does not establish logical independence. When a blind first pass is infeasible, disclose the shared inputs and justify a distinct attack path; duplicate execution is not independent certification.
 
 ### 2.10 Submission compliance must be evidence-bearing
 
@@ -194,6 +196,22 @@ For theorem-bearing or technically dense manuscripts, the manuscript-facing pack
 This does **not** require printing every algebraic expansion, coefficient list, root-isolation trace, or proof-assistant kernel trace. Routine/repetitive algebra may be delegated to Appendix/Supplement/code. The main manuscript and its explicit cross-references must preserve proof-critical bridges.
 
 Apply `checklists/REVIEWER_VERIFIABILITY_CHECKLIST.md` across Stages 10/11/13/14 where applicable. A presentation-only failure normally returns to Stage 13; a derivation-architecture failure may return to Stage 10; a gap that exposes an unproved or false substantive claim returns to the earliest affected research stage.
+
+### 2.18 Research search is bounded and evidence-bearing
+
+Broad searches at Stages 0/3 may use a larger candidate bank, but this is an aid inside existing Stages, not a new Stage or replacement route. Preserve stable candidate IDs, source/puzzle provenance, contribution route, structural mechanism fingerprint, closest-literature evidence and reading depth, selection/disposition reasons, and the current batch budget. Merge structural duplicates rather than counting alternative wording as independent candidates.
+
+Set a finite candidate, time, or compute budget before a broad batch. Novelty scores and generated-candidate counts prioritize attention; they do not establish novelty or research productivity. There is no universal requirement to generate 50–100 ideas or conduct a fixed number of random parameter draws. Expand the budget only for a recorded research reason, not to preserve a preferred result. Retain material rejected/deferred branches and revisit them only for new evidence or a genuinely distinct mechanism.
+
+Use `templates/RESEARCH_SEARCH_REGISTER.md` or equivalent existing project records. Do not duplicate logs solely to satisfy a filename requirement or invent a retrospective research chronology.
+
+### 2.19 Contribution selection precedes discretionary result-family expansion
+
+Stages 3/4 must state the anticipated economic contribution in a short working memo. Stage 6 updates it against the actual Stage-4A-certified result and strongest prior-art threat before discretionary Stage-7 expansion. Record the closest result, exact surviving difference, economic consequence, evidence maturity, strongest objection, and reason for the next investment. This strengthens existing gates; it does not insert a new verdict or bypass Stage 4A, Stage 6, Stage 7.5, or Stage 7.5A. An early memo is not a manuscript and does not authorize full-paper construction before theory freeze.
+
+Evaluate the contribution route actually claimed. New mechanisms, substantive new results within known models, generalization/unification, and economically consequential correction/reassessment have different novelty units. A correction must identify the source claim, establish the defect/corrected result, search prior corrections, and show what equilibrium, welfare, policy interpretation, or substantive economic understanding changes. A cosmetic algebraic repair does not automatically qualify for a paper; absence of a new mechanism does not automatically kill a substantive correction.
+
+Related results may share a family/dependency register, but grouping does not transfer proof, novelty, scope, or submission authorization. Separate core results, necessary robustness, Appendix material, future research, and rejected claims. Every adopted material claim inherits the existing certification gates. New strategic primitives or headline claims require the existing rollback/change-control route. Family expansion is optional and budgeted; it does not authorize multiple papers, automatic extension, or reopening a frozen project without a diagnosed reason.
 
 ## 3. Repository change policy
 
