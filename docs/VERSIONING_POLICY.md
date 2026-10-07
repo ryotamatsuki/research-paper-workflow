@@ -10,6 +10,8 @@ A workflow version is a promise about the stability of the research workflow int
 
 The version number therefore tracks the **kind of workflow change**, not merely whether a later interpretation could alter an earlier research judgment.
 
+The same compatibility test applies in every major-version line; the v1 examples below are historical examples, not a restriction to v1 projects.
+
 ## 2. Version format
 
 Stable releases use `vMAJOR.MINOR` or `vMAJOR.MINOR.PATCH` Git tags, for example `v1.0`, `v1.1`, and `v1.0.1`.
@@ -167,3 +169,5 @@ The 2026-09-24 AI provenance / human accountability refinement preserves Stage i
 
 
 The 2026-09-25 reviewer-verifiability / proof-exposition refinement preserves Stage identity, canonical verdict semantics, normal routing, rollback architecture, and freeze meaning. It strengthens Stage 10 derivation architecture, Stage 11 hostile reconstruction, Stage 13 integrated-manuscript closure, and Stage 14 final-package QA by requiring a competent specialist referee to be able to follow proof-critical derivation chains and understand the object/domain/property/implication of delegated computer-assisted proof steps. It explicitly permits routine or mechanically generated expansions to remain in Appendix/Supplement/code while requiring conceptual bridge equations and claim mappings to remain visible. Because this adds a material verification obligation inside existing Stages without adding, removing, renumbering, or rerouting any Stage, it is a **MINOR-version refinement** and is included in the stable **v2.7** release.
+
+The 2026-10-07 bounded research search / selection refinement is **MINOR v2.8**: optional larger candidate banks and structural deduplication operate inside Stages 0/3; closest-source comparison stays at Stage 2/6; short contribution memos strengthen Stages 3/4/6; Stage 4A records attack independence; Stage 7 manages optional related-result scope; Stage 8 freezes adopted dependencies. Correction/reassessment is assessed inside existing gates by its verified substantive economic consequence. No canonical Stage, verdict meaning, route, one-fix rule, rollback behavior, or freeze meaning changes. A replacement Stage 0–8 architecture or moving Stage 4A behind discretionary expansion would be MAJOR and is explicitly not adopted.

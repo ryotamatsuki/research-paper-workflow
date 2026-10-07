@@ -47,6 +47,8 @@ Do not build a full model, write a paper, add complexity to make the idea look n
 9. Produce one falsifiable one-sentence research question.
 10. Specify the literature families and source material that Stage 1/2 must audit.
 11. If material AI assistance is used, initialize an `AI_PROVENANCE_LOG` or equivalent under `checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md`; reference existing chats/artifacts rather than copying full transcripts.
+12. For a broad batch, use `RESEARCH_SEARCH_REGISTER.md` or equivalent records: candidate IDs, motivating evidence, contribution routes, structural fingerprints, dispositions, and a finite candidate/time/compute budget. Merge structural duplicates. A larger raw bank is optional, not a quota replacing the 3–8 distinct-candidate intake.
+13. For correction/reassessment, separate the suspected source defect from the expected economic consequence. Neither is verified merely because a candidate was generated.
 
 ## 7. Evidence requirements
 
@@ -88,6 +90,8 @@ Return `NO-GO` if the phenomenon is too vague, the proposed contribution is alre
 9. Required Stage 1 inputs
 10. AI provenance status (`NOT USED`, `NON-MATERIAL/ROUTINE`, or log/reference initialized)
 11. Verdict and next-stage contract
+
+For broad searches also carry forward the candidate/disposition register and batch budget. They are selection records, not additional Stage verdicts.
 
 ## 13. Final verdict
 

@@ -99,12 +99,19 @@ Complete whenever multiplicity is resolved by an added restriction, selection ru
 
 ## F. Independent reconstruction certificate
 
+- [ ] Reviewer input exposure and first-pass production-derivation/code access recorded
+- [ ] Primitives-first reconstruction attempted with construction artifacts withheld where feasible, or limitation and distinct attack path justified
+- [ ] Agent/model/chat identity not treated alone as proof of logical independence
+
 - [ ] Reconstruct at least one high-stakes payoff/allocation object directly from primitives where feasible.
 - [ ] Use an independent derivation, evaluator, solver, or model/reviewer where feasible.
 - [ ] Confirm the independent path does not merely call the production solver.
 - [ ] Reconcile any discrepancy before `PASS`.
 
 ## G. Counterexample certificate
+
+- [ ] Search budget, economic-domain coverage, adversarial targets, and stopping limits recorded
+- [ ] Absence of sampled counterexamples not promoted into proof or a whole-domain certificate
 
 - [ ] Search analytically/symbolically for counterexamples where feasible.
 - [ ] Search numerically only after analytic/symbolic characterization where feasible.

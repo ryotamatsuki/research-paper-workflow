@@ -36,6 +36,8 @@ Stage 4A also identifies which surviving proof-critical components should later 
 
 ## 3. Frozen inputs
 
+Before first reconstruction, record what the reviewer receives: primitives, timing, information, complete domains, equilibrium concept, and exact claim. Where feasible, withhold the production derivation/code and preferred branch during that pass, then compare paths. Record input exposure, independent method/evaluator, and discrepancy reconciliation. If blinding is infeasible, explain why and justify a distinct attack path. A new agent/model/chat alone is not an independence certificate.
+
 Players, timing, primitives, equilibrium concept, strategy sets, and candidate propositions are frozen. This stage may expose an error or scope restriction but may not repair the model silently.
 
 ## 4. Mandatory certification tasks

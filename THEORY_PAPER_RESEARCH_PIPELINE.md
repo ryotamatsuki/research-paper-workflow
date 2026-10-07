@@ -1,6 +1,6 @@
 # Theory Paper Research Pipeline
 
-Version: v2.7
+Version: v2.8
 
 ## 1. Purpose
 
@@ -167,6 +167,12 @@ Stage 12 must preserve an auditable candidate-universe/exclusion record before s
 
 ---
 
+### v2.8 bounded research search / selection refinement
+
+This MINOR refinement operates inside the existing Stage architecture. Stages 0/3 may maintain a bounded, structurally deduplicated candidate bank; Stage 2 supplies source-grounded comparison; Stages 3/4 draft a short contribution memo; Stage 6 updates it against certified results before discretionary Stage-7 expansion. Stage 4A records the actual independence of its attack, not merely a different agent/model name. Stage 7 may maintain a bounded related-result register, and Stage 8 freezes the adopted claim/dependency scope.
+
+Use `templates/RESEARCH_SEARCH_REGISTER.md` or equivalent existing records. It is a companion artifact, not an additional canonical Stage. Existing routing, repair, freeze, and formal-verification obligations remain unchanged. Search has no universal idea-count, random-draw, extension, or manuscript quota. Correction/reassessment candidates are evaluated by the verified economic consequence of the correction, without requiring an unrelated new mechanism.
+
 ## 2. Universal stage schema
 
 Every stage-specific prompt, report, or template should include, unless genuinely inapplicable:
@@ -216,6 +222,7 @@ Extract the genuine economic question from a phenomenon, old paper, policy probl
 - Identify agents, decisions, frictions, and outcomes that appear essential.
 - Distinguish theoretical contribution from application or institutional motivation.
 - Generate multiple plausible mechanisms before committing to one.
+- For a broad search, record candidate IDs, motivating source/puzzle, contribution route, structural duplicates, dispositions, and a finite batch budget. A larger raw bank is optional; wording variants are not distinct mechanisms.
 - Write a one-sentence research question that can in principle be falsified by prior art or model analysis.
 
 ## Kill tests
@@ -283,6 +290,8 @@ For generalization/unification identify important nested prior models, restricti
 
 Classify overlap as `EXACT PRIOR ART`, `STRUCTURALLY VERY CLOSE`, `COMPONENT OVERLAP`, `MERELY RELATED`, or `POTENTIALLY NOVEL` only when a model/result-level distinction survives.
 
+Attach evidence and reading depth to the strongest closest-paper comparison for each serious candidate; scores or search failure are not positive novelty evidence. For correction/reassessment, identify the exact source claim and proposed corrected consequence, and search existing corrections/source versions rather than demanding an unrelated new mechanism.
+
 ## Kill tests
 
 Kill contributions that are renamed known results, cosmetic new variables, immediate corollaries of the closest model, keyword-search novelty, “nobody combined these ingredients” novelty without new strategic feedback, or notation-only generalization.
@@ -308,6 +317,9 @@ Generate competing explanations and select mechanisms or strategically meaningfu
 - For generalization/unification, identify nested benchmarks and the interaction that exists only when components are jointly endogenous.
 - State a candidate result unavailable in each benchmark alone.
 - Score candidates on novelty, mechanism clarity, whole-game prior-art survival, tractability, welfare content, institutional relevance, and journal fit when useful.
+- Merge structural duplicates using players/objectives, endogenous controls, timing/information, constraints, and feedback/result logic; preserve merged IDs and reasons.
+- Draft a short contribution memo for serious candidates: closest result, hypothesized difference, economic consequence, evidence limits, fatal objection, and next investment. Diagnose an institution-specific claim by removing/replacing the alleged institutional driver where feasible; this is not an automatic novelty verdict.
+- Keep ranking separate from certification. A Stage-3 skeleton/sign check is not a completed Stage-4 model or permission to exceed an explicitly authorized project stop point.
 
 ## Kill tests
 
@@ -342,6 +354,7 @@ Solve the strongest candidate mechanism/generalization completely in the smalles
 - Write each desired result as a Candidate Proposition and actively try to falsify it.
 - Identify sign-switch/threshold conditions rather than forcing ambiguous derivatives into monotone claims.
 - For generalization/unification, solve/recover nested benchmarks and identify at least one full-model result unavailable as an immediate benchmark corollary.
+- Update the working contribution memo from the constructed result, provisional pending Stage 4A/6. A solved formula alone does not justify discretionary family expansion or manuscript investment.
 
 Apply `checklists/SYMBOLIC_VERIFICATION_CHECKLIST.md`, `checklists/NUMERICAL_VERIFICATION_CHECKLIST.md` when applicable, and `checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md` in full whenever off-path continuations matter.
 
@@ -373,6 +386,7 @@ For every headline claim:
 
 - formalize exact quantifiers, parameter domain, strategy domain, assumptions, and local/branch/global status;
 - reconstruct payoffs/allocation from primitives without relying only on the production solver;
+- record reviewer inputs, first-pass production-derivation/code exposure, independent attack path, and discrepancy reconciliation; withhold construction artifacts during primitives-first reconstruction where feasible, or disclose limits and justify a distinct attack;
 - re-audit FOCs/KKT, SOCs/Hessians, feasibility, participation, existence/uniqueness as relevant;
 - enumerate and attack corners, boundaries, active-set changes, regime switches, order changes, entry/exit, zero-output states, discontinuities, kinks, and material off-path histories;
 - search for profitable finite/global deviations over the actual strategy set;
@@ -447,6 +461,8 @@ A result that looked novel before the mathematics may be killed now. Remove it i
 
 Stage 6 updates the Stage-2 literature ledger rather than repeating the entire search from zero unless the mechanism materially changed.
 
+Before discretionary Stage-7 expansion, update the short contribution memo against the certified result: exact closest-paper difference, substantive economic consequence, evidence maturity, strongest remaining objection, and why further investment is justified. This assessment is part of Stage 6, not a new routing gate. For correction/reassessment, distinguish a substantive corrected conclusion from cosmetic algebra, and check whether the correction is already known. Do not manufacture a new mechanism to fit a contribution label.
+
 ---
 
 # Stage 7 — Welfare / Generality / Institutional Validation
@@ -465,6 +481,7 @@ Determine whether the certified mechanism matters beyond firm profit and one mot
 - Produce testable predictions where possible.
 - Perform result-to-exposition triage for every headline result: theorem/proposition, figure, table, numerical illustration, or concise prose.
 - Flag thresholds, sign reversals, non-monotonicity, regime changes, benchmark separation, welfare decomposition, and multi-case scope patterns for visual consideration when useful.
+- If related results/extensions are explored, use a budgeted family/dependency register: parent claim, changed assumptions, maturity, verification/novelty obligations, purpose, disposition, and stop point. Separate core, necessary robustness, Appendix, future research, and rejected material. The register authorizes no new strategic primitives/headline claims outside this Stage's scope; use existing rollback when required.
 
 ## Kill tests
 
@@ -499,6 +516,8 @@ Decide whether the project contains a general economic mechanism worthy of full-
 - `NO-GO` → stop the full-paper route or classify as research note/pivot without treating that label as `GO`.
 
 Do not initialize a full manuscript merely because a closed-form model exists.
+
+Use the Stage-6 contribution memo to evaluate full-paper value. Apply the questions to the claimed route: a substantive correction/reassessment may change equilibrium characterization, welfare, or economic understanding without a new mechanism. This is not automatic full-paper eligibility and does not bypass inherited correctness, scope, relevance, or novelty gates.
 
 ---
 
@@ -649,7 +668,8 @@ Stage 8 is blocked unless the project has:
 - material AI-use/provenance record where applicable;
 - author intellectual-contribution record for central results;
 - benchmark-definition register;
-- counterexample/regression-test register.
+- counterexample/regression-test register;
+- adopted related-result/dependency scope and deferred/rejected material, when a family register is used.
 
 For sequential/game-theoretic models additionally freeze off-path history classes, continuation-equilibrium status, active-set/corner/order/participation handling, solver outcome taxonomy, multiplicity/nonexistence/selection assumptions, and independent direct-payoff/allocation verification artifacts.
 
@@ -1031,6 +1051,14 @@ For the actual submission, direct current editorial-office instructions outrank 
 If a material requirement remains unresolved after current journal/publisher/portal research, obtain clarification from the journal/editorial office or submission support before full Stage-14 PASS. Portal acceptance alone is not proof of technical compliance.
 
 ---
+
+## 3.14 Bounded search, contribution memos, and related-result scope
+
+Candidate selection dispositions are not canonical Stage verdicts. Broad search cannot bypass Stage 1/2 source/literature audit, Stage 4 construction, Stage 4A independent certification, or the pre-freeze gates. Stage-0/3 screening may be lightweight; selected material contributions close all applicable gates later.
+
+Use candidate/source/family records to avoid repeated failed branches, expose unresolved novelty, and choose the next bounded investment. Preserve negative findings and revise budgets only for recorded reasons. A short working memo is permitted before theory freeze; the full manuscript remains a Stage-10 output.
+
+For a family member, identify which certificates actually apply and which changed assumptions, cases, quantifiers, or conclusions need new certification. Neither shared notation nor a family name establishes coverage. Never silently add a related result to a frozen theory/submission package.
 
 # 4. Companion materials
 

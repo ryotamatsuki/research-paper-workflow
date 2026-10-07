@@ -27,6 +27,8 @@ Model and contribution claims surviving Stage 6 are frozen for this stage. Stage
 
 ## 4. Allowed changes
 
+Before discretionary related-result exploration, consume the Stage-6 contribution memo and set a bounded purpose/budget. If a family register is useful, record parent claim, changed assumptions, proof/novelty/scope maturity, intended role (`CORE`, `NECESSARY ROBUSTNESS`, `APPENDIX`, `FUTURE RESEARCH`, or `REJECTED`), certificate dependencies, and stop point. Existing records may supply this information; no extension quota applies. The register grants no permission beyond the allowed changes below. New strategic primitives/headline claims require existing rollback.
+
 You may add welfare notation, explicitly defined planner benchmarks, equilibrium-selection qualifiers required by the certified equilibrium set, or empirical predictions implied by the frozen model. You may classify existing verified results by their appropriate exposition vehicle. You may not add a new strategic mechanism merely to create a more attractive result, figure, or table.
 
 ## 5. Prohibited changes

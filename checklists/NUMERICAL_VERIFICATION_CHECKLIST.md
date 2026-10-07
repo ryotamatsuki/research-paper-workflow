@@ -31,6 +31,10 @@ Numerical work is normally diagnostic and should follow symbolic/analytic work u
 
 ## Random / grid audit
 
+- [ ] Finite search budget and design rationale recorded; no universal random-draw quota assumed
+- [ ] Boundary, near-singular, active-set, and regime-transition attacks prioritized where relevant
+- [ ] Stopping limits reported; no-counterexample-found distinguished from analytic/exact certified truth
+
 - [ ] Sampling distribution/range documented
 - [ ] Random seed fixed and recorded
 - [ ] Infeasible draws filtered only using primitive/model conditions, not because the preferred equilibrium branch failed

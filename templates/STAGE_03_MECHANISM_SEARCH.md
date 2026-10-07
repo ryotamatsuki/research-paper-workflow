@@ -65,6 +65,12 @@ If scoring candidates, define weights ex ante. Suggested dimensions: novelty, me
 
 Select at most a TOP 3 for deep dives. Identify the single preferred minimal candidate if possible.
 
+Use `RESEARCH_SEARCH_REGISTER.md` or equivalent records to merge candidates with the same player/objective-control-timing-information-constraint-feedback structure. The 8–12 candidate guidance does not require inventing weak mechanisms; a larger raw bank is optional and budgeted. Scores prioritize attention and do not certify novelty.
+
+For serious candidates draft a short contribution memo: closest result, hypothesized difference, economic consequence, evidence maturity/limits, strongest objection, and next bounded investment. For an institution-specific claim, test conceptually whether removing/replacing the alleged driver changes the predicted result; an unchanged result limits the institution-specific claim, not automatically every contribution route.
+
+For a surviving correction/reassessment route, the candidate may be the corrected characterization/consequence rather than a new mechanism. Identify the source claim, anticipated defect, prior-correction threat, and affected conclusion. Do not add unrelated primitives to create novelty. Keep unproved candidates provisional.
+
 ## 7. Evidence requirements
 
 Candidate novelty must be grounded in Stage 2 evidence. If a candidate introduces a new literature family, perform a targeted mini-search before ranking it highly. If the route is generalization/unification, preserve the Stage 2 nested-benchmark map and update it rather than discarding it.
@@ -93,11 +99,15 @@ Do not reject a generalization merely because each component is familiar if the 
 
 At least one candidate must have a clear economic loop, a minimal implementable model, and plausible model/proposition-level distance from the closest literature. A generalization/unification candidate qualifies only if it has a credible full-game interaction result beyond the nested benchmarks.
 
+For correction/reassessment, assess that loop through the original claim → candidate corrected characterization → changed economic conclusion. A new strategic ingredient is not mandatory; the non-cosmetic consequence and prior-correction distinction must remain plausible and subject to Stage-4/4A certification.
+
 ## 11. Failure criteria
 
 Return `NO-GO` if all credible candidates are known, trivial, immediate corollaries, or require uncontrolled complexity.
 
 ## 12. Required final output
+
+Include the structurally deduplicated candidate/disposition register, budget, and short contribution memo with the outputs below. These do not substitute for the canonical verdict or Stage-4 work. Material rejected/deferred branches retain evidence and a reopening condition.
 
 1. Executive mechanism-search verdict
 2. Candidate table

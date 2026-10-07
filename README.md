@@ -19,7 +19,24 @@ Canonical hierarchy:
 
 `GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → stage templates → checklists → examples.
 
-## v2.7 stable release: reviewer verifiability / proof exposition hardening
+## v2.8: bounded research search / contribution selection
+
+v2.8 strengthens the existing workflow after comparison with OpenAI Math's public research collection. It preserves all canonical Stages, verdict semantics, routing, one-fix discipline, rollback, freeze meanings, and formal-verification obligations.
+
+- **Stages 0/3:** structurally deduplicate evidence-grounded candidates and set a finite batch budget; larger candidate banks are optional, with no universal idea-count quota.
+- **Stages 2/6:** attach exact closest-paper/source-claim comparisons and reading depth instead of treating novelty scores as evidence.
+- **Stages 3/4/6:** maintain a short contribution memo; Stage 6 assesses the certified result's economic consequence before discretionary Stage-7 expansion.
+- **Stage 4A:** record reviewer input exposure, independent attack path, and discrepancy reconciliation; a different agent/model alone does not establish independence.
+- **Stages 7/8:** optionally track related results and dependencies; freeze adopted scope and retain deferred/rejected members without automatic certificate inheritance.
+- **Correction/reassessment:** evaluate the substantive corrected economic conclusion without requiring an unrelated new mechanism; mathematical and scope certification still inherit.
+
+Companion record: [`templates/RESEARCH_SEARCH_REGISTER.md`](templates/RESEARCH_SEARCH_REGISTER.md). Equivalent existing project records suffice.
+
+Final design judgment and migration: [`docs/BOUNDED_RESEARCH_SEARCH_REFINEMENT_2026-10-07.md`](docs/BOUNDED_RESEARCH_SEARCH_REFINEMENT_2026-10-07.md).
+
+Release notes: [`docs/V2_8_RELEASE_NOTES.md`](docs/V2_8_RELEASE_NOTES.md).
+
+## v2.7 release: reviewer verifiability / proof exposition hardening
 
 This refinement preserves the Stage architecture, verdict semantics, routing, rollback rules, and freeze meanings. It adds an explicit specialist-referee standard for technical exposition: correctness and reproducibility are not enough if the manuscript hides the derivation or proof-critical bridge that connects model/data primitives to the claimed result.
 
@@ -293,6 +310,8 @@ Templates live under [`templates/`](templates/):
 
 ## Verification checklists
 
+`templates/RESEARCH_SEARCH_REGISTER.md` is an optional-format companion record, not an additional executable Stage template. Its applicable evidentiary obligations may be met in existing project logs.
+
 Reusable checklists live under [`checklists/`](checklists/), including:
 
 - [`LITERATURE_AUDIT_CHECKLIST.md`](checklists/LITERATURE_AUDIT_CHECKLIST.md)
@@ -335,6 +354,7 @@ For actual submissions, the most specific current authority controls: direct edi
 - `v2.5` — minor refinement adding generalized exposition architecture, reader-arrival budgets, section-purity and necessity tests, the five-exhibit thought experiment, Stage-13 streamlining, and Stage-14 exposition verification/rollback; consolidated into v2.7.
 - `v2.6` — minor refinement adding material AI-use provenance, verification-actor separation, author intellectual-contribution records, disclosure reconciliation, and final author sign-off; consolidated into v2.7.
 - `v2.7` — stable minor release consolidating v2.3–v2.7 and adding reviewer-verifiability / proof-exposition hardening across Stages 10/11/13/14.
+- `v2.8` — minor refinement adding bounded/deduplicated candidate records, early contribution memos, attack-independence records, related-result scope control, and route-appropriate correction assessment inside existing Stages. See the live tag/Release for publication status.
 
 Under [`docs/VERSIONING_POLICY.md`](docs/VERSIONING_POLICY.md), v2.0 is MAJOR because it adds Stage 4A and Stage 7.5A and changes canonical routing.
 
@@ -360,6 +380,7 @@ The formal-verification refinement and the v2.2 structural-isomorphism/theorem-a
 16. If a later stage invalidates earlier work, return to the earliest affected stage and mark downstream outputs stale, including formal certificates whose statements/hypotheses changed.
 17. Preserve rejected branches, additional equilibria, counterexamples, negative results, theorem-certificate failures, formalization failures, and certification regressions as research provenance.
 18. When using a paper-specific route such as `C0–C6`, map each strong claim to the inherited canonical certification and formal-verification obligations and required evidence artifacts.
+19. For broad Stage-0/3 search, preserve candidate/source/disposition evidence and a finite budget. Use short contribution memos at Stages 3/4/6 and track adopted/deferred related claims when useful. These records do not bypass canonical gates or authorize changes to frozen projects.
 
 ## Repository structure
 
@@ -387,6 +408,6 @@ Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 ## Status
 
-Current canonical repository revision: **v2.7**.
+Current canonical repository revision: **v2.8**.
 
-The current stable published release is **`v2.7`**, consolidating the post-v2.2 refinements through reviewer verifiability. Previous stable tags remain immutable. The v2.0 architecture was merged and audited but not separately tagged; v2.1 was the first stable tagged release in the v2 line.
+Stable release reference: [`v2.8`](https://github.com/ryotamatsuki/research-paper-workflow/releases/tag/v2.8). A version marker or readiness verdict alone does not establish that its tag/Release has been published; confirm the live release record. The reviewed state is published by `.github/workflows/publish-v2.8.yml` after merge. The prior `v2.7` stable release and all earlier stable tags remain immutable. The v2.0 architecture was merged/audited but not separately tagged; v2.1 was the first stable tagged v2 release.
