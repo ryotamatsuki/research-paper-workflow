@@ -57,6 +57,19 @@ Answer explicitly:
 
 Construct a mechanism card with: phenomenon → friction → strategic response → equilibrium effect → welfare effect → empirical implication.
 
+### Mandatory pre-freeze Contribution Completeness & Editorial Value Audit
+
+Apply `checklists/ECONOMIC_CONTRIBUTION_COMPLETENESS_CHECKLIST.md` or equivalent. Deliver:
+
+1. A short **skeptical editor's decision**: why should the field publish this result beyond mathematical correctness and theorem distinctness?
+2. A claim-to-question table: headline motivating question, what each certified theorem actually answers, and material questions left unanswered.
+3. A recorded decision for each material gap: `ESSENTIAL FOLLOW-UP / BOUNDED LIMITATION / FUTURE PAPER / NOT APPLICABLE`. A diagnosis-only theory may pass when its standalone economic contribution and field fit are defended.
+4. If needed, compare **baseline-only / one bounded economically motivated extension / reframe or research note**; state predicted *new economics*, prior-art absorption threats, institutional feasibility, proof/novelty costs, and the no-uncontrolled-complexity stop rule.
+5. For policy-oriented work, answer separately: what failure exists; what should change under the *modeled* benchmark; what could implement the change under feasible instruments; or why implementability is intentionally not part of the contribution.
+6. A concise objection-resolution record with evidence and named verification actor; **author review is required for adoption of the core contribution, not presumed from AI consensus**.
+
+A `GO` is blocked if an unresolved `ESSENTIAL FOLLOW-UP` renders the *stated* paper question materially unanswered or the editorial case depends only on math/novelty PASS. Route via the existing `CONDITIONAL GO` to the earliest relevant Stage for one diagnosed repair, or `NO-GO / RESEARCH NOTE / PIVOT`. Stage 7.5 is evaluative: do not invent new contracts, variables, or theorems inside it. Any proposed theory extension reopens Stage 3/4/4A/6 and all affected later stages. Do not require a policy instrument or larger model in a pure theory, correction, commentary, or appropriately scoped diagnostic contribution.
+
 ## 7. Evidence requirements
 
 Use only verified mathematics, literature, and institutional evidence from prior stages. Do not upgrade conjectures to established propositions.
@@ -79,7 +92,7 @@ Do not proceed to a full paper if:
 
 ## 10. Success criteria
 
-A full-paper `GO` requires a concise general mechanism, defensible novelty, Stage-4A-certified main results, welfare or organizational relevance, and a credible journal path.
+A full-paper `GO` requires a concise general mechanism, defensible novelty, Stage-4A-certified main results, welfare or organizational relevance, a credible journal path, **and a resolved contribution-completeness/editorial-value audit with no unaddressed ESSENTIAL FOLLOW-UP**.
 
 For correction/reassessment, the corresponding contribution must be a concise, substantively consequential corrected economic conclusion with defensible correction novelty and the same certification/relevance requirements. State the source claim → verified correction → economic consequence on the mechanism card. This recognizes an existing contribution route; it does not automatically raise a narrow correction to full-paper `GO`.
 
@@ -99,6 +112,7 @@ Recommend `NO-GO / RESEARCH NOTE / PIVOT` when the work is correct but too narro
 6. Closest-paper distinction
 7. Welfare/generality case
 8. Fatal/major referee risks
+8a. Editor-facing economic-contribution case, question-completeness status, policy diagnosis/prescription/implementation scope where applicable, and bounded counterfactual decision
 9. Full-paper value assessment
 10. Recommended journal level
 11. Exact Stage-7.5A input package or pivot scope
