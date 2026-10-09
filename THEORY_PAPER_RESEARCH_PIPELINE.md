@@ -463,6 +463,8 @@ Stage 6 updates the Stage-2 literature ledger rather than repeating the entire s
 
 Before discretionary Stage-7 expansion, update the short contribution memo against the certified result: exact closest-paper difference, substantive economic consequence, evidence maturity, strongest remaining objection, and why further investment is justified. This assessment is part of Stage 6, not a new routing gate. For correction/reassessment, distinguish a substantive corrected conclusion from cosmetic algebra, and check whether the correction is already known. Do not manufacture a new mechanism to fit a contribution label.
 
+Before proceeding, complete a **provisional Contribution Completeness & Editorial Value Audit**: state the one-paragraph case for why a field editor should publish the surviving result *beyond correctness*, classify each material unanswered part of the motivating question (`ESSENTIAL FOLLOW-UP / BOUNDED LIMITATION / FUTURE PAPER / NOT APPLICABLE`), and compare the baseline-only path to one bounded meaningful extension or reframing when the claim would otherwise be incomplete. For policy-facing projects distinguish diagnosis, welfare prescription, and practical implementation; policy-instrument absence is not automatically fatal for pure theory or explicitly diagnostic contributions. Carry the objection and extension decision to Stage 7.5; no new theory may enter without Stage 3/4/4A/6 recertification.
+
 ---
 
 # Stage 7 — Welfare / Generality / Institutional Validation
@@ -477,6 +479,8 @@ Determine whether the certified mechanism matters beyond firm profit and one mot
 - Compare private and social decisions.
 - Identify under/over-provision or other organizational wedges.
 - Audit institutional support for core primitives, preferring primary sources.
+- For policy-oriented projects, map the claim to **diagnosis / normative benchmark / implementable instrument**; name missing contracting, incentives, finance, information, jurisdiction or administrative assumptions, or justify why implementation is genuinely out of scope. Do not call a planner allocation an implementable policy.
+- Compare a bounded, economically motivated extension with the minimal baseline when Stage 6 flags an essential unanswered research question. Describe predicted new economic result, closest prior-art risk, added assumptions and verification cost; do not silently implement the extension within Stage 7.
 - Test whether the mechanism generalizes across credible environments without changing the theory.
 - Produce testable predictions where possible.
 - Perform result-to-exposition triage for every headline result: theorem/proposition, figure, table, numerical illustration, or concise prose.
@@ -506,6 +510,10 @@ Decide whether the project contains a general economic mechanism worthy of full-
 - Which assumptions are essential versus normalization/tractability?
 - Does the contribution survive at least one credible alternative formulation already tested?
 - Is the welfare/organizational implication substantive?
+- Does the one-paragraph editor-facing case identify an economic consequence beyond mathematical correctness, novelty by notation, and a simple welfare wedge?
+- What important question remains unanswered relative to the stated motivation, and is it `ESSENTIAL FOLLOW-UP`, a justified `BOUNDED LIMITATION`, `FUTURE PAPER`, or `NOT APPLICABLE`?
+- For a policy-facing claim, what should be done, what could be done under specified feasible instruments, or why is a diagnosis-only contribution independently sufficient?
+- If material, what is the bounded baseline-only versus minimal-extension versus reframe/note comparison, and what evidence supports the choice?
 - Would a skeptical field referee see more than a parameter exercise?
 - If generalization/unification is claimed, which important prior models are nested and what result cannot be obtained from them separately?
 
@@ -515,7 +523,9 @@ Decide whether the project contains a general economic mechanism worthy of full-
 - `CONDITIONAL GO` → return only to the stage needed to resolve the one named blocker, then repeat affected downstream gates.
 - `NO-GO` → stop the full-paper route or classify as research note/pivot without treating that label as `GO`.
 
-Do not initialize a full manuscript merely because a closed-form model exists.
+Do not initialize a full manuscript merely because a closed-form model exists. 
+
+**Hard completeness decision (Stage 7.5):** close `checklists/ECONOMIC_CONTRIBUTION_COMPLETENESS_CHECKLIST.md` (or equivalent) before `GO`. An unresolved `ESSENTIAL FOLLOW-UP` that undercuts the stated research question or plausible contribution is not an acceptable `GO` merely because math/novelty PASS. Give a bounded repair route or use `CONDITIONAL GO` / `NO-GO`. Do not require an intervention theorem for pure theory, corrections, short notes, or intentionally diagnostic papers when their standalone contribution is defensible. New theory requires rollback through the earliest relevant stage and recertification; Stage 7.5 itself cannot add primitives.
 
 Use the Stage-6 contribution memo to evaluate full-paper value. Apply the questions to the claimed route: a substantive correction/reassessment may change equilibrium characterization, welfare, or economic understanding without a new mechanism. This is not automatic full-paper eligibility and does not bypass inherited correctness, scope, relevance, or novelty gates.
 
@@ -786,6 +796,7 @@ Attack at least:
 - numerical-not-proof;
 - proof/notation inconsistency;
 - journal fit/contribution level;
+- **independent editorial-value/question-completeness attack**: can a skeptical editor explain in a paragraph why this contribution merits publication, what it adds beyond a familiar externality/threshold, and what vital part of the research question remains unanswered? For policy-facing work explicitly challenge whether an uninternalized externality has an actionable remedy or a defensible diagnosis-only framing. Compare the claim with the frozen Stage-7.5 completeness record and classify any omission as an editorial weakness or a pre-freeze certification regression; never patch a missing theorem into Discussion.
 - exposition/claim inflation;
 - theorem quantifier inflation relative to Stage-7.5A certificates;
 - portability/classification inflation relative to the Stage-7.5A Contribution Robustness Certificate;
@@ -834,6 +845,7 @@ Then, for each serious candidate:
 
 - read current aims/scope and recent related papers;
 - compare model sophistication, article type, and contribution style with actual publications;
+- explicitly compare **editorial problem-completeness expectations** in recent relevant publications: is a diagnosis-only result accepted, or does this audience expect mechanism implementation, actionable comparative statics, or empirical validation? Record a specific likely desk-reject objection, not only a novelty or journal-rank label;
 - compare the journal's demonstrated generality/robustness expectations with the Contribution Robustness Certificate rather than assuming that journal rank mechanically determines required theory;
 - estimate desk-reject risk and likely referee objections;
 - assess whether empirical content is expected;
@@ -1059,6 +1071,10 @@ Candidate selection dispositions are not canonical Stage verdicts. Broad search 
 Use candidate/source/family records to avoid repeated failed branches, expose unresolved novelty, and choose the next bounded investment. Preserve negative findings and revise budgets only for recorded reasons. A short working memo is permitted before theory freeze; the full manuscript remains a Stage-10 output.
 
 For a family member, identify which certificates actually apply and which changed assumptions, cases, quantifiers, or conclusions need new certification. Neither shared notation nor a family name establishes coverage. Never silently add a related result to a frozen theory/submission package.
+
+## 3.15 Editorial feedback learning without retrospective theory rewriting
+
+For desk rejections or referees' decisions, preserve the actual letter separately from interpretation, map each substantive objection to the earliest relevant research Stage, and distinguish **contribution completeness / economic importance** from correctness, novelty, exposition, and journal fit. Document whether the old gate asked the right question and whether it failed; do not retrospectively pretend the earlier decision was a different verdict. A future project uses the improved checks. Revising a frozen paper requires explicit change control and renewed affected-stage certification; no desk rejection proves an extension would be novel or accepted.
 
 # 4. Companion materials
 

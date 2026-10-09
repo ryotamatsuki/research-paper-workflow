@@ -25,6 +25,16 @@ Resolved?: YES / NO
 - [ ] “The model combines known components but generates no new interaction.”
 - [ ] “The same theorem exists in an appendix / working paper.”
 
+## Economic significance / missing-question attacks
+
+- [ ] A mathematically correct and genuinely different model remains too abstract or economically small to merit a full paper; write the strongest plausible one-paragraph desk-reject rationale
+- [ ] Compare title, abstract, motivation and main research question with the actual certified results: which promised economic question remains unanswered?
+- [ ] Was the objection already closed at Stage 7.5, or merely characterized as a journal-positioning risk?
+- [ ] For policy-facing manuscripts distinguish distortion diagnosis, normative planner prescription and practically feasible instruments (incentives, finance, information, authority, participation, enforcement)
+- [ ] If implementation is outside the model, audit whether diagnosis-only genuinely forms a sufficient contribution instead of accepting a disclaimer as a response
+- [ ] Inspect the bounded baseline / meaningful extension / reframe-note comparison and its prior-art/complexity risks; do not require a new policy theorem for pure theory or corrections
+- [ ] If an essential missing question should have stopped theory freeze, label `CONTRIBUTION COMPLETENESS REGRESSION` and return to the earliest affected Stage; do not solve it by adding Discussion prose
+
 ## Known-model-in-disguise attacks
 
 - [ ] Rewrite the model without application labels
@@ -156,6 +166,7 @@ If yes, mark `CERTIFICATION REGRESSION`, preserve the counterexample as workflow
 ## Gate rule
 
 - [ ] No unresolved `FATAL` attack on the core contribution
+- [ ] Independent editor-facing question-completeness attack performed and all material Stage-7.5 exclusions are justified
 - [ ] Every plausible parent-model/theorem identified at Stage 4/6 has a closed absorption verdict
 - [ ] Every `MAJOR BUT FIXABLE` attack has a bounded fix
 - [ ] Any fix that changes theory is routed back through theory-change control

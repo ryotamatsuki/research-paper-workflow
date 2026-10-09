@@ -19,6 +19,20 @@ Canonical hierarchy:
 
 `GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → stage templates → checklists → examples.
 
+## v2.9 candidate: economic contribution / question completeness / editorial value (2026-10-10)
+
+The proposed **minor** refinement responds to a field-journal desk rejection of a mathematically valid regional industrial-policy theory paper: its model diagnosed an uninternalized cross-jurisdiction externality, but it did not explain what could practically internalize it. This was a genuine editor objection, **not proof** that a policy extension would succeed or that the old mathematics was flawed.
+
+- **Stage 6:** a short editor-facing economic-contribution memo and a material open-question register, with bounded `baseline only / meaningful extension / reframe or note` comparison.
+- **Stage 7:** policy-facing manuscripts distinguish diagnostic results, welfare prescription, and feasible implementation; pure theory and corrections are exempt from any blanket policy-instrument requirement.
+- **Stage 7.5:** mandatory pre-freeze economic significance and question-completeness closure. Mathematical and novelty PASS alone do not authorize a full-paper `GO` when an essential part of the stated research question is left unanswered.
+- **Stage 11:** independent skeptical-editor attack revisits the completeness decision, with rollback if it exposes a missing pre-freeze gate.
+- **Stage 12:** journal fit is checked against actual editorial expectations for diagnostic versus implementable or empirically grounded contributions.
+
+This refinement preserves all Stage numbers, verdict semantics, routing, one-diagnosed-fix discipline, certification, and freeze rules. It is not an instruction to add complexity for prestige. See [operational checklist](checklists/ECONOMIC_CONTRIBUTION_COMPLETENESS_CHECKLIST.md) and [case and design record](docs/ECONOMIC_CONTRIBUTION_COMPLETENESS_REFINEMENT_2026-10-10.md).
+
+**Release status:** proposal on a feature branch; not a published `v2.9` tag or GitHub Release. Stable `v2.8` artifacts remain historical.
+
 ## v2.8: bounded research search / contribution selection
 
 v2.8 strengthens the existing workflow after comparison with OpenAI Math's public research collection. It preserves all canonical Stages, verdict semantics, routing, one-fix discipline, rollback, freeze meanings, and formal-verification obligations.

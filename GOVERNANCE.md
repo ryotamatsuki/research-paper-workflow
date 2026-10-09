@@ -1,6 +1,6 @@
 # Governance
 
-Version: v2.8
+Version: v2.9-candidate (unreleased; v2.8 is the last documented release)
 
 ## 1. Purpose
 
@@ -213,6 +213,16 @@ Evaluate the contribution route actually claimed. New mechanisms, substantive ne
 
 Related results may share a family/dependency register, but grouping does not transfer proof, novelty, scope, or submission authorization. Separate core results, necessary robustness, Appendix material, future research, and rejected claims. Every adopted material claim inherits the existing certification gates. New strategic primitives or headline claims require the existing rollback/change-control route. Family expansion is optional and budgeted; it does not authorize multiple papers, automatic extension, or reopening a frozen project without a diagnosed reason.
 
+### 2.20 Economic significance and question-completeness are independent of correctness and novelty
+
+A mathematically certified and genuinely distinctive result is not automatically a full-paper contribution. Before Stage 8, test (a) *what economic understanding changes*, (b) *why the field audience should care*, and (c) *whether the motivating question leaves a material explanatory, welfare, allocation, policy, or implementation question unanswered*. An unanswered question is not automatically a fatal defect: classify it as `IN SCOPE / ESSENTIAL FOLLOW-UP / BOUNDED LIMITATION / FUTURE PAPER / NOT APPLICABLE` with reasons and evidence.
+
+For **policy-oriented** claims, distinguish identifying a failure from showing what *should* be done (a welfare benchmark) and what *could* work (feasible instruments, incentives, institutions, administration, information, finance). When practical implementation is central to the claimed contribution but absent, either (i) justify an intentionally diagnostic-only paper with a demonstrated field-journal/audience case, (ii) undertake one bounded pre-freeze mechanism exploration with independent novelty/mathematics audits, or (iii) reframe, downgrade, or stop the full-paper route. Pure theory, corrections, comments, and diagnostic work are **not** universally required to propose a policy instrument, create a new theorem, or add data.
+
+The **Contribution Completeness & Editorial Value Audit** belongs to Stage 6 (working memo), Stage 7 (welfare/institution), Stage 7.5 (**mandatory pre-freeze decision**), Stage 11 (independent editorial red-team), and Stage 12 (journal-specific fit). Apply `checklists/ECONOMIC_CONTRIBUTION_COMPLETENESS_CHECKLIST.md` or equivalent evidence. It must record: a source-grounded closest-paper distinction, a one-paragraph editor-facing reason to publish, the strongest missing-question attack, at least a bounded `BASELINE ONLY / MINIMAL POLICY OR MECHANISM EXTENSION / REFRAME OR NOTE` counterfactual when material, whether the extension would create *new economics* instead of cosmetic complexity, and a reasoned adoption/deferral decision. A `GO` with an unresolved **essential** question-completeness objection is prohibited; use the existing `CONDITIONAL GO` or `NO-GO` route. An already frozen paper requires normal rollback and re-certification before adding new theory.
+
+This is a **v2.9 minor refinement proposal** inside existing stages and routing, not a newly numbered Stage, a relaxation of mathematical/novelty gates, or a requirement to satisfy editor preferences by arbitrary theory expansion.
+
 ## 3. Repository change policy
 
 ### 3.1 Main branch
@@ -268,6 +278,9 @@ Review should focus on:
 - whether theorem-bearing/technically dense manuscripts are reviewer-verifiable: proof-critical intermediate objects and bridge equations are visible or precisely cross-referenced, delegated computer-assisted steps identify object/domain/property/implication, and streamlining has not made the proof logically opaque;
 - whether source requirements are explicit and realistic;
 - whether the workflow encourages unnecessary complexity;
+- whether mathematical/novelty PASS is being mistaken for sufficient economic/editorial importance;
+- whether policy-facing papers distinguish a diagnosed externality from practical implementation and document any material missing-question attack before theory freeze;
+- whether bounded extension-versus-baseline selection has evidence and does not force new instruments for pure theory, corrections, or notes;
 - whether `NO-GO` remains a legitimate outcome.
 
 ### 3.5 Release and version changes

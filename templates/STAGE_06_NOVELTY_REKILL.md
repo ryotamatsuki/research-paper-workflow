@@ -118,6 +118,14 @@ At least one independent theorem/mechanism/welfare result must survive as more t
 
 For a generalization/unification route, a surviving contribution may consist of a clean general model that nests important prior models **plus** a new full-game interaction theorem, threshold/ranking/reversal, conditions characterization, or welfare wedge.
 
+## 10A. Economic contribution completeness (before Stage 7)
+
+In addition to theorem novelty, apply the provisional `checklists/ECONOMIC_CONTRIBUTION_COMPLETENESS_CHECKLIST.md` (or an equivalent section of the Stage-6 contribution memo). In 120–200 words give an editor-facing reason to publish, **not** just a proof of non-isomorphism or a list of nice thresholds. Record which economic understanding, allocation, welfare implication, policy or organizational decision changes.
+
+List material unanswered questions suggested by the paper's *own title, abstract, motivating problem, and research question*. Classify each `ESSENTIAL FOLLOW-UP / BOUNDED LIMITATION / FUTURE PAPER / NOT APPLICABLE`, and explain the classification. For policy-facing work separately ask what causes the failure, what a planner recommends, and whether a feasible remedy is analyzed or intentionally excluded. When an essential gap may exist, write a bounded comparison of **baseline-only**, **one economically meaningful extension**, and **reframe/note** (expected mechanism/result, closest-theorem absorption risk, feasibility, verification cost, and stop rule). Stage 6 does not implement new primitives; a chosen change returns to Stage 3/4/4A and later returns through Stage 6.
+
+No universal policy-instrument theorem or empirical data requirement applies to pure theory, corrections, and self-contained diagnostic articles.
+
 ## 11. Failure criteria
 
 Return `NO-GO` if every main result is exact prior art, structurally very close, an obvious corollary of known work, or a generalization that adds no new economics beyond its nested benchmarks.
@@ -136,7 +144,8 @@ Return `NO-GO` if every main result is exact prior art, structurally very close,
 10. Surviving claim set
 11. Revised contribution statement
 12. Strongest remaining novelty threat
-13. Verdict and next-stage contract
+13. Editor-facing contribution case, question-completeness register, and any bounded baseline/extension/reframe comparison
+14. Verdict and next-stage contract
 
 ## 13. Final verdict
 

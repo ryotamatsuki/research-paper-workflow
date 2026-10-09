@@ -19,6 +19,7 @@ Act as research director and configuration manager. Convert the approved and ind
 - Formal-verification state: `[FORMAL_VERIFICATION_STATE]`
 - Formal-verification certificate / N/A rationale: `[FORMAL_VERIFICATION_ARTIFACT]`
 - Closest papers: `[CLOSEST_PAPERS]`
+- Stage-7.5 contribution-completeness/editorial-value audit: `[CONTRIBUTION_COMPLETENESS_RECORD]`
 
 ## 2. Stage objective
 
@@ -35,6 +36,8 @@ Stage 8 may begin only if all are present:
    - `FORMALIZATION NOT APPLICABLE — REASON RECORDED`.
 
 A Stage-4 or Stage-7.5 `GO`, green CI, successful symbolic reproduction, a working production solver, or an unassessed proof-assistant repository is not a substitute for these certificates.
+
+The Stage-7.5 **Contribution Completeness & Editorial Value Audit** must also be explicitly closed: no unresolved `ESSENTIAL FOLLOW-UP` undermining the stated paper question, and any diagnosis-only/policy-implementation limits must be stated honestly. This adds evidence to the existing entry gate; it does not change Stage 8 routing or demand a new policy theorem for every paper.
 
 `NOT TESTED`, `PLANNED`, failed compilation, unresolved statement-fidelity mismatch, unexplained proof escape hatch, or a stale formal certificate blocks theory freeze when formal verification is applicable.
 
@@ -88,6 +91,7 @@ Record at minimum:
 30. counterexample and regression-test register;
 31. material AI-use/provenance record where applicable;
 32. `AUTHOR_INTELLECTUAL_CONTRIBUTION_RECORD` or equivalent for central results, with verification actors distinguished.
+32a. Stage-7.5 editor-facing contribution case, open-question classifications, bounded baseline/extension/reframe decision when applicable, and policy-scope boundary or justified N/A.
 
 For sequential/game-theoretic models, additionally freeze:
 
