@@ -13,6 +13,7 @@ Act as an editor-level journal strategist. Match the completed contribution to c
 - Core mechanism/results: `[CURRENT_STAGE_RESULT]`
 - Stage-7.5A Contribution Robustness Certificate: `[CONTRIBUTION_ROBUSTNESS_CERTIFICATE]`
 - Stage-11 surviving contribution set: `[STAGE_11_SURVIVORS]`
+- Stage-7.5 economic-contribution/question-completeness audit: `[CONTRIBUTION_COMPLETENESS_RECORD]`
 - Closest papers: `[CLOSEST_PAPERS]`
 - Candidate target: `[TARGET_JOURNAL]`
 - Alternative journals: `[ALTERNATIVE_JOURNALS]`
@@ -101,6 +102,7 @@ Inspect:
 7. desk-reject and referee-fit risks;
 8. closest-paper overlap within that journal's audience;
 9. whether recent comparable theory papers are general-theory, conditional/applied-theory, model-specific-with-boundaries, institutional, correction/note, or another relevant contribution type;
+9a. whether comparable papers treat **diagnosis-only** results as independently publishable or expect implementable instruments, explicit institutions, or empirical validation; state a specific plausible desk-reject objection, not just 'model is narrow';
 10. whether the manuscript's certified portability class is compatible with that demonstrated publication pattern.
 
 If the journal would require a materially stronger substantive claim than the certificate supports, downgrade or reject the **journal candidate**. Do not silently strengthen the paper. A separately authorized new research program must reopen the earliest affected research stage and repeat downstream certification.
@@ -190,7 +192,7 @@ If material journal requirements cannot yet be verified, preserve them as explic
 2. Candidate-Universe Ledger and discovery paths
 3. Candidate-universe completeness audit, including explicit exclusions
 4. Current journal evidence
-5. Stage-7.5A certified contribution profile
+5. Stage-7.5A certified contribution profile and Stage-7.5 editor-facing question-completeness assessment
 6. Journal-Fit Matrix: certified strength vs current journal evidence
 7. Journal comparison table
 8. Primary target and rationale
