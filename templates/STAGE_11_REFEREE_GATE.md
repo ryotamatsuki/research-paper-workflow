@@ -69,6 +69,8 @@ Use `checklists/REFEREE_ATTACK_CHECKLIST.md` and explicitly test at least:
 - numerical-not-proof attack;
 - proof/notation inconsistency attack;
 - wrong-journal / insufficient-contribution attack;
+- **editor's strongest reject-in-one-paragraph attack**: a valid and distinctive theorem could still be economically too narrow, too abstract, or leave a key portion of its own motivating problem unanswered;
+- for policy-oriented work, **diagnosis-versus-implementation attack**: the manuscript finds an externality or constrained planner improvement but offers neither an implementable mechanism nor an evidence-backed case for being a deliberately diagnostic contribution;
 - exposition/claim-inflation attack;
 - theorem-quantifier inflation relative to Stage 7.5A;
 - portability/classification inflation relative to the Stage-7.5A Contribution Robustness Certificate;
@@ -76,6 +78,12 @@ Use `checklists/REFEREE_ATTACK_CHECKLIST.md` and explicitly test at least:
 - functional-form generality inflation;
 - planner/benchmark terminology drift;
 - global/SPNE claim drift relative to Stage 4A.
+
+### Contribution-completeness regression attack
+
+Independently consult the Stage-6 memo and Stage-7.5 contribution-completeness audit. Without treating either PASS as persuasive evidence by itself, write the **strongest plausible editor rejection paragraph** stating (1) what the result genuinely establishes, (2) why that may still be insufficient for the field, and (3) which important economic, organizational, policy or implementation question remains unanswered. For policy-facing papers, distinguish *should* (modeled social objective) and *could* (instruments, implementation feasibility) and challenge institution-free, costless, information-free prescription.
+
+Assign each concern `FATAL / MAJOR BUT FIXABLE / MINOR`, plus `EARLY-GATE MISS / POST-FREEZE PRESENTATION / JOURNAL-SPECIFIC FIT`. If a supposedly closed pre-freeze essential question was never genuinely answered, record **CONTRIBUTION COMPLETENESS REGRESSION** and return to Stage 6/7/7.5 or earlier as warranted. Merely adding a policy-discussion paragraph cannot certify a missing mechanism. Conversely, a pure theorem, correction, or scoped diagnostic result may be complete without a policy instrument if the editor-facing value case survives.
 
 ### Known-model-in-disguise regression attack
 
@@ -203,7 +211,7 @@ The regression record should also state which earlier certification question or 
 
 ## 11. Success criteria
 
-No unresolved fatal attack on the main contribution; major fixes are bounded and do not require uncontrolled theory drift.
+No unresolved fatal attack on the main contribution; major fixes are bounded and do not require uncontrolled theory drift. The reviewer must have run and logged the independent editor-facing question-completeness attack and resolved any essential problem-question omission.
 
 Candidate-deviation validity, equilibrium-set characterization at the claimed scope, continuation/globality, welfare-selection robustness, theorem scope, and the frozen portability classification must independently survive the hostile audit where applicable.
 
