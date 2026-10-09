@@ -102,6 +102,18 @@ For generality claims, identify possible admissible counterexample functions/par
 
 For exposition triage, verify the proposed vehicle does not imply a stronger result than the certified theorem.
 
+### Policy relevance and question-completeness bridge (mandatory when applicable)
+
+Review the Stage-6 editor-facing contribution case and unanswered-question register. For **policy-facing** research explicitly separate:
+
+- **Diagnosis:** the decentralized distortion and who bears it;
+- **Prescription:** the specified welfare objective and constrained planner comparator;
+- **Implementation:** actual admissible instruments, transfers or coordination procedures, incentives and participation, financing, enforcement/contractibility, information and institutional authority.
+
+Mark each layer `MODELED / DERIVED BUT NOT IMPLEMENTED / DISCUSSED WITH EVIDENCE / OUT OF SCOPE`. A planner benchmark alone does **not** prove a feasible policy. If implementation is central to the claimed contribution but unmodeled, justify a defensible diagnosis-only contribution or flag `ESSENTIAL FOLLOW-UP` for Stage 7.5; do not quietly call the omission a robustness limit.
+
+Evaluate a bounded *counterfactual paper* comparison (baseline-only vs one minimal meaningful extension vs reframe/note) **without adding unapproved theory here**. Record likely genuinely new economic result, nearest existing theorem, added primitives, institutional evidence, and verification burden. For other theoretical or corrective routes explain why no intervention-design analysis is necessary.
+
 ## 9. Kill tests
 
 Downgrade or kill the branch if:
@@ -141,6 +153,7 @@ Return `NO-GO` or recommend a research note if the result is correct but institu
 11. Empirical predictions
 12. Result-to-exposition triage table
 13. Policy scope and limits
+13a. Policy diagnosis / prescription / implementation status and contribution-completeness disposition (or N/A with reason)
 14. Candidate counterexample targets for Stage 7.5A
 15. Welfare evidence ledger
 16. Remaining fatal/major concerns
