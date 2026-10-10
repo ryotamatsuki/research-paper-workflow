@@ -223,6 +223,23 @@ The **Contribution Completeness & Editorial Value Audit** belongs to Stage 6 (wo
 
 This is a **v2.9 minor refinement proposal** inside existing stages and routing, not a newly numbered Stage, a relaxation of mathematical/novelty gates, or a requirement to satisfy editor preferences by arbitrary theory expansion.
 
+### 2.21 Phase-calibrated novelty: legitimate extensions and stage-specific proof burden
+
+**Principle:** research INVESTMENT eligibility is not the same event as POST-PROOF certification of new economics. The novelty standard was correctly revised in v1.1 (2026-09-02) to distinguish familiar ingredients from model/result absorption and recognize generalization; the remaining operational defect was imposing certification-level absorption and an obligatory "new joint-endogeneity mechanism" before the researcher could test a theorem extension.
+
+Recognize **six legitimate contribution routes**, without a hierarchy that requires a new mechanism: (G) economically meaningful generalization under weaker conditions; (B) sharper theorem boundary / substantive counterexample; (W) new equilibrium, comparative-static, welfare or policy result in a known model class; (U) explanatory generalization or unification of known benchmarks; (M) genuinely new mechanism; (C) consequential correction or reassessment of a prior claim.
+
+- **Pre-Stage F and Stage 0:** verify actual parent-theorem knowledge and specify an ECONOMICALLY IMPORTANT, falsifiable, expressly UNPROVED extension Delta Card with a smallest bounded probe. Do not demand proof of independent theorem novelty as an entry requirement. The same literature can admit zero feasible candidates without a quota.
+- **Stage 2:** a categorical "already known" NO-GO needs a source-grounded same-result/theorem and actual parameter/variable mapping or other demonstrable result-level equivalence. Similar vocabulary, familiar model class or separate component precedents are NOT by themselves proof of absorption. Nonetheless obvious tautologies, no-material-economic-result projects and renamings may be killed. A test-worthy candidate can be GO for limited derivation while theorem novelty remains UNPROVED; a truly decisive unread source stays a narrowly scoped CONDITIONAL GO with exactly one blocker.
+- **Stage 3:** plan bounded tests for any G/B/W/U/M/C route. An extension can weaken a known theorem's assumptions without creating a new full-game interaction. Avoid ad hoc architecture expansion, and stop after a mathematically demonstrated empty result or a known exact absorption.
+- **Stages 4/4A/5/6/7.5/7.5A/11:** original independent mathematical certification, strict post-proof theorem absorption, quantifier discipline, economic significance and journal referee attacks are unchanged. A mathematically correct but economically trivial result is not automatically a publishable paper. If a known general theorem immediately implies the actual result, it fails theorem-novelty despite a fresh application label.
+
+Use [NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md](NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md) as the operational crosswalk. Preserve all earlier negative cases; re-open a prior NO-GO only upon a **new, precisely different Delta Card** that gives a substantiated reason to reconsider, never by quietly undoing a proven counterexample.
+
+This is a draft operational *minor* refinement under v2.8/v2.9-candidate governance. It does not yet release a new version, alter three-valued Stage verdicts, weaken proof gates, or retroactively authorize any failed or frozen paper.
+
+---
+
 ## 3. Repository change policy
 
 ### 3.1 Main branch
