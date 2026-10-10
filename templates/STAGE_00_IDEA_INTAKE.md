@@ -34,6 +34,14 @@ You may reframe the question, generate competing mechanisms, or recommend theory
 
 Do not build a full model, write a paper, add complexity to make the idea look novel, or infer novelty from unfamiliarity.
 
+## 5A. Extension-friendly Stage0 novelty burden
+
+An existing original theorem is a legitimate **research starting point**. Stage0 must not demand an independently proved novel theorem before allowing a bounded theory test. Accept an economically important UNPROVED conjecture routed as (G) theorem generalization, (B) sharp validity boundary or counterexample, (W) new equilibrium/welfare/policy result, (U) substantive unification, (M) new mechanism, or (C) consequential correction.
+
+If beginning from a known parent theorem, make a **Delta Card**: parent equation/proposition and assumptions; one binding proposed change; plausible different result (clearly HYPOTHESIS); named strongest parent theorem threat; resident-welfare/economic significance; smallest finite algebraic counterexample/proof test; explicit STOP rule. Do NOT require a new joint-endogeneity game or publication-level novelty certificate here. Pure label/parameter changes without a material claim remain NO-GO.
+
+See [NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md](../NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md).
+
 ## 6. Mandatory tasks
 
 1. State the phenomenon without explaining it.
@@ -71,7 +79,7 @@ Kill or radically reframe the branch if it is only:
 
 ## 10. Success criteria
 
-Proceed only if there is a precise question, at least one defensible mechanism candidate, and a clear audit plan.
+Proceed only if there is a precise economic question, at least one plausible mechanism **or economically important source-grounded UNPROVED theorem extension**, and a finite literature/mathematical falsification audit plan. A novel theorem is NOT already required at Stage0.
 
 ## 11. Failure criteria
 
