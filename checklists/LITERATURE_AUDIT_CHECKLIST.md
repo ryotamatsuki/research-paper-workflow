@@ -2,6 +2,16 @@
 
 Use this checklist for serious prior-art and novelty work. It supplements, but does not weaken, `GOVERNANCE.md` and the canonical pipeline.
 
+## Parent-theorem extension evidence (stage-specific)
+
+- [ ] Parent result is grounded to an original equation/proposition and clearly labeled published vs working version.
+- [ ] Concrete theorem assumption/result to generalize, bound, reverse, or supplement is named.
+- [ ] The contribution sought is G/B/W/U/M/C; the predicted result is explicitly UNPROVED.
+- [ ] Candidate has a small mathematical counterexample or proof probe plan before a full model investment.
+- [ ] Closest adverse sources are searched and read to reasonable depth, with source-blocker details when necessary.
+- [ ] Direct-result absorption is supported by a named exact paper theorem and mapping, not by keywords or mathematical-family similarity alone.
+- [ ] Early GO is ONLY permission for a bounded research test; the post-proof Stage6 remains rigorous.
+
 ## Bibliographic identity
 
 - [ ] Authors verified
