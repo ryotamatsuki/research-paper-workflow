@@ -2,6 +2,13 @@
 
 Use this checklist for serious prior-art and novelty work. It supplements, but does not weaken, `GOVERNANCE.md` and the canonical pipeline.
 
+## Economics-wide value versus narrow audience fit
+- [ ] Have published mathematical-economics generalizations (including weakened assumptions for equilibrium existence/uniqueness) been considered as legitimate research contributions?
+- [ ] Have we avoided equating "no local industrial policy prediction" with "no economics theory content"?
+- [ ] Has the same result been judged separately for source originality and for JME/TE/JET vs JRS/RSUE audience fit?
+- [ ] If off-topic, is the routing DEFER/SEPARATE and not a scholarly NO-GO?
+- [ ] Do we still exclude unrelated pure mathematics from automatic economics-journal claims?
+
 ## Applied economic theory source relevance
 
 - [ ] Applied/pure theoretical research track identified, rather than treating them as coequal worthiness axes.
