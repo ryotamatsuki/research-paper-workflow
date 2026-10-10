@@ -15,6 +15,13 @@ Apply this checklist to each candidate contribution separately. A project may su
 
 **Rule:** An unproved worthwhile extension may deserve a BOUNDED test, but it does not deserve a paper originality certificate. An existing model class is not the same thing as an existing specific result; a known immediate general-theorem corollary remains non-novel at Stage6.
 
+## Field-level versus topic-level generalization decision
+- [ ] Is this a substantive new theorem about economics (choice, games, equilibrium, information, comparative statics, welfare, etc.) even if it does not study the current municipality/industry?
+- [ ] Did we explicitly distinguish ECONOMIC THEORY MERIT from CURRENT PROJECT FIT?
+- [ ] If academically promising but off-topic, is the disposition DEFER / SEPARATE THEORY PROJECT instead of global NO-GO?
+- [ ] Is alleged mathematical novelty actually linked to an economics model or concept, rather than pure unrelated mathematics?
+- [ ] Is the predicted new theorem explicitly UNPROVED and does actual originality await Stage6?
+
 ## Applied economic theory: substantive question precondition
 
 - [ ] Does the project explicitly select APPLIED ECONOMIC THEORY rather than a pure axiomatic mathematics/theory route?
