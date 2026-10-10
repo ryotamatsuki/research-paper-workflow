@@ -4,6 +4,18 @@ A reusable, reproducible workflow for developing theory-oriented economics resea
 
 The canonical workflow is designed for projects requiring rigorous literature mapping, mathematical verification, novelty kill tests, model selection, welfare analysis, independent theorem certification, proof-assistant verification where applicable, referee simulation, reproducibility, exposition architecture, and journal positioning.
 
+## 2026-10-10 draft: phase-calibrated novelty and valuable prior-theory extensions
+
+The September 2 v1.1 adjustment already distinguished known ingredients from result-level absorption and welcomed meaningful generalizations. This refinement fixes an *operational gap*: **early GO means permission for one finite mathematical hypothesis test, not a claim that a new theorem has already been proved**. Ex ante gates must not demand published-paper-level novelty proof. Eligible theory contributions include materially weaker assumptions, sharp theorem-validity conditions and counterexamples, new equilibrium/comparative-static/welfare results in familiar model classes, substantive unification, original mechanisms, and significant corrections. Joint endogeneity is not compulsory.
+
+Pre-Stage F records established original theorems and evidence-limited conjectured extension windows; Stages 0–3 use a source-grounded **Delta Card** (parent theorem, hypothesized economic delta, strongest adverse paper, bounded falsification probe). **Stage 6 remains a strict post-proof result-level originality re-kill**, followed by all existing mathematical, source, quantifier and editorial gates. Named existing-theorem absorption still kills duplicate claims. The criterion for *testing* an extension is intentionally different from the criterion for *publishing* a result.
+
+- Operating standard: [NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md](NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md)
+- Pre-frontier theorem atlas: [PRESTAGE_F_THEORY_ATTAINMENT_ATLAS.md](PRESTAGE_F_THEORY_ATTAINMENT_ATLAS.md)
+- Existing canonical pipeline (draft amendments to Stages 0/2/3/6): [THEORY_PAPER_RESEARCH_PIPELINE.md](THEORY_PAPER_RESEARCH_PIPELINE.md)
+
+Status: **draft PR only**. No new release tag, no bypassing mathematics/novelty gates, and no retroactive resurrection of failed model results.
+
 ## Governing principle
 
 > Do not preserve an idea because effort has already been invested. Kill weak mechanisms early, and do not freeze a theorem until both its mathematical correctness and its claimed scope survive independent adversarial attack.
