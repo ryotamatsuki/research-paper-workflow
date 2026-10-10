@@ -255,6 +255,16 @@ The earlier **2026-10-10 journal-alignment audit** identified an early "mathemat
 
 ---
 
+### 2.23 Distinguish scholarly merit from the current project scope (JME/TE literature audit, 2026-10-10)
+
+The scholarly merit of a new result in **MATHEMATICAL ECONOMICS** must NOT be assessed by whether it changes the USER's industrial policy rankings. Official Journal of Mathematical Economics scope permits important mathematical generalizations of equilibrium, choice, and economic-theory methods in ALL fields; Theoretical Economics welcomes pure and applied theory. Published 2024/2025 articles extend economic equilibrium existence under discontinuity/nonconvexity and extend finite theories to infinite settings without a specific municipal policy result. See [docs/GENERALIZATION_SCHOLARLY_VALUE_AUDIT_2026-10-10.md](docs/GENERALIZATION_SCHOLARLY_VALUE_AUDIT_2026-10-10.md).
+
+Every candidate must distinguish **(i) discipline-level economic theory contribution** (including generalizations of existence/uniqueness/stability, methodological theorems, robust choice/strategic results), **(ii) CURRENT PROJECT TOPIC FIT** (DIRECT / ADJACENT / OUTSIDE), **(iii) originality/evidence confidence** and **(iv) plausible JOURNAL FAMILY**. No project-specific relevance is not a NO-GO on field-wide mathematical economics value; use DEFER/ROUTE/SEPARATE PROJECT while preserving findings and a suitable theory-journal possibility. A purely mathematical assertion with no substantive ECONOMIC model or theory content still does not automatically meet an economics journal's bar. Maintain existing strict proof, substantial-result and post-proof absorption requirements.
+
+This controls any overly broad language in §2.22 that could confuse the purpose of the applied project with the wider scholarly significance of a mathematical-economic contribution. Do not require datasets or a new policy prescription; nor claim any abstract new theorem is guaranteed to publish.
+
+---
+
 ## 3. Repository change policy
 
 ### 3.1 Main branch
