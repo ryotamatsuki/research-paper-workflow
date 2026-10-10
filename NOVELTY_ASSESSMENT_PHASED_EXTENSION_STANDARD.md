@@ -1,6 +1,10 @@
 # Phased novelty assessment and legitimate extensions of prior theory
 **2026-10-10 draft workflow refinement.** Governing authority: GOVERNANCE.md, THEORY_PAPER_RESEARCH_PIPELINE.md, this protocol. It changes early research-investment screening, NOT rigorous late originality proof or mathematical certification.
 
+## Clarification: mathematical economics generalization has legitimate disciplinary worth
+
+The applied project can prioritize its own subject without deeming all otherwise significant GENERAL ECONOMIC THEORY results valueless. A weaker-assumption existence theorem or a uniform method for generalizing economic games can matter to mathematical economics even if it does not reverse a single municipal welfare comparison. Broad economic-theory contribution and local-project fit are separate descriptors. OUTSIDE PROJECT leads to DEFER/ROUTE, not scholarly NO-GO. See [docs/GENERALIZATION_SCHOLARLY_VALUE_AUDIT_2026-10-10.md](docs/GENERALIZATION_SCHOLARLY_VALUE_AUDIT_2026-10-10.md). Journal of Mathematical Economics requires actual economic-theory content, not immediate applied-policy prescriptions; TE publishes general theory. All post-proof originality and economics-journal significance requirements remain.
+
 ## 0. Applied-economic-theory priority rule (project track override)
 
 Where the research project is **APPLIED ECONOMICS using economic theory**, the primary entry criterion is NOT "is the mathematics worth doing?" in isolation. The sequence is:
