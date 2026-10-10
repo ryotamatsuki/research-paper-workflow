@@ -47,6 +47,10 @@ You may refine terminology, identify better comparison papers, split contributio
 
 For every serious candidate record: original named parent theorem and conditions; G/B/W/U/M/C route; the ONE changed economically substantive restriction; UNPROVED prediction; largest known prior-art objection; specific prior-theorem absorption mapping if a negative claim is asserted; and the smallest bounded counterexample/derivation test. Classify the result as DIRECTLY ABSORBED (with source mapping), PROMISING UNPROVED EXTENSION, ONE MATERIAL BLOCKER (existing exactly-one-condition), or NO SUBSTANTIVE ECONOMIC DELTA. These are supporting dispositions, not replacements for GO/CONDITIONAL GO/NO-GO. See [NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md](../NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md).
 
+## Before rejecting a generalization: disciplinary merit versus current topic
+
+A model's failure to generate a new MUNICIPAL INDUSTRIAL POLICY conclusion cannot by itself establish that an original ECONOMIC EQUILIBRIUM or CHOICE theorem is academically valueless. Check recognized economics model relevance (existence, uniqueness, boundary, scope, stability, economic-theory methodology) and true source-novelty independently from this project's focus. Label off-topic credible contributions DEFER/ROUTE, not "absorption NO-GO". Direct absorption or economically contentless mathematical notation remains a genuine claim-level failure. See [docs/GENERALIZATION_SCHOLARLY_VALUE_AUDIT_2026-10-10.md](../docs/GENERALIZATION_SCHOLARLY_VALUE_AUDIT_2026-10-10.md).
+
 ## 5B. Mandatory applied economic theory screen
 
 When the project is labeled **APPLIED ECONOMIC THEORY**, before allowing GO to bounded mathematical exploration require a credible short statement:
