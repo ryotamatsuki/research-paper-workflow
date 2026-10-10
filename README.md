@@ -4,6 +4,30 @@ A reusable, reproducible workflow for developing theory-oriented economics resea
 
 The canonical workflow is designed for projects requiring rigorous literature mapping, mathematical verification, novelty kill tests, model selection, welfare analysis, independent theorem certification, proof-assistant verification where applicable, referee simulation, reproducibility, exposition architecture, and journal positioning.
 
+## 2026-10-10 draft: phase-calibrated novelty and valuable prior-theory extensions
+
+The September 2 v1.1 adjustment already distinguished known ingredients from result-level absorption and welcomed meaningful generalizations. This refinement fixes an *operational gap*: **early GO means permission for one finite mathematical hypothesis test, not a claim that a new theorem has already been proved**. Ex ante gates must not demand published-paper-level novelty proof. Eligible theory contributions include materially weaker assumptions, sharp theorem-validity conditions and counterexamples, new equilibrium/comparative-static/welfare results in familiar model classes, substantive unification, original mechanisms, and significant corrections. Joint endogeneity is not compulsory.
+
+Pre-Stage F records established original theorems and evidence-limited conjectured extension windows; Stages 0–3 use a source-grounded **Delta Card** (parent theorem, hypothesized economic delta, strongest adverse paper, bounded falsification probe). **Stage 6 remains a strict post-proof result-level originality re-kill**, followed by all existing mathematical, source, quantifier and editorial gates. Named existing-theorem absorption still kills duplicate claims. The criterion for *testing* an extension is intentionally different from the criterion for *publishing* a result.
+
+- Operating standard: [NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md](NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md)
+- Pre-frontier theorem atlas: [PRESTAGE_F_THEORY_ATTAINMENT_ATLAS.md](PRESTAGE_F_THEORY_ATTAINMENT_ATLAS.md)
+- Existing canonical pipeline (draft amendments to Stages 0/2/3/6): [THEORY_PAPER_RESEARCH_PIPELINE.md](THEORY_PAPER_RESEARCH_PIPELINE.md)
+
+Status: **draft PR only**. No new release tag, no bypassing mathematics/novelty gates, and no retroactive resurrection of failed model results.
+
+## Generalization deserves recognition across mathematical economics (2026-10-10 correction)
+
+The applied policy topic is an INVESTMENT PRIORITY, not the universal definition of valuable economics. Significant generalizations of equilibrium-existence, uniqueness, stability, choice, game-theory or theorem-scaling results may be publishable ECONOMIC THEORY even without industrial-policy implications. Journal of Mathematical Economics and Theoretical Economics explicitly cover this scholarly domain, subject to actual economic-theory content and originality. Keep separate fields for **SCHOLARLY CONTRIBUTION**, **PROJECT TOPIC FIT**, **SOURCE/ORIGINALITY MATURITY** and **POSSIBLE JOURNAL FAMILY**. A theory question outside the present municipal-industrial-policy topic should be DEFER/ROUTED, not NO-GO on scholarly merit.
+
+[Publisher criteria + 2024/2025 accepted examples](docs/GENERALIZATION_SCHOLARLY_VALUE_AUDIT_2026-10-10.md).
+
+## Applied economic theory: economic question before mathematics (2026-10-10 draft)
+
+For **applied economics pursued through theoretical models** (including local-government industrial policy), the sole research-value objective is an **important economic explanation, allocation, welfare, incentive, institution or policy insight**. Mathematics is a method (feasibility/correctness gates), not a competing source of applied-paper merit. Every Pre-Stage F / Stage0–2 candidate must state what economically important understanding might change IF its unproved result is true and who in economics would care. A mathematically novel but economically empty theorem does not pass this applied track; an economically substantive extension in a familiar mathematical class can receive a bounded test.
+
+See [APPLIED_ECONOMIC_THEORY_TRACK.md](APPLIED_ECONOMIC_THEORY_TRACK.md). Six applied-track regression cases AR1–AR6 are added to [decision examples](docs/NOVELTY_GATE_REGRESSION_CASES_2026-10-10.md); the prior journal-alignment audit now records that its independent "mathematical worth" flag is superseded for this track. **No empirical work or actionable remedy required by default** for positive applied theory. Pure general economic theory is not removed from the reusable workflow.
+
 ## Governing principle
 
 > Do not preserve an idea because effort has already been invested. Kill weak mechanisms early, and do not freeze a theorem until both its mathematical correctness and its claimed scope survive independent adversarial attack.

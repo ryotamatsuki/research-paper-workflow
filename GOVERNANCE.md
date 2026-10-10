@@ -223,6 +223,48 @@ The **Contribution Completeness & Editorial Value Audit** belongs to Stage 6 (wo
 
 This is a **v2.9 minor refinement proposal** inside existing stages and routing, not a newly numbered Stage, a relaxation of mathematical/novelty gates, or a requirement to satisfy editor preferences by arbitrary theory expansion.
 
+### 2.21 Phase-calibrated novelty: legitimate extensions and stage-specific proof burden
+
+**Principle:** research INVESTMENT eligibility is not the same event as POST-PROOF certification of new economics. The novelty standard was correctly revised in v1.1 (2026-09-02) to distinguish familiar ingredients from model/result absorption and recognize generalization; the remaining operational defect was imposing certification-level absorption and an obligatory "new joint-endogeneity mechanism" before the researcher could test a theorem extension.
+
+Recognize **six legitimate contribution routes**, without a hierarchy that requires a new mechanism: (G) economically meaningful generalization under weaker conditions; (B) sharper theorem boundary / substantive counterexample; (W) new equilibrium, comparative-static, welfare or policy result in a known model class; (U) explanatory generalization or unification of known benchmarks; (M) genuinely new mechanism; (C) consequential correction or reassessment of a prior claim.
+
+- **Pre-Stage F and Stage 0:** verify actual parent-theorem knowledge and specify an ECONOMICALLY IMPORTANT, falsifiable, expressly UNPROVED extension Delta Card with a smallest bounded probe. Do not demand proof of independent theorem novelty as an entry requirement. The same literature can admit zero feasible candidates without a quota.
+- **Stage 2:** a categorical "already known" NO-GO needs a source-grounded same-result/theorem and actual parameter/variable mapping or other demonstrable result-level equivalence. Similar vocabulary, familiar model class or separate component precedents are NOT by themselves proof of absorption. Nonetheless obvious tautologies, no-material-economic-result projects and renamings may be killed. A test-worthy candidate can be GO for limited derivation while theorem novelty remains UNPROVED; a truly decisive unread source stays a narrowly scoped CONDITIONAL GO with exactly one blocker.
+- **Stage 3:** plan bounded tests for any G/B/W/U/M/C route. An extension can weaken a known theorem's assumptions without creating a new full-game interaction. Avoid ad hoc architecture expansion, and stop after a mathematically demonstrated empty result or a known exact absorption.
+- **Stages 4/4A/5/6/7.5/7.5A/11:** original independent mathematical certification, strict post-proof theorem absorption, quantifier discipline, economic significance and journal referee attacks are unchanged. A mathematically correct but economically trivial result is not automatically a publishable paper. If a known general theorem immediately implies the actual result, it fails theorem-novelty despite a fresh application label.
+
+Use [NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md](NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md) as the operational crosswalk. Preserve all earlier negative cases; re-open a prior NO-GO only upon a **new, precisely different Delta Card** that gives a substantiated reason to reconsider, never by quietly undoing a proven counterexample.
+
+This is a draft operational *minor* refinement under v2.8/v2.9-candidate governance. It does not yet release a new version, alter three-valued Stage verdicts, weaken proof gates, or retroactively authorize any failed or frozen paper.
+
+---
+
+### 2.22 Applied economic theory: economic problem is necessary; mathematics is a method
+
+The reusable workflow has multiple theoretical research traditions. For a project explicitly established as **APPLIED ECONOMICS researched theoretically** (e.g., local-government industrial policy), activate [APPLIED_ECONOMIC_THEORY_TRACK.md](APPLIED_ECONOMIC_THEORY_TRACK.md) from Pre-Stage F/Stage0 onward. This is NOT a requirement to add empirical data, a structural estimate, or an immediately implementable policy prescription.
+
+**Do not evaluate applied-theory ideas on two independent axes "mathematically interesting" and "editorially valuable."** Only economic explanatory/positive/normative relevance is an independent source of applied research value. Math feasibility is a necessary means, proof correctness a strict downstream gate; neither substitutes for economic significance. Stage0–2 must ask which substantive conclusion about actors' incentives, industry/location allocation, institutional choice, welfare or policy effectiveness changes IF the unproved conjecture holds, and which audience has reason to care.
+
+- **Required early positive case:** source-anchored economic puzzle, exact existing benchmark, anticipated substantive change in economic understanding, the relevant readers/research community, and a limited theory test. The prospective full-paper vs note/comment scale is provisional and does not impose venue selection.
+- **Early applied NO-GO:** no defensible economic insight even IF a new theorem is derived; pure notation/formal strengthening with no material economic interpretation; arbitrary payoff/accounting assumption creating desired policy signs; or no real economic question a model would resolve. This does **not** pronounce mathematical work valueless in a separately chosen pure-theory discipline.
+- **Positive/diagnostic theory is allowed:** explaining a policy failure or economically relevant phenomenon can be substantive without specifying the optimal corrective policy, provided the actual claimed contribution and editorial readership support it.
+- **Strictness remains:** Stage4/4A equilibrium/global mathematical certification, Stage6 actual result originality, Stage7.5/7.5A theorem scope, and Stage11 referee/editorial completeness are unchanged. No early GO makes the result novel or publishable.
+
+The earlier **2026-10-10 journal-alignment audit** identified an early "mathematical test worthwhile" vs "editorially plausible if successful" two-flag screen. That framing is **SUPERSEDED IN THIS APPLIED TRACK**: economic problem/expected insight is a gate to whether the math should be done at all; technical feasibility is its instrument check, not an equal independent dimension. Any field-editor preview serves the economic question, not a second unrelated value track.
+
+---
+
+### 2.23 Distinguish scholarly merit from the current project scope (JME/TE literature audit, 2026-10-10)
+
+The scholarly merit of a new result in **MATHEMATICAL ECONOMICS** must NOT be assessed by whether it changes the USER's industrial policy rankings. Official Journal of Mathematical Economics scope permits important mathematical generalizations of equilibrium, choice, and economic-theory methods in ALL fields; Theoretical Economics welcomes pure and applied theory. Published 2024/2025 articles extend economic equilibrium existence under discontinuity/nonconvexity and extend finite theories to infinite settings without a specific municipal policy result. See [docs/GENERALIZATION_SCHOLARLY_VALUE_AUDIT_2026-10-10.md](docs/GENERALIZATION_SCHOLARLY_VALUE_AUDIT_2026-10-10.md).
+
+Every candidate must distinguish **(i) discipline-level economic theory contribution** (including generalizations of existence/uniqueness/stability, methodological theorems, robust choice/strategic results), **(ii) CURRENT PROJECT TOPIC FIT** (DIRECT / ADJACENT / OUTSIDE), **(iii) originality/evidence confidence** and **(iv) plausible JOURNAL FAMILY**. No project-specific relevance is not a NO-GO on field-wide mathematical economics value; use DEFER/ROUTE/SEPARATE PROJECT while preserving findings and a suitable theory-journal possibility. A purely mathematical assertion with no substantive ECONOMIC model or theory content still does not automatically meet an economics journal's bar. Maintain existing strict proof, substantial-result and post-proof absorption requirements.
+
+This controls any overly broad language in §2.22 that could confuse the purpose of the applied project with the wider scholarly significance of a mathematical-economic contribution. Do not require datasets or a new policy prescription; nor claim any abstract new theorem is guaranteed to publish.
+
+---
+
 ## 3. Repository change policy
 
 ### 3.1 Main branch

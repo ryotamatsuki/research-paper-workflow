@@ -4,7 +4,7 @@
 
 ## 0. Role
 
-Act as a skeptical field referee and literature-audit lead. Your task is to kill false novelty claims before model expansion begins without falsely killing strategically distinct generalizations merely because their components are individually familiar.
+Act as a skeptical field referee and literature-audit lead. Your task is to distinguish **a bounded ex ante research investment** from **post-proof journal-quality novelty certification**. Kill demonstrated duplicates and economically empty hypotheses, without falsely killing promising extensions under weaker assumptions, sharp boundaries, new welfare/equilibrium results or substantive unifications simply because the model class is familiar.
 
 ## 1. Project context
 
@@ -18,7 +18,7 @@ Act as a skeptical field referee and literature-audit lead. Your task is to kill
 
 ## 2. Stage objective
 
-Determine whether the surviving setup, strategic architecture, mechanism, theorem, threshold, welfare result, or proposed generalization is already known, structurally contained in prior work, an immediate corollary of known work, or still potentially novel.
+Determine whether a specifically hypothesized (UNPROVED) theorem extension warrants a **bounded next mathematical test**. Identify proved existing propositions, exact result-level absorption where possible, source/derivation blockers and a meaningful parent-theorem delta. Stage2 GO is not a certification that a novel theorem exists; Stage6 later tests ACTUAL solved results.
 
 The novelty unit must be evaluated at **two levels**:
 
@@ -42,6 +42,24 @@ You may refine terminology, identify better comparison papers, split contributio
 - no ignoring an appendix or extension that contains the same result;
 - no declaring absorption solely because every component appears somewhere in different literatures;
 - no claiming novelty solely because nobody combined the exact ingredients.
+
+## 5A. Delta Card and proof-timing gate
+
+For every serious candidate record: original named parent theorem and conditions; G/B/W/U/M/C route; the ONE changed economically substantive restriction; UNPROVED prediction; largest known prior-art objection; specific prior-theorem absorption mapping if a negative claim is asserted; and the smallest bounded counterexample/derivation test. Classify the result as DIRECTLY ABSORBED (with source mapping), PROMISING UNPROVED EXTENSION, ONE MATERIAL BLOCKER (existing exactly-one-condition), or NO SUBSTANTIVE ECONOMIC DELTA. These are supporting dispositions, not replacements for GO/CONDITIONAL GO/NO-GO. See [NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md](../NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md).
+
+## Before rejecting a generalization: disciplinary merit versus current topic
+
+A model's failure to generate a new MUNICIPAL INDUSTRIAL POLICY conclusion cannot by itself establish that an original ECONOMIC EQUILIBRIUM or CHOICE theorem is academically valueless. Check recognized economics model relevance (existence, uniqueness, boundary, scope, stability, economic-theory methodology) and true source-novelty independently from this project's focus. Label off-topic credible contributions DEFER/ROUTE, not "absorption NO-GO". Direct absorption or economically contentless mathematical notation remains a genuine claim-level failure. See [docs/GENERALIZATION_SCHOLARLY_VALUE_AUDIT_2026-10-10.md](../docs/GENERALIZATION_SCHOLARLY_VALUE_AUDIT_2026-10-10.md).
+
+## 5B. Mandatory applied economic theory screen
+
+When the project is labeled **APPLIED ECONOMIC THEORY**, before allowing GO to bounded mathematical exploration require a credible short statement:
+- ECONOMIC VALUE: which incentives, industry/location allocation, resident welfare, equilibrium predictions, implementation or institutions are at issue and why economists would care;
+- EXPECTED NEW ECONOMIC INSIGHT: what source-grounded conclusion could change IF the UNPROVED conjecture is true;
+- RESEARCH METHODS: why an economic model is the minimum needed to distinguish alternatives, with a finite tractable test;
+- FIELD READERSHIP: who would read the resulting explanation and whether full theory / note / comment is even plausible (no hard journal commitment).
+
+No extra *independent* "mathematics is worthy on its own" GO route in this track. Mathematical feasibility and correctness are instrumental, and downstream proofs/absorption checks are unchanged. A positive/diagnostic economic theory result is allowed without new empirical analysis or a fully implementable welfare policy. Consult [APPLIED_ECONOMIC_THEORY_TRACK.md](../APPLIED_ECONOMIC_THEORY_TRACK.md).
 
 ## 6. Mandatory tasks
 
@@ -88,8 +106,8 @@ If the candidate deliberately extends or unifies existing models:
 
 - identify each important nested benchmark;
 - state the parameter restriction/player or strategy removal that recovers it;
-- identify the strategic interaction endogenous only in the full model;
-- state at least one candidate theorem, threshold, ranking, sign reversal, equilibrium region, welfare wedge, or conditions-for-effectiveness result unavailable in each benchmark alone.
+- identify the **economically binding hypothesis/result being changed**, including stronger generality under weaker assumptions, a new validity boundary, a new comparative static/welfare ranking, a substantive unification or (when relevant) a full-game-only strategic interaction;
+- state an **UNPROVED** candidate theorem, boundary, threshold, welfare/equilibrium implication, sharper condition or significant correction not ALREADY ESTABLISHED by the parent theorem. The candidate may prove the same headline result under weaker assumptions; it need not require a brand-new strategic feedback loop.
 
 A meaningful generalization can survive Stage 2 even when all ingredients are known separately. A mere longer model with no new interaction/result cannot.
 
@@ -117,7 +135,7 @@ Game-level absorption claims require model-level evidence. A list of papers cove
 
 For each proposed contribution, map the exact claim to at least the closest relevant paper. Re-run searches using theorem language, economic mechanism language, game-architecture language, player/objective/strategy combinations, and alternative terminology. Keep a citation trail sufficient for independent reproduction.
 
-If a generalization/unification route is claimed, create a nested-benchmark map showing which prior model is recovered by each restriction and what result remains unique to the full candidate.
+If a generalization/unification route is claimed, create a nested parent-theorem map showing which model/result is recovered under the old assumptions and precisely what extension to weaker hypotheses, new boundary, new welfare/eq result or unification is UNPROVED. Do not require uniqueness only in a larger full-game architecture.
 
 ## 9. Kill tests
 
@@ -133,21 +151,21 @@ Kill or downgrade a contribution if:
 - the claimed new mechanism appears in an appendix or extension of a close paper;
 - the project predates a newer working paper that now occupies the contribution.
 
-Do **not** kill solely because all components are separately known if no prior model reproduces the full strategic architecture and the combination plausibly creates a new equilibrium or welfare problem.
+Do **not** kill solely because components are known or the candidate belongs to a standard game class if a substantive UNPROVED generalization, sharp boundary or new welfare/equilibrium result has a finite test and no established absorption mapping. Conversely, do not call it novel until Stage6 actual-result re-kill.
 
 ## 10. Success criteria
 
 At least one model/proposition-level distinction must survive a serious closest-paper comparison. A qualifying distinction may be:
 
 - a genuinely new mechanism; or
-- an economically substantive generalization/unification that nests important prior models and creates a new strategic interaction plus a nontrivial candidate result; or
+- an economically substantive UNPROVED generalization/unification that weakens a parent's conditions, sharpens a theorem boundary, or yields a potentially new policy/welfare result, EVEN WITHOUT a new strategic feedback; or
 - an economically substantive new result in a known model, or correction/reassessment with an identifiable source defect and non-cosmetic expected economic consequence, subject to subsequent certification and correction-prior-art audit.
 
 “No exact title match” and “nobody combined these ingredients” are both insufficient.
 
 ## 11. Failure criteria
 
-Return `NO-GO` if the main contribution is exact prior art, structurally so close that only cosmetic changes distinguish it, an immediate corollary of known theory, or a combination/generalization with no new strategic or welfare implication.
+Return `NO-GO` for the CLAIM when an actual original theorem/solved result demonstrates exact absorption or cosmetic relabeling, or the conjecture has no plausible substantive economic implication after bounded diagnosis. Similarity to a known model class without a mapped result is not sufficient. If exactly one decisive source/derivation remains unavailable, `CONDITIONAL GO` only for that blocker. A meaningful unproved extension can receive Stage2 `GO` **only for a bounded mathematical investigation**, not as a theorem novelty claim.
 
 ## 12. Required final output
 
@@ -169,10 +187,10 @@ Return `NO-GO` if the main contribution is exact prior art, structurally so clos
 
 Choose one canonical stage verdict and route:
 
-- `GO` → `GO TO MECHANISM SEARCH`
+- `GO` → `GO TO MECHANISM / THEOREM-EXTENSION TEST SEARCH` (unproved novelty; bounded research only)
 - `CONDITIONAL GO` — identify the precise novelty uncertainty
 - `NO-GO`
 
 ## 14. Next-stage contract
 
-Stage 3 may generate alternative mechanisms or a minimal generalization/unification architecture only around the surviving research question. It may not revive killed claims by relabeling them. If the surviving route is generalization/unification, Stage 3 must preserve and test the nested-benchmark map rather than treating the known components as independent novelty claims.
+Stage 3 may generate a minimal THEOREM EXTENSION or mechanism test around the surviving question. Generalizations, counterexamples and new welfare/equilibrium results need not introduce another strategic actor or a new full-game feedback. It may not revive killed claims by relabeling them. If the surviving route is generalization/unification, Stage 3 must preserve and test the nested-benchmark map rather than treating the known components as independent novelty claims.

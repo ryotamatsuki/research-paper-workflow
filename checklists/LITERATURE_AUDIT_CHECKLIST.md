@@ -2,6 +2,32 @@
 
 Use this checklist for serious prior-art and novelty work. It supplements, but does not weaken, `GOVERNANCE.md` and the canonical pipeline.
 
+## Economics-wide value versus narrow audience fit
+- [ ] Have published mathematical-economics generalizations (including weakened assumptions for equilibrium existence/uniqueness) been considered as legitimate research contributions?
+- [ ] Have we avoided equating "no local industrial policy prediction" with "no economics theory content"?
+- [ ] Has the same result been judged separately for source originality and for JME/TE/JET vs JRS/RSUE audience fit?
+- [ ] If off-topic, is the routing DEFER/SEPARATE and not a scholarly NO-GO?
+- [ ] Do we still exclude unrelated pure mathematics from automatic economics-journal claims?
+
+## Applied economic theory source relevance
+
+- [ ] Applied/pure theoretical research track identified, rather than treating them as coequal worthiness axes.
+- [ ] Original source paper's economic question and actual institutional/welfare conclusion stated separately from technical theorem form.
+- [ ] Any hypothesized mathematical generalization translates into a predicted *new economic explanation/inference* and plausible field readership.
+- [ ] The fact that a proposition can be strengthened algebraically is NOT itself a positive APPLIED economic research contribution.
+- [ ] Positive economic theory may diagnose a failure or explain behavior without proposing a policy remedy or using empirical data.
+- [ ] Closest scholarly rival may undermine economic importance **even if** the exact theorem has not been mathematically absorbed.
+
+## Parent-theorem extension evidence (stage-specific)
+
+- [ ] Parent result is grounded to an original equation/proposition and clearly labeled published vs working version.
+- [ ] Concrete theorem assumption/result to generalize, bound, reverse, or supplement is named.
+- [ ] The contribution sought is G/B/W/U/M/C; the predicted result is explicitly UNPROVED.
+- [ ] Candidate has a small mathematical counterexample or proof probe plan before a full model investment.
+- [ ] Closest adverse sources are searched and read to reasonable depth, with source-blocker details when necessary.
+- [ ] Direct-result absorption is supported by a named exact paper theorem and mapping, not by keywords or mathematical-family similarity alone.
+- [ ] Early GO is ONLY permission for a bounded research test; the post-proof Stage6 remains rigorous.
+
 ## Bibliographic identity
 
 - [ ] Authors verified

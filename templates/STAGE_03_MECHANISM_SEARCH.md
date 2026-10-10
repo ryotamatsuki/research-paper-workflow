@@ -4,7 +4,7 @@
 
 ## 0. Role
 
-Act as a research director selecting mechanisms or strategically meaningful generalizations, not feature lists. Competing explanations must be judged against prior art, tractability, welfare content, and referee risk.
+Act as a research director selecting bounded economically meaningful theory EXTENSIONS: weaker-hypothesis generalizations, sharp theorem boundaries, new welfare/equilibrium/comparative-static results, substantive unifications, corrections, and new mechanisms. No feature lists. Competing explanations must be judged against prior art, tractability, welfare content, and referee risk.
 
 ## 1. Project context
 
@@ -21,11 +21,11 @@ Generate and compare genuinely different mechanisms and, where appropriate, gene
 
 ## 3. Canonical inputs
 
-Stage 2 novelty findings are binding. Killed contribution claims cannot be restored by renaming. Component-overlap findings do not by themselves prohibit a full-game generalization route if Stage 2 left that route alive.
+Stage 2 evidence is binding at the CLAIM level. A proved absorbed claim cannot be restored by renaming. A Stage2-approved **UNPROVED Delta Card** remains test-worthy even when its mathematical components or strategic class are already familiar. Full-game novelty is only one legitimate contribution route.
 
 ## 4. Allowed changes
 
-You may propose alternative primitives, timing, strategic margins, player interactions, or state variables, provided each proposal has a clear economic reason and is assessed separately. You may also propose a minimal architecture that nests known benchmark models if the purpose is to test a new strategic interaction generated only by the combined game.
+You may propose alternative primitives, timing, strategic margins, player interactions, or state variables, provided each proposal has a clear economic reason and is assessed separately. You may also propose a minimal architecture that recovers exact known benchmark theorems, to test weaker assumptions, sharpen a validity boundary, find a new equilibrium or welfare consequence, or examine a new strategic interaction. No requirement that novelty arise only when several familiar components are jointly endogenous.
 
 ## 5. Prohibited changes
 
@@ -38,15 +38,27 @@ Do not treat the following as mechanisms by themselves:
 - adding multiple unrelated extensions at once;
 - combining known ingredients without identifying what equilibrium feedback or welfare logic becomes new.
 
+## 5A. Important timing of originality tests
+
+This Stage3 screens whether an economically important UNPROVED parent-theorem extension merits bounded math work. It does NOT require the author to **prove** a novel result before Stage4. Stage6 will later reject proved results that are immediate known general-theorem corollaries; Stage4A remains a strict mathematical hostile check. See [NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md](../NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md).
+
+## General-theory value is not the same as applied-project scope
+
+If a promising mathematical generalization concerns a foundational economic existence/uniqueness/choice/game model but lacks a LOCAL INDUSTRIAL POLICY implication, preserve its plausible academic contribution and re-route as general economic theory/JME/TE, rather than automatically declaring NO-GO. Stage3 investment in THIS project is a separate priority decision; it does not determine global economics journal worth. Source novelty and mathematical validity still await strict later audit.
+
+## 5B. Applied economic theory contribution filter
+
+For APPLIED ECONOMIC THEORY, candidate ranking is conditional on a meaningful economic outcome: state clearly what explanatory, industry-structure, allocation, welfare, institutional or policy insight might change. A candidate with interesting mathematical structure but no such consequence is not a GO for this applied track. An old model class with a potentially new substantive economic result remains eligible. The model should be **only as complex as the economic question needs**; mathematics is the method, not the object of research. Use [APPLIED_ECONOMIC_THEORY_TRACK.md](../APPLIED_ECONOMIC_THEORY_TRACK.md). No empirical work is required unless chosen.
+
 ## 6. Mandatory tasks
 
 When the search space is broad, generate approximately 8–12 candidates. For every candidate state:
 
 1. one-sentence mechanism or generalization logic;
-2. strategic feedback loop;
+2. strategic feedback loop, IF THE THEOREM DEPENDS ON ONE (otherwise state NOT APPLICABLE);
 3. endogenous margins;
 4. minimum players/timing;
-5. minimum new primitive or new interaction relative to the audited model;
+5. minimum economically binding changed condition, theorem domain, equilibrium/welfare question OR new interaction relative to the audited parent;
 6. closest prior-art threat;
 7. expected nontrivial theorem/threshold/reversal;
 8. welfare content;
@@ -58,8 +70,8 @@ For a generalization/unification candidate, additionally state:
 
 12. which prior models are nested;
 13. the restriction/removal that recovers each benchmark;
-14. the strategic interaction that exists only in the full architecture;
-15. the result that should differ from or be unavailable in each benchmark.
+14. the theorem restriction that changes, or the new conclusion not yet implied by original assumptions, including any full-game-only interaction when applicable;
+15. the UNPROVED result to test relative to the applicable parent theorem/benchmarks (including same result under weaker assumptions);
 
 If scoring candidates, define weights ex ante. Suggested dimensions: novelty, mechanism clarity, whole-game prior-art survival, tractability, welfare, institutional relevance, empirical bridge, and journal fit.
 
@@ -79,7 +91,7 @@ Candidate novelty must be grounded in Stage 2 evidence. If a candidate introduce
 
 No full algebra is required, but perform enough reduced-form or sign reasoning to test whether the proposed feedback loop is internally coherent. Flag candidates whose desired effect is built directly into an assumed payoff.
 
-For a generalization candidate, write the minimal full game and the nested benchmark games side by side. Confirm that removing one strategic component actually changes the feedback network rather than only shortening notation.
+For a generalization candidate, write the parent theorem and candidate changed hypotheses side by side. For a new full-game strategic claim, additionally compare nested games. A generalization may prove the SAME economic result under weaker assumptions and need not alter the feedback network. Use one bounded symbolic/analytical falsification probe where worthwhile; do not mistake it for a full Stage4 proof.
 
 ## 9. Kill tests
 
@@ -93,11 +105,11 @@ Reject a candidate when:
 - welfare content is absent and the result is pure relabeling;
 - a claimed generalization simply aggregates known ingredients while every headline result is already obtainable from a nested benchmark.
 
-Do not reject a generalization merely because each component is familiar if the full game creates a new strategic feedback that the benchmarks cannot reproduce.
+Do not reject a test-worthy generalization or boundary merely because the model components are familiar, EVEN IF the full game introduces no new feedback. Require either a new condition/scope/result worth proving or a genuinely new strategic channel, and retain the Stage6 strict result-level prior-theorem re-kill.
 
 ## 10. Success criteria
 
-At least one candidate must have a clear economic loop, a minimal implementable model, and plausible model/proposition-level distance from the closest literature. A generalization/unification candidate qualifies only if it has a credible full-game interaction result beyond the nested benchmarks.
+At least one candidate must have a clear economic THEOREM DELTA (G/B/W/U/M/C), a smallest defensible bounded analysis, an UNPROVED result hypothesis and a source-grounded strongest rival. A generalization/unification candidate can seek weaker assumptions, sharper boundaries or new economically consequential results IN THE SAME model class. An additional full-game interaction is NOT mandatory. Stage3 GO permits a complete Stage4 mathematical attempt, not a pre-proof novelty certificate.
 
 For correction/reassessment, assess that loop through the original claim → candidate corrected characterization → changed economic conclusion. A new strategic ingredient is not mandatory; the non-cosmetic consequence and prior-correction distinction must remain plausible and subject to Stage-4/4A certification.
 

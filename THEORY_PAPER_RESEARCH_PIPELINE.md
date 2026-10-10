@@ -1,6 +1,20 @@
 # Theory Paper Research Pipeline
 
-Version: v2.8
+Version: v2.8 (proposed novelty-screening refinement in draft; release version unchanged)
+
+**NEW draft operating standard:** [NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md](NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md). This document distinguishes early eligibility to test an extension from strict post-proof novelty certification; substantive generalizations, sharp boundaries and new equilibrium/welfare results within familiar models are allowed.
+
+## Optional but mandatory when searching a whole domain: Pre-Stage F — Theory Attainment Atlas
+
+When the user requests a fresh theory frontier for a policy domain without a verified specific parent theorem, complete [PRESTAGE_F_THEORY_ATTAINMENT_ATLAS.md](PRESTAGE_F_THEORY_ATTAINMENT_ATLAS.md) **before Stage 0 candidate selection**. This independent source-first inventory records established parent theorems, assumptions, and cross-field absorption; it is **not** an idea-generation quota. It may yield ZERO promising extension windows, but it must NOT require proof of a new theorem before a source-grounded, unproved extension can be admitted for bounded Stage-0 research. An omission in one paper is not automatically a field-level unsolved theorem. Stage0–2 follow the phase-calibrated screening standard above; Stage6 and all mathematical certification gates remain strict. No substantive economic model may be constructed based solely on a Pre-Stage F gap label. Existing Stages 0–15 and verdict semantics are unchanged.
+
+### Important distinction: economic-theory merit versus current project fit
+
+For every mathematical-economics generalization, separately assess (A) contribution to ECONOMIC THEORY as a discipline, including weaker conditions on equilibrium existence/uniqueness, stability, methodological scaling, robustness or identification, and (B) match to the current local-government industrial-policy topic. No local-policy implication is not global NO-GO for economic theory: mark OUTSIDE PROJECT / DEFER OR ROUTE TO MATHEMATICAL ECONOMICS, with a plausible journal family and honest unproved-novelty status. Technical mathematics without any real ECONOMIC theory content is not automatically a paper in Journal of Mathematical Economics either. Details and published precedents: [docs/GENERALIZATION_SCHOLARLY_VALUE_AUDIT_2026-10-10.md](docs/GENERALIZATION_SCHOLARLY_VALUE_AUDIT_2026-10-10.md).
+
+### Optional research track: APPLIED ECONOMIC THEORY (policy/region/industry questions)
+
+When a project is explicitly **applied economics pursued using theoretical models** (including local-government industrial policy), use [APPLIED_ECONOMIC_THEORY_TRACK.md](APPLIED_ECONOMIC_THEORY_TRACK.md) **from Pre-Stage F onward**. The first necessary value test is **economic explanatory/welfare/policy significance**, not a standalone "mathematically interesting" score. Mathematical sophistication is a tool, its tractability an execution gate and its correctness a later certification gate; it is NEVER a separate reason for a full applied-economics paper. A source-grounded conjecture may pass early screening if it plausibly changes economic understanding and has a finite math test. Include plausible audience/format and a concise editor-facing conditional case, without demanding exact journal selection or a proved theorem. Positive/diagnostic applied theory need not prescribe an implementable remedy or produce empirical results. Preserve general pure theory as a distinct chosen track; do NOT accidentally make mathematical-only importance a pass for an applied policy study.
 
 ## 1. Purpose
 
@@ -218,11 +232,13 @@ Extract the genuine economic question from a phenomenon, old paper, policy probl
 ## Mandatory tasks
 
 - State the observed phenomenon or theoretical puzzle.
+- If the project is **applied economic theory**, first articulate the economically important real decision, industrial/institutional/spatial mechanism or welfare question and whose understanding would change; theoretical modeling is a method, not a separate research merit criterion. A Delta Card MUST contain an audience-relevant conditional editorial-value sentence and an appropriate prospective article scale (full paper / note / comment / research-only).
 - Separate phenomenon from proposed explanation.
 - Identify agents, decisions, frictions, and outcomes that appear essential.
 - Distinguish theoretical contribution from application or institutional motivation.
 - Generate multiple plausible mechanisms before committing to one.
-- For a broad search, record candidate IDs, motivating source/puzzle, contribution route, structural duplicates, dispositions, and a finite batch budget. A larger raw bank is optional; wording variants are not distinct mechanisms.
+- For a broad search, record candidate IDs, motivating source/puzzle, contribution route, structural duplicates, dispositions, and a finite batch budget.
+- For an existing-theorem extension, write a **Delta Card**: named parent theorem and hypotheses; ONE proposed economically binding change; contribution route (generalization G / boundary B / new equilibrium or welfare W / unification U / mechanism M / substantive correction C); explicitly UNPROVED predicted result; closest competing theorem; smallest bounded falsification test and stop condition. The conjecture itself need not be certified as novel to merit a mathematical test. A larger raw bank is optional; wording variants are not distinct mechanisms.
 - Write a one-sentence research question that can in principle be falsified by prior art or model analysis.
 
 ## Kill tests
@@ -231,7 +247,7 @@ Stop or reframe if the project is only a policy description, parameterization ex
 
 ## Exit criterion
 
-Proceed only if there is a precise economic question worth literature and mathematical audit.
+For the **applied economic theory** track, proceed only if an economically meaningful decision/allocation/welfare/policy or explanatory question exists, a substantive but UNPROVED improvement to economic understanding is specified, a credible economic field audience can be named conditionally, and a small model test could answer it. Pure mathematical elegance alone does NOT pass this track. For other theory tracks, a precise theoretical question can proceed under their own scope. No early route certifies a novel theorem or authorizes paper drafting.
 
 ---
 
@@ -265,7 +281,7 @@ A verified canonical starting object and list of surviving research questions.
 
 ## Objective
 
-Determine whether the candidate mechanism, strategic architecture, result, or proposed generalization is already known before model investment.
+Assess whether a source-grounded candidate mechanism, architecture, result or extension merits a **bounded mathematical investment IN SERVICE OF THE RESEARCH QUESTION**, given strongest prior art. This is an ex ante screen, NOT a theorem originality certificate (Stage6). In the applied-economic-theory track, **economic significance is a necessary early gate**, mathematical tractability a feasibility check, and likely article scale/audience a provisional relevance screen. Do NOT apply an independent mathematical-worthiness score or demand exact journal acceptance probability. Familiar mathematical classes do not alone prove absorption; identify the exact existing result and mapping for claim-specific NO-GO.
 
 Novelty must be assessed at both:
 
@@ -286,19 +302,19 @@ For strategic projects perform a **whole-game absorption test**:
 - if not, is the proposed headline result nonetheless an immediate corollary of an existing theorem?
 - if multiple literatures are required to reconstruct the candidate, what strategic interaction exists only in the full architecture?
 
-For generalization/unification identify important nested prior models, restrictions that recover them, and a candidate result that should exist only in the full model.
+For generalization/unification identify important nested prior models, restrictions that recover them, and a conjectured result beyond their proven scope. The result can be materially weaker assumptions for a familiar theorem, a sharp boundary, or a new welfare implication **within** a known model family; it need NOT exist only under simultaneous joint endogeneity.
 
-Classify overlap as `EXACT PRIOR ART`, `STRUCTURALLY VERY CLOSE`, `COMPONENT OVERLAP`, `MERELY RELATED`, or `POTENTIALLY NOVEL` only when a model/result-level distinction survives.
+Classify overlap as `EXACT PRIOR ART`, `STRUCTURALLY VERY CLOSE`, `COMPONENT OVERLAP`, `MERELY RELATED`, or `POTENTIALLY NOVEL` with source-depth evidence. These are literature proximity classifications, NOT gate verdicts. For each candidate separately identify `DIRECTLY ABSORBED` (cite a theorem/result and mapping), `PROMISING UNPROVED EXTENSION` (bounded probe authorized without originality guarantee), `ONE MATERIAL BLOCKER` (exact missing source/derivation), or `NO SUBSTANTIVE ECONOMIC DELTA`. A merely *possible* analogy to an existing general class cannot by itself certify absorption.
 
 Attach evidence and reading depth to the strongest closest-paper comparison for each serious candidate; scores or search failure are not positive novelty evidence. For correction/reassessment, identify the exact source claim and proposed corrected consequence, and search existing corrections/source versions rather than demanding an unrelated new mechanism.
 
 ## Kill tests
 
-Kill contributions that are renamed known results, cosmetic new variables, immediate corollaries of the closest model, keyword-search novelty, “nobody combined these ingredients” novelty without new strategic feedback, or notation-only generalization.
+Kill **claims** that are demonstrably renamed known results, cosmetic variables, direct known corollaries with an identified parent-theorem mapping, keyword-search novelty, or trivial ingredient combinations without a substantive result. Do NOT kill an economically motivated, testable generalization, new validity boundary, counterexample, welfare ranking, or equilibrium conclusion merely because its components are familiar or its theorem is not yet proved. A high-risk unexplored mathematical conjecture may receive bounded early exploration; it is NOT certified as novel.
 
 ## Exit criterion
 
-Closest-paper matrix, overlap map, whole-game absorption verdict, nested-benchmark map when relevant, and explicit killed/weakened/surviving contribution set.
+Closest-paper matrix, overlap map, closest actual-result absorption argument or explicit uncertainty, nested benchmarks where relevant, Delta Card(s) and explicit killed/blocked/UNPROVED test-worthy contribution set. **Applied economic theory additionally requires an explicit economic-question-value statement, conditional contribution to economic understanding, field-audience relevance and model necessity**, before mathematical work; a merely mathematical novel theorem is insufficient. Canonical GO is bounded-investment eligibility only; CONDITIONAL GO has exactly ONE material blocker and permits only its resolution; NO-GO for demonstrated absorption or an economically empty conjecture. No early outcome certifies originality or publication.
 
 ---
 
@@ -306,16 +322,16 @@ Closest-paper matrix, overlap map, whole-game absorption verdict, nested-benchma
 
 ## Objective
 
-Generate competing explanations and select mechanisms or strategically meaningful generalizations, not feature lists.
+Generate competing testable economic explanations, generalizations, theorem-boundary characterizations, new equilibrium/welfare results, unifications or mechanisms—not feature lists. For an **applied economic theory** project, EVERY candidate must explain what economically important inference, allocation, welfare or policy understanding might change if the conjecture succeeds; no amount of algebraic novelty substitutes for that.
 
 ## Mandatory tasks
 
 - Generate multiple candidate mechanisms/architectures when the search space is broad.
-- Identify each strategic feedback loop.
+- Identify strategic feedback loops **where relevant**; a sound generalization or boundary result may not require an additional strategic actor or feedback loop.
 - State what changes relative to closest literature.
 - Identify the smallest model capable of producing the proposed mechanism.
-- For generalization/unification, identify nested benchmarks and the interaction that exists only when components are jointly endogenous.
-- State a candidate result unavailable in each benchmark alone.
+- For generalization/unification, identify exact parent nested benchmarks and which conclusion can be proved with weaker assumptions, sharper conditions, additional parameter regimes, or a new welfare consequence. Joint endogeneity is only one possible route.
+- State a **hypothesized, unproved** result not already established by the parent theorem in the changed setting, and its smallest bounded falsification/calculation route; the final novelty certificate belongs to Stage6.
 - Score candidates on novelty, mechanism clarity, whole-game prior-art survival, tractability, welfare content, institutional relevance, and journal fit when useful.
 - Merge structural duplicates using players/objectives, endogenous controls, timing/information, constraints, and feedback/result logic; preserve merged IDs and reasons.
 - Draft a short contribution memo for serious candidates: closest result, hypothesized difference, economic consequence, evidence limits, fatal objection, and next investment. Diagnose an institution-specific claim by removing/replacing the alleged institutional driver where feasible; this is not an automatic novelty verdict.
@@ -323,7 +339,7 @@ Generate competing explanations and select mechanisms or strategically meaningfu
 
 ## Kill tests
 
-Reject “another parameter/channel/fixed cost/player” additions that create no new strategic problem or theorem. Familiar components may survive only if their joint endogeneity creates a strategically non-equivalent equilibrium problem.
+Reject arbitrary parameters/channels/fixed costs/players with no economically substantive proposed result, and terminate known tautologies. Familiar components may survive when the proposed *result* is an economically important generalization, validity boundary, counterexample, new equilibrium/welfare conclusion, substantive unification OR genuinely new interaction. Do NOT require joint endogeneity as the only way to survive. Temporary symbolic probes are diagnostic, not Stage4 theorem proofs.
 
 ---
 
@@ -455,7 +471,7 @@ Search the literature again using the actual certified propositions.
 - Re-run whole-game absorption against the actual model.
 - For each serious parent-theorem candidate, construct an explicit **theorem-absorption map**: `prior theorem → variable/parameter mapping → required restriction/transformation → candidate headline result → DIRECTLY ABSORBED / PARTIALLY ABSORBED / NOT ABSORBED`.
 - Treat a short derivation from a known general theorem as absorption even when the prior paper does not print the same application-specific formula or threshold.
-- For generalization/unification, verify the full-model result is unavailable in material nested benchmarks and is not an immediate corollary of a known theorem.
+- For every claimed generalization/unification, verify the exact **new theorem scope/result** against parent nested benchmarks and general parent theorems. Meaningful weakening of hypotheses, sharp boundary characterizations, new equilibrium or welfare implications, and substantive correction may be contributions even without a new full-game-only interaction. Reject a result that is an immediate corollary of known stronger general theory. This is a **post-proof** originality gate; it must not be pre-imposed in full on Stage0–2.
 
 A result that looked novel before the mathematics may be killed now. Remove it immediately from the contribution set.
 
