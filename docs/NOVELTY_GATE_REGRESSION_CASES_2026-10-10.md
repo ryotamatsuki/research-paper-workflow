@@ -15,6 +15,19 @@ Applies to Pre-Stage F; Stages 0, 2, 3, 4, 6 and referee stages. Draft verificat
 | R9 Earlier contribution used to be rejected for "no new mechanism", but has a substantive original theorem candidate | Delta Card specifies new sharp theorem boundary, named source differences, finite test | Permit reconsideration only for a NEW precisely DIFFERENT result, with provenance/rollback; prior negative result preserved | Math/novelty certificates not inherited from rejected branch |
 | R10 Formula derivable as 2-line corollary of already published stronger theorem | Original math and mapping verified at early or late stage | Early NO-GO if known before math effort; otherwise strict Stage6 theorem NO-GO | May still have application/policy interpretation value, but no unsupported theory originality claim |
 
+## Applied-economic-theory regression extensions (research-track dependent)
+
+| Case | Ex ante situation | Correct APPLIED THEORY treatment |
+|---|---|---|
+| AR1 | New abstract mathematical theorem, identical economic predictions and no economically material interpretation | **NO-GO in applied track**, even if general theorem originality is plausible; a pure-theory track can evaluate separately |
+| AR2 | Known principal-agent class but source-grounded conjecture changes meaningful taxpayer welfare, regional industry policy or firm behavior | **GO to bounded test**, conditional on no demonstrated known-result absorption; economic importance and reader community established |
+| AR3 | Important policy description without an unresolved endogenous choice/incentive/welfare tradeoff | **NO-GO for theory research**, though it may be useful policy reporting |
+| AR4 | Significant new theoretical explanation of municipal policy failure, no implementable corrective instrument provided | **Potential GO** as positive/diagnostic applied theory; require meaningful mechanism and eventual source/novelty proof |
+| AR5 | Desired policy reversal artificially imposed by unexplained income/rent-share coefficient | **NO-GO for economic microfoundation**, even if equations formally solve |
+| AR6 | Weaker-assumption existence theorem brings empirically plausible institutions into domain and changes predictable equilibrium/welfare cases | **GO to bounded extension test** on economic value; Stage6 re-kill after proof |
+
+**Regression invariant:** The ten R1–R10 examples test source/novelty decision; these AR examples ensure that the applied project never mistakes *mathematical curiosity as a separate source of applied-paper value*. Model tractability/correctness and publication value are not two coequal interests: they are method requirements and economic-contribution review for a single applied research question.
+
 ## Acceptance invariants
 1. Do not assert a paper contribution merely because Stage0–3 GO.
 2. Do not require proof of a novel theorem as an INVESTMENT gate.
