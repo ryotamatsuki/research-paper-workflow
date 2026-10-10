@@ -1,6 +1,14 @@
 # Independent audit: do early theoretical-novelty gates resemble actual economics journal editorial standards?
 Date: 2026-10-10 JST; status **AUDIT FINDINGS ONLY**, no gate relaxation/criteria changes authorized by this report. Relevant draft PR #25, docs/NOVELTY_GATE_REGRESSION_CASES_2026-10-10.md (R1–R10), NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md.
 
+## Addendum: applied economics does NOT use "mathematical worth" as an independent axis (same day, author clarification)
+
+The audit below originally recommended TWO flags, "mathematical test worthwhile" and "editorially plausible IF successful". **That formulation is not appropriate when the established project is APPLIED ECONOMIC THEORY**, such as a theory-only local-government industrial-policy research programme. It is **superseded for this track**, not a reason to overturn the reviewed external journal facts.
+
+**Correct applied-theory filter:** economic question and source-grounded potential new economic understanding FIRST (including a provisional field-audience/editor-facing case); theoretical modelling needed and finitely tractable SECOND as a means. Pure mathematical novelty with no new economically meaningful implication fails *the user's applied-economics project*, even though it may merit work in separate abstract/theoretical-mathematics projects. Do not require data, causal estimation, or an actionable policy instrument as universal prerequisites for POSITIVE theoretical explanations of substantial economic phenomena. Full result originality and mathematical proof remain post-derivation gates.
+
+This addendum is a REFINEMENT based on the applied-economics research identity. The original ten regression cases R1–R10 remain relevant as PRIOR-ART error tests, but the new AR1–AR6 cases in docs/NOVELTY_GATE_REGRESSION_CASES_2026-10-10.md and [APPLIED_ECONOMIC_THEORY_TRACK.md](../APPLIED_ECONOMIC_THEORY_TRACK.md) now control early research entry decisions.
+
 ## Verdict
 **Broadly ALIGNED as a research ENTRY / limited-test SCREEN, not yet fully aligned as an early PUBLISHABILITY triage rule.** Correct adjustment: full journal-standard certification belongs AFTER proofs. But must cheaply check probable editorial economics value/audience/format BEFORE allocating significant modelling effort. The 10 regression cases largely test originality and mathematical absorption, not enough for journal-worthiness. Absence of proved absorption does not itself confer a strong full-paper prospect.
 
