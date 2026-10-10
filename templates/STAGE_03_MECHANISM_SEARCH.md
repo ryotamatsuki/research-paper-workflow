@@ -42,6 +42,10 @@ Do not treat the following as mechanisms by themselves:
 
 This Stage3 screens whether an economically important UNPROVED parent-theorem extension merits bounded math work. It does NOT require the author to **prove** a novel result before Stage4. Stage6 will later reject proved results that are immediate known general-theorem corollaries; Stage4A remains a strict mathematical hostile check. See [NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md](../NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md).
 
+## 5B. Applied economic theory contribution filter
+
+For APPLIED ECONOMIC THEORY, candidate ranking is conditional on a meaningful economic outcome: state clearly what explanatory, industry-structure, allocation, welfare, institutional or policy insight might change. A candidate with interesting mathematical structure but no such consequence is not a GO for this applied track. An old model class with a potentially new substantive economic result remains eligible. The model should be **only as complex as the economic question needs**; mathematics is the method, not the object of research. Use [APPLIED_ECONOMIC_THEORY_TRACK.md](../APPLIED_ECONOMIC_THEORY_TRACK.md). No empirical work is required unless chosen.
+
 ## 6. Mandatory tasks
 
 When the search space is broad, generate approximately 8–12 candidates. For every candidate state:
