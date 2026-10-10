@@ -42,6 +42,10 @@ If beginning from a known parent theorem, make a **Delta Card**: parent equation
 
 See [NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md](../NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md).
 
+## Scholarly generalization and subject fit are different classifications
+
+Source-grounded generalizations of economic equilibrium, preferences/choice, games, identification and mathematical-economic methods can count as valuable ECONOMIC THEORY even without a new local industrial-policy result. In Stage0, record two statuses: **THEORY CONTRIBUTION VALUE** and **CURRENT PROJECT FIT**. An otherwise valuable but off-topic theory result receives DEFER/SEPARATE ECONOMIC THEORY PROJECT, not global NO-GO. Journal of Mathematical Economics requires substantive economic-theory content, not only correct math. Keep novelty unproved until Stage6.
+
 ## 5B. Applied economic theory: economic-question gate, not mathematical merit
 
 When the research track is **APPLIED ECONOMIC THEORY** (not pure abstract theory), make the economic purpose compulsory **at intake**. Use [APPLIED_ECONOMIC_THEORY_TRACK.md](../APPLIED_ECONOMIC_THEORY_TRACK.md) and the six-item Applied Theory Contribution Card. Identify (a) the economic decision/outcome and why it matters, (b) the known benchmark/closest theorem, (c) what substantive understanding might change IF the extension holds, (d) likely field reader, (e) whether it calls for full paper/note/comment if successful, and (f) the minimal model and bounded falsification. The result remains UNPROVED.
