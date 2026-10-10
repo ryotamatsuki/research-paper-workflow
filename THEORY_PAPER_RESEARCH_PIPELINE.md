@@ -2,6 +2,10 @@
 
 Version: v2.8
 
+## Optional but mandatory when searching a whole domain: Pre-Stage F — Theory Attainment Atlas
+
+When the user requests a fresh theory frontier for a policy domain without a verified specific parent theorem, complete [PRESTAGE_F_THEORY_ATTAINMENT_ATLAS.md](PRESTAGE_F_THEORY_ATTAINMENT_ATLAS.md) **before Stage 0 candidate selection**. This is an independent source-first inventory of established parent theorems, assumptions and cross-field absorption; it is **not** a brainstorming stage. Its correct result may be ZERO viable research questions. A literature item not studied in one paper is not yet a field-level open theorem. No substantive economic model may be constructed based solely on a Pre-Stage F gap label. Existing Stages 0–15 and their gates are unchanged.
+
 ## 1. Purpose
 
 This document defines the canonical workflow for taking a theory-oriented economics research idea from initial motivation to submission freeze.
