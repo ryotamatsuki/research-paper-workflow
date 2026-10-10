@@ -2,6 +2,15 @@
 
 Use this checklist for serious prior-art and novelty work. It supplements, but does not weaken, `GOVERNANCE.md` and the canonical pipeline.
 
+## Applied economic theory source relevance
+
+- [ ] Applied/pure theoretical research track identified, rather than treating them as coequal worthiness axes.
+- [ ] Original source paper's economic question and actual institutional/welfare conclusion stated separately from technical theorem form.
+- [ ] Any hypothesized mathematical generalization translates into a predicted *new economic explanation/inference* and plausible field readership.
+- [ ] The fact that a proposition can be strengthened algebraically is NOT itself a positive APPLIED economic research contribution.
+- [ ] Positive economic theory may diagnose a failure or explain behavior without proposing a policy remedy or using empirical data.
+- [ ] Closest scholarly rival may undermine economic importance **even if** the exact theorem has not been mathematically absorbed.
+
 ## Parent-theorem extension evidence (stage-specific)
 
 - [ ] Parent result is grounded to an original equation/proposition and clearly labeled published vs working version.
