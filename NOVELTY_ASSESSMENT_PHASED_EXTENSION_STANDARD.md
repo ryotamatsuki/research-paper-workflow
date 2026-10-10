@@ -1,6 +1,15 @@
 # Phased novelty assessment and legitimate extensions of prior theory
 **2026-10-10 draft workflow refinement.** Governing authority: GOVERNANCE.md, THEORY_PAPER_RESEARCH_PIPELINE.md, this protocol. It changes early research-investment screening, NOT rigorous late originality proof or mathematical certification.
 
+## 0. Applied-economic-theory priority rule (project track override)
+
+Where the research project is **APPLIED ECONOMICS using economic theory**, the primary entry criterion is NOT "is the mathematics worth doing?" in isolation. The sequence is:
+**economically important explanatory/welfare/policy question → predicted, UNPROVED new economic understanding → fit of mathematical modelling and finite test**.
+
+A mathematically interesting theorem with no substantive change in economists' understanding does not count as an applied-economics GO. An original new result within an established mathematical class may be worth a bounded test if it changes a meaningful regional/industrial allocation, incentive, welfare or institutional conclusion. Mathematics is a method; tractability is a necessary execution constraint and correctness is later strictly audited. Do not demand econometrics, calibration or practical prescription as a universal condition for applied economic theory. A sharp explanation of policy failure may suffice as positive/diagnostic contribution.
+
+For this track use [APPLIED_ECONOMIC_THEORY_TRACK.md](APPLIED_ECONOMIC_THEORY_TRACK.md) and the six-field Applied Theory Contribution Card. Cheap, preliminary field-audience and article-type checks are part of establishing **economic question significance**, not an unrelated equally-weighted "editorial worth" score. The prior two-axis suggestion in docs/JOURNAL_ALIGNMENT_AUDIT_2026-10-10.md is superseded for this track.
+
 ## 1. What the September 2026 novelty tuning already got right
 GitHub commit 51bd722633a79020294991737625e94ba10ccde6 (September 2, 2026) introduced component vs whole-game absorption, and generalization/unification as a valid contribution route. Current v2.8 Stage 2 already says familiar individual components do not automatically absorb a full game, and current GOVERNANCE.md section 2.19 already recognizes substantive new results in known models, generalizations, corrections and unifications. **Do not undo these principles.**
 
@@ -13,7 +22,7 @@ The October failure is **operational**, not merely absence of a novelty category
 - **U: Substantive unification.** Recover several leading previous benchmarks within a theorem and establish a meaningful cross-model result that was not already a simple corollary.
 - **M: Distinct economic mechanism.** Identify an original causal/strategic channel with a non-absorbed theoretical result; this is one route, not the universally required route.
 - **C: Substantive correction/reassessment.** Establish and correct a consequential error or scope claim in a leading model after checking all prior corrections. Cosmetic algebra alone is not sufficient.
-These categories are equally eligible for bounded exploration; economic significance and paper sufficiency are evaluated separately and rigorously later.
+These categories are legitimate contribution routes, but **for an applied economic theory project an economically substantive payoff is REQUIRED BEFORE committing to a mathematical test**. Later publication completeness is still checked rigorously, yet economics significance cannot be postponed until after proofs.
 
 ## 3. Different evidence burdens at DIFFERENT STAGES
 ### Pre-Stage F: evidence-led source atlas
