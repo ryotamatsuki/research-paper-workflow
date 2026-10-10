@@ -2,6 +2,19 @@
 
 Apply this checklist to each candidate contribution separately. A project may survive while individual claims are killed.
 
+## Phase-calibrated decision (required; see canonical protocol)
+
+- [ ] Is this **PRE-STAGE F/Stage0/Stage2 ex ante screening** or **Stage6/11 post-proof certification**? Record the difference.
+- [ ] Candidate type tagged G (generalization), B (boundary/counterexample), W (new equilibrium/welfare/policy result), U (unification), M (new mechanism), or C (substantive correction).
+- [ ] For an EARLY candidate, is a parent proposition, economically meaningful changed assumption, **UNPROVED prediction**, nearest rival and finite falsification test explicitly recorded?
+- [ ] Did we refrain from demanding an already proved new theorem or a new full-game strategic interaction at Stage0/2?
+- [ ] If labeling directly ABSORBED, is a precise known RESULT identified and its parameter/variable specialization shown? A familiar theory class alone is not a complete absorption proof.
+- [ ] Where decisive original theorem text is missing, did we issue the existing exactly-one-material-blocker CONDITIONAL GO rather than falsely claiming original novelty or definitive absorption?
+- [ ] If doing Stage6 POST-PROOF certification, is exact known-general-theorem absorption checked rigorously on ACTUAL derived results? Unproven conjectures cannot be passed off as published theorems.
+- [ ] Does a meaningful theorem generalization or sharper boundary survive WITHOUT introducing an additional strategic actor or mandatory joint endogeneity?
+
+**Rule:** An unproved worthwhile extension may deserve a BOUNDED test, but it does not deserve a paper originality certificate. An existing model class is not the same thing as an existing specific result; a known immediate general-theorem corollary remains non-novel at Stage6.
+
 ## Exact-prior-art checks
 
 - [ ] Is the same theorem already known?
@@ -36,7 +49,7 @@ Apply this checklist to each candidate contribution separately. A project may su
 - [ ] Is there a new theorem rather than just a longer model?
 - [ ] Would removing one component leave the headline result unchanged?
 
-**Rule:** known components do **not** by themselves imply that the candidate game/model is absorbed. Component overlap and game-level absorption are separate findings. Combination novelty is weak only when the combination adds no economically substantive strategic interaction or result.
+**Rule:** known components do **not** by themselves imply that the candidate game/model OR theorem generalization is absorbed. Component overlap and game/result-level absorption are separate findings. Combination novelty is weak only when the combination adds no economically substantive strategic interaction or result.
 
 ## Canonical-form / theorem-absorption test
 
