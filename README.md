@@ -16,6 +16,12 @@ Pre-Stage F records established original theorems and evidence-limited conjectur
 
 Status: **draft PR only**. No new release tag, no bypassing mathematics/novelty gates, and no retroactive resurrection of failed model results.
 
+## Applied economic theory: economic question before mathematics (2026-10-10 draft)
+
+For **applied economics pursued through theoretical models** (including local-government industrial policy), the sole research-value objective is an **important economic explanation, allocation, welfare, incentive, institution or policy insight**. Mathematics is a method (feasibility/correctness gates), not a competing source of applied-paper merit. Every Pre-Stage F / Stage0–2 candidate must state what economically important understanding might change IF its unproved result is true and who in economics would care. A mathematically novel but economically empty theorem does not pass this applied track; an economically substantive extension in a familiar mathematical class can receive a bounded test.
+
+See [APPLIED_ECONOMIC_THEORY_TRACK.md](APPLIED_ECONOMIC_THEORY_TRACK.md). Six applied-track regression cases AR1–AR6 are added to [decision examples](docs/NOVELTY_GATE_REGRESSION_CASES_2026-10-10.md); the prior journal-alignment audit now records that its independent "mathematical worth" flag is superseded for this track. **No empirical work or actionable remedy required by default** for positive applied theory. Pure general economic theory is not removed from the reusable workflow.
+
 ## Governing principle
 
 > Do not preserve an idea because effort has already been invested. Kill weak mechanisms early, and do not freeze a theorem until both its mathematical correctness and its claimed scope survive independent adversarial attack.
