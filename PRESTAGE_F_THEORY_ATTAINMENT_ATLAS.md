@@ -7,6 +7,10 @@ To prevent an idea-generator from being mislabeled a "literature frontier audit"
 
 **Order:** Domain/scope → **Pre-Stage F SOURCE-FIRST THEOREM ATLAS** → if and only if justified, Stage 0 candidate intake → Stage 1 specific-parent reconstruction → Stage 2 adverse full-game originality kill gate. A Stage F report does NOT authorize Stage 3 model. Stage0–2 may identify a bounded Delta Card worth a later mathematical test; actual result originality is audited at Stage6. Existing downstream stages remain unchanged.
 
+## Source atlas: broad theoretical contribution is not identical to this project's scope
+
+The Pre-Stage F atlas must register academically significant generalizations of economic theory (equilibrium existence, regularity, strategy, choice, information, methods) even when their best journal family is JME/TE/JET rather than JRS/RSUE. Separate scholarly-theory merit, current-project DIRECT/ADJACENT/OUTSIDE fit and original-theorem verification stage. Do not apply NO-GO solely because a viable economy-theory theorem has no new municipal-policy inference. Use DEFER/ROUTE. See [docs/GENERALIZATION_SCHOLARLY_VALUE_AUDIT_2026-10-10.md](docs/GENERALIZATION_SCHOLARLY_VALUE_AUDIT_2026-10-10.md).
+
 ## Research track selection: applied economics before mathematical extension inventories
 
 When users identify their work as **applied economic theory**, the frontier atlas must map established answers to **substantive economic problems** (incentives, spatial/industrial allocation, institutions, welfare, policy performance), then register unproved extensions that may change those answers. Do NOT shortlist an assumption generalization simply because it is mathematically elegant. Articulate an economically important consequence and plausible disciplinary readers BEFORE allowing Stage0 candidature; feasibility of mathematical study is an instrument. See [APPLIED_ECONOMIC_THEORY_TRACK.md](APPLIED_ECONOMIC_THEORY_TRACK.md). Maintain pure-theory possibilities only if selected by the researcher.
