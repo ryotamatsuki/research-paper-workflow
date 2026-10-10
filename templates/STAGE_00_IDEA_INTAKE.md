@@ -42,6 +42,12 @@ If beginning from a known parent theorem, make a **Delta Card**: parent equation
 
 See [NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md](../NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md).
 
+## 5B. Applied economic theory: economic-question gate, not mathematical merit
+
+When the research track is **APPLIED ECONOMIC THEORY** (not pure abstract theory), make the economic purpose compulsory **at intake**. Use [APPLIED_ECONOMIC_THEORY_TRACK.md](../APPLIED_ECONOMIC_THEORY_TRACK.md) and the six-item Applied Theory Contribution Card. Identify (a) the economic decision/outcome and why it matters, (b) the known benchmark/closest theorem, (c) what substantive understanding might change IF the extension holds, (d) likely field reader, (e) whether it calls for full paper/note/comment if successful, and (f) the minimal model and bounded falsification. The result remains UNPROVED.
+
+**Reject for this track** a mathematically interesting but economically empty generalization, even if unproved and not absorbed. Proof feasibility remains a methodological feasibility constraint, not an independent research value score. An original explanation of an important policy failure without prescribing a solution can pass. No empirical-data requirement is implied.
+
 ## 6. Mandatory tasks
 
 1. State the phenomenon without explaining it.
