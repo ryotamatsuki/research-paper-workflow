@@ -8,6 +8,10 @@ Version: v2.8 (proposed novelty-screening refinement in draft; release version u
 
 When the user requests a fresh theory frontier for a policy domain without a verified specific parent theorem, complete [PRESTAGE_F_THEORY_ATTAINMENT_ATLAS.md](PRESTAGE_F_THEORY_ATTAINMENT_ATLAS.md) **before Stage 0 candidate selection**. This independent source-first inventory records established parent theorems, assumptions, and cross-field absorption; it is **not** an idea-generation quota. It may yield ZERO promising extension windows, but it must NOT require proof of a new theorem before a source-grounded, unproved extension can be admitted for bounded Stage-0 research. An omission in one paper is not automatically a field-level unsolved theorem. Stage0–2 follow the phase-calibrated screening standard above; Stage6 and all mathematical certification gates remain strict. No substantive economic model may be constructed based solely on a Pre-Stage F gap label. Existing Stages 0–15 and verdict semantics are unchanged.
 
+### Optional research track: APPLIED ECONOMIC THEORY (policy/region/industry questions)
+
+When a project is explicitly **applied economics pursued using theoretical models** (including local-government industrial policy), use [APPLIED_ECONOMIC_THEORY_TRACK.md](APPLIED_ECONOMIC_THEORY_TRACK.md) **from Pre-Stage F onward**. The first necessary value test is **economic explanatory/welfare/policy significance**, not a standalone "mathematically interesting" score. Mathematical sophistication is a tool, its tractability an execution gate and its correctness a later certification gate; it is NEVER a separate reason for a full applied-economics paper. A source-grounded conjecture may pass early screening if it plausibly changes economic understanding and has a finite math test. Include plausible audience/format and a concise editor-facing conditional case, without demanding exact journal selection or a proved theorem. Positive/diagnostic applied theory need not prescribe an implementable remedy or produce empirical results. Preserve general pure theory as a distinct chosen track; do NOT accidentally make mathematical-only importance a pass for an applied policy study.
+
 ## 1. Purpose
 
 This document defines the canonical workflow for taking a theory-oriented economics research idea from initial motivation to submission freeze.
@@ -224,6 +228,7 @@ Extract the genuine economic question from a phenomenon, old paper, policy probl
 ## Mandatory tasks
 
 - State the observed phenomenon or theoretical puzzle.
+- If the project is **applied economic theory**, first articulate the economically important real decision, industrial/institutional/spatial mechanism or welfare question and whose understanding would change; theoretical modeling is a method, not a separate research merit criterion. A Delta Card MUST contain an audience-relevant conditional editorial-value sentence and an appropriate prospective article scale (full paper / note / comment / research-only).
 - Separate phenomenon from proposed explanation.
 - Identify agents, decisions, frictions, and outcomes that appear essential.
 - Distinguish theoretical contribution from application or institutional motivation.
@@ -238,7 +243,7 @@ Stop or reframe if the project is only a policy description, parameterization ex
 
 ## Exit criterion
 
-Proceed only if there is a precise economic question worth literature and mathematical audit, or a source-grounded economically consequential **unproved extension conjecture** with a bounded falsification plan. This does NOT certify theorem novelty or authorize paper drafting. The absence of a proven result at Stage0 is normal, not a NO-GO ground.
+For the **applied economic theory** track, proceed only if an economically meaningful decision/allocation/welfare/policy or explanatory question exists, a substantive but UNPROVED improvement to economic understanding is specified, a credible economic field audience can be named conditionally, and a small model test could answer it. Pure mathematical elegance alone does NOT pass this track. For other theory tracks, a precise theoretical question can proceed under their own scope. No early route certifies a novel theorem or authorizes paper drafting.
 
 ---
 
@@ -272,7 +277,7 @@ A verified canonical starting object and list of surviving research questions.
 
 ## Objective
 
-Assess whether a source-grounded candidate mechanism, architecture, RESULT OR EXTENSION is worth a **bounded mathematical investment**, given strongest known prior art. This is an **ex ante screen**, NOT a post-proof original-theorem certificate (reserved for Stage6). Familiar mathematics or an existing model class alone is not proof of absorption; require an identified existing result and a mapping for a claim-specific known-result NO-GO.
+Assess whether a source-grounded candidate mechanism, architecture, result or extension merits a **bounded mathematical investment IN SERVICE OF THE RESEARCH QUESTION**, given strongest prior art. This is an ex ante screen, NOT a theorem originality certificate (Stage6). In the applied-economic-theory track, **economic significance is a necessary early gate**, mathematical tractability a feasibility check, and likely article scale/audience a provisional relevance screen. Do NOT apply an independent mathematical-worthiness score or demand exact journal acceptance probability. Familiar mathematical classes do not alone prove absorption; identify the exact existing result and mapping for claim-specific NO-GO.
 
 Novelty must be assessed at both:
 
@@ -305,7 +310,7 @@ Kill **claims** that are demonstrably renamed known results, cosmetic variables,
 
 ## Exit criterion
 
-Closest-paper matrix, overlap map, closest **actual-result absorption argument or explicit uncertainty**, nested benchmarks where relevant, Delta Card(s) and explicit killed/blocked/**unproved test-worthy** contribution set. Canonical GO means bounded-investment eligibility only; CONDITIONAL GO has exactly ONE material blocker and permits only the specified blocker-resolution action; NO-GO for demonstrated absorption or an economically empty conjecture. None constitutes theorem novelty certification.
+Closest-paper matrix, overlap map, closest actual-result absorption argument or explicit uncertainty, nested benchmarks where relevant, Delta Card(s) and explicit killed/blocked/UNPROVED test-worthy contribution set. **Applied economic theory additionally requires an explicit economic-question-value statement, conditional contribution to economic understanding, field-audience relevance and model necessity**, before mathematical work; a merely mathematical novel theorem is insufficient. Canonical GO is bounded-investment eligibility only; CONDITIONAL GO has exactly ONE material blocker and permits only its resolution; NO-GO for demonstrated absorption or an economically empty conjecture. No early outcome certifies originality or publication.
 
 ---
 
@@ -313,7 +318,7 @@ Closest-paper matrix, overlap map, closest **actual-result absorption argument o
 
 ## Objective
 
-Generate competing testable economic explanations, generalizations, theorem-boundary characterizations, new equilibrium/welfare results, unifications, or mechanisms—not feature lists.
+Generate competing testable economic explanations, generalizations, theorem-boundary characterizations, new equilibrium/welfare results, unifications or mechanisms—not feature lists. For an **applied economic theory** project, EVERY candidate must explain what economically important inference, allocation, welfare or policy understanding might change if the conjecture succeeds; no amount of algebraic novelty substitutes for that.
 
 ## Mandatory tasks
 
