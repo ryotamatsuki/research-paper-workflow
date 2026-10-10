@@ -47,6 +47,16 @@ You may refine terminology, identify better comparison papers, split contributio
 
 For every serious candidate record: original named parent theorem and conditions; G/B/W/U/M/C route; the ONE changed economically substantive restriction; UNPROVED prediction; largest known prior-art objection; specific prior-theorem absorption mapping if a negative claim is asserted; and the smallest bounded counterexample/derivation test. Classify the result as DIRECTLY ABSORBED (with source mapping), PROMISING UNPROVED EXTENSION, ONE MATERIAL BLOCKER (existing exactly-one-condition), or NO SUBSTANTIVE ECONOMIC DELTA. These are supporting dispositions, not replacements for GO/CONDITIONAL GO/NO-GO. See [NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md](../NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md).
 
+## 5B. Mandatory applied economic theory screen
+
+When the project is labeled **APPLIED ECONOMIC THEORY**, before allowing GO to bounded mathematical exploration require a credible short statement:
+- ECONOMIC VALUE: which incentives, industry/location allocation, resident welfare, equilibrium predictions, implementation or institutions are at issue and why economists would care;
+- EXPECTED NEW ECONOMIC INSIGHT: what source-grounded conclusion could change IF the UNPROVED conjecture is true;
+- RESEARCH METHODS: why an economic model is the minimum needed to distinguish alternatives, with a finite tractable test;
+- FIELD READERSHIP: who would read the resulting explanation and whether full theory / note / comment is even plausible (no hard journal commitment).
+
+No extra *independent* "mathematics is worthy on its own" GO route in this track. Mathematical feasibility and correctness are instrumental, and downstream proofs/absorption checks are unchanged. A positive/diagnostic economic theory result is allowed without new empirical analysis or a fully implementable welfare policy. Consult [APPLIED_ECONOMIC_THEORY_TRACK.md](../APPLIED_ECONOMIC_THEORY_TRACK.md).
+
 ## 6. Mandatory tasks
 
 Search and map:
