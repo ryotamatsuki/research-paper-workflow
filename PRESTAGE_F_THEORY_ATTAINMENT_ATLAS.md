@@ -3,14 +3,14 @@
 Status: **proposed workflow enhancement**, 2026-10-10. Applies when the researcher asks to find a novel theoretical ECONOMICS puzzle within a policy domain instead of extending an already source-verified specific parent theorem. Remains separate from current Stage 0, Stage 1 (specific parent source/math), and Stage 2 (candidate novelty).
 
 ## Purpose
-To prevent an idea-generator from being mislabeled a "literature frontier audit". This stage's sole product is an **auditable, source-anchored map of what mainstream economics theory HAS ALREADY PROVED**. **It must be executed BEFORE generating/selecting a research puzzle**, if the user asks for field-level frontier exploration. This stage can yield 0 candidate questions. Never force a "best idea."
+To prevent an idea-generator from being mislabeled a "literature frontier audit". This stage's core product is an **auditable, source-anchored map of what economics theory HAS ALREADY PROVED**, with separately labeled, UNPROVED possible extension windows attached to named parent theorems. It precedes Stage0 in field-wide frontier searches. It can yield zero candidates; never force a winner. However, do NOT require proof of a NEW theorem before a source-grounded, economically important extension may enter Stage0 for a finite investigation.
 
-**Order:** Domain/scope → **Pre-Stage F SOURCE-FIRST THEOREM ATLAS** → if and only if justified, Stage 0 candidate intake → Stage 1 specific-parent reconstruction → Stage 2 adverse full-game originality kill gate. A Stage F report does NOT authorize Stage 3 model. Existing downstream stages remain unchanged.
+**Order:** Domain/scope → **Pre-Stage F SOURCE-FIRST THEOREM ATLAS** → if and only if justified, Stage 0 candidate intake → Stage 1 specific-parent reconstruction → Stage 2 adverse full-game originality kill gate. A Stage F report does NOT authorize Stage 3 model. Stage0–2 may identify a bounded Delta Card worth a later mathematical test; actual result originality is audited at Stage6. Existing downstream stages remain unchanged.
 
 ## A. Inputs fixed before source search
 - Discipline, research type (pure theory / empirical / structural), policy implementer, welfare/objective jurisdiction, allowable institutions.
 - **Precommitted source universe, not precommitted ideas**: representative survey/editorial, foundational theoretical theorem papers, 2023-present adversarial papers, neighboring theoretical literatures (IO, PA/contract, fiscal federalism, information economics, game theory, economic geography, organization), versions/appendices.
-- Hypothetical novelty labels are prohibited until source audit is complete. Domain labels (municipal, industrial) are not distinctive mechanisms.
+- Claiming novelty is prohibited until source audit. After parent-source reconstruction, explicitly UNPROVED extension hypotheses (generalization, theorem boundary, new equilibrium/welfare, unification, mechanism, substantive correction) may be registered for future tests. Domain labels (municipal, industrial) are not distinctive mechanisms.
 
 ## B. Minimum substantive source audit
 For EACH priority original THEORY parent paper, prepare one structured "theorem passport":
@@ -30,7 +30,7 @@ For each identified theorem boundary:
 - **Solved**: contains an already proven proposition or mechanism.
 - **Out-of-scope-of-one-parent**: absent from one paper, but not yet a literature-level hole.
 - **Explicit author open problem**: author's concrete unsolved problem as stated in primary paper. Often methodological or empirical; tag accordingly.
-- **Literature gap HYPOTHESIS**: after reverse/forward citation searches and cross-field adversarial theorem checks, there is prima facie non-absorption but not a proved absence.
+- **Test-worthy extension hypothesis**: after parent theorem and main adversarial sources are checked, a substantively different but still UNPROVED conjecture may merit a finite Stage0–2 audit. No theorem absence or economic novelty is yet certified.
 - **Source access blocked**: cannot infer unstudied.
 - **Killed**: same outcome or general theorem obtainable from adjacent original paper or parameter/label renaming.
 For every survivor include near-miss "killer" papers and attempts to derive it as a corollary of existing theorem; confidence tracks SOURCE ACCESS, not subjective prestige. Do not count different institutional labels for one theoretical mechanism as two topics.
@@ -40,12 +40,12 @@ Four artifacts:
 1. **Field theorem atlas**: thematic matrix with main named papers, direct mathematical result or explicitly abstract-only, assumptions, coverage boundary and status of verification.
 2. **Adversarial cross-field overlap graph**: near-theorem pairs, why one absorbs another and known efficient, ineffective or counterintuitive regimes.
 3. **Gap claims evidence register**: one row per proposed unresolved exact theorem/assumption with primary excerpt/DOI, downstream killer articles, open access blocker, tag from C.
-4. **Candidate admission certificate**: **ZERO IS ACCEPTABLE**. If one or more credible gaps: one falsifiable question, parent proposition, effect that would change economics, counterfactual benchmark. This is only a hypothesis for Stage0/1, not a theorem or completed novelty certification.
+4. **Candidate Delta Card**: **ZERO IS ACCEPTABLE**. A source-anchored conjectured generalization/boundary/new welfare-or-equilibrium/unification/mechanism/correction can enter Stage0 if it names a parent proposition, economically binding change, UNPROVED prediction, closest killer and finite falsification probe. No research paper or new theorem is thereby certified.
 
 ## E. Stop, GO and version discipline
-- **GO to Stage 0 only** if at least one original parent proposition and its explicit scope condition has been inspected, plus at least two closest independent adjacent original works have been inspected at appropriate depth, AND a plausible *different* result remains. If evidence is abstract-only in the highest-threat parent, treat as **BLOCKED**, not GO.
-- **CONDITIONAL GO to further source acquisition inside Pre-Stage F** with ONE precisely delimited unresolved source-depth blocker. Do NOT use this to jump to model design.
-- **NO-GO** for the current search set if all known windows are either mathematically absorbed or source-blocked without a finite plan. Reopen with a new source universe, not a new parameter.
+- **GO to Stage 0** if an original parent proposition and economically binding scope condition have been inspected, the main independent adverse theories have been screened (normally at least two, with depth and limitations logged), and an economically important UNPROVED extension has a finite falsification plan. A newly PROVED different result is NOT required before conducting research. Abstract-only access to a decisive rival is a specified source-depth blocker, not evidence of novelty.
+- **CONDITIONAL GO to further source acquisition inside Pre-Stage F** with ONE precisely delimited unresolved source-depth blocker. Do NOT use this to jump to model design. Mere similarity to a nearby mathematical class is not enough to certify direct absorption of a specific proposed result.
+- **NO-GO** for the current source-bounded search if all plausible windows are demonstrably absorbed/economically empty or have no credible finite source/mathematical test. Reopen with a new parent theorem or substantively distinct Delta Card, not an arbitrary parameter.
 - Keep a versioned change log for newly published papers that invalidate the atlas. Time stamps matter: a 2026 article can supersede a 2024 open question.
 - Red-team before source selection: find the **most threatening** same-game or adjacent-field paper FIRST, not after one winning idea is designated.
 - Avoid pseudo-precision: no scores or probabilities of publication/newness without evidence; report exactly how many sources received actual proposition-level inspection vs abstract-level only. Neither paper count nor source-quality grades independently prove exhaustive coverage.
@@ -56,6 +56,10 @@ Map theory spanning: fiscal competition/bidding; efficient spillbacks; place-bas
 Prestage F DOES NOT restart failed IPCRVC supply-network/standard-free-riding, local procurement monitoring/contracting, or generic place-targeting ideas. A model is NEVER a deliverable at this stage.
 
 ## G. Structured machine record template
-Fields: domain,parent_paper,publication_version,doi,source_url,inspected_scope,eq_prop,page,players_objective,policy_instrument,endogenous_choices,main_result,limiting_assumptions,verified_omissions,adjacent_killer,source_depth,confidence,decision,open_actions.
+Fields: domain,parent_paper,publication_version,doi,source_url,inspected_scope,eq_prop,page,players_objective,policy_instrument,endogenous_choices,main_result,limiting_assumptions,verified_omissions,extension_route_G_B_W_U_M_C,unproved_theorem_delta,minimum_probe,adjacent_killer,absorption_mapping_if_known,source_depth,confidence,decision,open_actions.
 
 Canonical stage verdict: GO_TO_STAGE0, SOURCE_BLOCKED, NO_GO, with corresponding standard pipeline statuses; do not silently graduate to Stage1.
+
+## H. Stage-calibrated novelty and extension crosswalk
+
+Use [NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md](NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md). Pre-Stage F is a verified atlas of *existing results* with provisional, falsifiable extension windows. It does not need to prove a new theorem in order to send a Delta Card to Stage0. Stage2 permits only a bounded unproved research probe after proper screening, while Stage6 strictly audits the actual derived result against general parent-theorem absorption.
