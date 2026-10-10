@@ -7,6 +7,10 @@ To prevent an idea-generator from being mislabeled a "literature frontier audit"
 
 **Order:** Domain/scope → **Pre-Stage F SOURCE-FIRST THEOREM ATLAS** → if and only if justified, Stage 0 candidate intake → Stage 1 specific-parent reconstruction → Stage 2 adverse full-game originality kill gate. A Stage F report does NOT authorize Stage 3 model. Stage0–2 may identify a bounded Delta Card worth a later mathematical test; actual result originality is audited at Stage6. Existing downstream stages remain unchanged.
 
+## Research track selection: applied economics before mathematical extension inventories
+
+When users identify their work as **applied economic theory**, the frontier atlas must map established answers to **substantive economic problems** (incentives, spatial/industrial allocation, institutions, welfare, policy performance), then register unproved extensions that may change those answers. Do NOT shortlist an assumption generalization simply because it is mathematically elegant. Articulate an economically important consequence and plausible disciplinary readers BEFORE allowing Stage0 candidature; feasibility of mathematical study is an instrument. See [APPLIED_ECONOMIC_THEORY_TRACK.md](APPLIED_ECONOMIC_THEORY_TRACK.md). Maintain pure-theory possibilities only if selected by the researcher.
+
 ## A. Inputs fixed before source search
 - Discipline, research type (pure theory / empirical / structural), policy implementer, welfare/objective jurisdiction, allowable institutions.
 - **Precommitted source universe, not precommitted ideas**: representative survey/editorial, foundational theoretical theorem papers, 2023-present adversarial papers, neighboring theoretical literatures (IO, PA/contract, fiscal federalism, information economics, game theory, economic geography, organization), versions/appendices.
