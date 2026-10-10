@@ -16,6 +16,12 @@ Pre-Stage F records established original theorems and evidence-limited conjectur
 
 Status: **draft PR only**. No new release tag, no bypassing mathematics/novelty gates, and no retroactive resurrection of failed model results.
 
+## Generalization deserves recognition across mathematical economics (2026-10-10 correction)
+
+The applied policy topic is an INVESTMENT PRIORITY, not the universal definition of valuable economics. Significant generalizations of equilibrium-existence, uniqueness, stability, choice, game-theory or theorem-scaling results may be publishable ECONOMIC THEORY even without industrial-policy implications. Journal of Mathematical Economics and Theoretical Economics explicitly cover this scholarly domain, subject to actual economic-theory content and originality. Keep separate fields for **SCHOLARLY CONTRIBUTION**, **PROJECT TOPIC FIT**, **SOURCE/ORIGINALITY MATURITY** and **POSSIBLE JOURNAL FAMILY**. A theory question outside the present municipal-industrial-policy topic should be DEFER/ROUTED, not NO-GO on scholarly merit.
+
+[Publisher criteria + 2024/2025 accepted examples](docs/GENERALIZATION_SCHOLARLY_VALUE_AUDIT_2026-10-10.md).
+
 ## Applied economic theory: economic question before mathematics (2026-10-10 draft)
 
 For **applied economics pursued through theoretical models** (including local-government industrial policy), the sole research-value objective is an **important economic explanation, allocation, welfare, incentive, institution or policy insight**. Mathematics is a method (feasibility/correctness gates), not a competing source of applied-paper merit. Every Pre-Stage F / Stage0–2 candidate must state what economically important understanding might change IF its unproved result is true and who in economics would care. A mathematically novel but economically empty theorem does not pass this applied track; an economically substantive extension in a familiar mathematical class can receive a bounded test.
