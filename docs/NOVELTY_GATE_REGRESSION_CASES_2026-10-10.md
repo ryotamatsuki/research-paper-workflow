@@ -19,7 +19,7 @@ Applies to Pre-Stage F; Stages 0, 2, 3, 4, 6 and referee stages. Draft verificat
 
 | Case | Ex ante situation | Correct APPLIED THEORY treatment |
 |---|---|---|
-| AR1 | New abstract mathematical theorem, identical economic predictions and no economically material interpretation | **NO-GO in applied track**, even if general theorem originality is plausible; a pure-theory track can evaluate separately |
+| AR1 | Original extension of general economic equilibrium existence / representation theorem with no local industrial-policy outcome | **SCHOLARLY: potentially valuable mathematical economics**; **PROJECT FIT: OUTSIDE/ADJACENT**; DEFER/ROUTE for this policy project, not academic NO-GO. Must still demonstrate real economic theory content, nontrivial theorem and novel result |
 | AR2 | Known principal-agent class but source-grounded conjecture changes meaningful taxpayer welfare, regional industry policy or firm behavior | **GO to bounded test**, conditional on no demonstrated known-result absorption; economic importance and reader community established |
 | AR3 | Important policy description without an unresolved endogenous choice/incentive/welfare tradeoff | **NO-GO for theory research**, though it may be useful policy reporting |
 | AR4 | Significant new theoretical explanation of municipal policy failure, no implementable corrective instrument provided | **Potential GO** as positive/diagnostic applied theory; require meaningful mechanism and eventual source/novelty proof |
