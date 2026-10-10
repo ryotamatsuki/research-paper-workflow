@@ -1,8 +1,12 @@
 # Applied Economic Theory Track (応用経済学の理論研究)
 **Draft research-track policy — 2026-10-10.** Applies to questions whose PRIMARY PURPOSE is explaining economically important outcomes, welfare or institutions, with mathematical reasoning as a METHOD. This track is compatible with THEORY ONLY (no econometrics, calibration, or empirical evidence requirement), including local-government industrial policy, regional/urban economics, industrial organization and public economics.
 
+## 0. Correction: scholarly economic-theory value is broader than this project's topic
+
+**Verified against** [2026 publisher/actual-paper audit](docs/GENERALIZATION_SCHOLARLY_VALUE_AUDIT_2026-10-10.md). A generalization can be a real MATHEMATICAL ECONOMICS contribution even if it yields no new industrial-policy or regional result. The appropriate tags are its economy-theory contribution and topic-fit, not a universal academic-worth NO-GO. A project-specific priority decision uses DEFER/SEPARATE rather than mathematical-worth dismissal. Mathematical proof rigor and originality still matter; mathematical novelty wholly without economic-model relevance is not, by itself, sufficient for an economics journal.
+
 ## 1. Fixed distinction: economic research value, mathematics as an instrument
-A two-axis rule **"independent mathematical research worth" versus "economic journal publication worth"** is NOT appropriate for this track. The first axis is not a research objective; mathematical feasibility, proof correctness and formal precision are required INSTRUMENTAL tests. A technically original lemma with no meaningful economic implication is insufficient for this applied track, even if another pure-theory/mathematical outlet might publish it.
+The current local-industrial-policy PROJECT prioritizes applied economic questions. However, a technically original **ECONOMIC THEORY** generalization may be worthwhile scholarly economics even if it gives no immediate new municipal policy conclusion (see JME, TE, Economic Theory). **Separate academic contribution merit from THIS project's topical fit.** Mathematics disconnected even from broad economic models is not, by itself, JME contribution; broad equilibrium, choice, games and mechanism-theory generalization can be.
 
 Two EVALUATIONS apply in sequence, NOT independent scores:
 (A) **Substantive economic contribution potential (mandatory gate)**: which economically important allocation, firm conduct, incentive, general-equilibrium feedback, place-based welfare, public funding, institutional-choice or policy effectiveness question does the conjecture address? How might the understanding change if the result is true?
@@ -22,35 +26,35 @@ At Pre-Stage F / Stage0 record the following six-line **Applied Theory Contribut
 ## 3. Early verdict and source/novelty standards
 **GO to bounded mathematical exploration** only if items 1–4 show a plausible substantial economic delta, item 5 identifies a credible field audience (not a guaranteed specific target journal), and item 6 is finite and economically defensible. A new strategic mechanism or unproved general theorem is NOT mandatory. Generic standard model classes are allowed if a substantive result may differ.
 **CONDITIONAL GO** if exactly ONE material source/scope blocker is decisive under the existing canonical contract; only resolve that blocker.
-**NO-GO for APPLIED THEORY** if:
-- merely broader mathematics with no meaningful new economic implications,
+**NO-GO for the SPECIFIC THEORY CLAIM** if:
+- merely new symbols/technical manipulations with no meaningful generalization of ANY economic concept, theorem, model domain or method (after checking broad economic-theory relevance),
 - different symbols, a parameter or agent that makes no material economic difference,
 - the anticipated policy/equilibrium effect is built into arbitrary payoff allocations/normalizations,
 - the core question can be answered without economic modelling and no economically substantive theoretical result is proposed,
 - the result is an explicit known-theorem duplicate with exact supporting map, or
-- no plausible economic audience, welfare relevance or explanatory contribution can be articulated even IF the conjecture holds.
-NO-GO here means outside THIS user's APPLIED THEORY track; it does NOT pronounce work mathematically worthless across every discipline.
-**Record separate statuses**: ECONOMIC QUESTION VALUE (present / insufficient / unresolved), MODEL NECESSITY (defensible / weak / unclear), ORIGINALITY (known / unproved plausible / source blocked), EDITORIAL FIT (plausible / doubtful / format unclear). These are reasoned descriptive checks, not 0–100 points, probabilities or equal-weight "math versus editorial" scoring. GO requires economic value, with technical viability as a necessary supporting condition.
+- no connection to any substantive economic-theory statement, condition, existence/uniqueness, welfare/choice, game structure or other identifiable economics research contribution can be articulated even if the conjecture holds.
+**OUTSIDE CURRENT PROJECT is not NO-GO.** If an otherwise valuable mathematical-economics theorem is remote from local-government industrial policy, classify as **DEFER / SEPARATE ECONOMIC THEORY PROJECT**, and record a plausible mathematical-economics journal family. A global economic-theory NO-GO is reserved for demonstrated existing-result absorption or economically/technically empty theory, not mismatch with the present project.
+**Record separate statuses**: (1) THEORY CONTRIBUTION VALUE IN ECONOMICS (possibly general/foundational), (2) CURRENT PROJECT FIT (DIRECT / ADJACENT / OUTSIDE), (3) ORIGINALITY EVIDENCE (proved known / unproved potential / source blocked), (4) JOURNAL FAMILY FIT and technical feasibility. These are descriptive fields, not numeric scores. A significant generalization of economic equilibrium theory can be academically valuable even when current regional-policy fit is OUTSIDE.
 
 ## 4. Distinguish policy explanation from prescription
 Pure theoretical positive/diagnostic economics **can** be publishable without a welfare-optimal instrument if the new mechanism explains a material observation/regularity, equilibrium or failure. Welfare, policy and feasibility analysis becomes mandatory only when the paper CLAIMS prescription or social-optimality. No unconditional requirement for data, natural experiments, calibration, policy design or fully implementable scheme.
 
 Examples (hypothetical, NOT publication certificates):
-- A sharper fixed-point lemma with no alteration to economically relevant equilibrium or policy conclusions: NO-GO in applied track.
+- A sharper fixed-point lemma with no alteration to municipal industrial policy: assess whether it substantively generalizes an economically meaningful equilibrium/choice/game theorem. If yes, potentially valuable MATHEMATICAL ECONOMICS but OUTSIDE/ADJACENT this project, rather than NO-GO. If no identifiable economics-theory domain, classify as pure mathematics scope uncertain.
 - A small model with existing local public good ingredients that derives a genuinely new, robust and source-unabsorbed municipal welfare or funding rule: bounded GO even without new mathematics class.
 - A nontrivial theorem that industry attraction aid is counterproductive under a credible local financing constraint in a region ignored by the parent: conditional research GO before proof; Stage6 later strictly rejects if known.
 - A mathematically correct artefactual reversal produced by arbitrary local rent shares: NO-GO on missing defensible economic mechanism.
 - A theoretically surprising counterexample explaining why an accepted comparative-static fails, with clear industrial-policy consequence: bounded GO; may belong as short note rather than full paper.
 
 ## 5. Publication and late-stage gates remain rigorous
-Stage4 solves every strategic continuation/feasibility and global equilibrium claim. Stage4A independently refutes. Stage6 tests actual result's absorption by original or GENERAL parent theorems. Stages7/7.5/7.5A/11 evaluate economic insight, credible microfoundation, external validity of quantifiers, explanation, and format/audience. If the mathematics is useful but economic meaning is insufficient, don't force an applied-econ paper; route to separate pure theory programme only if explicitly chosen by the researcher.
+Stage4 solves every strategic continuation/feasibility and global equilibrium claim. Stage4A independently refutes. Stage6 tests actual result's absorption by original or GENERAL parent theorems. Stages7/7.5/7.5A/11 evaluate economic insight, credible microfoundation, external validity of quantifiers, explanation, and format/audience. If a generalization has broad equilibrium or game-theoretic economic meaning but not local industrial-policy relevance, recognize its mathematics/economics scholarly merit and route it as a separate mathematical-economics/theory topic; do not automatically label NO-GO. Only a theorem completely detached from economic theory lacks an established economics journal fit.
 No automatic numerical journal publication estimates, no paper guarantees and no premature originality claims.
 
 ## 6. Relation to the workflow's generality
 The canonical workflow is reusable: a *pure theory* project can, when explicitly chosen, value a theorem for broad axiomatic/equilibrium-theoretic significance even without immediate application. This ADDITIONAL applied-economic-theory track is not to overwrite that other legitimate route. For a user-established "applied economics using mathematical theory, not empirics" project, choose this track at Stage0 and APPLY its economic-problem hard gate uniformly in Pre-Stage F and Stages0–3; do not keep asking whether purely mathematical value is independently sufficient.
 
 ## 7. Regression examples
-- AR1: Novel mathematical generalization but identical local-industry allocation and policy/welfare results, no broader economic interpretation => ECONOMIC QUESTION VALUE insufficient; NO-GO applied track.
+- AR1: New generalization of a recognized economic equilibrium theorem, but no change to local-industrial-policy allocations => ECONOMIC THEORY contribution POTENTIALLY SUBSTANTIVE, PROJECT FIT possibly OUTSIDE; mark DEFER/ROUTE, not universal NO-GO. If its only novelty is a trivial known corollary, separately NO-GO for theorem originality.
 - AR2: Familiar contract theory class, but a source-grounded conjecture about a sharp credible change in regional innovation support effectiveness and local taxpayer welfare => GO for finite test unless concrete source theorem absorbs; novelty UNPROVED.
 - AR3: Plausible regional industrial-policy problem but no endogenous economic tradeoff and only a descriptive policy inventory => route to applied policy reporting, NOT theory pipeline.
 - AR4: Important diagnosed strategic policy failure with new theoretically established cause but no feasible corrective subsidy identified => can still be valuable positive/diagnostic applied-economic theory; do not auto-kill.
