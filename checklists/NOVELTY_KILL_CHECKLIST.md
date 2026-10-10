@@ -15,6 +15,16 @@ Apply this checklist to each candidate contribution separately. A project may su
 
 **Rule:** An unproved worthwhile extension may deserve a BOUNDED test, but it does not deserve a paper originality certificate. An existing model class is not the same thing as an existing specific result; a known immediate general-theorem corollary remains non-novel at Stage6.
 
+## Applied economic theory: substantive question precondition
+
+- [ ] Does the project explicitly select APPLIED ECONOMIC THEORY rather than a pure axiomatic mathematics/theory route?
+- [ ] Has the candidate identified one important economic decision/allocation/welfare/policy or explanatory issue?
+- [ ] Is the expected NEW change in economics understanding expressed in plain language, with an ORIGINAL parent benchmark?
+- [ ] Is a mathematical model needed and viable as a method, rather than being claimed as independently valuable?
+- [ ] Is the prospective community of economics readers clear, even though the specific journal remains undecided?
+- [ ] Are positive/diagnostic policy explanations permitted without requiring empirical data or a corrective subsidy?
+- [ ] Is a mathematically original but economically empty result marked NO-GO for this applied track, independently of later proof rigor?
+
 ## Exact-prior-art checks
 
 - [ ] Is the same theorem already known?
