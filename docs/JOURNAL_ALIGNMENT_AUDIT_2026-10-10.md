@@ -1,6 +1,10 @@
 # Independent audit: do early theoretical-novelty gates resemble actual economics journal editorial standards?
 Date: 2026-10-10 JST; status **AUDIT FINDINGS ONLY**, no gate relaxation/criteria changes authorized by this report. Relevant draft PR #25, docs/NOVELTY_GATE_REGRESSION_CASES_2026-10-10.md (R1–R10), NOVELTY_ASSESSMENT_PHASED_EXTENSION_STANDARD.md.
 
+## Correction to prior addendum: foundational economic theory is not synonymous with pure mathematics (2026-10-10)
+
+The earlier applied-track addendum overcorrected: a mathematical generalization with no DIRECT municipal policy implication can still be a substantive research contribution in mathematical economics. Official JME scope says mathematically correct novelty ALONE is insufficient, but important economic ideas in **any field** qualify; TE welcomes pure and applied economic theory. Published Bhowmik–Yannelis (2024 JME) and Gonczarowski–Kominers–Shorrer (2025 TE) show important economic-theory generalizations can concern equilibrium existence or finite-to-infinite scaling, not a new local industry welfare ranking. The project/topic fit must therefore be reported separately from research MERIT. See [GENERALIZATION_SCHOLARLY_VALUE_AUDIT_2026-10-10.md](GENERALIZATION_SCHOLARLY_VALUE_AUDIT_2026-10-10.md). This correction supersedes any categorical rejection based ONLY on lacking an immediate local-policy implication.
+
 ## Addendum: applied economics does NOT use "mathematical worth" as an independent axis (same day, author clarification)
 
 The audit below originally recommended TWO flags, "mathematical test worthwhile" and "editorially plausible IF successful". **That formulation is not appropriate when the established project is APPLIED ECONOMIC THEORY**, such as a theory-only local-government industrial-policy research programme. It is **superseded for this track**, not a reason to overturn the reviewed external journal facts.
