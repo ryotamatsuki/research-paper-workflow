@@ -29,6 +29,15 @@
 - [ ] Specify the **minimum** distinct strategic/information/technology margin required and which canonical nested benchmarks must reproduce the old result.
 - [ ] Identify the single closest predecessor capable of killing the proposal, a general-model equivalent, and one fast 24–72 h feasibility/falsification test *if proportionate*. This is an investigation design, not work already completed.
 
+## C2. Predecessor-result reversal / paradox / sharp-boundary exploration
+
+- [ ] Alongside future questions, test up to a bounded set of **same-question / new-result** candidates; preserve original theorem identity, formal domain, conclusions, welfare benchmark and equilibrium selection.
+- [ ] Search for sign/welfare-ranking reversals, non-monotonicity, impossibility, counterexamples, and unexpectedly strong robustness. A dramatic result is not required.
+- [ ] Check differences in estimand, welfare/accounting, policy choice set, information and equilibrium concepts before calling two studies contradictory.
+- [ ] Use one minimal economically justified assumption relaxation and a nested prior-theorem recovery test; record a precise falsifier, strongest generic parent theorem and later-work status.
+- [ ] Distinguish a conjectured paradox from a proved counterexample and a certified general characterization; no fabricated reversal or result-driven rescue.
+- [ ] Use `checklists/RESULT_REVERSAL_BOUNDARY_CHECKLIST.md` and Section C2 of `templates/FRONTIER_OPPORTUNITY_REGISTER.md` or equivalent compact ledger.
+
 ## D. Selection, provenance, and honest routing
 
 - [ ] Keep a **structurally deduplicated, bounded** candidate bank; distinguish `HYPOTHESIS`, `LITERATURE-SCREENED`, `MODEL-TESTED`, `CERTIFIED`, and `KILLED` maturity.

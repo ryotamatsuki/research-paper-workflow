@@ -79,6 +79,18 @@ Use `checklists/REFEREE_ATTACK_CHECKLIST.md` and explicitly test at least:
 - planner/benchmark terminology drift;
 - global/SPNE claim drift relative to Stage 4A.
 
+### Predecessor-theorem reversal / paradox regression attack
+
+For each manuscript claiming to overturn, qualify, or materially strengthen a published result:
+
+- independently recover the **original theorem** on its exact information, equilibrium, domain and welfare benchmark;
+- change only the claimed essential economic assumption and test a nontrivial parameter region, boundaries and alternative equilibria;
+- check whether the reversal is produced by relabeling, a shifted benchmark, post-hoc parameter choice, built-in payoff sign, a solver failure, or an already-known generic parent theorem/counterexample;
+- ask whether the central learning is a sharp condition, new impossibility/characterization or robust negative finding, **not** merely the rhetorical fact that one numerical example reverses a sign;
+- record a `NOVELTY / MATHEMATICAL / QUANTIFIER CERTIFICATION REGRESSION` if a frozen headline claim fails and route back to the earliest affected Stage.
+
+Apply `checklists/RESULT_REVERSAL_BOUNDARY_CHECKLIST.md` where relevant.
+
 ### Contribution-completeness regression attack
 
 Independently consult the Stage-6 memo and Stage-7.5 contribution-completeness audit. Without treating either PASS as persuasive evidence by itself, write the **strongest plausible editor rejection paragraph** stating (1) what the result genuinely establishes, (2) why that may still be insufficient for the field, and (3) which important economic, organizational, policy or implementation question remains unanswered. For policy-facing papers, distinguish *should* (modeled social objective) and *could* (instruments, implementation feasibility) and challenge institution-free, costless, information-free prescription.

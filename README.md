@@ -19,6 +19,13 @@ Canonical hierarchy:
 
 `GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → stage templates → checklists → examples.
 
+## Unreleased: result-reversal / paradox / sharp-boundary discovery (post-v2.9)
+
+A backward-compatible, **MINOR-class** refinement is integrated on `main` but is **not yet a published release**; `v2.9` remains the current stable tag. The existing Stages 2/3 must scan exact predecessor results for economically defensible sign reversals, welfare-ranking reversals, impossibility, surprising comparative statics, and sharply proved validity boundaries, as well as strong robustness. The underlying **economic question may remain unchanged**; a new question or mechanism is not universally required. Stage 4 recovers the predecessor and verifies claimed changes, Stage 6 tests absorption, and Stage 11 repeats the hostile check. No desired-sign engineering or automatic manuscript GO.
+
+- [Result-reversal checklist](checklists/RESULT_REVERSAL_BOUNDARY_CHECKLIST.md)
+- [Unreleased refinement rationale](docs/RESULT_REVERSAL_BOUNDARY_REFINEMENT_2026-10-12.md)
+
 ## v2.9: economic contribution, question completeness and research-frontier discovery (2026-10-12)
 
 The **minor** refinement responds to a field-journal desk rejection of a mathematically valid regional industrial-policy theory paper: its model diagnosed an uninternalized cross-jurisdiction externality, but it did not explain what could practically internalize it. This was a genuine editor objection, **not proof** that a policy extension would succeed or that the old mathematics was flawed.

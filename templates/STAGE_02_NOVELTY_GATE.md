@@ -118,6 +118,10 @@ Transform only credible residual gaps into **question-first opportunities** spec
 
 Use `checklists/FRONTIER_OPPORTUNITY_CHECKLIST.md` and `templates/FRONTIER_OPPORTUNITY_REGISTER.md` (or equivalent project records). Preserve the **current candidate novelty verdict separately from future-opportunity maturity**.
 
+### Predecessor result reversal and robustness audit
+
+For each decisive predecessor, record the **actual proved headline result** with theorem/section/page, sign or ranking, exact quantified domain, information and equilibrium structure, and welfare/implementation benchmark. Search for (a) the conclusion under minimal meaningful assumption relaxation; (b) non-monotonicity, welfare-ranking reversal, impossibility, counterexample or stronger robustness; (c) later same-author, forward-citing, adjacent and parent-theorem solutions. Classify every candidate `HYPOTHESIS / LITERATURE-SCREENED / MODEL-TESTED / CERTIFIED / KILLED`; an apparent paradox with changed outcome measures or a special case of an established theorem is not novelty. The research question may stay fixed for a genuine new theorem. Record the bounded attempts using `checklists/RESULT_REVERSAL_BOUNDARY_CHECKLIST.md`.
+
 ## 7. Evidence requirements
 
 For each serious candidate, preserve the strongest closest-paper/source-claim comparison with bibliographic identity, exact model/proposition/section reference, reading depth, common structure, surviving difference, and unresolved evidence. Scores cannot replace these comparisons. When full text is unavailable, preserve the limit; snippets alone cannot establish model-level novelty PASS.

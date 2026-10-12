@@ -25,6 +25,10 @@ Before issuing `GO`, also close the project's formal-verification applicability 
 - Pre-specified portability/falsification plan: `[PORTABILITY_PLAN]`
 - Planner/benchmark definitions: `[BENCHMARKS]`
 
+### Reversal, validity-boundary and robust-invariance claims
+
+When a paper's headline contribution concerns a prior theorem's reversal or failure domain, certify the **exact** benchmark-recovery restriction, sign/ordering quantifiers, admissible parameter region, equilibrium-selection dependence, welfare definition and whether the claim holds on a positive-measure/open region versus only a knife-edge counterexample. Challenge the use of a broad term such as "reversal" when two sides use different welfare objects or different choice sets. When the headline result is a new impossibility or stronger invariance, test its necessity/sufficiency and class scope with the same rigor. Do not force an attractive sign or larger model to obtain portability.
+
 ## 2. Stage objective
 
 Certify that every headline theorem, robustness statement, equilibrium characterization, welfare benchmark, and contribution sentence states exactly the scope that has actually been proved before theory freeze, and determine the maximum defensible research strength of each headline mechanism through pre-specified economic falsification.
