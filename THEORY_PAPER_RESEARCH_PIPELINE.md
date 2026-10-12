@@ -1,6 +1,6 @@
 # Theory Paper Research Pipeline
 
-Version: v2.8
+Version: v2.9
 
 ## 1. Purpose
 
@@ -173,7 +173,7 @@ This MINOR refinement operates inside the existing Stage architecture. Stages 0/
 
 Use `templates/RESEARCH_SEARCH_REGISTER.md` or equivalent existing records. It is a companion artifact, not an additional canonical Stage. Existing routing, repair, freeze, and formal-verification obligations remain unchanged. Search has no universal idea-count, random-draw, extension, or manuscript quota. Correction/reassessment candidates are evaluated by the verified economic consequence of the correction, without requiring an unrelated new mechanism.
 
-### v2.9-candidate source-limitations → frontier-opportunity refinement
+### v2.9 source-limitations → frontier-opportunity refinement
 
 Existing Stage 2/3/6/7.5 research decisions must use literature **for both novelty rejection and next-question discovery**. Stages 2/6 extract, with exact source locations, authors' prior-work positioning, theorem scope, explicit limitations and future research; then check forward citations, author continuation, working papers and standard parent theorems to determine what remains open. Stage 3 tests *questions before extensions* and preserves the exact extra economic knowledge a new theorem would deliver. Stage 7.5 gives an independent current-paper editorial verdict **plus** evidence-ranked follow-up opportunities (zero is acceptable). A future proposal is not a GO, an author instruction, or an automatic reopening of a rejected model.
 
