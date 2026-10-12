@@ -223,6 +223,21 @@ The **Contribution Completeness & Editorial Value Audit** belongs to Stage 6 (wo
 
 This is a **v2.9 minor refinement proposal** inside existing stages and routing, not a newly numbered Stage, a relaxation of mathematical/novelty gates, or a requirement to satisfy editor preferences by arbitrary theory expansion.
 
+### 2.21 Source limitations and unresolved-question opportunities must inform research selection
+
+A high-quality novelty/field-editor rejection is a **research-selection output**, not merely a termination flag. At Stages 2 and 6, inspect the strongest accessible predecessor papers' **Abstract/Introduction, actual results/assumptions, Discussion/Conclusion, limitations and stated future work**, and check subsequent publications (forward citations, same authors, working papers and adjacent general theory) before claiming that any indicated gap is still open. Stage 3 may select a **research question** only after considering the resulting evidence, and Stage 7.5 must review the strongest opportunities separately from the current paper's full-paper decision.
+
+For each serious inferred future direction distinguish:
+1. a limitation or future question **explicitly stated by a source author**, with precise location;
+2. an **auditor-inferred** omitted analysis or essential assumption;
+3. a **cross-paper frontier** created by comparing established results from different literatures.
+
+None of these is by itself certified economic novelty. Record current resolution status `RESOLVED / PARTIALLY RESOLVED / OPEN WITH EVIDENCE / UNRESOLVED`, proof/reading depth, the strongest parent theorem capable of absorption, and the **specific economic understanding that would change if the problem were solved**. A proposed problem must have a falsifiable mathematical/econometric target and a small first kill test. Do not misattribute auditor ideas to authors, imply literature completeness from a failed search, or mandate a fixed number of future proposals.
+
+**Two independent decisions are mandatory at Stage 6/7.5**: the *current paper's* normal verdict based on certified results and field contribution, and the *future-research opportunity* disposition (up to three credible questions, fewer or none if evidence fails). Promising future problems cannot rescue a present `NO-GO`, and stopping a paper cannot certify any proposed follow-up as new or authorize automatic model expansion. A new objective requires actual author selection and a fresh Stage 0/2/3 intake; existing rollback/change-control applies to in-project repairs. Research notes, general mathematical economics, substantive corrections and negative/diagnostic contributions remain legitimate without a compulsory policy instrument or application extension.
+
+Apply `checklists/FRONTIER_OPPORTUNITY_CHECKLIST.md` and `templates/FRONTIER_OPPORTUNITY_REGISTER.md` (or equivalent compact provenance). This is an **unreleased v2.9-candidate minor refinement**, not a new Stage, altered GO/NO-GO meaning, or release tag.
+
 ## 3. Repository change policy
 
 ### 3.1 Main branch

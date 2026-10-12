@@ -33,6 +33,17 @@ This refinement preserves all Stage numbers, verdict semantics, routing, one-dia
 
 **Release status:** proposal on a feature branch; not a published `v2.9` tag or GitHub Release. Stable `v2.8` artifacts remain historical.
 
+## v2.9-candidate: limits → current frontier → next research question (unreleased)
+
+This **v2.9-candidate refinement** enhances Stage 2/3/6/7.5 without creating or renumbering a Stage. It does not change `GO / CONDITIONAL GO / NO-GO`, author authorization or theory-freeze rules, and is **not** a released v2.9 tag.
+
+- **Stage 2:** read decisive papers' Abstract/Introduction, actual theorems, Discussion/Conclusion and explicitly stated limitations/future work; distinguish **AUTHOR-STATED / AUDITOR-INFERRED / CROSS-PAPER** gaps and test against later research.
+- **Stage 3:** compare the remaining **economic questions before inventing a model**; require the expected new learning, closest general parent theorem, minimal falsifier and a bounded search. Up to three credible questions are useful; zero is acceptable.
+- **Stage 6:** maintain independent **CURRENT-PAPER GO/NO-GO** and **NEXT-QUESTION opportunity** outputs, including the stronger parent-theorem and post-publication checks. NO-GO does not automatically authorize a pivot.
+- **Stage 7.5:** skeptical editor evaluates both whether the present result merits full-paper investment and what *different* question would merit future investigation. Pure theory, corrections and diagnostic papers are not forced to add an implementation theorem.
+
+Templates: [Frontier Opportunity Register](templates/FRONTIER_OPPORTUNITY_REGISTER.md) and [Frontier Opportunity Checklist](checklists/FRONTIER_OPPORTUNITY_CHECKLIST.md). Design and adversarial regression cases: [2026-10-12 refinement record](docs/FRONTIER_OPPORTUNITY_REFINEMENT_2026-10-12.md). The release remains subject to independent review and merge; previous tagged versions and historical audit decisions are unchanged.
+
 ## v2.8: bounded research search / contribution selection
 
 v2.8 strengthens the existing workflow after comparison with OpenAI Math's public research collection. It preserves all canonical Stages, verdict semantics, routing, one-fix discipline, rollback, freeze meanings, and formal-verification obligations.

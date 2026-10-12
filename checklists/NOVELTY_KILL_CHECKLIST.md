@@ -2,6 +2,17 @@
 
 Apply this checklist to each candidate contribution separately. A project may survive while individual claims are killed.
 
+## Research-frontier use of rejected novelty (Stages 2/6)
+
+- [ ] Strongest absorbed result mapped to its original paper's *actual theorem* and assumed limitations.
+- [ ] Source author's expressly stated future questions separated from auditor-inferred and cross-paper opportunities.
+- [ ] Later literature checked for an already completed follow-up, with search cutoff and unresolved access documented.
+- [ ] Any surviving proposed question states a new generalizable economic learning gain versus that closest result and an immediate theorem/empirical falsifier.
+- [ ] The present paper's current novelty verdict is **not** altered by a promising future question; no next-paper GO is inferred from the current paper's NO-GO.
+- [ ] When no credible question survives, `NO DEFENSIBLE NEXT QUESTION FOUND` is recorded instead of inventing a mechanism.
+
+Companion `checklists/FRONTIER_OPPORTUNITY_CHECKLIST.md` governs the evidence detail.
+
 ## Exact-prior-art checks
 
 - [ ] Is the same theorem already known?

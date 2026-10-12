@@ -103,6 +103,21 @@ Classify each closest-paper relationship as:
 
 Use `checklists/LITERATURE_AUDIT_CHECKLIST.md` and `checklists/NOVELTY_KILL_CHECKLIST.md`.
 
+### Research-frontier and future-question extraction (mandatory for decisive closest papers)
+
+For every decisive closest paper with accessible full text, examine its **Abstract and Introduction** for the author's own positioning against predecessors, **Results/Propositions and assumptions** for what is actually proved, and **Discussion/Conclusion/limitations/future-work** for what is not established. Do not substitute an abstract or title for inspectable theorem text.
+
+Create a **source-grounded limit/gap record** separating:
+- `AUTHOR-STATED`: a limitation or future problem explicitly attributed to that author, with exact section/page and a brief faithful paraphrase;
+- `AUDITOR-INFERRED`: a limitation inferred from the solved model and theorem domain, NOT presented as the author's words;
+- `CROSS-PAPER`: a potential unanswered economic decision arising from comparing two or more independently verified results.
+
+For every material gap, check **post-publication forward citations, later same-author papers, working papers and adjacent-field parent theorems** through a recorded search cutoff. Label `RESOLVED / PARTIALLY RESOLVED / OPEN WITH EVIDENCE / UNRESOLVED`; absence of a located paper is not proof of an open problem. Where access is only abstract-level or full text is unavailable, disclose the limitation and do not certify theorem-level openness.
+
+Transform only credible residual gaps into **question-first opportunities** specifying what economists would newly learn, the strongest existing result, a falsifiable proposition/estimand, the parent-theorem absorption threat and a smallest decisive test. Record these as provisional leads, not a Stage-3 GO or a new manuscript. One or zero credible leads is acceptable.
+
+Use `checklists/FRONTIER_OPPORTUNITY_CHECKLIST.md` and `templates/FRONTIER_OPPORTUNITY_REGISTER.md` (or equivalent project records). Preserve the **current candidate novelty verdict separately from future-opportunity maturity**.
+
 ## 7. Evidence requirements
 
 For each serious candidate, preserve the strongest closest-paper/source-claim comparison with bibliographic identity, exact model/proposition/section reference, reading depth, common structure, surviving difference, and unresolved evidence. Scores cannot replace these comparisons. When full text is unavailable, preserve the limit; snippets alone cannot establish model-level novelty PASS.
@@ -164,6 +179,7 @@ Return `NO-GO` if the main contribution is exact prior art, structurally so clos
 11. Surviving claim(s)
 12. Strongest prior-art threat
 13. Exact implication for mechanism search
+14. Frontier limitations map: author-stated vs auditor-inferred vs cross-paper, later-work status, source location, and up to three **proposed** questions (or none)
 
 ## 13. Final verdict
 

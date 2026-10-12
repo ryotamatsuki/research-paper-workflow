@@ -173,6 +173,12 @@ This MINOR refinement operates inside the existing Stage architecture. Stages 0/
 
 Use `templates/RESEARCH_SEARCH_REGISTER.md` or equivalent existing records. It is a companion artifact, not an additional canonical Stage. Existing routing, repair, freeze, and formal-verification obligations remain unchanged. Search has no universal idea-count, random-draw, extension, or manuscript quota. Correction/reassessment candidates are evaluated by the verified economic consequence of the correction, without requiring an unrelated new mechanism.
 
+### v2.9-candidate source-limitations → frontier-opportunity refinement
+
+Existing Stage 2/3/6/7.5 research decisions must use literature **for both novelty rejection and next-question discovery**. Stages 2/6 extract, with exact source locations, authors' prior-work positioning, theorem scope, explicit limitations and future research; then check forward citations, author continuation, working papers and standard parent theorems to determine what remains open. Stage 3 tests *questions before extensions* and preserves the exact extra economic knowledge a new theorem would deliver. Stage 7.5 gives an independent current-paper editorial verdict **plus** evidence-ranked follow-up opportunities (zero is acceptable). A future proposal is not a GO, an author instruction, or an automatic reopening of a rejected model.
+
+Separate `AUTHOR-STATED` from `AUDITOR-INFERRED` and `CROSS-PAPER` gaps; label `RESOLVED / PARTIALLY RESOLVED / OPEN WITH EVIDENCE / UNRESOLVED`; record last verified date and strongest prior-art falsifier. See `checklists/FRONTIER_OPPORTUNITY_CHECKLIST.md` and `templates/FRONTIER_OPPORTUNITY_REGISTER.md`. This maintains established Stage routing/verdicts and the no-uncontrolled-feature-growth rule.
+
 ## 2. Universal stage schema
 
 Every stage-specific prompt, report, or template should include, unless genuinely inapplicable:
@@ -292,6 +298,14 @@ Classify overlap as `EXACT PRIOR ART`, `STRUCTURALLY VERY CLOSE`, `COMPONENT OVE
 
 Attach evidence and reading depth to the strongest closest-paper comparison for each serious candidate; scores or search failure are not positive novelty evidence. For correction/reassessment, identify the exact source claim and proposed corrected consequence, and search existing corrections/source versions rather than demanding an unrelated new mechanism.
 
+## Frontier and explicit-future-work extraction
+
+For each **decisive accessible closest paper**, inspect Abstract/Introduction (author positioning against prior research), precise result/proposition and assumptions, Discussion/Conclusion, explicit limitations and future work. Capture section/page references and separately label author-stated versus auditor-inferred versus cross-paper gaps. Test the proposed unanswered question against **forward citations, later same-author studies, current working papers, and generic parent-theorem absorption** as of a recorded cutoff date. Mark `RESOLVED / PARTIALLY RESOLVED / OPEN WITH EVIDENCE / UNRESOLVED` (no source found is **not** a novelty proof).
+
+Before exiting, produce a bounded **frontier opportunity map**: for up to three credible open-looking economic questions, record what new equilibrium/welfare/institutional insight solving them would deliver, an exact falsifiable target and strongest literature kill test. Zero candidates or unresolved access is an admissible honest result. The **current paper's** novelty verdict remains separate from these future hypotheses.
+
+Apply `checklists/FRONTIER_OPPORTUNITY_CHECKLIST.md` and `templates/FRONTIER_OPPORTUNITY_REGISTER.md` or equivalent existing records.
+
 ## Kill tests
 
 Kill contributions that are renamed known results, cosmetic new variables, immediate corollaries of the closest model, keyword-search novelty, “nobody combined these ingredients” novelty without new strategic feedback, or notation-only generalization.
@@ -320,6 +334,12 @@ Generate competing explanations and select mechanisms or strategically meaningfu
 - Merge structural duplicates using players/objectives, endogenous controls, timing/information, constraints, and feedback/result logic; preserve merged IDs and reasons.
 - Draft a short contribution memo for serious candidates: closest result, hypothesized difference, economic consequence, evidence limits, fatal objection, and next investment. Diagnose an institution-specific claim by removing/replacing the alleged institutional driver where feasible; this is not an automatic novelty verdict.
 - Keep ranking separate from certification. A Stage-3 skeleton/sign check is not a completed Stage-4 model or permission to exceed an explicitly authorized project stop point.
+
+## Research-question selection before architecture
+
+Use the Stage-2 opportunity map to select the **economic question first**. Compare only credible surviving future questions on their increment over the closest theorem, substantive learning, minimal necessary model/data, falsifiable candidate proposition or estimand, and shortest kill test. Explicit author-limitation claims are **not** automatically open or important; retain source provenance and post-publication status. When available, compare up to three **distinct questions**; no quota requires a fabricated third candidate.
+
+For a pivot following a different branch's `NO-GO`, inherited source evidence can guide the search, but the new question needs **author selection and new Stage 0/2/3 intake**. A mathematical NO-GO does not authorize compensating feature accumulation. If none survives, stop and preserve the search record.
 
 ## Kill tests
 
@@ -465,6 +485,12 @@ Before discretionary Stage-7 expansion, update the short contribution memo again
 
 Before proceeding, complete a **provisional Contribution Completeness & Editorial Value Audit**: state the one-paragraph case for why a field editor should publish the surviving result *beyond correctness*, classify each material unanswered part of the motivating question (`ESSENTIAL FOLLOW-UP / BOUNDED LIMITATION / FUTURE PAPER / NOT APPLICABLE`), and compare the baseline-only path to one bounded meaningful extension or reframing when the claim would otherwise be incomplete. For policy-facing projects distinguish diagnosis, welfare prescription, and practical implementation; policy-instrument absence is not automatically fatal for pure theory or explicitly diagnostic contributions. Carry the objection and extension decision to Stage 7.5; no new theory may enter without Stage 3/4/4A/6 recertification.
 
+## Frontier-to-next-question output (independent of current result)
+
+Reinspect the closest papers' actual **positioning, theorem scope, stated limitations and conclusions** alongside any later solving papers when judging the certified result. Update the Stage-2 future-question map with new general-parent threats and `RESOLVED/PARTIALLY RESOLVED/OPEN WITH EVIDENCE/UNRESOLVED` labels.
+
+Produce **two independent results**: (A) the original Stage-6 `GO/CONDITIONAL GO/NO-GO` for the CURRENT theory; (B) up to three evidence-ranked, **unverified** NEXT economic questions (or `NO DEFENSIBLE NEXT QUESTION FOUND`). Each proposed question states what an informed economist would newly learn, which prior theorem could kill it, its minimum falsifiable test, evidence maturity and stop rule. This is not Stage-3 authorization and does not convert current `NO-GO` to `CONDITIONAL GO`. Preserve pure-theory and research-note routes without adding an irrelevant intervention.
+
 ---
 
 # Stage 7 — Welfare / Generality / Institutional Validation
@@ -516,6 +542,12 @@ Decide whether the project contains a general economic mechanism worthy of full-
 - If material, what is the bounded baseline-only versus minimal-extension versus reframe/note comparison, and what evidence supports the choice?
 - Would a skeptical field referee see more than a parameter exercise?
 - If generalization/unification is claimed, which important prior models are nested and what result cannot be obtained from them separately?
+
+## Independent next-frontier judgment
+
+Challenge the Stage-6 opportunity map as a skeptical editor. Beyond the **separately justified** decision on current-paper full-paper value, identify up to three potentially important **different** questions drawn from author-stated future research, auditor-inferred theoretical boundaries or cross-paper open problems; check later-work status, generic parent-theorem absorption, economics gained if solved and a quick falsifier. `NO DEFENSIBLE NEXT QUESTION FOUND` is acceptable. Future opportunities remain `PROPOSED / NOT AUTHORIZED` until the author selects a new objective and Stage 0/2/3 is reopened.
+
+A promising next idea is neither a remedy for a current `NO-GO` nor an additional requirement for a good pure-theory or correction paper. Keep the existing Stage-7.5 decision and Stage-7.5A route intact.
 
 ## Verdict and routing
 
