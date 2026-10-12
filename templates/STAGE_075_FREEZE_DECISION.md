@@ -129,6 +129,7 @@ Recommend `NO-GO / RESEARCH NOTE / PIVOT` when the work is correct but too narro
 9. Full-paper value assessment
 10. Recommended journal level
 11. Exact Stage-7.5A input package or pivot scope
+12. Independent **next-frontier** question memo (up to three credible questions or none), citation maturity, strongest predecessor kill tests, author-authorization status and hard separation from present-paper verdict
 
 ## 13. Final verdict
 
