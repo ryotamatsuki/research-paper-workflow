@@ -179,6 +179,7 @@ Return `NO-GO` if the main contribution is exact prior art, structurally so clos
 11. Surviving claim(s)
 12. Strongest prior-art threat
 13. Exact implication for mechanism search
+14. Frontier limitations map: author-stated vs auditor-inferred vs cross-paper, later-work status, source location, and up to three **proposed** questions (or none)
 
 ## 13. Final verdict
 
