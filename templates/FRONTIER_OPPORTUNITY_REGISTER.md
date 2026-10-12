@@ -37,6 +37,14 @@ For each material cross-paper mismatch, write:
 - **New economic learning if solved**, in one or two sentences:
 - Why the missing information matters for the field; avoid assuming an arbitrary policy prescription:
 
+## C2. Existing-theorem reversal / paradox / robust-boundary candidates (same question permitted)
+
+| ID | Predecessor theorem / exact result and domain | Proposed smallest economically motivated change | Reproduction restriction | Candidate reversal / impossibility / stronger robustness and precise falsifier | Identical benchmark/selection verified? | Parent theorem or later counterexample threat | Evidence maturity / stop rule |
+|---|---|---|---|---|---|---|---|
+| R1 | Paper + theorem + quantified sign/ranking/implementation claim | One change or new theorem in the same known model | Map full candidate back to original case | Specify a sign/ranking switch, sharp boundary, or non-reversal theorem | Same welfare object and feasible set? | Source/DOI/theorem | `HYPOTHESIS / LITERATURE-SCREENED / MODEL-TESTED / CERTIFIED / KILLED` |
+
+For each R candidate state: `AUTHOR-STATED / AUDITOR-INFERRED / CROSS-PAPER` as source provenance; `RESOLVED / PARTIALLY RESOLVED / OPEN WITH EVIDENCE / UNRESOLVED` as literature status; proof/reading depth; positive-measure or knife-edge scope; and one cheap kill test. Do not force a new economic question, a paradox, or an extension; zero defensible reversals is acceptable. A found reversal may support **the current paper** only after its own Stage 4/4A/6/7.5A certification; a new paper still needs author selection.
+
 ## D. Ranked question opportunities (not new-paper GO decisions)
 
 | ID | Source type / gap ID | Precisely testable economic question | Possible theorem/estimand and falsifier | Distinct economic implication vs strongest predecessor | Minimum model/data and essential assumption | Strongest kill paper / exact result | Evidence maturity / priority / next bounded test |
