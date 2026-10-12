@@ -50,4 +50,4 @@ A completed symbolic proof, a novel-looking parameter threshold, and a high-qual
 
 Check unique scope markers in governance/pipeline, presence of all four Stage edits, two independent outputs and normal routing, author-versus-auditor evidence distinctions, later-work statuses, zero-candidate fallback, parent theorem attack, and v2.9-candidate unreleased disclosure. These are source/text **consistency checks only**, not evidence that this workflow has been field-tested on multiple real literature reviews or independently peer-reviewed. A real Stage-2-to-7.5 project run should later check whether the opportunity ledger is discriminating without creating excessive paperwork.
 
-**Release/merge status:** feature-branch source changes and PR are proposed; they do not replace historical stable v2.8 or supersede old per-project verdicts by retroactive declaration.
+**Release status:** these source changes are v2.9-candidate only until a separately reviewed stable tag/release is issued. Merging the feature PR does not itself create that tag and does not retroactively change historical per-project verdicts.
