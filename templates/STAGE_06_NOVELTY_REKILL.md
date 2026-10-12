@@ -160,6 +160,7 @@ Return `NO-GO` if every main result is exact prior art, structurally very close,
 12. Strongest remaining novelty threat
 13. Editor-facing contribution case, question-completeness register, and any bounded baseline/extension/reframe comparison
 14. Verdict and next-stage contract
+15. **Independent future-research opportunity memo**: author-stated / inferred / cross-paper origin, post-publication resolution check, up to three credible testable questions (or no credible candidate), and `PROPOSED / NOT AUTHORIZED` status
 
 ## 13. Final verdict
 
