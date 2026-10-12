@@ -45,4 +45,6 @@
 
 Use Section E of `templates/RESEARCH_SEARCH_REGISTER.md` or `templates/FRONTIER_OPPORTUNITY_REGISTER.md`, or an equivalent compact project record. Never duplicate the same bibliography merely to fill both. Stage 2 provides a **provisional** opportunity map, Stage 3 selects a research-question hypothesis, Stage 6 updates against actual certified results, Stage 7.5 separates the frozen-paper verdict from **future** recommendations.
 
+**No viable candidate:** If all hypotheses are solved, absorbable, insufficiently evidenced or infeasible within the search budget, explicitly record `NO DEFENSIBLE NEXT QUESTION FOUND IN SEARCH BUDGET`, the papers checked, and what new evidence would justify reopening. This is a valid scientific output, not a failure of creativity.
+
 **Failure condition:** Source limitations were not inspected for decisive papers where accessible; later relevant solutions were ignored; author language was misattributed; an unscreened speculation was described as a verified open question; or a new topic was used to bypass the previous project's stop/rollback decision. Mark the evidence incomplete or `UNRESOLVED`, not `GO`.
