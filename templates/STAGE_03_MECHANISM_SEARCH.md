@@ -131,6 +131,7 @@ Include the structurally deduplicated candidate/disposition register, budget, an
 8. Nested benchmark skeletons, where applicable
 9. Candidate propositions to kill-test
 10. Verdict and next-stage contract
+11. Question-first opportunity comparison and source gap IDs; explicit nonauthorization of deferred future projects
 
 ## 13. Final verdict
 
