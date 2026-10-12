@@ -28,6 +28,21 @@ Use this checklist for serious prior-art and novelty work. It supplements, but d
 - [ ] Appendix/proofs checked when they may contain the closest result
 - [ ] Evidence limitation recorded if only abstract/snippet access was possible
 
+## Author limitations, future work and frontier verification (Stages 2/6)
+
+- [ ] Decisive closest sources' Abstract/Introduction examined for explicit comparison against predecessors.
+- [ ] Results/propositions/assumptions examined to establish exact solved domain.
+- [ ] Discussion/Conclusion/limitations and author-stated future work examined where full text is accessible.
+- [ ] Exact paper/section/page recorded for an author's stated limit, or explicit `NOT FOUND / NOT INSPECTED` with reading scope.
+- [ ] Author-stated limitation not conflated with an auditor-inferred assumption restriction or cross-paper synthesis.
+- [ ] Material later/forward-citing studies and same-author continuations checked, including current working-paper and journal versions.
+- [ ] Claimed gap marked `RESOLVED / PARTIALLY RESOLVED / OPEN WITH EVIDENCE / UNRESOLVED`; proof of nonexistence never inferred from failed retrieval.
+- [ ] Closest general parent theorem and potential short corollary tested before proposing a follow-up question.
+- [ ] At least the strongest credible research-question opportunity states a **new economic learning gain** and concrete falsifiable theorem/estimand, or explicitly records **no defensible opportunity**.
+- [ ] Current-paper novelty and future-question novelty maturity are stored separately.
+
+See `checklists/FRONTIER_OPPORTUNITY_CHECKLIST.md` and `templates/FRONTIER_OPPORTUNITY_REGISTER.md` for the optional structured ledger.
+
 ## Citation-chain audit
 
 - [ ] Seminal predecessor papers identified
