@@ -77,6 +77,18 @@ Complete **only when the paper's question or contribution is policy-facing**.
 - [ ] If COULD remains outside scope, record a robust diagnosis-only editorial case and comparable field literature; if none, classify the gap as `ESSENTIAL FOLLOW-UP`.
 - [ ] Primary institutional sources are used and descriptive programs are not asserted to instantiate a transfer game absent evidence.
 
+## E2. Frontier-informed alternative research investment (Stages 6/7.5)
+
+This is a **companion opportunity assessment**, not a way to reclassify a failed contribution as novel. Consult `checklists/FRONTIER_OPPORTUNITY_CHECKLIST.md`.
+
+- [ ] For decisive closest studies, author-stated limitations (Introduction/Conclusion/future work) have exact source locations; auditor-generated cross-paper problems are labeled separately.
+- [ ] A later-work/parent-theorem search has tested whether proposed future problems remain unsolved at a recorded cutoff, with `UNRESOLVED` permitted.
+- [ ] Ask what a skeptical field editor would learn from solving each proposed **different question**, over and above the known theory that defeats the current paper.
+- [ ] Retain the existing `BASELINE ONLY / ONE BOUNDED REPAIR OR EXTENSION / REFRAME OR NOTE` comparison where the present paper has an essential gap; **separately** list up to three credible next-project questions or `NO DEFENSIBLE NEXT QUESTION FOUND`.
+- [ ] Each recommended question has a minimal falsifier, strongest predecessor, expected substantive consequence, feasibility/assumption cost and clear `PROPOSED / NOT AUTHORIZED` status.
+- [ ] A `NO-GO` current project stays `NO-GO` regardless of how strong a future opportunity looks; `GO` stays eligible even when no new follow-up question emerges.
+- [ ] Correction, pure theory, negative results and diagnostic-only articles are not forced into an irrelevant intervention/data-design exercise.
+
 ## F. Independent skeptical-editor challenge
 
 The reviewer must answer **without importing positive verdict labels** from the production team's math/novelty audit:
