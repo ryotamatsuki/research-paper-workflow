@@ -78,6 +78,20 @@ For a generalization/unification route, re-open the papers corresponding to ever
 
 Use `checklists/LITERATURE_AUDIT_CHECKLIST.md` and `checklists/NOVELTY_KILL_CHECKLIST.md`.
 
+### Mandatory frontier update and alternative-question recommendation
+
+While reopening the **decisive close papers** for each actual Stage-4A-certified result, update the Stage-2 limitation/future-question register: author-explicit findings with page/section, auditor-inferred structural limits, cross-paper gaps, and **subsequent resolving papers** found by forward/same-author/adjacent-field search. Search recent parent theorems under application-neutral language before recommending any alleged open question.
+
+Give two **logically independent outputs**:
+1. **CURRENT-PAPER verdict** under the existing `GO / CONDITIONAL GO / NO-GO` rules, based only on the actual certified result and contribution;
+2. **NEXT-QUESTION OPPORTUNITY MEMO**, even when the current claim survives, listing up to three **credible** problems grounded in still-unresolved limitations, each with economic learning gain, original-paper provenance, strongest later/parent-theorem threat, bounded falsifier and maturity `HYPOTHESIS / LITERATURE-SCREENED / MODEL-TESTED / CERTIFIED / KILLED`.
+
+On `NO-GO` the memo must state why each recommendation differs substantively from the killed result; explicitly preserve the `RESEARCH NOTE / PIVOT / NO DEFENSIBLE OPPORTUNITY FOUND` options. No credible candidates is an acceptable **negative-search finding**. A proposed next question is not automatically an admissible extension, Stage-3 PASS, novel theorem or publication project.
+
+On `GO`, preserving future questions is still useful but they are **not** unresolved essential requirements unless the current paper's promise actually depends on them. Do not change current-paper `NO-GO` to `CONDITIONAL GO` solely because an attractive next question was discovered. Any substantive new model is selected in a separately authorized Stage 0/2/3 path and re-enters the usual Stage 4/4A/6 gates.
+
+Use `checklists/FRONTIER_OPPORTUNITY_CHECKLIST.md`; report reading depths/cutoff date and concrete IDs from `templates/FRONTIER_OPPORTUNITY_REGISTER.md` or equivalent.
+
 ## 7. Evidence requirements
 
 For every surviving contribution, provide a closest-paper comparison at model/proposition level and state evidentiary limits.
