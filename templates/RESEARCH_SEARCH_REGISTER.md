@@ -48,6 +48,12 @@ Keep this to about one page or an equivalent compact record. Length is a diagnos
 
 Stage-3/4 memos are provisional. A positive memo cannot bypass Stage 4A/6 or authorize manuscript construction. Stage 6 updates the memo from the certified result and prior-art comparison before discretionary Stage-7 expansion. For correction/reassessment, explain the substantive consequence; neither a new mechanism nor a cosmetic changed formula is a universal pass condition.
 
+## C2. Frontier extraction / next-question bridge (Stages 2 → 3 → 6 → 7.5)
+
+Use `templates/FRONTIER_OPPORTUNITY_REGISTER.md` or the same fields in this register; **do not duplicate** the bibliography or falsely backdate evidence. For decisive closest papers record author-explicit future work and limitations with exact location, distinct auditor/cross-paper inferred gaps, the later paper(s) resolving or limiting each purported gap, current evidence-maturity status, and a falsifiable next economic research question with its strongest general-theorem kill threat.
+
+Stage 6 must update this evidence using the **actual certified result** even when the current paper is killed. Stage 7.5 must record **two independent decisions**: current-paper `GO/CONDITIONAL GO/NO-GO` and up to three *proposed-only* next questions (or `NO DEFENSIBLE NEXT QUESTION FOUND`). A proposed future question requires author selection and fresh Stage 0/2/3; it cannot bypass a stopped-paper rollback or create a new Stage verdict.
+
 ## D. Optional related-result / dependency register — Stage 7 onward
 
 - Parent result / family purpose:
