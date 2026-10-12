@@ -70,6 +70,10 @@ Only algebraically necessary normalization or notation cleanup. Any substantive 
 
 Update the Stage-3 short contribution memo from the constructed result, provisional pending Stage 4A/6. For correction/reassessment, document the exact source-to-corrected-result difference and affected economic conclusion; algebraic correction alone does not warrant discretionary expansion. Keep the existing Stage-4 success standard and routing. The memo is not a new gate or permission to write the manuscript.
 
+### Reversal / paradox / strong-robustness proof contract (when selected)
+
+Before changing any premise, reproduce the original predecessor's theorem under its **original domain, equilibrium selection, benchmark and quantifiers**. Change only the authorized economic assumption or margin, then solve the full admissible strategy and equilibrium domain; do not transplant a baseline equilibrium expression into a new regime. Attempt (i) a concrete exact counterexample or proof of non-reversal, (ii) a non-knife-edge region or sharp boundary where feasible, and (iii) an independent direct-payoff/welfare check of the compared objects. Classify an apparent reversal due to a changed welfare benchmark, altered equilibrium-selection rule, solver failure, or exogenous sign-switch payoff term as `NOT A CERTIFIED REVERSAL`; preserve counterexamples and negative outcomes. A sign reversal is **not** required to pass if a substantive general theorem, impossibility, necessary/sufficient condition or strengthened robustness survives. Carry the full evidence to Stage 4A and Stage 6.
+
 ### Canonical-form / known-class screening
 
 Before treating an application-specific result as a new theoretical object:
