@@ -19,9 +19,9 @@ Canonical hierarchy:
 
 `GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → stage templates → checklists → examples.
 
-## v2.9 candidate: economic contribution / question completeness / editorial value (2026-10-10)
+## v2.9: economic contribution, question completeness and research-frontier discovery (2026-10-12)
 
-The proposed **minor** refinement responds to a field-journal desk rejection of a mathematically valid regional industrial-policy theory paper: its model diagnosed an uninternalized cross-jurisdiction externality, but it did not explain what could practically internalize it. This was a genuine editor objection, **not proof** that a policy extension would succeed or that the old mathematics was flawed.
+The **minor** refinement responds to a field-journal desk rejection of a mathematically valid regional industrial-policy theory paper: its model diagnosed an uninternalized cross-jurisdiction externality, but it did not explain what could practically internalize it. This was a genuine editor objection, **not proof** that a policy extension would succeed or that the old mathematics was flawed.
 
 - **Stage 6:** a short editor-facing economic-contribution memo and a material open-question register, with bounded `baseline only / meaningful extension / reframe or note` comparison.
 - **Stage 7:** policy-facing manuscripts distinguish diagnostic results, welfare prescription, and feasible implementation; pure theory and corrections are exempt from any blanket policy-instrument requirement.
@@ -31,18 +31,18 @@ The proposed **minor** refinement responds to a field-journal desk rejection of 
 
 This refinement preserves all Stage numbers, verdict semantics, routing, one-diagnosed-fix discipline, certification, and freeze rules. It is not an instruction to add complexity for prestige. See [operational checklist](checklists/ECONOMIC_CONTRIBUTION_COMPLETENESS_CHECKLIST.md) and [case and design record](docs/ECONOMIC_CONTRIBUTION_COMPLETENESS_REFINEMENT_2026-10-10.md).
 
-**Release status:** proposal on a feature branch; not a published `v2.9` tag or GitHub Release. Stable `v2.8` artifacts remain historical.
+**Release notes and version-scoped changes:** see [v2.9 release notes](docs/V2_9_RELEASE_NOTES.md) and [v2.9 readiness audit](docs/V2_9_INTEGRATION_AUDIT.md). The v2.8 release/tag remains an immutable historical reference.
 
-## v2.9-candidate: limits → current frontier → next research question (unreleased)
+### Research frontier: predecessor limitations → present gaps → next question
 
-This **v2.9-candidate refinement** enhances Stage 2/3/6/7.5 without creating or renumbering a Stage. It does not change `GO / CONDITIONAL GO / NO-GO`, author authorization or theory-freeze rules, and is **not** a released v2.9 tag.
+This **v2.9 refinement** enhances Stage 2/3/6/7.5 without creating or renumbering a Stage. It does not change `GO / CONDITIONAL GO / NO-GO`, author authorization or theory-freeze rules.
 
 - **Stage 2:** read decisive papers' Abstract/Introduction, actual theorems, Discussion/Conclusion and explicitly stated limitations/future work; distinguish **AUTHOR-STATED / AUDITOR-INFERRED / CROSS-PAPER** gaps and test against later research.
 - **Stage 3:** compare the remaining **economic questions before inventing a model**; require the expected new learning, closest general parent theorem, minimal falsifier and a bounded search. Up to three credible questions are useful; zero is acceptable.
 - **Stage 6:** maintain independent **CURRENT-PAPER GO/NO-GO** and **NEXT-QUESTION opportunity** outputs, including the stronger parent-theorem and post-publication checks. NO-GO does not automatically authorize a pivot.
 - **Stage 7.5:** skeptical editor evaluates both whether the present result merits full-paper investment and what *different* question would merit future investigation. Pure theory, corrections and diagnostic papers are not forced to add an implementation theorem.
 
-Templates: [Frontier Opportunity Register](templates/FRONTIER_OPPORTUNITY_REGISTER.md) and [Frontier Opportunity Checklist](checklists/FRONTIER_OPPORTUNITY_CHECKLIST.md). Design and adversarial regression cases: [2026-10-12 refinement record](docs/FRONTIER_OPPORTUNITY_REFINEMENT_2026-10-12.md). The release remains subject to independent review and merge; previous tagged versions and historical audit decisions are unchanged.
+Templates: [Frontier Opportunity Register](templates/FRONTIER_OPPORTUNITY_REGISTER.md) and [Frontier Opportunity Checklist](checklists/FRONTIER_OPPORTUNITY_CHECKLIST.md). Design and adversarial regression cases: [2026-10-12 refinement record](docs/FRONTIER_OPPORTUNITY_REFINEMENT_2026-10-12.md). Historical audits and prior tags remain unchanged. The reviewed v2.9 state is published through the v2.9 release workflow after its readiness checks pass.
 
 ## v2.8: bounded research search / contribution selection
 
@@ -433,6 +433,6 @@ Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 ## Status
 
-Current canonical repository revision: **v2.8**.
+Current canonical repository revision: **v2.9**.
 
-Stable release reference: [`v2.8`](https://github.com/ryotamatsuki/research-paper-workflow/releases/tag/v2.8). A version marker or readiness verdict alone does not establish that its tag/Release has been published; confirm the live release record. The reviewed state is published by `.github/workflows/publish-v2.8.yml` after merge. The prior `v2.7` stable release and all earlier stable tags remain immutable. The v2.0 architecture was merged/audited but not separately tagged; v2.1 was the first stable tagged v2 release.
+Stable release reference: [`v2.9`](https://github.com/ryotamatsuki/research-paper-workflow/releases/tag/v2.9) (verify the live GitHub Release record). A version marker or readiness verdict alone does not establish that the tag/Release has been published. The reviewed state is published by `.github/workflows/publish-v2.9.yml`. Prior v2.8 and earlier stable releases/tags remain immutable; v2.1 was the first stable tagged v2 release.

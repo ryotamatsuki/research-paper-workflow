@@ -1,6 +1,6 @@
 # Governance
 
-Version: v2.9-candidate (unreleased; v2.8 is the last documented release)
+Version: v2.9
 
 ## 1. Purpose
 
@@ -221,7 +221,7 @@ For **policy-oriented** claims, distinguish identifying a failure from showing w
 
 The **Contribution Completeness & Editorial Value Audit** belongs to Stage 6 (working memo), Stage 7 (welfare/institution), Stage 7.5 (**mandatory pre-freeze decision**), Stage 11 (independent editorial red-team), and Stage 12 (journal-specific fit). Apply `checklists/ECONOMIC_CONTRIBUTION_COMPLETENESS_CHECKLIST.md` or equivalent evidence. It must record: a source-grounded closest-paper distinction, a one-paragraph editor-facing reason to publish, the strongest missing-question attack, at least a bounded `BASELINE ONLY / MINIMAL POLICY OR MECHANISM EXTENSION / REFRAME OR NOTE` counterfactual when material, whether the extension would create *new economics* instead of cosmetic complexity, and a reasoned adoption/deferral decision. A `GO` with an unresolved **essential** question-completeness objection is prohibited; use the existing `CONDITIONAL GO` or `NO-GO` route. An already frozen paper requires normal rollback and re-certification before adding new theory.
 
-This is a **v2.9 minor refinement proposal** inside existing stages and routing, not a newly numbered Stage, a relaxation of mathematical/novelty gates, or a requirement to satisfy editor preferences by arbitrary theory expansion.
+This is a **v2.9 minor refinement** inside existing stages and routing, not a newly numbered Stage, a relaxation of mathematical/novelty gates, or a requirement to satisfy editor preferences by arbitrary theory expansion.
 
 ### 2.21 Source limitations and unresolved-question opportunities must inform research selection
 
@@ -236,7 +236,7 @@ None of these is by itself certified economic novelty. Record current resolution
 
 **Two independent decisions are mandatory at Stage 6/7.5**: the *current paper's* normal verdict based on certified results and field contribution, and the *future-research opportunity* disposition (up to three credible questions, fewer or none if evidence fails). Promising future problems cannot rescue a present `NO-GO`, and stopping a paper cannot certify any proposed follow-up as new or authorize automatic model expansion. A new objective requires actual author selection and a fresh Stage 0/2/3 intake; existing rollback/change-control applies to in-project repairs. Research notes, general mathematical economics, substantive corrections and negative/diagnostic contributions remain legitimate without a compulsory policy instrument or application extension.
 
-Apply `checklists/FRONTIER_OPPORTUNITY_CHECKLIST.md` and `templates/FRONTIER_OPPORTUNITY_REGISTER.md` (or equivalent compact provenance). This is an **unreleased v2.9-candidate minor refinement**, not a new Stage, altered GO/NO-GO meaning, or release tag.
+Apply `checklists/FRONTIER_OPPORTUNITY_CHECKLIST.md` and `templates/FRONTIER_OPPORTUNITY_REGISTER.md` (or equivalent compact provenance). This is a **v2.9 minor refinement**, not a new Stage or changed GO/NO-GO meaning.
 
 ## 3. Repository change policy
 
