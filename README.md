@@ -35,7 +35,7 @@ This refinement preserves all Stage numbers, verdict semantics, routing, one-dia
 
 ## v2.9-candidate: limits → current frontier → next research question (unreleased)
 
-The active **proposal branch** enhances Stage 2/3/6/7.5 without creating or renumbering a Stage. It does not change `GO / CONDITIONAL GO / NO-GO`, author authorization or theory-freeze rules, and is **not** a released v2.9 tag.
+This **v2.9-candidate refinement** enhances Stage 2/3/6/7.5 without creating or renumbering a Stage. It does not change `GO / CONDITIONAL GO / NO-GO`, author authorization or theory-freeze rules, and is **not** a released v2.9 tag.
 
 - **Stage 2:** read decisive papers' Abstract/Introduction, actual theorems, Discussion/Conclusion and explicitly stated limitations/future work; distinguish **AUTHOR-STATED / AUDITOR-INFERRED / CROSS-PAPER** gaps and test against later research.
 - **Stage 3:** compare the remaining **economic questions before inventing a model**; require the expected new learning, closest general parent theorem, minimal falsifier and a bounded search. Up to three credible questions are useful; zero is acceptable.
