@@ -70,6 +70,19 @@ Apply `checklists/ECONOMIC_CONTRIBUTION_COMPLETENESS_CHECKLIST.md` or equivalent
 
 A `GO` is blocked if an unresolved `ESSENTIAL FOLLOW-UP` renders the *stated* paper question materially unanswered or the editorial case depends only on math/novelty PASS. Route via the existing `CONDITIONAL GO` to the earliest relevant Stage for one diagnosed repair, or `NO-GO / RESEARCH NOTE / PIVOT`. Stage 7.5 is evaluative: do not invent new contracts, variables, or theorems inside it. Any proposed theory extension reopens Stage 3/4/4A/6 and all affected later stages. Do not require a policy instrument or larger model in a pure theory, correction, commentary, or appropriately scoped diagnostic contribution.
 
+### Skeptical-editor current-paper verdict AND future-research judgment (distinct)
+
+Independently challenge the Stage-6 frontier-opportunity memo using the **actual closest-paper Intro/Conclusion limitations and subsequently published solutions**, not only prior GO labels. Specifically answer: if this paper does not deserve full-paper investment, which **different important economic question** is still plausibly open, why would an expert learn something new if it were solved, and what is its fastest credible literature/theorem falsifier?
+
+The editor must produce a compact comparative disposition:
+- **CURRENT PAPER:** full paper / research note-narrowing / `CONDITIONAL GO` for one actually reparable essential gap / `NO-GO`, with evidence **independent of** how promising the next idea appears;
+- **NEXT FRONTIER:** up to three evidence-ranked research **questions** (not mandatory extensions), each with provenance (`AUTHOR-STATED` versus `AUDITOR-INFERRED` versus `CROSS-PAPER`), later-work status, a likely theorem/estimand, minimum test, primary kill paper, uncertainty and stop rule; if none can be defended, say so explicitly;
+- **AUTHORIZATION:** a future candidate stays `PROPOSED / NOT AUTHORIZED` until the author chooses a new research objective and the appropriate Stage 0/2/3 inquiry starts.
+
+A source author's future-work statement is not a proof that the frontier is still open. A mathematically distinct formula is not sufficient research value. A future promising question does **not** rescue the current paper or bypass a full-paper `NO-GO`; likewise a publishable pure-theory result need not supply an unrelated policy implementation theorem merely to generate future ideas.
+
+Use `checklists/FRONTIER_OPPORTUNITY_CHECKLIST.md`. Preserve Stage-7.5's normal verdict, quantifier-audit routing to Stage 7.5A, and prohibition against model edits at this evaluative stage.
+
 ## 7. Evidence requirements
 
 Use only verified mathematics, literature, and institutional evidence from prior stages. Do not upgrade conjectures to established propositions.
