@@ -83,6 +83,17 @@ Compare up to **three credible** opportunities if available; do **not** invent c
 
 If Stage 3 is being revisited following a different project's Stage-6/7.5 `NO-GO`, import its *evidence*, not its failed claim or authorization. The new question requires a fresh Stage-2 prior-theorem screen and an explicit author-selected research objective; do not silently turn a recommended new question into an extension of a frozen or stopped model.
 
+### Same-question reversal / sharp-boundary route
+
+Do not require a new research question when the contribution is an economically substantive relaxation, counterexample, non-monotonicity, welfare-ranking reversal, impossibility boundary, or unexpectedly strong generality of the predecessor result. For each credible route record:
+
+1. the **exact predecessor theorem** and original domain, equilibrium concept, outcome and welfare benchmark;
+2. one minimal **economically defended** relaxation (or new proof/theorem in the existing model), nested recovery restrictions, and the closest general-theorem absorption threat;
+3. the proposed reversal/boundary/robustness mechanism and **precise candidate proposition or counterexample**—not only the hoped-for sign;
+4. a no-reversal/no-new-economics competing hypothesis, a cheap pre-specified proof/numerical falsifier, source reading depth, and stop condition.
+
+Do not engineer the preferred conclusion with ad hoc utility terms or repeated parameter tuning. A robust non-reversal or a sharpened sufficient/necessary condition can be as important as an overturned prediction. Use `checklists/RESULT_REVERSAL_BOUNDARY_CHECKLIST.md`. A Stage-3 ranking remains provisional and does not certify novelty or math.
+
 ## 7. Evidence requirements
 
 Candidate novelty must be grounded in Stage 2 evidence. If a candidate introduces a new literature family, perform a targeted mini-search before ranking it highly. If the route is generalization/unification, preserve the Stage 2 nested-benchmark map and update it rather than discarding it.
