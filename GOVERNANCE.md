@@ -238,6 +238,14 @@ None of these is by itself certified economic novelty. Record current resolution
 
 Apply `checklists/FRONTIER_OPPORTUNITY_CHECKLIST.md` and `templates/FRONTIER_OPPORTUNITY_REGISTER.md` (or equivalent compact provenance). This is a **v2.9 minor refinement**, not a new Stage or changed GO/NO-GO meaning.
 
+### 2.22 Result reversal, paradox and sharp-boundary discovery are legitimate, evidence-gated research routes
+
+Stages 2–3 must consider **result reversal / counterintuitive result / welfare-ranking reversal / impossibility / sharp validity boundary / strengthened robustness** alongside author-stated open problems, generalization/unification, and new mechanisms. The economic **question may remain the same** when a credible assumption relaxation changes a major known result or identifies its precise limits. Do not demand an unrelated new question or new strategic ingredient as a universal prerequisite.
+
+Anchor each opportunity to an **exact predecessor theorem, domain, equilibrium concept, welfare benchmark and conclusion**, and check whether the proposed reversal has already been proved, is an immediate corollary of a general parent theorem, or follows from changing the comparison object or policy feasible set. Require an economically justified *minimum* change, recovery of the predecessor on its original domain, a falsifiable sign/ranking/implementation boundary, and counterexample or proof targets. A singular numerical example or a payoff term inserted to force the desired sign is not a theory-novelty certificate. Genuine negative results and unexpectedly strong robustness are equally admissible outcomes. Do not search indefinitely to manufacture a paradox.
+
+Stages 4/4A establish the precise result and attack corners, full equilibria and regimes; Stage 6 checks actual theorem-level novelty; Stage 7.5A certifies claim scope and portability; Stage 11 repeats the hostile pre-existing-theorem and reversed-benchmark attacks. No stage numbering, verdict meanings, routing, author-authorization, or theory-freeze policy changes. Apply `checklists/RESULT_REVERSAL_BOUNDARY_CHECKLIST.md` with the Stage-2/3 source ledger. This is an **unreleased post-v2.9 MINOR-class refinement**, not a published v2.10 tag or release.
+
 ## 3. Repository change policy
 
 ### 3.1 Main branch
