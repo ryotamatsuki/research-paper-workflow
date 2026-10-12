@@ -179,6 +179,10 @@ Existing Stage 2/3/6/7.5 research decisions must use literature **for both novel
 
 Separate `AUTHOR-STATED` from `AUDITOR-INFERRED` and `CROSS-PAPER` gaps; label `RESOLVED / PARTIALLY RESOLVED / OPEN WITH EVIDENCE / UNRESOLVED`; record last verified date and strongest prior-art falsifier. See `checklists/FRONTIER_OPPORTUNITY_CHECKLIST.md` and `templates/FRONTIER_OPPORTUNITY_REGISTER.md`. This maintains established Stage routing/verdicts and the no-uncontrolled-feature-growth rule.
 
+### Unreleased post-v2.9: predecessor-result reversal / paradox / sharp-boundary exploration
+
+Within existing Stages 2/3/4/4A/6/7.5A/11, evaluate **reversal, surprising comparative statics, welfare ranking changes, impossibility, counterexamples and robustness-strengthening** as legitimate contribution routes. Preserve the *same economic question* when the contribution is a substantive refinement of an exact prior theorem; do not force a topic pivot. Reconstruct the predecessor claim on its own domain and compare like with like; require economical assumption changes, a theorem-level falsifier and a search for parent-theorem absorption. No extra Stage or revised GO meaning. Apply `checklists/RESULT_REVERSAL_BOUNDARY_CHECKLIST.md`. This text describes unreleased work on `main`; the latest stable release remains v2.9.
+
 ## 2. Universal stage schema
 
 Every stage-specific prompt, report, or template should include, unless genuinely inapplicable:
@@ -306,6 +310,10 @@ Before exiting, produce a bounded **frontier opportunity map**: for up to three 
 
 Apply `checklists/FRONTIER_OPPORTUNITY_CHECKLIST.md` and `templates/FRONTIER_OPPORTUNITY_REGISTER.md` or equivalent existing records.
 
+## Result-reversal and sharp-boundary opportunity scan
+
+In parallel with explicit source-author limitations and new-question discovery, record the **headline predecessor proposition** (exact conclusion/sign/ranking/monotonicity/implementation, domain, equilibrium concept, planner benchmark and quantifiers). Screen plausible **economically grounded minimal relaxations** for sign reversal, welfare/ranking reversal, non-monotonicity, impossibility, or unexpectedly strong robustness. Check that allegedly contradictory results use comparable information, feasible policies, equilibrium selection and welfare objects; distinguish true reversal from changed definitions. Search forward citations, same-author developments, adjacent theory and general parent theorems for a known boundary or counterexample. Produce a small ranked *result-first* opportunity set, retaining the original economic question if appropriate. Neither a hypothetical reversal nor a missing keyword match establishes novelty. Use `checklists/RESULT_REVERSAL_BOUNDARY_CHECKLIST.md` and record source proof scope and search depth.
+
 ## Kill tests
 
 Kill contributions that are renamed known results, cosmetic new variables, immediate corollaries of the closest model, keyword-search novelty, “nobody combined these ingredients” novelty without new strategic feedback, or notation-only generalization.
@@ -340,6 +348,10 @@ Generate competing explanations and select mechanisms or strategically meaningfu
 Use the Stage-2 opportunity map to select the **economic question first**. Compare only credible surviving future questions on their increment over the closest theorem, substantive learning, minimal necessary model/data, falsifiable candidate proposition or estimand, and shortest kill test. Explicit author-limitation claims are **not** automatically open or important; retain source provenance and post-publication status. When available, compare up to three **distinct questions**; no quota requires a fabricated third candidate.
 
 For a pivot following a different branch's `NO-GO`, inherited source evidence can guide the search, but the new question needs **author selection and new Stage 0/2/3 intake**. A mathematical NO-GO does not authorize compensating feature accumulation. If none survives, stop and preserve the search record.
+
+## Reversal / paradox / robustness candidate selection
+
+Alongside new questions and generalizations, compare **same-question, new-theorem** candidates: state the exact established benchmark; one economically justified changed assumption or endogenous margin; the directional claim to falsify; the predicted mechanism of a reversal, sharp boundary, or stronger invariance; and a nested restriction that must reproduce the predecessor. Try to derive the proposed difference as a direct prior-theorem corollary or tautological payoff sign before investment. Pre-specify at least one **opposite-sign / no-reversal** possibility, a small proof or counterexample test, and a finite stop rule. A reversal is not mandatory; equality, monotonic preservation and negative findings may be scientifically valuable. Do not add unrelated parameters until the desired sign appears.
 
 ## Kill tests
 
@@ -377,6 +389,10 @@ Solve the strongest candidate mechanism/generalization completely in the smalles
 - Update the working contribution memo from the constructed result, provisional pending Stage 4A/6. A solved formula alone does not justify discretionary family expansion or manuscript investment.
 
 Apply `checklists/SYMBOLIC_VERIFICATION_CHECKLIST.md`, `checklists/NUMERICAL_VERIFICATION_CHECKLIST.md` when applicable, and `checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md` in full whenever off-path continuations matter.
+
+## Reversal-specific construction contract (when that route is selected)
+
+First reproduce the predecessor result under its original parameter, information, equilibrium-selection and welfare domain. Then vary **only** the Stage-3-authorized economic assumption, re-solve the complete equilibrium (including relevant corners and off-path continuations), and characterize where the sign, welfare ranking, implementability or theorem scope changes or survives. Check a concrete counterexample *and* seek an open parameter region or precise boundary when proportional; retain a minimal counterexample even if a general characterization is not yet feasible. Ensure the direction is not inserted into utility, inferred from a solver failure, or generated by moving the welfare benchmark. Record the no-reversal outcome as evidence, not a reason for post-hoc parameter accumulation.
 
 ## Success standard
 
@@ -484,6 +500,8 @@ Stage 6 updates the Stage-2 literature ledger rather than repeating the entire s
 Before discretionary Stage-7 expansion, update the short contribution memo against the certified result: exact closest-paper difference, substantive economic consequence, evidence maturity, strongest remaining objection, and why further investment is justified. This assessment is part of Stage 6, not a new routing gate. For correction/reassessment, distinguish a substantive corrected conclusion from cosmetic algebra, and check whether the correction is already known. Do not manufacture a new mechanism to fit a contribution label.
 
 Before proceeding, complete a **provisional Contribution Completeness & Editorial Value Audit**: state the one-paragraph case for why a field editor should publish the surviving result *beyond correctness*, classify each material unanswered part of the motivating question (`ESSENTIAL FOLLOW-UP / BOUNDED LIMITATION / FUTURE PAPER / NOT APPLICABLE`), and compare the baseline-only path to one bounded meaningful extension or reframing when the claim would otherwise be incomplete. For policy-facing projects distinguish diagnosis, welfare prescription, and practical implementation; policy-instrument absence is not automatically fatal for pure theory or explicitly diagnostic contributions. Carry the objection and extension decision to Stage 7.5; no new theory may enter without Stage 3/4/4A/6 recertification.
+
+For any claimed reversal/paradox/novel failure boundary, map the **actual certified claim** to the predecessor's exact theorem, later counterexamples and general parent theorem, and attempt direct absorption under changes of variables, normalization and restriction. Distinguish (i) contradiction under identical hypotheses (potential correction), (ii) result under relaxed hypotheses (generality boundary), (iii) reversal only across different equilibrium selections or welfare definitions (comparison not controlled), and (iv) a genuinely new comparative-static/implementation theorem. A correctly proved reversal is not automatically new. Positive robustness and impossibility claims receive the same scrutiny.
 
 ## Frontier-to-next-question output (independent of current result)
 
@@ -812,6 +830,8 @@ Each section compiles, matches the frozen theory and theorem certificates, and i
 Try to reject the full manuscript before external referees do.
 
 Stage 11 is not a substitute for Stage 4A or 7.5A. It is a late independent layer that checks whether exposition, extensions, journal framing, or post-freeze implementation reintroduced vulnerabilities.
+
+For a reversal/paradox/validity-boundary paper, attack whether the predecessor's theorem is faithfully recovered, the change is economically independent of the asserted sign, the reversal region is actually admissible (not a boundary/solver artefact), and the welfare/equilibrium benchmark is held constant. Try an existing general theorem, prior counterexample or alternative equilibrium that absorbs or falsifies the headline claim; route regressions to the earliest affected gate.
 
 ## Mandatory attacks
 
