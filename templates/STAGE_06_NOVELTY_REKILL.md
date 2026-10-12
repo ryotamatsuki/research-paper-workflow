@@ -78,6 +78,18 @@ For a generalization/unification route, re-open the papers corresponding to ever
 
 Use `checklists/LITERATURE_AUDIT_CHECKLIST.md` and `checklists/NOVELTY_KILL_CHECKLIST.md`.
 
+### Predecessor-result reversal / paradox / sharp-boundary absorption test
+
+For any actual Stage-4A-certified reversal, ranking switch, impossibility, counterexample or unexpectedly strong robustness theorem:
+
+- Reconstruct the closest predecessor theorem **including assumptions, exact benchmark, equilibrium-selection rule and domain**. Document the restriction that recovers its result.
+- Search whether the new claim is already a direct instance of a more general comparative-static, incentive-compatibility, welfare or order-theoretic theorem, or of a later paper's counterexample/appendix result.
+- Classify the difference as `IDENTICAL-DOMAIN CONTRADICTION / ASSUMPTION-RELAXATION BOUNDARY / NEW RESULT WITHIN KNOWN MODEL / CHANGED COMPARISON OBJECT / ABSORBED`, with precise evidence.
+- Test whether the sign reversal was mechanically inserted or only observed at an excluded boundary or inconsistent equilibrium. Genuine negative/impossibility and robust-invariance results are eligible; dramatic reversal is **not** a requirement.
+- Preserve the current-paper verdict independently of any future lead. Stage 6 does not change frozen theory to rescue desired results.
+
+Apply `checklists/RESULT_REVERSAL_BOUNDARY_CHECKLIST.md` alongside the novelty and frontier checklists.
+
 ### Mandatory frontier update and alternative-question recommendation
 
 While reopening the **decisive close papers** for each actual Stage-4A-certified result, update the Stage-2 limitation/future-question register: author-explicit findings with page/section, auditor-inferred structural limits, cross-paper gaps, and **subsequent resolving papers** found by forward/same-author/adjacent-field search. Search recent parent theorems under application-neutral language before recommending any alleged open question.
