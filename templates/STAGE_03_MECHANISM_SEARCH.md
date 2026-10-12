@@ -71,6 +71,18 @@ For serious candidates draft a short contribution memo: closest result, hypothes
 
 For a surviving correction/reassessment route, the candidate may be the corrected characterization/consequence rather than a new mechanism. Identify the source claim, anticipated defect, prior-correction threat, and affected conclusion. Do not add unrelated primitives to create novelty. Keep unproved candidates provisional.
 
+### Frontier-to-question selection (before mechanism design)
+
+Import the Stage-2 **author-limitations + post-publication resolution + cross-paper gap** register. In one pass compare question candidates *before* specifying additional strategic variables, policies, or model extensions. The key test for each candidate is:
+
+> If solved, what specific equilibrium, welfare, resource-allocation, organizational or policy-boundary conclusion would the field learn that it cannot infer from the strongest already-proved theorem?
+
+For serious frontier-derived questions record: source type (`AUTHOR-STATED / AUDITOR-INFERRED / CROSS-PAPER`), exact still-open boundary and later-work status, closest **general** parent theorem, candidate mathematical proposition or falsifier, minimal model/nested benchmark, expected substantive economic consequence, one cheap prior-art/model kill test, verification burden and stop rule. Separate a theorem idea from a merely different application or a different functional form.
+
+Compare up to **three credible** opportunities if available; do **not** invent candidates to meet a quota. If no defensible new economic question remains, Stage 3 may return `NO-GO` and preserve the gap register. A citation to an author's future-work sentence does not itself satisfy novelty, importance, or tractability.
+
+If Stage 3 is being revisited following a different project's Stage-6/7.5 `NO-GO`, import its *evidence*, not its failed claim or authorization. The new question requires a fresh Stage-2 prior-theorem screen and an explicit author-selected research objective; do not silently turn a recommended new question into an extension of a frozen or stopped model.
+
 ## 7. Evidence requirements
 
 Candidate novelty must be grounded in Stage 2 evidence. If a candidate introduces a new literature family, perform a targeted mini-search before ranking it highly. If the route is generalization/unification, preserve the Stage 2 nested-benchmark map and update it rather than discarding it.
