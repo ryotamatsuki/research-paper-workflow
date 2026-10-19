@@ -179,6 +179,12 @@ Existing Stage 2/3/6/7.5 research decisions must use literature **for both novel
 
 Separate `AUTHOR-STATED` from `AUDITOR-INFERRED` and `CROSS-PAPER` gaps; label `RESOLVED / PARTIALLY RESOLVED / OPEN WITH EVIDENCE / UNRESOLVED`; record last verified date and strongest prior-art falsifier. See `checklists/FRONTIER_OPPORTUNITY_CHECKLIST.md` and `templates/FRONTIER_OPPORTUNITY_REGISTER.md`. This maintains established Stage routing/verdicts and the no-uncontrolled-feature-growth rule.
 
+### Unreleased post-v2.9: premature novelty-claim prevention
+
+A verified equation, sign reversal, or model-specific incentive is not a literature novelty certificate. At Stage 0 identify a credible closest theorem, application-neutral parent class, fatal absorption threat, and an appropriate uncertainty label. Stage 2 must perform a **cheap pre-model canonicalization and absorption attempt** and document exact source access/read depth, without claiming to solve or globally certify a model not yet built. Stage 3 must keep the mathematical and novelty maturity of each candidate distinct. Stage 6 alone may close an **evidence-scoped** novelty verdict for a Stage-4A-certified proposition, including source cutoff, exact parent-theorem mapping and remaining uncertainty. Stage-2 `GO` means only permission to test a plausible question; Stage-4A `GO` establishes mathematics, not priority.
+
+Use `checklists/PREMATURE_NOVELTY_CLAIM_CHECKLIST.md` together with the existing novelty checklist and the regression fixture `examples/PREMATURE_NOVELTY_REGRESSION.md`. Do not use lack of full-text access as evidence of novelty, and do not discard a genuinely new whole-game interaction merely because standard components appear separately in previous papers. The change is **unreleased MINOR-class** under the existing v2.9 architecture; no release/tag is created by the text.
+
 ### Unreleased post-v2.9: predecessor-result reversal / paradox / sharp-boundary exploration
 
 Within existing Stages 2/3/4/4A/6/7.5A/11, evaluate **reversal, surprising comparative statics, welfare ranking changes, impossibility, counterexamples and robustness-strengthening** as legitimate contribution routes. Preserve the *same economic question* when the contribution is a substantive refinement of an exact prior theorem; do not force a topic pivot. Reconstruct the predecessor claim on its own domain and compare like with like; require economical assumption changes, a theorem-level falsifier and a search for parent-theorem absorption. No extra Stage or revised GO meaning. Apply `checklists/RESULT_REVERSAL_BOUNDARY_CHECKLIST.md`. This text describes unreleased work on `main`; the latest stable release remains v2.9.
@@ -234,6 +240,7 @@ Extract the genuine economic question from a phenomenon, old paper, policy probl
 - Generate multiple plausible mechanisms before committing to one.
 - For a broad search, record candidate IDs, motivating source/puzzle, contribution route, structural duplicates, dispositions, and a finite batch budget. A larger raw bank is optional; wording variants are not distinct mechanisms.
 - Write a one-sentence research question that can in principle be falsified by prior art or model analysis.
+- Before praising a candidate as an independent discovery, name the most dangerous nearest theorem/model family, give its source access status, propose a minimal application-neutral structural fingerprint, and register the exact result that would need to survive absorption. This is an early screen, not a novel-theorem certification.
 
 ## Kill tests
 
@@ -302,6 +309,14 @@ Classify overlap as `EXACT PRIOR ART`, `STRUCTURALLY VERY CLOSE`, `COMPONENT OVE
 
 Attach evidence and reading depth to the strongest closest-paper comparison for each serious candidate; scores or search failure are not positive novelty evidence. For correction/reassessment, identify the exact source claim and proposed corrected consequence, and search existing corrections/source versions rather than demanding an unrelated new mechanism.
 
+## Mandatory pre-model novelty-claim restraint
+
+Before Stage 4 is authorized, create a **provisional parent-model / theorem-absorption map** for each serious headline candidate: `candidate economic claim → closest actual prior result and exact source/version/reading depth → sector-neutral actors/actions/objectives/commitment/constraints → attempted mapping or cheap counterfactual → ABSORBED / APPARENTLY DISTINCT / UNRESOLVED → next falsifier`. Test obvious linear-quadratic, supply-and-demand, buyer-power/procurement, durable-goods/Coase, and other relevant generic parent classes rather than searching only for industry-specific terminology.
+
+This screen is **not** Stage-4 solved-model canonicalization or Stage-6 proposition-level proof absorption. An unavailable decisive theorem or appendix is `UNRESOLVED`, never affirmative novelty evidence. A serious unclosed threat must be routed under existing `CONDITIONAL GO` (exactly one narrow blocker) or `NO-GO` semantics; do not announce an independent theoretical contribution based on a provisional `GO`. Conversely, reject only the *claimed unit of novelty* shown to be absorbed; known separate ingredients do not prove that a novel full-game result is absorbed.
+
+For every Stage-2 report separately state `MATHEMATICS: HYPOTHESIS / COMPUTATION-ONLY / MATHEMATICALLY VERIFIED` and `NOVELTY: UNSCREENED / PRE-SCREEN SURVIVED / UNRESOLVED / ABSORBED` as justified. `EVIDENCE-SCOPED NOVELTY CERTIFIED` is **not available at Stage 2**. Apply `checklists/PREMATURE_NOVELTY_CLAIM_CHECKLIST.md`.
+
 ## Frontier and explicit-future-work extraction
 
 For each **decisive accessible closest paper**, inspect Abstract/Introduction (author positioning against prior research), precise result/proposition and assumptions, Discussion/Conclusion, explicit limitations and future work. Capture section/page references and separately label author-stated versus auditor-inferred versus cross-paper gaps. Test the proposed unanswered question against **forward citations, later same-author studies, current working papers, and generic parent-theorem absorption** as of a recorded cutoff date. Mark `RESOLVED / PARTIALLY RESOLVED / OPEN WITH EVIDENCE / UNRESOLVED` (no source found is **not** a novelty proof).
@@ -342,6 +357,10 @@ Generate competing explanations and select mechanisms or strategically meaningfu
 - Merge structural duplicates using players/objectives, endogenous controls, timing/information, constraints, and feedback/result logic; preserve merged IDs and reasons.
 - Draft a short contribution memo for serious candidates: closest result, hypothesized difference, economic consequence, evidence limits, fatal objection, and next investment. Diagnose an institution-specific claim by removing/replacing the alleged institutional driver where feasible; this is not an automatic novelty verdict.
 - Keep ranking separate from certification. A Stage-3 skeleton/sign check is not a completed Stage-4 model or permission to exceed an explicitly authorized project stop point.
+
+## Contribution-maturity control
+
+For each selected candidate, state the claimed theorem or changed economic prediction, prior-paper section/proposition and provisional absorption map, and exactly what observation/proof would kill it. Record mathematics and novelty maturity on separate axes. Do not use `novel mechanism discovered`, `independent theory result`, or equivalent unqualified language before Stage 6; describe `candidate mechanism` and `hypothesized novelty`. A numerically solvable model is not a priority claim.
 
 ## Research-question selection before architecture
 
@@ -496,6 +515,10 @@ Search the literature again using the actual certified propositions.
 A result that looked novel before the mathematics may be killed now. Remove it immediately from the contribution set.
 
 Stage 6 updates the Stage-2 literature ledger rather than repeating the entire search from zero unless the mechanism materially changed.
+
+## Novelty claim maturity and regression closure
+
+For each certified mathematical proposition, compare Stage-2 pre-screen predictions to actual Stage-4/4A results and the strongest parent model. Explicitly record `ABSORBED / PARTIALLY ABSORBED / NOT ABSORBED IN VERIFIED SCOPE / UNRESOLVED`, source version/reading depth/cutoff, direct mapping attempted, and which claim labels must be downgraded or retracted. Only a fully evidence-supported `NOT ABSORBED IN VERIFIED SCOPE` can be called `EVIDENCE-SCOPED NOVELTY CERTIFIED`; this never means universal literature completeness. Mathematics and novelty are reported separately. Record false-positive novelty claims as regression cases and update reusable kill tests when a new generic parent class is discovered. Apply `checklists/PREMATURE_NOVELTY_CLAIM_CHECKLIST.md`.
 
 Before discretionary Stage-7 expansion, update the short contribution memo against the certified result: exact closest-paper difference, substantive economic consequence, evidence maturity, strongest remaining objection, and why further investment is justified. This assessment is part of Stage 6, not a new routing gate. For correction/reassessment, distinguish a substantive corrected conclusion from cosmetic algebra, and check whether the correction is already known. Do not manufacture a new mechanism to fit a contribution label.
 
