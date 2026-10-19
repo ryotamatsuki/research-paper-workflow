@@ -46,6 +46,7 @@ Do not build a full model, write a paper, add complexity to make the idea look n
 8. Recommend theory, empirical, or mixed route and explain why.
 9. Produce one falsifiable one-sentence research question.
 10. Specify the literature families and source material that Stage 1/2 must audit.
+10a. Identify at least one strongest known **parent economic theorem/model family** (rather than only the closest sector-specific paper); record a candidate sector-neutral structural fingerprint, most dangerous absorption objection, actual source access/reading depth, and the exact possible economic learning beyond the parent theorem. This is a pre-model hypothesis and never a novelty certification.
 11. If material AI assistance is used, initialize an `AI_PROVENANCE_LOG` or equivalent under `checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md`; reference existing chats/artifacts rather than copying full transcripts.
 12. For a broad batch, use `RESEARCH_SEARCH_REGISTER.md` or equivalent records: candidate IDs, motivating evidence, contribution routes, structural fingerprints, dispositions, and a finite candidate/time/compute budget. Merge structural duplicates. A larger raw bank is optional, not a quota replacing the 3–8 distinct-candidate intake.
 13. For correction/reassessment, separate the suspected source defect from the expected economic consequence. Neither is verified merely because a candidate was generated.
@@ -83,7 +84,8 @@ Return `NO-GO` if the phenomenon is too vague, the proposed contribution is alre
 2. Phenomenon vs explanation
 3. Actors / decisions / frictions / outcomes
 4. Candidate mechanisms
-5. Main prior-art risks
+5. Main prior-art risks, including the strongest application-neutral parent class and available/unavailable primary-source evidence
+5a. Premature-claim risk: `MATHEMATICS` and `NOVELTY` statuses stated separately; explicitly `HYPOTHESIS / UNSCREENED` or `PRE-SCREEN SURVIVED` where justified
 6. Theory vs empirical route
 7. One-sentence research question
 8. Initial literature map
