@@ -21,7 +21,7 @@ Generate and compare genuinely different mechanisms and, where appropriate, gene
 
 ## 3. Canonical inputs
 
-Stage 2 novelty findings are binding. Killed contribution claims cannot be restored by renaming. Component-overlap findings do not by themselves prohibit a full-game generalization route if Stage 2 left that route alive.
+Stage 2 novelty findings are binding. Killed contribution claims cannot be restored by renaming. A Stage-2 `GO` means only that a credible question survives **provisional prior-art screening**; it is not `EVIDENCE-SCOPED NOVELTY CERTIFIED`. Preserve the Stage-2 generic parent-model objection, reading depth and any unresolved decisive source. Component-overlap findings do not by themselves prohibit a full-game generalization route if Stage 2 left that route alive.
 
 ## 4. Allowed changes
 
@@ -66,6 +66,8 @@ If scoring candidates, define weights ex ante. Suggested dimensions: novelty, me
 Select at most a TOP 3 for deep dives. Identify the single preferred minimal candidate if possible.
 
 Use `RESEARCH_SEARCH_REGISTER.md` or equivalent records to merge candidates with the same player/objective-control-timing-information-constraint-feedback structure. The 8–12 candidate guidance does not require inventing weak mechanisms; a larger raw bank is optional and budgeted. Scores prioritize attention and do not certify novelty.
+
+For each top-ranked candidate include two independently justified fields: `MATHEMATICS: HYPOTHESIS / COMPUTATION-ONLY / MATHEMATICALLY VERIFIED` and `NOVELTY: UNSCREENED / PRE-SCREEN SURVIVED / UNRESOLVED / ABSORBED`. The `MATHEMATICALLY VERIFIED` label requires actual supporting evidence, not an anticipated Stage-4 proof; `EVIDENCE-SCOPED NOVELTY CERTIFIED` is reserved for Stage 6. Add a cheap **application-neutral absorption attempt** or falsifier for each claimed new theorem before choosing the model. A full game cannot be killed solely because separately known ingredients exist.
 
 For serious candidates draft a short contribution memo: closest result, hypothesized difference, economic consequence, evidence maturity/limits, strongest objection, and next bounded investment. For an institution-specific claim, test conceptually whether removing/replacing the alleged driver changes the predicted result; an unchanged result limits the institution-specific claim, not automatically every contribution route.
 
@@ -142,6 +144,7 @@ Include the structurally deduplicated candidate/disposition register, budget, an
 8. Nested benchmark skeletons, where applicable
 9. Candidate propositions to kill-test
 10. Verdict and next-stage contract
+10a. Per-claim mathematics/novelty maturity and strongest unresolved parent-theorem falsifier
 11. Question-first opportunity comparison and source gap IDs; explicit nonauthorization of deferred future projects
 
 ## 13. Final verdict
