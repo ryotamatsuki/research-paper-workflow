@@ -108,6 +108,8 @@ Use `checklists/FRONTIER_OPPORTUNITY_CHECKLIST.md`; report reading depths/cutoff
 
 For every surviving contribution, provide a closest-paper comparison at model/proposition level and state evidentiary limits.
 
+Report mathematics and novelty as independent dimensions. Only after a proposition survives independent Stage-4A mathematical review and Stage-6 source-specific direct-specialization testing may its novelty be labeled `EVIDENCE-SCOPED NOVELTY CERTIFIED`, with source cutoff, reading depth, exact theorem identity, and residual uncertainty. This is never a universal proof of priority. A solved formula, negative search result, or Stage-2 `GO` cannot justify the label. Compare the Stage-2 predicted distinction with the *actual* theorem; if the novelty rationale collapses, record an explicit regression and downgrade all downstream claims. Apply `checklists/PREMATURE_NOVELTY_CLAIM_CHECKLIST.md`.
+
 An absorption verdict for a strategic architecture requires direct model-level support. Component-by-component citations alone are insufficient. Conversely, a novelty PASS requires an explicit explanation of why the strongest plausible **general parent theorem** does not absorb the headline result.
 
 ## 8. Verification protocol
@@ -165,7 +167,8 @@ Return `NO-GO` if every main result is exact prior art, structurally very close,
 5. Parent-class / theorem-absorption map
 6. Whole-game absorption verdict
 7. Nested-benchmark result comparison, where applicable
-8. Prior-art classification for each result
+8. Prior-art classification for each result, with separately stated `MATHEMATICS` and `NOVELTY` maturity, source cutoff and evidence scope
+8a. Stage-2 provisional-claim audit and false-positive regression entry if necessary
 9. Killed claims
 10. Surviving claim set
 11. Revised contribution statement
