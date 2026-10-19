@@ -19,6 +19,16 @@ Canonical hierarchy:
 
 `GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → stage templates → checklists → examples.
 
+## Unreleased: prevent premature novelty claims (prospective v2.10 minor-class)
+
+A Stage-2 `GO` means a research question survived a **provisional** prior-art screen, not that the paper has discovered a new economics theorem. Before model investment, Stage 2 must attempt a cheap **application-neutral parent-model/theorem absorption** (for example, circular-product buyback may reduce to monopsony and supplier outside-option manipulation) and record the actual source reading depth and any decisive unavailable proof. A verified formula is evidence of mathematics, not evidence of novelty. At Stage 6 the **actual certified proposition** undergoes a full direct-mapping review; only evidence-bounded, explicitly scoped non-absorption may be recorded as a novelty certificate.
+
+- [New guard checklist](checklists/PREMATURE_NOVELTY_CLAIM_CHECKLIST.md)
+- [False-positive novelty regression cases](examples/PREMATURE_NOVELTY_REGRESSION.md)
+- [Change rationale and compatibility classification](docs/PREMATURE_NOVELTY_CLAIM_PREVENTION_2026-10-19.md)
+
+This is unreleased work on a feature branch; **v2.9 remains the latest stable release**, and no v2.10 tag or GitHub Release is implied. Existing Stages, routing, verdict semantics and the separate post-v2.9 result-reversal refinement remain intact.
+
 ## Unreleased: result-reversal / paradox / sharp-boundary discovery (post-v2.9)
 
 A backward-compatible, **MINOR-class** refinement is integrated on `main` but is **not yet a published release**; `v2.9` remains the current stable tag. The existing Stages 2/3 must scan exact predecessor results for economically defensible sign reversals, welfare-ranking reversals, impossibility, surprising comparative statics, and sharply proved validity boundaries, as well as strong robustness. The underlying **economic question may remain unchanged**; a new question or mechanism is not universally required. Stage 4 recovers the predecessor and verifies claimed changes, Stage 6 tests absorption, and Stage 11 repeats the hostile check. No desired-sign engineering or automatic manuscript GO.
