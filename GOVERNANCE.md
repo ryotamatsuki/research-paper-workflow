@@ -140,7 +140,7 @@ Track **separate axes**: mathematical status (`HYPOTHESIS / COMPUTATION-ONLY / M
 
 Stage 2 `CONDITIONAL GO` retains its existing meaning (exactly one material blocker, narrowly specified next-stage contract). If a decisive full text or parent theorem is unavailable and genuinely material, do not issue a theory-novelty PASS. A `NO-GO` for one contribution does not automatically kill a materially distinct research question.
 
-Retain at least one documented **false-positive novelty regression case**. Testing must reject an applied label, a solved quadratic/payoff identity, or a proof of time inconsistency as sufficient evidence of independent theorem novelty; it must also protect genuinely new complete-game interactions from being rejected merely because their components are known separately.
+Apply `checklists/PREMATURE_NOVELTY_CLAIM_CHECKLIST.md` at the pre-model and re-kill checkpoints. Retain at least one documented **false-positive novelty regression case**. Testing must reject an applied label, a solved quadratic/payoff identity, or a proof of time inconsistency as sufficient evidence of independent theorem novelty; it must also protect genuinely new complete-game interactions from being rejected merely because their components are known separately.
 
 This is a prospective, unreleased post-v2.9 **MINOR-class** refinement of existing Stages 0/2/3/6. It does not change Stage routing, canonical verdict semantics, source-of-authority hierarchy, or the stable v2.9 tag.
 
