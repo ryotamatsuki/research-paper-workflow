@@ -124,6 +124,26 @@ At minimum distinguish:
 
 If a plausible parent theorem remains untested at the mapping/specialization level, a theorem-novelty claim fails closed. Search failure or absence of the same application-specific formula is not positive novelty evidence.
 
+### 2.12A Premature novelty-claim prevention (pre-model and post-proof)
+
+A mathematically derived or computationally reproduced proposition is not thereby novel. A Stage-0/2/3 mechanism candidate is not an independently established economic discovery, and a Stage-2 `GO` is not a theorem-novelty certificate. A Stage-4A mathematical certificate has **no novelty force**. Stage 6 may certify only an evidence-scoped, proposition-specific non-absorption verdict after actual mathematical results are checked against the closest model classes; it cannot guarantee global priority.
+
+For any serious theoretical novelty claim, **before Stage-4 model investment**:
+
+1. Name the closest known result, its source/version and reading depth; identify at least one fatal parent-class objection and the economically meaningful proposed difference.
+2. Strip sector-specific nouns and sketch the smallest application-neutral strategy/payoff/constraint/commitment structure that is justified *without pretending to have solved the full model*.
+3. Attempt a cheap prior-theorem/model absorption mapping, including relabeling, algebraic elimination, changes of variables and generic procurement/monopsony, durable-goods, mechanism-design or other plausible parent classes.
+4. Record `ABSORBED / APPARENTLY DISTINCT / UNRESOLVED` with evidence. `APPARENTLY DISTINCT` authorizes further testing, not a novelty certificate. Mark any unavailable decisive model/proof as `UNRESOLVED`; do not turn inaccessible evidence into positive novelty.
+5. Carry the objection and mapping into Stage 3 and re-run full canonicalization at Stage 4 and exact theorem absorption at Stage 6. If an apparent finding collapses, log a novelty-regression event and correct downstream claims immediately.
+
+Track **separate axes**: mathematical status (`HYPOTHESIS / COMPUTATION-ONLY / MATHEMATICALLY VERIFIED`) and novelty status (`UNSCREENED / PRE-SCREEN SURVIVED / UNRESOLVED / ABSORBED / EVIDENCE-SCOPED NOVELTY CERTIFIED`). The last novelty label is reserved for Stage 6, names the surveyed literature cutoff and claim scope, and does not mean every paper in existence has been ruled out. Do not collapse the axes into a single optimistic progress status.
+
+Stage 2 `CONDITIONAL GO` retains its existing meaning (exactly one material blocker, narrowly specified next-stage contract). If a decisive full text or parent theorem is unavailable and genuinely material, do not issue a theory-novelty PASS. A `NO-GO` for one contribution does not automatically kill a materially distinct research question.
+
+Retain at least one documented **false-positive novelty regression case**. Testing must reject an applied label, a solved quadratic/payoff identity, or a proof of time inconsistency as sufficient evidence of independent theorem novelty; it must also protect genuinely new complete-game interactions from being rejected merely because their components are known separately.
+
+This is a prospective, unreleased post-v2.9 **MINOR-class** refinement of existing Stages 0/2/3/6. It does not change Stage routing, canonical verdict semantics, source-of-authority hierarchy, or the stable v2.9 tag.
+
 ### 2.13 Journal candidate universes precede journal ranking
 
 Stage 12 must construct a broad candidate-journal universe from the **actual surviving paper** before journals are ranked or a preferred target is defended.
