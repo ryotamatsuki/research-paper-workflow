@@ -2,6 +2,20 @@
 
 Apply this checklist to each candidate contribution separately. A project may survive while individual claims are killed.
 
+## Pre-model claim restraint (Stages 0/2/3; never a full Stage-6 certificate)
+
+- [ ] Candidate headline *economic result* stated separately from the application/sector.
+- [ ] Strongest relevant generic parent model or theorem named, with source/version and reading depth.
+- [ ] Sector-specific labels stripped; rough strategy/payoff/commitment/constraint fingerprint recorded without claiming a solved canonical model.
+- [ ] At least one cheap parent-model absorption mapping or known-theorem corollary test attempted **before** investing in Stage 4.
+- [ ] Decisive unavailable original/appendix explicitly `UNRESOLVED`; lack of access not counted as novelty evidence.
+- [ ] Proposed novelty unit marked `ABSORBED / APPARENTLY DISTINCT / UNRESOLVED` and nearest falsifier stated.
+- [ ] Math and novelty status reported independently; Stage-2 `GO` does not authorize `novel theorem established` language.
+- [ ] A superficially novel combination is not rejected merely because its components are separately known; test full-game interaction where applicable.
+- [ ] If a parent theorem is found late, false-positive novelty claim logged as a regression and affected claims retracted.
+
+See `checklists/PREMATURE_NOVELTY_CLAIM_CHECKLIST.md` and `examples/PREMATURE_NOVELTY_REGRESSION.md`.
+
 ## Research-frontier use of rejected novelty (Stages 2/6)
 
 - [ ] Strongest absorbed result mapped to its original paper's *actual theorem* and assumed limitations.
