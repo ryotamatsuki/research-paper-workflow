@@ -31,6 +31,17 @@ Also record:
 
 Page counts and section-arrival milestones are diagnostics, not theorem-like constraints. A manuscript does not fail merely because it exceeds a generic benchmark; it fails when its length or ordering imposes avoidable reader cost or violates the actual journal/article-type contract.
 
+## Editorial argument-quality gate (companion)
+
+Apply `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md` in addition to this **reader-cost** checklist. All required elements may be present and the manuscript may be concise while the economic inference is still obscured. The companion independently tests whether a cold reader can paraphrase the puzzle, the nontrivial result, countervailing mechanisms and scope.
+
+- Complete section headings **do not** establish that the reader encounters the economic question before model machinery.
+- Correct proposition algebra **does not** establish that the post-result prose explains the economic meaning of opposing effects and their dominance restrictions.
+- Accurate institutional case summaries **do not** establish that Discussion leads with the new economic lesson.
+- A Stage-11 editor's general praise **does not** substitute for first-pass paraphrases, exact passage evidence and a specific communication-only rejection attempt.
+
+Stage 10 supplies the published-paper writing map, Stage 11 the separate editorial referee report, Stage 13 before/after and retesting evidence, Stage 14 final-PDF consistency. A material untested editorial defect cannot be passed with this streamlining checklist alone.
+
 ## 2. Introduction compression test
 
 The Introduction should answer, with minimal search cost:
