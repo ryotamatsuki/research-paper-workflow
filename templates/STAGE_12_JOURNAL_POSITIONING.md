@@ -107,10 +107,6 @@ Inspect:
 
 If the journal would require a materially stronger substantive claim than the certificate supports, downgrade or reject the **journal candidate**. Do not silently strengthen the paper. A separately authorized new research program must reopen the earliest affected research stage and repeat downstream certification.
 
-### 6.3 Refresh Stage-10 published writing exemplars for the selected target
-
-Apply the journal-specific portion of `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md`. Read the Stage-10 `EDITORIAL_EXEMPLAR_MAP` and Stage-11 `EDITORIAL_REFEREE_REPORT`, then assess whether the exemplars' **writing and argument structure** matches the actual journal and article type. Inspect recent relevant published full texts where accessible, keeping the source title, section, DOI/URL and access evidence; replace any unverified or inapplicable exemplar, or document why no suitable substitute exists. Provide a bounded Stage-13 instruction for the problem-first opening, immediate post-result intuition and Discussion. Distinguish an article's rhetorical move from its mathematical result and do not promote publication precedent into novelty, acceptance probability or a new scientific claim. This task does not authorize substantive rewriting at Stage 12.
-
 For the selected primary journal, create an initial **Journal Requirements Ledger** using `checklists/JOURNAL_REQUIREMENTS_CHECKLIST.md`. At minimum record, from current official sources where publicly available:
 
 - article type and manuscript category;
@@ -135,6 +131,11 @@ Organize candidates as appropriate into:
 - `Safety net`
 
 If providing acceptance probabilities, distinguish official statistics from subjective conditional estimates.
+
+### 6.3 Refresh Stage-10 published writing exemplars for the selected target
+
+Apply the journal-specific portion of `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md`. Read the Stage-10 `EDITORIAL_EXEMPLAR_MAP` and Stage-11 `EDITORIAL_REFEREE_REPORT`, then assess whether the exemplars' **writing and argument structure** matches the actual journal and article type. Inspect recent relevant published full texts where accessible, keeping the source title, section, DOI/URL and access evidence; replace any unverified or inapplicable exemplar, or document why no suitable substitute exists. Provide a bounded Stage-13 instruction for the problem-first opening, immediate post-result intuition and Discussion. Distinguish an article's rhetorical move from its mathematical result and do not promote publication precedent into novelty, acceptance probability or a new scientific claim. This task does not authorize substantive rewriting at Stage 12.
+
 
 ## 7. Evidence requirements
 
