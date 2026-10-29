@@ -7,6 +7,7 @@ This checklist must be used together with:
 - [`JOURNAL_REQUIREMENTS_CHECKLIST.md`](JOURNAL_REQUIREMENTS_CHECKLIST.md) for current journal/portal rules and evidence hierarchy;
 - [`FIGURE_TABLE_CHECKLIST.md`](FIGURE_TABLE_CHECKLIST.md) for figure/table design, reproducibility, artwork, and accessibility;
 - [`EXPOSITION_STREAMLINING_CHECKLIST.md`](EXPOSITION_STREAMLINING_CHECKLIST.md) for Stage-13 streamlining evidence and Stage-14 exposition verification.
+- [`EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md`](EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md) for source-verified writing exemplars, independent communication-only referee attacks, and before/after retest evidence.
 
 A material journal requirement is not closed merely because a box is checked. The production repository must preserve a current `JOURNAL_REQUIREMENTS_LEDGER.md` or equivalent with source, access date, interpretation, affected artifact/portal field, and verification status.
 
