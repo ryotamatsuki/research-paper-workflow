@@ -97,6 +97,22 @@ Independently consult the Stage-6 memo and Stage-7.5 contribution-completeness a
 
 Assign each concern `FATAL / MAJOR BUT FIXABLE / MINOR`, plus `EARLY-GATE MISS / POST-FREEZE PRESENTATION / JOURNAL-SPECIFIC FIT`. If a supposedly closed pre-freeze essential question was never genuinely answered, record **CONTRIBUTION COMPLETENESS REGRESSION** and return to Stage 6/7/7.5 or earlier as warranted. Merely adding a policy-discussion paragraph cannot certify a missing mechanism. Conversely, a pure theorem, correction, or scoped diagnostic result may be complete without a policy instrument if the editor-facing value case survives.
 
+### Independent editorial-referee attack — communication, not theorem novelty
+
+Apply `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md` and preserve `EDITORIAL_REFEREE_REPORT.md` or equivalent. **Do not let the same drafting narrative act as the sole basis for the editorial PASS.** Assign a distinct critical reading pass; where all available reviewers are AI, disclose that the pass is an AI simulation, not external human review.
+
+Read the actual manuscript in order **before** consulting the Stage-10 exemplar map, author's intended summary, or proof-production notes. From that first pass, record an independent specialist-reader paraphrase of:
+
+1. the economic question, decision-maker and relevance from the opening paragraphs;
+2. the **new inference** and why it is not merely known screening/externality arithmetic;
+3. the immediate post-headline-result economic intuition, including the countervailing effects, endogenous feedback and role of any lower/upper primitive restrictions;
+4. the exact conditional scope: what is a derivative versus level, conditional welfare cost ceiling versus equilibrium choice, numerical witness versus theorem or causal evidence, as relevant;
+5. what the Discussion teaches *before* listing institutions, and its explicit applicability limits.
+
+Attach paragraph/page references and compare the paraphrases with the **frozen claim ledger**. Then write an independently reasoned **strongest communication-only desk-reject paragraph**, even if the scientific referee finds no mathematical defect. Cite the missing or badly placed explanation; do not conflate a real novelty/importance objection with an exposition-only attack. Test the relevant published-paper writing exemplars by **source-verified location and rhetorical structure** (not by imitating their scientific conclusions).
+
+For each defect record severity, affected manuscript text, bounded rewriting instruction, scientific-claim guardrail, earliest repair Stage, and retest condition. **An unsupported “readable,” “substantially clearer,” or “all components present” is `UNRESOLVED`, not an editorial PASS.** Unresolved material editorial `MAJOR BUT FIXABLE` blocks unconditional Stage-11 GO; route prose/architecture fixes through Stage 10/13 and scientific claim failures to their original certification Stage. The stronger mathematical, theorem-absorption, equilibrium and evidence attacks remain mandatory and independent.
+
 ### Known-model-in-disguise regression attack
 
 For every theory manuscript whose Stage-4 canonical-form screen identified at least one plausible standard parent class:
@@ -223,6 +239,8 @@ The regression record should also state which earlier certification question or 
 
 ## 11. Success criteria
 
+The separate editorial-referee report has a documented cold-reader paraphrase, exact passages, strongest communication-only desk-reject test and explicit resolution/routing for each material issue. No unresolved material editorial objection is labeled `MINOR` merely because the paper is correct. The source-verified writing exemplars are checked without treating journal examples as a novelty certificate.
+
 No unresolved fatal attack on the main contribution; major fixes are bounded and do not require uncontrolled theory drift. The reviewer must have run and logged the independent editor-facing question-completeness attack and resolved any essential problem-question omission.
 
 Candidate-deviation validity, equilibrium-set characterization at the claimed scope, continuation/globality, welfare-selection robustness, theorem scope, and the frozen portability classification must independently survive the hostile audit where applicable.
@@ -250,11 +268,12 @@ Return to the earliest stage if novelty, mechanism identification, mathematical 
 15. Solver-failure/unresolved-continuation ledger, where applicable
 16. Evidence ledger for material PASS states
 17. Certification-regression ledger
-18. Consolidated severity table
-19. Required fixes and earliest affected stage
-20. Theory-change implications
-21. Resolved vs unresolved attacks
-22. Verdict and Stage-12 contract
+18. **Independent editorial-referee report** (cold-reader paraphrases, manuscript locations, exemplar comparison, communication-only desk rejection, severity, fix/route and retest)
+19. Consolidated severity table
+20. Required fixes and earliest affected stage
+21. Theory-change implications
+22. Resolved vs unresolved attacks
+23. Verdict and Stage-12 contract
 
 ## 14. Final verdict
 

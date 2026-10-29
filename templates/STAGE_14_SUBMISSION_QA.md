@@ -40,12 +40,13 @@ Do not guess a journal requirement in order to close QA. Material unknowns remai
 
 ## 6. Mandatory tasks
 
-Use all five:
+Use the mandatory checklists below (including the separate editorial argument gate):
 
 - `checklists/SUBMISSION_CHECKLIST.md`;
 - `checklists/JOURNAL_REQUIREMENTS_CHECKLIST.md`;
 - `checklists/FIGURE_TABLE_CHECKLIST.md`;
 - `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md`;
+- `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md`;
 - `checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md`.
 
 At minimum verify:
@@ -82,7 +83,8 @@ At minimum verify:
 30. any material requirement still unresolved after current journal/publisher/portal research is escalated to the journal/editorial office or submission support, and the resulting clarification is preserved and incorporated before full PASS;
 31. the Stage-13 `EXPOSITION_STREAMLINING_REPORT.md` or equivalent evidence is present and consistent with the final manuscript;
 32. the final PDF still passes the Introduction compression, section-purity, reader-arrival, main-text necessity, exhibit-scarcity, and concise/no-new-claims conclusion checks;
-33. journal formatting has not reintroduced avoidable exposition regressions or forced a late substantive rewrite;
+33. the Stage-10 `EDITORIAL_EXEMPLAR_MAP`, Stage-11 `EDITORIAL_REFEREE_REPORT` and Stage-13 `EDITORIAL_REVISION_AUDIT` (or individually identifiable equivalents) correspond to the exact final source/PDF and recorded commit SHA; a critical reader can still identify the question, distinctive conditional inference, immediate post-result mechanism and substantive limitations, with locations;
+33a. journal formatting has not reintroduced avoidable exposition regressions or forced a late substantive rewrite;
 34. the material AI-use/provenance record is reconciled with the final manuscript and supporting artifacts;
 35. research-method AI use (including proof search, code/analysis, adversarial checking, or formalization support) is distinguished from manuscript-preparation use when the operative policy requires different treatment or placement;
 36. each final AI disclosure statement is factually supported by the provenance and verification-actor record; generic language that overstates author verification is removed;
@@ -137,6 +139,9 @@ If a material rule remains unresolved after current journal-specific instruction
 If authenticated portal access is available, perform the portal preflight in Stage 14. If it is not yet available or must occur only at the final submission step, Stage 14 may return only `CONDITIONAL PASS — AUTHENTICATED PORTAL PREFLIGHT REQUIRED`, provided every non-portal item passes and the remaining uncertainty genuinely depends on authenticated access.
 
 ## 10. Kill tests
+
+A material communication-only objection without a bounded repair and independent editorial retest blocks full QA even if the PDF compiles, citations resolve and math/novelty passes. Reopen Stage 13 for prose or Stage 10 for architecture, rather than performing an unreviewed substantive rewrite in QA. New unsupported claims roll back to their scientific Stage.
+
 
 Submission freeze is blocked by:
 

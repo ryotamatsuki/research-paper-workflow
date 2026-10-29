@@ -83,7 +83,7 @@ Paper-specific page landmarks are diagnostic examples only. Current journal inst
 
 ### Figure/Table Architecture
 
-For every headline theorem, comparative static, welfare result, benchmark contrast, robustness result, and scope condition, assign one primary presentation vehicle. For every headline theorem, comparative static, welfare result, benchmark contrast, robustness result, and scope condition, assign one primary presentation vehicle:
+For every headline theorem, comparative static, welfare result, benchmark contrast, robustness result, and scope condition, assign one primary presentation vehicle:
 
 - theorem/proposition;
 - figure;
@@ -112,6 +112,18 @@ Every proposed figure/table must earn its place by materially reducing the reade
 
 A game-timing diagram, conceptual schematic, or mechanism flowchart is optional and should be included only when it reduces genuine cognitive load.
 
+## 6B. Editorial Argument and Published-Paper Writing Exemplars
+
+Apply `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md` independently of the existing exposition architecture and proof-verifiability requirements. Before calling the manuscript ready, preserve `EDITORIAL_EXEMPLAR_MAP.md` or equivalent:
+
+1. Inspect the actual text of 2–3 appropriate **published and accessible** papers where feasible. For each give a stable DOI/URL, year/venue, section or passage inspected, observed **argument structure**, and an adapted move; do not fabricate a full-text reading or treat the examples as proofs of novelty/acceptance.
+2. Map at least three tasks where relevant: (a) **why the economic question matters before mathematical machinery**, (b) **explain the surprising theorem result via opposing effects and the economic function of binding restrictions**, (c) **Discussion begins with the new economic lesson and then maps to institutions/evidence and boundaries**. A short note/correction may document a specific N/A.
+3. Draft a one-paragraph plain-language account of the **new conditional economic inference** and explicitly identify inherited components, analytically proved claims, numerical witnesses, and unresolved instruments/causal interpretation. Map each sentence to the frozen claim register.
+4. Run a first reading-order test before signing off: can a competent reader infer the puzzle, central result and critical scope from the opening, and explain the headline proposition without reverse-engineering equations or relying on the author's chat? Record the observed passages and any ambiguity for Stage 11.
+5. If the target journal is not yet selected, choose evidence-backed provisional *field/article-type* comparators and flag a Stage-12 refresh. Do not retrofit research claims to the preferred venue.
+
+**FAIL / HOLD** if the central inference is buried under model symbols, the theorem intuition is split across unrelated sections without a clear near-result explanation, or institutional descriptions appear before a clearly stated economic lesson with no justified article-type exception. These are editorial defects even when every math and citation test passes. Preserve the question/result locator and exemplar evidence for an independent Stage-11 critic.
+
 ## 7. Evidence requirements
 
 Literature claims must cite verified sources. Institutional claims must retain evidence-level qualifiers. Every quantitative number should be generated or sourced. Every figure/table must be traceable to a verified model object, script, or source.
@@ -139,7 +151,11 @@ Do not declare Stage 10 complete if:
 - a headline result has no explicit exposition vehicle;
 - a visual is necessary to make a central threshold/regime/benchmark result intelligible but remains unimplemented without a documented reason;
 - a figure/table is based on hand-entered or unverified values;
-- a visual communicates a stronger claim than the proposition/proof supports.
+- a visual communicates a stronger claim than the proposition/proof supports;
+- the editorial exemplar map is missing, based on inaccessible articles presented as read, or contains no concrete manuscript adaptation;
+- the opening's economic question/result cannot be recovered without an author explanation;
+- the headline-result intuition fails to identify opposing mechanisms and the role of parameter restrictions when such a decomposition is central;
+- a policy Discussion consists of institutional examples without a distinct economic lesson or verified scope limits.
 
 ## 10. Success criteria
 
@@ -167,7 +183,9 @@ At Stage completion additionally provide:
 9. `EXPOSITION_ARCHITECTURE.md` or equivalent section-role/reader-arrival/main-text necessity record
 10. Figure/Table Architecture map and five-exhibit thought experiment
 11. figure/table generators and verification status
-12. remaining manuscript gaps
+12. `EDITORIAL_EXEMPLAR_MAP.md` or equivalent with inspected references, writing moves, manuscript locations, scope guardrails and provisional-journal status
+13. initial cold-reader contract and exact evidence passages; communication blockers to be attacked at Stage 11
+14. remaining manuscript gaps
 
 ## 13. Final verdict
 

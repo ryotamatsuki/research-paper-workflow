@@ -125,6 +125,20 @@ Cross-document audit:
 - appendix/supplement consistency;
 - title-page/main-manuscript/declaration/metadata consistency for all requirements already verified at Stage 12.
 
+### Editorial argument revision audit — separate from streamlining
+
+Apply `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md`. Reconcile the Stage-10 `EDITORIAL_EXEMPLAR_MAP`, Stage-11 independent `EDITORIAL_REFEREE_REPORT`, and Stage-12 selected-journal comparators. A streamlining PASS proves neither persuasive argument nor a successful critical-reader explanation.
+
+Produce `EDITORIAL_REVISION_AUDIT.md` or equivalent, preserving for every material issue:
+- the exact Stage-11 criticism, original manuscript excerpt/page and severity;
+- a **before/after passage or traceable diff** for the question-first opening, headline-result economic intuition (opposing effects and parameter restrictions), and Discussion's economic lesson → institutions → limits; use reasoned article-type N/A when appropriate;
+- a claim-to-theorem scope check distinguishing levels from derivatives, conditional margins from general equilibria, analytic results from numerical witnesses, and institutional illustration from causal evidence where relevant;
+- preservation of negative results, bibliography evidence and proof-critical bridges;
+- a **second cold-reader paraphrase** of the integrated manuscript, performed without the author's intended explanation and reconciled with its actual text/page;
+- final disposition `EDITORIAL PASS / REVISE — EDITORIAL / UNRESOLVED — EVIDENCE / CERTIFICATION REGRESSION` for each original objection and the reviewer's actual verification role.
+
+All headings present, a shorter Introduction, mathematical correctness, and generic praise cannot independently close these items. The repair belongs at Stage 13, or Stage 10 if architecture is defective; any unproved scientific claim returns to the earliest scientific Stage.
+
 ## 7. Evidence requirements
 
 Every substantive statement must map to a verified theorem, source, or clearly labeled interpretation. Every quantitative figure/table must map to a verified generator or authoritative source and preserve the proven/reportable domain.
@@ -142,6 +156,9 @@ Compare the post-streamlining manuscript against the Stage-10 `EXPOSITION_ARCHIT
 ## 9. Kill tests
 
 Block submission QA if:
+- the `EDITORIAL_REVISION_AUDIT` is missing, consists only of general praise, or lacks original/revised text and an independent retest;
+- a material Stage-11 communication-only objection remains unresolved or the central economic inference is still buried;
+- source exemplars were represented as read without access or their scientific claims were silently imported;
 
 - sections make inconsistent contribution claims;
 - the Introduction oversells a killed result;
@@ -189,7 +206,9 @@ Bounded journal-format/package issues may remain for Stage 14 only when they are
 12. Notation/citation/cross-reference audit
 13. Changes made
 14. Remaining blockers
-15. Verdict and Stage 14 contract
+15. Editorial Revision Audit: source-verified exemplar reconciliation, objection-to-diff map, critical-reader retest and claim-scope preservation
+16. Open/closed editorial findings and earliest affected Stage
+17. Verdict and Stage 14 contract
 
 ## 13. Final verdict
 
@@ -201,6 +220,6 @@ Choose one:
 
 ## 14. Next-stage contract
 
-Stage 14 verifies the complete submission package and **refreshes all material journal requirements from current official sources**. It should not be the first stage at which the project decides whether a central result needs a figure or table, but it is the mandatory stage at which journal-compliance evidence is re-opened, dated, reconciled, and made fail-closed.
+Stage 14 verifies the exact final PDF against the Stage-10 exemplar map, independent Stage-11 editorial attack and Stage-13 before/after retest; material editorial regressions reopen Stage 13/10. Stage 14 also **refreshes all material journal requirements from current official sources**. It should not be the first stage at which the project decides whether a central result needs a figure or table, but it is the mandatory stage at which journal-compliance evidence is re-opened, dated, reconciled, and made fail-closed.
 
 Stage 14 may repair formatting/package defects but should not materially rewrite the theory, contribution, or exposition architecture. A structural exposition failure discovered there normally reopens Stage 13; an architecture-design failure may reopen Stage 10.

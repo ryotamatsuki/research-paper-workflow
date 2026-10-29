@@ -19,6 +19,20 @@ Canonical hierarchy:
 
 `GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → stage templates → checklists → examples.
 
+## Unreleased: independent editorial argument and referee gates (post-v2.9)
+
+A scientifically correct paper may have all the right paragraphs yet still hide the economic puzzle, countervailing mechanisms or precisely bounded contribution. The existing v2.5 exposition streamlining and v2.7 reviewer-verifiability gates remain in force; this refinement requires **evidence of successful communication**, not another heading checklist.
+
+- **Stage 10:** source-verified published-paper writing exemplars for the opening, immediate post-result intuition and Discussion, with a cold-reader contract.
+- **Stage 11:** separate critical editorial-referee report with actual first-pass paraphrases and a communication-only desk-reject attack; praise-only review cannot PASS.
+- **Stage 12:** update exemplar relevance once the target journal is selected.
+- **Stage 13:** before/after revision and retest of the specific editorial defects, guarding theorem scope and negative evidence.
+- **Stage 14:** verify the exact final PDF preserves the editorial result; reroute regressions rather than rewrite late.
+
+See [editorial argument checklist](checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md), [editorial referee report template](templates/EDITORIAL_REFEREE_REPORT.md), [six regression cases](examples/EDITORIAL_ARGUMENT_REGRESSION.md), and [compatibility rationale](docs/EDITORIAL_ARGUMENT_REFINEMENT_2026-10-29.md).
+
+This is an **unreleased MINOR-class candidate**, not a new published version or Git tag. The stable release remains **v2.9**.
+
 ## Unreleased: prevent premature novelty claims (prospective v2.10 minor-class)
 
 A Stage-2 `GO` means a research question survived a **provisional** prior-art screen, not that the paper has discovered a new economics theorem. Before model investment, Stage 2 must attempt a cheap **application-neutral parent-model/theorem absorption** (for example, circular-product buyback may reduce to monopsony and supplier outside-option manipulation) and record the actual source reading depth and any decisive unavailable proof. A verified formula is evidence of mathematics, not evidence of novelty. At Stage 6 the **actual certified proposition** undergoes a full direct-mapping review; only evidence-bounded, explicitly scoped non-absorption may be recorded as a novelty certificate.

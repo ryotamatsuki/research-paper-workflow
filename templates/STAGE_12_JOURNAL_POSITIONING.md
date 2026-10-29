@@ -132,6 +132,11 @@ Organize candidates as appropriate into:
 
 If providing acceptance probabilities, distinguish official statistics from subjective conditional estimates.
 
+### 6.3 Refresh Stage-10 published writing exemplars for the selected target
+
+Apply the journal-specific portion of `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md`. Read the Stage-10 `EDITORIAL_EXEMPLAR_MAP` and Stage-11 `EDITORIAL_REFEREE_REPORT`, then assess whether the exemplars' **writing and argument structure** matches the actual journal and article type. Inspect recent relevant published full texts where accessible, keeping the source title, section, DOI/URL and access evidence; replace any unverified or inapplicable exemplar, or document why no suitable substitute exists. Provide a bounded Stage-13 instruction for the problem-first opening, immediate post-result intuition and Discussion. Distinguish an article's rhetorical move from its mathematical result and do not promote publication precedent into novelty, acceptance probability or a new scientific claim. This task does not authorize substantive rewriting at Stage 12.
+
+
 ## 7. Evidence requirements
 
 Cite current official journal pages for scope/policies and recent journal articles for fit. Label any subjective assessment as such.
@@ -199,6 +204,7 @@ If material journal requirements cannot yet be verified, preserve them as explic
 9. Stretch/fallback/safety options
 10. Desk/referee risk by journal
 11. Required presentation changes only
+11a. Stage-10 editorial exemplar refresh for selected journal: source/section, writing move, adaptation and scope guardrails
 12. Initial Journal Requirements Ledger with source URLs/access dates/statuses
 13. Unverified/authenticated-portal-only requirements carried forward
 14. Submission sequence

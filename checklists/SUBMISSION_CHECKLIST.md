@@ -7,6 +7,7 @@ This checklist must be used together with:
 - [`JOURNAL_REQUIREMENTS_CHECKLIST.md`](JOURNAL_REQUIREMENTS_CHECKLIST.md) for current journal/portal rules and evidence hierarchy;
 - [`FIGURE_TABLE_CHECKLIST.md`](FIGURE_TABLE_CHECKLIST.md) for figure/table design, reproducibility, artwork, and accessibility;
 - [`EXPOSITION_STREAMLINING_CHECKLIST.md`](EXPOSITION_STREAMLINING_CHECKLIST.md) for Stage-13 streamlining evidence and Stage-14 exposition verification.
+- [`EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md`](EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md) for source-verified writing exemplars, independent communication-only referee attacks, and before/after retest evidence.
 
 A material journal requirement is not closed merely because a box is checked. The production repository must preserve a current `JOURNAL_REQUIREMENTS_LEDGER.md` or equivalent with source, access date, interpretation, affected artifact/portal field, and verification status.
 
@@ -75,6 +76,18 @@ A material journal requirement is not closed merely because a box is checked. Th
 - [ ] Appendix/supplement references match
 - [ ] Abstract, introduction, results, discussion, conclusion claims agree
 - [ ] No theory drift from frozen model
+
+## Editorial argument / independent referee integrity
+
+- [ ] Stage-10 `EDITORIAL_EXEMPLAR_MAP.md` (or equivalent) cites accessible published exemplars, the actual inspected section, useful writing move and scientific-scope guardrail
+- [ ] Stage-11 `EDITORIAL_REFEREE_REPORT.md` (or equivalent) records independent first-pass paraphrases, manuscript locations, communication-only desk-reject attack, severity and route
+- [ ] Stage-12 target-journal selection triggered a check of previously provisional writing comparators, without treating the source venue as a novelty or acceptance certificate
+- [ ] Stage-13 `EDITORIAL_REVISION_AUDIT.md` (or equivalent) traces material objections to before/after passages and a repeated cold-reader test, with frozen assumptions and negative evidence preserved
+- [ ] The exact final PDF's opening reveals the puzzle and main inference before avoidable mathematical setup
+- [ ] The central proposition has nearby economic intuition explaining countervailing effects and parameter roles as applicable, not just algebra
+- [ ] Discussion begins with the distinct economic lesson, places examples in their correct illustrative role, and states the model's limits
+- [ ] Each material editorial objection has evidence-bearing closure; a clean build or “substantially clearer” does not suffice
+- [ ] No prose change silently broadens theorem scope, novelty, causality, policy instrument, benchmark or numerical results
 
 ## Exposition / streamlining integrity
 

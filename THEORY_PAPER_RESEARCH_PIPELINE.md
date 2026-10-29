@@ -189,6 +189,18 @@ Use `checklists/PREMATURE_NOVELTY_CLAIM_CHECKLIST.md` together with the existing
 
 Within existing Stages 2/3/4/4A/6/7.5A/11, evaluate **reversal, surprising comparative statics, welfare ranking changes, impossibility, counterexamples and robustness-strengthening** as legitimate contribution routes. Preserve the *same economic question* when the contribution is a substantive refinement of an exact prior theorem; do not force a topic pivot. Reconstruct the predecessor claim on its own domain and compare like with like; require economical assumption changes, a theorem-level falsifier and a search for parent-theorem absorption. No extra Stage or revised GO meaning. Apply `checklists/RESULT_REVERSAL_BOUNDARY_CHECKLIST.md`. This text describes unreleased work on `main`; the latest stable release remains v2.9.
 
+### Unreleased post-v2.9: independent editorial argument-quality gate
+
+This backward-compatible **MINOR-class** refinement addresses a distinct residual after v2.5 streamlining and v2.7 proof verifiability: **an accurate manuscript may contain every required element without communicating its economic inference persuasively**. The lifecycle is `Stage 10 → Stage 11 → Stage 12 comparator refresh → Stage 13 → Stage 14` without adding a Stage or changing verdict semantics.
+
+- **Stage 10:** create a source-grounded `EDITORIAL_EXEMPLAR_MAP` from relevant, accessible published papers; distinguish observed writing technique from subject-matter novelty, theorem scope or journal quality. Identify the intended problem-first opening, immediate post-result intuition, and economic-lesson-first Discussion. Where the target journal is unset, comparator choice is explicitly provisional.
+- **Stage 11:** require a critical editorial-reader pass separate from the scientific referee. Before reading the writer's explanations, record the reader's own interpretation of the puzzle, main conditional result, opposing effects, and scope from the *actual manuscript*. Write a specific strongest **communication-only desk-reject** paragraph and classify defects. Praise without textual evidence is not a PASS.
+- **Stage 12:** once the venue is selected, check whether the provisional examples fit the intended article type and target journal, replacing inaccessible or unsuitable examples with verified ones as needed.
+- **Stage 13:** preserve an `EDITORIAL_REVISION_AUDIT` with before/after changes, criticism addressed, theorem/negative-evidence integrity, and a fresh cold-reader test. A checklist of headings without observed passages cannot pass.
+- **Stage 14:** reconcile the audited prose and gate evidence with the exact final PDF. Late material editorial defects route to Stage 13/10; new unsupported scientific claims route further upstream.
+
+Apply `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md` in parallel with `EXPOSITION_STREAMLINING_CHECKLIST.md` and the existing mathematical/novelty gates. Source examples guide **writing**, not science; never make up inaccessible full texts or borrow their conclusions. See `docs/EDITORIAL_ARGUMENT_REFINEMENT_2026-10-29.md` and `examples/EDITORIAL_ARGUMENT_REGRESSION.md`. This is unreleased work; stable v2.9 is unchanged.
+
 ## 2. Universal stage schema
 
 Every stage-specific prompt, report, or template should include, unless genuinely inapplicable:
@@ -832,6 +844,12 @@ Recommended production artifacts: `EXPOSITION_ARCHITECTURE.md` and, where applic
 
 Paper-specific page landmarks are soft diagnostics only. Current journal/article-type requirements control.
 
+## Editorial writing and cold-reader design gate
+
+Apply `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md` and create an `EDITORIAL_EXEMPLAR_MAP.md` or equivalent before finalizing the Introduction, headline-proposition intuition and Discussion. Inspect 2–3 relevant **accessible published** sources where feasible (author/venue/date/DOI, inspected section and writing move); the exact number is not a quota, and inaccessible text is `UNVERIFIED`. Map the problem-first opening, the explanation of countervailing effects and primitive restrictions immediately after the result, and the economic-lesson → application → limitation sequence where appropriate for the article type.
+
+Record an initial **cold-reader contract**: what a specialist should be able to paraphrase from the opening paragraphs, proposition explanation and Discussion without consulting the author, and where each answer can be found. An introduction does not pass simply because it eventually contains all required concepts. Choose provisional field/article-type comparators when the journal has not yet been selected; Stage 12 revisits relevance. Preserve precise mathematical scope and separate derivative signs from levels, conditional margins from equilibrium/aggregate welfare and numerical examples from theorems where applicable.
+
 ## Figure/Table Architecture Gate
 
 Assign every headline theorem, comparative static, welfare result, benchmark contrast, robustness result, and scope condition one primary vehicle: theorem/proposition, figure, table, numerical illustration, or concise prose.
@@ -889,6 +907,8 @@ For every theory manuscript whose Stage-4 canonicalization identified a plausibl
 
 Where formal verification is applicable, inspect the paper-claim ↔ formal-theorem map and explicit non-formalized scope. Do not infer that a green Lean/Coq/Isabelle/etc. build certifies unencoded demand, equilibrium, or case-partition facts.
 
+Add a **separate communication-only editorial referee** under `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md`. Require first-pass paraphrases and exact manuscript locations for (i) opening economic question and stakes, (ii) nontrivial central inference, (iii) two or more opposing mechanisms where applicable and their primitive boundary, (iv) inherited versus new contribution and (v) Discussion's actual economic lesson and limits. The referee must write the strongest plausible communication-only rejection paragraph, distinguishing it from the scientific/novelty rejection. A positive general verdict without these artifacts is an `UNRESOLVED` editorial gate, not PASS. Record `EDITORIAL_REFEREE_REPORT.md` and repair route without replacing the existing hostile mathematical attacks.
+
 Classify attacks as `FATAL`, `MAJOR BUT FIXABLE`, or `MINOR`.
 
 If Stage 11 discovers a failure that Stage 4A or 7.5A should have caught, including a manuscript claim that exceeds the frozen portability classification or suppresses a material negative portability result, record it explicitly as a **certification regression** and route to the earliest affected stage. Do not patch it only in prose. A material change to a formally certified theorem or encoded hypothesis also marks the formal certificate stale.
@@ -920,6 +940,7 @@ Then, for each serious candidate:
 
 - read current aims/scope and recent related papers;
 - compare model sophistication, article type, and contribution style with actual publications;
+- refresh the Stage-10 published-paper **writing exemplars** for the selected journal/article type, checking accessible full-text sections for problem-first openings, result-intuition explanations and Discussion argument structure; log unavailable source evidence, supply Stage-13 instructions, and avoid treating published examples as novelty/acceptance proof;
 - explicitly compare **editorial problem-completeness expectations** in recent relevant publications: is a diagnosis-only result accepted, or does this audience expect mechanism implementation, actionable comparative statics, or empirical validation? Record a specific likely desk-reject objection, not only a novelty or journal-rank label;
 - compare the journal's demonstrated generality/robustness expectations with the Contribution Robustness Certificate rather than assuming that journal rank mechanically determines required theory;
 - estimate desk-reject risk and likely referee objections;
@@ -954,6 +975,8 @@ A later discovery that a material candidate was omitted is a **journal-positioni
 Turn independently correct sections into one coherent argument and reconcile the Stage-10 figure/table architecture with the selected journal.
 
 ## Audit
+
+Apply `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md` as an **editorial argument-quality** gate. Reconcile the Stage-10 writing examples with the journal selected at Stage 12. Require actual before/after passages and a second cold-reader test addressing every material Stage-11 editorial objection. Archive `EDITORIAL_REVISION_AUDIT.md` or an equally identifiable report; do not mark clear prose complete because sections exist or the manuscript is shorter. Keep the scientific claim register, proof-critical bridge equations and negative evidence invariant; substantive defects reopen the relevant scientific gate.
 
 Apply `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md` to the actual integrated manuscript before submission QA. Stage 13 is the primary streamlining gate. For theorem-bearing or technically dense manuscripts, also apply `checklists/REVIEWER_VERIFIABILITY_CHECKLIST.md`; reviewer verifiability is a closure condition, not an optional style preference.
 
@@ -1006,6 +1029,7 @@ Verify the complete submission package, including mathematical artifacts and art
 - when SSRN is an actual destination, current SSRN disclosure-location and bulk/high-volume-submission rules are checked from official sources without manufactured submission spacing or chronology;
 - abstract, highlights, cover letter, manuscript, theorem scope, and any formal-verification claim agree;
 - final PDF is inspected page by page.
+- the final PDF matches the Stage-10 exemplar map, Stage-11 editorial referee report and Stage-13 before/after revision evidence; no material communication-only objection is unresolved, and manuscript changes after the editorial PASS trigger rechecking the affected passage;
 - the final PDF passes the Stage-13 exposition architecture/streamlining audit: Introduction compression, section purity, reader-arrival budget, exhibit scarcity, and concise/no-new-claims conclusion; any structural failure reopens Stage 13 rather than being solved by an unreviewed late rewrite;
 - where reviewer-verifiability auditing applies, the exact final PDF/package preserves definitions, proof boundaries, bridge equations, appendix/supplement cross-references, and computer-assisted/formal mappings needed for a specialist referee to follow the claim → derivation → proof/certificate → conclusion chain.
 

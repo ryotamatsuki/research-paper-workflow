@@ -139,6 +139,20 @@ Apply `THEOREM_CERTIFICATION_CHECKLIST.md` to at least one adversarially selecte
 - [ ] Generality goes beyond renaming industries
 - [ ] Empirical prediction is observable in principle
 
+## Independent editorial communication attacks — separate referee pass
+
+Use `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md` and `templates/EDITORIAL_REFEREE_REPORT.md`. An independent critical-reader *pass* examines the actual manuscript in reading order before seeing the author-provided explanation; if AI performs the critique, state that this is AI simulation, not external human peer review.
+
+- [ ] From opening paragraphs, independently reconstruct the economic question, decision-maker, stakes and why the answer is not obvious; a question introduced much later is challenged.
+- [ ] Express the main new inference in plain economic terms without simply paraphrasing an inequality, while identifying inherited mechanisms and the binding theorem scope.
+- [ ] Explain near the headline result the naive prediction, opposing economic effects, endogenous adjustment and what primitive restrictions make one side dominate where relevant.
+- [ ] Distinguish derivative from level, local from national, conditional margin from actual equilibrium, theorem from numerical witness or empirical effect where relevant.
+- [ ] Discussion states the economic lesson before institutional cases, and cases are not portrayed as causal tests without supporting identification.
+- [ ] Record exact page/paragraph locations and a strongest plausible **communication-only desk-reject paragraph**, separate from substantive novelty/economic-importance objections.
+- [ ] Check the actual accessible published-paper exemplars for writing moves, documenting unavailable full text and avoiding false originality/acceptance inferences.
+- [ ] Assign material issues severity, precise rewrite, theorem/claim guardrail, earliest repair Stage and retest condition; a mathematically correct paper may still have a major editorial flaw.
+- [ ] After revision, require a fresh cold-reader retest and before/after passage evidence; neither an affirming reviewer nor a successful build alone proves closure.
+
 ## Journal / exposition attacks
 
 - [ ] Contribution is sufficient for target journal
@@ -176,3 +190,5 @@ If yes, mark `CERTIFICATION REGRESSION`, preserve the counterexample as workflow
 - [ ] Benchmark language matches the certified planner problem
 - [ ] Any certification regression is explicitly recorded and rolled back
 - [ ] Minor comments are not used to obscure fatal issues
+- [ ] Separate editorial-referee evidence contains first-pass paraphrases, exact text locations, communication-only reject attempt and explicit dispositions
+- [ ] Unresolved material editorial defects are not labeled PASS based on generic praise, a complete table of contents, mathematical correctness or PDF QA
