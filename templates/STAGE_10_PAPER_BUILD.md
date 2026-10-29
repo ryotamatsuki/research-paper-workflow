@@ -83,7 +83,7 @@ Paper-specific page landmarks are diagnostic examples only. Current journal inst
 
 ### Figure/Table Architecture
 
-For every headline theorem, comparative static, welfare result, benchmark contrast, robustness result, and scope condition, assign one primary presentation vehicle. For every headline theorem, comparative static, welfare result, benchmark contrast, robustness result, and scope condition, assign one primary presentation vehicle:
+For every headline theorem, comparative static, welfare result, benchmark contrast, robustness result, and scope condition, assign one primary presentation vehicle:
 
 - theorem/proposition;
 - figure;
