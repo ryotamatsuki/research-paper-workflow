@@ -107,6 +107,10 @@ Inspect:
 
 If the journal would require a materially stronger substantive claim than the certificate supports, downgrade or reject the **journal candidate**. Do not silently strengthen the paper. A separately authorized new research program must reopen the earliest affected research stage and repeat downstream certification.
 
+### 6.3 Refresh Stage-10 published writing exemplars for the selected target
+
+Apply the journal-specific portion of `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md`. Read the Stage-10 `EDITORIAL_EXEMPLAR_MAP` and Stage-11 `EDITORIAL_REFEREE_REPORT`, then assess whether the exemplars' **writing and argument structure** matches the actual journal and article type. Inspect recent relevant published full texts where accessible, keeping the source title, section, DOI/URL and access evidence; replace any unverified or inapplicable exemplar, or document why no suitable substitute exists. Provide a bounded Stage-13 instruction for the problem-first opening, immediate post-result intuition and Discussion. Distinguish an article's rhetorical move from its mathematical result and do not promote publication precedent into novelty, acceptance probability or a new scientific claim. This task does not authorize substantive rewriting at Stage 12.
+
 For the selected primary journal, create an initial **Journal Requirements Ledger** using `checklists/JOURNAL_REQUIREMENTS_CHECKLIST.md`. At minimum record, from current official sources where publicly available:
 
 - article type and manuscript category;
@@ -199,6 +203,7 @@ If material journal requirements cannot yet be verified, preserve them as explic
 9. Stretch/fallback/safety options
 10. Desk/referee risk by journal
 11. Required presentation changes only
+11a. Stage-10 editorial exemplar refresh for selected journal: source/section, writing move, adaptation and scope guardrails
 12. Initial Journal Requirements Ledger with source URLs/access dates/statuses
 13. Unverified/authenticated-portal-only requirements carried forward
 14. Submission sequence
