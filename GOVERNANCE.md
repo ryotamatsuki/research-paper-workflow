@@ -266,6 +266,25 @@ Anchor each opportunity to an **exact predecessor theorem, domain, equilibrium c
 
 Stages 4/4A establish the precise result and attack corners, full equilibria and regimes; Stage 6 checks actual theorem-level novelty; Stage 7.5A certifies claim scope and portability; Stage 11 repeats the hostile pre-existing-theorem and reversed-benchmark attacks. No stage numbering, verdict meanings, routing, author-authorization, or theory-freeze policy changes. Apply `checklists/RESULT_REVERSAL_BOUNDARY_CHECKLIST.md` with the Stage-2/3 source ledger. This is an **unreleased post-v2.9 MINOR-class refinement**, not a published v2.10 tag or release.
 
+### 2.23 Editorial argument quality requires an evidence-bearing independent attack
+
+A technically correct and concise manuscript may still fail to communicate its economic puzzle, distinguishing inference, causal/strategic mechanism, or limiting conditions. Existing exposition-architecture and reviewer-verifiability checks do **not** establish adequate communication merely because the required components are present or the proof is reconstructible.
+
+The editorial-quality lifecycle is `Stage 10 → Stage 11 → Stage 12 journal refresh → Stage 13 → Stage 14`:
+
+- Stage 10 records **source-grounded writing moves** from relevant accessible published papers and an article-type appropriate manuscript adaptation; exemplar comparison is not novelty certification or journal acceptance evidence.
+- Stage 11 conducts an **independent editorial attack** on the actual draft with first-pass reader paraphrases and a communication-only desk-reject case, separately from mathematical/novelty attacks. A distinct AI reviewer is an AI critical pass, not a human referee.
+- Stage 12 refreshes exemplar relevance after journal selection; it does not use preferred writing style to enlarge scientific results or alter the theory freeze.
+- Stage 13 records before/after passages, the defect repaired, theorem/evidence guardrails and a repeated critical-reader test. Stage 14 checks that the final PDF retains that result.
+
+A `GO` cannot be awarded for the editorial portion solely because all required headings exist, the abstract mentions the contribution, a referee says “clearer,” the PDF builds, or citations resolve. An unresolved material editorial defect must be explicitly repaired and retested, not downgraded to MINOR for lack of a mathematical error.
+
+Where the repair affects only sequencing, explanation, or compression, return to Stage 10/13 as appropriate. Where a proposed sentence changes theorem scope, prior-art priority, numerical strength, welfare definition, or policy inference, reopen the earliest affected scientific Stage. Respect existing `GO / CONDITIONAL GO / NO-GO` meanings and one-diagnosed-fix change control.
+
+Use `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md` alongside existing exposition and referee checklists. Record `EDITORIAL_EXEMPLAR_MAP`, `EDITORIAL_REFEREE_REPORT`, and `EDITORIAL_REVISION_AUDIT` or equivalently identified evidence.
+
+---
+
 ## 3. Repository change policy
 
 ### 3.1 Main branch
