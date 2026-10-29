@@ -940,6 +940,7 @@ Then, for each serious candidate:
 
 - read current aims/scope and recent related papers;
 - compare model sophistication, article type, and contribution style with actual publications;
+- refresh the Stage-10 published-paper **writing exemplars** for the selected journal/article type, checking accessible full-text sections for problem-first openings, result-intuition explanations and Discussion argument structure; log unavailable source evidence, supply Stage-13 instructions, and avoid treating published examples as novelty/acceptance proof;
 - explicitly compare **editorial problem-completeness expectations** in recent relevant publications: is a diagnosis-only result accepted, or does this audience expect mechanism implementation, actionable comparative statics, or empirical validation? Record a specific likely desk-reject objection, not only a novelty or journal-rank label;
 - compare the journal's demonstrated generality/robustness expectations with the Contribution Robustness Certificate rather than assuming that journal rank mechanically determines required theory;
 - estimate desk-reject risk and likely referee objections;
