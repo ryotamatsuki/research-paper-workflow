@@ -1,4 +1,37 @@
-# Theory Discovery Framework (TDF) v3.0
+# Theory Discovery Framework (TDF)
+
+## v4.0 — Official practical-use baseline (frozen 2026-11-16)
+
+**Status: FROZEN FOR PRACTICAL USE.** TDF v4.0 supersedes v3.0 as the default optional research-discovery companion. The author approved its adoption on 2026-11-16. This is an operational baseline, not a certification of predictive effectiveness, theorem correctness or novelty.
+
+### Start here
+
+- [TDF v4.0 Master Prompt](v4/TDF_Master_Prompt_v4.md) — canonical operational entry point.
+- [TDF v4.0 Prompt Library](v4/TDF_Prompt_Library_v4.md) — reusable discovery and challenge prompts.
+- [TDF v4.0 Theory Construction Pattern Catalog](v4/Theory_Construction_Pattern_Catalog_v4.md) — the model-construction toolbox, distinct from creative problem discovery.
+
+The full v4.0 source package, including the historical research database, case analysis, research report and validation records, is retained in the author's library. This public repository mirrors only the three operational source documents listed above; it is not a claim that the entire package has been publicly imported.
+
+### Operational rule
+
+1. Begin with a research theme and the author's observations.
+2. Reconstruct existing explanations; apply creative questioning to identify an unexplained contrast. Do not start by mechanically applying a model-construction pattern.
+3. Produce and critically challenge research questions, using early reduction/parent-theory checks and allowing HOLD when evidence is inadequate. Separate question quality, mathematical validity, novelty and economic significance.
+4. Develop a minimal discriminating comparison or model only after choosing a question. Preserve the question when a particular model is absorbed, if a meaningful unexplained contrast remains.
+5. Obtain the author's selection before handing off to [Stage 0](../templates/STAGE_00_IDEA_INTAKE.md).
+
+TDF is optional: a clear research question may enter Stage 0 directly. The [canonical pipeline](../THEORY_PAPER_RESEARCH_PIPELINE.md) and [governance](../GOVERNANCE.md) take precedence. TDF v4.0 is independent of the pipeline's version and does not modify its stages, verdicts, routing, certification gates, release tags or theorem-freeze requirements.
+
+### Evidence boundary and change control
+
+Historical reconstruction, pilot evaluations and regression tests provide preliminary evidence only. Predictive ability to discover genuinely unknown or epoch-making theories has not been demonstrated. Do not treat a TDF output as a mathematical or novelty certificate. Maintain records of practical applications, failed hypotheses, absorption findings and useful questions. Preserve this baseline without silent changes; documented defects or evidence from actual use may justify an explicitly reviewed future revision. No routine further redesign is required. Keep unpublished project ideas and detailed validation material private.
+
+---
+
+## Historical reference — v3.0 (superseded for default use)
+
+The following original v3.0 README text is retained as a historical record; its operational-authority statements refer to v3.0 at the time of import, not the current default.
+
 
 Optional research-idea discovery/deepening companion before Stage 0.
 
