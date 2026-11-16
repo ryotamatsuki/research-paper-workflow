@@ -99,7 +99,7 @@ Assign each concern `FATAL / MAJOR BUT FIXABLE / MINOR`, plus `EARLY-GATE MISS /
 
 ### Independent exemplary-paper benchmark attack
 
-After the cold-reader first pass, use the Stage-10A source register and blueprint to compare the actual Stage-10B manuscript with selected exemplars on each applicable rubric dimension: structure, prose, proof economy/bridge visibility, economic intuition, contribution framing, and exhibits, calibrated to article type. Attach exact source and draft locations, strongest specific weakness, justified deviations, severity and retest. Unresolved material defects block GO; missing benchmark/blueprint returns to Stage 10A, writing defects to 10B/13, scientific defects to original gates. No score or prestigious venue substitutes for substantive assessment.
+After the cold-reader first pass, use the Stage-10A source register and blueprint to compare the actual Stage-10B manuscript with selected exemplars on each applicable rubric dimension: structure, prose, proof economy/bridge visibility, economic intuition, contribution framing, and exhibits, calibrated to article type. Attach exact source and draft locations, strongest specific weakness, justified deviations, severity and retest. Independently stress-test the integrated narrative, notation, transitions, theorem hierarchy, proof bridges and figure allocation; a strong local technique cannot compensate for an incoherent paper. Unresolved material defects block GO; missing benchmark/blueprint returns to Stage 10A, writing defects to 10B/13, scientific defects to original gates. No score or prestigious venue substitutes for substantive assessment.
 
 ### Independent editorial-referee attack — communication, not theorem novelty
 

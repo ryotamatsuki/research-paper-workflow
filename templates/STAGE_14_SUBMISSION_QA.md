@@ -231,3 +231,5 @@ Stage 15 records an immutable submission state and, where necessary, completes t
 No substantive change is allowed between QA pass and freeze. Final figure/table outputs and generators used for the submission must be part of the frozen provenance.
 
 If the authenticated portal reveals a new or conflicting operative requirement, update the package under the evidence hierarchy above, rerun the affected Stage-14 checks, and create a new validated freeze rather than silently altering the already audited package.
+### Exemplar synthesis final verification
+Check the exact final PDF and source SHA against the resolved role-selection matrix, Blueprint and Stage-13 coherence retest. Reopen Stage 10A for selection/architecture deficiencies, Stage 10B/13 for implementation regressions, or the earliest scientific gate for substantive changes. Do not substitute a stylistic similarity score for evidence.

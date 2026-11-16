@@ -15,8 +15,9 @@ Use `PASS`, `REVISE`, `UNRESOLVED`, or `NOT APPLICABLE — REASON` for each mate
 
 ## A. Real-paper writing exemplar gate (Stage 10A; implemented 10B; refreshed Stage 12/13)
 
-- [ ] Record **3–5 real, relevant, full-text-inspected published papers** by default, with one primary exemplar and complementary roles; justify any smaller set after bounded search and coverage audit. Identify author, title, venue, year, DOI/permanent URL, inspected location, version and actual access/read depth.
+- [ ] Record **3–5 real, relevant, full-text-inspected published papers** by default, assigned to complementary writing roles; an overall anchor is optional; justify any smaller set after bounded search and coverage audit. Identify author, title, venue, year, DOI/permanent URL, inspected location, version and actual access/read depth.
 - [ ] Use distinct exemplars for **problem-first Introduction**, **post-theorem economic intuition**, and **Discussion/policy interpretation** where available. One paper can fill multiple roles when justified; no fixed count if a meaningful comparator is unavailable.
+- [ ] Compare source-located techniques role by role, choose and justify the best combination (not the highest total score), and audit narrative, terminology, proof sequencing and transitions across the integrated article. Log in the role-selection matrix and Blueprint. No overall anchor is required.
 - [ ] Compare the **rhetorical/argument structure**, not only mathematical model, publication rank, topic, or reference count.
 - [ ] For each role record **actual observed sequencing**: economic problem → missing inference → research question → central result; expected sign → countervailing channels → condition; economic lesson → practical mapping → unresolved limits, **only when those steps are actually in the paper**.
 - [ ] State the precise move to adopt and why it fits the article's certified contribution; state what **must not** be copied (empirical causal strength, welfare claim, policy recommendation, result generality, institution-specific evidence).
