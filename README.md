@@ -10,6 +10,10 @@ The canonical workflow is designed for projects requiring rigorous literature ma
 
 Every stage records `GO`, `CONDITIONAL GO`, or `NO-GO`. A later stage may invalidate an earlier `GO`.
 
+## Optional theory discovery (TDF v3.0)
+
+For a broad research topic or a stalled idea, use the [Theory Discovery Framework companion](theory-discovery/README.md) to explore alternative explanations before Stage 0. The [standalone prompt](theory-discovery/MASTER_PROMPT_RECONSTRUCTED.md) is an explicitly reconstructed interim entrypoint; import of the original v3.0 deliverables is pending. The author chooses whether to proceed to Stage 0. TDF is optional, cannot certify novelty or mathematics, and does not change canonical stages, gates, verdicts, routing, freeze rules, or the stable workflow release.
+
 ## Canonical documents
 
 - [`GOVERNANCE.md`](GOVERNANCE.md) — repository governance, evidence standards, routing, rollback, certification independence, formal-verification policy, and freeze policy.
