@@ -23,6 +23,12 @@ Canonical hierarchy:
 
 `GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → stage templates → checklists → examples.
 
+## Unreleased: model-appropriate equilibrium concepts and completeness (post-v2.9)
+
+A backward-compatible **MINOR-class** refinement strengthens Stages 1/3/4/4A/7/7.5A/8. Specify the information structure and timing, select and justify the equilibrium concept and strategy class, and solve the declared equilibrium correspondence with existence, necessity/sufficiency and exclusion of additional equilibria as applicable. Use backward induction for finite sequential games wherever applicable; treat mixed/behavioral strategies, beliefs and indifference when relevant. A pure-strategy or selected-equilibrium result is not an unrestricted equilibrium theorem. Material unresolved continuations and unjustified selection-sensitive claims cannot pass the corresponding gate.
+
+See [equilibrium-analysis and continuation checklist](checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md) and [theorem certification checklist](checklists/THEOREM_CERTIFICATION_CHECKLIST.md). Stable v2.9 and the existing stages, canonical verdicts and routing remain unchanged.
+
 ## Unreleased: independent editorial argument and referee gates (post-v2.9)
 
 A scientifically correct paper may have all the right paragraphs yet still hide the economic puzzle, countervailing mechanisms or precisely bounded contribution. The existing v2.5 exposition streamlining and v2.7 reviewer-verifiability gates remain in force; this refinement requires **evidence of successful communication**, not another heading checklist.
