@@ -127,6 +127,8 @@ Cross-document audit:
 
 ### Editorial argument revision audit — separate from streamlining
 
+Reconcile the Stage-10A blueprint/register, Stage-10B adoption trace, Stage-11 benchmark objections and Stage-12 refresh. Retest each material benchmark deficit with exact before/after locations; do not discard essential proof or scope to mimic an exemplar. Missing benchmark evidence returns to 10A.
+
 Apply `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md`. Reconcile the Stage-10 `EDITORIAL_EXEMPLAR_MAP`, Stage-11 independent `EDITORIAL_REFEREE_REPORT`, and Stage-12 selected-journal comparators. A streamlining PASS proves neither persuasive argument nor a successful critical-reader explanation.
 
 Produce `EDITORIAL_REVISION_AUDIT.md` or equivalent, preserving for every material issue:

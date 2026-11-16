@@ -97,6 +97,10 @@ Independently consult the Stage-6 memo and Stage-7.5 contribution-completeness a
 
 Assign each concern `FATAL / MAJOR BUT FIXABLE / MINOR`, plus `EARLY-GATE MISS / POST-FREEZE PRESENTATION / JOURNAL-SPECIFIC FIT`. If a supposedly closed pre-freeze essential question was never genuinely answered, record **CONTRIBUTION COMPLETENESS REGRESSION** and return to Stage 6/7/7.5 or earlier as warranted. Merely adding a policy-discussion paragraph cannot certify a missing mechanism. Conversely, a pure theorem, correction, or scoped diagnostic result may be complete without a policy instrument if the editor-facing value case survives.
 
+### Independent exemplary-paper benchmark attack
+
+After the cold-reader first pass, use the Stage-10A source register and blueprint to compare the actual Stage-10B manuscript with selected exemplars on each applicable rubric dimension: structure, prose, proof economy/bridge visibility, economic intuition, contribution framing, and exhibits, calibrated to article type. Attach exact source and draft locations, strongest specific weakness, justified deviations, severity and retest. Unresolved material defects block GO; missing benchmark/blueprint returns to Stage 10A, writing defects to 10B/13, scientific defects to original gates. No score or prestigious venue substitutes for substantive assessment.
+
 ### Independent editorial-referee attack — communication, not theorem novelty
 
 Apply `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md` and preserve `EDITORIAL_REFEREE_REPORT.md` or equivalent. **Do not let the same drafting narrative act as the sole basis for the editorial PASS.** Assign a distinct critical reading pass; where all available reviewers are AI, disclose that the pass is an AI simulation, not external human review.

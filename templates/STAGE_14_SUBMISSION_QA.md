@@ -2,6 +2,10 @@
 
 > Canonical authority: `GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → this template.
 
+## Mandatory benchmark trace
+
+Verify the exact final PDF preserves Stage-10A blueprint/source map, Stage-10B implementation, Stage-11 benchmark attack and Stage-13 retest, as refreshed at Stage 12. Missing source evidence routes to 10A, architecture/prose regression to 10B/13, and scientific failure to its original gate; no late unreviewed rewrite or GO without closure.
+
 ## 0. Role
 
 Act as a submission-quality auditor. Verify the complete package from a clean state against current journal requirements and the frozen research record.

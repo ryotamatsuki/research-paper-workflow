@@ -4,7 +4,8 @@ Use this **in addition to**, not instead of, `EXPOSITION_STREAMLINING_CHECKLIST.
 
 ## Lifecycle and bounded evidence
 
-- **Stage 10 — exemplar and architecture:** create `EDITORIAL_EXEMPLAR_MAP.md` from real accessible published papers, plus a provisional opening, headline-result intuition and discussion structure. Stage 10 may not presume the final Stage-12 journal; use an explicitly provisional field/article-type comparator where the target is unsettled.
+- **Stage 10A — mandatory pre-writing benchmark:** apply `EXEMPLARY_PAPER_BENCHMARKING_CHECKLIST.md`, record GO, source register, source map and Manuscript Blueprint before drafting. 
+- **Stage 10B — exemplar implementation and architecture:** create `EDITORIAL_EXEMPLAR_MAP.md` from real accessible published papers, plus a provisional opening, headline-result intuition and discussion structure. Stage 10 may not presume the final Stage-12 journal; use an explicitly provisional field/article-type comparator where the target is unsettled.
 - **Stage 11 — independent editorial referee:** create `EDITORIAL_REFEREE_REPORT.md` using a reviewer/critical pass separate from the drafting pass. Test the **actual manuscript**, not just the architecture or the author summary. An independent AI critique is an independent *task/attack path*, not human peer review.
 - **Stage 12 — journal calibration:** when the actual target is selected, revisit relevant comparators; a comparator is evidence of writing practice, not automatic evidence that this paper meets the target's novelty, generality, or acceptance threshold.
 - **Stage 13 — editorial revision and regression:** create `EDITORIAL_REVISION_AUDIT.md` with before/after passages, the exact referee criticism each addresses, and proof/claim-scope integrity evidence. Re-run the hostile reader test on the revised manuscript.
@@ -12,9 +13,9 @@ Use this **in addition to**, not instead of, `EXPOSITION_STREAMLINING_CHECKLIST.
 
 Use `PASS`, `REVISE`, `UNRESOLVED`, or `NOT APPLICABLE — REASON` for each material item. A vague “clear,” “substantially improved,” “contains an introduction,” or checklist tick without manuscript evidence is not a PASS.
 
-## A. Real-paper writing exemplar gate (Stage 10; refreshed Stage 12/13)
+## A. Real-paper writing exemplar gate (Stage 10A; implemented 10B; refreshed Stage 12/13)
 
-- [ ] Record **2–3 real, relevant, accessible published papers** where feasible; identify author, title, venue, year, DOI/permanent URL, inspected section, and actual access/read depth.
+- [ ] Record **3–5 real, relevant, full-text-inspected published papers** by default, with one primary exemplar and complementary roles; justify any smaller set after bounded search and coverage audit. Identify author, title, venue, year, DOI/permanent URL, inspected location, version and actual access/read depth.
 - [ ] Use distinct exemplars for **problem-first Introduction**, **post-theorem economic intuition**, and **Discussion/policy interpretation** where available. One paper can fill multiple roles when justified; no fixed count if a meaningful comparator is unavailable.
 - [ ] Compare the **rhetorical/argument structure**, not only mathematical model, publication rank, topic, or reference count.
 - [ ] For each role record **actual observed sequencing**: economic problem → missing inference → research question → central result; expected sign → countervailing channels → condition; economic lesson → practical mapping → unresolved limits, **only when those steps are actually in the paper**.
@@ -67,7 +68,7 @@ A material `PASS` requires: **file + page/paragraph + cold-reader paraphrase + c
 - `JOURNAL-SPECIFIC FIT`: venue conventions/exposition mismatches alone normally return to Stage 12/13, not a theory redesign.
 - `NOT APPLICABLE`: identify the article type and why an omitted element (e.g., policy Discussion in a narrowly mathematical correction) is not appropriate; do not manufacture relevance.
 
-Stage 11 **cannot** issue an unconditional `GO` with an unresolved material editorial `REVISE`. Stage 13 **cannot** pass a report that only confirms all required headings exist. Stage 14 must reopen Stage 13 (or Stage 10 for architecture defects) when a final-PDF regression is identified.
+Stage 10B cannot enter without Stage 10A GO. Stage 11 **cannot** issue an unconditional `GO` with an unresolved material editorial `REVISE`. Stage 13 **cannot** pass a report that only confirms all required headings exist. Stage 14 must reopen Stage 13 (or Stage 10 for architecture defects) when a final-PDF regression is identified.
 
 ## F. Required per-project artifacts
 

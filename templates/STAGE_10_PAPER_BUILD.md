@@ -1,6 +1,10 @@
-# Stage 10 — Section-by-Section Paper Construction
+# Stage 10B — Section-by-Section Paper Construction (historical Stage 10)
 
 > Canonical authority: `GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → this template.
+
+## Mandatory entry gate
+
+Require Stage 9 GO, Stage 10A GO, frozen theory, full-text source register, exemplar map and `MANUSCRIPT_BLUEPRINT.md`. No drafting if Stage 10A is missing or conditional. Preserve this template path for historical Stage-10 links. Write from the blueprint; log exact sections implementing each writing move and reasoned deviations. No borrowing source prose or changing certified claims. Apply the exemplary-paper checklist and existing editorial, exposition and proof-verifiability gates.
 
 ## 0. Role
 
@@ -142,7 +146,9 @@ Stop and reopen earlier stages if writing reveals:
 - an institutional claim incompatible with the model;
 - a robustness requirement that changes the mechanism.
 
-Do not declare Stage 10 complete if:
+Do not declare Stage 10B complete if:
+
+- Stage 10A GO or blueprint is missing, or concrete draft implementation/justified deviations are unaudited;
 
 - the exposition profile, section-role map, reader-arrival budget, or main-text necessity audit is missing;
 - the core model/evidence is scattered across sections without a documented reason;
@@ -183,7 +189,7 @@ At Stage completion additionally provide:
 9. `EXPOSITION_ARCHITECTURE.md` or equivalent section-role/reader-arrival/main-text necessity record
 10. Figure/Table Architecture map and five-exhibit thought experiment
 11. figure/table generators and verification status
-12. `EDITORIAL_EXEMPLAR_MAP.md` or equivalent with inspected references, writing moves, manuscript locations, scope guardrails and provisional-journal status
+12. Stage-10A verdict, `MANUSCRIPT_BLUEPRINT.md`, exemplar adoption/deviation log and `EDITORIAL_EXEMPLAR_MAP.md` or equivalent with inspected references, writing moves, manuscript locations, scope guardrails and provisional-journal status
 13. initial cold-reader contract and exact evidence passages; communication blockers to be attacked at Stage 11
 14. remaining manuscript gaps
 

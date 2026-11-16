@@ -132,7 +132,9 @@ Organize candidates as appropriate into:
 
 If providing acceptance probabilities, distinguish official statistics from subjective conditional estimates.
 
-### 6.3 Refresh Stage-10 published writing exemplars for the selected target
+### 6.3 Refresh Stage-10A/10B published writing exemplars for the selected target
+
+Consume the Stage-10A blueprint/register and Stage-10B adoption record; test the comparative value of recent target-journal papers against the primary benchmark, documenting any change of role and bounded instructions. Do not alter frozen scientific content.
 
 Apply the journal-specific portion of `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md`. Read the Stage-10 `EDITORIAL_EXEMPLAR_MAP` and Stage-11 `EDITORIAL_REFEREE_REPORT`, then assess whether the exemplars' **writing and argument structure** matches the actual journal and article type. Inspect recent relevant published full texts where accessible, keeping the source title, section, DOI/URL and access evidence; replace any unverified or inapplicable exemplar, or document why no suitable substitute exists. Provide a bounded Stage-13 instruction for the problem-first opening, immediate post-result intuition and Discussion. Distinguish an article's rhetorical move from its mathematical result and do not promote publication precedent into novelty, acceptance probability or a new scientific claim. This task does not authorize substantive rewriting at Stage 12.
 

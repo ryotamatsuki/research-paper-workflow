@@ -285,6 +285,16 @@ Use `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md` alongside existing expo
 
 ---
 
+### 2.24 Mandatory pre-writing exemplary-paper benchmark (unreleased v3.0 candidate)
+
+After Stage 9 and before any Stage-10B manuscript drafting, Stage 10A must select a small evidence-grounded set of published exemplary papers and deliver an approved `MANUSCRIPT_BLUEPRINT.md` and `EDITORIAL_EXEMPLAR_MAP.md` (or individually identifiable equivalents). Search by economic question, method and article type; favor well-regarded exemplars but do not equate rank, citations or topic overlap with writing quality. Inspect accessible full text, including relevant proofs/appendices and exhibits; record exact source locations and access depth. Aim for 3–5 distinct papers, including one primary model; a justified smaller set is acceptable only after bounded search and full coverage of material writing roles. No primary full-text exemplar or unresolved material evidence blocks GO.
+
+Evaluate construction, clarity, proof economy, economic intuition, contribution framing, and exhibits using the benchmark checklist. No fabricated consensus, text copying, template mimicry, or silent import of scientific claims. Scientific certification and author responsibility are unchanged; if a proof-simplification changes mathematical substance, route to the earliest affected scientific gate. A conditional verdict does not authorize drafting. Stage 11 separately attacks the implemented exposition against the benchmark, Stage 12 refreshes target fit, Stage 13 repairs and retests, and Stage 14 verifies retention in the actual final PDF. Presentation-only benchmark defects reopen 10A or 10B/13 as appropriate; do not reopen theory solely to imitate a model article.
+
+Apply `templates/STAGE_10A_EXEMPLARY_PAPER_BENCHMARKING.md` and `checklists/EXEMPLARY_PAPER_BENCHMARKING_CHECKLIST.md`. This mandatory stage addition and route change is MAJOR-class under the versioning policy; no release or tag is implied. Historical Stage 10 maps to 10B, and older completed work is not retrospectively relabeled.
+
+---
+
 ## 3. Repository change policy
 
 ### 3.1 Main branch
@@ -487,6 +497,7 @@ For theorem-oriented projects:
 - Stage 4A `GO` routes to Stage 6.
 - Stage 7.5 `GO` routes to **Stage 7.5A**, never directly to Stage 8.
 - Stage 7.5A `GO` is required for Stage 8 theory freeze.
+- Stage 9 `GO` routes to **Stage 10A**; Stage 10A `GO` plus the saved blueprint and source map is required for **Stage 10B**; Stage 10B `GO` routes to Stage 11. No manuscript-writing shortcut from Stage 9. Stage 10A conditional/negative verdict blocks Stage 10B. The existing scientific gates are unchanged by this proposed v3.0 route.
 
 The Stage structure and routing remain unchanged by the Formal Verification Gate. Instead, Stage 7.5A may issue `GO` only after its embedded formal-verification state is either `FORMAL VERIFICATION PASS` or `FORMALIZATION NOT APPLICABLE — REASON RECORDED`.
 
@@ -513,6 +524,7 @@ Examples:
 - formal source/build/statement-mapping defect only with unchanged certified mathematics → Stage 7.5A Formal Verification Gate;
 - material theorem/quantifier change after formal certification → mark the formal certificate stale and rerun the affected analytic/scope and formal-verification gates before refreeze;
 - post-freeze theory change → Stage 8 change control plus every affected earlier gate;
+- missing/inadequate exemplar evidence or blueprint → Stage 10A; draft architecture/prose failure against a sound blueprint → Stage 10B or Stage 13 with retest; substantive scientific error → earliest affected scientific gate;
 - Stage 11 fatal attack → earliest affected stage, not prose-only patch;
 - Stage 13/14 substantive inconsistency → earliest affected research stage plus fresh integration/QA.
 
