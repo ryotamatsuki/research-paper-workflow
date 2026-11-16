@@ -37,7 +37,7 @@ See [equilibrium-analysis and continuation checklist](checklists/EQUILIBRIUM_CON
 
 A scientifically correct paper may have all the right paragraphs yet still hide the economic puzzle, countervailing mechanisms or precisely bounded contribution. The existing v2.5 exposition streamlining and v2.7 reviewer-verifiability gates remain in force; this refinement requires **evidence of successful communication**, not another heading checklist.
 
-- **Stage 10:** source-verified published-paper writing exemplars for the opening, immediate post-result intuition and Discussion, with a cold-reader contract.
+- **Stage 10A/10B (updated by proposed v3.0):** source-verified published-paper writing exemplars before drafting, followed by implementation for the opening, immediate post-result intuition and Discussion, with a cold-reader contract.
 - **Stage 11:** separate critical editorial-referee report with actual first-pass paraphrases and a communication-only desk-reject attack; praise-only review cannot PASS.
 - **Stage 12:** update exemplar relevance once the target journal is selected.
 - **Stage 13:** before/after revision and retest of the specific editorial defects, guarding theorem scope and negative evidence.

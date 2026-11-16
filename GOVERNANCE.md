@@ -270,9 +270,9 @@ Stages 4/4A establish the precise result and attack corners, full equilibria and
 
 A technically correct and concise manuscript may still fail to communicate its economic puzzle, distinguishing inference, causal/strategic mechanism, or limiting conditions. Existing exposition-architecture and reviewer-verifiability checks do **not** establish adequate communication merely because the required components are present or the proof is reconstructible.
 
-The editorial-quality lifecycle is `Stage 10 → Stage 11 → Stage 12 journal refresh → Stage 13 → Stage 14`:
+The editorial-quality lifecycle in the v3.0 candidate is `Stage 10A → Stage 10B → Stage 11 → Stage 12 journal refresh → Stage 13 → Stage 14`:
 
-- Stage 10 records **source-grounded writing moves** from relevant accessible published papers and an article-type appropriate manuscript adaptation; exemplar comparison is not novelty certification or journal acceptance evidence.
+- Stage 10A records **source-grounded writing moves** before drafting; Stage 10B implements them from relevant accessible published papers and an article-type appropriate manuscript adaptation; exemplar comparison is not novelty certification or journal acceptance evidence.
 - Stage 11 conducts an **independent editorial attack** on the actual draft with first-pass reader paraphrases and a communication-only desk-reject case, separately from mathematical/novelty attacks. A distinct AI reviewer is an AI critical pass, not a human referee.
 - Stage 12 refreshes exemplar relevance after journal selection; it does not use preferred writing style to enlarge scientific results or alter the theory freeze.
 - Stage 13 records before/after passages, the defect repaired, theorem/evidence guardrails and a repeated critical-reader test. Stage 14 checks that the final PDF retains that result.
