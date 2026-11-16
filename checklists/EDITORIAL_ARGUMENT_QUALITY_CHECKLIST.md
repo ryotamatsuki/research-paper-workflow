@@ -20,7 +20,7 @@ Use `PASS`, `REVISE`, `UNRESOLVED`, or `NOT APPLICABLE — REASON` for each mate
 - [ ] Compare the **rhetorical/argument structure**, not only mathematical model, publication rank, topic, or reference count.
 - [ ] For each role record **actual observed sequencing**: economic problem → missing inference → research question → central result; expected sign → countervailing channels → condition; economic lesson → practical mapping → unresolved limits, **only when those steps are actually in the paper**.
 - [ ] State the precise move to adopt and why it fits the article's certified contribution; state what **must not** be copied (empirical causal strength, welfare claim, policy recommendation, result generality, institution-specific evidence).
-- [ ] Do not invent inaccessible full text or exact section observations. Log `UNVERIFIED` and choose an accessible substitute. Exemplar selection never substitutes for near-neighbour theorem-absorption review.
+- [ ] Use the mandatory Stage-10A full-text acquisition and complete-reading filter before scoring any writing exemplar, including a Stage-12 replacement. Log inaccessible candidates as `EXCLUDED — FULL TEXT UNAVAILABLE` and promptly substitute; inability to obtain a preferred candidate alone is not a gate blocker. Do not equate snippets, abstract or a PDF URL with acquisition. Exemplar selection never substitutes for near-neighbour theorem-absorption review; decisive inaccessible prior art remains subject to the original fail-closed rules.
 - [ ] Do not copy source prose or extended passages; extract original writing principles and produce new text.
 
 Suggested evidence table:
