@@ -274,6 +274,7 @@ Reconstruct the starting model or argument from first principles and determine w
 
 - Read all source material, including equations, appendices, figures, notes, and assumptions.
 - Reconstruct players, timing, information, objectives, contracts, demand, costs, and equilibrium concept.
+- For strategic models, record an equilibrium-analysis contract using `checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md`: game form, horizon, observability, information sets, chance moves, strategy spaces, belief requirements, appropriate equilibrium concept and solution method, intended equilibrium class (pure, mixed/behavioral, or a justified restriction), and the required scope of completeness. Reproduce the predecessor's concept before changing it. This is an audit/plan, not a premature Stage-4 certification.
 - Re-derive mathematical starting objects from zero.
 - Use Python/SymPy or equivalent symbolic tools where applicable.
 - Derive SOCs, feasibility, participation, and boundary cases.
@@ -363,6 +364,7 @@ Generate competing explanations and select mechanisms or strategically meaningfu
 - Identify each strategic feedback loop.
 - State what changes relative to closest literature.
 - Identify the smallest model capable of producing the proposed mechanism.
+- Pre-specify the equilibrium concept, strategy class, solution method, completeness target, and treatment of multiplicity, indifference, selection and off-path beliefs for the selected architecture. Do not choose a refinement merely because it produces a desired result. Changes to game structure or information require reconsideration of the contract.
 - For generalization/unification, identify nested benchmarks and the interaction that exists only when components are jointly endogenous.
 - State a candidate result unavailable in each benchmark alone.
 - Score candidates on novelty, mechanism clarity, whole-game prior-art survival, tractability, welfare content, institutional relevance, and journal fit when useful.
@@ -399,6 +401,10 @@ Solve the strongest candidate mechanism/generalization completely in the smalles
 ## Mandatory tasks
 
 - Freeze players, timing, information, complete strategy/choice sets, and primitives.
+- Apply the equilibrium-analysis contract. For finite-horizon sequential games with appropriate subgame structure, use backward induction/backward recursion over the complete continuation-equilibrium correspondence, solving terminal decisions first and every relevant proper subgame (including off-path) before upstream optimality; justify any equivalent method. For static or other dynamic/incomplete-information models use the concept and method warranted by the game. Do not substitute ordinary Nash or mechanically invoke SPNE when information-set sequential rationality and beliefs are required.
+- Characterize the entire equilibrium set within the economically justified and declared strategy/concept domain: prove existence or nonexistence, necessity and sufficiency, and uniqueness or multiplicity; rule out additional equilibria by an exhaustive partition, analytic correspondence, or equivalent completeness proof. Separate full strategies/assessments from on-path outcomes. Where only a narrower result is feasible, explicitly scope it under the existing theorem-certification rules; do not pass a material unresolved equilibrium case.
+- Pure-strategy nonexistence is a result, not a license to stop solving: when the question or continuation requires mixed/behavioral strategies, analyze feasible supports (including degenerate and boundary cases), indifference, probability constraints and global best responses; prove completeness within the claimed domain or report unresolved. Even when pure equilibria exist, assess whether mixed equilibria can change the headline claim. Pure-only characterization requires an economic justification and explicit limits; never call it all equilibria without qualification.
+- In games of incomplete/imperfect information, specify information sets, admissible beliefs, Bayes consistency where applicable, and sequential rationality at relevant off-path information sets; adopt and define the appropriate PBE, sequential equilibrium or other justified concept/refinement rather than equating it with SPNE. In infinite-horizon/state-based games justify recursive or fixed-point methods and their conditions; a stationary/Markov restriction is not a full history-dependent characterization.
 - Produce an **application-neutral canonical mathematical representation** of the solved model: strategy-set geometry, payoff/function class, interaction matrix/operator, coupling constraints, and equilibrium concept.
 - Strip application labels and test simple equivalence-preserving transformations where relevant: affine recentering, normalization, variable elimination, matrix representation, KKT/complementarity form, potential-game representation, aggregative/network representation, simplex/transportation/assignment-polytope representation, or another standard form suggested by the mathematics.
 - Record plausible standard parent model classes and whether the headline result appears prima facie to be a specialization/corollary candidate. This is a screening record, not the final novelty verdict; Stage 6 performs the literature-backed absorption test.
@@ -458,6 +464,7 @@ For every headline claim:
 - enumerate and attack corners, boundaries, active-set changes, regime switches, order changes, entry/exit, zero-output states, discontinuities, kinks, and material off-path histories;
 - search for profitable finite/global deviations over the actual strategy set;
 - for sequential games independently challenge continuation completeness and fail closed on solver failures;
+- independently challenge the selected equilibrium concept, strategy-domain restriction and solution method; reconstruct the full continuation correspondence/backward-induction logic when applicable, and audit belief consistency, mixed-strategy supports, ties, global sufficiency, existence/nonexistence and the exclusion of additional equilibria within the claimed class; record what is not covered. An existence-only proof is not a uniqueness/completeness proof; equilibrium outcomes are not full contingent strategies.
 - deliberately choose stress histories/parameters that break maintained interiority or the preferred regular branch;
 - conduct analytic/symbolic and then numerical counterexample search where applicable;
 - independently verify at least one high-stakes claim through a separate evaluator/solver where feasible;
@@ -556,6 +563,7 @@ Determine whether the certified mechanism matters beyond firm profit and one mot
 
 - Derive consumer surplus and total welfare consistently from the model utility/accounting system.
 - Compare private and social decisions.
+- For material multiplicity, compare welfare on the certified equilibrium correspondence (including economically relevant mixed/behavioral equilibria, with expected welfare), or explicitly condition each result on a defensible selection/refinement. Separate best/worst/selected equilibrium and planner feasibility; do not claim selection-independent policy rankings if unexamined equilibria could overturn them.
 - Identify under/over-provision or other organizational wedges.
 - Audit institutional support for core primitives, preferring primary sources.
 - For policy-oriented projects, map the claim to **diagnosis / normative benchmark / implementable instrument**; name missing contracting, incentives, finance, information, jurisdiction or administrative assumptions, or justify why implementation is genuinely out of scope. Do not call a planner allocation an implementable policy.
@@ -629,6 +637,7 @@ This stage attacks over-generalization, hidden functional-form dependence, and f
 For every headline theorem/proposition and material robustness/generalization statement:
 
 - rewrite the claim in formal quantifier form (`for all`, `exists`, `unique`, `generic`, `local`, `global`, etc.);
+- reconcile every equilibrium claim with the certified concept, strategy class, information/belief conditions, full-strategy versus outcome scope, existence/uniqueness/completeness proof and selection/refinement assumptions; independently re-audit any changed scope and block all-equilibrium or selection-free wording that exceeds the evidence;
 - list assumptions actually used, separating economic assumptions, shape restrictions, parameter restrictions, regularity, normalization, tractability, and institutional assumptions;
 - compare formal theorem scope with the strongest abstract/introduction/contribution/welfare/robustness prose;
 - distinguish baseline closed form, restricted function class, sufficient-condition theorem, numerical robustness evidence, conjectured generality, and truly general theorem;
@@ -748,6 +757,7 @@ Stage 8 is blocked unless the project has:
 - parameter restrictions and admissible function classes;
 - equilibrium concept;
 - baseline equilibrium objects;
+- equilibrium-analysis contract, certified equilibrium correspondence/scope, continuation and belief/selection rules, and explicit exclusions;
 - main and welfare propositions with exact conditions and quantifiers;
 - proof/evidence status;
 - approved robustness scope;
