@@ -64,6 +64,10 @@ This asks: **given the proposed strategy profile, is there a profitable unilater
 
 ### D2. Alternative-equilibrium / multiplicity audit
 
+- [ ] Match the equilibrium concept and strategy/assessment class to the actual game form and the Stage-1/3/4 equilibrium-analysis contract in `checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md`. For finite-horizon sequential games verify backward induction or a justified equivalent method on all required continuations; check beliefs and sequential rationality when the adopted concept requires them.
+- [ ] For mixed/behavioral strategies, verify support, indifference, excluded-action inequalities, probability constraints, degenerate/boundary supports, and full-domain characterization as claimed. Pure-strategy existence does not rule out mixed equilibria. Justify restrictions and distinguish full strategies/assessments from equilibrium outcomes.
+- [ ] Record necessity, sufficiency, and an additional-equilibrium exclusion argument for any claimed complete characterization. If a narrower existence or restricted-class result is all that has been established, explicitly scope all associated claims and evaluate material selection/welfare consequences.
+
 This asks: **does another strategy profile also satisfy the equilibrium conditions?**
 
 - [ ] Search for alternative pure-strategy equilibrium profiles outside the presented candidate branch.

@@ -423,6 +423,12 @@ When applicable:
 
 Sequential/game-theoretic projects must apply `checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md` whenever continuation validity matters.
 
+All strategic/game-theoretic projects must also apply its equilibrium-analysis contract from Stage 1 (audit), Stage 3 (selection) and Stage 4 (solution), with independent Stage 4A review, Stage 7 welfare-selection checks and Stage 7.5A scope certification before Stage 8 freeze. Select and justify the equilibrium concept from the actual information structure, timing, horizon and economic question; do not impose a universal pure-strategy SPNE requirement. Finite-horizon sequential games use backward induction or an equivalent justified recursive method wherever applicable, including all proper subgames and economically material continuations. Static, incomplete-information and infinite-horizon models use the appropriate Nash/Bayesian/sequential/recursive or other justified concept.
+
+The adopted equilibrium domain (pure, mixed/behavioral, beliefs, restrictions and refinements) and completeness target must be explicit. For characterization claims establish necessity and sufficiency and exclude additional equilibria within the declared domain; prove existence/nonexistence and uniqueness/multiplicity as claimed. Mixed strategies must be analyzed when required by the question or continuation existence, and tested for material effects even if pure equilibria exist. A narrower, justified claim is permitted only within the existing certification rules, never by silent exclusion of economically material equilibria. Unresolved material continuations or selection-sensitive claims that outrun the verified equilibrium set block the corresponding gate. Neither candidate-deviation tests nor a fixed tie-break alone establish completeness of all strategies or assessments. Belief consistency and sequential rationality at information sets must be certified where required by the selected concept.
+
+This is an **unreleased post-v2.9 MINOR-class refinement** of existing evidence obligations, not a new Stage, changed canonical verdict/route, or new release/tag.
+
 Headline theorem-bearing projects must apply `checklists/THEOREM_CERTIFICATION_CHECKLIST.md` at Stage 4A and again at Stage 7.5A whenever scope changed.
 
 All theorem-bearing projects must apply `checklists/FORMAL_VERIFICATION_CHECKLIST.md`: Stage 4A records applicability and target candidates; Stage 7.5A closes the pre-freeze formal-verification state.
