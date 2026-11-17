@@ -1,6 +1,6 @@
 # Stage 10A — Exemplary Paper Benchmarking & Synthesis
 
-> Mandatory pre-writing gate. Canonical authority: GOVERNANCE.md → THEORY_PAPER_RESEARCH_PIPELINE.md → this template. Proposed v3.0 route.
+> Mandatory pre-writing gate. Canonical authority: GOVERNANCE.md → THEORY_PAPER_RESEARCH_PIPELINE.md → this template. Operational v3.0 candidate route on `main`; stable release remains v2.9.
 
 ## Role
 Act as a specialist economics researcher, mathematical expositor and critical journal editor. Identify published writing models outstanding in the relevant research tradition and analyze their actual construction. Do not claim unanimous economist preference.

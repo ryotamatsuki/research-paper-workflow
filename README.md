@@ -17,7 +17,7 @@ For a broad research topic or a stalled idea, use the [Theory Discovery Framewor
 ## Canonical documents
 
 - [`GOVERNANCE.md`](GOVERNANCE.md) — repository governance, evidence standards, routing, rollback, certification independence, formal-verification policy, and freeze policy.
-- [`THEORY_PAPER_RESEARCH_PIPELINE.md`](THEORY_PAPER_RESEARCH_PIPELINE.md) — canonical Stage 0–15 theory workflow, including Stage 4A, Stage 7.5, Stage 7.5A, and proposed Stage 10A/10B.
+- [`THEORY_PAPER_RESEARCH_PIPELINE.md`](THEORY_PAPER_RESEARCH_PIPELINE.md) — canonical Stage 0–15 theory workflow, including Stage 4A, Stage 7.5, Stage 7.5A, and mandatory Stage 10A/10B.
 
 Canonical hierarchy:
 
@@ -25,7 +25,7 @@ Canonical hierarchy:
 
 ## Unreleased v3.0 candidate — mandatory exemplary-paper benchmarking
 
-The proposed canonical route is `Stage 9 → Stage 10A → Stage 10B → Stage 11`. Stage 10A uses role-wise comparison and synthesis of suitable techniques across multiple papers (an overall anchor is optional), with a mandatory coherence audit. Stage 10A first filters candidates by actual lawful full-text acquisition (including material proof appendices), then reads and selects only complete sources before manuscript construction, and produces a source-grounded Manuscript Blueprint. Inaccessible candidates are excluded and replaced without waiting; a PDF or complete HTML/text is acceptable, but abstracts, snippets and untested links are not. The separate novelty-audit obligations remain unchanged. Stage 10B is the existing manuscript-construction stage (historical Stage 10), with its existing proof/exposition/build requirements intact. Stage 11 independently tests the actual draft against that benchmark. Stage 12 refreshes target-specific comparators, Stage 13 repairs and retests, and Stage 14 verifies the exact final PDF. This is a **MAJOR-class candidate** under the versioning policy because it adds a mandatory stage and changes routing; stable v2.9 remains immutable. Do not represent this candidate as a released version. See [Stage 10A template](templates/STAGE_10A_EXEMPLARY_PAPER_BENCHMARKING.md), [benchmark checklist](checklists/EXEMPLARY_PAPER_BENCHMARKING_CHECKLIST.md), and [design and regression cases](docs/EXEMPLARY_PAPER_BENCHMARKING_REFINEMENT_2026-11-17.md).
+The canonical main-branch route is `Stage 9 → Stage 10A → Stage 10B → Stage 11`. Stage 10A uses role-wise comparison and synthesis of suitable techniques across multiple papers (an overall anchor is optional), with a mandatory coherence audit. Stage 10A first filters candidates by actual lawful full-text acquisition (including material proof appendices), then reads and selects only complete sources before manuscript construction, and produces a source-grounded Manuscript Blueprint. Inaccessible candidates are excluded and replaced without waiting; a PDF or complete HTML/text is acceptable, but abstracts, snippets and untested links are not. The separate novelty-audit obligations remain unchanged. Stage 10B is the existing manuscript-construction stage (historical Stage 10), with its existing proof/exposition/build requirements intact. Stage 11 independently tests the actual draft against that benchmark. Stage 12 refreshes target-specific comparators, Stage 13 repairs and retests, and Stage 14 verifies the exact final PDF. This is a **MAJOR-class candidate** under the versioning policy because it adds a mandatory stage and changes routing; stable v2.9 remains immutable. Do not represent this candidate as a released version. See [Stage 10A template](templates/STAGE_10A_EXEMPLARY_PAPER_BENCHMARKING.md), [benchmark checklist](checklists/EXEMPLARY_PAPER_BENCHMARKING_CHECKLIST.md), and [design and regression cases](docs/EXEMPLARY_PAPER_BENCHMARKING_REFINEMENT_2026-11-17.md).
 
 ## Unreleased: model-appropriate equilibrium concepts and completeness (post-v2.9)
 
@@ -37,7 +37,7 @@ See [equilibrium-analysis and continuation checklist](checklists/EQUILIBRIUM_CON
 
 A scientifically correct paper may have all the right paragraphs yet still hide the economic puzzle, countervailing mechanisms or precisely bounded contribution. The existing v2.5 exposition streamlining and v2.7 reviewer-verifiability gates remain in force; this refinement requires **evidence of successful communication**, not another heading checklist.
 
-- **Stage 10A/10B (updated by proposed v3.0):** source-verified published-paper writing exemplars before drafting, followed by implementation for the opening, immediate post-result intuition and Discussion, with a cold-reader contract.
+- **Stage 10A/10B (updated by the v3.0 candidate):** source-verified published-paper writing exemplars before drafting, followed by implementation for the opening, immediate post-result intuition and Discussion, with a cold-reader contract.
 - **Stage 11:** separate critical editorial-referee report with actual first-pass paraphrases and a communication-only desk-reject attack; praise-only review cannot PASS.
 - **Stage 12:** update exemplar relevance once the target journal is selected.
 - **Stage 13:** before/after revision and retest of the specific editorial defects, guarding theorem scope and negative evidence.
@@ -479,6 +479,6 @@ Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 ## Status
 
-Stable release baseline: **v2.9**. This development branch proposes the unreleased v3.0 Stage 10A/10B routing; it is not a published release.
+Stable release baseline: **v2.9**. The v3.0 candidate Stage 10A/10B route is the operational workflow when read from `main`; it is not a published release. Use the current `main` rather than the historical v2.9 tag for new or revised live projects.
 
 Stable release reference: [`v2.9`](https://github.com/ryotamatsuki/research-paper-workflow/releases/tag/v2.9) (verify the live GitHub Release record). A version marker or readiness verdict alone does not establish that the tag/Release has been published. The reviewed state is published by `.github/workflows/publish-v2.9.yml`. Prior v2.8 and earlier stable releases/tags remain immutable; v2.1 was the first stable tagged v2 release.

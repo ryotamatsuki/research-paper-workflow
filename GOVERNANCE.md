@@ -270,7 +270,7 @@ Stages 4/4A establish the precise result and attack corners, full equilibria and
 
 A technically correct and concise manuscript may still fail to communicate its economic puzzle, distinguishing inference, causal/strategic mechanism, or limiting conditions. Existing exposition-architecture and reviewer-verifiability checks do **not** establish adequate communication merely because the required components are present or the proof is reconstructible.
 
-The editorial-quality lifecycle in the v3.0 candidate is `Stage 10A → Stage 10B → Stage 11 → Stage 12 journal refresh → Stage 13 → Stage 14`:
+The editorial-quality lifecycle in the operational v3.0 candidate is `Stage 10A → Stage 10B → Stage 11 → Stage 12 journal refresh → Stage 13 → Stage 14`:
 
 - Stage 10A records **source-grounded writing moves** before drafting; Stage 10B implements them from relevant accessible published papers and an article-type appropriate manuscript adaptation; exemplar comparison is not novelty certification or journal acceptance evidence.
 - Stage 11 conducts an **independent editorial attack** on the actual draft with first-pass reader paraphrases and a communication-only desk-reject case, separately from mathematical/novelty attacks. A distinct AI reviewer is an AI critical pass, not a human referee.
@@ -295,7 +295,7 @@ Role-wise selection and coherent synthesis are mandatory: compare source-located
 
 
 
-Apply `templates/STAGE_10A_EXEMPLARY_PAPER_BENCHMARKING.md` and `checklists/EXEMPLARY_PAPER_BENCHMARKING_CHECKLIST.md`. This mandatory stage addition and route change is MAJOR-class under the versioning policy; no release or tag is implied. Historical Stage 10 maps to 10B, and older completed work is not retrospectively relabeled.
+Apply `templates/STAGE_10A_EXEMPLARY_PAPER_BENCHMARKING.md` and `checklists/EXEMPLARY_PAPER_BENCHMARKING_CHECKLIST.md`. This mandatory stage addition and route change is MAJOR-class under the versioning policy; no release or tag is implied. Historical Stage 10 maps to 10B, and older completed work is not retrospectively relabeled. Once merged to `main`, this gate is mandatory for live and revised projects; the historical v2.9 release is not the operative route. An in-flight project may reuse a valid frozen theory and Stage 9, but must perform 10A before rewriting or revalidating 10B.
 
 ---
 
@@ -501,7 +501,7 @@ For theorem-oriented projects:
 - Stage 4A `GO` routes to Stage 6.
 - Stage 7.5 `GO` routes to **Stage 7.5A**, never directly to Stage 8.
 - Stage 7.5A `GO` is required for Stage 8 theory freeze.
-- Stage 9 `GO` routes to **Stage 10A**; Stage 10A `GO` plus the saved blueprint and source map is required for **Stage 10B**; Stage 10B `GO` routes to Stage 11. No manuscript-writing shortcut from Stage 9. Stage 10A conditional/negative verdict blocks Stage 10B. The existing scientific gates are unchanged by this proposed v3.0 route.
+- Stage 9 `GO` routes to **Stage 10A**; Stage 10A `GO` plus the saved blueprint and source map is required for **Stage 10B**; Stage 10B `GO` routes to Stage 11. No manuscript-writing shortcut from Stage 9. Stage 10A conditional/negative verdict blocks Stage 10B. The existing scientific gates are unchanged by this v3.0 candidate route.
 
 The Stage structure and routing remain unchanged by the Formal Verification Gate. Instead, Stage 7.5A may issue `GO` only after its embedded formal-verification state is either `FORMAL VERIFICATION PASS` or `FORMALIZATION NOT APPLICABLE — REASON RECORDED`.
 

@@ -1,6 +1,6 @@
 # Theory Paper Research Pipeline
 
-Version: v3.0 candidate (unreleased; stable baseline v2.9)
+Version: v3.0 candidate (operational on `main`; unreleased; stable baseline v2.9)
 
 ## 1. Purpose
 
@@ -86,7 +86,7 @@ The reviewer-verifiability lifecycle is:
 
 `Stage 10A → Stage 10B → Stage 11 → Stage 13 → Stage 14`.
 
-1. **Stage 10 — derivation architecture:** identify the proof/derivation chain for each headline result, mark short bridge equations that must remain visible, and decide which routine expansions may safely move to Appendix/Supplement/code.
+1. **Stage 10A/10B — derivation architecture:** identify the proof/derivation chain for each headline result, mark short bridge equations that must remain visible, and decide which routine expansions may safely move to Appendix/Supplement/code.
 2. **Stage 11 — hostile reconstruction:** independently reconstruct at least one complete headline proof/derivation from the manuscript-facing package and attack opaque phrases such as “straightforward algebra,” “by symmetry,” “the certificate verifies,” or “the solver finds.”
 3. **Stage 13 — reviewer-verifiability audit:** require every material claim to retain an auditable chain from primitives/evidence through key intermediate objects to the theorem/result. Streamlining may compress routine algebra but may not remove conceptual bridges.
 4. **Stage 14 — final package verification:** confirm that journal formatting and packaging did not remove proof boundaries, definitions, bridge equations, appendix links, or computer-assisted-proof mappings.
@@ -109,7 +109,7 @@ The exposition lifecycle is:
 `Stage 7 → Stage 9 → Stage 10A → Stage 10B → Stage 13 → Stage 14` (only the exposition lifecycle is shown).
 
 1. **Stage 7 — candidate vehicles:** identify candidate theorem/proposition/figure/table/numerical/prose vehicles for headline results.
-2. **Stage 10 — architecture design:** choose an article-type exposition profile, define section roles and reader-arrival targets, consolidate the model/evidence architecture, and run an exhibit-scarcity thought experiment before finalizing the Introduction.
+2. **Stage 10A/10B — architecture design:** choose an article-type exposition profile, define section roles and reader-arrival targets, consolidate the model/evidence architecture, and run an exhibit-scarcity thought experiment before finalizing the Introduction.
 3. **Stage 13 — streamlining:** audit the integrated manuscript item by item, classify material as `CORE` / `HELPFUL` / `APPENDIX` / `DELETE`, compress the Introduction, enforce section purity, rerun actual page-arrival diagnostics, and remove or relocate redundant material without weakening theorem/evidence scope.
 4. **Stage 14 — verification:** perform a binary exposition audit on the final package. A structural exposition failure normally reopens Stage 13; an architecture failure may reopen Stage 10; a substantive theory/evidence/novelty change reopens the earliest affected research stage.
 
@@ -193,7 +193,7 @@ Within existing Stages 2/3/4/4A/6/7.5A/11, evaluate **reversal, surprising compa
 
 The pre-Stage-10A editorial refinement (historical post-v2.9 MINOR proposal, superseded in timing and routing by the v3.0 candidate) addresses a distinct residual after v2.5 streamlining and v2.7 proof verifiability: **an accurate manuscript may contain every required element without communicating its economic inference persuasively**. The updated lifecycle is `Stage 10A → Stage 10B → Stage 11 → Stage 12 comparator refresh → Stage 13 → Stage 14`; the earlier editorial refinement alone did not add a stage. Existing verdict semantics remain.
 
-- **Stage 10:** create a source-grounded `EDITORIAL_EXEMPLAR_MAP` from relevant, accessible published papers; distinguish observed writing technique from subject-matter novelty, theorem scope or journal quality. Identify the intended problem-first opening, immediate post-result intuition, and economic-lesson-first Discussion. Where the target journal is unset, comparator choice is explicitly provisional.
+- **Stage 10A (before drafting):** create a source-grounded `EDITORIAL_EXEMPLAR_MAP` using only fully acquired and completely read published papers, applying the mandatory acquisition and synthesis gate; Stage 10B implements the blueprint; distinguish observed writing technique from subject-matter novelty, theorem scope or journal quality. Identify the intended problem-first opening, immediate post-result intuition, and economic-lesson-first Discussion. Where the target journal is unset, comparator choice is explicitly provisional.
 - **Stage 11:** require a critical editorial-reader pass separate from the scientific referee. Before reading the writer's explanations, record the reader's own interpretation of the puzzle, main conditional result, opposing effects, and scope from the *actual manuscript*. Write a specific strongest **communication-only desk-reject** paragraph and classify defects. Praise without textual evidence is not a PASS.
 - **Stage 12:** once the venue is selected, check whether the provisional examples fit the intended article type and target journal, replacing inaccessible or unsuitable examples with verified ones as needed.
 - **Stage 13:** preserve an `EDITORIAL_REVISION_AUDIT` with before/after changes, criticism addressed, theorem/negative-evidence integrity, and a fresh cold-reader test. A checklist of headings without observed passages cannot pass.
@@ -227,11 +227,11 @@ For material AI use, apply `checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECK
 For manuscript exposition, use the four-step lifecycle:
 
 - Stage 7 — identify candidate exposition vehicles;
-- Stage 10 — design the full exposition architecture, including section roles, reader-arrival targets, model/evidence consolidation, and figure/table architecture;
+- Stage 10A/10B — design the full exposition architecture, including section roles, reader-arrival targets, model/evidence consolidation, and figure/table architecture;
 - Stage 13 — integrate and aggressively streamline the target-journal manuscript using actual page/order evidence;
 - Stage 14 — verify that the final package still satisfies the exposition architecture while also checking regeneration, numerical integrity, artwork compliance, source completeness, and legibility.
 
-Apply `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md` across this lifecycle. Stage 10 is the design gate, Stage 13 is the streamlining gate, and Stage 14 is a verification gate rather than the normal place for a late structural rewrite.
+Apply `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md` across this lifecycle. Stages 10A/10B are the benchmark/design and construction gates, Stage 13 is the streamlining gate, and Stage 14 is a verification gate rather than the normal place for a late structural rewrite.
 
 There is no minimum figure/table quota. Every visual must materially reduce the reader's cost of understanding a verified result. The five-exhibit thought experiment is a prioritization device, not a universal exhibit limit.
 
@@ -1165,7 +1165,7 @@ Formal verification strengthens assurance; it is not itself a substitute for an 
 
 Exposition is a cross-stage scientific-communication object, not a cosmetic Stage-14 concern. Apply `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md` across Stages 7/10/13/14. For theorem-bearing or technically dense manuscripts, apply `checklists/REVIEWER_VERIFIABILITY_CHECKLIST.md` across Stages 10/11/13/14.
 
-Stage 10 designs section roles, reader-arrival targets, model/evidence consolidation, and the Figure/Table Architecture. Stage 13 performs the aggressive streamlining pass on the integrated manuscript. Stage 14 verifies the resulting architecture and rolls back rather than performing a late substantive rewrite.
+Stages 10A/10B design section roles, reader-arrival targets, model/evidence consolidation, and the Figure/Table Architecture. Stage 13 performs the aggressive streamlining pass on the integrated manuscript. Stage 14 verifies the resulting architecture and rolls back rather than performing a late substantive rewrite.
 
 Figures/tables are evidence-bearing manuscript objects, not decoration. They may not create a weaker proof standard or hide theorem scope restrictions. Generic page or exhibit counts are diagnostics only; current journal/article-type rules and scientific completeness control.
 

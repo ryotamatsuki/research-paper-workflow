@@ -1,6 +1,6 @@
 # Mandatory pre-writing exemplary-paper benchmark — design record (2026-11-17)
 
-Status: proposed v3.0 MAJOR-class candidate, not released. Stable v2.9 is unchanged. User requested a new stage after observing that an already drafted theory manuscript would have been better structured if strong published exemplars had been studied before writing.
+Status: v3.0 MAJOR-class candidate, operational upon merge to `main`, not released. Stable v2.9 is unchanged. User requested a new stage after observing that an already drafted theory manuscript would have been better structured if strong published exemplars had been studied before writing.
 
 The repository already contained an unreleased editorial exemplar requirement inside old Stage 10. It allowed research to begin before benchmarking and emphasized specific rhetorical moves rather than full-paper construction/proof style. This change promotes the prerequisite into Stage 10A, extends selection to an explicitly comparative evidence-bearing rubric, and calls old manuscript construction Stage 10B while retaining its template filename. Existing scientific gates and canonical verdict meanings stay intact. Author-only approvals, freeze and formal certificate controls are unchanged. Normal route: Stage 9 → Stage 10A → Stage 10B → Stage 11. Stage 10A CONDITIONAL GO does not permit drafting; material scientific discoveries route to their original gate.
 
@@ -11,7 +11,7 @@ Regression cases (expected outcomes; not empirical proof of improved manuscripts
 2. A DOI/abstract, PDF URL, preview or AI summary alone is not acquisition. Exclude unavailable preferred candidate before scoring and immediately substitute an eligible one; if an eligible set has complete essential role coverage, no access-based hold. If not after bounded substitution, Stage 10A remains blocked.
 3. A manuscript compiles but Stage 10A is missing → 10B not authorized, no Stage 11 shortcut.
 4. Elegant-looking shortened proof drops a globality assumption → scientific rollback rather than presentation PASS.
-5. Three credible candidates genuinely cover all required roles but a fourth adds no value → acceptable; fewer require justification and minimum one full-text primary.
+5. Three credible candidates genuinely cover all required roles but a fourth adds no value → acceptable; fewer require justification and complete writing-role coverage; at least one fully acquired and read exemplar, with no mandatory primary.
 6. Actual draft departs from primary model to preserve the project's key welfare benchmark → justified adaptation, not automatic failure.
 7. Stage 11 finds key intuition buried, despite mathematically valid results → bounded repair 10B/13 and independent retest; missing exemplar selection evidence → 10A.
 8. Target changes at Stage 12 → refresh comparator and editorial instructions, no automatic theory expansion.
