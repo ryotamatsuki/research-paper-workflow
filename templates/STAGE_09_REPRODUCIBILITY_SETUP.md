@@ -125,7 +125,7 @@ Do not proceed to section writing until the reproducibility baseline is function
 9. CI/local-equivalent gate status
 10. Provenance locations
 11. Remaining blockers
-12. Exact Stage 10 writing contract
+12. Exact Stage 10A benchmarking entry contract (freeze, claim register, article type, repository)
 
 ## 13. Final verdict
 
@@ -137,4 +137,4 @@ Choose one:
 
 ## 14. Next-stage contract
 
-Stage 10 may write sections only against the frozen theory, Stage-7.5A claim-scope limits, and verified repository infrastructure.
+Stage 9 GO routes to Stage 10A — Exemplary Paper Benchmarking. Stage 10B may draft only after a Stage-10A GO with verified exemplar register and Manuscript Blueprint; frozen theory, Stage-7.5A claim-scope limits, and verified infrastructure remain mandatory.

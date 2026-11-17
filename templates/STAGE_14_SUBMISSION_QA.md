@@ -2,6 +2,10 @@
 
 > Canonical authority: `GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → this template.
 
+## Mandatory benchmark trace
+
+Verify the exact final PDF preserves Stage-10A blueprint/source map, Stage-10B implementation, Stage-11 benchmark attack and Stage-13 retest, as refreshed at Stage 12. Missing source evidence routes to 10A, architecture/prose regression to 10B/13, and scientific failure to its original gate; no late unreviewed rewrite or GO without closure.
+
 ## 0. Role
 
 Act as a submission-quality auditor. Verify the complete package from a clean state against current journal requirements and the frozen research record.
@@ -227,3 +231,5 @@ Stage 15 records an immutable submission state and, where necessary, completes t
 No substantive change is allowed between QA pass and freeze. Final figure/table outputs and generators used for the submission must be part of the frozen provenance.
 
 If the authenticated portal reveals a new or conflicting operative requirement, update the package under the evidence hierarchy above, rerun the affected Stage-14 checks, and create a new validated freeze rather than silently altering the already audited package.
+### Exemplar synthesis final verification
+Check the exact final PDF and source SHA against the resolved role-selection matrix, Blueprint and Stage-13 coherence retest. Reopen Stage 10A for selection/architecture deficiencies, Stage 10B/13 for implementation regressions, or the earliest scientific gate for substantive changes. Do not substitute a stylistic similarity score for evidence.

@@ -17,11 +17,15 @@ For a broad research topic or a stalled idea, start with [TDF v5.1](theory-disco
 ## Canonical documents
 
 - [`GOVERNANCE.md`](GOVERNANCE.md) — repository governance, evidence standards, routing, rollback, certification independence, formal-verification policy, and freeze policy.
-- [`THEORY_PAPER_RESEARCH_PIPELINE.md`](THEORY_PAPER_RESEARCH_PIPELINE.md) — canonical Stage 0–15 theory workflow, including Stage 4A, Stage 7.5, and Stage 7.5A.
+- [`THEORY_PAPER_RESEARCH_PIPELINE.md`](THEORY_PAPER_RESEARCH_PIPELINE.md) — canonical Stage 0–15 theory workflow, including Stage 4A, Stage 7.5, Stage 7.5A, and mandatory Stage 10A/10B.
 
 Canonical hierarchy:
 
 `GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → stage templates → checklists → examples.
+
+## Unreleased v3.0 candidate — mandatory exemplary-paper benchmarking
+
+The canonical main-branch route is `Stage 9 → Stage 10A → Stage 10B → Stage 11`. Stage 10A uses role-wise comparison and synthesis of suitable techniques across multiple papers (an overall anchor is optional), with a mandatory coherence audit. Stage 10A first filters candidates by actual lawful full-text acquisition (including material proof appendices), then reads and selects only complete sources before manuscript construction, and produces a source-grounded Manuscript Blueprint. Inaccessible candidates are excluded and replaced without waiting; a PDF or complete HTML/text is acceptable, but abstracts, snippets and untested links are not. The separate novelty-audit obligations remain unchanged. Stage 10B is the existing manuscript-construction stage (historical Stage 10), with its existing proof/exposition/build requirements intact. Stage 11 independently tests the actual draft against that benchmark. Stage 12 refreshes target-specific comparators, Stage 13 repairs and retests, and Stage 14 verifies the exact final PDF. This is a **MAJOR-class candidate** under the versioning policy because it adds a mandatory stage and changes routing; stable v2.9 remains immutable. Do not represent this candidate as a released version. See [Stage 10A template](templates/STAGE_10A_EXEMPLARY_PAPER_BENCHMARKING.md), [benchmark checklist](checklists/EXEMPLARY_PAPER_BENCHMARKING_CHECKLIST.md), and [design and regression cases](docs/EXEMPLARY_PAPER_BENCHMARKING_REFINEMENT_2026-11-17.md).
 
 ## Unreleased: model-appropriate equilibrium concepts and completeness (post-v2.9)
 
@@ -33,7 +37,7 @@ See [equilibrium-analysis and continuation checklist](checklists/EQUILIBRIUM_CON
 
 A scientifically correct paper may have all the right paragraphs yet still hide the economic puzzle, countervailing mechanisms or precisely bounded contribution. The existing v2.5 exposition streamlining and v2.7 reviewer-verifiability gates remain in force; this refinement requires **evidence of successful communication**, not another heading checklist.
 
-- **Stage 10:** source-verified published-paper writing exemplars for the opening, immediate post-result intuition and Discussion, with a cold-reader contract.
+- **Stage 10A/10B (updated by the v3.0 candidate):** source-verified published-paper writing exemplars before drafting, followed by implementation for the opening, immediate post-result intuition and Discussion, with a cold-reader contract.
 - **Stage 11:** separate critical editorial-referee report with actual first-pass paraphrases and a communication-only desk-reject attack; praise-only review cannot PASS.
 - **Stage 12:** update exemplar relevance once the target journal is selected.
 - **Stage 13:** before/after revision and retest of the specific editorial defects, guarding theorem scope and negative evidence.
@@ -367,7 +371,8 @@ Templates live under [`templates/`](templates/):
 - **Stage 7.5A — Generality / Quantifier / Portability Red-Team Gate + Formal Verification Gate**
 - Stage 8 — Canonical Theory Freeze
 - Stage 9 — Repository / Reproducibility Setup
-- Stage 10 — Section-by-Section Paper Construction
+- **Stage 10A — Exemplary Paper Benchmarking & Synthesis (mandatory before writing)**
+- Stage 10B — Section-by-Section Paper Construction (historical Stage 10; existing template filename retained)
 - Stage 11 — Robustness / Referee Attack Gate
 - Stage 12 — Journal Positioning
 - Stage 13 — Full-Paper Integration
@@ -439,8 +444,8 @@ The formal-verification refinement and the v2.2 structural-isomorphism/theorem-a
 9. Use Stage 7.5 to decide whether a full paper is justified, then run Stage 7.5A before theory freeze.
 10. Within Stage 7.5A, first certify economic portability using pre-specified diagnostic alternatives and produce the Contribution Robustness Certificate; then close the Formal Verification Gate with targeted proof-assistant verification when applicable or a defensible N/A rationale. Do not let `NOT TESTED` or `PLANNED` pass, and do not use a preferred journal to define portability.
 11. Freeze theory only after Stage 4A, Stage 7.5A, and the embedded formal-verification state are all green.
-12. At Stage 7 identify candidate exposition vehicles; at Stage 10 design the full exposition architecture and figure/table architecture; at Stage 13 integrate and aggressively streamline the actual manuscript; at Stage 14 verify the final exposition state and roll back structural failures instead of performing a late substantive rewrite. Apply `EXPOSITION_STREAMLINING_CHECKLIST.md` across the lifecycle.
-13. At Stage 11 repeat hostile mathematical, equilibrium-set, welfare-selection, theorem-scope, formal-claim-boundary, and **known-model-in-disguise/theorem-absorption** attacks from a fresh perspective.
+12. At Stage 7 identify candidate exposition vehicles; after Stage 9, complete Stage 10A and obtain `GO` on a verified exemplar set and Manuscript Blueprint before drafting in Stage 10B. At Stage 10B design the full exposition architecture and figure/table architecture; at Stage 13 integrate and aggressively streamline the actual manuscript; at Stage 14 verify the final exposition state and roll back structural failures instead of performing a late substantive rewrite. Apply `EXPOSITION_STREAMLINING_CHECKLIST.md` across the lifecycle.
+13. At Stage 11 independently benchmark actual writing against the evidence-backed Stage-10A blueprint and repeat hostile mathematical, equilibrium-set, welfare-selection, theorem-scope, formal-claim-boundary, and **known-model-in-disguise/theorem-absorption** attacks from a fresh perspective.
 14. At Stage 12 consume the Stage-7.5A Contribution Robustness Certificate, construct the journal candidate universe from the surviving contribution before ranking, compare the certified theory strength with current scope and recent comparable papers, cross-check closest-literature venues for omissions without automatic inclusion, and record explicit exclusion reasons for materially plausible alternatives. If a journal requires stronger substantive generality than certified, downgrade/reject the journal candidate rather than silently redesigning the theory.
 15. At Stage 14 rebuild applicable formal artifacts or verify the frozen formal build remains reproducible and consistent with the submitted theorem scope.
 16. If a later stage invalidates earlier work, return to the earliest affected stage and mark downstream outputs stale, including formal certificates whose statements/hypotheses changed.
@@ -474,6 +479,6 @@ Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 ## Status
 
-Current canonical repository revision: **v2.9**.
+Stable release baseline: **v2.9**. The v3.0 candidate Stage 10A/10B route is the operational workflow when read from `main`; it is not a published release. Use the current `main` rather than the historical v2.9 tag for new or revised live projects.
 
 Stable release reference: [`v2.9`](https://github.com/ryotamatsuki/research-paper-workflow/releases/tag/v2.9) (verify the live GitHub Release record). A version marker or readiness verdict alone does not establish that the tag/Release has been published. The reviewed state is published by `.github/workflows/publish-v2.9.yml`. Prior v2.8 and earlier stable releases/tags remain immutable; v2.1 was the first stable tagged v2 release.

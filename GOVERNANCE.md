@@ -270,9 +270,9 @@ Stages 4/4A establish the precise result and attack corners, full equilibria and
 
 A technically correct and concise manuscript may still fail to communicate its economic puzzle, distinguishing inference, causal/strategic mechanism, or limiting conditions. Existing exposition-architecture and reviewer-verifiability checks do **not** establish adequate communication merely because the required components are present or the proof is reconstructible.
 
-The editorial-quality lifecycle is `Stage 10 → Stage 11 → Stage 12 journal refresh → Stage 13 → Stage 14`:
+The editorial-quality lifecycle in the operational v3.0 candidate is `Stage 10A → Stage 10B → Stage 11 → Stage 12 journal refresh → Stage 13 → Stage 14`:
 
-- Stage 10 records **source-grounded writing moves** from relevant accessible published papers and an article-type appropriate manuscript adaptation; exemplar comparison is not novelty certification or journal acceptance evidence.
+- Stage 10A records **source-grounded writing moves** before drafting; Stage 10B implements them from relevant accessible published papers and an article-type appropriate manuscript adaptation; exemplar comparison is not novelty certification or journal acceptance evidence.
 - Stage 11 conducts an **independent editorial attack** on the actual draft with first-pass reader paraphrases and a communication-only desk-reject case, separately from mathematical/novelty attacks. A distinct AI reviewer is an AI critical pass, not a human referee.
 - Stage 12 refreshes exemplar relevance after journal selection; it does not use preferred writing style to enlarge scientific results or alter the theory freeze.
 - Stage 13 records before/after passages, the defect repaired, theorem/evidence guardrails and a repeated critical-reader test. Stage 14 checks that the final PDF retains that result.
@@ -282,6 +282,20 @@ A `GO` cannot be awarded for the editorial portion solely because all required h
 Where the repair affects only sequencing, explanation, or compression, return to Stage 10/13 as appropriate. Where a proposed sentence changes theorem scope, prior-art priority, numerical strength, welfare definition, or policy inference, reopen the earliest affected scientific Stage. Respect existing `GO / CONDITIONAL GO / NO-GO` meanings and one-diagnosed-fix change control.
 
 Use `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md` alongside existing exposition and referee checklists. Record `EDITORIAL_EXEMPLAR_MAP`, `EDITORIAL_REFEREE_REPORT`, and `EDITORIAL_REVISION_AUDIT` or equivalently identified evidence.
+
+---
+
+### 2.24 Mandatory pre-writing exemplary-paper benchmark (unreleased v3.0 candidate)
+
+After Stage 9 and before any Stage-10B manuscript drafting, Stage 10A must select a small evidence-grounded set of published exemplary papers and deliver an approved `MANUSCRIPT_BLUEPRINT.md` and `EDITORIAL_EXEMPLAR_MAP.md` (or individually identifiable equivalents). Search by economic question, method and article type; favor well-regarded exemplars but do not equate rank, citations or topic overlap with writing quality. **Full-text acquisition is a hard eligibility filter before scoring or selecting any writing exemplar.** Obtain the complete article and any appendices/supplements material to assessing its proofs or writing roles through lawful accessible sources (publisher, author/institutional repository, or legitimately supplied copy). An identifiable author accepted manuscript is acceptable when sufficiently complete and faithful to the published article; record its version and discrepancies. A PDF or complete HTML/text accessed and read through a supported tool is equally acceptable; local PDF download is not mandatory. Verify actual content access and completeness (first/last page or section, section/appendix inventory, no material gaps), then read the complete text including material proof sections and exhibits. A link, abstract, search snippets, AI summary, partial preview or an untested PDF URL is not acquisition. Log source, access date, version, coverage and locators; retain a lawful copy only where permitted, never republish copyrighted PDFs by default. If acquisition fails, mark the candidate EXCLUDED — FULL TEXT UNAVAILABLE, record why, and immediately advance to the next suitable candidate within a bounded search; do not score it or retain it as a selected exemplar, and do not hold the gate open merely to obtain a preferred famous paper. Require a fully acquired/read exemplar set with complete verified coverage of essential writing roles; no overall primary paper is mandatory; fewer than 3 papers permitted with a documented bounded-search justification. Only if no eligible set covers essential roles after reasonable substitution may a material blocker prevent GO. This filter applies to writing exemplars only; decisive inaccessible prior art remains subject to the separate fail-closed novelty/source-audit rules. Aim for 3–5 distinct papers; a justified smaller set, including a single paper, is acceptable only after bounded search, comparison of plausible alternatives and full coverage of material writing roles. Lack of an eligible exemplar set covering essential writing roles after bounded substitution blocks GO. Exclusion of an inaccessible candidate alone does not block GO.
+
+Evaluate construction, clarity, proof economy, economic intuition, contribution framing, and exhibits using the benchmark checklist. No fabricated consensus, text copying, template mimicry, or silent import of scientific claims. Scientific certification and author responsibility are unchanged; if a proof-simplification changes mathematical substance, route to the earliest affected scientific gate. A conditional verdict does not authorize drafting. Stage 11 separately attacks the implemented exposition against the benchmark, Stage 12 refreshes target fit, Stage 13 repairs and retests, and Stage 14 verifies retention in the actual final PDF. Presentation-only benchmark defects reopen 10A or 10B/13 as appropriate; do not reopen theory solely to imitate a model article.
+
+Role-wise selection and coherent synthesis are mandatory: compare source-located writing techniques for each applicable role, justify the best article-specific combination in a role-selection matrix and audit the resulting single narrative, notation, proof hierarchy, transitions, scientific guardrails and exhibit allocation. No overall primary paper is required; single-paper use is allowed only with documented comparative justification and complete coverage. Unresolved material incoherence blocks GO. Stage 11 attacks both individual roles and integrated coherence.
+
+
+
+Apply `templates/STAGE_10A_EXEMPLARY_PAPER_BENCHMARKING.md` and `checklists/EXEMPLARY_PAPER_BENCHMARKING_CHECKLIST.md`. This mandatory stage addition and route change is MAJOR-class under the versioning policy; no release or tag is implied. Historical Stage 10 maps to 10B, and older completed work is not retrospectively relabeled. Once merged to `main`, this gate is mandatory for live and revised projects; the historical v2.9 release is not the operative route. An in-flight project may reuse a valid frozen theory and Stage 9, but must perform 10A before rewriting or revalidating 10B.
 
 ---
 
@@ -487,6 +501,7 @@ For theorem-oriented projects:
 - Stage 4A `GO` routes to Stage 6.
 - Stage 7.5 `GO` routes to **Stage 7.5A**, never directly to Stage 8.
 - Stage 7.5A `GO` is required for Stage 8 theory freeze.
+- Stage 9 `GO` routes to **Stage 10A**; Stage 10A `GO` plus the saved blueprint and source map is required for **Stage 10B**; Stage 10B `GO` routes to Stage 11. No manuscript-writing shortcut from Stage 9. Stage 10A conditional/negative verdict blocks Stage 10B. The existing scientific gates are unchanged by this v3.0 candidate route.
 
 The Stage structure and routing remain unchanged by the Formal Verification Gate. Instead, Stage 7.5A may issue `GO` only after its embedded formal-verification state is either `FORMAL VERIFICATION PASS` or `FORMALIZATION NOT APPLICABLE — REASON RECORDED`.
 
@@ -513,6 +528,7 @@ Examples:
 - formal source/build/statement-mapping defect only with unchanged certified mathematics → Stage 7.5A Formal Verification Gate;
 - material theorem/quantifier change after formal certification → mark the formal certificate stale and rerun the affected analytic/scope and formal-verification gates before refreeze;
 - post-freeze theory change → Stage 8 change control plus every affected earlier gate;
+- missing/inadequate exemplar evidence or blueprint → Stage 10A; draft architecture/prose failure against a sound blueprint → Stage 10B or Stage 13 with retest; substantive scientific error → earliest affected scientific gate;
 - Stage 11 fatal attack → earliest affected stage, not prose-only patch;
 - Stage 13/14 substantive inconsistency → earliest affected research stage plus fresh integration/QA.
 

@@ -127,6 +127,8 @@ Cross-document audit:
 
 ### Editorial argument revision audit — separate from streamlining
 
+Reconcile the Stage-10A blueprint/register, Stage-10B adoption trace, Stage-11 benchmark objections and Stage-12 refresh. Retest each material benchmark deficit with exact before/after locations; do not discard essential proof or scope to mimic an exemplar. Missing benchmark evidence returns to 10A.
+
 Apply `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md`. Reconcile the Stage-10 `EDITORIAL_EXEMPLAR_MAP`, Stage-11 independent `EDITORIAL_REFEREE_REPORT`, and Stage-12 selected-journal comparators. A streamlining PASS proves neither persuasive argument nor a successful critical-reader explanation.
 
 Produce `EDITORIAL_REVISION_AUDIT.md` or equivalent, preserving for every material issue:
@@ -223,3 +225,5 @@ Choose one:
 Stage 14 verifies the exact final PDF against the Stage-10 exemplar map, independent Stage-11 editorial attack and Stage-13 before/after retest; material editorial regressions reopen Stage 13/10. Stage 14 also **refreshes all material journal requirements from current official sources**. It should not be the first stage at which the project decides whether a central result needs a figure or table, but it is the mandatory stage at which journal-compliance evidence is re-opened, dated, reconciled, and made fail-closed.
 
 Stage 14 may repair formatting/package defects but should not materially rewrite the theory, contribution, or exposition architecture. A structural exposition failure discovered there normally reopens Stage 13; an architecture-design failure may reopen Stage 10.
+### Exemplar synthesis regression
+Reconcile the Stage-10A role-selection matrix and coherence audit with all Stage-12 role changes. Audit the integrated draft's narrative, notation, theorem hierarchy, transitions, proof-critical bridges and exhibit allocation; preserve a before/after and retest record for material conflicts. No material unresolved coherence failure passes integration.

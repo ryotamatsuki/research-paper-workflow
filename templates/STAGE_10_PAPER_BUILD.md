@@ -1,6 +1,10 @@
-# Stage 10 — Section-by-Section Paper Construction
+# Stage 10B — Section-by-Section Paper Construction (historical Stage 10)
 
 > Canonical authority: `GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → this template.
+
+## Mandatory entry gate
+
+Require Stage 9 GO, Stage 10A GO, frozen theory, full-text source register, exemplar map and `MANUSCRIPT_BLUEPRINT.md`. No drafting if Stage 10A is missing or conditional. Preserve this template path for historical Stage-10 links. Write from the blueprint; log exact sections implementing each writing move and reasoned deviations. No borrowing source prose or changing certified claims. Apply the exemplary-paper checklist and existing editorial, exposition and proof-verifiability gates.
 
 ## 0. Role
 
@@ -116,7 +120,7 @@ A game-timing diagram, conceptual schematic, or mechanism flowchart is optional 
 
 Apply `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md` independently of the existing exposition architecture and proof-verifiability requirements. Before calling the manuscript ready, preserve `EDITORIAL_EXEMPLAR_MAP.md` or equivalent:
 
-1. Inspect the actual text of 2–3 appropriate **published and accessible** papers where feasible. For each give a stable DOI/URL, year/venue, section or passage inspected, observed **argument structure**, and an adapted move; do not fabricate a full-text reading or treat the examples as proofs of novelty/acceptance.
+1. Consume the Stage-10A verified role-specific exemplar set and full-text evidence (normally 3–5, with justified coverage-based exceptions), including stable DOI/URL, source locators, observed argument structure and planned writing moves. Record implementation in the actual draft and any justified deviation for each selected writing role; preserve the Blueprint's coherence audit and resolve conflicting imported techniques. Do not replace the pre-writing gate with retrospective reading or treat exemplars as proofs of novelty/acceptance.
 2. Map at least three tasks where relevant: (a) **why the economic question matters before mathematical machinery**, (b) **explain the surprising theorem result via opposing effects and the economic function of binding restrictions**, (c) **Discussion begins with the new economic lesson and then maps to institutions/evidence and boundaries**. A short note/correction may document a specific N/A.
 3. Draft a one-paragraph plain-language account of the **new conditional economic inference** and explicitly identify inherited components, analytically proved claims, numerical witnesses, and unresolved instruments/causal interpretation. Map each sentence to the frozen claim register.
 4. Run a first reading-order test before signing off: can a competent reader infer the puzzle, central result and critical scope from the opening, and explain the headline proposition without reverse-engineering equations or relying on the author's chat? Record the observed passages and any ambiguity for Stage 11.
@@ -142,7 +146,9 @@ Stop and reopen earlier stages if writing reveals:
 - an institutional claim incompatible with the model;
 - a robustness requirement that changes the mechanism.
 
-Do not declare Stage 10 complete if:
+Do not declare Stage 10B complete if:
+
+- Stage 10A GO or blueprint is missing, or concrete draft implementation/justified deviations are unaudited;
 
 - the exposition profile, section-role map, reader-arrival budget, or main-text necessity audit is missing;
 - the core model/evidence is scattered across sections without a documented reason;
@@ -183,7 +189,7 @@ At Stage completion additionally provide:
 9. `EXPOSITION_ARCHITECTURE.md` or equivalent section-role/reader-arrival/main-text necessity record
 10. Figure/Table Architecture map and five-exhibit thought experiment
 11. figure/table generators and verification status
-12. `EDITORIAL_EXEMPLAR_MAP.md` or equivalent with inspected references, writing moves, manuscript locations, scope guardrails and provisional-journal status
+12. Stage-10A verdict, `MANUSCRIPT_BLUEPRINT.md`, exemplar adoption/deviation log and `EDITORIAL_EXEMPLAR_MAP.md` or equivalent with inspected references, writing moves, manuscript locations, scope guardrails and provisional-journal status
 13. initial cold-reader contract and exact evidence passages; communication blockers to be attacked at Stage 11
 14. remaining manuscript gaps
 

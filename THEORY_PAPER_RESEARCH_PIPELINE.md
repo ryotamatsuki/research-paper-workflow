@@ -1,6 +1,6 @@
 # Theory Paper Research Pipeline
 
-Version: v2.9
+Version: v3.0 candidate (operational on `main`; unreleased; stable baseline v2.9)
 
 ## 1. Purpose
 
@@ -84,9 +84,9 @@ This backward-compatible refinement adds no Stage, changes no canonical verdict 
 
 The reviewer-verifiability lifecycle is:
 
-`Stage 10 → Stage 11 → Stage 13 → Stage 14`.
+`Stage 10A → Stage 10B → Stage 11 → Stage 13 → Stage 14`.
 
-1. **Stage 10 — derivation architecture:** identify the proof/derivation chain for each headline result, mark short bridge equations that must remain visible, and decide which routine expansions may safely move to Appendix/Supplement/code.
+1. **Stage 10A/10B — derivation architecture:** identify the proof/derivation chain for each headline result, mark short bridge equations that must remain visible, and decide which routine expansions may safely move to Appendix/Supplement/code.
 2. **Stage 11 — hostile reconstruction:** independently reconstruct at least one complete headline proof/derivation from the manuscript-facing package and attack opaque phrases such as “straightforward algebra,” “by symmetry,” “the certificate verifies,” or “the solver finds.”
 3. **Stage 13 — reviewer-verifiability audit:** require every material claim to retain an auditable chain from primitives/evidence through key intermediate objects to the theorem/result. Streamlining may compress routine algebra but may not remove conceptual bridges.
 4. **Stage 14 — final package verification:** confirm that journal formatting and packaging did not remove proof boundaries, definitions, bridge equations, appendix links, or computer-assisted-proof mappings.
@@ -106,10 +106,10 @@ Its purpose is to prevent scientifically correct papers from reaching submission
 
 The exposition lifecycle is:
 
-`Stage 7 → Stage 10 → Stage 13 → Stage 14`.
+`Stage 7 → Stage 9 → Stage 10A → Stage 10B → Stage 13 → Stage 14` (only the exposition lifecycle is shown).
 
 1. **Stage 7 — candidate vehicles:** identify candidate theorem/proposition/figure/table/numerical/prose vehicles for headline results.
-2. **Stage 10 — architecture design:** choose an article-type exposition profile, define section roles and reader-arrival targets, consolidate the model/evidence architecture, and run an exhibit-scarcity thought experiment before finalizing the Introduction.
+2. **Stage 10A/10B — architecture design:** choose an article-type exposition profile, define section roles and reader-arrival targets, consolidate the model/evidence architecture, and run an exhibit-scarcity thought experiment before finalizing the Introduction.
 3. **Stage 13 — streamlining:** audit the integrated manuscript item by item, classify material as `CORE` / `HELPFUL` / `APPENDIX` / `DELETE`, compress the Introduction, enforce section purity, rerun actual page-arrival diagnostics, and remove or relocate redundant material without weakening theorem/evidence scope.
 4. **Stage 14 — verification:** perform a binary exposition audit on the final package. A structural exposition failure normally reopens Stage 13; an architecture failure may reopen Stage 10; a substantive theory/evidence/novelty change reopens the earliest affected research stage.
 
@@ -191,9 +191,9 @@ Within existing Stages 2/3/4/4A/6/7.5A/11, evaluate **reversal, surprising compa
 
 ### Unreleased post-v2.9: independent editorial argument-quality gate
 
-This backward-compatible **MINOR-class** refinement addresses a distinct residual after v2.5 streamlining and v2.7 proof verifiability: **an accurate manuscript may contain every required element without communicating its economic inference persuasively**. The lifecycle is `Stage 10 → Stage 11 → Stage 12 comparator refresh → Stage 13 → Stage 14` without adding a Stage or changing verdict semantics.
+The pre-Stage-10A editorial refinement (historical post-v2.9 MINOR proposal, superseded in timing and routing by the v3.0 candidate) addresses a distinct residual after v2.5 streamlining and v2.7 proof verifiability: **an accurate manuscript may contain every required element without communicating its economic inference persuasively**. The updated lifecycle is `Stage 10A → Stage 10B → Stage 11 → Stage 12 comparator refresh → Stage 13 → Stage 14`; the earlier editorial refinement alone did not add a stage. Existing verdict semantics remain.
 
-- **Stage 10:** create a source-grounded `EDITORIAL_EXEMPLAR_MAP` from relevant, accessible published papers; distinguish observed writing technique from subject-matter novelty, theorem scope or journal quality. Identify the intended problem-first opening, immediate post-result intuition, and economic-lesson-first Discussion. Where the target journal is unset, comparator choice is explicitly provisional.
+- **Stage 10A (before drafting):** create a source-grounded `EDITORIAL_EXEMPLAR_MAP` using only fully acquired and completely read published papers, applying the mandatory acquisition and synthesis gate; Stage 10B implements the blueprint; distinguish observed writing technique from subject-matter novelty, theorem scope or journal quality. Identify the intended problem-first opening, immediate post-result intuition, and economic-lesson-first Discussion. Where the target journal is unset, comparator choice is explicitly provisional.
 - **Stage 11:** require a critical editorial-reader pass separate from the scientific referee. Before reading the writer's explanations, record the reader's own interpretation of the puzzle, main conditional result, opposing effects, and scope from the *actual manuscript*. Write a specific strongest **communication-only desk-reject** paragraph and classify defects. Praise without textual evidence is not a PASS.
 - **Stage 12:** once the venue is selected, check whether the provisional examples fit the intended article type and target journal, replacing inaccessible or unsuitable examples with verified ones as needed.
 - **Stage 13:** preserve an `EDITORIAL_REVISION_AUDIT` with before/after changes, criticism addressed, theorem/negative-evidence integrity, and a fresh cold-reader test. A checklist of headings without observed passages cannot pass.
@@ -227,11 +227,11 @@ For material AI use, apply `checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECK
 For manuscript exposition, use the four-step lifecycle:
 
 - Stage 7 — identify candidate exposition vehicles;
-- Stage 10 — design the full exposition architecture, including section roles, reader-arrival targets, model/evidence consolidation, and figure/table architecture;
+- Stage 10A/10B — design the full exposition architecture, including section roles, reader-arrival targets, model/evidence consolidation, and figure/table architecture;
 - Stage 13 — integrate and aggressively streamline the target-journal manuscript using actual page/order evidence;
 - Stage 14 — verify that the final package still satisfies the exposition architecture while also checking regeneration, numerical integrity, artwork compliance, source completeness, and legibility.
 
-Apply `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md` across this lifecycle. Stage 10 is the design gate, Stage 13 is the streamlining gate, and Stage 14 is a verification gate rather than the normal place for a late structural rewrite.
+Apply `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md` across this lifecycle. Stages 10A/10B are the benchmark/design and construction gates, Stage 13 is the streamlining gate, and Stage 14 is a verification gate rather than the normal place for a late structural rewrite.
 
 There is no minimum figure/table quota. Every visual must materially reduce the reader's cost of understanding a verified result. The five-exhibit thought experiment is a prioritization device, not a universal exhibit limit.
 
@@ -810,13 +810,43 @@ If the project recorded `FORMALIZATION NOT APPLICABLE`, retain that rationale wi
 
 Never reset to an old reference SHA without checking the latest remote state.
 
+Stage 9 GO authorizes Stage 10A only, not immediate manuscript drafting.
+
 ---
 
-# Stage 10 — Section-by-Section Paper Construction
+# Stage 10A — Exemplary Paper Benchmarking & Synthesis (mandatory pre-writing gate)
+
+## Objective
+Find and analyze excellent published papers that a specialist could reasonably use as writing models for this project's economic question, research method and article type. Select an evidence-backed set of exemplars and synthesize their strongest suitable writing techniques by role; a single overall anchor is optional. Produce an actionable original writing plan before drafting any manuscript section, including its proof architecture and visual narrative.
+
+## Entry and search
+Enter only after Stage 9 GO and a valid Stage 8 freeze. Use closest-paper records from Stages 2/6, the frozen claim/proof map, contribution and article type, and a bounded search across field and leading general journals. The target at Stage 12 is not yet binding; use provisional field/article-type comparators. Earlier stages may collect candidates; they do not satisfy this gate. Separate closest prior art (novelty) from best writing model (exposition). Search beyond a single author, journal or citation count where feasible. Log search terms, sources, plausible rejected candidates and reasons.
+
+**Full-text acquisition is a hard eligibility filter before scoring or selecting any writing exemplar.** Obtain the complete article and any appendices/supplements material to assessing its proofs or writing roles through lawful accessible sources (publisher, author/institutional repository, or legitimately supplied copy). An identifiable author accepted manuscript is acceptable when sufficiently complete and faithful to the published article; record its version and discrepancies. A PDF or complete HTML/text accessed and read through a supported tool is equally acceptable; local PDF download is not mandatory. Verify actual content access and completeness (first/last page or section, section/appendix inventory, no material gaps), then read the complete text including material proof sections and exhibits. A link, abstract, search snippets, AI summary, partial preview or an untested PDF URL is not acquisition. Log source, access date, version, coverage and locators; retain a lawful copy only where permitted, never republish copyrighted PDFs by default. If acquisition fails, mark the candidate EXCLUDED — FULL TEXT UNAVAILABLE, record why, and immediately advance to the next suitable candidate within a bounded search; do not score it or retain it as a selected exemplar, and do not hold the gate open merely to obtain a preferred famous paper. Require a fully acquired/read exemplar set with complete verified coverage of essential writing roles; no overall primary paper is mandatory; fewer than 3 papers permitted with a documented bounded-search justification. Only if no eligible set covers essential roles after reasonable substitution may a material blocker prevent GO. This filter applies to writing exemplars only; decisive inaccessible prior art remains subject to the separate fail-closed novelty/source-audit rules. Default 3–5 selected papers assigned specific writing roles. A smaller set (including one paper) requires documented search, comparison and coverage justification; every selected exemplar must be fully acquired and read. An overall anchor is optional, never a prerequisite. No one can certify unanimous economist preference.
+
+## Selection and analytical obligations
+Apply `checklists/EXEMPLARY_PAPER_BENCHMARKING_CHECKLIST.md`: score each inspected candidate (0–100) using the seven-dimensional rubric; justify scores with source locations; compare tradeoffs, choose role-specific techniques (including multiple sources for a role where useful), record what is not transferable. Score is a decision aid, never a surrogate for reading, scientific validity or universal consensus. Evaluate problem-first Introduction, order of definitions/results, concrete examples/figures, economical lemma/proposition/theorem structure and proof-critical bridge equations, intuition beside results, literature/contribution boundaries, discussion/conclusion and substantive limits. Adapt the underlying technique, not wording, notation, theorem or claims. A simplified proof may not drop any certified condition or weaken verification. Material proof/theory changes require rollback.
+
+## Role-wise benchmarking, synthesis and coherence audit (mandatory)
+
+The unit of selection is the writing technique, not the whole paper. Normally use complementary strengths from several eligible full-text exemplars; an overall anchor paper is optional. Total rubric scores inform screening only: do not mechanically choose the highest total or highest subscore, or assume a top-journal style fits every article type. For each applicable role (overall structure, Introduction and problem framing, clarity and prose economy, notation/model and theorem architecture, proof strategy and bridge visibility, economic intuition and post-result interpretation, novelty/contribution framing, figures/tables/examples, Discussion/conclusion and limitations), compare specific source-located techniques and choose the best fit for the frozen contribution. Multiple sources may support a single role; one source may support several roles. Document alternatives rejected, comparative reasons, limitations, and why a role is inapplicable if relevant. The preferred outcome is an original synthesis that can improve on individual exemplars where justified, not a claim of demonstrated superiority or imitation of source prose.
+
+Include a role-selection matrix in EDITORIAL_EXEMPLAR_MAP.md (role; eligible candidates and exact locations; observed strengths/tradeoffs; selected move(s); project-specific adaptation; rejected alternatives and reasons; scientific guardrails). Integrate all adopted moves into MANUSCRIPT_BLUEPRINT.md. Before GO, explicitly audit whole-paper coherence: one economic narrative and contribution hierarchy; consistent notation, definitions, terminology and voice; compatible theorem/lemma and proof sequencing; no duplicated sections or intuition; figures serve the argument; main-text/appendix allocation preserves proof-critical bridges; transitions and limits preserve exact frozen claims, assumptions and negative results. Resolve conflicts between techniques by choosing an internally coherent article-specific architecture, not by copying or mechanically splicing sections. Document the conflict, alternatives, decision and justification; if no conflict, record tests and result. A single-paper solution requires evidence that alternative techniques were considered and it covers every material role without sacrificing fit. No unresolved material coherence or coverage defect may pass Stage 10A.
+
+Stage 10B records exact implementation and justified deviations for each selected role. Stage 11 independently attacks both role-specific quality and the integrated paper's coherence after a cold read, not merely similarity to exemplars. Stage 12 recalibrates roles for the journal using the full-text filter; Stage 13 repairs and retests role quality and coherence; Stage 14 verifies the exact final PDF retains the resolved synthesis. Scientific defects return to the earliest scientific gate; never simplify a proof by silently changing its scope.
+
+## Required outputs and exit
+Save `EXEMPLARY_PAPER_REGISTER.md`, `EDITORIAL_EXEMPLAR_MAP.md`, and `MANUSCRIPT_BLUEPRINT.md` (equivalently named identifiable evidence allowed). Blueprint must map each frozen headline result to narrative position, supporting proposition/proof path, visible bridges, main text vs appendix, interpretation, figure/table or example and guardrails; include section roles and reader-arrival targets, proposed opening/problem and contribution framing, notation and proof strategy, cold-reader questions, and journal-refresh status. Preserve source facts/caveats and document rejected stylistic options. Stage report records exactly one canonical verdict. **GO** requires verified full-text acquisition and complete reading of every selected exemplar, justified role-by-role selection and synthesis, documented coherence audit, complete applicable coverage, an implementable blueprint tied to the exact freeze, and no material blockers. **CONDITIONAL GO** names exactly one blocker and a bounded completion action inside 10A; it does not authorize 10B. **NO-GO** stops this writing route pending justified re-entry. Proceed only `GO → Stage 10B`. Never substitute exemplar ranking for novelty or mathematical certification. Stage 11 benchmarks the actual draft, Stage 12 refreshes exemplars, Stage 13 repairs/retests, Stage 14 verifies the final PDF.
+
+Template: `templates/STAGE_10A_EXEMPLARY_PAPER_BENCHMARKING.md`.
+
+---
+
+# Stage 10B — Section-by-Section Paper Construction (historical Stage 10)
 
 ## Objective
 
-Build the manuscript in dependency order and establish the Figure/Table Architecture before finalizing the Introduction.
+Build the manuscript in dependency order following the Stage-10A GO and saved Manuscript Blueprint, and establish the Figure/Table Architecture before finalizing the Introduction. Do not draft before the benchmark gate closes. Existing Stage-10 template filename is retained for compatibility.
 
 ## Recommended order
 
@@ -856,7 +886,7 @@ Paper-specific page landmarks are soft diagnostics only. Current journal/article
 
 ## Editorial writing and cold-reader design gate
 
-Apply `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md` and create an `EDITORIAL_EXEMPLAR_MAP.md` or equivalent before finalizing the Introduction, headline-proposition intuition and Discussion. Inspect 2–3 relevant **accessible published** sources where feasible (author/venue/date/DOI, inspected section and writing move); the exact number is not a quota, and inaccessible text is `UNVERIFIED`. Map the problem-first opening, the explanation of countervailing effects and primitive restrictions immediately after the result, and the economic-lesson → application → limitation sequence where appropriate for the article type.
+Apply `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md` and create an `EDITORIAL_EXEMPLAR_MAP.md` or equivalent before finalizing the Introduction, headline-proposition intuition and Discussion. Consume the full-text-verified Stage-10A exemplar register and blueprint; verify concrete adoption against exact source locations. If material coverage is missing, reopen Stage 10A rather than writing first and benchmarking retrospectively. Map the problem-first opening, the explanation of countervailing effects and primitive restrictions immediately after the result, and the economic-lesson → application → limitation sequence where appropriate for the article type.
 
 Record an initial **cold-reader contract**: what a specialist should be able to paraphrase from the opening paragraphs, proposition explanation and Discussion without consulting the author, and where each answer can be found. An introduction does not pass simply because it eventually contains all required concepts. Choose provisional field/article-type comparators when the journal has not yet been selected; Stage 12 revisits relevance. Preserve precise mathematical scope and separate derivative signs from levels, conditional margins from equilibrium/aggregate welfare and numerical examples from theorems where applicable.
 
@@ -870,7 +900,7 @@ There is no minimum visual count.
 
 ## Exit criterion
 
-Each section compiles, matches the frozen theory and theorem certificates, and is integrated through controlled changes. Every headline result has an explicit exposition vehicle and every required figure/table is reproducibly implemented or has a documented blocker. The exposition architecture is explicit, the Introduction is not finalized before that architecture exists, and no known reader-arrival or section-purity blocker is deferred to Stage 14.
+Stage 10A GO and a source-to-draft adoption/justified-deviation trace are prerequisites. Each section compiles, matches the frozen theory and theorem certificates, and is integrated through controlled changes. Every headline result has an explicit exposition vehicle and every required figure/table is reproducibly implemented or has a documented blocker. The exposition architecture is explicit, the Introduction is not finalized before that architecture exists, and no known reader-arrival or section-purity blocker is deferred to Stage 14.
 
 ---
 
@@ -919,6 +949,8 @@ Where formal verification is applicable, inspect the paper-claim ↔ formal-theo
 
 Add a **separate communication-only editorial referee** under `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md`. Require first-pass paraphrases and exact manuscript locations for (i) opening economic question and stakes, (ii) nontrivial central inference, (iii) two or more opposing mechanisms where applicable and their primitive boundary, (iv) inherited versus new contribution and (v) Discussion's actual economic lesson and limits. The referee must write the strongest plausible communication-only rejection paragraph, distinguishing it from the scientific/novelty rejection. A positive general verdict without these artifacts is an `UNRESOLVED` editorial gate, not PASS. Record `EDITORIAL_REFEREE_REPORT.md` and repair route without replacing the existing hostile mathematical attacks.
 
+Independently compare the actual draft with the Stage-10A role-specific exemplars and integrated blueprint after the first-pass cold read. For every applicable rubric dimension, attach exact manuscript and exemplar locations, a concrete weakness or justified deviation, and repair route/retest. Material gaps block unconditional GO. Missing source/blueprint coverage returns to Stage 10A; execution defects return to 10B/13; scientific defects return to the earliest affected scientific gate. Publication venue is not a substitute for evidence.
+
 Classify attacks as `FATAL`, `MAJOR BUT FIXABLE`, or `MINOR`.
 
 If Stage 11 discovers a failure that Stage 4A or 7.5A should have caught, including a manuscript claim that exceeds the frozen portability classification or suppresses a material negative portability result, record it explicitly as a **certification regression** and route to the earliest affected stage. Do not patch it only in prose. A material change to a formally certified theorem or encoded hypothesis also marks the formal certificate stale.
@@ -950,7 +982,7 @@ Then, for each serious candidate:
 
 - read current aims/scope and recent related papers;
 - compare model sophistication, article type, and contribution style with actual publications;
-- refresh the Stage-10 published-paper **writing exemplars** for the selected journal/article type, checking accessible full-text sections for problem-first openings, result-intuition explanations and Discussion argument structure; log unavailable source evidence, supply Stage-13 instructions, and avoid treating published examples as novelty/acceptance proof;
+- refresh the Stage-10 published-paper **writing exemplars** for the selected journal/article type, applying the Stage-10A full-text acquisition and complete-reading eligibility filter to all newly selected comparators and checking problem-first openings, result-intuition explanations and Discussion argument structure; log unavailable source evidence, supply Stage-13 instructions, and avoid treating published examples as novelty/acceptance proof;
 - explicitly compare **editorial problem-completeness expectations** in recent relevant publications: is a diagnosis-only result accepted, or does this audience expect mechanism implementation, actionable comparative statics, or empirical validation? Record a specific likely desk-reject objection, not only a novelty or journal-rank label;
 - compare the journal's demonstrated generality/robustness expectations with the Contribution Robustness Certificate rather than assuming that journal rank mechanically determines required theory;
 - estimate desk-reject risk and likely referee objections;
@@ -986,7 +1018,7 @@ Turn independently correct sections into one coherent argument and reconcile the
 
 ## Audit
 
-Apply `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md` as an **editorial argument-quality** gate. Reconcile the Stage-10 writing examples with the journal selected at Stage 12. Require actual before/after passages and a second cold-reader test addressing every material Stage-11 editorial objection. Archive `EDITORIAL_REVISION_AUDIT.md` or an equally identifiable report; do not mark clear prose complete because sections exist or the manuscript is shorter. Keep the scientific claim register, proof-critical bridge equations and negative evidence invariant; substantive defects reopen the relevant scientific gate.
+Apply `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md` as an **editorial argument-quality** gate. Reconcile the Stage-10A blueprint and Stage-10B observed writing adaptations with the journal selected at Stage 12. Require actual before/after passages and a second cold-reader test addressing every material Stage-11 editorial objection. Archive `EDITORIAL_REVISION_AUDIT.md` or an equally identifiable report; do not mark clear prose complete because sections exist or the manuscript is shorter. Keep the scientific claim register, proof-critical bridge equations and negative evidence invariant; substantive defects reopen the relevant scientific gate.
 
 Apply `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md` to the actual integrated manuscript before submission QA. Stage 13 is the primary streamlining gate. For theorem-bearing or technically dense manuscripts, also apply `checklists/REVIEWER_VERIFIABILITY_CHECKLIST.md`; reviewer verifiability is a closure condition, not an optional style preference.
 
@@ -1039,7 +1071,7 @@ Verify the complete submission package, including mathematical artifacts and art
 - when SSRN is an actual destination, current SSRN disclosure-location and bulk/high-volume-submission rules are checked from official sources without manufactured submission spacing or chronology;
 - abstract, highlights, cover letter, manuscript, theorem scope, and any formal-verification claim agree;
 - final PDF is inspected page by page.
-- the final PDF matches the Stage-10 exemplar map, Stage-11 editorial referee report and Stage-13 before/after revision evidence; no material communication-only objection is unresolved, and manuscript changes after the editorial PASS trigger rechecking the affected passage;
+- the final PDF matches the Stage-10A blueprint/exemplar map and Stage-10B adoption record, Stage-11 editorial referee report and Stage-13 before/after revision evidence; no material communication-only objection is unresolved, and manuscript changes after the editorial PASS trigger rechecking the affected passage;
 - the final PDF passes the Stage-13 exposition architecture/streamlining audit: Introduction compression, section purity, reader-arrival budget, exhibit scarcity, and concise/no-new-claims conclusion; any structural failure reopens Stage 13 rather than being solved by an unreviewed late rewrite;
 - where reviewer-verifiability auditing applies, the exact final PDF/package preserves definitions, proof boundaries, bridge equations, appendix/supplement cross-references, and computer-assisted/formal mappings needed for a specialist referee to follow the claim → derivation → proof/certificate → conclusion chain.
 
@@ -1133,7 +1165,7 @@ Formal verification strengthens assurance; it is not itself a substitute for an 
 
 Exposition is a cross-stage scientific-communication object, not a cosmetic Stage-14 concern. Apply `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md` across Stages 7/10/13/14. For theorem-bearing or technically dense manuscripts, apply `checklists/REVIEWER_VERIFIABILITY_CHECKLIST.md` across Stages 10/11/13/14.
 
-Stage 10 designs section roles, reader-arrival targets, model/evidence consolidation, and the Figure/Table Architecture. Stage 13 performs the aggressive streamlining pass on the integrated manuscript. Stage 14 verifies the resulting architecture and rolls back rather than performing a late substantive rewrite.
+Stages 10A/10B design section roles, reader-arrival targets, model/evidence consolidation, and the Figure/Table Architecture. Stage 13 performs the aggressive streamlining pass on the integrated manuscript. Stage 14 verifies the resulting architecture and rolls back rather than performing a late substantive rewrite.
 
 Figures/tables are evidence-bearing manuscript objects, not decoration. They may not create a weaker proof standard or hide theorem scope restrictions. Generic page or exhibit counts are diagnostics only; current journal/article-type rules and scientific completeness control.
 
