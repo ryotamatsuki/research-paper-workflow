@@ -157,4 +157,4 @@ Choose one canonical stage verdict and route:
 
 ## 14. Next-stage contract
 
-Stage 4 must test one minimal candidate. Freeze all ingredients not required for that mechanism. If the selected contribution route is a generalization/unification, Stage 4 must solve the full game and enough nested benchmarks to identify what the additional strategic architecture actually changes.
+Stage 4 must test one minimal candidate. Freeze all ingredients not required for that mechanism. If the selected contribution route is a generalization/unification, Stage 4 must establish the claimed theorem or domain expansion and recover relevant benchmarks; demonstrate what additional strategic architecture changes only if such an interaction is claimed.

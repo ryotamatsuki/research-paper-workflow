@@ -127,7 +127,7 @@ A clean generalization/unification that nests important prior models and generat
 
 ## Nested-benchmark test
 
-When the candidate is a generalization or synthesis, define the minimum benchmark games obtained by removing or fixing one strategic component at a time. For each benchmark, record:
+When the candidate is a generalization or synthesis, define the pertinent benchmarks by restoring predecessor assumptions, restricting the domain, or removing/fixing strategic components as applicable. For each benchmark, record:
 
 - players removed/fixed;
 - strategy removed/fixed;
@@ -155,7 +155,7 @@ For the claim under review, fill in:
 - Exact difference in players/objectives/strategy sets:
 - Exact difference in strategic-feedback network:
 - Exact difference in theorem/result:
-- Exact difference in welfare implication:
+- Exact difference in economic-theory result/domain/method (welfare implication if claimed):
 - Prior models nested by the candidate, if any:
 - Full-model result unavailable in each nested benchmark:
 - What survives if the application label is removed?:

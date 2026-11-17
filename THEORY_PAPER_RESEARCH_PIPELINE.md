@@ -388,7 +388,7 @@ Alongside new questions and generalizations, compare **same-question, new-theore
 
 ## Kill tests
 
-Reject “another parameter/channel/fixed cost/player” additions that create no new strategic problem or theorem. Familiar components may survive only if their joint endogeneity creates a strategically non-equivalent equilibrium problem.
+Reject “another parameter/channel/fixed cost/player” additions that create no new strategic problem or theorem. Familiar components may survive if they support a substantive, plausibly non-absorbed result or expanded economic-theory domain; joint endogeneity must change the equilibrium problem when new interaction is claimed.
 
 ---
 
