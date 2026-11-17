@@ -1,12 +1,28 @@
 # Theory Discovery Framework (TDF)
 
-## v4.0 — Official practical-use baseline (frozen 2026-11-16)
+## v5.1 — Official practical-use version (adopted 2026-11-17)
 
-**Status: FROZEN FOR PRACTICAL USE.** TDF v4.0 supersedes v3.0 as the default optional research-discovery companion. The author approved its adoption on 2026-11-16. This is an operational baseline, not a certification of predictive effectiveness, theorem correctness or novelty.
+TDF v5.1 is the default optional method for discovering and screening research questions before [Stage 0](../templates/STAGE_00_IDEA_INTAKE.md).
+
+- [Master prompt](v5.1/TDF_Master_Prompt_v5.1.md) sets inputs and output requirements.
+- [Loop protocol](v5.1/TDF_Loop_Protocol_v5.1.md) defines search, evidence, budget, and handoff rules.
+- [Prompt library](v5.1/TDF_Research_Prompt_Library_v5.1.md) provides prompts for individual research tasks.
+- [Run ledger](v5.1/templates/Run_Ledger.md) and [Stage 0 handoff](v5.1/templates/Stage0_Handoff.md) record decisions and evidence.
+- [Package guide](v5.1/README.md) covers the Python helpers and links to the [calibration report](v5.1/validation/Calibration_Report.md).
+
+Use STANDARD by default. A STANDARD candidate marked `PROMISING` can be proposed for author selection with novelty still unresolved. Use EPOCH to search for a concept or general principle with testable implications in at least two settings. BOTH runs separate search queues with a shared source ledger. In any mode, keep a candidate on hold when a decisive prior-art question remains unresolved. The author selects any candidate that moves to Stage 0.
+
+The calibration covers decision rules and retrospective examples. Prospective discovery performance remains unverified. The [canonical pipeline](../THEORY_PAPER_RESEARCH_PIPELINE.md) and [governance](../GOVERNANCE.md) govern formal stage decisions, mathematical verification, novelty review and theory freeze.
+
+## Historical reference — v4.0 (default from 2026-11-16 to 2026-11-17)
+
+The v4.0 instructions below document the earlier baseline. The v4.0 construction pattern catalog remains available as a reference for model construction.
+
+**Original status:** The author adopted v4.0 as the optional discovery baseline on 2026-11-16.
 
 ### Start here
 
-- [TDF v4.0 Master Prompt](v4/TDF_Master_Prompt_v4.md) — canonical operational entry point.
+- [TDF v4.0 Master Prompt](v4/TDF_Master_Prompt_v4.md) — v4.0 operational entry point.
 - [TDF v4.0 Prompt Library](v4/TDF_Prompt_Library_v4.md) — reusable discovery and challenge prompts.
 - [TDF v4.0 Theory Construction Pattern Catalog](v4/Theory_Construction_Pattern_Catalog_v4.md) — the model-construction toolbox, distinct from creative problem discovery.
 

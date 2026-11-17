@@ -1,0 +1,127 @@
+[
+  {
+    "id": "P1",
+    "mode": "STANDARD",
+    "expected_eligible": true,
+    "decision": {
+      "maturity": "PROMISING",
+      "disposition": "ACTIVE",
+      "novelty": "UNRESOLVED",
+      "eligible": true,
+      "reasons": [
+        "full search L1",
+        "full search L2",
+        "full search L3",
+        "full search L4",
+        "full search L5",
+        "full search L6",
+        "full search L7",
+        "full search L8",
+        "open audit O",
+        "removal test",
+        "adversarial review"
+      ]
+    }
+  },
+  {
+    "id": "P2",
+    "mode": "STANDARD",
+    "expected_eligible": true,
+    "decision": {
+      "maturity": "PROMISING",
+      "disposition": "ACTIVE",
+      "novelty": "UNRESOLVED",
+      "eligible": true,
+      "reasons": [
+        "full search L1",
+        "full search L2",
+        "full search L3",
+        "full search L4",
+        "full search L5",
+        "full search L6",
+        "full search L7",
+        "full search L8",
+        "open audit O",
+        "removal test",
+        "adversarial review"
+      ]
+    }
+  },
+  {
+    "id": "N1",
+    "mode": "STANDARD",
+    "expected_eligible": false,
+    "decision": {
+      "maturity": "DISCOVERY",
+      "disposition": "REJECT",
+      "novelty": "ABSORBED",
+      "eligible": false,
+      "reasons": [
+        "exact known result assumed in fixture"
+      ]
+    }
+  },
+  {
+    "id": "B1",
+    "mode": "STANDARD",
+    "expected_eligible": false,
+    "decision": {
+      "maturity": "DISCOVERY",
+      "disposition": "HOLD",
+      "novelty": "UNRESOLVED",
+      "eligible": false,
+      "reasons": [
+        "fatal open threat O"
+      ]
+    }
+  },
+  {
+    "id": "B2",
+    "mode": "EPOCH",
+    "expected_eligible": false,
+    "decision": {
+      "maturity": "DISCOVERY",
+      "disposition": "HOLD",
+      "novelty": "UNRESOLVED",
+      "eligible": false,
+      "reasons": [
+        "epoch-specific substantive reframe absent",
+        "full search L1",
+        "full search L2",
+        "full search L3",
+        "full search L4",
+        "full search L5",
+        "full search L6",
+        "full search L7",
+        "full search L8",
+        "open audit O",
+        "removal test",
+        "adversarial review"
+      ]
+    }
+  },
+  {
+    "id": "R1",
+    "mode": "STANDARD",
+    "expected_eligible": true,
+    "decision": {
+      "maturity": "PROMISING",
+      "disposition": "ACTIVE",
+      "novelty": "UNRESOLVED",
+      "eligible": true,
+      "reasons": [
+        "full search L1",
+        "full search L2",
+        "full search L3",
+        "full search L4",
+        "full search L5",
+        "full search L6",
+        "full search L7",
+        "full search L8",
+        "open audit O",
+        "removal test",
+        "adversarial review"
+      ]
+    }
+  }
+]

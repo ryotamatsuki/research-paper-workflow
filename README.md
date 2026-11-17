@@ -10,9 +10,9 @@ The canonical workflow is designed for projects requiring rigorous literature ma
 
 Every stage records `GO`, `CONDITIONAL GO`, or `NO-GO`. A later stage may invalidate an earlier `GO`.
 
-## Optional theory discovery (TDF v4.0 — frozen practical-use baseline)
+## Optional theory discovery (TDF v5.1)
 
-For a broad research topic or a stalled idea, use the [Theory Discovery Framework companion](theory-discovery/README.md) and its [v4.0 master prompt](theory-discovery/v4/TDF_Master_Prompt_v4.md). TDF v4.0 is the author-approved default practical-use baseline as of 2026-11-16; v3.0 remains a historical reference. Creative problem discovery precedes model construction, early reduction checks and author selection. The [prompt library](theory-discovery/v4/TDF_Prompt_Library_v4.md) and [construction pattern catalog](theory-discovery/v4/Theory_Construction_Pattern_Catalog_v4.md) support use. Predictive effectiveness and discovery of genuinely novel theories remain unverified. TDF is optional, cannot certify novelty or mathematics, and does not change canonical stages, gates, verdicts, routing, freeze rules or the stable workflow release (v2.9).
+For a broad research topic or a stalled idea, start with [TDF v5.1](theory-discovery/README.md) and its [master prompt](theory-discovery/v5.1/TDF_Master_Prompt_v5.1.md). TDF v5.1 is the author-approved default for optional discovery before Stage 0 as of 2026-11-17. Use STANDARD for researchable contributions and EPOCH for conceptual breakthroughs. The author chooses any candidate that enters Stage 0. The canonical research pipeline and its certification requirements take precedence.
 
 ## Canonical documents
 

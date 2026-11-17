@@ -1,0 +1,49 @@
+test_duplicate (test_dual_track.Tests.test_duplicate) ... ok
+test_exhausted (test_dual_track.Tests.test_exhausted) ... ok
+test_extend_requires_authorization (test_dual_track.Tests.test_extend_requires_authorization) ... ok
+test_no_ghost_reuse (test_dual_track.Tests.test_no_ghost_reuse) ... ok
+test_share_once (test_dual_track.Tests.test_share_once) ... ok
+test_transfer_resume (test_dual_track.Tests.test_transfer_resume) ... ok
+test_absorbed (test_gate.GateTests.test_absorbed) ... ok
+test_abstract_usable_triage_only (test_gate.GateTests.test_abstract_usable_triage_only) ... ok
+test_application (test_gate.GateTests.test_application) ... ok
+test_author_cannot_override_fatal (test_gate.GateTests.test_author_cannot_override_fatal) ... ok
+test_author_select (test_gate.GateTests.test_author_select) ... ok
+test_budget_no_candidate (test_gate.GateTests.test_budget_no_candidate) ... ok
+test_budget_resume (test_gate.GateTests.test_budget_resume) ... ok
+test_budget_with_candidate (test_gate.GateTests.test_budget_with_candidate) ... ok
+test_correction (test_gate.GateTests.test_correction) ... ok
+test_duplicate_ids (test_gate.GateTests.test_duplicate_ids) ... ok
+test_duplicate_killed (test_gate.GateTests.test_duplicate_killed) ... ok
+test_epoch_full (test_gate.GateTests.test_epoch_full) ... ok
+test_epoch_no_reframe (test_gate.GateTests.test_epoch_no_reframe) ... ok
+test_epoch_promising_not_handoff (test_gate.GateTests.test_epoch_promising_not_handoff) ... ok
+test_epoch_two_contexts_not_enough (test_gate.GateTests.test_epoch_two_contexts_not_enough) ... ok
+test_fake_refutation_missing_evidence (test_gate.GateTests.test_fake_refutation_missing_evidence) ... ok
+test_fatal_abstract_hold (test_gate.GateTests.test_fatal_abstract_hold) ... ok
+test_full_lane_missing_downgrade (test_gate.GateTests.test_full_lane_missing_downgrade) ... ok
+test_full_prescreen (test_gate.GateTests.test_full_prescreen) ... ok
+test_generalization (test_gate.GateTests.test_generalization) ... ok
+test_known_model_result (test_gate.GateTests.test_known_model_result) ... ok
+test_legacy (test_gate.GateTests.test_legacy) ... ok
+test_missing_delta (test_gate.GateTests.test_missing_delta) ... ok
+test_missing_objection_review (test_gate.GateTests.test_missing_objection_review) ... ok
+test_missing_query (test_gate.GateTests.test_missing_query) ... ok
+test_missing_source (test_gate.GateTests.test_missing_source) ... ok
+test_missing_test (test_gate.GateTests.test_missing_test) ... ok
+test_open_audit_unbounded (test_gate.GateTests.test_open_audit_unbounded) ... ok
+test_reopen_with_evidence (test_gate.GateTests.test_reopen_with_evidence) ... ok
+test_shallow_not_absorbed (test_gate.GateTests.test_shallow_not_absorbed) ... ok
+test_standard_promising (test_gate.GateTests.test_standard_promising) ... ok
+test_standard_unresolved_not_certified (test_gate.GateTests.test_standard_unresolved_not_certified) ... ok
+test_successor_distinct (test_gate.GateTests.test_successor_distinct) ... ok
+test_successor_no_delta (test_gate.GateTests.test_successor_no_delta) ... ok
+test_supported_no_residual (test_gate.GateTests.test_supported_no_residual) ... ok
+test_two_selection (test_gate.GateTests.test_two_selection) ... ok
+test_unclassified_decisive_source (test_gate.GateTests.test_unclassified_decisive_source) ... ok
+test_unsupported_no_residual (test_gate.GateTests.test_unsupported_no_residual) ... ok
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.002s
+
+OK
