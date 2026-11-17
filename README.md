@@ -12,7 +12,7 @@ Every stage records `GO`, `CONDITIONAL GO`, or `NO-GO`. A later stage may invali
 
 ## Optional theory discovery (TDF v5.1)
 
-For a broad research topic or a stalled idea, start with [TDF v5.1](theory-discovery/README.md) and its [master prompt](theory-discovery/v5.1/TDF_Master_Prompt_v5.1.md). TDF v5.1 is the author-approved default for optional discovery before Stage 0 as of 2026-11-17. Use STANDARD for researchable contributions and EPOCH for conceptual breakthroughs. The author chooses any candidate that enters Stage 0. The canonical research pipeline and its certification requirements take precedence.
+For a broad research topic or a stalled idea, start with [TDF v5.1](theory-discovery/README.md) and its [master prompt](theory-discovery/v5.1/TDF_Master_Prompt_v5.1.md). TDF v5.1 is the author-approved default for optional discovery before Stage 0 as of 2026-11-17. When no mode is specified, BOTH explores researchable contributions in STANDARD and conceptual breakthroughs in EPOCH, with separate candidate lists and decisions. Specify STANDARD for a narrowly scoped question or a short exploration. The author chooses any candidate that enters Stage 0. The canonical research pipeline and its certification requirements take precedence.
 
 ## Canonical documents
 

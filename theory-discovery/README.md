@@ -10,7 +10,7 @@ TDF v5.1 is the default optional method for discovering and screening research q
 - [Run ledger](v5.1/templates/Run_Ledger.md) and [Stage 0 handoff](v5.1/templates/Stage0_Handoff.md) record decisions and evidence.
 - [Package guide](v5.1/README.md) covers the Python helpers and links to the [calibration report](v5.1/validation/Calibration_Report.md).
 
-Use STANDARD by default. A STANDARD candidate marked `PROMISING` can be proposed for author selection with novelty still unresolved. Use EPOCH to search for a concept or general principle with testable implications in at least two settings. BOTH runs separate search queues with a shared source ledger. In any mode, keep a candidate on hold when a decisive prior-art question remains unresolved. The author selects any candidate that moves to Stage 0.
+BOTH is the default when no mode is specified. Run STANDARD and EPOCH with separate search queues and candidate decisions, and share the source ledger. A STANDARD candidate marked `PROMISING` can be proposed for author selection with novelty still unresolved. EPOCH searches for a concept or general principle with testable implications in at least two settings. Specify STANDARD for focused or short explorations, or EPOCH for a dedicated search for conceptual breakthroughs. In any mode, keep a candidate on hold when a decisive prior-art question remains unresolved. The author selects any candidate that moves to Stage 0.
 
 The calibration covers decision rules and retrospective examples. Prospective discovery performance remains unverified. The [canonical pipeline](../THEORY_PAPER_RESEARCH_PIPELINE.md) and [governance](../GOVERNANCE.md) govern formal stage decisions, mathematical verification, novelty review and theory freeze.
 
