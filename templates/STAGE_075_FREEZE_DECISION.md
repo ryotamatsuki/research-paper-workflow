@@ -99,13 +99,13 @@ Do not proceed to a full paper if:
 - the mechanism is just a specific functional-form interaction with no broader economic content;
 - novelty depends on a narrow application label;
 - the closest-paper difference is cosmetic;
-- the welfare implication is absent or mechanical;
+- a claimed welfare implication is absent or mechanical, or no substantive economic-theory significance can be established for the actual contribution route;
 - the main result still has a fatal referee attack;
 - a headline mathematical claim lacks Stage-4A certification.
 
 ## 10. Success criteria
 
-A full-paper `GO` requires a concise general mechanism, defensible novelty, Stage-4A-certified main results, welfare or organizational relevance, a credible journal path, **and a resolved contribution-completeness/editorial-value audit with no unaddressed ESSENTIAL FOLLOW-UP**.
+A full-paper `GO` requires a concise substantive contribution (mechanism, result or meaningful economic-theory generalization), defensible novelty, Stage-4A-certified main results, route-appropriate economic significance, a credible journal path, **and a resolved contribution-completeness/editorial-value audit with no unaddressed ESSENTIAL FOLLOW-UP**.
 
 For correction/reassessment, the corresponding contribution must be a concise, substantively consequential corrected economic conclusion with defensible correction novelty and the same certification/relevance requirements. State the source claim → verified correction → economic consequence on the mechanism card. This recognizes an existing contribution route; it does not automatically raise a narrow correction to full-paper `GO`.
 

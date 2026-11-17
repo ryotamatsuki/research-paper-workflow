@@ -108,9 +108,9 @@ When the claimed contribution is a generalization, synthesis, or unification:
 - [ ] Prior models nested by the candidate are identified explicitly
 - [ ] Parameter restrictions/player removals that recover each benchmark are stated
 - [ ] Benchmark equilibrium/results are recovered correctly
-- [ ] The full model introduces an economically meaningful strategic feedback absent from the benchmarks
+- [ ] The full model introduces economically meaningful strategic feedback if claimed, or establishes a substantive candidate difference in conditions, theorem domain or method
 - [ ] At least one theorem/threshold/ranking/sign reversal/welfare wedge/conditions result is unavailable in each benchmark alone
-- [ ] The contribution is not merely a more general functional form with unchanged economics
+- [ ] A broader functional form/domain has explicit substantive economic-theory significance and is not trivial/absorbed; unchanged conclusions alone are not a defect
 - [ ] The paper can explain what question the general model answers that the nested models cannot
 
 ## Prior-art classification
@@ -137,7 +137,7 @@ Record the exact reason for the classification. Do not upgrade to `EXACT PRIOR A
 - [ ] No claim relies only on a different parameter name
 - [ ] No claim relies only on failure to find a paper
 - [ ] No claim relies only on “nobody combined these ingredients”
-- [ ] If the contribution is a generalization, the new strategic/welfare result is stated separately from the broader model
+- [ ] If the contribution is a generalization, the substantive result or expanded theorem scope is stated separately from the broader model
 - [ ] Search limitations are stated
 - [ ] Closest-paper threat is acknowledged explicitly
 

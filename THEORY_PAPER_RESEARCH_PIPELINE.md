@@ -260,7 +260,7 @@ Stop or reframe if the project is only a policy description, parameterization ex
 
 ## Exit criterion
 
-Proceed only if there is a precise economic question worth literature and mathematical audit.
+Proceed only if there is a precise economic question worth literature and mathematical audit. Under Governance §2.25 distinguish scholarly economic-theory potential from current project fit; record out-of-scope promising leads for separate author-selected projects, not as academic NO-GO.
 
 ---
 
@@ -316,7 +316,7 @@ For strategic projects perform a **whole-game absorption test**:
 - if not, is the proposed headline result nonetheless an immediate corollary of an existing theorem?
 - if multiple literatures are required to reconstruct the candidate, what strategic interaction exists only in the full architecture?
 
-For generalization/unification identify important nested prior models, restrictions that recover them, and a candidate result that should exist only in the full model.
+For generalization/unification identify relevant nested prior models, recovery restrictions, and an economically meaningful candidate theorem/domain/method not already delivered by prior results. New joint strategic interaction is required only when claimed; stronger existence/uniqueness, weaker assumptions or wider meaningful domains may preserve the old conclusion.
 
 Classify overlap as `EXACT PRIOR ART`, `STRUCTURALLY VERY CLOSE`, `COMPONENT OVERLAP`, `MERELY RELATED`, or `POTENTIALLY NOVEL` only when a model/result-level distinction survives.
 
@@ -365,8 +365,8 @@ Generate competing explanations and select mechanisms or strategically meaningfu
 - State what changes relative to closest literature.
 - Identify the smallest model capable of producing the proposed mechanism.
 - Pre-specify the equilibrium concept, strategy class, solution method, completeness target, and treatment of multiplicity, indifference, selection and off-path beliefs for the selected architecture. Do not choose a refinement merely because it produces a desired result. Changes to game structure or information require reconsideration of the contract.
-- For generalization/unification, identify nested benchmarks and the interaction that exists only when components are jointly endogenous.
-- State a candidate result unavailable in each benchmark alone.
+- For generalization/unification, identify relevant nested benchmarks and the substantive difference in result, theorem domain, conditions or method. Explain additional strategic interaction only if claimed.
+- State an unproved candidate theorem or domain extension not implied by the predecessor alone.
 - Score candidates on novelty, mechanism clarity, whole-game prior-art survival, tractability, welfare content, institutional relevance, and journal fit when useful.
 - Merge structural duplicates using players/objectives, endogenous controls, timing/information, constraints, and feedback/result logic; preserve merged IDs and reasons.
 - Draft a short contribution memo for serious candidates: closest result, hypothesized difference, economic consequence, evidence limits, fatal objection, and next investment. Diagnose an institution-specific claim by removing/replacing the alleged institutional driver where feasible; this is not an automatic novelty verdict.
@@ -422,7 +422,7 @@ Solve the strongest candidate mechanism/generalization completely in the smalles
 - Derive profits, consumer surplus, total welfare, and private/social benchmarks when part of the research question.
 - Write each desired result as a Candidate Proposition and actively try to falsify it.
 - Identify sign-switch/threshold conditions rather than forcing ambiguous derivatives into monotone claims.
-- For generalization/unification, solve/recover nested benchmarks and identify at least one full-model result unavailable as an immediate benchmark corollary.
+- For generalization/unification, recover pertinent benchmarks and establish at least one substantive result, wider economically meaningful theorem domain or method not an immediate benchmark corollary.
 - Update the working contribution memo from the constructed result, provisional pending Stage 4A/6. A solved formula alone does not justify discretionary family expansion or manuscript investment.
 
 Apply `checklists/SYMBOLIC_VERIFICATION_CHECKLIST.md`, `checklists/NUMERICAL_VERIFICATION_CHECKLIST.md` when applicable, and `checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md` in full whenever off-path continuations matter.
@@ -529,7 +529,7 @@ Search the literature again using the actual certified propositions.
 - Re-run whole-game absorption against the actual model.
 - For each serious parent-theorem candidate, construct an explicit **theorem-absorption map**: `prior theorem → variable/parameter mapping → required restriction/transformation → candidate headline result → DIRECTLY ABSORBED / PARTIALLY ABSORBED / NOT ABSORBED`.
 - Treat a short derivation from a known general theorem as absorption even when the prior paper does not print the same application-specific formula or threshold.
-- For generalization/unification, verify the full-model result is unavailable in material nested benchmarks and is not an immediate corollary of a known theorem.
+- For generalization/unification, verify that the actual result or expanded theorem scope is not already delivered by material benchmarks or an immediate corollary of a known theorem.
 
 A result that looked novel before the mathematics may be killed now. Remove it immediately from the contribution set.
 
@@ -602,7 +602,7 @@ Decide whether the project contains a general economic mechanism worthy of full-
 - For a policy-facing claim, what should be done, what could be done under specified feasible instruments, or why is a diagnosis-only contribution independently sufficient?
 - If material, what is the bounded baseline-only versus minimal-extension versus reframe/note comparison, and what evidence supports the choice?
 - Would a skeptical field referee see more than a parameter exercise?
-- If generalization/unification is claimed, which important prior models are nested and what result cannot be obtained from them separately?
+- If generalization/unification is claimed, which pertinent prior models/theorem domains are recovered and what substantive theorem, wider domain or economic-theory method is not implied by them?
 
 ## Independent next-frontier judgment
 

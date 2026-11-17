@@ -6,3 +6,5 @@
 - All AUDITABLE issues and next tests; no FATAL_UNRESOLVED issue eligible under TDF
 - Source/query/lineage references and budget stop; author choice; material AI use/verification actor
 - STANDARD PROMISING is a proposal only, not novelty clearance. EPOCH requires full prescreen. Stage 0 must issue its own verdict. Stages 1/2/4A/6 and canonical gates are unchanged.
+
+- Scholarly economic-theory potential / current-project fit (DIRECT / ADJACENT / OUTSIDE) / provisional audience: record separately. OUTSIDE means defer or propose a distinct author-selected project; do not assign academic rejection solely for scope. See canonical Governance §2.25.

@@ -76,7 +76,7 @@ Proceed only if there is a precise question, at least one defensible mechanism c
 
 ## 11. Failure criteria
 
-Return `NO-GO` if the phenomenon is too vague, the proposed contribution is already obviously trivial, or no researchable economic margin can be identified.
+Return `NO-GO` if the phenomenon is too vague, the proposed contribution is already obviously trivial, or no researchable economic-theory question can be identified. Apply Governance §2.25: record scholarly potential, project fit DIRECT / ADJACENT / OUTSIDE, math/novelty maturity and provisional audience separately. An OUTSIDE but worthwhile lead is DEFER / ROUTE to a separate author-selected project, not academic rejection. An economically meaningful weaker-assumption, existence/uniqueness or domain theorem may qualify without a new mechanism or immediate policy use; no proof or publication-strength novelty certification is required at intake.
 
 ## 12. Required final output
 
