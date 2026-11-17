@@ -299,6 +299,16 @@ Apply `templates/STAGE_10A_EXEMPLARY_PAPER_BENCHMARKING.md` and `checklists/EXEM
 
 ---
 
+### 2.25 Scholarly contribution versus project fit (route-aware assessment)
+
+Assess the economic-theory contribution (or at intake its **unproved potential**) separately from fit with the author's currently authorized topic. Record scholarly economic learning and rationale, current-project fit (DIRECT / ADJACENT / OUTSIDE), mathematical and novelty maturity under §2.12A, and provisional audience/article type where helpful. An OUTSIDE candidate with credible scholarly potential is recorded as DEFER / ROUTE TO SEPARATE PROJECT, not declared academically worthless or ABSORBED. These are descriptive dispositions, not extra canonical Stage verdicts or automatic authorization. A separate project requires author selection and its own Stage 0 onward.
+
+Generalization, unification, materially weaker assumptions, wider economically meaningful domains, existence/uniqueness, representation, impossibility, sharp conditions and economic-theory methods can be substantive contributions even if the equilibrium conclusion is invariant or no new strategic interaction, welfare ranking, immediate application or policy instrument arises. Explain the economic-theory significance of the enlarged domain or method, recover the pertinent predecessor under its actual restrictions, and test direct absorption by stronger known results. Mere formal breadth, trivial corollaries, relabeling, or mathematics without identifiable economic-theory content are not sufficient. New strategic interaction is required only when that is the claimed contribution. Treat provisional investment screening in Stages 0–3 as distinct from analytic verification in 4/4A and strict evidence-scoped novelty in 6/11; decisive source blockers and all existing certification and change-control gates remain binding. Apply contribution completeness relative to the actual claimed research question, not mandatory application, welfare or policy results.
+
+For broad optional discovery, use the current TDF (v5.1 STANDARD/EPOCH/BOTH) and its source-depth/objection/author-handoff rules, not a new mandatory Pre-Stage F. The source-first theorem atlas and Delta Card from PR #25 are useful optional formats within existing discovery/Stage 0–2 records; reuse actual parent theorem, exact domain, source depth, unresolved boundary, proposed delta, strongest threat and finite test. No duplicate gate or altered TDF threshold. A topical mismatch alone cannot change novelty or mathematical status, and must not trigger a TDF REJECT as absorbed/no residual.
+
+---
+
 ## 3. Repository change policy
 
 ### 3.1 Main branch

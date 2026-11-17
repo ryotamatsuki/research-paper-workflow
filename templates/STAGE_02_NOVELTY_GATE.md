@@ -88,8 +88,8 @@ If the candidate deliberately extends or unifies existing models:
 
 - identify each important nested benchmark;
 - state the parameter restriction/player or strategy removal that recovers it;
-- identify the strategic interaction endogenous only in the full model;
-- state at least one candidate theorem, threshold, ranking, sign reversal, equilibrium region, welfare wedge, or conditions-for-effectiveness result unavailable in each benchmark alone.
+- identify any additional strategic interaction if that is the claimed route; otherwise specify the binding assumption relaxed, expanded economically meaningful domain, existence/uniqueness, characterization, or method;
+- state at least one unproved candidate theorem or substantive extension not implied by the predecessor alone.
 
 A meaningful generalization can survive Stage 2 even when all ingredients are known separately. A mere longer model with no new interaction/result cannot.
 
@@ -144,10 +144,10 @@ Kill or downgrade a contribution if:
 
 - the same proposition already exists;
 - only parameter names or institutional labels differ;
-- a single close paper already contains the same economically relevant player/objective/strategy/timing/allocation/feedback structure;
+- a single close paper already establishes the same claimed result or absorbs the precise claimed architecture contribution;
 - the same endogenous margin and strategic trade-off are already present and the candidate result is an immediate corollary;
 - the novelty is merely a combination of known components with no new strategic interaction or theorem;
-- a claimed generalization only broadens a functional form while leaving the economics unchanged;
+- a claimed generalization merely broadens a functional form without substantive economic-theory scope or learning, or is an immediate known corollary;
 - a fixed cost mechanically creates the only threshold;
 - the claimed new mechanism appears in an appendix or extension of a close paper;
 - the project predates a newer working paper that now occupies the contribution.
@@ -159,14 +159,14 @@ Do **not** kill solely because all components are separately known if no prior m
 At least one model/proposition-level distinction must survive a serious closest-paper comparison. A qualifying distinction may be:
 
 - a genuinely new mechanism; or
-- an economically substantive generalization/unification that nests important prior models and creates a new strategic interaction plus a nontrivial candidate result; or
+- an economically substantive generalization/unification that recovers pertinent prior models and proposes a nontrivial new result or materially expanded theorem domain/method, with a new strategic interaction only where claimed; or
 - an economically substantive new result in a known model, or correction/reassessment with an identifiable source defect and non-cosmetic expected economic consequence, subject to subsequent certification and correction-prior-art audit.
 
 “No exact title match” and “nobody combined these ingredients” are both insufficient.
 
 ## 11. Failure criteria
 
-Return `NO-GO` if the main contribution is exact prior art, structurally so close that only cosmetic changes distinguish it, an immediate corollary of known theory, or a combination/generalization with no new strategic or welfare implication.
+Return `NO-GO` if the main contribution is exact prior art, structurally so close that only cosmetic changes distinguish it, an immediate corollary of known theory, or a combination/generalization with no substantive economic-theory delta, including meaningful theorem scope. Apply Governance §2.25 separately to scholarly potential and topic fit; an OUTSIDE lead is deferred/routed, not labeled absorbed. Preserve all decisive-source and canonical verdict rules.
 
 ## 12. Required final output
 

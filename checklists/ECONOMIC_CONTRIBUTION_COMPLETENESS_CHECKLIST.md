@@ -4,7 +4,7 @@
 
 ## Objective and proportionality
 
-Separately evaluate **correctness**, **theorem/model novelty**, **economic importance**, **completeness relative to the claimed research question**, and **field-editor publication rationale**. A mathematical or Lean PASS, precise equilibrium characterization, and a distinct theorem do not, alone, prove that the paper asks/answers a consequential question.
+Separately evaluate **correctness**, **theorem/model novelty**, **economic importance**, **completeness relative to the claimed research question**, and **field-editor publication rationale**. Under Governance §2.25, assess substantive economic-theory domain/method significance for foundational generalizations and separate this from current-project fit. Do not require a mechanism, welfare or policy effect for a claim whose stated contribution is a significant economics theorem. A mathematical or Lean PASS, precise equilibrium characterization, and a distinct theorem do not, alone, prove that the paper asks/answers a consequential question.
 
 This is a **context-sensitive test**, not a demand for an empirical dataset, a policy intervention, a larger model, an endogenous budget or a broader theorem. A self-contained pure-theory result, a substantial correction, or a deliberately diagnostic/negative result may be a full paper when its economic/scientific significance is defensible.
 

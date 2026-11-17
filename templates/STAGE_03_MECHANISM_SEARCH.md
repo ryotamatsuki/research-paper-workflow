@@ -58,7 +58,7 @@ For a generalization/unification candidate, additionally state:
 
 12. which prior models are nested;
 13. the restriction/removal that recovers each benchmark;
-14. the strategic interaction that exists only in the full architecture;
+14. the additional strategic interaction if claimed, otherwise the economically meaningful assumption/domain/condition or method difference;
 15. the result that should differ from or be unavailable in each benchmark.
 
 If scoring candidates, define weights ex ante. Suggested dimensions: novelty, mechanism clarity, whole-game prior-art survival, tractability, welfare, institutional relevance, empirical bridge, and journal fit.
@@ -104,7 +104,7 @@ Candidate novelty must be grounded in Stage 2 evidence. If a candidate introduce
 
 No full algebra is required, but perform enough reduced-form or sign reasoning to test whether the proposed feedback loop is internally coherent. Flag candidates whose desired effect is built directly into an assumed payoff.
 
-For a generalization candidate, write the minimal full game and the nested benchmark games side by side. Confirm that removing one strategic component actually changes the feedback network rather than only shortening notation.
+For a generalization candidate, write the minimal full game and the nested benchmark games side by side. For a new-interaction claim, confirm that removing the strategic component changes feedback. For an assumption/domain generalization, test benchmark recovery, meaningful new domain, and nontriviality instead.
 
 ## 9. Kill tests
 
@@ -114,15 +114,15 @@ Reject a candidate when:
 - the outcome is mechanically assumed;
 - a close paper already contains the same loop and result;
 - the minimum model requires many unrelated additions;
-- the only result is a monotone comparative static with no trade-off;
+- the only result is a trivial monotone comparative static with no substantive economic learning;
 - welfare content is absent and the result is pure relabeling;
 - a claimed generalization simply aggregates known ingredients while every headline result is already obtainable from a nested benchmark.
 
-Do not reject a generalization merely because each component is familiar if the full game creates a new strategic feedback that the benchmarks cannot reproduce.
+Do not reject a generalization merely because each component is familiar or the original economic conclusion is preserved on a substantively wider domain. Require a concrete non-absorbed candidate theorem or domain extension, not merely formal breadth.
 
 ## 10. Success criteria
 
-At least one candidate must have a clear economic loop, a minimal implementable model, and plausible model/proposition-level distance from the closest literature. A generalization/unification candidate qualifies only if it has a credible full-game interaction result beyond the nested benchmarks.
+At least one candidate must have a defensible economic question or theory-domain contribution, a minimal feasible test, and plausible proposition-level distance from the closest literature. Generalization/unification may qualify via a credible nontrivial assumption relaxation, existence/uniqueness, scope or method result; no new interaction is mandatory unless claimed. Apply Governance §2.25 to separate scholarly potential from project fit. All candidates remain hypotheses pending verification.
 
 For correction/reassessment, assess that loop through the original claim → candidate corrected characterization → changed economic conclusion. A new strategic ingredient is not mandatory; the non-cosmetic consequence and prior-correction distinction must remain plausible and subject to Stage-4/4A certification.
 
@@ -157,4 +157,4 @@ Choose one canonical stage verdict and route:
 
 ## 14. Next-stage contract
 
-Stage 4 must test one minimal candidate. Freeze all ingredients not required for that mechanism. If the selected contribution route is a generalization/unification, Stage 4 must solve the full game and enough nested benchmarks to identify what the additional strategic architecture actually changes.
+Stage 4 must test one minimal candidate. Freeze all ingredients not required for that mechanism. If the selected contribution route is a generalization/unification, Stage 4 must establish the claimed theorem or domain expansion and recover relevant benchmarks; demonstrate what additional strategic architecture changes only if such an interaction is claimed.
