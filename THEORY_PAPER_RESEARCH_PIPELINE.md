@@ -1,6 +1,6 @@
 # Theory Paper Research Pipeline
 
-Version: v3.0 candidate (operational on `main`; unreleased; stable baseline v2.9)
+Version: v3.0
 
 ## 1. Purpose
 
@@ -191,7 +191,7 @@ Within existing Stages 2/3/4/4A/6/7.5A/11, evaluate **reversal, surprising compa
 
 ### Unreleased post-v2.9: independent editorial argument-quality gate
 
-The pre-Stage-10A editorial refinement (historical post-v2.9 MINOR proposal, superseded in timing and routing by the v3.0 candidate) addresses a distinct residual after v2.5 streamlining and v2.7 proof verifiability: **an accurate manuscript may contain every required element without communicating its economic inference persuasively**. The updated lifecycle is `Stage 10A → Stage 10B → Stage 11 → Stage 12 comparator refresh → Stage 13 → Stage 14`; the earlier editorial refinement alone did not add a stage. Existing verdict semantics remain.
+The pre-Stage-10A editorial refinement (historical post-v2.9 MINOR proposal, superseded in timing and routing by v3.0) addresses a distinct residual after v2.5 streamlining and v2.7 proof verifiability: **an accurate manuscript may contain every required element without communicating its economic inference persuasively**. The updated lifecycle is `Stage 10A → Stage 10B → Stage 11 → Stage 12 comparator refresh → Stage 13 → Stage 14`; the earlier editorial refinement alone did not add a stage. Existing verdict semantics remain.
 
 - **Stage 10A (before drafting):** create a source-grounded `EDITORIAL_EXEMPLAR_MAP` using only fully acquired and completely read published papers, applying the mandatory acquisition and synthesis gate; Stage 10B implements the blueprint; distinguish observed writing technique from subject-matter novelty, theorem scope or journal quality. Identify the intended problem-first opening, immediate post-result intuition, and economic-lesson-first Discussion. Where the target journal is unset, comparator choice is explicitly provisional.
 - **Stage 11:** require a critical editorial-reader pass separate from the scientific referee. Before reading the writer's explanations, record the reader's own interpretation of the puzzle, main conditional result, opposing effects, and scope from the *actual manuscript*. Write a specific strongest **communication-only desk-reject** paragraph and classify defects. Praise without textual evidence is not a PASS.
