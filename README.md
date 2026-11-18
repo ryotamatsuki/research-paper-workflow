@@ -1,5 +1,7 @@
 # research-paper-workflow
 
+**Current canonical major version: v3.0** — mandatory full-text exemplar benchmarking at Stage 10A precedes manuscript construction at Stage 10B. See [v3.0 release notes](docs/V3_0_RELEASE_NOTES.md).
+
 A reusable, reproducible workflow for developing theory-oriented economics research from initial motivation to submission freeze.
 
 The canonical workflow is designed for projects requiring rigorous literature mapping, mathematical verification, novelty kill tests, model selection, welfare analysis, independent theorem certification, proof-assistant verification where applicable, referee simulation, reproducibility, exposition architecture, and journal positioning.
