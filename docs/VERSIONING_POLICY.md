@@ -184,3 +184,14 @@ These are new required checks and companion evidence records **inside existing s
 The new **Stage 10A** is a mandatory pre-writing gate inserted after Stage 9. Historical Stage 10 manuscript construction is now **Stage 10B**; the canonical GO route changes to `Stage 9 → Stage 10A → Stage 10B → Stage 11`. This is a **MAJOR** change under §5 (adds a required Stage and changes routing), not a minor editorial refinement. Selected exemplars must be lawfully acquired in full, actually read, compared by writing roles, and synthesized in a coherent original blueprint. Pre-existing draft projects may enter Stage 10A prospectively; scientific freezes remain binding. The v2.9 tag and historical records are immutable.
 
 Publication evidence is the remote `v3.0` tag and GitHub Release, not this policy statement. Release notes and gate checks are in `docs/V3_0_RELEASE_NOTES.md` and `docs/V3_0_READINESS_CHECKLIST.md`.
+
+
+## Prospective v4.0 candidate — independent Stage 13P publication-prose gate (2026-11-19)
+
+**Unreleased, not merged, not tagged. Current canonical release remains v3.0.**
+
+The proposed Stage 13P is inserted **between existing Stages 13 and 14**, and a Stage-13P `GO` becomes a mandatory prerequisite for Stage 14. Its two-phase independent blind cold-reading and role-specific full-text published-paper exemplar comparison, second independent post-repair reading, and exact manuscript source/PDF gate are **incompatible changes to Stage identity and normal routing**.
+
+Under the same compatibility test in sections 4–6, this is therefore **MAJOR-version class**, with prospective label **v4.0**, not a v3.0.x patch or backward-compatible v3.1. It does not rename/reinterpret prior Stage 11/13 decisions or alter their past historical results. An ongoing v3.0 project may voluntarily migrate after the author's explicit choice and must execute the new Stage 13P on its current full manuscript; a previous Stage 11 editorial favorable outcome does not automatically substitute for it.
+
+A later v4.0 release, if approved, requires reviewed main-branch integration, evidence-bearing regression audit, explicit release authorization, a new immutable tag and GitHub Release. This paragraph and the feature branch/PR **do not** create or approve a new release, change an existing tag, or authorize a research-paper submission.
