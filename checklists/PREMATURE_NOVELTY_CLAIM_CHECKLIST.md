@@ -1,6 +1,6 @@
 # Premature Novelty Claim Prevention Checklist
 
-Status: unreleased post-v2.9 MINOR-class refinement; applies **inside** existing Stages 0/2/3/6. It is not a new Stage, a guarantee of originality, or a substitute for Stage-4/4A/6 verification.
+Status: active in canonical v3.2 (origin: post-v2.9 MINOR-class proposal); applies **inside** existing Stages 0/2/3/6. It is not a new Stage, a guarantee of originality, or a substitute for Stage-4/4A/6 verification.
 
 ## A. Stage 0 — register a falsifiable claim rather than a discovery
 

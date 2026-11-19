@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - main
-      - feat/v3.2-question-mechanism-alignment
   pull_request:
     paths:
       - 'templates/**'
@@ -11,7 +10,14 @@ on:
       - 'THEORY_PAPER_RESEARCH_PIPELINE.md'
       - 'README.md'
       - 'docs/V3_2_*.md'
+      - 'docs/VERSIONING_POLICY.md'
+      - 'checklists/**'
+      - 'theory-discovery/README.md'
+      - 'theory-discovery/AGENTS.md'
+      - 'theory-discovery/v5.1/README.md'
+      - 'WORKFLOW_VERSION'
       - 'scripts/verify_research_design_contract.py'
+      - 'scripts/verify_current_version.py'
       - 'tests/fixtures/research_design_cases.json'
       - '.github/workflows/research-design-contract.yml'
 jobs:
@@ -19,6 +25,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Verify current active versions and independent TDF version
+        run: python3 scripts/verify_current_version.py
       - name: Run six research decision regressions and stage contract
         run: python3 scripts/verify_research_design_contract.py
       - name: Verify actual pinned Green Stage 6/7.5/11/12 and model evidence

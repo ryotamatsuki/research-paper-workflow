@@ -1,6 +1,8 @@
 # Governance
 
-Version: v3.0
+Version: v3.2
+Architecture baseline: v3.0 (Stage 10A/10B); active minor refinements: v3.1 and v3.2.
+The active-version metadata marker is `WORKFLOW_VERSION`; normative authority remains this Governance and the canonical Pipeline (including the v3.2 protocol). Historical version references below retain their original scope.
 
 ## 1. Purpose
 

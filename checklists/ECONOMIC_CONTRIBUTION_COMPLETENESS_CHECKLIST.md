@@ -1,6 +1,6 @@
 # Economic Contribution, Question Completeness & Editorial Value Checklist
 
-> Canonical authority: `GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → Stage templates → this operational checklist. Proposed v2.9 minor refinement (2026-10-10). This is **not an additional numbered Stage**.
+> Canonical authority: `GOVERNANCE.md` → `THEORY_PAPER_RESEARCH_PIPELINE.md` → Stage templates → this operational checklist. Origin: proposed in 2026-10 and integrated in the v2.9 development line; current canonical workflow **v3.2** with its later contribution-identification requirements. This is **not an additional numbered Stage**.
 
 ## Objective and proportionality
 

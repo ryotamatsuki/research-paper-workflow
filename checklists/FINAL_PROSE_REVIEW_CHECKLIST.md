@@ -1,4 +1,4 @@
-# Final Publication Prose Checklist — mandatory Stage-13 subgate (v3.1 proposal)
+# Final Publication Prose Checklist — mandatory Stage-13 subgate (introduced v3.1, retained v3.2)
 
 - [ ] Source commit SHA and actual complete submission-facing PDF SHA-256, page count, full appendix/captions/declarations reading map fixed after all Stage-13 edits
 - [ ] Separate critic reads only actual PDF and neutral target article type, with prior exposure disclosed; genuine blind first pass precedes notes and exemplars

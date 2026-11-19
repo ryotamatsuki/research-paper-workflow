@@ -2,6 +2,8 @@
 
 **Current canonical version: v3.2 (MINOR on the v3.0 architecture)** — research-question/model alignment and evidence-bearing economic-contribution identification, together with v3.1 independent prose gates and v3.0 exemplary benchmarking. See [v3.2 release notes](docs/V3_2_RELEASE_NOTES.md).
 
+Active workflow version is recorded in [`WORKFLOW_VERSION`](WORKFLOW_VERSION); active document headers and CI must agree with it. TDF has a separate current version (v5.1). Older version numbers in history, release-note snapshots, pinned regression fixtures and subsystem names are intentional and must not be mass-replaced.
+
 A reusable, reproducible workflow for developing theory-oriented economics research from initial motivation to submission freeze.
 
 The canonical workflow is designed for projects requiring rigorous literature mapping, mathematical verification, novelty kill tests, model selection, welfare analysis, independent theorem certification, proof-assistant verification where applicable, referee simulation, reproducibility, exposition architecture, and journal positioning.
@@ -45,9 +47,9 @@ The route is unchanged: Stage 10A → 10B → 11 → 12 → 13 → 14 → 15. No
 
 A backward-compatible **MINOR-class** refinement strengthens Stages 1/3/4/4A/7/7.5A/8. Specify the information structure and timing, select and justify the equilibrium concept and strategy class, and solve the declared equilibrium correspondence with existence, necessity/sufficiency and exclusion of additional equilibria as applicable. Use backward induction for finite sequential games wherever applicable; treat mixed/behavioral strategies, beliefs and indifference when relevant. A pure-strategy or selected-equilibrium result is not an unrestricted equilibrium theorem. Material unresolved continuations and unjustified selection-sensitive claims cannot pass the corresponding gate.
 
-See [equilibrium-analysis and continuation checklist](checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md) and [theorem certification checklist](checklists/THEOREM_CERTIFICATION_CHECKLIST.md). Stable v2.9 and the existing stages, canonical verdicts and routing remain unchanged.
+See [equilibrium-analysis and continuation checklist](checklists/EQUILIBRIUM_CONTINUATION_CHECKLIST.md) and [theorem certification checklist](checklists/THEOREM_CERTIFICATION_CHECKLIST.md). In the historical v2.9 refinement, the existing stages, verdicts and routing remained unchanged; the current version is v3.2.
 
-## Unreleased: independent editorial argument and referee gates (post-v2.9)
+## Historical post-v2.9 proposal: independent editorial argument and referee gates
 
 A scientifically correct paper may have all the right paragraphs yet still hide the economic puzzle, countervailing mechanisms or precisely bounded contribution. The existing v2.5 exposition streamlining and v2.7 reviewer-verifiability gates remain in force; this refinement requires **evidence of successful communication**, not another heading checklist.
 
@@ -59,9 +61,9 @@ A scientifically correct paper may have all the right paragraphs yet still hide 
 
 See [editorial argument checklist](checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md), [editorial referee report template](templates/EDITORIAL_REFEREE_REPORT.md), [six regression cases](examples/EDITORIAL_ARGUMENT_REGRESSION.md), and [compatibility rationale](docs/EDITORIAL_ARGUMENT_REFINEMENT_2026-10-29.md).
 
-This is an **unreleased MINOR-class candidate**, not a new published version or Git tag. The stable release remains **v2.9**.
+When this proposal was drafted, it was an unreleased MINOR-class candidate and v2.9 was the stable release. This statement is historical; the current canonical workflow is v3.2.
 
-## Unreleased: prevent premature novelty claims (prospective v2.10 minor-class)
+## Historical post-v2.9 proposal: premature novelty-claim prevention
 
 A Stage-2 `GO` means a research question survived a **provisional** prior-art screen, not that the paper has discovered a new economics theorem. Before model investment, Stage 2 must attempt a cheap **application-neutral parent-model/theorem absorption** (for example, circular-product buyback may reduce to monopsony and supplier outside-option manipulation) and record the actual source reading depth and any decisive unavailable proof. A verified formula is evidence of mathematics, not evidence of novelty. At Stage 6 the **actual certified proposition** undergoes a full direct-mapping review; only evidence-bounded, explicitly scoped non-absorption may be recorded as a novelty certificate.
 
@@ -69,11 +71,11 @@ A Stage-2 `GO` means a research question survived a **provisional** prior-art sc
 - [False-positive novelty regression cases](examples/PREMATURE_NOVELTY_REGRESSION.md)
 - [Change rationale and compatibility classification](docs/PREMATURE_NOVELTY_CLAIM_PREVENTION_2026-10-19.md)
 
-This is unreleased work on a feature branch; **v2.9 remains the latest stable release**, and no v2.10 tag or GitHub Release is implied. Existing Stages, routing, verdict semantics and the separate post-v2.9 result-reversal refinement remain intact.
+This proposal originated on a feature branch when v2.9 was the stable release. It did not create a v2.10 tag. This is historical development context; the current canonical workflow is v3.2. Existing Stages, routing, verdict semantics and the separate post-v2.9 result-reversal refinement remain intact.
 
-## Unreleased: result-reversal / paradox / sharp-boundary discovery (post-v2.9)
+## Historical post-v2.9 proposal: result-reversal / paradox / sharp-boundary discovery
 
-A backward-compatible, **MINOR-class** refinement is integrated on `main` but is **not yet a published release**; `v2.9` remains the current stable tag. The existing Stages 2/3 must scan exact predecessor results for economically defensible sign reversals, welfare-ranking reversals, impossibility, surprising comparative statics, and sharply proved validity boundaries, as well as strong robustness. The underlying **economic question may remain unchanged**; a new question or mechanism is not universally required. Stage 4 recovers the predecessor and verifies claimed changes, Stage 6 tests absorption, and Stage 11 repeats the hostile check. No desired-sign engineering or automatic manuscript GO.
+This backward-compatible **MINOR-class** refinement was documented when v2.9 was the latest stable tag; that pre-release status is historical, not a current release claim. Current canonical workflow: v3.2. The existing Stages 2/3 must scan exact predecessor results for economically defensible sign reversals, welfare-ranking reversals, impossibility, surprising comparative statics, and sharply proved validity boundaries, as well as strong robustness. The underlying **economic question may remain unchanged**; a new question or mechanism is not universally required. Stage 4 recovers the predecessor and verifies claimed changes, Stage 6 tests absorption, and Stage 11 repeats the hostile check. No desired-sign engineering or automatic manuscript GO.
 
 - [Result-reversal checklist](checklists/RESULT_REVERSAL_BOUNDARY_CHECKLIST.md)
 - [Unreleased refinement rationale](docs/RESULT_REVERSAL_BOUNDARY_REFINEMENT_2026-10-12.md)
