@@ -186,12 +186,6 @@ The new **Stage 10A** is a mandatory pre-writing gate inserted after Stage 9. Hi
 Publication evidence is the remote `v3.0` tag and GitHub Release, not this policy statement. Release notes and gate checks are in `docs/V3_0_RELEASE_NOTES.md` and `docs/V3_0_READINESS_CHECKLIST.md`.
 
 
-## Prospective v4.0 candidate — independent Stage 13P publication-prose gate (2026-11-19)
+## Prospective v3.1 — integrated publication prose gate (Draft PR #35, 2026-11-19)
 
-**Unreleased, not merged, not tagged. Current canonical release remains v3.0.**
-
-The proposed Stage 13P is inserted **between existing Stages 13 and 14**, and a Stage-13P `GO` becomes a mandatory prerequisite for Stage 14. Its two-phase independent blind cold-reading and role-specific full-text published-paper exemplar comparison, second independent post-repair reading, and exact manuscript source/PDF gate are **incompatible changes to Stage identity and normal routing**.
-
-Under the same compatibility test in sections 4–6, this is therefore **MAJOR-version class**, with prospective label **v4.0**, not a v3.0.x patch or backward-compatible v3.1. It does not rename/reinterpret prior Stage 11/13 decisions or alter their past historical results. An ongoing v3.0 project may voluntarily migrate after the author's explicit choice and must execute the new Stage 13P on its current full manuscript; a previous Stage 11 editorial favorable outcome does not automatically substitute for it.
-
-A later v4.0 release, if approved, requires reviewed main-branch integration, evidence-bearing regression audit, explicit release authorization, a new immutable tag and GitHub Release. This paragraph and the feature branch/PR **do not** create or approve a new release, change an existing tag, or authorize a research-paper submission.
+A Stage-11 independent referee already attacks the Stage-10B draft's communication. This v3.1 proposal sharpens its source-located English and internal-workflow-language diagnostics. After all Stage-13 manuscript integration, a **mandatory independent final-complete-PDF prose subgate inside Stage 13** adds an ordered cold reading, verified full-text exemplar comparison, bounded issue closure, second complete cold reading and exact PDF/source snapshot required by Stage 14 and Stage 15. No numbered Stage, ordinary route, canonical GO/CONDITIONAL GO/NO-GO meanings, rollback or freeze semantics change. Under §§4–5 this is MINOR-class, unlike the superseded proposed new Stage 13P (MAJOR-class). Existing v3.0 tag and main are immutable. This draft neither merges code nor creates/releases a v3.1 tag.

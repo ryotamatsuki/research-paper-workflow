@@ -117,6 +117,14 @@ Attach paragraph/page references and compare the paraphrases with the **frozen c
 
 For each defect record severity, affected manuscript text, bounded rewriting instruction, scientific-claim guardrail, earliest repair Stage, and retest condition. **An unsupported “readable,” “substantially clearer,” or “all components present” is `UNRESOLVED`, not an editorial PASS.** Unresolved material editorial `MAJOR BUT FIXABLE` blocks unconditional Stage-11 GO; route prose/architecture fixes through Stage 10/13 and scientific claim failures to their original certification Stage. The stronger mathematical, theorem-absorption, equilibrium and evidence attacks remain mandatory and independent.
 
+### Stage-11 independent publication-facing prose diagnostic (embedded, prospective v3.1)
+
+The communication-only referee must actively identify academic-English/paragraph defects, repeated defensive novelty qualifications, researcher-process language (for example "surviving contribution", "repaired model", "hostile audit", Stage-4A certification and internal CI/regression narratives), and missing opposing economic effects near headline results. Every material issue requires a source quote, exact paragraph locator, explanation, severity, concrete repair and scientific guardrail. True economic game Stage 1/2/3, scientific reproducibility statements and necessary negative findings must not be falsely banned.
+
+Freeze the first cold-reader summary and communication-only desk-reject **before** revealing any source map or full-text published papers. Then compare exact draft passages against genuinely Stage-10A fully read exemplars (not abstracts or snippets), with evidence-backed STRONG/ADEQUATE/WEAK roles. Do not allow generic "readable" or "clearer" to pass a material issue. Attach this to EDITORIAL_REFEREE_REPORT.md or an identifiable report; unresolved major editorial issues block unconditional Stage-11 GO.
+
+This review certifies the inspected **draft only**. After Stage-12 journal fit and Stage-13 edits, a completely new independent full-PDF prose review is mandatory **within Stage 13**; do not reuse the Stage-11 PASS or mistake AI peer criticism for human peer review.
+
 ### Known-model-in-disguise regression attack
 
 For every theory manuscript whose Stage-4 canonical-form screen identified at least one plausible standard parent class:

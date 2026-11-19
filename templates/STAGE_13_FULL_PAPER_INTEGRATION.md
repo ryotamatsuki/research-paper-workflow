@@ -141,6 +141,19 @@ Produce `EDITORIAL_REVISION_AUDIT.md` or equivalent, preserving for every materi
 
 All headings present, a shorter Introduction, mathematical correctness, and generic praise cannot independently close these items. The repair belongs at Stage 13, or Stage 10 if architecture is defective; any unproved scientific claim returns to the earliest scientific Stage.
 
+### Mandatory independent final-publication-prose subgate (embedded prospective v3.1)
+
+Run this **at the end of Stage 13**, after integration, journal changes and all substantive copyediting. Follow templates/STAGE_13_FINAL_PROSE_SUBGATE.md and checklists/FINAL_PROSE_REVIEW_CHECKLIST.md. The prior Stage-11 editorial GO applies only to the Stage-10B draft.
+
+1. Freeze actual complete PDF and exact manuscript source commit SHA / PDF SHA-256, including captions, appendices, sources and AI/Data/Code declarations.
+2. Give only the complete PDF and neutral journal/article type to a separate reader. Record actual full-page coverage, independence and prior exposure. Before author reports or published exemplars are available, require a 120–200 word reader-derived economic question/result/mechanism/scope summary, communication-only desk-reject case and paragraph-located English, argument and process-contamination findings. **Save Phase A before Phase B.**
+3. In Phase B compare real manuscript paragraphs against Stage-10A fully acquired/read exemplars as refreshed at Stage 12, with source version/page/paragraph and evidence-backed STRONG/ADEQUATE/WEAK roles.
+4. Log defects, bounded before/after fixes and scientific claim-scope protections, preserving adverse benchmark results and accurate authorship/AI attestations.
+5. After revision and rebuild, commission a **second independent cold complete-paper reading** and record all issue closures and the newly accepted exact source/PDF hashes. Original reviewer checking its own changes alone is inadequate for MAJOR items.
+6. Save distinct final-prose referee report, exemplar comparison, issue register, revision/second-read audit and accepted snapshot (or verifiably separable equivalents).
+
+An incomplete blind read, unfetched exemplars, contaminated phase ordering, unresolved MAJOR criticism, missing complete second reading or hash mismatch **blocks Stage-13 GO** and hence Stage 14; one tightly bounded outstanding fix may receive normal Stage-13 CONDITIONAL GO but still blocks progression. Material science changes route upstream. No new Stage numbering or verdict semantics.
+
 ## 7. Evidence requirements
 
 Every substantive statement must map to a verified theorem, source, or clearly labeled interpretation. Every quantitative figure/table must map to a verified generator or authoritative source and preserve the proven/reportable domain.
@@ -158,6 +171,7 @@ Compare the post-streamlining manuscript against the Stage-10 `EXPOSITION_ARCHIT
 ## 9. Kill tests
 
 Block submission QA if:
+- Stage-13 independent final-publication-prose review lacks ordered complete PDF cold reading, actual full-text exemplar comparison, second independent full reading, closure of material objections or accepted source/PDF hash;
 - the `EDITORIAL_REVISION_AUDIT` is missing, consists only of general praise, or lacks original/revised text and an independent retest;
 - a material Stage-11 communication-only objection remains unresolved or the central economic inference is still buried;
 - source exemplars were represented as read without access or their scientific claims were silently imported;
@@ -184,7 +198,7 @@ If integration reveals that a **new substantive computation or result** is neede
 
 A reader should encounter one research question, one coherent mechanism, verified results, and a disciplined contribution narrative from abstract through conclusion. The final figure/table set should make the paper easier to understand without becoming a parallel source of unverified claims.
 
-The integrated package should also be structurally ready for Stage 13P independent prose review and then Stage 14 to perform a fresh live journal-compliance audit rather than discovering preventable source/title-page/declaration inconsistencies for the first time.
+The integrated package should also be structurally ready for Stage 14 to perform a fresh live journal-compliance audit rather than discovering preventable source/title-page/declaration inconsistencies for the first time.
 
 ## 11. Failure criteria
 
@@ -210,22 +224,20 @@ Bounded journal-format/package issues may remain for Stage 14 only when they are
 14. Remaining blockers
 15. Editorial Revision Audit: source-verified exemplar reconciliation, objection-to-diff map, critical-reader retest and claim-scope preservation
 16. Open/closed editorial findings and earliest affected Stage
-17. Verdict and Stage 13P handoff contract
+17. Final-publication-prose subgate: complete first/second reading, source-located exemplar comparison, bounded issue closure, accepted complete PDF SHA-256 and source commit
+18. Verdict and Stage 14 contract
 
 ## 13. Final verdict
 
 Choose one:
 
-- `INTEGRATED MANUSCRIPT READY FOR STAGE 13P` — **prospective v4.0 Stage-13 GO**; not direct Stage-14 submission QA clearance
-- `INTEGRATED MANUSCRIPT READY FOR SUBMISSION QA` — retained **historical v3.0 wording only**; must be routed through Stage 13P if the project adopts v4.0
+- `INTEGRATED MANUSCRIPT READY FOR SUBMISSION QA`
 - `CONDITIONAL GO` — bounded integration fixes
 - `REOPEN SECTION / EARLIER STAGE`
 
 ## 14. Next-stage contract
 
-**Prospective v4.0 route:** A Stage 13 `INTEGRATED MANUSCRIPT READY FOR STAGE 13P` / canonical `GO` judgment first routes to **Stage 13P**, not directly to Stage 14. Assemble an exact full integrated source/PDF snapshot (SHA and hash) without any authoring history embedded in the submitted manuscript. Stage 13P independently reads the full text blind before it sees the Stage-10A/12 benchmark records, then judges real published-paper writing moves with full-text evidence. A favorable Stage 13 prose self-audit does not replace Stage 13P's independent result. Stage 13P `CONDITIONAL GO` or `NO-GO` blocks the Stage-14 route.
-
-After a Stage 13P GO, Stage 14 verifies the exact final PDF against the Stage-10 exemplar map, independent Stage-11 editorial attack and Stage-13 before/after retest; material editorial regressions reopen Stage 13/10. Stage 14 also **refreshes all material journal requirements from current official sources**. It should not be the first stage at which the project decides whether a central result needs a figure or table, but it is the mandatory stage at which journal-compliance evidence is re-opened, dated, reconciled, and made fail-closed.
+Stage 14 verifies the exact final PDF against the Stage-10 exemplar map, independent Stage-11 editorial attack and Stage-13 before/after retest; material editorial regressions reopen Stage 13/10. Stage 14 also **refreshes all material journal requirements from current official sources**. It should not be the first stage at which the project decides whether a central result needs a figure or table, but it is the mandatory stage at which journal-compliance evidence is re-opened, dated, reconciled, and made fail-closed.
 
 Stage 14 may repair formatting/package defects but should not materially rewrite the theory, contribution, or exposition architecture. A structural exposition failure discovered there normally reopens Stage 13; an architecture-design failure may reopen Stage 10.
 ### Exemplar synthesis regression

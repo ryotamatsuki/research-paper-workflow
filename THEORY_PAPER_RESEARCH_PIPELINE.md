@@ -1010,6 +1010,12 @@ A later discovery that a material candidate was omitted is a **journal-positioni
 
 ---
 
+### Prospective v3.1 — Stage 11 publication-prose attack (not an added Stage)
+
+A separate independent editorial referee reads the actual Stage-10B draft blind to author explanations, previous notes and exemplar maps before comparing precise draft/source locations. Challenge unnatural journal English, internal review/CI narrations, defensive novelty statements, missing competing economic mechanisms and repetition with passage-specific severity and bounded repair instructions. Preserve legitimate model-game stages, theorem scope and negative results. The Stage-11 verdict applies only to the examined draft; it does not certify the journal-integrated final PDF.
+
+---
+
 # Stage 13 — Full-Paper Integration
 
 ## Objective
@@ -1044,38 +1050,19 @@ Apply `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md` to the actual integrated
 - Any statement about formal verification matches the frozen formal-verification certificate and explicit non-formalized scope.
 - Journal-specific figure/table rules are incorporated without changing substantive results.
 
-Substantive inconsistency triggers rollback to the earliest affected stage. Stage 13 `GO` routes to Stage 13P, not directly to Stage 14; Stage 13P independently reviews the completed prose and exemplar-level quality before submission QA.
+### Mandatory independent final-prose subgate within Stage 13 (prospective v3.1)
 
----
+**After** integration, journal-specific rewrites and declarations, freeze the complete submission-facing source commit SHA and actual full PDF SHA-256. Obtain a genuinely separate first full-paper cold reading (Abstract through final proof appendix, captions and declarations); record the independently paraphrased economic question/result/mechanism/limitations, the strongest communication-only desk-reject and all MAJOR passage-located editorial defects. Withhold previous reports and exemplar materials until this Phase-A report has been saved.
 
-# Stage 13P — Independent Publication Prose Review & Exemplar Benchmarking (prospective v4.0)
+Phase B compares each actual manuscript role at exact passage locations to Stage-10A published exemplars fully acquired/read (including material appendices) and refreshed for the selected journal at Stage 12. A paper title, abstract or snippet is insufficient. Assess opening, argument flow, idiomatic prose, contribution, economic intuition adjacent to theorems, proof/exhibit economy, Discussion and whole-paper coherence. STRONG/ADEQUATE/WEAK judgments need evidence and must never import exemplar claims or copied sentences.
 
-> **Mandatory after adoption of the MAJOR v4.0 route; not present in the immutable v3.0 tag.** Stage 13 must end with `GO`. The proposed normal route is `Stage 13 GO → Stage 13P GO → Stage 14`. Stage 13P `CONDITIONAL GO` or `NO-GO` cannot be carried into Stage 14.
+After bounded repairs preserving mathematical quantifiers, genuine counterexamples, prior-art accuracy and AI verification facts, build and hash the new complete PDF. An independent **second** cold reader must read the **entire revised manuscript**, not merely a list of edits, before material issues close. Save FINAL_PROSE_REFEREE_REPORT, FINAL_PROSE_EXEMPLAR_COMPARISON, FINAL_PROSE_ISSUE_REGISTER, FINAL_PROSE_REVISION_AUDIT (or individually traceable equivalents), full reading/access logs and the accepted source/PDF hashes. Use templates/STAGE_13_FINAL_PROSE_SUBGATE.md and checklists/FINAL_PROSE_REVIEW_CHECKLIST.md.
 
-## Objective and non-overlap
+No independent full reading, missing sources, reordered phases, multiple unresolved MAJOR defects or absent second re-read means **Stage-13 NO-GO**. One narrowly bounded outstanding prose-only fix can be Stage-13 CONDITIONAL GO, which does **not** permit Stage 14. Only complete closure authorizes normal Stage-13 GO; scientific errors return upstream. This remains **inside Stage 13**; no new numbered Stage exists.
 
-Separate the question “Is this theory mathematically/academically defensible?” (Stages 4A/6/7.5A/11) and “Has the integrated manuscript been revised into a coherent argument?” (Stage 13) from **“Does the finished article actually read as idiomatic, persuasive, publication-standard economics prose when judged independently against real, fully read exemplar papers?”** Stage 13P is not another mathematical referee, another discovery loop, a promise of journal acceptance, or a generic language-model score.
 
-Apply `templates/STAGE_13P_INDEPENDENT_PROSE_REVIEW.md` and `checklists/PUBLICATION_PROSE_REVIEW_CHECKLIST.md`. Require exact manuscript source SHA, compiled final-paper PDF hash, full appendices and coverage log, target journal/article type and independent reviewer context.
 
-## Required two-phase sequence
-
-1. **Phase A — blind paper-only cold read:** Supply *only* the exact complete submission-facing manuscript PDF, necessary scientific supplements and a neutral target/article-type label to an independent critical reader. Withhold editor/author revision history, Stage 10A exemplars, reviewer notes, PR/AI chats and solution map. Before seeing any benchmark record, commit `PROSE_REFEREE_REPORT.md` containing the cold reader's own question/result/mechanism/scope paraphrase, actual page/paragraph-based findings and its strongest plausible **communication-only** desk-reject paragraph. Record prior context exposure and distinguish AI review from genuine human peer review.
-2. **Phase B — source-located exemplar benchmarking:** Then reveal the fully acquired/read Stage 10A exemplar set and the Stage 12 journal refresh, **not** untested abstracts/snippets. Compare role-wise actual exemplar sections/paragraphs with corresponding passages of the draft on question framing, English idiom, logical paragraph flow, economics mechanism, model/proof exposition, contribution positioning, exhibits and Discussion/Conclusion. In `EXEMPLAR_PROSE_COMPARISON.md` give both text locators, observed transferable writing technique, limitation/anti-copying guardrail, and evidence-based `STRONG / ADEQUATE / WEAK` per role. Ratings are not admission probabilities or source-prestige scores.
-
-Reconcile findings in `PROSE_ISSUE_REGISTER.md`. Remove internal research/workflow vocabulary and self-referential audit narratives **only when they are not scientifically required**; preserve valid game-stage descriptions, formal proof scope, necessary replication citations, theorem-domain restrictions and negative results. Every material edit requires before/after quoted evidence and scope-preservation checks in `PROSE_REVISION_AUDIT.md`. A substantive change to a theorem, source claim, sign, welfare benchmark, causal interpretation or AI/author assertion returns to the **earliest scientific gate**; Stage 13P cannot smuggle it in.
-
-After repairs, conduct an **independent second cold read** of the revised whole manuscript without the answer key, and commit its retest, scope checks and exact new source/PDF hashes. The first reader alone cannot close their own disputed major findings. Stage 13P output `STAGE13P_GATE_REPORT.md` records access/reading depth, findings, closure evidence, remaining minor issues, exact accepted manuscript snapshot and canonical verdict.
-
-## Hard exit and routing
-
-- **GO:** genuine Phase A/B evidence, no unresolved material prose/editorial objection or major `WEAK` role, all material fixes independently retested, scientific content unchanged, and source SHA/PDF hash match the accepted manuscript.
-- **CONDITIONAL GO:** exactly one bounded, owned editorial repair with a specified retest. **Not permission for Stage 14.**
-- **NO-GO:** incomplete full reading, compromised “blind” provenance, inaccessible exemplars claimed as read, unresolved prose defects, stale review after major textual edits, or failure of independent retest. Reopen Stage 13 or 10A as appropriate; scientific errors return upstream.
-
-**Stage 14 must verify** every actual submission-facing text/PDF variant against Stage 13P GO. A later change to manuscript prose, theorem explanation, caption, Appendix or Declaration requires a targeted or full independent prose retest proportionate to its scope, before Stage 14 can pass. A clean LaTeX build, tests, proof-assistant PASS or prior favorable Stage 11 editorial comments are insufficient.
-
-Regression fixtures: `examples/PUBLICATION_PROSE_REVIEW_REGRESSION.md`.
+Substantive inconsistency triggers rollback to the earliest affected stage.
 
 ---
 
@@ -1087,7 +1074,6 @@ Verify the complete submission package, including mathematical artifacts and art
 
 ## Mandatory checks
 
-- Stage 13P `GO` evidence (blind report committed before exemplar comparison, full-text exemplar source/paragraph comparisons, independent post-repair retest and accepted exact source/PDF hash) is present and reconciled against the actual final PDF; any unresolved major editorial defect or stale text snapshot blocks Stage 14;
 - fresh build from a clean environment;
 - all applicable symbolic/numerical tests pass;
 - theorem-certificate artifacts referenced by the freeze remain present and consistent;
@@ -1104,10 +1090,12 @@ Verify the complete submission package, including mathematical artifacts and art
 - abstract, highlights, cover letter, manuscript, theorem scope, and any formal-verification claim agree;
 - final PDF is inspected page by page.
 - the final PDF matches the Stage-10A blueprint/exemplar map and Stage-10B adoption record, Stage-11 editorial referee report and Stage-13 before/after revision evidence; no material communication-only objection is unresolved, and manuscript changes after the editorial PASS trigger rechecking the affected passage;
+
+- the final actual source commit/PDF SHA-256 match the independently accepted Stage-13 final-prose review; any later prose edits (including captions/appendix/disclosures) invalidate affected clearance and require independent retest before QA PASS or freeze;
 - the final PDF passes the Stage-13 exposition architecture/streamlining audit: Introduction compression, section purity, reader-arrival budget, exhibit scarcity, and concise/no-new-claims conclusion; any structural failure reopens Stage 13 rather than being solved by an unreviewed late rewrite;
 - where reviewer-verifiability auditing applies, the exact final PDF/package preserves definitions, proof boundaries, bridge equations, appendix/supplement cross-references, and computer-assisted/formal mappings needed for a specialist referee to follow the claim → derivation → proof/certificate → conclusion chain.
 
-Use `checklists/PUBLICATION_PROSE_REVIEW_CHECKLIST.md`, `templates/STAGE_13P_INDEPENDENT_PROSE_REVIEW.md`, `checklists/SUBMISSION_CHECKLIST.md`, `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md`, `checklists/REVIEWER_VERIFIABILITY_CHECKLIST.md` where applicable, `checklists/FIGURE_TABLE_CHECKLIST.md`, `checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md`, and the frozen `checklists/FORMAL_VERIFICATION_CHECKLIST.md` certificate/N-A rationale where applicable.
+Use `checklists/SUBMISSION_CHECKLIST.md`, `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md`, `checklists/REVIEWER_VERIFIABILITY_CHECKLIST.md` where applicable, `checklists/FIGURE_TABLE_CHECKLIST.md`, `checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md`, and the frozen `checklists/FORMAL_VERIFICATION_CHECKLIST.md` certificate/N-A rationale where applicable.
 
 A substantive mathematical, novelty, theory, welfare, institutional, claim-scope, or formal-statement mismatch triggers rollback to the earliest affected stage and a fresh downstream QA cycle.
 
@@ -1130,7 +1118,6 @@ Create an immutable, auditable submission state.
 - cover letter and journal-specific files/metadata;
 - disclosure statement where required;
 - final AI-disclosure reconciliation where material AI use occurred;
-- Stage 13P prose gate accepted source/PDF snapshot and post-GO changed-text retest evidence;
 - author sign-off tied to the exact frozen commit/PDF/package.
 
 After submission freeze, substantive changes reopen affected stages; no silent theory edits.
