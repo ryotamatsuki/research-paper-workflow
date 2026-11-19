@@ -8,6 +8,7 @@ This checklist must be used together with:
 - [`FIGURE_TABLE_CHECKLIST.md`](FIGURE_TABLE_CHECKLIST.md) for figure/table design, reproducibility, artwork, and accessibility;
 - [`EXPOSITION_STREAMLINING_CHECKLIST.md`](EXPOSITION_STREAMLINING_CHECKLIST.md) for Stage-13 streamlining evidence and Stage-14 exposition verification.
 - [`EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md`](EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md) for source-verified writing exemplars, independent communication-only referee attacks, and before/after retest evidence.
+- [`PUBLICATION_PROSE_REVIEW_CHECKLIST.md`](PUBLICATION_PROSE_REVIEW_CHECKLIST.md) for the prospective v4.0 Stage 13P independent blind-plus-exemplar prose gate, separate second-reader retest, and snapshot validation.
 
 A material journal requirement is not closed merely because a box is checked. The production repository must preserve a current `JOURNAL_REQUIREMENTS_LEDGER.md` or equivalent with source, access date, interpretation, affected artifact/portal field, and verification status.
 
@@ -88,6 +89,18 @@ A material journal requirement is not closed merely because a box is checked. Th
 - [ ] Discussion begins with the distinct economic lesson, places examples in their correct illustrative role, and states the model's limits
 - [ ] Each material editorial objection has evidence-bearing closure; a clean build or “substantially clearer” does not suffice
 - [ ] No prose change silently broadens theorem scope, novelty, causality, policy instrument, benchmark or numerical results
+
+## Stage 13P — independent publication prose (mandatory after prospective v4.0 adoption)
+
+- [ ] Stage 13P blind Phase-A report covers every manuscript page, appendix, caption and declaration and is committed before exemplar exposure
+- [ ] Reader paraphrases question/result/mechanism/scope without an answer key and writes grounded strongest communication-only desk-reject paragraph
+- [ ] Stage 10A/12 fully read published-paper exemplars compared at actual section/page/paragraph positions, not abstracts or prestige
+- [ ] Relevant roles have text-grounded `STRONG / ADEQUATE / WEAK` ratings, and significant WEAK roles are repaired
+- [ ] No unexplained internal workflow narrative, self-evaluation or formulaic defensive prose in the published-paper text
+- [ ] Negative results, theorem quantifiers, proof bridges, source credit and formal coverage preserved during editing
+- [ ] Independent second cold reader verifies closure of all material issues with exact before/after and source/PDF hashes
+- [ ] Final Stage13P `GO` is bound to this submission-facing source/PDF or every post-GO prose change has appropriate independent retest
+- [ ] `CONDITIONAL GO` and `NO-GO` are not treated as publication-prose clearance or a substitute for author's approval
 
 ## Exposition / streamlining integrity
 
@@ -266,6 +279,7 @@ If authenticated portal access is the only remaining unknown at Stage 14, record
 - [ ] All material journal requirements are verified from current evidence
 - [ ] No unresolved evidence conflict remains
 - [ ] Figure/table/artwork QA passes under current journal rules
+- [ ] Prospective v4.0 Stage 13P `GO` evidence is current for the exact final PDF
 - [ ] Stage 14 QA status is `PASS` or the only remaining item is an explicit authenticated-portal preflight
 - [ ] No AI/computational/formal check is represented as author or external-human verification without evidence
 - [ ] Final AI disclosure is supported by the provenance record
