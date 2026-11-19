@@ -135,7 +135,7 @@ This checklist passes when every headline claim has a defensible portability cla
 A narrow `MODEL-SPECIFIC` theorem may pass. The checklist is designed to measure research strength accurately, not to force generality that the economics does not support.
 
 ---
-## v3.2 candidate: portability is not thematic causal identification
+## v3.2: portability is not thematic causal identification
 - [ ] The Stage-7.5A portability test changes a meaningful specification and evaluates the advertised quantifier. It need not, and ordinarily does not, identify the sector-specific cause of a theorem.
 - [ ] Separately trace any claimed ESSENTIAL / CONTRIBUTORY thematic primitive to an explicit comparable Stage-4 M2 counterfactual; otherwise label its role UNRESOLVED / INTERPRETIVE as supported.
 - [ ] Avoid inferring environmental-externality necessity from a positive Cournot-to-Bertrand check or a competitiveness-parameter-zero check if that is not the same primitive.

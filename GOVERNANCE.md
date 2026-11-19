@@ -605,7 +605,7 @@ Submission freeze records at minimum:
 No silent post-freeze theoretical edits are permitted.
 
 ---
-## v3.2 candidate — research-question/model/contribution governance (not yet released)
+## v3.2 — research-question/model/contribution governance (adopted)
 This addendum refines §§2.12–2.12A (absorption), 2.19–2.21 (contribution and question completeness), 2.24–2.25 (exemplar and route-aware contribution), and existing rollback/freeze controls; it does not replace them. Governing detailed contract: docs/V3_2_RESEARCH_DESIGN_PROTOCOL.md.
 1. At Stage 0 record THEME-FIRST / MODEL-FIRST / HYBRID, allowing evidence-backed pivot. A mathematical generalization/correction is not penalized for lacking theme-specific primitives. If an application is claimed, its scientific role must be stated.
 2. For each advertised headline result, distinguish prior-art absorption, role of thematic economic primitives (ESSENTIAL / CONTRIBUTORY / INTERPRETIVE / UNRESOLVED for a precise claim/domain), economic learning gain, and proven generality. A green or other sectoral label is neither necessary nor sufficient for economic novelty.

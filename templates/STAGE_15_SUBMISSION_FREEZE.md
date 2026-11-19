@@ -166,5 +166,5 @@ Any later prose edit—including a caption, proof paragraph or AI/Data/Code stat
 Any later journal-specific technical return is treated as workflow evidence: record which requirement was missed, why the preflight failed to detect it, and convert that failure mode into a reusable Stage-14/15 regression check where appropriate.
 
 ---
-## v3.2 candidate: scientific-risk and author-review closure
+## v3.2: scientific-risk and author-review closure
 With the existing exact source/PDF hashing and frozen package checks, include the five scientific-axis ledger, source-located Stage-11 attacks, Contribution Identification Report ID, Pre-Submission Scientific Risk Brief ID and current author decision. Require affirmative author review of exact named snapshot, strongest desk objection, defense and unrun high-value tests. Unresolved *material* science = no unconditional freeze, route to the earliest research Stage, not journal-shopping. A supported limited, model-specific theory can be submitted to a suitable venue with honest framing. No automatic retroactive treatment of already-submitted v3.1 manuscripts, and no inferred author signature.

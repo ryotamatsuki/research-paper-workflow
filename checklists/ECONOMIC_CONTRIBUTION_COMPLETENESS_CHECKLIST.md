@@ -121,7 +121,7 @@ Log reviewer identity/method and input exposure, exact objection, cited evidence
 Record date, version/SHA, artifact links, objection/response and stop rule. Unknowns remain `UNRESOLVED`; passing this audit is **not** a promise of peer review or publication.
 
 ---
-## v3.2 candidate: distinct question, identification and significance checks
+## v3.2: distinct question, identification and significance checks
 - [ ] Identify the actual research route and question; specify whether a thematic primitive is a causal claimed contribution or application context.
 - [ ] Locate source-specific parent theorem and record any reduction/absorption attempt.
 - [ ] Identify the exact proposition/domain for every ESSENTIAL / CONTRIBUTORY / INTERPRETIVE / UNRESOLVED primitive classification.

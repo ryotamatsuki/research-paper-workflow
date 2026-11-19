@@ -194,7 +194,7 @@ If yes, mark `CERTIFICATION REGRESSION`, preserve the counterexample as workflow
 - [ ] Unresolved material editorial defects are not labeled PASS based on generic praise, a complete table of contents, mathematical correctness or PDF QA
 
 ---
-## v3.2 candidate: five model–question attacks (additional evidence, not duplicate prose)
+## v3.2: five model–question attacks (additional evidence, not duplicate prose)
 - [ ] Generic Model in Disguise: application-name deletion plus closest source mapping.
 - [ ] Research Question–Model Mismatch: exact Title/Abstract/Introduction promise versus theorem/proof domain.
 - [ ] Nonessential Thematic Primitive: valid matched ablation; avoid conflating competitive transmission with environmental damage.

@@ -206,7 +206,7 @@ Choose one:
 Stage 11 attacks the completed manuscript and model; it does not add unmotivated extensions. Any required figure/table already identified at Stage 10 should travel with the draft into Stage 11 rather than be postponed to Stage 13 or 14. Stage 13 will rerun `EXPOSITION_STREAMLINING_CHECKLIST.md` against the integrated manuscript and actual page order; Stage 14 only verifies the resulting architecture.
 
 ---
-## v3.2 candidate: certified question-to-model-to-claim narrative
+## v3.2: certified question-to-model-to-claim narrative
 Introduction: precise puzzle -> closest known account -> actual unresolved distinction -> proposed model choice -> supported result and limits.
 Model: explain why each *decisive* economic primitive enters payoff/choice/timing/constraint; label technical normalizations and inherited structures.
 Results: give the proven statement and a mechanism decomposition that cites Stage 4/6 evidence; show countervailing channels, not an invented causal story.

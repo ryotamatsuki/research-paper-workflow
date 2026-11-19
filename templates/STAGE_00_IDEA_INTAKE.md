@@ -108,7 +108,7 @@ Choose exactly one:
 State exactly what Stage 1 may audit and what must remain unchanged. A `CONDITIONAL GO` permits work only on the identified blocker.
 
 ---
-## v3.2 candidate: route-aware entry and question ownership
+## v3.2: route-aware entry and question ownership
 Add to the ordinary intake record (no duplicate form required):
 - Route: THEME-FIRST / MODEL-FIRST / HYBRID. Identify the phenomenon/policy or the parent theorem/game/anomaly, and why the present research needs explaining. HYBRID describes both strands, not a forced classification.
 - One-sentence falsifiable economic question; stakes; closest parent source and exact location; unknown inference relative to parent; tentative economic-learning route; possible results contrary to the preferred hypothesis.

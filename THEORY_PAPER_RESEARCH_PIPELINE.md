@@ -1246,7 +1246,7 @@ Future extensions may add empirical/cross-discipline variants, machine-readable 
 This document is the canonical workflow architecture. Stage-specific templates may elaborate it but may not silently weaken its gates.
 
 ---
-## v3.2 candidate — Research Question–Mechanism Alignment / Economic Model Design (unreleased)
+## v3.2 — Research Question–Mechanism Alignment / Economic Model Design (adopted)
 This section overlays, and does not renumber, the existing Stage 0–15 route. Source of truth: docs/V3_2_RESEARCH_DESIGN_PROTOCOL.md. Route labels: THEME-FIRST, MODEL-FIRST, HYBRID (pivots permitted, with versioned affected-certification audit).
 - **Stage 0:** define question, stakes, route, closest parent/model, necessary economic feature if theme-first, plausible falsifier and possible contrary findings.
 - **Stage 2:** map actual research question -> closest papers' model and assumptions -> residual gap -> grounded alternative architecture(s) and cheap falsifier. Search again after model resolution.

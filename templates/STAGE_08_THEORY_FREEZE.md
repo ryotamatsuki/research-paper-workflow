@@ -201,6 +201,6 @@ Any post-freeze theoretical change must record:
 Any change affecting equilibrium correctness/globality requires Stage 4/4A re-certification. Any change affecting theorem scope/generality/benchmark language requires Stage 7.5A re-certification. Any material change to a formally certified theorem, encoded hypothesis, or proof-critical identity marks the formal certificate stale and requires a fresh Formal Verification Gate before refreeze. No silent theory drift is permitted.
 
 ---
-## v3.2 candidate: freeze the question and contribution, not merely equations
+## v3.2: freeze the question and contribution, not merely equations
 Carry into the existing frozen provenance inventory the version/identifiable location of CONTRIBUTION_IDENTIFICATION_REPORT, Stage-0 route (THEME-FIRST / MODEL-FIRST / HYBRID), exact research question, closest parent result, asserted claim-specific feature roles, M0/M1/M2 evidence and unfinished discriminating checks, and the allowed manuscript claim strength.
 Freeze only evidence-backed science; an unresolved issue material to the advertised central result is a Stage-7.5 blocker, not an exception accepted silently at Stage 8. A subsequent theoretical pivot, new claim about theme-specific causality, or changed research question reopens the earliest affected Stage and dependent Stage 4A/7.5A certificates in accordance with the existing change-control rule.

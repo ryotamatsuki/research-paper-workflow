@@ -1,6 +1,6 @@
 # research-paper-workflow
 
-**Current canonical version: v3.1 (MINOR on the v3.0 architecture)** — mandatory full-text exemplar benchmarking at Stage 10A precedes manuscript construction at Stage 10B. See [v3.0 release notes](docs/V3_0_RELEASE_NOTES.md).
+**Current canonical version: v3.2 (MINOR on the v3.0 architecture)** — research-question/model alignment and evidence-bearing economic-contribution identification, together with v3.1 independent prose gates and v3.0 exemplary benchmarking. See [v3.2 release notes](docs/V3_2_RELEASE_NOTES.md).
 
 A reusable, reproducible workflow for developing theory-oriented economics research from initial motivation to submission freeze.
 
@@ -493,10 +493,10 @@ Suggested attribution: **Ryota Matsuki, `research-paper-workflow`**.
 
 ## Status
 
-Canonical workflow: **v3.0** (Stage 10A → Stage 10B). The immutable v2.9 tag is a historical baseline; projects adopting v3.0 must use the v3.0 release tag after GitHub publishes it. Previously drafted manuscripts may enter Stage 10A prospectively, without pretending the benchmark preceded their original drafting.
+Canonical workflow: **v3.2** (preserving the v3.0 Stage 10A → Stage 10B route and v3.1 publication-prose requirements). Historical release tags remain immutable. Previously drafted or submitted manuscripts can be reassessed prospectively without pretending new requirements were satisfied in the past.
 
-Stable release reference: [`v2.9`](https://github.com/ryotamatsuki/research-paper-workflow/releases/tag/v2.9) (verify the live GitHub Release record). A version marker or readiness verdict alone does not establish that the tag/Release has been published. The reviewed state is published by `.github/workflows/publish-v2.9.yml`. Prior v2.8 and earlier stable releases/tags remain immutable; v2.1 was the first stable tagged v2 release.
+Stable release reference: [`v3.2`](https://github.com/ryotamatsuki/research-paper-workflow/releases/tag/v3.2) (verify the live GitHub Release record). The release is published by `.github/workflows/publish-v3-2-release.yml` after main integration and validation. Previous v3.1 and earlier releases/tags remain immutable.
 
 ---
-## Proposed v3.2 (unreleased) — question–mechanism and economic-learning gate
-Draft-only, based on adopted v3.1; **the current official release remains v3.1 until author approval**. See docs/V3_2_RESEARCH_DESIGN_PROTOCOL.md and docs/V3_2_GAP_METHODOLOGY_AUDIT.md. Existing Stage numbers, GO/CONDITIONAL GO/NO-GO meanings, mathematical/portability gates and published v3.1 tags remain unchanged. The revision makes theme-first questions trace to actual primitives, requires discriminating M0/M1/M2 evidence where comparable, and separates theorem novelty, thematic causal role, economic learning and publication fit. Theory-first discoveries, corrections and significant applications remain valid routes. Reports can be embedded in existing Stage artifacts; dedicated templates are available at templates/CONTRIBUTION_IDENTIFICATION_REPORT.md and templates/PRE_SUBMISSION_SCIENTIFIC_RISK_BRIEF.md. Tests: python3 scripts/verify_research_design_contract.py.
+## v3.2 (MINOR) — adopted research question–mechanism and economic-learning gate
+Author-approved on 2026-11-19 as the successor to v3.1. Stage numbering and verdict meanings are unchanged. See docs/V3_2_RESEARCH_DESIGN_PROTOCOL.md and docs/V3_2_GAP_METHODOLOGY_AUDIT.md. Existing Stage numbers, GO/CONDITIONAL GO/NO-GO meanings, mathematical/portability gates and published v3.1 tags remain unchanged. The revision makes theme-first questions trace to actual primitives, requires discriminating M0/M1/M2 evidence where comparable, and separates theorem novelty, thematic causal role, economic learning and publication fit. Theory-first discoveries, corrections and significant applications remain valid routes. Reports can be embedded in existing Stage artifacts; dedicated templates are available at templates/CONTRIBUTION_IDENTIFICATION_REPORT.md and templates/PRE_SUBMISSION_SCIENTIFIC_RISK_BRIEF.md. Tests: python3 scripts/verify_research_design_contract.py.

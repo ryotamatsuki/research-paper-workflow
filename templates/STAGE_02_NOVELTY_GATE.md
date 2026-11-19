@@ -198,7 +198,7 @@ Choose one canonical stage verdict and route:
 Stage 3 may generate alternative mechanisms or a minimal generalization/unification architecture only around the surviving research question. It may not revive killed claims by relabeling them. If the surviving route is generalization/unification, Stage 3 must preserve and test the nested-benchmark map rather than treating the known components as independent novelty claims.
 
 ---
-## v3.2 candidate: Research Question–Literature–Mechanism Mapping
+## v3.2: Research Question–Literature–Mechanism Mapping
 Keep the existing novelty-kill and canonical/parent absorption checks unchanged. Before model expansion, record RESEARCH_QUESTION_LITERATURE_MAP.md or a clearly identified equivalent section:
 Question | closest paper and exact theorem/location | actual players, objectives, timing and mechanism | what is not explained | potentially necessary new economic primitive | cheap falsifier.
 For papers with different conclusions, identify the particular assumptions/mechanisms responsible, or label comparison UNRESOLVED. Determine whether a general parent model already answers the question. For THEME-FIRST ordinarily compare two or three *economically meaningful* candidate architectures with why each could change the answer; one is acceptable when others are artificial, with reason. For MODEL-FIRST map parent model/theorem, generalized result and counterexample rather than demand theme-specific friction.

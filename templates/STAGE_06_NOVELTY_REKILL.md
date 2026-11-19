@@ -190,7 +190,7 @@ Choose one canonical stage verdict and route:
 Stage 7 may interpret welfare, generality, and institutional relevance only for the surviving contribution set. Killed claims remain dead. If the surviving contribution is a generalization/unification, the nested-benchmark map and full-model-only result remain part of the frozen novelty record.
 
 ---
-## v3.2 candidate: three-axis novelty and economic-learning re-kill
+## v3.2: three-axis novelty and economic-learning re-kill
 Keep all existing parent-theorem/canonical absorption records. For **each** headline theorem or meaningful economic application, add separately:
 A. Theorem Absorption: exact parent source and theorem, relabeling/normalization/specialization/corollary and minimal-extension attempt; ABSORBED / APPARENTLY DISTINCT / UNRESOLVED, source locations and strongest opposing inference.
 B. Mechanism Contribution Identification: list thematic or proposed novel primitives and each ESSENTIAL / CONTRIBUTORY / INTERPRETIVE / UNRESOLVED **relative to a specified theorem and parameter class**; identify whether M2 actually removes a theme feature or only a general competitiveness channel. A single numerical witness cannot prove universal necessity. Record both observed differences and unchanged results.

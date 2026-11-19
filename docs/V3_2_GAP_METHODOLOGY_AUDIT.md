@@ -1,5 +1,5 @@
 # v3.2 Candidate — Gap Analysis, Economic Research Methodology, and Independent Design Audit
-Date: 2026-11-19. Status: candidate design audit, not a release or a revision of prior paper verdicts.
+Date: 2026-11-19. Status: pre-adoption design audit retained as historical evidence; author approved v3.2 on 2026-11-19. Does not revise prior paper verdicts.
 Baseline: main commit 11fad4e8ad60e22c8a8868957d60ed4c6f5b9851; latest official GitHub Release v3.1. Green regression: ryotamatsuki/strategic-local-green-policy-competition main, inspected Stage 6/7.5/11/12 and sections/model.tex. Policy contract: V3_2_RESEARCH_DESIGN_PROTOCOL.md.
 
 ## A. Root cause and precise v3.1 overlap audit

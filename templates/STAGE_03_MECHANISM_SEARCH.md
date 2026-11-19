@@ -160,7 +160,7 @@ Choose one canonical stage verdict and route:
 Stage 4 must test one minimal candidate. Freeze all ingredients not required for that mechanism. If the selected contribution route is a generalization/unification, Stage 4 must establish the claimed theorem or domain expansion and recover relevant benchmarks; demonstrate what additional strategic architecture changes only if such an interaction is claimed.
 
 ---
-## v3.2 candidate: pre-model Research Question–Mechanism Alignment
+## v3.2: pre-model Research Question–Mechanism Alignment
 Before committing to Stage 4, answer these eight questions in RQ-MECHANISM-ALIGNMENT (inline Stage-3 output allowed). Distinguish PREDICTION from VERIFIED and UNRESOLVED; proof is not required yet.
 1. One-sentence testable economic question and outcome.
 2. Decisive domain feature rather than policy/application label.

@@ -63,7 +63,7 @@ def test_cases() -> None:
 def test_contract() -> None:
     targets = {
         "GOVERNANCE.md": ["research-question/model/contribution governance", "THEME-FIRST"],
-        "THEORY_PAPER_RESEARCH_PIPELINE.md": ["v3.2 candidate", "five independent"],
+        "THEORY_PAPER_RESEARCH_PIPELINE.md": ["v3.2 —", "five independent"],
         "templates/STAGE_00_IDEA_INTAKE.md": ["THEME-FIRST", "MODEL-FIRST", "HYBRID"],
         "templates/STAGE_02_NOVELTY_GATE.md": ["Research Question–Literature–Mechanism Mapping", "cheap falsifier"],
         "templates/STAGE_03_MECHANISM_SEARCH.md": ["pre-model Research Question–Mechanism Alignment", "eight questions"],
@@ -89,8 +89,11 @@ def test_contract() -> None:
         for word in words:
             assert word.casefold() in body, (path, word)
     readme = text("README.md")
-    assert "**Current canonical version: v3.1" in readme
-    assert "current official release remains v3.1" in readme
+    assert "**Current canonical version: v3.2" in readme
+    assert "Author-approved on 2026-11-19" in readme
+    assert "## v3.2 (MINOR) — adopted" in readme
+    assert "Status: ACTIVE after author approval" in text("docs/V3_2_RESEARCH_DESIGN_PROTOCOL.md")
+    assert "Release date: 2026-11-19" in text("docs/V3_2_RELEASE_NOTES.md")
     print("PASS documentation contract", len(targets), "files")
     
 def test_green_source_integrity() -> None:

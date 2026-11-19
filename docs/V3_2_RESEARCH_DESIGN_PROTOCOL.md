@@ -1,6 +1,6 @@
-# v3.2 Candidate — Research Question–Mechanism Alignment & Economic Model Design
+# v3.2 — Research Question–Mechanism Alignment & Economic Model Design
 
-Status: PROPOSED; applies only after author approval/release. Parent: v3.1 (main 11fad4e8ad60e22c8a8868957d60ed4c6f5b9851). No new canonical Stage, verdict or route. The rules below refine existing checks; Stage templates contain their local execution contracts. Governance remains controlling.
+Status: ACTIVE after author approval on 2026-11-19 and main merge; parent: v3.1 (main 11fad4e8ad60e22c8a8868957d60ed4c6f5b9851). No new canonical Stage, verdict or route. The rules below refine existing checks; Stage templates contain their local execution contracts. Governance remains controlling.
 
 ## Principle, two legitimate starting routes, and scope
 The objective is incremental **economic learning**, not novelty by labels, added primitives or proof length. A theorem-first paper can make a substantial contribution without an application-specific primitive. A theme-first paper can have a valuable generally applicable result but must not market it as a theme-specific causal finding without evidence.
@@ -55,4 +55,4 @@ Maintain **five orthogonal scientific dimensions**: Mathematical Validity; Prior
 Before new submissions, write PRE_SUBMISSION_SCIENTIFIC_RISK_BRIEF.md (or identifiable equivalent) with the strongest finding, parent comparison, thematic-feature role, strongest desk-reject attack, evidence-backed defense, unrun tests, unresolved scientific blockers, target justification and affirmative author review of exact snapshot. An unresolved **material core claim** is routed back to the earliest Stage; a journal threshold risk can be accepted with disclosure. Record author decision; never describe inferred acknowledgment as consent.
 
 ## Legacy and migration
-v3.1 evidence and completed submissions remain historically immutable. This candidate never retroactively changes a GO or creates a withdrawal instruction. A legacy case used as a shadow regression is labelled POST-HOC DIAGNOSTIC and cannot be called a historical Stage failure unless the old rules and evidence then required the exact test. A later claim-specific scientific re-evaluation is a new assessment with its own date/record, not a rewrite.
+v3.1 evidence and completed submissions remain historically immutable. This version never retroactively changes a GO or creates a withdrawal instruction. A legacy case used as a shadow regression is labelled POST-HOC DIAGNOSTIC and cannot be called a historical Stage failure unless the old rules and evidence then required the exact test. A later claim-specific scientific re-evaluation is a new assessment with its own date/record, not a rewrite.

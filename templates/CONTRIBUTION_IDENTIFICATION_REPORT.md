@@ -1,4 +1,4 @@
-# Contribution Identification Report — v3.2 candidate
+# Contribution Identification Report — v3.2
 Project / freeze-candidate SHA: [ ]   Date: [ ]   Route: THEME-FIRST / MODEL-FIRST / HYBRID
 This report is a Stage-7.5 deliverable and Stage-8 frozen input; a precisely identifiable equivalent section is acceptable. Use source location, theorem/proof or reproducible counterfactual references, not unchecked PASS boxes.
 

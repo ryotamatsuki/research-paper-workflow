@@ -300,7 +300,7 @@ Choose one:
 Stage 12 selects a journal for the actual surviving certified contribution and consumes the frozen Contribution Robustness Certificate. It must not reshape the result, enlarge theorem scope, inflate portability, or suppress equilibrium-selection/failure-boundary qualifications to fit a preferred journal.
 
 ---
-## v3.2 candidate: independent Model–Question Mismatch Attack
+## v3.2: independent Model–Question Mismatch Attack
 In addition to, not instead of, existing novelty, robustness, full mathematical referee and communication-only reviews, require five *evidence-backed* hostile tests. Evaluator must not merely inherit prior Stage-6/7.5 PASS or a manuscript author's explanations.
 1. Generic Model in Disguise: strip application labels; attempt reduction to an actual cited parent paper/model.
 2. Research Question–Model Mismatch: compare title/abstract/introduction promise with precise model/theorem/equilibrium.

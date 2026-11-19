@@ -1,4 +1,4 @@
-# Pre-Submission Scientific Risk Brief — v3.2 candidate
+# Pre-Submission Scientific Risk Brief — v3.2
 Project / manuscript commit / PDF SHA-256 / submission date: [ ]  Journal and article type: [ ]   Reviewer independence: [ ]
 Do not confuse field editor's publication threshold with scientific correctness. Distinguish NOT RUN from FAILED. References must point to exact artifact/source locations.
 

@@ -1,5 +1,5 @@
 # v3.2 Candidate — Independent Research-Director / Field-Editor Review
-Date: 2026-11-19. Scope: draft branch only, main pinned to v3.1. This document evaluates the **revision**; it does not re-review or change the submitted Green paper.
+Date: 2026-11-19. Original scope: draft branch, with main then pinned to v3.1; author subsequently approved v3.2 on 2026-11-19. This preserved pre-merge review evaluates the **revision**, not the submitted Green paper.
 
 ## Core independent objection and correction
 A checklist that merely asks whether 'green effects matter' risks two false answers: a theorem can be new and economically valuable when generic, and removing a primitive may delete the policy shock so the supposed counterfactual is not a comparable experiment. The revision therefore **separates** thematic causal role, theorem absorption and economic learning, and allows honest non-comparability or NOT RUN. Stage 3 predictions are not 'proved' until Stage 4–7.5. Stage 11 must independently attempt a reduction to the nearest general parent.
