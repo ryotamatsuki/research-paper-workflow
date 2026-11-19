@@ -309,6 +309,22 @@ For broad optional discovery, use the current TDF (v5.1 STANDARD/EPOCH/BOTH) and
 
 ---
 
+### 2.26 Publication prose quality is a separately audited decision (Stage 13P, prospective v4.0)
+
+A scientifically correct, executable and Stage-13-integrated paper can still contain unnatural academic prose, self-referential author/workflow language, defensive novelty commentary and disconnected transitions. A Stage 10A benchmark **blueprint** or Stage 11/13 favorable judgment does not certify the **final manuscript's publication-facing text**.
+
+The proposed mandatory route adds **Stage 13P** after Stage 13 and before Stage 14. Stage 13P is a **two-phase independent prose-only gate**: **A** reads the exact complete paper blind (no previous reports or exemplar map); **B** compares actual located draft prose with Stage-10A fully acquired/read exemplars as refreshed for the target journal at Stage 12. Phase-A findings are committed before Phase-B evidence is disclosed. Record reviewer prior knowledge; do not represent a differently prompted AI as external human peer review. Use `templates/STAGE_13P_INDEPENDENT_PROSE_REVIEW.md` and `checklists/PUBLICATION_PROSE_REVIEW_CHECKLIST.md`.
+
+Require source-located paragraph-level criticism and original, evidence-grounded writing moves instead of an arbitrary “top-journal style score”. Emphasis falls on field-appropriate scholarly English, economic intuition, paragraph progression, framing, precision/conciseness, whole-paper unity and complete appendix/declaration prose. Detect the contamination of the submitted text by researcher-workflow labels, technical CI/audit narration and unjustified self-appraisal. Do not delete valid theorem qualifications, proof-critical exposition, negative evidence, accurate formal scope or necessary replication information for rhetorical polish. Never imitate copyrighted exemplar sentences or import their economic claims.
+
+A second independent cold reader must verify closure of material findings after edits. **Stage 13P GO is required to enter Stage 14** under the prospective route. A single bounded unclosed item can yield `CONDITIONAL GO` but does not authorize advancement; material defects cause `NO-GO` and relevant return to Stage 13/10A. Any scientific issue returns to the earliest scientific stage.
+
+A Stage-13P GO applies to a **specific manuscript source SHA and PDF hash**. Post-GO manuscript text changes require documented targeted or full independent re-review according to their effect, including captions, appendices and AI/Code/Data declarations. Stage 14 must compare the final submission PDF with that exact reviewed text; stale or unsupported prose certification blocks a QA PASS/Stage-15 freeze. This gate cannot certify acceptance, originality, human authorship approval or publisher compliance.
+
+**Version status:** This is an incompatible additional mandatory Stage and altered canonical routing, so it is **MAJOR-class (prospective v4.0)** under `docs/VERSIONING_POLICY.md`. It does **not** retroactively change v3.0 or move its immutable tag; require a separate reviewed main-state merge, release readiness and explicit user-approved release action.
+
+---
+
 ## 3. Repository change policy
 
 ### 3.1 Main branch
@@ -379,7 +395,9 @@ Release/version changes are substantive because published versions define stable
 - Correct released defects with later versions rather than moving tags.
 - Release/audit docs record version state but do not override the canonical hierarchy.
 
-Stage additions/removals/mergers, canonical routing changes, verdict-semantic changes, or incompatible workflow architecture changes require a MAJOR version under the current versioning policy. The Stage 4A and Stage 7.5A additions therefore define v2.0 architecture.
+Stage additions/removals/mergers, canonical routing changes, verdict-semantic changes, or incompatible workflow architecture changes require a MAJOR version under the current versioning policy.
+
+The proposed **Stage 13P** between Stage 13 and Stage 14 is a *mandatory new Stage and route*, not an optional editorial checklist inside Stage 13. It therefore requires a prospective **MAJOR v4.0** release. A draft PR or merging documentation alone neither alters nor replaces the immutable v3.0 release tag. The Stage 4A and Stage 7.5A additions therefore define v2.0 architecture.
 
 Adding a formal-verification obligation **inside** existing Stage 4A/7.5A/8 boundaries, without renumbering Stages or changing canonical routing/verdict semantics, is a MINOR-version class refinement rather than a new Stage.
 
@@ -512,6 +530,7 @@ For theorem-oriented projects:
 - Stage 7.5 `GO` routes to **Stage 7.5A**, never directly to Stage 8.
 - Stage 7.5A `GO` is required for Stage 8 theory freeze.
 - Stage 9 `GO` routes to **Stage 10A**; Stage 10A `GO` plus the saved blueprint and source map is required for **Stage 10B**; Stage 10B `GO` routes to Stage 11. No manuscript-writing shortcut from Stage 9. Stage 10A conditional/negative verdict blocks Stage 10B. The existing scientific gates are unchanged by v3.0 route.
+- **Prospective v4.0 route:** Stage 13 `GO` routes to **mandatory Stage 13P**; only Stage 13P `GO` permits Stage 14. Stage 13P `CONDITIONAL GO` blocks advancement until the bounded repair and independent retest are complete; `NO-GO` returns to Stage 13/10A or the earliest affected scientific Stage. Stage 14 checks the exact Stage-13P GO snapshot and mandatory changed-prose retests. v3.0 remains unchanged until a separately authorized major release.
 
 The Stage structure and routing remain unchanged by the Formal Verification Gate. Instead, Stage 7.5A may issue `GO` only after its embedded formal-verification state is either `FORMAL VERIFICATION PASS` or `FORMALIZATION NOT APPLICABLE — REASON RECORDED`.
 
@@ -541,6 +560,8 @@ Examples:
 - missing/inadequate exemplar evidence or blueprint → Stage 10A; draft architecture/prose failure against a sound blueprint → Stage 10B or Stage 13 with retest; substantive scientific error → earliest affected scientific gate;
 - Stage 11 fatal attack → earliest affected stage, not prose-only patch;
 - Stage 13/14 substantive inconsistency → earliest affected research stage plus fresh integration/QA.
+- Stage 13P editorial-prose weakness → Stage 13 bounded rewrite, Stage 10A if exemplar full-text/architecture defective; subsequent independent Stage 13P retest required. Scientific content drift → earliest affected scientific gate.
+- Any manuscript-text edit after Stage13P GO → invalidate the matching passage/scope review (or full review if material) and Stage14 submission QA until corrected and independently rechecked against a new source SHA/PDF hash.
 
 If Stage 11 detects a failure that Stage 4A or 7.5A should have caught, record `CERTIFICATION REGRESSION` and preserve the case as workflow evidence.
 
