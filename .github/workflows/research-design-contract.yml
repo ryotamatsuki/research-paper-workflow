@@ -24,3 +24,7 @@ jobs:
         run: python3 scripts/verify_research_design_contract.py --verify-green-sources
       - name: Run prior v3.1 prose integration contract
         run: python3 scripts/verify_integrated_prose_contract.py
+      - name: Run existing TDF v5.1 unit tests
+        run: PYTHONPATH=theory-discovery/v5.1 python3 -m unittest discover -s theory-discovery/v5.1/tests -p 'test_*.py' -v
+      - name: Run existing TDF v5.1 scenario replay
+        run: python3 theory-discovery/v5.1/validation/replay.py > /dev/null
