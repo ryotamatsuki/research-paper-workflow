@@ -1,6 +1,7 @@
 # Theory Paper Research Pipeline
 
-Version: v3.0
+Version: v3.2
+Architecture baseline: v3.0 (Stage 10A/10B). Active v3.1 and v3.2 refinements are cumulative; see `docs/V3_2_RESEARCH_DESIGN_PROTOCOL.md` and `WORKFLOW_VERSION`. Earlier version-specific sections are retained as historical development records.
 
 ## 1. Purpose
 
@@ -179,17 +180,17 @@ Existing Stage 2/3/6/7.5 research decisions must use literature **for both novel
 
 Separate `AUTHOR-STATED` from `AUDITOR-INFERRED` and `CROSS-PAPER` gaps; label `RESOLVED / PARTIALLY RESOLVED / OPEN WITH EVIDENCE / UNRESOLVED`; record last verified date and strongest prior-art falsifier. See `checklists/FRONTIER_OPPORTUNITY_CHECKLIST.md` and `templates/FRONTIER_OPPORTUNITY_REGISTER.md`. This maintains established Stage routing/verdicts and the no-uncontrolled-feature-growth rule.
 
-### Unreleased post-v2.9: premature novelty-claim prevention
+### Historical post-v2.9 proposal: premature novelty-claim prevention
 
 A verified equation, sign reversal, or model-specific incentive is not a literature novelty certificate. At Stage 0 identify a credible closest theorem, application-neutral parent class, fatal absorption threat, and an appropriate uncertainty label. Stage 2 must perform a **cheap pre-model canonicalization and absorption attempt** and document exact source access/read depth, without claiming to solve or globally certify a model not yet built. Stage 3 must keep the mathematical and novelty maturity of each candidate distinct. Stage 6 alone may close an **evidence-scoped** novelty verdict for a Stage-4A-certified proposition, including source cutoff, exact parent-theorem mapping and remaining uncertainty. Stage-2 `GO` means only permission to test a plausible question; Stage-4A `GO` establishes mathematics, not priority.
 
-Use `checklists/PREMATURE_NOVELTY_CLAIM_CHECKLIST.md` together with the existing novelty checklist and the regression fixture `examples/PREMATURE_NOVELTY_REGRESSION.md`. Do not use lack of full-text access as evidence of novelty, and do not discard a genuinely new whole-game interaction merely because standard components appear separately in previous papers. The change is **unreleased MINOR-class** under the existing v2.9 architecture; no release/tag is created by the text.
+Use `checklists/PREMATURE_NOVELTY_CLAIM_CHECKLIST.md` together with the existing novelty checklist and the regression fixture `examples/PREMATURE_NOVELTY_REGRESSION.md`. Do not use lack of full-text access as evidence of novelty, and do not discard a genuinely new whole-game interaction merely because standard components appear separately in previous papers. At the time of this proposal, this was an unreleased MINOR-class refinement; this sentence does not identify the current stable version. Current canonical workflow: v3.2.
 
-### Unreleased post-v2.9: predecessor-result reversal / paradox / sharp-boundary exploration
+### Historical post-v2.9 proposal: predecessor-result reversal / paradox / sharp-boundary exploration
 
-Within existing Stages 2/3/4/4A/6/7.5A/11, evaluate **reversal, surprising comparative statics, welfare ranking changes, impossibility, counterexamples and robustness-strengthening** as legitimate contribution routes. Preserve the *same economic question* when the contribution is a substantive refinement of an exact prior theorem; do not force a topic pivot. Reconstruct the predecessor claim on its own domain and compare like with like; require economical assumption changes, a theorem-level falsifier and a search for parent-theorem absorption. No extra Stage or revised GO meaning. Apply `checklists/RESULT_REVERSAL_BOUNDARY_CHECKLIST.md`. This text describes unreleased work on `main`; the latest stable release remains v2.9.
+Within existing Stages 2/3/4/4A/6/7.5A/11, evaluate **reversal, surprising comparative statics, welfare ranking changes, impossibility, counterexamples and robustness-strengthening** as legitimate contribution routes. Preserve the *same economic question* when the contribution is a substantive refinement of an exact prior theorem; do not force a topic pivot. Reconstruct the predecessor claim on its own domain and compare like with like; require economical assumption changes, a theorem-level falsifier and a search for parent-theorem absorption. No extra Stage or revised GO meaning. Apply `checklists/RESULT_REVERSAL_BOUNDARY_CHECKLIST.md`. This paragraph preserves the historical proposal context (when v2.9 was the latest stable release). Current canonical workflow: v3.2.
 
-### Unreleased post-v2.9: independent editorial argument-quality gate
+### Historical post-v2.9 proposal: independent editorial argument-quality gate
 
 The pre-Stage-10A editorial refinement (historical post-v2.9 MINOR proposal, superseded in timing and routing by v3.0) addresses a distinct residual after v2.5 streamlining and v2.7 proof verifiability: **an accurate manuscript may contain every required element without communicating its economic inference persuasively**. The updated lifecycle is `Stage 10A → Stage 10B → Stage 11 → Stage 12 comparator refresh → Stage 13 → Stage 14`; the earlier editorial refinement alone did not add a stage. Existing verdict semantics remain.
 
