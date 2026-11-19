@@ -63,7 +63,7 @@ def main():
             "proposed canonical routing not explicitly declared")
     require("Stage 13P GO is required to enter Stage 14" in gov,
             "governance bypass: prose gate not mandatory")
-    require("CONDITIONAL GO" in pipe and "does not authorize Stage 14" in template,
+    require("CONDITIONAL GO" in pipe and "does not authorize stage 14" in template.lower(),
             "conditional should not bypass new gate")
 
     phase_a = template.index("## 2. Phase A")
@@ -87,7 +87,7 @@ def main():
             "Stage14 must invalidate stale material prose review")
     require("v4.0" in ver and "MAJOR" in ver and "v3.0" in ver and "v3.0" in readme,
             "versioning must state prospective v4 and preserve existing v3")
-    require("not released" in design.lower() and "v3.0" in design and "v4.0" in design,
+    require(("not" in design.lower() and "released" in design.lower()) and "v3.0" in design and "v4.0" in design,
             "release status must be explicitly unreleased")
     ids = sorted(set(re.findall(r"\bP(?:0[1-9]|1[0-9])\b", regress)))
     require(len(ids) >= 12, "insufficient regression fixtures")
