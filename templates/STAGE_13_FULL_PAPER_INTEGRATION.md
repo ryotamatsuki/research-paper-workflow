@@ -184,7 +184,7 @@ If integration reveals that a **new substantive computation or result** is neede
 
 A reader should encounter one research question, one coherent mechanism, verified results, and a disciplined contribution narrative from abstract through conclusion. The final figure/table set should make the paper easier to understand without becoming a parallel source of unverified claims.
 
-The integrated package should also be structurally ready for Stage 14 to perform a fresh live journal-compliance audit rather than discovering preventable source/title-page/declaration inconsistencies for the first time.
+The integrated package should also be structurally ready for Stage 13P independent prose review and then Stage 14 to perform a fresh live journal-compliance audit rather than discovering preventable source/title-page/declaration inconsistencies for the first time.
 
 ## 11. Failure criteria
 
@@ -210,7 +210,7 @@ Bounded journal-format/package issues may remain for Stage 14 only when they are
 14. Remaining blockers
 15. Editorial Revision Audit: source-verified exemplar reconciliation, objection-to-diff map, critical-reader retest and claim-scope preservation
 16. Open/closed editorial findings and earliest affected Stage
-17. Verdict and Stage 14 contract
+17. Verdict and Stage 13P handoff contract
 
 ## 13. Final verdict
 
@@ -221,6 +221,10 @@ Choose one:
 - `REOPEN SECTION / EARLIER STAGE`
 
 ## 14. Next-stage contract
+
+**Prospective v4.0 route:** A Stage 13 `INTEGRATED MANUSCRIPT READY FOR SUBMISSION QA` / canonical `GO` judgment first routes to **Stage 13P**, not directly to Stage 14. Assemble an exact full integrated source/PDF snapshot (SHA and hash) without any authoring history embedded in the submitted manuscript. Stage 13P independently reads the full text blind before it sees the Stage-10A/12 benchmark records, then judges real published-paper writing moves with full-text evidence. A favorable Stage 13 prose self-audit does not replace Stage 13P's independent result. Stage 13P `CONDITIONAL GO` or `NO-GO` blocks the Stage-14 route.
+
+
 
 Stage 14 verifies the exact final PDF against the Stage-10 exemplar map, independent Stage-11 editorial attack and Stage-13 before/after retest; material editorial regressions reopen Stage 13/10. Stage 14 also **refreshes all material journal requirements from current official sources**. It should not be the first stage at which the project decides whether a central result needs a figure or table, but it is the mandatory stage at which journal-compliance evidence is re-opened, dated, reconciled, and made fail-closed.
 
