@@ -87,6 +87,10 @@ A material journal requirement is not closed merely because a box is checked. Th
 - [ ] The central proposition has nearby economic intuition explaining countervailing effects and parameter roles as applicable, not just algebra
 - [ ] Discussion begins with the distinct economic lesson, places examples in their correct illustrative role, and states the model's limits
 - [ ] Each material editorial objection has evidence-bearing closure; a clean build or “substantially clearer” does not suffice
+
+- [ ] Stage 13 final-PDF independent prose review has genuine ordered blind complete reading before fully read publication-exemplar comparison
+- [ ] Complete revised PDF was independently cold-read a second time; all material deficiencies closed without changing scientific results
+- [ ] Stage 14 matches accepted Stage-13 source commit SHA/PDF SHA-256; later text changes have independent retest
 - [ ] No prose change silently broadens theorem scope, novelty, causality, policy instrument, benchmark or numerical results
 
 ## Exposition / streamlining integrity

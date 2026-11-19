@@ -9,6 +9,8 @@ Use this **in addition to**, not instead of, `EXPOSITION_STREAMLINING_CHECKLIST.
 - **Stage 11 — independent editorial referee:** create `EDITORIAL_REFEREE_REPORT.md` using a reviewer/critical pass separate from the drafting pass. Test the **actual manuscript**, not just the architecture or the author summary. An independent AI critique is an independent *task/attack path*, not human peer review.
 - **Stage 12 — journal calibration:** when the actual target is selected, revisit relevant comparators; a comparator is evidence of writing practice, not automatic evidence that this paper meets the target's novelty, generality, or acceptance threshold.
 - **Stage 13 — editorial revision and regression:** create `EDITORIAL_REVISION_AUDIT.md` with before/after passages, the exact referee criticism each addresses, and proof/claim-scope integrity evidence. Re-run the hostile reader test on the revised manuscript.
+
+- **Stage 13 completed-paper prose subgate (prospective v3.1):** freeze the actual complete PDF, obtain an independent blind complete first read, save before fully read exemplar comparison, then obtain independent second full-paper reading after repairs. Record exact source/PDF hashes; prior Stage-11 draft approval never substitutes.
 - **Stage 14 — final-package check:** verify all above artifacts exist and still correspond to the final PDF; do not perform a first substantive editorial rewrite in the submission QA stage.
 
 Use `PASS`, `REVISE`, `UNRESOLVED`, or `NOT APPLICABLE — REASON` for each material item. A vague “clear,” “substantially improved,” “contains an introduction,” or checklist tick without manuscript evidence is not a PASS.

@@ -1,0 +1,30 @@
+name: integrated-prose-v3-1-contract
+on:
+  pull_request:
+    paths:
+      - "GOVERNANCE.md"
+      - "THEORY_PAPER_RESEARCH_PIPELINE.md"
+      - "README.md"
+      - "docs/VERSIONING_POLICY.md"
+      - "templates/STAGE_11_REFEREE_GATE.md"
+      - "templates/STAGE_13_FULL_PAPER_INTEGRATION.md"
+      - "templates/STAGE_13_FINAL_PROSE_SUBGATE.md"
+      - "templates/STAGE_14_SUBMISSION_QA.md"
+      - "templates/STAGE_15_SUBMISSION_FREEZE.md"
+      - "checklists/FINAL_PROSE_REVIEW_CHECKLIST.md"
+      - "checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md"
+      - "checklists/SUBMISSION_CHECKLIST.md"
+      - "examples/FINAL_PROSE_REVIEW_REGRESSION.md"
+      - "scripts/verify_integrated_prose_contract.py"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/verify_integrated_prose_contract.py

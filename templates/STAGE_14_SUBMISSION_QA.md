@@ -89,6 +89,9 @@ At minimum verify:
 32. the final PDF still passes the Introduction compression, section-purity, reader-arrival, main-text necessity, exhibit-scarcity, and concise/no-new-claims conclusion checks;
 33. the Stage-10 `EDITORIAL_EXEMPLAR_MAP`, Stage-11 `EDITORIAL_REFEREE_REPORT` and Stage-13 `EDITORIAL_REVISION_AUDIT` (or individually identifiable equivalents) correspond to the exact final source/PDF and recorded commit SHA; a critical reader can still identify the question, distinctive conditional inference, immediate post-result mechanism and substantive limitations, with locations;
 33a. journal formatting has not reintroduced avoidable exposition regressions or forced a late substantive rewrite;
+
+33b. independently accepted Stage-13 complete final-PDF prose referee and source-located full-text exemplar comparison, revision issue closure and second independent whole-PDF cold reading are evidenced for the exact source commit SHA and PDF SHA-256;
+33c. all prose modifications since Stage-13 GO (including captions, appendices and declarations) were independently retested at an appropriate scope and the accepted source/PDF snapshot was renewed;
 34. the material AI-use/provenance record is reconciled with the final manuscript and supporting artifacts;
 35. research-method AI use (including proof search, code/analysis, adversarial checking, or formalization support) is distinguished from manuscript-preparation use when the operative policy requires different treatment or placement;
 36. each final AI disclosure statement is factually supported by the provenance and verification-actor record; generic language that overstates author verification is removed;
@@ -148,6 +151,7 @@ A material communication-only objection without a bounded repair and independent
 
 
 Submission freeze is blocked by:
+- missing/stale Stage-13 final-publication-prose subgate or mismatch of actual source/PDF hashes; green CI and identical PDF page counts do not clear this requirement;
 
 - any failed mathematical/reproducibility gate affecting reported results;
 - figure/table values that do not reproduce or disagree with manuscript claims;

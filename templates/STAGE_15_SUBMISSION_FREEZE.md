@@ -161,4 +161,6 @@ Choose one:
 
 Any later theoretical or substantive manuscript change reopens the relevant workflow stages and results in a new freeze identifier. The old submission state remains preserved for provenance.
 
+Any later prose edit—including a caption, proof paragraph or AI/Data/Code statement—invalidates the affected Stage-13 final-paper prose certificate until independently retested. Stage-14 QA and Stage-15 freeze must record an updated source commit SHA/PDF SHA-256.
+
 Any later journal-specific technical return is treated as workflow evidence: record which requirement was missed, why the preflight failed to detect it, and convert that failure mode into a reusable Stage-14/15 regression check where appropriate.

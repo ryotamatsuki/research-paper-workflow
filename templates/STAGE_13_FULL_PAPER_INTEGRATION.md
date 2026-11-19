@@ -141,6 +141,19 @@ Produce `EDITORIAL_REVISION_AUDIT.md` or equivalent, preserving for every materi
 
 All headings present, a shorter Introduction, mathematical correctness, and generic praise cannot independently close these items. The repair belongs at Stage 13, or Stage 10 if architecture is defective; any unproved scientific claim returns to the earliest scientific Stage.
 
+### Mandatory independent final-publication-prose subgate (embedded prospective v3.1)
+
+Run this **at the end of Stage 13**, after integration, journal changes and all substantive copyediting. Follow templates/STAGE_13_FINAL_PROSE_SUBGATE.md and checklists/FINAL_PROSE_REVIEW_CHECKLIST.md. The prior Stage-11 editorial GO applies only to the Stage-10B draft.
+
+1. Freeze actual complete PDF and exact manuscript source commit SHA / PDF SHA-256, including captions, appendices, sources and AI/Data/Code declarations.
+2. Give only the complete PDF and neutral journal/article type to a separate reader. Record actual full-page coverage, independence and prior exposure. Before author reports or published exemplars are available, require a 120–200 word reader-derived economic question/result/mechanism/scope summary, communication-only desk-reject case and paragraph-located English, argument and process-contamination findings. **Save Phase A before Phase B.**
+3. In Phase B compare real manuscript paragraphs against Stage-10A fully acquired/read exemplars as refreshed at Stage 12, with source version/page/paragraph and evidence-backed STRONG/ADEQUATE/WEAK roles.
+4. Log defects, bounded before/after fixes and scientific claim-scope protections, preserving adverse benchmark results and accurate authorship/AI attestations.
+5. After revision and rebuild, commission a **second independent cold complete-paper reading** and record all issue closures and the newly accepted exact source/PDF hashes. Original reviewer checking its own changes alone is inadequate for MAJOR items.
+6. Save distinct final-prose referee report, exemplar comparison, issue register, revision/second-read audit and accepted snapshot (or verifiably separable equivalents).
+
+An incomplete blind read, unfetched exemplars, contaminated phase ordering, unresolved MAJOR criticism, missing complete second reading or hash mismatch **blocks Stage-13 GO** and hence Stage 14; one tightly bounded outstanding fix may receive normal Stage-13 CONDITIONAL GO but still blocks progression. Material science changes route upstream. No new Stage numbering or verdict semantics.
+
 ## 7. Evidence requirements
 
 Every substantive statement must map to a verified theorem, source, or clearly labeled interpretation. Every quantitative figure/table must map to a verified generator or authoritative source and preserve the proven/reportable domain.
@@ -158,6 +171,7 @@ Compare the post-streamlining manuscript against the Stage-10 `EXPOSITION_ARCHIT
 ## 9. Kill tests
 
 Block submission QA if:
+- Stage-13 independent final-publication-prose review lacks ordered complete PDF cold reading, actual full-text exemplar comparison, second independent full reading, closure of material objections or accepted source/PDF hash;
 - the `EDITORIAL_REVISION_AUDIT` is missing, consists only of general praise, or lacks original/revised text and an independent retest;
 - a material Stage-11 communication-only objection remains unresolved or the central economic inference is still buried;
 - source exemplars were represented as read without access or their scientific claims were silently imported;
@@ -210,7 +224,8 @@ Bounded journal-format/package issues may remain for Stage 14 only when they are
 14. Remaining blockers
 15. Editorial Revision Audit: source-verified exemplar reconciliation, objection-to-diff map, critical-reader retest and claim-scope preservation
 16. Open/closed editorial findings and earliest affected Stage
-17. Verdict and Stage 14 contract
+17. Final-publication-prose subgate: complete first/second reading, source-located exemplar comparison, bounded issue closure, accepted complete PDF SHA-256 and source commit
+18. Verdict and Stage 14 contract
 
 ## 13. Final verdict
 
