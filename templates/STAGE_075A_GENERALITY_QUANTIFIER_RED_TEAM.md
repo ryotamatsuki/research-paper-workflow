@@ -236,3 +236,8 @@ Choose exactly one:
 - `NO-GO / REOPEN EARLIER STAGE`
 
 Only a `GO` may route to Stage 8 Canonical Theory Freeze, and `GO` is unavailable unless the Formal Verification Gate is closed with `FORMAL VERIFICATION PASS` or `FORMALIZATION NOT APPLICABLE — REASON RECORDED`.
+
+---
+## v3.2 candidate: scope is not feature identification
+Retain all existing independent quantifier and portability attacks, certificates and stop rules. Import the Stage-7.5 Contribution Identification Report and independently verify: proof-quantifier range; generality across economically meaningful specifications; and **separately** the specific M2 comparisons identifying which primitive causes the headline claim. An alternative market form (e.g. Cournot versus Bertrand) tests robustness unless it directly toggles the asserted causal primitive; surviving it does not establish environmental-specific causation.
+Classify portable, conditional, model-specific or institution-specific claims truthfully rather than forcing broader generality. Document whenever an essential thematic feature holds only for shock transmission while the theorem's comparative-static reversal could arise generically. Keep untested counterfactuals UNRESOLVED and scope-limited; notify Stage 7.5/6 if their absence undermines the advertised answer. Do not turn a Stage-7.5A narrow theorem into a theme-specific publication claim by prose.

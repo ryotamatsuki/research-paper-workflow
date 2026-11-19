@@ -119,3 +119,13 @@ Log reviewer identity/method and input exposure, exact objection, cited evidence
 - `NO-GO / RESEARCH NOTE / PIVOT`: contribution is valid but insufficient for the claimed full-paper route.
 
 Record date, version/SHA, artifact links, objection/response and stop rule. Unknowns remain `UNRESOLVED`; passing this audit is **not** a promise of peer review or publication.
+
+---
+## v3.2 candidate: distinct question, identification and significance checks
+- [ ] Identify the actual research route and question; specify whether a thematic primitive is a causal claimed contribution or application context.
+- [ ] Locate source-specific parent theorem and record any reduction/absorption attempt.
+- [ ] Identify the exact proposition/domain for every ESSENTIAL / CONTRIBUTORY / INTERPRETIVE / UNRESOLVED primitive classification.
+- [ ] Record a valid comparable M0/M1/M2 or explicit non-comparability, and mark unperformed diagnostics UNRESOLVED rather than FAILED or PASSED.
+- [ ] State newly learned economic content independently from mathematical correctness and theorem distinctness; recognize important generalizations, corrections, known-model results and application papers.
+- [ ] Make an explicit match/narrowed/mismatch decision between headline thesis and actual theorem, even if existing question completeness boxes are checked.
+- [ ] Require the twelve-field Stage-7.5 report and five-axis author risk brief before new submission, using equivalent existing sections where available; never backdate to closed v3.1 records.
