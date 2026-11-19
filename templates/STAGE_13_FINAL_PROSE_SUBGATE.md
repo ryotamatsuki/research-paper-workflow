@@ -1,4 +1,4 @@
-# Stage 13 — Independent Complete-PDF Publication Prose Subgate (prospective v3.1)
+# Stage 13 — Independent Complete-PDF Publication Prose Subgate (introduced v3.1, retained v3.2)
 
 **Inside existing Stage 13 after all integration edits; NOT Stage 13P.** Stage 11's prior GO certifies a draft, not the later completed manuscript.
 
