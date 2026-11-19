@@ -2,7 +2,7 @@
 
 Status: active workflow versioning policy
 Current canonical workflow: v3.2 (2026-11-19 release; v3.0 major architecture + v3.1/v3.2 compatible refinements).
-Authoritative active-version marker: `WORKFLOW_VERSION`. Historical proposals and release records below retain the date-specific versions stated at the time; they are not current-version declarations.
+Machine-readable active-version marker: `WORKFLOW_VERSION` (metadata only; normative authority remains Governance → Pipeline). Historical proposals and release records below retain the date-specific versions stated at the time; they are not current-version declarations.
 
 This document defines version compatibility for the `research-paper-workflow` repository. It does not override `GOVERNANCE.md`; governance remains the highest-authority repository rule.
 
