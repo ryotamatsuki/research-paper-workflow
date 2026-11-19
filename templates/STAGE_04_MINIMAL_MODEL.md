@@ -201,3 +201,9 @@ Then record the route separately:
 ## 14. Next-stage contract
 
 If `CONDITIONAL GO`, Stage 5 may change only the one primitive needed to address the diagnosed deficiency. Everything else is frozen. If `GO`, Stage 4A receives the solved model, candidate propositions, preliminary theorem certificates, all verification artifacts, solver-failure ledger, and counterexample/regression artifacts unchanged. Stage 4A may attack them but may not silently repair the theory.
+
+---
+## v3.2 candidate: pre-registered minimum model and discriminating counterfactual
+Before extended solving, record M0 = closest valid known model/theorem; M1 = proposed minimal structural change; M2 = pre-specified removal, hold-fixed or replacement of the claimed mechanism. For each identify agents/timing, choices, payoffs, constraints/externalities, shock, outcomes, admissible parameter domain, equilibrium notion, changed structural feature, expected different economic learning, and smallest falsifier.
+Check that benchmark policy shocks and endogenous choices are defined and meaningfully comparable. When game structures differ, use a defensible nested/common-domain restriction or mark comparison NON-COMPARABLE; do not claim an ablation where the shock ceases to exist. Identify which terms are just normalizations versus those carrying the prediction.
+Do not change M2 after favorable results without versioning a new exploratory test. Record derivation/code/seed, proof domain, whether tested and the *actual* result, retaining failures. A test that removes the competitiveness transmission channel is not automatically a test that removes environmental externality. Keep mechanism identification separate from Cournot/Bertrand-type robustness. More variables or stages need an economic-learning justification.

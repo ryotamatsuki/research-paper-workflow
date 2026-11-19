@@ -106,3 +106,11 @@ Choose exactly one:
 ## 14. Next-stage contract
 
 State exactly what Stage 1 may audit and what must remain unchanged. A `CONDITIONAL GO` permits work only on the identified blocker.
+
+---
+## v3.2 candidate: route-aware entry and question ownership
+Add to the ordinary intake record (no duplicate form required):
+- Route: THEME-FIRST / MODEL-FIRST / HYBRID. Identify the phenomenon/policy or the parent theorem/game/anomaly, and why the present research needs explaining. HYBRID describes both strands, not a forced classification.
+- One-sentence falsifiable economic question; stakes; closest parent source and exact location; unknown inference relative to parent; tentative economic-learning route; possible results contrary to the preferred hypothesis.
+- THEME-FIRST: decisive friction/constraint/externality and a hypothesized location in choices/payoffs/information/timing; proposed cheap ablation. MODEL-FIRST: parent statement, suspected independent theorem/boundary, possible application claims without pretending these are identified causal mechanisms.
+- Stage handoff: source status EVIDENCED / PROVISIONAL / UNRESOLVED, earliest cheap test and bounded budget. A research-route pivot changes question, contribution classification and dependent evidence, reopening affected early gates. Do not force any new mechanism or preferred sign.

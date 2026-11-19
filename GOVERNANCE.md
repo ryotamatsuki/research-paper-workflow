@@ -603,3 +603,14 @@ Submission freeze records at minimum:
 - author sign-off tied to the exact frozen commit/package.
 
 No silent post-freeze theoretical edits are permitted.
+
+---
+## v3.2 candidate — research-question/model/contribution governance (not yet released)
+This addendum refines §§2.12–2.12A (absorption), 2.19–2.21 (contribution and question completeness), 2.24–2.25 (exemplar and route-aware contribution), and existing rollback/freeze controls; it does not replace them. Governing detailed contract: docs/V3_2_RESEARCH_DESIGN_PROTOCOL.md.
+1. At Stage 0 record THEME-FIRST / MODEL-FIRST / HYBRID, allowing evidence-backed pivot. A mathematical generalization/correction is not penalized for lacking theme-specific primitives. If an application is claimed, its scientific role must be stated.
+2. For each advertised headline result, distinguish prior-art absorption, role of thematic economic primitives (ESSENTIAL / CONTRIBUTORY / INTERPRETIVE / UNRESOLVED for a precise claim/domain), economic learning gain, and proven generality. A green or other sectoral label is neither necessary nor sufficient for economic novelty.
+3. THEME-FIRST requires Stage-2 question–literature–model mapping, Stage-3 eight-question pre-model alignment, Stage-4 comparable M0/M1/M2 (or reasoned non-comparability) and Stage-6 claim-specific identification; the model-first route substitutes parent-theorem mapping where thematic ablation is inapplicable.
+4. Mechanism identification and robustness are separate. A successful alternative functional form does not show the advertised thematic primitive causes the theorem. An unperformed, potentially decisive ablation is UNRESOLVED, not a failed ablation or an assumed PASS.
+5. Stage 7.5's contribution record (templates/CONTRIBUTION_IDENTIFICATION_REPORT.md or equivalent) is passed to Stage 8. Stage 11 independently attacks generic-model disguise, question mismatch, thematic nonessentiality, limited economic learning and simpler competing models.
+6. Stage 12–15 scientific risk evidence has five independent axes and a separate venue-fit assessment. If an issue material to a headline scientific claim is unresolved, unqualified GO/submission freeze is not permitted; route to the earliest relevant Stage under existing §6. Journal threshold risk is not mathematical/scientific invalidity.
+7. New outputs may be identifiable sections in existing artifacts to minimize burden. Stage verdicts, Stage identities, independent mathematical gates, version policy and one diagnosed fix principle remain unchanged. No historical v3.1 approval or already-submitted manuscript is rewritten retroactively.
