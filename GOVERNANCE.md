@@ -285,7 +285,7 @@ Use `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md` alongside existing expo
 
 ---
 
-### 2.23A Mandatory final-paper independent prose closure (prospective MINOR v3.1, within existing stages)
+### 2.23A Mandatory final-paper independent prose closure (v3.1 MINOR, within existing stages)
 
 The Stage-11 editorial referee critically reads the Stage-10B **draft** separately from mathematics and novelty. Before consulting Stage-10A exemplars or author notes, the reviewer must record the economic question/result/scope, communication-only rejection case and exact source passages. Actively search for internal author-workflow language, defensive novelty disclaimers, unnatural economics prose, repeated caveats and missing competing economic mechanisms. Do not confuse legitimate economic-game Stage 1 with the author's workflow.
 

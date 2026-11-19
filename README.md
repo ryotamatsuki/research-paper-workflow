@@ -1,6 +1,6 @@
 # research-paper-workflow
 
-**Current canonical major version: v3.0** — mandatory full-text exemplar benchmarking at Stage 10A precedes manuscript construction at Stage 10B. See [v3.0 release notes](docs/V3_0_RELEASE_NOTES.md).
+**Current canonical version: v3.1 (MINOR on the v3.0 architecture)** — mandatory full-text exemplar benchmarking at Stage 10A precedes manuscript construction at Stage 10B. See [v3.0 release notes](docs/V3_0_RELEASE_NOTES.md).
 
 A reusable, reproducible workflow for developing theory-oriented economics research from initial motivation to submission freeze.
 
@@ -33,13 +33,13 @@ The canonical Governance §2.25 separates academic economic-theory potential fro
 
 The canonical main-branch route is `Stage 9 → Stage 10A → Stage 10B → Stage 11`. Stage 10A uses role-wise comparison and synthesis of suitable techniques across multiple papers (an overall anchor is optional), with a mandatory coherence audit. Stage 10A first filters candidates by actual lawful full-text acquisition (including material proof appendices), then reads and selects only complete sources before manuscript construction, and produces a source-grounded Manuscript Blueprint. Inaccessible candidates are excluded and replaced without waiting; a PDF or complete HTML/text is acceptable, but abstracts, snippets and untested links are not. The separate novelty-audit obligations remain unchanged. Stage 10B is the existing manuscript-construction stage (historical Stage 10), with its existing proof/exposition/build requirements intact. Stage 11 independently tests the actual draft against that benchmark. Stage 12 refreshes target-specific comparators, Stage 13 repairs and retests, and Stage 14 verifies the exact final PDF. This is the **MAJOR v3.0 workflow architecture**: Stage 10A adds a mandatory pre-writing gate and Stage 10B retains manuscript construction. The historical v2.9 tag remains immutable. See [Stage 10A template](templates/STAGE_10A_EXEMPLARY_PAPER_BENCHMARKING.md), [benchmark checklist](checklists/EXEMPLARY_PAPER_BENCHMARKING_CHECKLIST.md), and [design and regression cases](docs/EXEMPLARY_PAPER_BENCHMARKING_REFINEMENT_2026-11-17.md).
 
-## Prospective v3.1 (MINOR): integrated publication prose gates — Draft PR #35
+## v3.1 (MINOR): integrated publication prose gates — adopted in PR #35
 
-**This is a proposal, not an adopted release or tag.** No new numbered Stage is added. Stage 11 extends the independent communication-only referee of the Stage-10B draft with source-located unnatural-English, defensive novelty, author-process contamination, economic-intuition and full-text-exemplar tests. Stage 11 cannot certify later rewrites.
+**This is the adopted v3.1 workflow after PR #35.** No new numbered Stage is added. Stage 11 extends the independent communication-only referee of the Stage-10B draft with source-located unnatural-English, defensive novelty, author-process contamination, economic-intuition and full-text-exemplar tests. Stage 11 cannot certify later rewrites.
 
 After journal selection and **all** manuscript integration, the **existing Stage 13** has a mandatory independent complete-final-PDF prose subgate: freeze source SHA/PDF SHA-256; cold read without prior reports; freeze findings; compare actual paragraphs with fully read Stage-10A published papers refreshed at Stage 12; repair scoped deficiencies; independently cold read the complete revised paper. Only then can Stage 13 issue its normal GO. Stage 14/15 check that accepted source/PDF and retest later text edits.
 
-The route is unchanged: Stage 10A → 10B → 11 → 12 → 13 → 14 → 15. No Stage 13P, and no v4.0 route change. See [Stage-13 subgate template](templates/STAGE_13_FINAL_PROSE_SUBGATE.md), [checklist](checklists/FINAL_PROSE_REVIEW_CHECKLIST.md), [15 regression fixtures](examples/FINAL_PROSE_REVIEW_REGRESSION.md), [design](docs/INTEGRATED_PROSE_GATES_V3_1_DESIGN_2026-11-19.md). Main and v3.0 remain unchanged.
+The route is unchanged: Stage 10A → 10B → 11 → 12 → 13 → 14 → 15. No Stage 13P, and no v4.0 route change. See [Stage-13 subgate template](templates/STAGE_13_FINAL_PROSE_SUBGATE.md), [checklist](checklists/FINAL_PROSE_REVIEW_CHECKLIST.md), [15 regression fixtures](examples/FINAL_PROSE_REVIEW_REGRESSION.md), [design](docs/INTEGRATED_PROSE_GATES_V3_1_DESIGN_2026-11-19.md). Published v3.0 remains immutable; see [v3.1 release notes](docs/V3_1_RELEASE_NOTES.md).
 
 ## Unreleased: model-appropriate equilibrium concepts and completeness (post-v2.9)
 
