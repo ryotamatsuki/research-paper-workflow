@@ -4,7 +4,11 @@
 
 ## Mandatory benchmark trace
 
-Verify the exact final PDF preserves Stage-10A blueprint/source map, Stage-10B implementation, Stage-11 benchmark attack and Stage-13 retest, as refreshed at Stage 12. Missing source evidence routes to 10A, architecture/prose regression to 10B/13, and scientific failure to its original gate; no late unreviewed rewrite or GO without closure.
+**Prospective v4.0 route:** The **Stage 13P GO**, with a frozen blind Phase-A report, full-text sourced Phase-B published-paper comparisons, closed prose issues, independent second cold read and exact accepted source/PDF hash, is a **prerequisite** for Stage 14. `CONDITIONAL GO` and `NO-GO` are blockers, even when a PDF builds cleanly.
+
+
+
+Verify the exact final PDF preserves Stage-10A blueprint/source map, Stage-10B implementation, Stage-11 benchmark attack, Stage-13 retest and the independent Stage-13P-GO manuscript snapshot, as refreshed at Stage 12. Any subsequent wording change—including footnotes, captions, Appendix and declarations—must be independently retested before Stage 14 GO. Missing source evidence routes to 10A, architecture/prose regression to 10B/13, and scientific failure to its original gate; no late unreviewed rewrite or GO without closure.
 
 ## 0. Role
 
@@ -28,7 +32,7 @@ Stage 14 is also the mandatory **live journal-compliance gate**. A project may n
 
 ## 3. Canonical inputs
 
-Use the integrated manuscript from Stage 13, the theory freeze, reproducibility scripts, the final Figure/Table Architecture reconciliation, the Stage-12 Journal Requirements Ledger, current official journal instructions, and—where material AI use occurred—the `AI_PROVENANCE_LOG`/equivalent plus the frozen `AUTHOR_INTELLECTUAL_CONTRIBUTION_RECORD`.
+Use the integrated manuscript from Stage 13 and the exact Stage 13P-GO source/PDF snapshot and its five evidence artifacts, the theory freeze, reproducibility scripts, the final Figure/Table Architecture reconciliation, the Stage-12 Journal Requirements Ledger, current official journal instructions, and—where material AI use occurred—the `AI_PROVENANCE_LOG`/equivalent plus the frozen `AUTHOR_INTELLECTUAL_CONTRIBUTION_RECORD`.
 
 The Stage-12 requirements snapshot is not presumed current. Re-open and date the operative official sources at Stage 14.
 
@@ -51,6 +55,7 @@ Use the mandatory checklists below (including the separate editorial argument ga
 - `checklists/FIGURE_TABLE_CHECKLIST.md`;
 - `checklists/EXPOSITION_STREAMLINING_CHECKLIST.md`;
 - `checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md`;
+- `checklists/PUBLICATION_PROSE_REVIEW_CHECKLIST.md`;
 - `checklists/AI_PROVENANCE_AUTHOR_ACCOUNTABILITY_CHECKLIST.md`.
 
 At minimum verify:
@@ -226,7 +231,7 @@ A material `UNVERIFIED` journal requirement is never a full `PASS`.
 
 ## 15. Next-stage contract
 
-Stage 15 records an immutable submission state and, where necessary, completes the authenticated portal preflight before the final submit action.
+Stage 15 records an immutable submission state only after confirming Stage 13P prose clearance still applies to the exact final upload text. and, where necessary, completes the authenticated portal preflight before the final submit action.
 
 No substantive change is allowed between QA pass and freeze. Final figure/table outputs and generators used for the submission must be part of the frozen provenance.
 
