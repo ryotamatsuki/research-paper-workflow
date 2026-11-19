@@ -93,7 +93,34 @@ def test_contract() -> None:
     assert "current official release remains v3.1" in readme
     print("PASS documentation contract", len(targets), "files")
     
+def test_green_source_integrity() -> None:
+    """Optional online integrity check of actual GREEN source records at a pinned SHA.
+
+    Does NOT assert that unrun counterfactuals fail or mathematically solve them.
+    """
+    import hashlib
+    import urllib.request
+    data = json.loads(DATA.read_text(encoding="utf-8"))
+    snapshot = data["snapshot"]
+    repo = snapshot["green_repository"]
+    sha = snapshot["green_main_sha"]
+    for record in snapshot["evidence_files"]:
+        path = record["path"]
+        url = "https://raw.githubusercontent.com/" + repo + "/" + sha + "/" + path
+        req = urllib.request.Request(url, headers={"User-Agent": "research-paper-workflow-v3.2-regression"})
+        with urllib.request.urlopen(req, timeout=20) as response:
+            payload = response.read()
+        raw_blob = b"blob " + str(len(payload)).encode() + b"\x00" + payload
+        observed_sha = hashlib.sha1(raw_blob).hexdigest()
+        assert observed_sha == record["blob_sha"], ("SHA drift", path, observed_sha, record["blob_sha"])
+        content = payload.decode("utf-8")
+        assert record["anchor"] in content, ("missing real source excerpt", path, record["anchor"])
+        print("PASS pinned Green evidence", path, observed_sha)
+
 if __name__ == "__main__":
     test_cases()
     test_contract()
     print("PASS v3.2 research-design contract: 6 cases and stage integration")
+    import sys
+    if "--verify-green-sources" in sys.argv:
+        test_green_source_integrity()
