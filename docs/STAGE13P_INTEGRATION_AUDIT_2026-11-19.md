@@ -29,7 +29,7 @@ Date: 2026-11-19 JST. **Status:** feature branch / Draft PR for review; **not me
 
 The repository includes `scripts/verify_stage13p_contract.py` and the dedicated GitHub Actions workflow `.github/workflows/stage13p-contract.yml`.
 
-- [Final structural CI run #44480266370](https://github.com/ryotamatsuki/research-paper-workflow/actions/runs/44480266370) at feature-branch commit `6115817c4041868d4684b6a5771040eb13998a4f`: **SUCCESS**.
+- [Latest structural CI run #44480429860](https://github.com/ryotamatsuki/research-paper-workflow/actions/runs/44480429860) at feature-branch commit `e37a6305009a7cf8db45dfe18b0b09d548716f4e`: **SUCCESS**; earlier corrected run [#44480266370](https://github.com/ryotamatsuki/research-paper-workflow/actions/runs/44480266370) also **SUCCESS**.
 - Static test checks presence/sequence of Stages, mandatory progression, phase ordering, full-text example requirement, all deliverables, source/PDF snapshot, compatibility statement, and synthetic fixture coverage.
 - The initial run failed because the static assertion was case-sensitive to an emphasized English sentence, not because a policy conflict was found. The test was corrected and rerun green, with error visible in Actions history.
 - The structural CI **does not** read real manuscripts, verify genuine statistical/editorial independence, establish comparator source access, check math, determine writing quality, or replace a human publication decision.
