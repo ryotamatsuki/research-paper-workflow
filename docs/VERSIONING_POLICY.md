@@ -1,6 +1,8 @@
 # Versioning Policy
 
 Status: active workflow versioning policy
+Current canonical workflow: v3.2 (2026-11-19 release; v3.0 major architecture + v3.1/v3.2 compatible refinements).
+Authoritative active-version marker: `WORKFLOW_VERSION`. Historical proposals and release records below retain the date-specific versions stated at the time; they are not current-version declarations.
 
 This document defines version compatibility for the `research-paper-workflow` repository. It does not override `GOVERNANCE.md`; governance remains the highest-authority repository rule.
 
@@ -194,3 +196,10 @@ A Stage-11 independent referee already attacks the Stage-10B draft's communicati
 ## v3.1 — integrated independent publication prose gates (2026-11-19)
 
 Draft PR #35 was reviewed and squash-merged on main at commit `a25f9f9680c2a7da5aea8f0eef5e294bf11c569d`. Stage 11's separate critical editorial reader checks the Stage-10B draft, and Stage 13 now independently certifies the actual complete final PDF after all rewriting, with ordered first-pass and fully inspected exemplary-paper comparison, bounded guarded edits, independent second whole-PDF read, and source/PDF hash gating through Stages 14–15. The stage route, normal verdict labels and rollback architecture remain unchanged; the increment is **MINOR** according to §4. The immutable v3.0 tag is unchanged. Official v3.1 GitHub Release/tag is only evidenced once the release workflow actually succeeds; these notes do not assert success in advance.
+
+
+## v3.2 — research-question/model alignment and economic-learning identification (2026-11-19)
+
+The author-approved v3.2 MINOR release overlays the existing v3.0 Stage 0–15 architecture and v3.1 integrated prose requirements without renumbering Stages, changing canonical verdicts, or rerouting mandatory gates. Stage 2 maps research questions to actual closest-paper primitives and alternative models; Stage 3 tests eight pre-model alignment questions; Stage 4 pre-registers comparable M0/M1/M2; Stage 6 separately audits theorem absorption, claim-specific thematic feature roles, and incremental economic learning. Further checks are carried through Stages 7.5/7.5A/8/11/12–15. See `docs/V3_2_RELEASE_NOTES.md` and `docs/V3_2_RESEARCH_DESIGN_PROTOCOL.md`. The v3.2 Git tag exists and is immutable; previous tags and their historical snapshots remain untouched.
+
+**Current-version reconciliation rule:** `WORKFLOW_VERSION`, README current-version line, Governance and Pipeline `Version:` headers, this policy's current-version line, the applicable release notes, and current-version CI must agree. An older version in a named historical proposal, subsystem-specific regression (such as the v3.1 prose suite), immutable tag/release, or pinned scientific snapshot is not an active-version mismatch. Future minor releases must update current-version declarations and guard checks together; do not mass-replace historical provenance.
