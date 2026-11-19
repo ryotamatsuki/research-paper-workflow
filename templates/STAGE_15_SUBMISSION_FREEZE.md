@@ -126,6 +126,10 @@ Do not declare a freeze or submission if:
 
 The exact submitted package can be reconstructed and identified unambiguously months later, and the live submission record is consistent with the current journal requirements that governed the upload.
 
+## Stage 13P prose-freeze compatibility (prospective v4.0)
+
+Before freezing an adopting project's submission, verify the Stage 13P **GO** source SHA and reviewed PDF hash are aligned with the final uploaded text and with any submission-portal merged PDF. Record independently checked targeted/full review for every post-GO textual change in main text, caption, appendix, disclosure, title or footnote. A stale prose GO is a **freeze blocker** even if the math, LaTeX and journal-format checks pass. Stage 13P does not substitute for real author approval, and a portal metadata change with substantive prose impact requires the affected recheck.
+
 ## 11. Failure criteria
 
 If any substantive issue emerges, reopen the affected stage, re-run QA, and create a new freeze. Never patch the frozen package silently.
