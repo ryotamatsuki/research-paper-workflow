@@ -1,7 +1,8 @@
-name: Research design contract (v3.2 candidate)
+name: Research design contract (v3.2)
 on:
   push:
     branches:
+      - main
       - feat/v3.2-question-mechanism-alignment
   pull_request:
     paths:
