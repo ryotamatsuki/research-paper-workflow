@@ -1,0 +1,112 @@
+{
+  "snapshot": {
+    "workflow_version": "v3.1",
+    "workflow_main_sha": "11fad4e8ad60e22c8a8868957d60ed4c6f5b9851",
+    "green_repository": "ryotamatsuki/strategic-local-green-policy-competition",
+    "green_main_sha": "a318195c75a0d0ce30a69f61ae810918aacd7552",
+    "evidence_files": [
+      {
+        "path": "docs/STAGE6_POST_REPAIR_NOVELTY_REKILL.md",
+        "blob_sha": "1577ea4a214d8d137e540039bc00fd19a3c44878",
+        "anchor": "The project remains `DISTINCT BUT NARROW`."
+      },
+      {
+        "path": "docs/STAGE7P5_REPEAT_POST_REPAIR.md",
+        "blob_sha": "42c831c426b3ff64a09317aa57a3bcf0236e7014",
+        "anchor": "rival subsidy and rival infrastructure shocks share the same product-market transmission channel up to scale."
+      },
+      {
+        "path": "docs/STAGE11R_POST_REPAIR_REFEREE_GATE.md",
+        "blob_sha": "55398c98ce5bc920234465a8865f34db8b8b1ca8",
+        "anchor": "No exact prior-art absorption was identified in the post-repair re-search."
+      },
+      {
+        "path": "docs/STAGE12_JOURNAL_POSITIONING.md",
+        "blob_sha": "ddd6a8faaddf16d345ed138c2460c933ae3f5a6b",
+        "anchor": "without requiring the environmental component to carry all novelty."
+      },
+      {
+        "path": "sections/model.tex",
+        "blob_sha": "d5692f7ff9945d16f46c96c68e95c9d5650efcd5",
+        "anchor": "territorial emissions target"
+      }
+    ]
+  },
+  "disclaimer": "These cases classify the quality of research decisions given stipulated input; they are NOT re-proofs of the stipulated economics. The Green source snapshot has been read but no new ablation was run.",
+  "cases": [
+    {
+      "id": "A",
+      "title": "Green label on otherwise absorbed fiscal competition model",
+      "route": "THEME-FIRST",
+      "claim": "THEMATIC_THEORY",
+      "prior": "ABSORBED",
+      "feature_test": "UNCHANGED",
+      "economic_gain": "NONE",
+      "strongest_objection": "Application relabeling; same theorem under name removal.",
+      "evidence": "Synthetic matched no-green benchmark gives the same proposition by construction.",
+      "expected": "NO_INDEPENDENT_THEORY"
+    },
+    {
+      "id": "B",
+      "title": "Environmental friction changes core result",
+      "route": "THEME-FIRST",
+      "claim": "THEMATIC_THEORY",
+      "prior": "APPARENTLY_DISTINCT",
+      "feature_test": "NECESSARY",
+      "economic_gain": "SUBSTANTIVE",
+      "strongest_objection": "Could a conventional productivity spillover create the same result?",
+      "evidence": "Synthetic nested common-domain environmental-damage ablation removes claimed theorem, unlike matched M1.",
+      "expected": "SUPPORTED_WITH_SCOPE"
+    },
+    {
+      "id": "C",
+      "title": "General theorem-first important extension",
+      "route": "MODEL-FIRST",
+      "claim": "GENERAL_THEORY",
+      "prior": "APPARENTLY_DISTINCT",
+      "feature_test": "NOT_APPLICABLE",
+      "economic_gain": "SUBSTANTIVE",
+      "strongest_objection": "A parent theorem may absorb weaker assumptions.",
+      "evidence": "Synthetic proof of a strict, economically meaningful generalization beyond parent domain.",
+      "expected": "SUPPORT_GENERAL_THEORY"
+    },
+    {
+      "id": "D",
+      "title": "New interaction from known ingredients",
+      "route": "HYBRID",
+      "claim": "GENERAL_THEORY",
+      "prior": "APPARENTLY_DISTINCT",
+      "feature_test": "NOT_APPLICABLE",
+      "economic_gain": "SUBSTANTIVE",
+      "strongest_objection": "Known components might jointly imply the result as a trivial corollary.",
+      "evidence": "Synthetic non-absorption and new sharp condition in interaction proved, despite known constituents.",
+      "expected": "SUPPORT_GENERAL_THEORY"
+    },
+    {
+      "id": "E",
+      "title": "Green Subsidies actual Stage 6/7.5/11/12 shadow re-audit",
+      "route": "HYBRID",
+      "claim": "THEMATIC_THEORY",
+      "prior": "APPARENTLY_DISTINCT",
+      "feature_test": "NOT_RUN",
+      "economic_gain": "SUBSTANTIVE",
+      "strongest_objection": "Could removing environmental target or replacing green investment with general productivity support preserve sign reversal?",
+      "evidence": "Historical Stage 6 DISTINCT BUT NARROW; Stage 7.5 mu=0 competitiveness channel and proportional rivals; Stage 12 distinguishes fiscal theorem from green application. Matched environmental-damage ablation not located in inspected records; do not infer its outcome.",
+      "expected": "THEMATIC_RISK_UNRESOLVED",
+      "legacy_verdict_preserved": true,
+      "unrun_counterfactual": "matched environmental-objective removal and productivity replacement with preserved feasible policy shock"
+    },
+    {
+      "id": "F",
+      "title": "Known general result with high-value institutional application",
+      "route": "THEME-FIRST",
+      "claim": "APPLICATION",
+      "prior": "ABSORBED",
+      "feature_test": "UNCHANGED",
+      "economic_gain": "IMPORTANT_APPLICATION",
+      "strongest_objection": "No independent theorem novelty; application novelty may be only translation.",
+      "evidence": "Synthetic institution-specific prediction and meaningful policy insight from accurately mapped known theory.",
+      "expected": "APPLICATION_ONLY"
+    }
+  ]
+}
