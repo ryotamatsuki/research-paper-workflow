@@ -204,3 +204,12 @@ Choose one:
 ## 14. Next-stage contract
 
 Stage 11 attacks the completed manuscript and model; it does not add unmotivated extensions. Any required figure/table already identified at Stage 10 should travel with the draft into Stage 11 rather than be postponed to Stage 13 or 14. Stage 13 will rerun `EXPOSITION_STREAMLINING_CHECKLIST.md` against the integrated manuscript and actual page order; Stage 14 only verifies the resulting architecture.
+
+---
+## v3.2: certified question-to-model-to-claim narrative
+Introduction: precise puzzle -> closest known account -> actual unresolved distinction -> proposed model choice -> supported result and limits.
+Model: explain why each *decisive* economic primitive enters payoff/choice/timing/constraint; label technical normalizations and inherited structures.
+Results: give the proven statement and a mechanism decomposition that cites Stage 4/6 evidence; show countervailing channels, not an invented causal story.
+Benchmark: explicitly separate identifying ablations from robustness experiments, cite comparable M0/M1/M2; mark unrun ones and do not invent results.
+Discussion/Conclusion: describe new economic learning, what remains unresolved, the actual theme-specific role and boundaries of welfare/policy inference. If a prose claim demands an unproven identification, return to Stage 4/6; writing cannot amend the frozen theorem.
+Existing full-text exemplar benchmarks and independent later prose reviews remain mandatory.

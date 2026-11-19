@@ -50,3 +50,7 @@ Search log; screened candidates and exclusions; publication/DOI/version/access; 
 - CONDITIONAL GO — exactly one material blocker and bounded 10A repair; no 10B authorization.
 - NO-GO — stop this route pending justified re-entry; no drafting.
 Independent Stage 11 must attack actual writing with cold reader and benchmark evidence; Stage 12 refresh, Stage 13 retest, Stage 14 exact PDF verification. Log AI provenance and source-access limitations. This is not peer review, a novelty certificate or a submission recommendation.
+
+---
+## v3.2: benchmark argument construction, not only fluent prose
+For the fully read model papers already selected, map exactly where the reader encounters: economic puzzle and stakes; why this model's primitive is needed; countervailing mechanisms; minimal benchmark and credible alternative; theorem-to-intuition bridge; claimed increment over the source; and deliberate limitations. Record source passage/location and project-specific adaptation in existing EDITORIAL_EXEMPLAR_MAP / MANUSCRIPT_BLUEPRINT rather than adding an unrelated benchmark form. MODEL-FIRST papers may start from a theorem anomaly and connect to applications afterward. Compare logic and economy of assumptions, never impose a stylistic template on scientific choices. The blueprint must reflect the frozen Stage-7.5 identification report.

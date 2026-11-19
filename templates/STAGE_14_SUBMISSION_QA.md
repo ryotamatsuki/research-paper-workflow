@@ -237,3 +237,7 @@ No substantive change is allowed between QA pass and freeze. Final figure/table 
 If the authenticated portal reveals a new or conflicting operative requirement, update the package under the evidence hierarchy above, rerun the affected Stage-14 checks, and create a new validated freeze rather than silently altering the already audited package.
 ### Exemplar synthesis final verification
 Check the exact final PDF and source SHA against the resolved role-selection matrix, Blueprint and Stage-13 coherence retest. Reopen Stage 10A for selection/architecture deficiencies, Stage 10B/13 for implementation regressions, or the earliest scientific gate for substantive changes. Do not substitute a stylistic similarity score for evidence.
+
+---
+## v3.2: author-facing scientific risk preflight
+Require PRE_SUBMISSION_SCIENTIFIC_RISK_BRIEF.md (or equivalent identifiable section) covering five **independent** scientific dimensions with exact claim/domain, strong reject-in-one-paragraph objection, prior-model contrast, thematic role, supported defense, failed versus unrun comparisons, and residual limitations. Cross-check against frozen contribution report, Stage-11 mismatch attack and latest PDF; list the route to repair each material unresolved question. A materially untested *claimed* thematic cause cannot be treated as a proof merely because Stage-13 prose passed. Scientific blockers are independent of fees/metadata/format compliance; do not coerce theory expansion for venue prestige.

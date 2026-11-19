@@ -298,3 +298,13 @@ Choose one:
 ## 15. Next-stage contract
 
 Stage 12 selects a journal for the actual surviving certified contribution and consumes the frozen Contribution Robustness Certificate. It must not reshape the result, enlarge theorem scope, inflate portability, or suppress equilibrium-selection/failure-boundary qualifications to fit a preferred journal.
+
+---
+## v3.2: independent Model–Question Mismatch Attack
+In addition to, not instead of, existing novelty, robustness, full mathematical referee and communication-only reviews, require five *evidence-backed* hostile tests. Evaluator must not merely inherit prior Stage-6/7.5 PASS or a manuscript author's explanations.
+1. Generic Model in Disguise: strip application labels; attempt reduction to an actual cited parent paper/model.
+2. Research Question–Model Mismatch: compare title/abstract/introduction promise with precise model/theorem/equilibrium.
+3. Nonessential Thematic Primitive: remove/hold fixed/substitute theme-specific feature with a valid common-domain shock; distinguish transmission versus the claimed sign or welfare mechanism; missing test is UNRESOLVED.
+4. Insufficient Economic Learning: identify what a field researcher learns beyond a correct but narrow/unabsorbed formula; permit serious theorem/correction/application gains.
+5. Alternative Model Challenge: present a simpler parent or distinct mechanism that may explain the question as well or better.
+For *each* record exact paper/location, payoff/equation/proposition, matched counterfactual or reason not possible, finding, strength FATAL / MAJOR BUT FIXABLE / MINOR / UNRESOLVED, an explicit earliest Stage 0–7.5A rollback, and strongest response evidence. Scientific deficiency is never fixed solely by smoother prose; when essential, reopen corresponding research gate and Stage-8 certification. Do not automatically NO-GO a previously published/submitted legacy case tested post-hoc.

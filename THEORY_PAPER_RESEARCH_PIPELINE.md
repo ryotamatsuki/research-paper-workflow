@@ -1244,3 +1244,17 @@ Reusable Stage templates, theorem/math/literature verification checklists, the f
 Future extensions may add empirical/cross-discipline variants, machine-readable theorem certificates, automated property-based testing, and release tooling after explicit audit.
 
 This document is the canonical workflow architecture. Stage-specific templates may elaborate it but may not silently weaken its gates.
+
+---
+## v3.2 — Research Question–Mechanism Alignment / Economic Model Design (adopted)
+This section overlays, and does not renumber, the existing Stage 0–15 route. Source of truth: docs/V3_2_RESEARCH_DESIGN_PROTOCOL.md. Route labels: THEME-FIRST, MODEL-FIRST, HYBRID (pivots permitted, with versioned affected-certification audit).
+- **Stage 0:** define question, stakes, route, closest parent/model, necessary economic feature if theme-first, plausible falsifier and possible contrary findings.
+- **Stage 2:** map actual research question -> closest papers' model and assumptions -> residual gap -> grounded alternative architecture(s) and cheap falsifier. Search again after model resolution.
+- **Stage 3:** answer eight explicit question–mechanism alignment questions, preserving predicted versus evidenced answers. If theme–primitive link has no justification, redesign before solving.
+- **Stage 4:** pre-specify comparable M0 parent, M1 minimum extension, M2 feature ablation/substitution. For model-first generalizations use parent theorem and exact counterexample/restriction; mark non-comparable benchmarks honestly.
+- **Stage 6:** separate theorem absorption, claim-specific feature-role identification, and economic learning gain; do not infer new theorem from label or single witness.
+- **Stage 7.5:** distinguish question coverage, importance and feature identification in a twelve-field contribution report; **Stage 7.5A:** separately certify strength, quantifiers, portability and limits. Send report to Stage 8 freeze.
+- **Stage 10A/10B/13:** exemplars benchmark question-to-model-to-theorem argument; model assumptions and causal interpretation must trace to certification, with no post-hoc discovery by prose.
+- **Stage 11:** five independent model–question attacks with citations, equations, counterfactuals, severity and rollback Stage, distinct from communication-only attack.
+- **Stages 12–15:** author-facing five-axis scientific assessment plus independent journal fit; record strongest desk rejection, rebuttal evidence, unrun discriminating tests, author review and freeze ID. Refer material open scientific problems back to earliest relevant Stage.
+All pre-existing GO / CONDITIONAL GO / NO-GO meanings and Stage 4A/7.5A independent certification remain intact. For material new scientific findings after Stage 8, rollback is obligatory; a journal change cannot manufacture a mechanism. Older v3.1 records may be shadow-tested as POST-HOC DIAGNOSTIC without changing their historical verdicts.

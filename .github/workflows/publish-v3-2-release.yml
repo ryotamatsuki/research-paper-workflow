@@ -1,0 +1,45 @@
+name: publish-v3-2-release
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/V3_2_RELEASE_NOTES.md'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  verify-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify v3.2 research design and pinned source contracts
+        run: python3 scripts/verify_research_design_contract.py --verify-green-sources
+      - name: Verify v3.1 prose contract
+        run: python3 scripts/verify_integrated_prose_contract.py
+      - name: Verify existing TDF v5.1 unit tests
+        run: PYTHONPATH=theory-discovery/v5.1 python3 -m unittest discover -s theory-discovery/v5.1/tests -p 'test_*.py' -v
+      - name: Verify existing TDF v5.1 scenario replay
+        run: python3 theory-discovery/v5.1/validation/replay.py > /dev/null
+      - name: Verify predecessor and v3.2 documentation
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          test "$(gh api repos/${GITHUB_REPOSITORY}/git/ref/tags/v3.1 --jq '.object.sha')" = '11fad4e8ad60e22c8a8868957d60ed4c6f5b9851'
+          grep -Fq '**Current canonical version: v3.2' README.md
+          grep -Fq 'Status: ACTIVE after author approval' docs/V3_2_RESEARCH_DESIGN_PROTOCOL.md
+      - name: Publish v3.2 GitHub Release without altering older tags
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view v3.2 >/dev/null 2>&1; then
+            echo 'v3.2 Release already exists; preserving its tag and content'
+            exit 0
+          fi
+          if gh api repos/${GITHUB_REPOSITORY}/git/ref/tags/v3.2 >/dev/null 2>&1; then
+            echo 'Existing v3.2 tag without release: refuse to overwrite it'
+            exit 1
+          fi
+          gh release create v3.2 --target "${GITHUB_SHA}" --title 'research-paper-workflow v3.2' --notes-file docs/V3_2_RELEASE_NOTES.md
