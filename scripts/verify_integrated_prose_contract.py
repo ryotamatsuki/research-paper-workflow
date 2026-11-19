@@ -16,7 +16,7 @@ check("templates/STAGE_15_SUBMISSION_FREEZE.md", "invalidates the affected Stage
 check("checklists/FINAL_PROSE_REVIEW_CHECKLIST.md", "Phase A", "Phase B", "second")
 check("checklists/EDITORIAL_ARGUMENT_QUALITY_CHECKLIST.md", "Stage 13 completed-paper prose subgate")
 check("checklists/SUBMISSION_CHECKLIST.md", "Stage 13 final-PDF")
-check("README.md", "Prospective v3.1", "No Stage 13P")
+check("README.md", "v3.1 (MINOR)", "No Stage 13P")
 check("docs/VERSIONING_POLICY.md", "Prospective v3.1", "MINOR-class")
 fix = (r/"examples/FINAL_PROSE_REVIEW_REGRESSION.md").read_text(encoding="utf-8")
 for n in range(1,16):

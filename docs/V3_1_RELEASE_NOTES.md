@@ -18,3 +18,5 @@ This is a **MINOR** release. No numbered Stage 13P exists, no Stage is added/rem
 Draft PR #35's integrated structural CI succeeded (run [44484752077](https://github.com/ryotamatsuki/research-paper-workflow/actions/runs/44484752077)); release workflow reruns the structural check. Automated tests verify contract presence, not true reviewer independence, whole-paper comprehension, exemplar access or journal acceptance.
 
 Retrospective Green Subsidies prose review found author-workflow residue and excessive defensive narration under a manuscript originally cleared using *v1.1*. This is an informative diagnostic **not** a valid v3.1 Stage-13 GO: the exact final PDF needs genuine initial full-paper blind reading and an independent post-repair complete re-read.
+
+Release contract validation: the README describes v3.1 as adopted after merge; the structural checker accepts that completed state rather than requiring the historical proposal label.
