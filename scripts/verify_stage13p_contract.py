@@ -87,7 +87,7 @@ def main():
             "Stage14 must invalidate stale material prose review")
     require("v4.0" in ver and "MAJOR" in ver and "v3.0" in ver and "v3.0" in readme,
             "versioning must state prospective v4 and preserve existing v3")
-    require("NOT" in design and "v3.0" in design and "v4.0" in design,
+    require("not released" in design.lower() and "v3.0" in design and "v4.0" in design,
             "release status must be explicitly unreleased")
     ids = sorted(set(re.findall(r"\bP(?:0[1-9]|1[0-9])\b", regress)))
     require(len(ids) >= 12, "insufficient regression fixtures")
