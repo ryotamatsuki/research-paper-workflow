@@ -231,7 +231,7 @@ A material `UNVERIFIED` journal requirement is never a full `PASS`.
 
 ## 15. Next-stage contract
 
-Stage 15 records an immutable submission state only after confirming Stage 13P prose clearance still applies to the exact final upload text. and, where necessary, completes the authenticated portal preflight before the final submit action.
+Stage 15 creates an immutable submission state only after confirming that Stage 13P prose clearance still applies to the exact final upload text, and, where necessary, completes the authenticated portal preflight before the final submit action.
 
 No substantive change is allowed between QA pass and freeze. Final figure/table outputs and generators used for the submission must be part of the frozen provenance.
 
