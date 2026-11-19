@@ -1,6 +1,6 @@
 # Result Reversal, Paradox, Impossibility and Sharp-Boundary Checklist
 
-> Unreleased post-v2.9 MINOR-class companion to existing Stages 2/3/4/4A/6/7.5A/11. This is not a new Stage, automatic novelty certificate, or change to GO/NO-GO routing.
+> Active companion under canonical v3.2 (origin: post-v2.9 MINOR-class proposal) to existing Stages 2/3/4/4A/6/7.5A/11. This is not a new Stage, automatic novelty certificate, or change to GO/NO-GO routing.
 
 ## A. Predecessor theorem and comparability
 
