@@ -192,3 +192,12 @@ If yes, mark `CERTIFICATION REGRESSION`, preserve the counterexample as workflow
 - [ ] Minor comments are not used to obscure fatal issues
 - [ ] Separate editorial-referee evidence contains first-pass paraphrases, exact text locations, communication-only reject attempt and explicit dispositions
 - [ ] Unresolved material editorial defects are not labeled PASS based on generic praise, a complete table of contents, mathematical correctness or PDF QA
+
+---
+## v3.2 candidate: five model–question attacks (additional evidence, not duplicate prose)
+- [ ] Generic Model in Disguise: application-name deletion plus closest source mapping.
+- [ ] Research Question–Model Mismatch: exact Title/Abstract/Introduction promise versus theorem/proof domain.
+- [ ] Nonessential Thematic Primitive: valid matched ablation; avoid conflating competitive transmission with environmental damage.
+- [ ] Insufficient Economic Learning: explicit new knowledge, with legitimate generalization/correction/application routes.
+- [ ] Alternative Model Challenge: identified simpler or substantively different explanatory parent.
+For each attach exact cited paper/assumption/equation/claim, M0/M1/M2 or honest NOT RUN, severity, response evidence and earliest Stage rollback. A substantive scientific problem is never resolved by editing prose alone.
