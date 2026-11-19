@@ -1,6 +1,8 @@
 # Governance
 
-Version: v3.0
+Version: v3.2
+Architecture baseline: v3.0 (Stage 10A/10B); active minor refinements: v3.1 and v3.2.
+The current canonical version is governed by `WORKFLOW_VERSION` and the v3.2 research-design protocol. Historical version references below retain their original scope.
 
 ## 1. Purpose
 
